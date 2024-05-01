@@ -1,0 +1,86 @@
+---
+title: "Adobe Commerce 2.4.0: excepción durante la instalación de B2B 1.2.0"
+description: Este artículo proporciona una corrección de un problema conocido de Adobe Commerce por una excepción producida durante setup:upgrade al instalar B2B 1.2.0.
+exl-id: 2c1dadd9-7754-4b4c-8d37-b75c13beae5c
+feature: B2B, Install, Upgrade
+role: Developer
+source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 0%
+
+---
+
+# Adobe Commerce 2.4.0: excepción durante la instalación de B2B 1.2.0
+
+Este artículo proporciona una corrección de un problema conocido de Adobe Commerce para una excepción producida durante `setup:upgrade` al instalar B2B 1.2.0.
+
+## Productos y versiones afectados
+
+* Adobe Commerce local 2.4.0
+* Adobe Commerce en infraestructura en la nube 2.4.0
+* B2B 1.2.0
+
+## Problema
+
+<u>Pasos a seguir</u>
+
+1. Instale Adobe Commerce con más de una tienda creada.
+1. Crear un almacén adicional.
+1. Instale B2B 1.2.0.
+
+>[!WARNING]
+>
+>La actualización de cualquier instancia B2B con más de un almacén desde una versión inferior a 1.2.0 o una instancia de Commerce inferior a 2.4.0 también se ve afectada.
+
+<u>Resultado esperado</u>
+
+Instalaciones de B2B 1.2.0.
+
+<u>Resultado real</u>
+
+Cuándo `setup:upgrade` se ejecuta para instalar B2B 1.2.0, este error aparece en la `PurchaseOrder` módulo:
+
+```php
+Module 'Magento_PurchaseOrder':
+  Unable to apply data patch Magento\PurchaseOrder\Setup\Patch\Data\InitPurchaseOrderSalesSequence
+  for module Magento_PurchaseOrder. Original exception message: DDL statements
+  are not allowed in transactions
+```
+
+## Solución
+
+Aplique el parche proporcionado en este artículo.
+
+## Parche
+
+El parche se adjunta a este artículo, disponible para descargar en ambos `.composer` y `.git` formatos (después de descomprimir los archivos).
+
+Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre del archivo o haga clic en uno de los siguientes vínculos:
+
+* [parche del Compositor B2B-716\_composer.patch](assets/B2B-716_composer.patch.zip)
+* [parche de Git B2B-716\_git.patch](assets/B2B-716_git.patch.zip)
+
+## Cómo aplicar un parche
+
+<u>parche de Composer </u>
+
+Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones de composer patch.
+
+<u>parche de Git </u>
+
+* Consulte [Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en documentación para desarrolladores para instrucciones de parche de git para Adobe Commerce en la infraestructura en la nube.
+* Consulte [Aplicación de parches: parches personalizados](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) en documentación para desarrolladores para instrucciones de parche de git para Adobe Commerce.
+
+## Lectura relacionada
+
+* [Problema conocido de Adobe Commerce 2.4.0: visualización de datos de mensaje sin procesar en la tienda](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
+* [Problema conocido de Adobe Commerce 2.4.0: Exportar tipos impositivos no funciona](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
+* [Problema conocido de Adobe Commerce 2.4.0: los métodos de pago del Braintree no aparecen en el cierre de compra de varias direcciones](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
+* [Problema conocido de Adobe Commerce 2.4.0: mensaje de error al seleccionar el método de pago local que se muestra para algunos países durante el cierre de compra](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
+* [Problema conocido de Adobe Commerce 2.4.0: error 404 al eliminar puntos de recompensa en el cierre de compra de envío múltiple](/help/troubleshooting/storefront/magento-2-4-0-404-error-removing-rewards-points-on-multi-shipping-checkout.md)
+* [Problema conocido de Adobe Commerce 2.4.0: error de visualización de pedidos](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
+* [El administrador de Adobe Commerce 2.4.0 B2B no puede añadir un producto configurable al presupuesto](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
+* [Problema conocido de creación de etiquetas de envío en Adobe Commerce 2.4.0](/help/troubleshooting/known-issues-patches-attached/shipping-labels-creation-known-issue-in-magento-2-4-0.md)
+* [Problema conocido de Adobe Commerce 2.4.0: la actualización en las actividades del cliente no funciona](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
+* [Problema conocido de Adobe Commerce 2.4.0: El botón &quot;Añadir selecciones a mi carro de compras&quot; no funciona](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)

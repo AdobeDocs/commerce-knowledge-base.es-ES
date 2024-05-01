@@ -1,0 +1,54 @@
+---
+title: Sitio no accesible debido al encubrimiento del origen
+description: Este artículo proporciona una solución para los casos en los que el administrador o la tienda del sitio de producción o el ensayo de la infraestructura en la nube de Adobe Commerce no sean accesibles.
+exl-id: 4412d744-3066-4f78-bc45-8149614ce455
+feature: Products
+role: Developer
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '216'
+ht-degree: 0%
+
+---
+
+# Sitio no accesible debido al encubrimiento del origen
+
+Este artículo proporciona una solución para los casos en los que el administrador o la tienda del sitio de producción o el ensayo de la infraestructura en la nube de Adobe Commerce no sean accesibles.
+
+## Productos y versiones afectados
+
+* Adobe Commerce en cloud Infrastructure 2.3.x, 2.4.x
+
+## Problema
+
+https:&#x200B;//mydomain.com.c.&lt;projectid>.magento.cloud/ ya no es accesible.
+
+<u>Pasos a seguir:</u>
+
+1. Inicie sesión en el proyecto.
+1. Clic **Acceso al proyecto** para obtener una lista de URL y SSH.
+
+<u>Resultados reales:</u>
+
+La página no se puede cargar con el siguiente error:
+
+*NET::ERR\_CERT\_INVALID*  *Alerta TLS, certificado incorrecto (554):*
+
+<u>Resultados esperados:</u>
+
+La página se carga correctamente.
+
+## Causa
+
+El encubrimiento de origen se ha habilitado, por lo que ya no se puede acceder directamente al origen.
+
+El encubrimiento de origen es una función de seguridad que permite a Adobe Commerce bloquear cualquier tráfico que no sea de Fastly que vaya a la infraestructura de la nube (origen) para evitar ataques DDoS.
+
+## Solución
+
+* Si el sitio de la nube está activo, cambie a https://mydomain.com/.
+* Si tiene un sitio activo (que no esté en la nube), con el dominio https://mydomain.com/, configure un subdominio `mcprod.mydomain.com` y actualice su **URL básica** hasta *https://mcprod.mydomain.com* en su lugar, then [apuntar el DNS a Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
+
+## Lectura relacionada
+
+[Preguntas frecuentes sobre la activación de encubrimiento Fastly origin](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) en nuestra base de conocimiento de soporte.

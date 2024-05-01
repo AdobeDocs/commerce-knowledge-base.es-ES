@@ -1,0 +1,66 @@
+---
+title: "MDVA-25631: No se pueden guardar y actualizar los segmentos del cliente"
+description: El parche MDVA-25631 resuelve el problema en el que los usuarios no pueden guardar y actualizar segmentos de clientes que contienen un gran número de clientes. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.4. El ID del parche es MDVA-25631. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
+exl-id: 4250824b-e347-4ca4-8eaf-4de4d091bfc4
+feature: Customer Service
+role: Admin
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '400'
+ht-degree: 0%
+
+---
+
+# MDVA-25631: No se pueden guardar y actualizar los segmentos del cliente
+
+El parche MDVA-25631 resuelve el problema en el que los usuarios no pueden guardar y actualizar segmentos de clientes que contienen un gran número de clientes. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.4 está instalado. El ID del parche es MDVA-25631. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
+
+## Productos y versiones afectados
+
+**El parche se crea para la versión de Adobe Commerce:**
+
+* Adobe Commerce (todos los métodos de implementación) 2.3.3
+
+**Compatible con las versiones de Adobe Commerce:**
+
+* Adobe Commerce (todos los métodos de implementación) 2.3.3 - 2.3.5-p2
+
+>[!NOTE]
+>
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+
+## Problema
+
+Los usuarios no pueden guardar y actualizar segmentos de clientes que contengan un gran número de clientes.
+
+<u>Requisitos previos</u>:
+
+Generar un gran número de clientes (más de 3 millones).
+
+<u>Pasos a seguir</u>:
+
+1. Cree un segmento de cliente e intente guardarlo.
+
+<u>Resultados esperados</u>:
+
+El segmento de clientes se guarda sin ningún error.
+
+<u>Resultados reales</u>:
+
+Usted obtiene *500* error porque se está agotando el tamaño de memoria permitido.
+
+## Aplicar el parche
+
+Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
+
+* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) en nuestra documentación para desarrolladores.
+* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
+
+## Lectura relacionada
+
+Para obtener más información sobre la herramienta Parches de calidad, consulte:
+
+* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+
+Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) sección.

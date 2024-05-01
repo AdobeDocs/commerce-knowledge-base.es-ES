@@ -1,0 +1,89 @@
+---
+title: "MDVA-40262: Las consultas de GraphQL no se muestran en términos de búsqueda populares en administración"
+description: El parche de calidad MDVA-40262 Adobe Commerce corrige el problema en el que las consultas de búsqueda de GraphQL no se muestran en términos de búsqueda populares en el administrador. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.3. El ID del parche es MDVA-40262. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+exl-id: 7157e47d-a042-4462-96ed-23203a3213bd
+feature: Admin Workspace, GraphQL, Search
+role: Admin
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '409'
+ht-degree: 0%
+
+---
+
+# MDVA-40262: Las consultas de GraphQL no se muestran en términos de búsqueda populares en administración
+
+El parche de calidad MDVA-40262 Adobe Commerce corrige el problema en el que las consultas de búsqueda de GraphQL no se muestran en términos de búsqueda populares en el administrador. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.3 está instalado. El ID del parche es MDVA-40262. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+
+## Productos y versiones afectados
+
+**El parche se crea para la versión de Adobe Commerce:**
+
+Adobe Commerce (todos los métodos de implementación) 2.4.2-p1
+
+**Compatible con las versiones de Adobe Commerce:**
+
+Adobe Commerce (todos los métodos de implementación) 2.4.2 - 2.4.3
+
+>[!NOTE]
+>
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+
+## Problema
+
+Las consultas de GraphQL no se muestran en los términos de búsqueda populares en el administrador.
+
+<u>Requisitos previos</u>:
+
+Se deben instalar los datos de muestra.
+
+<u>Pasos a seguir</u>:
+
+1. Ir a **Tiendas** > **Configuración** > **Catálogo** > **SEO** > **Términos de búsqueda populares** y se configura para habilitar.
+1. Ejecute la siguiente consulta de GraphQL:
+
+<pre>
+<code class="language-graphql">
+{
+  products(
+    search: "jackets"
+    filter: { price: { to: "50" } }
+    pageSize: 20
+   ) {
+    total_count
+    items {
+      name
+      sku
+    }
+    page_info {
+      page_size
+      current_page
+    }
+  }
+}
+</code>
+</pre>
+
+<u>Resultados esperados</u>:
+
+Después de ejecutar la consulta de GraphQL para buscar un producto, la consulta de búsqueda debe agregarse a los términos de búsqueda populares.
+
+<u>Resultados reales</u>:
+
+La consulta de búsqueda no se agrega a los términos de búsqueda populares.
+
+## Aplicar el parche
+
+Para aplicar parches individuales, utilice los siguientes vínculos en función del tipo de implementación:
+
+* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) en nuestra documentación para desarrolladores.
+* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
+
+## Lectura relacionada
+
+Para obtener más información sobre parches de calidad para Adobe Commerce, consulte:
+
+* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+* [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
+
+Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) sección.

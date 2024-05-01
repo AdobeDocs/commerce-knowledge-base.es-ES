@@ -1,0 +1,136 @@
+---
+title: "MDVA-40601: No se pueden recuperar datos sobre la categoría modificada por la actualización programada a través de GraphQL"
+description: El parche de calidad MDVA-40601 Adobe Commerce corrige el problema en el que los usuarios reciben un error al obtener información sobre la categoría modificada por la actualización programada a través de GraphQL. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.3. El ID del parche es MDVA-40601. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+exl-id: b1ea93e7-8d4a-4bdd-8267-cc60de25bd39
+feature: Categories, GraphQL
+role: Admin
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '434'
+ht-degree: 0%
+
+---
+
+# MDVA-40601: no se pueden recuperar datos sobre la categoría modificada por la actualización programada a través de GraphQL
+
+El parche de calidad MDVA-40601 Adobe Commerce corrige el problema en el que los usuarios reciben un error al obtener información sobre la categoría modificada por la actualización programada a través de GraphQL. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.3 está instalado. El ID del parche es MDVA-40601. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+
+## Productos y versiones afectados
+
+**El parche se crea para la versión de Adobe Commerce:**
+
+Adobe Commerce (todos los métodos de implementación) 2.3.3 y 2.4.2
+
+**Compatible con las versiones de Adobe Commerce:**
+
+Adobe Commerce (todos los métodos de implementación) 2.3.1 - 2.4.2-p2
+
+>[!NOTE]
+>
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+
+## Problema
+
+Los usuarios reciben un error al intentar recuperar información sobre la categoría modificada por la actualización programada mediante GraphQL.
+
+<u>Pasos a seguir</u>:
+
+1. Configure una estructura de categorías con una subcategoría como se indica a continuación:
+
+   <pre>
+   <code class="language-graphql">
+   - Root
+    - Some category
+         - Some child category
+   </code>
+   </pre>
+
+1. Ejecute la consulta de GraphQL con el ID 49 &quot;Alguna categoría&quot;.
+
+   <pre>
+    <code class="language-graphql">
+    query {
+     category(id: 49) {
+      name
+      children {
+        name
+       }
+     }
+   }
+   </code>
+   </pre>
+
+   Resultado:
+
+   <pre>
+    <code class="language-graphql">
+    {
+      "data": {
+        "category": {
+          "name": "Some category",
+          "children": [
+            {
+              "name": "Some child category"
+            }
+          ]
+        }
+      }
+    }
+    </code>
+    </pre>
+
+1. Cree una actualización de programación para &quot;Alguna categoría&quot; con un nombre de categoría diferente.
+1. Espere a que se active la actualización de la programación.
+1. Ejecute la misma consulta que se indicó anteriormente.
+
+<u>Resultados esperados</u>:
+
+Recibirá el mismo resultado pero con el nombre de categoría actualizado.
+
+<u>Resultados reales</u>:
+
+Se obtiene el siguiente error:
+
+<pre>
+<code class="language-graphql">
+{
+  "errors": [
+    {
+      "debugMessage": "uasort() expects parameter 1 to be array, string given",
+      "message": "Internal server error",
+      "extensions": {
+        "category": "internal"
+      },
+      "locations": [
+        {
+          "line": 2,
+          "column": 3
+        }
+      ],
+      "path": [
+        "category"
+      ]
+    }
+  ],
+  "data": {
+    "category": null
+  }
+}
+</code>
+</pre>
+
+## Aplicar el parche
+
+Para aplicar parches individuales, utilice los siguientes vínculos en función del tipo de implementación:
+
+* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) en nuestra documentación para desarrolladores.
+* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
+
+## Lectura relacionada
+
+Para obtener más información sobre parches de calidad para Adobe Commerce, consulte:
+
+* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+* [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md).
+
+Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) sección.

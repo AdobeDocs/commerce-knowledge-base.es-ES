@@ -1,0 +1,41 @@
+---
+title: El Recommendations del producto no se muestra en Page Builder
+description: Este artículo proporciona una solución para el problema en el que la opción Product Recommendations no se muestra en Page Builder.
+exl-id: e96a446b-2e64-47a6-ac1b-e73183da9fb8
+feature: Page Builder, Configuration, Personalization, Products, Recommendations
+role: Developer
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '179'
+ht-degree: 0%
+
+---
+
+# El Recommendations del producto no se muestra en Page Builder
+
+Este artículo proporciona una solución para el problema en el que la opción Product Recommendations no se muestra en Page Builder.
+
+## Productos y versiones afectados
+
+* Adobe Commerce (todos los métodos de implementación)
+
+## Problema
+
+La opción Recommendations del producto no se muestra en Page Builder.
+
+## Causa
+
+No hay ninguna opción en Page Builder para añadir Product Recommendations. Product Recommendations para Page Builder es un módulo opcional que se instala por separado.
+
+## Solución
+
+1. Compruebe si ha instalado el módulo por separado ejecutando el comando: `composer show magento/module-page-builder-product-recommendations`
+1. Si devuelve el siguiente mensaje: *No se han encontrado el paquete magento/module-page-builder-product-recommendations*, tendrá que instalarlo ejecutando el comando: `composer require magento/module-page-builder-product-recommendations`
+
+Al habilitar Product Recommendations en Page Builder, podrá hacer lo siguiente [agregar una unidad de recomendación](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) a cualquier contenido creado en Page Builder.
+
+## Lectura relacionada
+
+* [Añadir contenido: Recommendations del producto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) en nuestra guía del usuario.
+* [Instalación y configuración de Product Recommendations](https://devdocs.magento.com/recommendations/install-configure.html) en nuestra documentación para desarrolladores.
+* [Guía del usuario de Adobe Commerce](https://docs.magento.com/user-guide/)

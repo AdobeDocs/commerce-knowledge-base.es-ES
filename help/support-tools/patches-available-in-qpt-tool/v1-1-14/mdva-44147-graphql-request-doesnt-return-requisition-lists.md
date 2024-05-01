@@ -1,0 +1,190 @@
+---
+title: "MDVA-44147: La solicitud de GraphQL no devuelve listas de solicitudes"
+description: El parche MDVA-44147 corrige el problema en el que la solicitud de GraphQL no devuelve Listas de solicitudes. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14. El ID del parche es MDVA-44147. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+exl-id: c7a526f2-638c-4172-8750-aa076724851a
+feature: B2B, GraphQL
+role: Admin
+source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 0%
+
+---
+
+# MDVA-44147: La solicitud de GraphQL no devuelve listas de solicitudes
+
+El parche MDVA-44147 corrige el problema en el que la solicitud de GraphQL no devuelve Listas de solicitudes. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.14 está instalado. El ID del parche es MDVA-44147. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+
+## Productos y versiones afectados
+
+**El parche se crea para la versión de Adobe Commerce:**
+
+* Adobe Commerce (todos los métodos de implementación) 2.4.3-p1
+
+**Compatible con las versiones de Adobe Commerce:**
+
+* Adobe Commerce (todos los métodos de implementación) 2.4.2 - 2.4.4
+
+>[!NOTE]
+>
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+
+## Problema
+
+La solicitud de GraphQL no devuelve Listas de solicitudes.
+
+<u>Pasos a seguir</u>:
+
+1. Ir a **Almacenar** > **Configuración** > **Configuración** > **General** > **Funciones B2B** y habilite Lista de solicitudes.
+1. Inicie sesión como cliente y añada un producto a [Lista de solicitudes](https://docs.magento.com/user-guide/customers/account-dashboard-requisition-lists.html).
+1. Crear un [Token de cliente](https://devdocs.magento.com/guides/v2.4/graphql/mutations/generate-customer-token.html).
+
+   <pre>
+    <code class="language-graphql">
+    mutation {
+      generateCustomerToken(
+        email: "test@gmail.com"
+        password: "xxxxxxxx"
+        ) {
+          token
+        }
+      }
+      </code>
+      </pre>
+
+1. Utilice la siguiente consulta para recuperar todas las listas de solicitudes del cliente. Utilice el **Autorización** encabezado con el valor `Bearer <customer_token>`. Consulte la [Consulta del cliente](https://devdocs.magento.com/guides/v2.4/graphql/queries/customer.html) artículo en nuestra documentación para desarrolladores para obtener más información.
+
+   Solicitud:
+
+   <pre>
+    <code class="language-graphql">
+    query {
+      customer {
+        requisition_lists(
+          pageSize: 20
+          ) {
+            items {
+              uid
+              name
+              description
+              items(pageSize: 20) {
+                items {
+                  uid
+                  product {
+                    uid
+                    name
+                    sku
+                    __typename
+                  }
+                  quantity
+                }
+                total_pages
+              }
+            }
+            total_count
+          }
+        }
+      }
+      </code>
+      </pre>
+
+   Respuesta:
+
+   <pre>
+    <code class="language-graphql">
+    {
+      "data": {
+        "customer": {
+          "requisition_lists": {
+            "items": [
+            {
+              "uid": "MQ==",
+              "name": "Name",
+              "description": "Description",
+              "items": {
+                "items": [
+                {
+                  "uid": "MQ==",
+                  "product": {
+                    "uid": "MQ==",
+                    "name": "Simple 01",
+                    "sku": "s00001",
+                    "__typename": "SimpleProduct"
+                    },
+                    "quantity": 1
+                  }
+                  ],
+                  "total_pages": 1
+                }
+              }
+              ],
+              "total_count": 1
+            }
+          }
+        }
+      }
+      </code>
+      </pre>
+
+1. Copie el UID de cualquier elemento de la lista devuelta (MQ==) y utilice la siguiente consulta para obtener la lista filtrada por el UID.
+
+   <pre>
+    <code class="language-graphql">
+    query {
+      customer {
+        requisition_lists(
+          pageSize: 20,
+          filter: {
+            uids: {
+              eq: "MQ=="
+            }
+          }
+          ) {
+            items {
+              uid
+              name
+              description
+              items(pageSize: 20) {
+                items {
+                  uid
+                  product {
+                    uid
+                    name
+                    sku
+                    __typename
+                  }
+                  quantity
+                }
+                total_pages
+              }
+            }
+            total_count
+          }
+        }
+      }
+      </code>
+      </pre>
+
+<u>Resultados esperados</u>:
+
+Se devuelve un resultado.
+
+<u>Resultados reales</u>:
+
+No se devuelven resultados.
+
+## Aplicar el parche
+
+Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
+
+* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) en nuestra documentación para desarrolladores.
+* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
+
+## Lectura relacionada
+
+Para obtener más información sobre la herramienta Parches de calidad, consulte:
+
+* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+
+Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

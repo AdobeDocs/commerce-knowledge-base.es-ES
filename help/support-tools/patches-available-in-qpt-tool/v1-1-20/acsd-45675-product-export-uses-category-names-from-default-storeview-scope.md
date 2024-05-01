@@ -1,0 +1,73 @@
+---
+title: "ACSD-45675: la exportación de productos utiliza nombres de categoría desde el ámbito de vista de tienda predeterminado"
+description: El parche de ACSD-45675 corrige el problema en el que la exportación del producto utiliza nombres de categoría desde el ámbito de vista de tienda predeterminado. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.20. El ID del parche es ACSD-45675. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+exl-id: 9edd718e-4c0c-44dd-b802-07c9ec7c182a
+feature: Categories, Data Import/Export, Products
+role: Admin
+source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 0%
+
+---
+
+# ACSD-45675: la exportación de productos utiliza nombres de categoría del ámbito de vista de tienda predeterminado
+
+El parche de ACSD-45675 corrige el problema en el que la exportación del producto utiliza nombres de categoría desde el ámbito de vista de tienda predeterminado. Este parche está disponible cuando la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.20 está instalado. El ID del parche es ACSD-45675. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+
+## Productos y versiones afectados
+
+**El parche se crea para la versión de Adobe Commerce:**
+
+* Adobe Commerce (todos los métodos de implementación) 2.4.3
+
+**Compatible con las versiones de Adobe Commerce:**
+
+* Adobe Commerce (todos los métodos de implementación) 2.4.0 - 2.4.5
+
+>[!NOTE]
+>
+>El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+
+## Problema
+
+La exportación de productos utiliza nombres de categoría del ámbito de vista de tienda predeterminado.
+
+<u>Pasos a seguir</u>:
+
+1. Crear una vista de tienda personalizada **[!UICONTROL Thai]** dentro de la tienda principal.
+1. Marca **[!UICONTROL Thai]** la vista de tienda predeterminada del sitio web principal.
+1. Cree la siguiente estructura de categorías en **[!UICONTROL Default Category]**:
+
+   *[!UICONTROL Default category/Tea/Black]*
+
+1. Seleccione la categoría **[!UICONTROL Tea]** y cambie el **[!UICONTROL Scope]** hasta **[!UICONTROL Thai]**.
+1. Configure las variables **[!UICONTROL Category Name]** as **[!UICONTROL ชาดำ]**.
+1. Crear un producto sencillo **[!UICONTROL SP001]** y asigne la categoría **[!UICONTROL Black]**.
+1. Asegúrese de que el cron no funcione.
+1. Realice una exportación de productos. Filtre por SKU y seleccione **[!UICONTROL SP001]**.
+1. Compruebe la **[!UICONTROL categories]** en el CSV exportado.
+
+<u>Resultados esperados</u>:
+
+Como no se seleccionó ningún almacén durante la exportación, debe obtener una ruta de categoría como la siguiente: *[!UICONTROL Default Category/Tea/Black]*.
+
+<u>Resultados reales</u>:
+
+La ruta de la categoría tiene idiomas mixtos: *[!UICONTROL Default Category/ชาดำ/Black]*.
+
+## Aplicar el parche
+
+Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
+
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tools] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía de la herramienta Parches de calidad.
+* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
+
+## Lectura relacionada
+
+Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) en nuestra base de conocimiento de soporte.
+
+Para obtener información sobre otros parches disponibles en [!DNL QPT], consulte [Parches disponibles en [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía de la herramienta Parches de calidad.
