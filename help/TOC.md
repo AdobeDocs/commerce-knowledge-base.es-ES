@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: b445f8ae73723afaa2f00e089ea18607dc59df72
+source-git-commit: cd3101c325a6e33b4a4b56e6f2494011cdba56d8
 workflow-type: tm+mt
-source-wordcount: '10939'
+source-wordcount: '10949'
 ht-degree: 0%
 
 ---
@@ -791,6 +791,7 @@ ht-degree: 0%
          * [ACSD-56858: discrepancia en los permisos de funciones en el administrador de la empresa B2B](/help/support-tools/patches-available-in-qpt-tool/v1-1-47/acsd-56858-role-permissions-display-issue-in-b2b-company-admin-panel.md)
       * v1.1.48 {#v1-1-48}
          * [Información general: [!DNL Quality Patches Tool] (QPT) v1.1.48](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/overview.md)
+         * [ACSD-57337: el usuario administrador con restricciones de acceso podría ver las compañías](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57337-admin-user-with-access-restrictions-can-see-companies.md)
          * [ACSD-57394: clasificación de productos incorrecta por varios campos de ordenación en [!DNL GraphQL]](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57394-incorrect-product-sorting-by-multiple-sort-fields-in-graphql.md)
          * [ACSD-56546: los productos configurables y agrupados se muestran como agotados en la tienda](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-56546-configurable-and-bundle-products-display-as-out-of-stock-on-the-storefront.md)
          * [ACSD-55566: [!UICONTROL mergeCart] La mutación falla con un error de servidor interno en [!DNL GraphQL] respuesta](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-55566-mergecart-mutation-fails-with-an-internal-server-error-in-graphql-response.md)
