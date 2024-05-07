@@ -3,9 +3,9 @@ title: "Copia de seguridad (instantánea) en la nube: preguntas frecuentes"
 description: Este artículo cubre los aspectos básicos del backup de sus entornos con instantáneas en Adobe Commerce en la infraestructura en la nube.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 9491279d147eac9ed36ad236c227b08e7c6e0211
+source-git-commit: 0958a8923e27c1341f4b536812b26205685b2b81
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '550'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Este artículo cubre la realización de copias de seguridad de sus entornos con 
 
 ## Restaurar una instantánea de entorno
 
-Para restaurar una instantánea existente (en el entorno admitido: integración, ensayo, producción en el plan inicial o integración en el plan Pro), siga los pasos en [Administración de copias de seguridad: restaurar una copia de seguridad manual](/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) en nuestra Guía de infraestructura en la nube de Commerce.
+Para restaurar una instantánea existente (en el entorno admitido: integración, ensayo, producción en el plan inicial o integración en el plan Pro), siga los pasos en [Administración de copias de seguridad: restaurar una copia de seguridad manual](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) en nuestra Guía de infraestructura en la nube de Commerce.
 
 ## Copia de seguridad de base de datos
 
