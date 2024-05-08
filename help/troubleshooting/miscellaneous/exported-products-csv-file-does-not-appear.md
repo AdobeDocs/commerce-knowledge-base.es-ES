@@ -4,9 +4,9 @@ description: Este artículo proporciona una corrección del problema que se prod
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: 465eb89cf5c5169b0b459ab7e6bdcbd418781093
+source-git-commit: d55702ab97f3770d0ec71322f6c24448f0169ad4
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '578'
 ht-degree: 0%
 
 ---
@@ -92,6 +92,10 @@ Para agregar el proceso como un trabajo cron de forma opcional, debe agregar la 
 >[!NOTE]
 >
 >Si no encuentra el `.magento.env.yaml` para su entorno y cree que se ha eliminado, debe crear un nuevo `.magento.env.yaml`. Podría estar vacío inicialmente, puede agregar información allí según sea necesario. Consulte los siguientes artículos: [Configuración de variables de entorno para la implementación](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) y [Variables de entorno](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) en nuestra documentación para desarrolladores.
+
+>[!TIP]
+>
+>[Archivos YAML](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) distinguen entre mayúsculas y minúsculas y no permiten tabulaciones. Tenga cuidado de utilizar una sangría uniforme en todo el archivo .magento.env.yaml o es posible que la configuración no funcione según lo esperado. Los ejemplos de la documentación y del archivo de muestra utilizan sangría de dos espacios. Utilice el comando validate de ece-tools para comprobar la configuración.
 
 >[!NOTE]
 >
