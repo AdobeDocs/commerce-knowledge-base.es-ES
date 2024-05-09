@@ -1,11 +1,12 @@
 ---
-title: "La implementación falla con las claves de acceso correctas en env:COMPOSER_AUTH o auth.json"
+title: La implementación falla con las claves de acceso correctas en env:COMPOSER_AUTH o auth.json
 description: Este artículo proporciona una solución para el problema cuando la implementación falla con el siguiente error "No se pudo descargar el archivo https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip (HTTP/1.1 404 No encontrado)".
 feature: Deploy
 role: Admin
-source-git-commit: 8e0aca8f528b017e288ae6fb19b072a5cc04761b
+exl-id: a18f4213-7381-4001-a5a0-3f8db4525469
+source-git-commit: 54ef4e95cf0e3f5822ff5e5c566129fab331f784
 workflow-type: tm+mt
-source-wordcount: '243'
+source-wordcount: '244'
 ht-degree: 0%
 
 ---
@@ -58,4 +59,4 @@ Para ver los pasos, consulte [Niveles variables](/docs/commerce-cloud-service/us
 ## Lectura relacionada
 
 * [No se pudo acceder a Adobe Commerce en el repositorio en la nube: Error 403 prohibido o 404 no encontrado al implementar](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html)
-* [Error de implementación: error 7 al descargar... puerto 443: Conexión rechazada](/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/deployment-error-downloading-connection-refused-adobe-commerce.html)
+* [Error de implementación: error 7 al descargar... puerto 443: Conexión rechazada](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce)
