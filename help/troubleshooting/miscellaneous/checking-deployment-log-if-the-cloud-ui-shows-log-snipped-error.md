@@ -1,19 +1,19 @@
 ---
 title: Comprobación del registro de implementación si la IU de Cloud tiene el error "registro recortado"
-description: Este artículo proporciona una solución para el problema en el que la IU de Adobe Commerce en la infraestructura en la nube muestra el mensaje de error *log snipped porque era demasiado largo* al intentar ver el registro de implementación.
+description: Este artículo proporciona una solución para el problema en el que la interfaz de usuario de Adobe Commerce en la infraestructura en la nube muestra el mensaje de error *log snipped porque era demasiado largo* al intentar ver el registro de implementación en la interfaz de usuario del proyecto en la nube.
 exl-id: 04d28741-72c1-4722-be46-425fe136b9a6
 feature: Cloud, Deploy, Logs, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 71bec5b99063d771982f6dcab111b9e5a4aaec69
 workflow-type: tm+mt
-source-wordcount: '301'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
-# Comprobación del registro de implementación si la IU de Cloud tiene el error &quot;registro recortado&quot;
+# Comprobación del registro de implementación si la IU de la nube tiene *registro recortado* error
 
-Este artículo proporciona una solución para el problema en el que la IU de Adobe Commerce en la infraestructura en la nube muestra el *registro recortado porque era demasiado largo* mensaje de error al intentar ver el registro de implementación.
+Este artículo proporciona una solución para el problema en el que Adobe Commerce en la interfaz de usuario de la infraestructura en la nube muestra el *registro recortado porque era demasiado largo* mensaje de error al intentar ver el registro de implementación en la interfaz de usuario del proyecto de la nube. (No se aplica al [Consola de Adobe Commerce Cloud](https://console.adobecommerce.com/).)
 
 ## Productos afectados
 
@@ -21,7 +21,7 @@ Adobe Commerce en la infraestructura en la nube (todas las versiones compatibles
 
 ## Problema
 
-Al intentar ver el registro de implementación, la interfaz de usuario de Adobe Commerce en la infraestructura de la nube muestra el siguiente mensaje de error: *registro recortado porque era demasiado largo*.
+Al intentar ver el registro de implementación en la interfaz de usuario del proyecto en la nube, Adobe Commerce en la interfaz de usuario de la infraestructura en la nube muestra el siguiente mensaje de error: *registro recortado porque era demasiado largo*.
 
 ## Pasos a seguir
 
