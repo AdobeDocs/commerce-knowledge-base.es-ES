@@ -4,9 +4,9 @@ description: "Este artículo explica cómo resolver el error de implementación 
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '608'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Algunas de las razones por las que las claves no son válidas son:
 Siga estos pasos para resolver el problema con las claves de autorización (consulte las secciones siguientes para obtener más información sobre cada paso):
 
 1. Obtenga las claves de autorización válidas (omita esta opción si está absolutamente seguro de que la clave es válida).
-1. Agregue el valor de las claves en `env:COMPOSER_AUTH` (o asegúrese de que el valor correcto esté allí) y compruebe si las claves se especifican de forma coherente en la variable y en el `auth.json` en la raíz del proyecto.
+1. Agregue el valor de las claves en `env:COMPOSER_AUTH` (o asegúrese de que el valor correcto esté allí) y compruebe si las claves se especifican de forma coherente en la variable en el nivel de proyecto y entorno, así como en el `auth.json` archivo (si existe) en la raíz del proyecto.
 1. Actualizar o eliminar `auth.json`, para tener un solo lugar donde se configure la clave, si los valores de las claves de autorización no están especificados o tienen otro valor.
 
 ### 1. Obtenga claves de autorización válidas
