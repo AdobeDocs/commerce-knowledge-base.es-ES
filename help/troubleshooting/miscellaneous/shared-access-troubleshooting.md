@@ -4,9 +4,9 @@ description: "**Problema:** Desea proporcionar acceso compartido a su compañero
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: e77322c04c7245538c10dfb397094eee6cfe6be9
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '500'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ ht-degree: 0%
 1. Si falta el recurso específico, póngase en contacto con el propietario de la cuenta (titular de la cuenta principal).
 
 Si sigue teniendo problemas, póngase en contacto con el equipo de cuenta de Adobe o envíe un correo electrónico a grp-Magento-HelpCenterLoginIssues@adobe.com. Especifique su nombre y el correo electrónico asociado a su cuenta.
+
+## He utilizado el acceso compartido y he hecho clic en [!UICONTROL Support], pero cuando abrí un nuevo billete, el [!UICONTROL Organization] no se muestra el menú desplegable
+
+**Problema:** He cambiado a la cuenta de acceso compartido pero no puedo acceder a la **[!UICONTROL Support tab]** (por ejemplo).
+
+**Posible causa:** Solo se le ha concedido acceso compartido a un comerciante de su cuenta.
+
+**Solución:**
+
+1. Volver a cambiar a **[!UICONTROL My Account]**.
+1. Si solo muestra uno **[!UICONTROL Shared Name]**, ese será el *Organización predeterminada* que sus tickets se abrirán en.
+
+Si sigue teniendo problemas, póngase en contacto con el equipo de su cuenta de Adobe o envíe un correo electrónico a grp-Magento-HelpCenterLoginIssues@adobe.com. Especifique su nombre y el correo electrónico asociado a su cuenta.
 
 ## He utilizado el acceso compartido, pero sigo viendo mis tickets en lugar de los compartidos
 
