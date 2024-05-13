@@ -3,9 +3,9 @@ title: Guía del usuario del Centro de ayuda de Adobe Commerce
 description: Obtenga información sobre cómo enviar un vale de soporte al Centro de ayuda de Adobe Commerce, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: a2e68f63a53013b6f0b8bfa12838fafe2bb6e6c7
+source-git-commit: 4e8833d100b776ca3c66a96274cde2d68eb0fd10
 workflow-type: tm+mt
-source-wordcount: '3924'
+source-wordcount: '3993'
 ht-degree: 0%
 
 ---
@@ -178,13 +178,13 @@ Proporcionamos asistencia solo a los propietarios de licencias de Adobe Commerce
 * [Recursos de documentación de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce.html)
 * [Foros de Magento](https://community.magento.com/?_ga=2.99592990.1084044056.1559046120-720752292.1551793747)
 
-Si tiene problemas para iniciar sesión en su cuenta o cree que el acceso compartido se ha configurado correctamente, pero aún no puede ver **Enviar un ticket** botón, envíe un correo electrónico [Problemas de inicio de sesión del Centro de ayuda](mailto:grp-magento-helpcenterloginissues@adobe.com), y con gusto revisaremos la configuración de su cuenta y los derechos de asistencia.
+Si tiene problemas registro en su cuenta o cree que el Acceso Compartido se configuró correctamente, pero aún así no puede ver **el botón Enviar un ticket** , correo electrónico [Ayuda Centro inicio de sesión problemas](mailto:grp-magento-helpcenterloginissues@adobe.com) y con gusto revisaremos su configuración de cuenta y los derechos de soporte.
 
 >[!NOTE]
 >
->No envíe un correo electrónico si puede enviar un ticket, sino que tiene problemas para acceder a su proyecto en la nube. Por favor, envíe el ticket para este problema a través de los canales habituales.
+>No envíe un correo electrónico si puede enviar un ticket, sino que tiene problemas para acceder a su proyecto nube. Por favor, envíe el ticket para este número a través de los canales regulares.
 
-### Error &quot;Compruebe su dirección de correo electrónico&quot; en la página Cuenta de Magento {#verify-email-address}
+### Error &quot;Verifique su dirección correo electrónico&quot; en el Página de la cuenta Magento {#verify-email-address}
 
 No podrá enviar un ticket de asistencia si recibe la *Verifique su dirección de correo electrónico* error similar al de abajo en la [Página Cuenta de Magento](https://account.magento.com/).
 
@@ -232,6 +232,10 @@ Después de que el comerciante le haya concedido el acceso compartido, debe real
 1. En el **Cambiar cuentas** en la esquina superior derecha, seleccione la cuenta de acceso compartido.
 1. Haga clic en **Asistencia** en el panel izquierdo. Al hacerlo, se asegura de que el Centro de ayuda de Adobe Commerce está configurado correctamente mediante la llamada SSO de Magento.com al Centro de ayuda de Adobe Commerce.
 
+Si ya lo ha hecho, compruebe si se le ha concedido *acceso compartido de más de un comerciante* haciendo clic en la [[!UICONTROL Shared with me] en su cuenta](https://account.magento.com/grantor/manage/shared/):
+* Si solo hubiera uno [!UICONTROL Share Name] aparece en la lista, es decir, solo un comerciante le ha concedido, *no verá un [!UICONTROL Organization] lista desplegable*.
+* Si hay varios [!UICONTROL Share Names]Sin embargo, los derechos de ayuda del comerciante pueden haber caducado porque su licencia fue revocada anteriormente debido a problemas de pago.
+
 ### Rastree sus tickets {#track-tickets}
 
 Tus entradas son las que:
@@ -277,15 +281,15 @@ Para seguir/dejar de seguir los tickets de una organización:
 
 ![hc_follow-org-tickets.png](assets/hc_follow-org-tickets.png)
 
-### Línea directa de Adobe Commerce P1 {#P1-hotline}
+### Línea directa P1 de Adobe Systems Commerce {#P1-hotline}
 
-**Es necesario iniciar sesión** para acceder a [Línea directa de Adobe Commerce P1](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html) artículo que proporciona los números de línea directa P1 de Adobe Commerce al buscar ayuda durante un incidente P1 y explica qué información proporcionar.
+**Se requiere** inicio de sesión para acceder al artículo de la [línea](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html) directa P1 de Adobe Systems Commerce que proporciona los números de la línea directa P1 para Adobe Systems Commerce cuando busca ayuda durante una problema P1 y explica qué información proporcionar.
 
-### Modelo operativo de responsabilidad compartida de Adobe Commerce {#shared-responsibility-operational-model}
+### Modelo operativo de responsabilidad compartida de Adobe Systems Commerce {#shared-responsibility-operational-model}
 
-**Es necesario iniciar sesión** para acceder a [Modelo operativo de responsabilidad compartida de Adobe Commerce](https://support.magento.com/hc/en-us/articles/4407700678669) artículo que pretende aclarar las responsabilidades operativas en torno a Adobe Commerce únicamente en nuestra oferta de infraestructura pro.
+**Es necesario** iniciar sesión para acceder al artículo del Modelo](https://support.magento.com/hc/en-us/articles/4407700678669) Operativo de Responsabilidad Compartida de [Adobe Systems Commerce, que tiene como objetivo aclarar las responsabilidades operativas en torno al Adobe Systems Commerce solo en nuestra oferta de infraestructura profesional.
 
-### Campos de ticket de asistencia explicados {#ticket-fields-explained}
+### Explicación de los campos de ticket de soporte {#ticket-fields-explained}
 
 #### URL afectada
 
@@ -379,13 +383,13 @@ Seleccione el **tipo de entorno** en la que se enfrenta el problema:
 * Ensayo
 * Producción
 
-Obtenga más información sobre Adobe Commerce en los entornos de infraestructura en la nube en la [Arquitectura profesional](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) artículo en nuestra guía del usuario.
+Lea más sobre Adobe Systems Commerce en entornos infraestructura en la nube en el artículo de [arquitectura](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html) Pro de nuestro usuario guía.
 
 #### Número de pedidos afectados (solo MOM)
 
-Seleccione el rango de pedidos afectados.
+Seleccione el intervalo de pedidos afectados.
 
-Se trata de una lista desplegable y sólo se aplica al producto de Order Management.
+Este es un menú desplegable y solo se aplica al producto Gestión de pedidos.
 
 #### Organización
 
@@ -487,12 +491,12 @@ Para añadir un comentario a la conversación, siga estos pasos:
 1. Desplácese hasta la parte inferior del ticket.
 1. Haga clic en **Añadir a la conversación** para empezar a escribir.
 
-   ![hc_add-to-conversación.png](assets/hc_add-to-conversation.png)
+   ![hc_add-to-conversation.png](assets/hc_add-to-conversation.png)
 
-1. Para añadir una persona a su comentario, especifique el correo electrónico en la **CC** del campo de comentario.
+1. Para agregar una persona a su comentario, especifique el correo electrónico en el **campo CC** del campo de comentario.
    >[!NOTE]
    >
-   >El usuario de CC: debe tener una cuenta existente en https://account.magento.com. Si no es así, primero debe crear una en https://account.adobe.com e iniciar sesión en https://account.magento.com con esa cuenta.
+   >El usuario en CC: debe tener un cuenta existente en https://account.magento.com. De lo contrario, primero deben crear uno en https://account.adobe.com e iniciar sesión para https://account.magento.com con ese cuenta.
 
    ![hc_conversación-write.png](assets/hc_conversation-write.png)
 
@@ -589,12 +593,12 @@ Para saber qué cuenta está utilizando actualmente (su propia cuenta nativa o a
 
 Consulte la [Artículo de solución de problemas de acceso compartido](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md) en nuestra base de conocimiento de soporte.
 
-## PREGUNTAS FRECUENTES SOBRE FACTURACIÓN PARA ADOBE COMMERCE {#billing-faq}
+## PREGUNTAS MÁS FRECUENTES SOBRE FACTURACIÓN DE ADOBE COMMERCE {#billing-faq}
 
-Los comerciantes suelen pagar por nuestros servicios mediante una transacción con tarjeta de crédito (CC), y esto [Preguntas frecuentes sobre facturación para Adobe Commerce](/help/faq/general/billing-faq-for-adobe-commerce.md) es un recurso para ayudarle cuando usted paga su factura.
+Los comerciantes generalmente pagan por nuestros servicios mediante una transacción de tarjeta de crédito (CC), y estas [Preguntas frecuentes de facturación para Adobe Systems Commerce](/help/faq/general/billing-faq-for-adobe-commerce.md) son un recurso para ayudarlo cuando pague su factura.
 
-## MAGENTO U AHORA FORMA PARTE DE LOS SERVICIOS DE APRENDIZAJE DIGITAL DE ADOBE {#magento-u}
+## MAGENTO U AHORA FORMA PARTE DE ADOBE DIGITAL LEARNING SERVICES {#magento-u}
 
-El Magento U se ha fusionado con [Adobe Digital Learning Services (ADLS)](https://learning.adobe.com/).
+Magento U se ha fusionado con [Adobe Systems Digital Learning Services (ADLS).](https://learning.adobe.com/)
 
-El Magento U Zendesk será eliminado gradualmente.
+Magento U Zendesk se eliminará gradualmente.
