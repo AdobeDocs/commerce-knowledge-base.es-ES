@@ -4,9 +4,9 @@ description: Durante la temporada alta de ventas de las fiestas (aproximadamente
 exl-id: 9d6910bf-30bc-4117-bf7f-a0316f9506b5
 feature: Cloud, Paas
 role: Admin
-source-git-commit: dfd3f788f42677b631ffb5b3153a1c79c2cc1ca3
+source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '446'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Una vez que haya completado la estimación recomendada, si su equipo ha identifi
 
 **Ver el historial de las conversiones**
 
-Puede ver el historial de los cambios de tamaño solicitados en su [Portal de proyectos (IU de incorporación)](https://devdocs.magento.com/cloud/onboarding/onboarding-tasks.html), en **Proyecto** > **Servicios** > **Seguimiento del uso de CPU**.
+Puede ver el historial de los cambios de tamaño solicitados solicitando la información a su **CSM (Customer Success Manager)**.
 La siguiente información está disponible para cada solicitud de cambio de tamaño:
 
 * **Fecha de inicio del tamaño**: fecha de la solicitud de actualización.

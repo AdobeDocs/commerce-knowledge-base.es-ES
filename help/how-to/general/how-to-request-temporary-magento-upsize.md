@@ -3,9 +3,9 @@ title: Cómo solicitar la actualización temporal de Adobe Commerce en la infrae
 description: Si su organización planea un evento en línea en el que se espera un tráfico elevado, o si de repente encuentra que su sitio está pasando por un evento de tráfico elevado, puede presentar un [vale de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para solicitar capacidad adicional temporal en la nube para su Adobe Commerce en el almacén de infraestructura en la nube.
 exl-id: 561e2bdd-718a-45c1-8b6c-a0e3a6c8ad04
 feature: Cloud, Iaas
-source-git-commit: a445bae7f013b29cb83fc96eb26dcbfd186a4de7
+source-git-commit: 357e0acb1c849079ff0fe9f53fe386f60475c7f9
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Enviar una [vale de soporte en el Centro de soporte de Adobe Commerce](/help/hel
 
 ## Ver el historial de las conversiones
 
-Puede ver el historial de los cambios de tamaño solicitados en su [Portal de proyectos (IU de incorporación)](/docs/commerce-cloud-service/start/onboarding.html#cloud-project-portal-(onboarding-ui)), en **Proyecto** > **Servicios** > **Seguimiento del uso de CPU**.
+Puede ver el historial de los cambios de tamaño solicitados solicitando la información a su **CSM (Customer Success Manager)**.
 La siguiente información está disponible para cada solicitud de cambio de tamaño:
 
 * **Fecha de inicio del tamaño**: fecha de la solicitud de actualización.
