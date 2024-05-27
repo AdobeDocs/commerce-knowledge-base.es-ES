@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 5fb41bb335b03804f38b3bd95d699f0026ca8970
+source-git-commit: 45ab0d3a858239dc8a35ed81c3b0d2f7cda5c85b
 workflow-type: tm+mt
-source-wordcount: '11021'
+source-wordcount: '11031'
 ht-degree: 0%
 
 ---
@@ -1255,6 +1255,7 @@ ht-degree: 0%
    * [Cómo eliminar el Magento Order Management](/help/how-to/general/how-to-remove-mom.md)
    * [Sugerencias técnicas para la preparación para las fiestas de Commerce](/help/how-to/general/tech-tips-for-commerce-holiday-readiness.md)
    * [Cómo evitar WAF para solicitudes de GraphQL](/help/how-to/general/how-to-bypass-waf-for-graphql-requests.md)
+   * [Actualice MariaDB 10.4 a 10.5 para Adobe Commerce en la nube](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * FAQ {#faq}
    * [Preguntas frecuentes sobre](/help/faq/overview.md)
    * [Firewall de aplicaciones web (WAF) con tecnología Fastly: preguntas frecuentes](/help/faq/general/web-application-firewall-waf-powered-by-fastly-the-faq.md)
