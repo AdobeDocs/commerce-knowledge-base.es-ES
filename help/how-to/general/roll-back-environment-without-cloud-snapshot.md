@@ -3,7 +3,7 @@ title: Revertir entorno sin instantánea de nube
 description: Este artículo muestra dos soluciones para revertir un entorno sin tener una instantánea de su entorno en Adobe Commerce en la infraestructura en la nube.
 exl-id: 834d13a7-3b1a-460c-9ed0-9d560105f436
 feature: Build, Cloud, Console
-source-git-commit: f3c976bd44dbc47bd5cc8076f1679d56910cfaf3
+source-git-commit: 5347e8714ef1374440f5d246100a0221e4b189fc
 workflow-type: tm+mt
 source-wordcount: '800'
 ht-degree: 0%
@@ -44,13 +44,13 @@ Lea los pasos detallados a continuación:
 
 Es necesario deshabilitar la administración de configuración para que no aplique automáticamente las opciones de configuración anteriores durante la implementación.
 
-Para deshabilitar la administración de configuración, asegúrese de que `/app/etc/` El directorio no contiene el `config.php` (para Adobe Commerce 2.2.x) o `config.local.php` (para Adobe Commerce 2.1.x).
+Para deshabilitar la administración de configuración, asegúrese de que `/app/etc/` El directorio no contiene el `config.php` (para Adobe Commerce 2.4.x) o `config.local.php` (para Adobe Commerce 2.1.x).
 
 Para quitar el archivo de configuración, siga estos pasos:
 
 1. [SSH a su entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Elimine el archivo de configuración:
-   * Para Adobe Commerce 2.2:
+   * Para Adobe Commerce 2.4:
 
    ```php
     rm app/etc/config.php
