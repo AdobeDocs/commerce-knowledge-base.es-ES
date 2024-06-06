@@ -3,9 +3,9 @@ title: Guía del usuario del Centro de ayuda de Adobe Commerce
 description: Obtenga información sobre cómo enviar un vale de soporte al Centro de ayuda de Adobe Commerce, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 86810427e8f902dc184b377257c8e86dd28f38f6
+source-git-commit: 751a315303be3d6435f4064cdd3fb28a0c811155
 workflow-type: tm+mt
-source-wordcount: '3992'
+source-wordcount: '3986'
 ht-degree: 0%
 
 ---
@@ -97,7 +97,16 @@ Para enviar un nuevo vale de soporte técnico utilizando la página de inicio de
 1. Rellene los campos.
 1. Clic **Enviar**.
 
-Usted **debe iniciar sesión** al Centro de ayuda con su cuenta de Magento para enviar un ticket de asistencia. Hasta que inicie sesión, [el **Enviar un ticket** no se mostrará el botón](#no-submit-link).
+Usted *debe tener* Abra una cuenta en https://account.adobe.com y https://account.magento.com y, a continuación, inicie sesión en el Centro de ayuda con su cuenta de Adobe Commerce para enviar un vale de asistencia. Hasta que inicie sesión, [el **Enviar un ticket** no se mostrará el botón](#no-submit-link).
+
+>[!NOTE]
+>
+>Si ya tiene una cuenta en https://account.magento.com pero no puede iniciar sesión, es posible que no se haya registrado para una cuenta en https://account.adobe.com, lo que es obligatorio a partir de agosto de 2022.
+>
+>Para resolver esto:
+>1. Cree una cuenta en https://account.adobe.com con la misma dirección de correo electrónico en su MAG ID.
+>1. Vaya a https://account.magento.com para vincular su Adobe ID con el ID de MAG.
+
 
 #### Página Cuenta de Magento {#submit-ticket-magento-account-page}
 
@@ -182,7 +191,7 @@ Si tiene problemas para iniciar sesión en su cuenta o cree que el acceso compar
 
 >[!NOTE]
 >
->No envíe un correo electrónico si puede enviar un ticket, sino que tiene problemas para acceder a su proyecto en la nube. Por favor, envíe el ticket para este problema a través de los canales habituales.
+>Si tiene algún problema para acceder a su proyecto en la nube, envíe el ticket de este problema a través de los canales habituales. No envíe un correo electrónico si puede enviar un ticket.
 
 ### Error &quot;Compruebe su dirección de correo electrónico&quot; en la página Cuenta de Magento {#verify-email-address}
 
@@ -192,13 +201,8 @@ No podrá enviar un ticket de asistencia si recibe la *Verifique su dirección d
 
 La solución es validar su dirección de correo electrónico:
 
-1. Haga clic en **Validar correo electrónico** situado debajo del campo Correo electrónico en la [Editar información de la cuenta](https://account.magento.com/customer/account/edit/) página similar a la de abajo.
-
-   ![Validate_Email_Solution](assets/Validate_Email_Solution.png){width="800"}
-
-1. Haciendo clic en **Validar correo electrónico** Este botón enviará un correo electrónico a la dirección de correo electrónico registrada para esta cuenta de Magento con un vínculo para validar la dirección de correo electrónico.
-1. Haga clic en el vínculo de validación de correo electrónico para validar el correo electrónico y resolver este problema.
-1. Si no recibe un correo electrónico con un vínculo de validación de correo electrónico, envíe un correo electrónico a [Problemas de inicio de sesión del Centro de ayuda](mailto:grp-magento-helpcenterloginissues@adobe.com) e indicar que no puede validar su dirección de correo electrónico.
+1. Inicie sesión en https://account.adobe.com y solicite una contraseña si es necesario.
+1. Verifique su cuenta de Adobe.
 
 >[!NOTE]
 >
