@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 45ab0d3a858239dc8a35ed81c3b0d2f7cda5c85b
+source-git-commit: ee1ba9c0bb07c260058f53696c88ced737899361
 workflow-type: tm+mt
-source-wordcount: '11031'
+source-wordcount: '11032'
 ht-degree: 0%
 
 ---
@@ -821,6 +821,7 @@ ht-degree: 0%
       * [Acceso a los datos de los clientes y privacidad de Adobe support](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
       * [API de UPS obsoletas](/help/announcements/adobe-commerce-announcements/ups-apis-deprecated.md)
       * [Programación de versiones 2024](/help/announcements/adobe-commerce-announcements/2024-release-schedule.md)
+      * [prueba](/help/announcements/adobe-commerce-announcements/test.md)
    * Centro de ayuda Noticias {#news}
       * [La Base de conocimiento de asistencia de Adobe Commerce comienza a aceptar contribuciones](/help/announcements/help-center-news/github-repo-for-external-contributions.md)
 * Solución de problemas {#troubleshooting}
