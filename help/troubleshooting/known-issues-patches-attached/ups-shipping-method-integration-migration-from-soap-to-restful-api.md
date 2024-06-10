@@ -5,14 +5,18 @@ description: Aplique un parche para hacer frente a la [!DNL UPS] migración de i
 feature: Shipping/Delivery
 role: Developer
 exl-id: 8ab5d4a8-0155-4b2c-ab67-d0bd2f949a07
-source-git-commit: 7785a37e033bc2bea5b6a1509c337289e7b871cb
+source-git-commit: 6694bb1e041e6285f5bd5a05a1c37b7062521f52
 workflow-type: tm+mt
-source-wordcount: '487'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
 
 # [!DNL UPS] migración de integración de método de envío desde [!DNL SOAP] hasta [!DNL RESTful API]
+
+>[!NOTE]
+>
+>Si ha cargado cualquiera de los tres parches de este artículo antes de que **6 de junio de 2024**: Si se enfrenta a este problema debido a la [!DNL Metric System/SI] medidas (kilogramos y centímetros) que no se están utilizando, debe volver a aplicar uno de estos parches nuevos y actualizados ahora publicados en este artículo para su versión 2.4.4+/2.4.5+/2.4.6+ de Adobe Commerce/Magento Open Source una vez más, porque de lo contrario no podrá seleccionar el [!DNL Metric System/SI] medidas de **kilogramos** y **centímetros** en el [!DNL UPS] métodos de envío en la **[!DNL Admin configuration]**. Estos nuevos parches son compatibles con los parches lanzados anteriormente. Este problema se solucionará de forma permanente en el ámbito de la próxima versión 2.4.7-p1 de Adobe Commerce prevista para **11 de junio de 2024**.
 
 >[!NOTE]
 >
@@ -39,9 +43,11 @@ Adobe Commerce en infraestructura en la nube y local, y Magento Open Source:
 * 2.4.6
 * 2.4.6-pX
 
-## Causa
+## Causas
 
 El [!DNL UPS] liberado como [actualización de seguridad para su [!DNL API]](https://developer.ups.com/oauth-developer-guide?loc=en_US&amp;sp_rid=NTA5MzQ1OTE2NjEyS0&amp;sp_mid=72989914).
+
+Si tiene Unión Europea (otros orígenes pueden experimentar el mismo problema) que Origen del envío, esto causará un error en el [!DNL UPS REST] solicitud: &quot;*Un envío no puede tener KGS/IN o LBS/CM u OZS/CM como unidad de medida.*&quot;
 
 ## Solución
 
@@ -55,15 +61,15 @@ Utilice los siguientes parches adjuntos, según la versión de Adobe Commerce/Ma
 
 ### Para las versiones 2.4.4, 2.4.4-pX:
 
-* [AC-9363_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip](assets/AC-9646_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip)
+* [AC-11984_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip](assets/AC-11984_UPS_Shipping_Method_Migration_REST_API_2.4.4x_COMPOSER.patch.zip)
 
 ### Para las versiones 2.4.5, 2.4.5-pX:
 
-* [AC-9358_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip](assets/AC-9647_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip)
+* [AC-11983_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip](assets/AC-11983_UPS_Shipping_Method_Migration_REST_API_2.4.5x_COMPOSER.patch.zip)
 
 ### Para las versiones 2.4.6, 2.4.6-pX:
 
-* [AC-9345_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip](assets/AC-9648_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip)
+* [AC-11916_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip](assets/AC-11916_UPS_Shipping_Method_Migration_REST_API_2.4.6x_COMPOSER.patch.zip)
 
 ## Cómo aplicar el parche
 
