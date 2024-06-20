@@ -1,19 +1,19 @@
 ---
 title: "ACSD-52041: El procesamiento de Page Builder no libera bloqueos"
-description: Aplique el parche ACSD-52041 para corregir el problema de Adobe Commerce en el que Page Builder se procesa durante 5 segundos sin liberar bloqueos.
+description: Aplique el parche ACSD-52041 para corregir el problema de Adobe Commerce en el que Page Builder se procesa durante cinco segundos sin liberar bloqueos.
 feature: Page Builder
 role: Admin, Developer
 exl-id: f2a1fd36-2098-46a7-aa42-3a5a0014adc9
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: fc5dc9fcf610cae6f8c0a334b4ef15029c462c66
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # ACSD-52041: El procesamiento de Page Builder no libera bloqueos
 
-El parche ACSD-52041 corrige el problema en el que Page Builder se procesa durante 5 segundos sin liberar bloqueos. Este parche está disponible cuando la variable [!DNL Quality Patches Tool (QPT)] 1.1.35 está instalado. El ID del parche es ACSD-52041. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
+El parche ACSD-52041 corrige el problema en el que Page Builder se procesa durante cinco segundos sin liberar bloqueos. Este parche está disponible cuando la variable [!DNL Quality Patches Tool (QPT)] 1.1.48 está instalado. El ID del parche es ACSD-52041-v2. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
@@ -23,7 +23,7 @@ El parche ACSD-52041 corrige el problema en el que Page Builder se procesa duran
 
 **Compatible con las versiones de Adobe Commerce:**
 
-* Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.6-p1
+* Adobe Commerce (todos los métodos de implementación) 2.4.4: 2.4.4-p8, 2.4.5: 2.4.5-p7, 2.4.6: 2.4.6-p6
 
 >[!NOTE]
 >
@@ -31,7 +31,7 @@ El parche ACSD-52041 corrige el problema en el que Page Builder se procesa duran
 
 ## Problema
 
-Page Builder se procesa durante 5 segundos sin liberar bloqueos.
+Page Builder se procesa durante cinco segundos sin liberar bloqueos.
 
 <u>Pasos a seguir</u>:
 
