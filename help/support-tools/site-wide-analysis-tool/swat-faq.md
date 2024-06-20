@@ -4,9 +4,9 @@ description: Obtenga información acerca de [!DNL Site-Wide Analysis Tool], una 
 exl-id: 7c843d55-9e2c-4b18-8859-0ebad0ae28cf
 feature: Best Practices, Saas, Support, Tools and External Services
 role: Admin
-source-git-commit: 4e327654279095f6523a7cbec77bd2dca57b2034
+source-git-commit: 580ad148cd4346868cd9892a1ae9a4d85f73edce
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -58,3 +58,7 @@ Todos los clientes, independientemente de [!DNL Site-Wide Analysis Tool] Health 
 ## ¿Cómo se entregan los informes?
 
 [!DNL Site-Wide Analysis Tool] los informes se entregan automáticamente a través del sistema de tickets de asistencia de Adobe Commerce mensualmente o trimestralmente. [!DNL Site-Wide Analysis Tool] los informes también se pueden generar manualmente desde el [!DNL Site-Wide Analysis Tool] Panel y guardado en el escritorio. Estos [!DNL Site-Wide Analysis Tool] los informes se pueden enviar por correo electrónico como archivos adjuntos.
+
+>[!NOTE]
+>
+>Después de aplicar una recomendación, la generación manual de un informe no actualiza las recomendaciones; puede tardar unos días en eliminarse del [!DNL Site-Wide Analysis Tool Dashboard].
