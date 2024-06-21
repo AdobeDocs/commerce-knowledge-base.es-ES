@@ -4,9 +4,9 @@ description: Si es cliente de Adobe Commerce en la infraestructura en la nube, p
 exl-id: c49b049b-efb8-412f-b27d-a89f8a758d85
 feature: Integration
 role: Admin
-source-git-commit: 43be85de953909253900d60488f76a20bac91793
+source-git-commit: fb26b71316e04de31fa6a895b87230bed5c1ca6a
 workflow-type: tm+mt
-source-wordcount: '568'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,12 @@ ht-degree: 0%
 # Solicitud de mejora del entorno de integración: Pro y Starter
 
 Si es cliente de Adobe Commerce en la infraestructura en la nube, planifica la arquitectura Pro y actualmente utiliza los entornos de integración de tamaño estándar, o si es cliente de Adobe Commerce en la infraestructura en la nube, planifica la arquitectura del plan inicial y actualmente utiliza el entorno de ensayo de tamaño estándar y desea obtener más potencia, puede solicitar una actualización a los entornos de integración mejorados, que proporcionan aproximadamente cuatro veces el rendimiento. Este artículo separa las instrucciones para los clientes de Pro de los clientes de Starter.
+
+>[!NOTE]
+>
+> Es posible que la actualización a la integración mejorada no solucione todos los problemas de rendimiento, ya que dependería del total de requisitos de recursos de la instalación, incluidas las integraciones o personalizaciones de terceros.
+>
+> También debe asegurarse de seguir las prácticas recomendadas para obtener el mejor rendimiento en el entorno de integración e incluso de que esa no sea una solución completa. Consulte la siguiente documentación para obtener instrucciones: [Arquitectura profesional](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment) y [Arquitectura de inicio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment) en la Guía de infraestructura de Commerce en la nube.
 
 ## Pro
 
