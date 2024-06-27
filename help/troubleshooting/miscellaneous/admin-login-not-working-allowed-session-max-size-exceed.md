@@ -2,9 +2,9 @@
 title: '[!DNL Admin] el inicio de sesión no funciona - se ha superado el tamaño máximo permitido de sesión'
 description: Solucione el problema cuando intente iniciar sesión en su [!DNL Admin] el panel y el formulario se actualizarán y no podrá iniciar sesión.
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '318'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,6 @@ Puede establecer como superior a *500000* en función del tamaño máximo existe
 
 ## Lectura relacionada
 
-* [Tamaño de sesión](/docs/commerce-admin/systems/security/security-session-management.html?lang=en#admin-sessions) en la Guía de sistemas de administración.
-* [Modo de funcionamiento](/docs/commerce-operations/configuration-guide/cli/set-mode.html) en la Guía de configuración.
-* [Conexiones seguras](/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) en la Guía de infraestructura de Commerce en la nube.
+* [Tamaño de sesión](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) en la Guía de sistemas de administración.
+* [Modo de funcionamiento](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) en la Guía de configuración.
+* [Conexiones seguras](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) en la Guía de infraestructura de Commerce en la nube.
