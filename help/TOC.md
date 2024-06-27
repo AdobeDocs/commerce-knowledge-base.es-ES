@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 449e37e140e7df13be8d59a61a33c6298cb65f53
+source-git-commit: 366e27875cd3a764d99d62997336c11adafcb623
 workflow-type: tm+mt
-source-wordcount: '11040'
+source-wordcount: '11052'
 ht-degree: 0%
 
 ---
@@ -1062,11 +1062,11 @@ ht-degree: 0%
       * [ejecutar configuración:static-content:problema de deploy_version.txt](/help/troubleshooting/miscellaneous/run-setup-static-content-deploy-deployed-version-txt-issue.md)
       * [Vuelva al formulario de inicio de sesión del administrador de Commerce con el error &quot;Su cuenta está temporalmente desactivada&quot;.](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
       * [Los Google Analytics se desactivan después de la implementación](/help/troubleshooting/miscellaneous/google-analytics-gets-disabled-after-deployment.md)
-      * [Solución de problemas de bloqueo de cuenta de Adobe Commerce Intelligence](/help/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.md)
+      * [Solución de problemas de bloqueo de cuenta Adobe Commerce Intelligence](/help/troubleshooting/miscellaneous/troubleshooting-mbi-account-lockout.md)
       * [Problemas conocidos que afectan a la instalación de xdebug](/help/troubleshooting/miscellaneous/known-issues-that-affect-installation.md)
       * [No se puede iniciar sesión en la asistencia de Adobe Commerce o en la cuenta de la nube](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
       * [Dependencias de componentes en conflicto](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md)
-      * [Políticas de Adobe Commerce Intelligence Service](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
+      * [Políticas de servicio de Adobe Commerce Intelligence](/help/troubleshooting/miscellaneous/mbi-service-policies.md)
       * [Nuevos entornos colocados en producción cuando se insertan desde Git](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [Error tras iniciar sesión en el administrador de Commerce](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
       * [El sistema Magento Order Management (OMS) para Adobe Commerce agota el tiempo de espera](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
@@ -1113,6 +1113,7 @@ ht-degree: 0%
       * [Error de implementación: no hay comandos definidos en el error de área de nombres &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [La implementación falla con las claves de acceso correctas en env:COMPOSER_AUTH o auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Problemas conocidos {#known-issues-patches-attached}
+      * [Actualización de seguridad disponible para Adobe Commerce - [!DNL APSB24-40] Revisado para incluir parche aislado para [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
       * [[!DNL UPS] migración de integración de método de envío desde [!DNL SOAP] hasta [!DNL RESTful API]](/help/troubleshooting/known-issues-patches-attached/ups-shipping-method-integration-migration-from-soap-to-restful-api.md)
       * [[!DNL USPS] Revisión de soporte del método de envío Ground Advantage para AC-9182](/help/troubleshooting/known-issues-patches-attached/usps-ground-advantage-shipping-method-support-hotfix-for-ac-9182.md)
       * [Adobe Commerce 2.4.3-p2: revisión de seguridad 2.4.5 para CVE-2022-35698](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-3-p2-2-4-5-security-hotfix-for-cve-2022-35698.md)
@@ -1165,7 +1166,7 @@ ht-degree: 0%
       * [Error de Adobe Commerce 2.4.6 al realizar la solicitud desde el panel de administración](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [[!UICONTROL salesRule] problemas con las etiquetas al actualizar desde versiones &lt; 2.4.5](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
       * [[!DNL JQuery UI] vulnerabilidad de seguridad [!DNL CVE-2022-31160] corrección para las versiones 2.4.4, 2.4.5 y 2.4.6](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
-      * [[!DNL FedEx] migración de la integración del método de envío de SOAP a la API RESTful](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
+      * [[!DNL FedEx] SOAP migración de la integración del método de envío de la API de a RESTful](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
    * Elasticsearch {#elasticsearch}
       * [Volver a caer en [!DNL Elasticsearch7] cuando el motor de búsqueda se establece en [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [problemas del Elasticsearch tras la actualización a Adobe Commerce cloud Infrastructure 2.3.1+](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
@@ -1187,7 +1188,7 @@ ht-degree: 0%
    * [Cómo obtener y aplicar parches de seguridad](/help/how-to/general/how-to-obtain-and-apply-security-patches.md)
    * [Lista de comprobación para configurar una nueva [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
    * [Restaurar una instantánea de base de datos desde Ensayo o Producción](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
-   * [Adobe Commerce Intelligence Essentials: actualizar método de pago o cancelar suscripción](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
+   * [Adobe Commerce Intelligence Essentials: actualizar el método de pago o cancelar la suscripción](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [Adobe commerce Vídeo de formación de inteligencia: Report Builder de SQL](/help/how-to/general/mbi-training-video-sql-report-builder.md)
    * [Establecer el TTL de la caché para imágenes y otro contenido estático](/help/how-to/general/set-cache-ttl-for-images-and-other-static-content.md)
    * [Proporcionar descuento solo para la primera compra (sin cupones)](/help/how-to/general/provide-discount-for-first-purchase-only-no-coupons.md)
@@ -1238,7 +1239,7 @@ ht-degree: 0%
    * [MBI: Creación y edición de columnas calculadas avanzadas](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
    * [Comprobar el límite de espacio en disco para Adobe Commerce en la infraestructura en la nube](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md)
    * [Certificados SSL (TLS) para Adobe Commerce en infraestructura en la nube](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
-   * [No se puede acceder a la última versión beta](/help/how-to/general/cannot-access-the-latest-beta-version.md)
+   * [No se puede acceder a la última versión de Beta](/help/how-to/general/cannot-access-the-latest-beta-version.md)
    * [Cambiar el modo de aplicación](/help/how-to/general/switch-the-magento-mode.md)
    * [Cómo iniciar sesión en la cuenta de Fastly proporcionada con Adobe Commerce en la infraestructura en la nube](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Mostrar el número de informe de errores de Adobe Commerce en lugar del error Fastly 503](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
