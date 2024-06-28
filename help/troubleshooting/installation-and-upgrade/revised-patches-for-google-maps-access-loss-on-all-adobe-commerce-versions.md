@@ -3,9 +3,9 @@ title: Revisiones revisadas para la pérdida de acceso a Google Maps en todas la
 description: 'Este artículo proporciona una corrección para los comerciantes de Adobe Commerce que no son compatibles con ningún [!DNL Google Maps] versiones a partir de 3.54+.'
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 49bc0b643c10c6597d6a905935c36251e92b18f9
+source-git-commit: 575fce2f678321ff184779895d43be90828c2ce4
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -23,17 +23,17 @@ Este artículo proporciona una corrección para los comerciantes de Adobe Commer
 
 Activado *14 de junio de 2024* [!DNL Google Maps] version *3,53* llegó al final de su vida útil y fue desactivado por [!DNL Google].
 
-Para obtener más información, consulte [[!DNL Google Maps] Plataforma: Mapas [API de JavaScript] (https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
+[Para obtener más información, consulte ([!DNL Google Maps Platform: Maps JavaScript API])] (https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
 
 Adobe Commerce no era compatible con ningún [!DNL  Google Maps] versiones a partir de 3.54+.
 
 La incompatibilidad se debe a una versión heredada `prototype.js script`, que se cargó mediante `lib/web/legacy-build.min.js` reemplaza la función Array.from nativa, que genera un conflicto directo con [!DNL  Google Maps] API.
 
-Consulte [[!DNL Google Maps: JS Best Practices]] (https://developers.google.com/maps/documentation/javascript/best-practices).
+[Consulte ([!DNL Google Maps: JS Best Practices])] (https://developers.google.com/maps/documentation/javascript/best-practices).
 
 <u>Pasos a seguir</u> :
 
-1. Ir a **[!UICONTROL Content]** > **[!UICONTROL Pages]** > y haga clic en un **[!UICONTROL New Page]**.
+1. Haga clic en **[!UICONTROL Content]** > **[!UICONTROL Pages]** > y seleccione un **[!UICONTROL New Page]**.
 1. Expanda el bloque de contenido y haga clic en el icono Editar **[!DNL PageBuilder]** botón.
 1. Arrastre el bloque de contenido de mapa desde el **[!DNL PageBuilder]** de menú a página.
 
