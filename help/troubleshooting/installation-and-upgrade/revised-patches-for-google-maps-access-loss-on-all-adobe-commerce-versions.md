@@ -3,7 +3,7 @@ title: Revisiones revisadas para la pérdida de acceso a Google Maps en todas la
 description: 'Este artículo proporciona una corrección para los comerciantes de Adobe Commerce que no son compatibles con ningún [!DNL Google Maps] versiones a partir de 3.54+.'
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 98581cc9c251976339406f80764715096321126b
+source-git-commit: cf235c2fdd7a36d7e3b126de35c51e6711cd3845
 workflow-type: tm+mt
 source-wordcount: '313'
 ht-degree: 0%
@@ -47,7 +47,7 @@ Al soltar el bloque de contenido de mapa de **[!DNL PageBuilder]** a la página,
 
 ## Solución
 
-* Todos los comerciantes de cualquier versión de parche 2.4.4, 2.4.5, 2.4.6 o 2.2.7 deben aplicar estos parches correspondientes a su versión.
+* Todos los comerciantes de cualquier versión de parche 2.4.4, 2.4.5, 2.4.6 o 2.4.7 deben aplicar estos parches correspondientes a su versión.
 
 ## Parche
 
