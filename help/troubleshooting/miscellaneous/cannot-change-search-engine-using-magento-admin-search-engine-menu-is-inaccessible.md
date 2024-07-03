@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución para cambiar el motor de b
 exl-id: 5b0f728c-6a8d-446d-9553-5abc3d01e516
 feature: Admin Workspace, Search, Variables
 role: Developer
-source-git-commit: e9f009cf4e072dcd9784693c10a4c16746af3cc5
+source-git-commit: 0ea7bbef7fec556f9a90151be9cf1077f5cfac45
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '833'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,14 @@ En este artículo:
 
 ## Cambiar el motor de búsqueda mediante el administrador (pasos)
 
-1. Inicie sesión en Admin como administrador.
-1. En la barra lateral izquierda de Administración, haga clic en **Tiendas**. A continuación, en **Configuración**, elija **Configuración**.
-1. En el panel de la izquierda debajo de **Catálogo,** escoger **Catálogo**.
-1. Expanda el **Búsqueda en catálogo** sección.    ![catalog_menu.png](assets/catalog_menu.png)
-1. Vaya a la **Motor de búsqueda** y eliminar la selección de la **Usar valor del sistema** casilla de verificación
-1. Haga clic en **Motor de búsqueda** y seleccione una de las opciones disponibles.    ![search_engine_menu.png](assets/search_engine_menu.png)
-1. Clic **Guardar configuración** en la esquina superior derecha de la página.
+1. Inicie sesión en **[!UICONTROL Admin]** como administrador.
+1. En el lado izquierdo del **[!UICONTROL Admin]** barra lateral, haga clic en **[!UICONTROL Stores]**.
+1. En **[!UICONTROL Settings]**, elija **[!UICONTROL Configuration]**.
+1. Vaya al panel de la izquierda debajo de **[!UICONTROL Catalog],** y elija **[!UICONTROL Catalog]**.
+1. Expanda el **[!UICONTROL Catalog Search]** sección.    ![catalog_menu.png](assets/catalog_menu.png)
+1. Vaya a la **[!UICONTROL Search Engine]** y eliminar la selección de la **[!UICONTROL Use system value]** casilla de verificación
+1. Haga clic en **[!UICONTROL Search Engine]** y seleccione una de las opciones disponibles como se muestra a continuación.    ![search_engine_menu.png](assets/search_engine_menu.png)
+1. Haga clic en **[!UICONTROL Save Config]** en la esquina superior derecha de la página.
 
 ## Problemas con Adobe Commerce local
 
@@ -65,10 +66,11 @@ El motor de búsqueda es una configuración global establecida en el nivel de ap
 
 ### Solución: establezca la vista de la tienda en la configuración predeterminada
 
-1. Inicie sesión en Admin como administrador.
-1. En la barra lateral izquierda de Administración, haga clic en **Tiendas**. A continuación, en **Configuración**, elija **Configuración**.
-1. En la esquina superior izquierda, haga clic **Vista de tienda** y elija *Configuración predeterminada*.
-1. Clic **OK** en el cuadro de diálogo de confirmación para aprobar el cambio de vista de la tienda.
+1. Inicie sesión en **[!UICONTROL Admin]** como administrador.
+1. En el lado izquierdo del **[!UICONTROL Admin]** barra lateral, haga clic en **[!UICONTROL Stores]**.
+1. Vaya a **[!UICONTROL Settings]** y elija **[!UICONTROL Configuration]**.
+1. En la esquina superior izquierda, haga clic en **[!UICONTROL Store View]** y elija **[!UICONTROL *Configuración predeterminada *]**.
+1. Haga clic en **[!UICONTROL OK]** en el cuadro de diálogo de confirmación para aprobar los cambios de la vista de tienda.
 
 ![change_store_view.png](assets/change_store_view.png)
 
