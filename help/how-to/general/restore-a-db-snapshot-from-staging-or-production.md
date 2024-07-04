@@ -2,9 +2,9 @@
 title: Restaurar una instantánea de base de datos desde Ensayo o Producción
 description: Este artículo muestra cómo restaurar una instantánea de la base de datos desde Ensayo o Producción en Adobe Commerce en la infraestructura en la nube.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: ad0ec2e6dc1d3e1023ad4ecda595b5c942716407
+source-git-commit: b99d78845128ca3d995cbbb5df0799449ca954e3
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '354'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Elija el más apropiado para su caso:
 
 Estos son los pasos:
 
-1. Uso de [!DNL sFTP], vaya a la ubicación donde se encuentra la base de datos [!DNL snapshot] se ha colocado, normalmente en el primer servidor/nodo de su [!DNL cluster] (Por ejemplo: `/mnt/recovery-<recovery_id>`). NOTA: Si el proyecto se basa en Azure, es decir, la dirección URL del proyecto es similar a https://us-a1.magento.cloud/projects/&lt;cluster_id>, la instantánea se colocará en `/mnt/shared/<cluster ID>/all-databases.sql.gz` o `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` en su lugar.
+1. Uso de [!DNL SFTP], vaya a la ubicación donde se encuentra la base de datos [!DNL snapshot] se ha colocado, normalmente en el primer servidor/nodo de su [!DNL cluster] (Por ejemplo: `/mnt/recovery-<recovery_id>`). NOTA: Si el proyecto se basa en Azure, es decir, la dirección URL del proyecto es similar a https://us-a1.magento.cloud/projects/&lt;cluster_id>, la instantánea se colocará en `/mnt/shared/<cluster ID>/all-databases.sql.gz` o `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz` en su lugar.
 
    NOTA: El formato de la instantánea de los proyectos de Azure será diferente y contendrá otras bases de datos que no se pueden importar. Antes de importar la instantánea, deberá realizar pasos adicionales para extraer la base de datos adecuada antes de importar el volcado.
 
@@ -134,6 +134,12 @@ Estos son los pasos:
 
    ```sql
    zcat <cluster ID_stg>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
+   ```
+
+   (Para importar una copia de seguridad de base de datos desde cualquier otro entorno)
+
+   ```sql
+   zcat <database-backup-name>.sql.gz | sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | mysql -h 127.0.0.1 -p -u <db-user> <db-name>
    ```
 
    (Para importar una copia de seguridad de base de datos desde cualquier otro entorno)
