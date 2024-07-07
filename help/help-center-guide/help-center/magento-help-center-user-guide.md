@@ -3,7 +3,7 @@ title: Guía del usuario del Centro de ayuda de Adobe Commerce
 description: Obtenga información sobre cómo enviar un vale de soporte al Centro de ayuda de Adobe Commerce, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: bdef7c26141356727a225c0ea0a1f9a064d213db
+source-git-commit: 3e773131f6f44436fc533f74474efbe8597abb5f
 workflow-type: tm+mt
 source-wordcount: '4988'
 ht-degree: 0%
@@ -112,7 +112,7 @@ Una vez que haya iniciado sesión correctamente, puede enviar un caso de asisten
 
 Para enviar un nuevo caso de asistencia técnica mediante la página de inicio de Adobe Experience League, siga estos pasos:
 
->
+>[!NOTE]
 >
 >1. Si pertenece a varias organizaciones, debe seleccionar la adecuada en la lista desplegable.
 >1. Para presentar un caso, debe tener derecho a recibir asistencia técnica. Si no lo está, aparecerá una barra en la parte superior de la página que le informará de que no es un usuario con derecho de asistencia en la organización.
@@ -276,6 +276,7 @@ Usted *debe tener* Abra una cuenta en https://account.adobe.com y https://accoun
 >Si ya tiene una cuenta en https://account.magento.com pero no puede iniciar sesión, es posible que no se haya registrado para una cuenta en https://account.adobe.com, lo que es obligatorio a partir de agosto de 2022.
 >
 >Para resolver esto:
+>
 >1. Cree una cuenta en https://account.adobe.com con la misma dirección de correo electrónico en su MAG ID.
 >1. Vaya a https://account.magento.com para vincular su Adobe ID con el ID de MAG.
 
