@@ -3,9 +3,9 @@ title: Solicitudes de zona protegida de infraestructura en la nube de Partner Ad
 description: Este artículo de preguntas frecuentes contiene vínculos a recursos útiles para Adobe Commerce sobre solicitudes de zonas protegidas de infraestructura en la nube.
 exl-id: 3ec1cbc0-1a71-4753-8fc5-51c5f1928f12
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 8f0f7412e75e07a22e66236b88c095c698dbf23e
 workflow-type: tm+mt
-source-wordcount: '155'
+source-wordcount: '146'
 ht-degree: 0%
 
 ---
@@ -29,4 +29,4 @@ Consulte la [Base de conocimiento de asistencia de Adobe Commerce](https://suppo
 ## ¿Dónde/cómo envían una solicitud de asistencia los socios de soluciones o los socios tecnológicos? {#wherehow-do-solution-partners-or-tech-partners-submit-a-support-request}
 
 * Los socios de soluciones pueden enviar un ticket para los problemas relacionados con la zona protegida enviando un correo electrónico a [SPPHelp@adobe.com](mailto:SPPHelp@adobe.com) y se reenviará al equipo de asistencia técnica del socio.
-* Los socios técnicos pueden enviar una solicitud de asistencia en el [Centro de ayuda para Commerce Marketplace](https://marketplacesupport.magento.com/hc/en-us/requests) página.
+* Los socios tecnológicos pueden [Póngase en contacto con Asistencia de Marketplace](mailto:commercemarketplacesupport@adobe.com).
