@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-29400: pedidos duplicados realizados con el pago y envío de PayPal Express
 
-El parche de MDVA-29400 soluciona el problema en el que se crean pedidos duplicados cuando los clientes realizan pedidos con el Pago y envío de PayPal Express. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.4 está instalado. El ID del parche es MDVA-29400. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.1.
+El parche de MDVA-29400 soluciona el problema en el que se crean pedidos duplicados cuando los clientes realizan pedidos con el Pago y envío de PayPal Express. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.4. El ID del parche es MDVA-29400. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.1.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.4
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.0 - 2.3.7-p1, 2.4.0 - 2.4.0-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -44,7 +44,7 @@ Pago y envío por PayPal Express activado y configurado.
 1. Se redirigirá a paypal/express/review/ page.
 1. Realice el pedido. Se le redirigirá a la página de éxito.
 1. Vuelve a PayPal/express/review/Page.
-1. Haga clic en **Realizar pedido** botón.
+1. Haz clic en el botón **Realizar pedido**.
 
 <u>Resultados esperados</u>:
 
@@ -52,7 +52,7 @@ Solo se crea un pedido.
 
 <u>Resultados reales</u>:
 
-Se obtiene el siguiente error: *El token de pago y envío de PayPal Express no existe*, pero el segundo pedido se ha realizado correctamente.
+Recibe el siguiente error: *El token de pago y envío de PayPal Express no existe*, pero el segundo pedido se realizó correctamente.
 
 ## Aplicar el parche
 
@@ -65,7 +65,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) sección.
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

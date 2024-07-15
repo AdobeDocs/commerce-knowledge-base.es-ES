@@ -37,10 +37,10 @@ Para comprobar la configuración actual y la memoria utilizada, ejecute el sigui
 redis-cli -p REDIS_PORT -h REDIS_HOST info | egrep --color "(role|used_memory_peak|maxmemory|evicted_keys|uptime_in_days)"
 ```
 
-El *REDIS\_PORT* y *REDIS\_HOST* Las variables de se pueden recuperar de `app/etc/env.php`.
+Las variables *REDIS\_PORT* y *REDIS\_HOST* se pueden recuperar de `app/etc/env.php`.
 
-Si el resultado de ejecutar la consulta anterior muestra que el porcentaje de memoria libre es inferior al 40 %, [enviar un ticket al servicio de asistencia de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando un aumento de la `maxmemory` en el servidor Redis. Si el valor de claves desalojadas no es &quot;0&quot; o el tiempo de actividad de Redis en días es igual a 0 (lo que indica que Redis se ha bloqueado hoy), también debe [enviar un ticket al servicio de asistencia de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando una investigación y una solución para este problema.
+Si el resultado de ejecutar la consulta anterior muestra que el porcentaje de memoria libre es inferior al 40%, [envíe un ticket al servicio de soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando un aumento de la configuración de `maxmemory` en el servidor Redis. Si el valor de las claves desalojadas no es &quot;0&quot; o el tiempo de activación de Redis en días es igual a 0 (lo que indica que Redis se ha bloqueado hoy), también debe [enviar un ticket al servicio de asistencia de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando una investigación y una corrección para este problema.
 
 ## Lectura relacionada
 
-Para obtener más información sobre la memoria Redis, consulte [Optimización de memoria de Redis](https://redis.io/topics/memory-optimization).
+Para obtener más información sobre la memoria Redis, consulte [Optimización de memoria Redis](https://redis.io/topics/memory-optimization).

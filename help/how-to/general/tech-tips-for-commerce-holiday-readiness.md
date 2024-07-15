@@ -18,8 +18,8 @@ El PDF adjunto ofrece sugerencias sobre cómo preparar su infraestructura para u
 
 ## Productos y versiones afectados
 
-* Adobe Commerce en la infraestructura en la nube, todo [versiones compatibles](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
+* Adobe Commerce en la infraestructura en la nube, todas [versiones compatibles](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf).
 
 ## Descargue el PDF
 
-Clic [Sugerencias técnicas para la preparación para las fiestas de Commerce.pdf](assets/tech-tips-for-commerce-holiday-readiness.pdf) para descargar el pdf.
+Haga clic en [Sugerencias técnicas para la preparación para las fiestas de Commerce.pdf](assets/tech-tips-for-commerce-holiday-readiness.pdf) para descargar el pdf.

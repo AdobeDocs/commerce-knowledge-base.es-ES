@@ -48,7 +48,7 @@ Para las versiones locales de Adobe Commerce y Magento Open Source 2.x,
    patch -p1 -R %patch_name%.composer.patch
    ```
 
-   (Si el comando anterior no funciona, intente utilizar `-p2` en lugar de `-p1`)
+   (Si el comando anterior no funciona, intente usar `-p2` en lugar de `-p1`)
 
 1. Para que se reflejen los cambios, actualice la caché en el Administrador en **Sistema** > **Administración de caché**.
 
@@ -56,7 +56,7 @@ Para las versiones locales de Adobe Commerce y Magento Open Source 2.x,
 
 Para Adobe Commerce en la infraestructura en la nube, todas las versiones,
 
-1. Retire el `%patch_name%.composer.patch` archivo(s) de `m2-hotfixes` directorio.
+1. Quitar los `%patch_name%.composer.patch` archivos del directorio `m2-hotfixes`.
 1. Confirme e inserte los cambios de código:
 
    ```

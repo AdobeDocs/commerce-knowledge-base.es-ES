@@ -13,7 +13,7 @@ ht-degree: 0%
 
 La Guía de asistencia al cliente de Adobe Commerce explica las ofertas de asistencia al cliente y cómo utilizarlas. Esto incluye prácticas recomendadas para la relación de asistencia, la recopilación de información necesaria para el diagnóstico, la prioridad de asistencia al cliente, el envío de una solicitud de asistencia y los vínculos a recursos. Se puede acceder a esta guía desde la sección de descargas de la página de cuenta de Magento. Para acceder a:
 
-1. Ir al Magento [página de inicio de sesión de cuenta.](https://account.magento.com/customer/account/login)
+1. Vaya a la página de inicio de sesión de la cuenta de Magento [.](https://account.magento.com/customer/account/login)
 1. Inicie sesión con su nombre de usuario y contraseña de Magento.
 1. En la barra de navegación izquierda, haga clic en **Descargas**.
-1. En el panel derecho, haga clic en **Comerciantes: Recursos para la introducción**.  ![access_magento_commerce_customer_support_guide.png](assets/access_magento_commerce_customer_support_guide.png)
+1. En el panel derecho, haga clic en **Comerciantes - Recursos para la introducción**.  ![guía_de_soporte_cliente_access_magento_commerce.png](assets/access_magento_commerce_customer_support_guide.png)

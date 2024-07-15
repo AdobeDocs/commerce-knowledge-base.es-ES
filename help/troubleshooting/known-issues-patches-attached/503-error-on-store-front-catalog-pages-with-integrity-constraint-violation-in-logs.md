@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Este artículo proporciona un parche como solución alternativa, pero el problema se solucionó de forma permanente en Adobe Commerce en la versión 2.3.3 de la infraestructura en la nube y se recomienda actualizar a la versión 2.3.3. Siga los pasos de [Actualizar la versión de Adobe Commerce](https://devdocs.magento.com/cloud/project/project-upgrade.html) en nuestra documentación para desarrolladores.
 
-Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.0 relacionado con las páginas del catálogo de tienda que no son accesibles, con un mensaje de error similar al siguiente en el registro: *Infracción de restricción de integridad: 1062 Entrada duplicada &#39;%entry%&#39; para la clave &#39;PRIMARY&#39;, consulta: INSERT INTO \`search\_tmp\_%number%*.
+Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.0 relacionado con las páginas del catálogo de tienda que no son accesibles, con un mensaje de error similar al siguiente en el registro: *Infracción de restricción de integridad: 1062 Entrada duplicada &#39;%entry%&#39; para la clave &#39;PRIMARY&#39;, la consulta era: INSERT INTO \`search\_tmp\_%number%*.
 
 ## Problema
 
@@ -60,12 +60,12 @@ Los parches se han creado para las siguientes ediciones y versiones:
 * Adobe Commerce en la infraestructura en la nube 2.2.0 (`MDVA-9590_EE_2.2.0_COMPOSER_v2.patch`)
 * Adobe Commerce en la infraestructura en la nube 2.2.4 (`MDVA-13203_EE_2.2.4_V1_COMPOSER.patch`)
 
-El `MDVA-9590_EE_2.2.0_COMPOSER_v2` Este parche también es compatible (pero es posible que no resuelva el problema) con las siguientes versiones y ediciones de Adobe Commerce:
+El parche `MDVA-9590_EE_2.2.0_COMPOSER_v2` también es compatible (pero es posible que no resuelva el problema) con las siguientes versiones y ediciones de Adobe Commerce:
 
 * Adobe Commerce en infraestructuras en la nube 2.0.X, 2.1.X, 2.2.X y 2.3.0 - 2.3.3
 * Adobe Commerce local 2.0.X, 2.1.X, 2.2.X y 2.3.0 - 2.3.3
 
-El `MDVA-13203_EE_2.2.4_V1_COMPOSER` Este parche también es compatible (pero es posible que no resuelva el problema) con las siguientes versiones y ediciones de Adobe Commerce:
+El parche `MDVA-13203_EE_2.2.4_V1_COMPOSER` también es compatible (pero es posible que no resuelva el problema) con las siguientes versiones y ediciones de Adobe Commerce:
 
 * Adobe Commerce en infraestructuras en la nube 2.0.X, 2.1.X, 2.2.X y 2.3.0 - 2.3.3
 * Adobe Commerce local 2.0.X, 2.1.X, 2.2.X y 2.3.0 - 2.3.3
@@ -76,8 +76,8 @@ Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor pro
 
 ## Vínculos útiles
 
-* [Ubicación de los archivos de registro para Adobe Commerce en la infraestructura de la nube](/help/how-to/general/log-locations-directories-for-starter-plan.md) en nuestra base de conocimiento de soporte.
-* [Ubicación de los archivos de registro para Adobe Commerce en la infraestructura de la nube Arquitectura del plan Pro](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) en nuestra base de conocimiento de soporte.
+* [Ubicación de los archivos de registro para Adobe Commerce en la infraestructura de la nube con la arquitectura del plan inicial](/help/how-to/general/log-locations-directories-for-starter-plan.md) en nuestra base de conocimiento de asistencia.
+* [Ubicación de los archivos de registro para Adobe Commerce en la infraestructura en la nube con arquitectura de plan Pro](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) en nuestra base de conocimiento de asistencia.
 * [Ubicación de los archivos de registro para Adobe Commerce](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) en nuestra documentación para desarrolladores.
 
 ## Archivos adjuntos

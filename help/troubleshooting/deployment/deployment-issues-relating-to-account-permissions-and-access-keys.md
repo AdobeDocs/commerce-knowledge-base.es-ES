@@ -28,7 +28,7 @@ La licencia de Cloud está asociada al contacto A (dirección de correo electró
 <u>Pasos a seguir</u>:
 
 1. Contacto A creó las claves de acceso de Adobe Commerce en su cuenta (clave X) y las instaló en la nube.
-1. Contacto B (dirección de correo electrónico: *<u>second@e.mail</u>*) adquirió una extensión con esta cuenta y creó las claves de acceso para instalar la extensión (clave Y).
+1. El contacto B (dirección de correo electrónico: *<u>second@e.mail</u>*) compró una extensión con su cuenta y creó las claves de acceso para instalar la extensión (clave Y).
 1. El contacto A abandonó la empresa y la licencia (propiedad) se transfirió al contacto B.
 1. El integrador de sistemas intenta instalar la extensión en el entorno de la nube con la clave X.
 
@@ -50,18 +50,18 @@ Si se produce un error en una implementación después de realizar un cambio en 
 
 ### Cómo deshabilitar la clave de acceso
 
-Si no tiene acceso a la [Commerce Marketplace](https://marketplace.magento.com/) cuenta asociada a la clave antigua, [Póngase en contacto con Soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para deshabilitar la clave.
+Si no tiene acceso a la cuenta de [Commerce Marketplace](https://marketplace.magento.com/) asociada con la clave antigua, [póngase en contacto con el Soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para deshabilitar la clave.
 
 Si tiene acceso a la cuenta de Marketplace asociada con la clave antigua, realice los siguientes pasos para deshabilitar la clave:
 
-1. Inicie sesión en [Commerce Marketplace](https://marketplace.magento.com/) usando las credenciales de la cuenta antigua.
+1. Inicie sesión en [Commerce Marketplace](https://marketplace.magento.com/) con las credenciales de la cuenta anterior.
 1. Haga clic en el nombre de la cuenta en la parte superior derecha de la página y seleccione **Mi perfil**.
-1. Clic **Claves de acceso** en la pestaña Marketplace.
+1. Haga clic en **Claves de acceso** en la ficha Marketplace.
 
    ![magento_products_access_keys_2.4.1.png](/help/troubleshooting/miscellaneous/assets/magento_products_access_keys_2.4.1.png)
 
-1. Clic **Deshabilitar** junto a la clave de acceso.
+1. Haga clic en **Deshabilitar** junto a la clave de acceso.
 
 ## Lectura relacionada
 
-* [Obtener las claves de autenticación](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/connect-auth.html) en nuestra documentación para desarrolladores.
+* [Obtenga sus claves de autenticación](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/connect-auth.html) en nuestra documentación para desarrolladores.

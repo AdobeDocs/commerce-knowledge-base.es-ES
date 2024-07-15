@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # ACSD-54264: Aparece un error cuando el cliente intenta pagar con un presupuesto negociable
 
-El parche ACSD-54264 corrige el problema en el que se mostraba un mensaje de error *No se puede actualizar el atributo solicitado. ID de fila: store_id* aparece cuando un cliente intenta cerrar la compra con una oferta negociable de otra vista de tienda. Este parche está disponible cuando la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.42 está instalado. El ID del parche es ACSD-54264. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
+El parche ACSD-54264 corrige el problema donde un mensaje de error *No se puede actualizar el atributo solicitado. Id. de fila: store_id* aparece cuando un cliente intenta realizar la retirada con una oferta negociable de otra vista de tienda. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.42. El ID del parche es ACSD-54264. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.6-p2
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.0 - 2.4.6-p3
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-Un mensaje de error *No se puede actualizar el atributo solicitado. ID de fila: store_id* aparece cuando un cliente intenta cerrar la compra con una oferta negociable de otra vista de tienda.
+Mensaje de error *No se puede actualizar el atributo solicitado. Id. de fila: store_id* aparece cuando un cliente intenta realizar la retirada con una oferta negociable de otra vista de tienda.
 
 <u>Requisitos previos</u>:
 
@@ -40,9 +40,9 @@ Los módulos B2B de Adobe Commerce están instalados y habilitados.
 <u>Pasos a seguir</u>:
 
 1. Cree una vista de tienda adicional para el sitio web predeterminado.
-1. Habilite la *[!UICONTROL B2B Quote]* en la configuración de.
+1. Habilite *[!UICONTROL B2B Quote]* en la configuración.
 1. Inicie sesión como cliente de la empresa en una de las vistas de la tienda.
-1. Añadir un producto a *[!UICONTROL Shopping Cart]*.
+1. Agregar un producto a *[!UICONTROL Shopping Cart]*.
 1. Envíe el presupuesto para su revisión.
 1. Como usuario administrador, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Quotes]** y envíe el presupuesto aprobado.
 1. Como cliente de la compañía, cambie la vista de la tienda a otra vista de la tienda.
@@ -66,14 +66,14 @@ El cliente realiza un pedido con esta oferta.
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en el [!DNL Quality Patches Tool] guía.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce sobre infraestructura en la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en el [!DNL Quality Patches Tool] guía.
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

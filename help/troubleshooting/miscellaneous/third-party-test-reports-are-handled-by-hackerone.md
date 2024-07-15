@@ -1,5 +1,5 @@
 ---
-title: Las vulnerabilidades encontradas por los análisis de seguridad de terceros deben ir a [!DNL HackerOne]
+title: Las vulnerabilidades encontradas por los análisis de seguridad de terceros deben ir a  [!DNL HackerOne]
 description: Este artículo proporciona una solución para abordar las vulnerabilidades encontradas por los análisis de seguridad de terceros.
 feature: Security
 role: Developer, Admin
@@ -25,4 +25,4 @@ El comerciante realizó una prueba PEN a través de una agencia de seguridad ind
 
 ## Soluciones
 
-Las vulnerabilidades encontradas por los análisis de seguridad de terceros deben enviarse a [!DNL HackerOne] sitio web. Adobe Commerce no tiene un punto de contacto directo en [!DNL HackerOne], por lo que debe ponerse directamente en contacto con [!DNL HackerOne]. El Adobe solo gestiona el informe MST (Herramienta de análisis de seguridad de Magento).
+Las vulnerabilidades encontradas por los análisis de seguridad de terceros deben enviarse al sitio web [!DNL HackerOne]. Adobe Commerce no tiene un punto de contacto directo en [!DNL HackerOne], por lo que debería ponerse en contacto directamente con [!DNL HackerOne]. El Adobe solo gestiona el informe MST (Herramienta de análisis de seguridad de Magento).

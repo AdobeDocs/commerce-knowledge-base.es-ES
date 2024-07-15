@@ -12,11 +12,11 @@ ht-degree: 0%
 
 # Cambiar propietario de cuenta para New Relic en la nube
 
-Para su proyecto de infraestructura de Adobe Commerce en la nube, puede cambiar el propietario de la cuenta de New Relic en la página de la interfaz de usuario de New Relic. Para ver los pasos detallados, consulte [Cambio del propietario de la cuenta](https://docs.newrelic.com/docs/accounts/accounts/roles-permissions/change-account-owner) en la documentación de New Relic.
+Para su proyecto de infraestructura de Adobe Commerce en la nube, puede cambiar el propietario de la cuenta de New Relic en la página de la interfaz de usuario de New Relic. Para ver los pasos detallados, consulte [Cambiar el propietario de la cuenta](https://docs.newrelic.com/docs/accounts/accounts/roles-permissions/change-account-owner) en la documentación de New Relic.
 
-Si el usuario (al que desea asignar la función de propietario) aún no aparece en la lista de su cuenta, deberá agregarlo a la cuenta. Consulte [Adición y actualización de usuarios](https://docs.newrelic.com/docs/accounts/accounts/roles-permissions/add-update-users) en la documentación de New Relic, en particular la [Añadir un nuevo usuario](https://docs.newrelic.com/docs/accounts/accounts/roles-permissions/add-update-users#adding_users) sección.
+Si el usuario (al que desea asignar la función de propietario) aún no aparece en la lista de su cuenta, deberá agregarlo a la cuenta. Ver [Agregar y actualizar usuarios](https://docs.newrelic.com/docs/accounts/accounts/roles-permissions/add-update-users) en la documentación de New Relic, en particular la sección [Agregar un nuevo usuario](https://docs.newrelic.com/docs/accounts/accounts/roles-permissions/add-update-users#adding_users).
 
-Si alguien necesita ser agregado como usuario, pero ningún Propietario o Administrador existente en la cuenta puede ayudarle, cualquier usuario de Adobe Commerce que tenga acceso al de New Relic [Cuenta de propietario de Adobe Commerce Partnership](https://account.newrelic.com/accounts/1311131/users) puede ver todas las cuentas de cliente y agregar usuarios en nombre del cliente.
+Si alguien necesita ser agregado como usuario, pero ningún propietario o administrador existente en la cuenta puede ayudarles, cualquier usuario de Adobe Commerce que tenga acceso a la [cuenta de propietario de la asociación de Adobe Commerce](https://account.newrelic.com/accounts/1311131/users) de New Relic podrá ver todas las cuentas de cliente y agregar usuarios en nombre del cliente.
 
 ## Lectura relacionada
 

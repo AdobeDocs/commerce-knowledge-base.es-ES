@@ -43,7 +43,7 @@ El problema se debe a la incompatibilidad del código principal de Adobe Commerc
 
 El problema se resolverá automáticamente una vez que se publique una nueva versión 4.2.29 de symfony/console (que se espera para agosto de 2021).
 
-**Corrección en Adobe Commerce on-premise:**
+**Corrección en Adobe Commerce local:**
 
 Adobe Commerce local 2.4.x
 
@@ -55,9 +55,9 @@ Todos los comerciantes locales de Adobe Commerce 2.3.5+ deben ejecutar el siguie
 
 ``composer require symfony/console:"~4.1.0||~4.2.0||~4.3.0||>=4.4.0 <4.4.27 || ~4.4.29"``
 
-**Corrección en Adobe Commerce sobre la infraestructura en la nube:**
+**Corrección en Adobe Commerce en la infraestructura en la nube:**
 
-Ejecute los comandos anteriores o actualice a la última versión de herramientas ECE (ece-tools: 2002.1.7), que estará disponible el jueves 29 de julio. Para ver los pasos, consulte [Cloud for Adobe Commerce > Actualizar la versión de ece-tools](https://devdocs.magento.com/cloud/project/ece-tools-update.html) en nuestra documentación para desarrolladores.
+Ejecute los comandos anteriores o actualice a la última versión de herramientas ECE (ece-tools: 2002.1.7), que estará disponible el jueves 29 de julio. Para ver los pasos, consulte [Cloud for Adobe Commerce > Actualizar ece-tools version](https://devdocs.magento.com/cloud/project/ece-tools-update.html) en nuestra documentación para desarrolladores.
 
 La corrección completa se publicará en Adobe Commerce (todos los métodos de implementación) 2.4.4.
 

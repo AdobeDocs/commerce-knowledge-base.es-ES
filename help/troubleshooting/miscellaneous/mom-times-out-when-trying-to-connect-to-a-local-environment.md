@@ -31,7 +31,7 @@ Este artículo proporciona una solución para el problema en el que el sistema M
 
 1. Instale Adobe Commerce en su entorno local.
 1. Configure ngrok para crear un túnel que exponga el servidor local.
-1. Probar [conectar con OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
+1. Intente [conectarse a OMS](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
 
 <u>Resultado esperado</u>
 
@@ -53,4 +53,4 @@ Añada un parámetro que especifique la región al iniciar ngrok. Como el siguie
 ./ngrok http 80 -region eu
 ```
 
-La región predeterminada es EE. UU. Consulte [todos los valores posibles](https://ngrok.com/docs#config_region).
+La región predeterminada es EE. UU. Ver [todos los valores posibles](https://ngrok.com/docs#config_region).

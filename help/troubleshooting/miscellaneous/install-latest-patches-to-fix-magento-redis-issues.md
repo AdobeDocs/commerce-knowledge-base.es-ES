@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Instale los parches más recientes para solucionar los problemas de Adobe Commerce Redis
 
-Este artículo proporciona información sobre los últimos parches relacionados con Redis disponibles en [Parches de Adobe Commerce en la infraestructura en la nube](https://devdocs.magento.com/cloud/project/project-patch.html) paquete.
+Este artículo proporciona información sobre los parches más recientes relacionados con Redis disponibles en el paquete [Adobe Commerce on cloud Infrastructure Patches](https://devdocs.magento.com/cloud/project/project-patch.html).
 
 ## Productos y versiones afectados
 

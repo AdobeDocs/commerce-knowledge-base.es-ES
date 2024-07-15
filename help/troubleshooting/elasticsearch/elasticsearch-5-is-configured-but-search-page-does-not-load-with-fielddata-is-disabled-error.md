@@ -39,7 +39,7 @@ En la solicitud de búsqueda se genera la siguiente excepción en los registros:
 
 ## Causa
 
-De forma predeterminada, solo se pueden utilizar ciertos tipos de atributos de producto en la navegación por capas. Son Sí/No, Desplegable, Selección múltiple y Precio. Por este motivo, en el Administrador de Commerce, no se puede establecer un atributo de ningún otro tipo como **Uso en la navegación por capas** = *Filtrable* o **Uso en la navegación por capas de resultados de búsqueda** = *Sí*. Pero existe una posibilidad técnica de superar esta limitación cambiando directamente la `is_filterable` y `is_filterable_in_search` valores de la base de datos. Si esto sucede y cualquier otro tipo de atributo, como Fecha, Texto, etc., se configura para utilizarse en Navegación por capas, el Elasticsearch 5 genera una excepción.
+De forma predeterminada, solo se pueden utilizar ciertos tipos de atributos de producto en la navegación por capas. Son Sí/No, Desplegable, Selección múltiple y Precio. Es por eso que en el administrador de Commerce no se puede establecer un atributo de ningún otro tipo como **Usar en navegación por capas** = *Filtrable* o **Usar en navegación por capas de resultados de búsqueda** = *Sí*. Pero existe una posibilidad técnica de evitar esta limitación cambiando directamente los valores `is_filterable` y `is_filterable_in_search` de la base de datos. Si esto sucede y cualquier otro tipo de atributo, como Fecha, Texto, etc., se configura para utilizarse en Navegación por capas, el Elasticsearch 5 genera una excepción.
 
 Para asegurarse de que este sea el caso, debe averiguar si hay otros atributos que no sean Desplegable, Selección múltiple y Precio, que están configurados para utilizarse en la Navegación por capas. Ejecute la siguiente consulta para buscar estos atributos:
 
@@ -53,10 +53,10 @@ El resultado contendrá una lista de atributos utilizados para la navegación po
 
 ## Solución
 
-Para solucionar el problema, debe establecer `is_filterable` (es decir, se utiliza en la navegación por capas) y `filterable_in_search` (es decir, se utiliza en los resultados de búsqueda con navegación por capas) a &quot;0&quot; (no se utiliza). Para ello, siga los siguientes pasos:
+Para solucionar el problema, debe establecer `is_filterable` (es decir, utilizado en la navegación por capas) y `filterable_in_search` (es decir, utilizado en la navegación por capas de los resultados de búsqueda) en &quot;0&quot; (no utilizado). Para ello, siga los siguientes pasos:
 
 1. Cree una copia de seguridad de base de datos.
-1. Utilice una herramienta de base de datos como [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin), o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
+1. Use una herramienta de base de datos como [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
 
    ```sql
    UPDATE catalog_eav_attribute AS cea
@@ -79,6 +79,6 @@ Para solucionar el problema, debe establecer `is_filterable` (es decir, se utili
    bin/magento cache:clean
    ```
 
-o en el Administrador de Commerce, en **Sistema** > **Herramientas** > **Administración de caché**.
+o en el Administrador de Commerce en **Sistema** > **Herramientas** > **Administración de caché**.
 
 Ahora debería poder realizar búsquedas en el catálogo sin problemas.

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->NOTA: La función de biblioteca de mcrypt se ha [obsoleto de PHP 7.1 y se eliminó de PHP 7.2](https://www.php.net/manual/en/intro.mcrypt.php).
+>NOTA: La función de biblioteca mcrypt estaba [obsoleta en PHP 7.1 y se eliminó de PHP 7.2](https://www.php.net/manual/en/intro.mcrypt.php).
 
 ## Detalle
 
@@ -51,7 +51,7 @@ Como resultado, el instalador de Adobe Commerce no puede localizar la extensión
 
 Determine si la extensión mcrypt se carga de alguna de las siguientes maneras:
 
-* Configuración de un [phpinfo.php](http://kb.mediatemple.net/questions/764/How+can+I+create+a+phpinfo.php+page%3F#gs) en el directorio raíz del servidor web y examine el resultado en un explorador web.
+* Configure un archivo [phpinfo.php](http://kb.mediatemple.net/questions/764/How+can+I+create+a+phpinfo.php+page%3F#gs) en el directorio raíz del servidor web y examine el resultado en un explorador web.
 * Ejecute el siguiente comando:    `$ php -r "phpinfo();" | grep mcrypt`
 
 Si mcrypt es *no* instalado, se muestran mensajes similares a los siguientes:
@@ -60,4 +60,4 @@ Si mcrypt es *no* instalado, se muestran mensajes similares a los siguientes:
 PHP Warning:  PHP Startup: Unable to load dynamic library '/usr/lib/php5/20121212/mcrypt.so' - /usr/lib/php5/20121212/mcrypt.so: cannot open shared object file: No such file or directory in Unknown on line 0
 ```
 
-En algunos casos, es posible que deba instalar el software de Adobe Commerce desde el [línea de comandos](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli.html) y especifique la ruta completa a la pila LAMP que tiene instalado mcrypt.
+En algunos casos, es posible que tenga que instalar el software de Adobe Commerce desde la [línea de comandos](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli.html) y especificar la ruta completa a la pila LAMP que tiene instalado mcrypt.

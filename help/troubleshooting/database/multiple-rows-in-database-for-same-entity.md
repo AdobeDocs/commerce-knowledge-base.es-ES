@@ -29,7 +29,7 @@ Por ejemplo, después de recibir una lista de registros con ID de entidad duplic
 SELECT * FROM $entityTable WHERE $column = <$entityID> ORDER BY created_in;
 ```
 
-Donde `$entityID = ID` de la página categoría/producto/regla de precio del carro/regla de precio del catálogo/CMS.
+Donde `$entityID = ID` de categoría/producto/regla de precio del carro/regla de precio del catálogo/página CMS.
 
 | Entidad | $entityTable | $column |
 |------------------|-----------------------------------|------------------|
@@ -41,9 +41,9 @@ Donde `$entityID = ID` de la página categoría/producto/regla de precio del car
 
 Este es el comportamiento esperado. Las varias filas se crean mediante la funcionalidad Ensayo de contenido:
 
-* Si especifica una fecha de inicio sin una fecha de finalización, habrá al menos dos filas con la misma entidad, regla o ID de página. Una fila indica el estado original de la entidad (la fila en la que `created_in=1`), y una fila indicará el *Fin de la actualización programada*.
+* Si especifica una fecha de inicio sin una fecha de finalización, habrá al menos dos filas con la misma entidad, regla o ID de página. Una fila indicará el estado original de la entidad (la fila en la que `created_in=1`) y una fila indicará el *Final de la actualización programada*.
 
-* Si especifica una fecha de inicio con una fecha de finalización, habrá al menos tres filas con la misma entidad, regla o ID de página. Una fila indica el estado original de la entidad (la fila en la que `created_in=1`), una fila será para *Inicio de la actualización programada*, y una fila será para el *Fin de la actualización programada*.
+* Si especifica una fecha de inicio con una fecha de finalización, habrá al menos tres filas con la misma entidad, regla o ID de página. Una fila indicará el estado original de la entidad (la fila en la que `created_in=1`), una fila será para *Inicio de la actualización programada* y una fila será para *Fin de la actualización programada*.
 
 Por ejemplo, en esta consulta:
 
@@ -53,13 +53,13 @@ SELECT row_id, entity_id, created_in, updated_in FROM catalog_product_entity WHE
 
 ![multiple_rows_in_database.png](assets/multiple_rows_in_database.png)
 
-* El `created_in` y `updated_in` Los valores de deben seguir este patrón: `created_in` el valor de la fila actual es igual al `updated_in` en la fila anterior. Además, la primera fila debe contener `created_in = 1` y la última fila debe contener `updated_in = 2147483647`. (Si solo hay una fila, debe ver `created_in=1` y `updated_in=2147483647`).
+* Los valores `created_in` y `updated_in` deben seguir este patrón: el valor `created_in` de la fila actual es igual al valor `updated_in` de la fila anterior. Además, la primera fila debe contener `created_in = 1` y la última fila debe contener `updated_in = 2147483647`. (Si solo hay una fila, debe ver `created_in=1` y `updated_in=2147483647`).
 
 ### ¿Por qué aparece la segunda entrada de la base de datos (y todas las siguientes) en la base de datos para la misma entidad?
 
-* El segundo registro de la base de datos (y, posiblemente, los siguientes) para la entidad afectada significa que ha habido actualizaciones de ensayo de contenido programadas mediante `Magento_Staging` , que crea un registro adicional para una entidad en las tablas correspondientes.
+* El segundo registro de la base de datos (y, posiblemente, los siguientes) para la entidad afectada significa que ha habido actualizaciones de ensayo de contenido programadas mediante el módulo `Magento_Staging`, que crea un registro adicional para una entidad en las tablas correspondientes.
 
-Un problema solo se produciría si los registros tienen los mismos valores para `created_in` o `updated_in` columnas.
+Solamente se produciría un problema si los registros tienen los mismos valores para las columnas `created_in` o `updated_in`.
 
 ## Solución
 
@@ -67,5 +67,5 @@ Este es el comportamiento esperado y solo provocará problemas si hay discrepanc
 
 ## Lectura relacionada
 
-* [Los cambios en las categorías no se guardan](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) en nuestra base de conocimiento de soporte.
+* [Los cambios en las categorías no se están guardando](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) en nuestra base de conocimiento de soporte.
 * [Duplicar entradas en la tabla de catálogos después de editar la fecha de finalización de una actualización de programación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) en nuestra base de conocimiento de soporte.

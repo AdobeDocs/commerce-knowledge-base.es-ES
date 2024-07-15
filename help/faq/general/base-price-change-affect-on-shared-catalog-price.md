@@ -30,4 +30,4 @@ Si el precio base del producto cambia y se vuelve menor que el precio del catál
 
 ## Lectura relacionada
 
-[Definición de Precios y Estructura para un Catálogo Compartido](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html) en nuestra guía del usuario.
+[Establezca los precios y la estructura para un catálogo compartido](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html) en nuestra guía del usuario.

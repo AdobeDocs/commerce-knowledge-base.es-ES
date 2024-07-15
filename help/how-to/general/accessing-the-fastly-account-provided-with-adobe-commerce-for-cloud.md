@@ -16,12 +16,12 @@ Este artículo explica cómo iniciar sesión en la cuenta de Fastly proporcionad
 
 ## Cómo ver sus credenciales de Fastly
 
-Consulte la [Obtener credenciales rápidamente](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds) en nuestra documentación para desarrolladores.
+Consulte la sección [Obtener credenciales de Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#cloud-fastly-creds) en nuestra documentación para desarrolladores.
 
 ## Cómo probar las credenciales de Fastly
 
-Consulte la [Probar las credenciales de Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) en nuestra documentación para desarrolladores.
+Consulte la sección [Probar las credenciales de Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 
-[Cambiar el propietario de la cuenta (acceso a las credenciales mediante tokens de API) para Fastly en la nube](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md) en nuestra base de conocimiento de soporte.
+[Cambiar el propietario de la cuenta (credenciales de acceso mediante tokens de API) para Fastly en la nube](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md) en nuestra base de conocimiento de soporte.

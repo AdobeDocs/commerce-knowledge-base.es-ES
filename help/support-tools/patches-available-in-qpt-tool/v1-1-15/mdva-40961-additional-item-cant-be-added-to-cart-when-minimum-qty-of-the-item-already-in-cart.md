@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-40961: No se puede añadir un artículo adicional al carro de compras cuando la cantidad mínima de artículo ya está en el carro de compras
 
-El parche MDVA-40961 soluciona el problema de que no se puede añadir un artículo adicional al carro de compras cuando la cantidad mínima del artículo ya está en él. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15 está instalado. El ID del parche es MDVA-40961. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+El parche MDVA-40961 soluciona el problema de que no se puede añadir un artículo adicional al carro de compras cuando la cantidad mínima del artículo ya está en él. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15. El ID del parche es MDVA-40961. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.3
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.3 - 2.4.3-p2
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -35,7 +35,7 @@ No se puede agregar un artículo adicional al carro de compras cuando la cantida
 
 <u>Pasos a seguir</u>:
 
-1. Configurar un producto simple para que tenga más de uno **Cantidad mínima permitida en el carro de compras** (por ejemplo, dos).
+1. Configure un producto simple para que tenga más de una **cantidad mínima permitida en el carro de compras** (por ejemplo, dos).
 1. Abra el producto en la Tienda y agregue dos de ellos al carro de compras.
 1. Permanezca en la página de productos de y añada más de este producto al carro de compras.
 
@@ -45,7 +45,7 @@ El tercer producto se puede añadir al carro de compras, ya que ya contiene la c
 
 <u>Resultados reales</u>:
 
-Recibe el siguiente mensaje de error: *La menor cantidad que puede comprar es 2*.
+Recibe el siguiente mensaje de error: *La cantidad más baja que puede comprar es 2*.
 
 ## Aplicar el parche
 
@@ -58,7 +58,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

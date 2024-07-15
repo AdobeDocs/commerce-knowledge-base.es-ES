@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # ACSD-50858: rendimiento mejorado para cargar contenido de titulares
 
-El parche ACSD-50858 corrige un problema de rendimiento del banner en la página de carrito/cierre de compra: *consultas de BD excesivas y tiempo de carga de la página aumentado*. Este parche está disponible cuando la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.31 está instalado. El ID del parche es ACSD-50858. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
+El parche ACSD-50858 corrige un problema de rendimiento del banner en la página de carrito/cierre de compra: *consultas de BD excesivas y tiempo de carga de página aumentado*. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.31. El ID del parche es ACSD-50858. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.5-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.6
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-El rendimiento del titular se ve afectado en la página del carro de compras/cierre de compra debido a *consultas de BD excesivas y tiempo de carga de la página aumentado*.
+El rendimiento del banner se ve afectado en la página del carro de compras/cierre de compra debido a *consultas de BD excesivas y tiempo de carga de la página aumentado*.
 
 Esto se solucionó refactorizando la forma en que se cargan los contenidos de los banners, lo que redujo el número de consultas de DB en un 99,99 % y el tiempo de carga de la página en ~99 %.
 
@@ -39,12 +39,12 @@ Esto se solucionó refactorizando la forma en que se cargan los contenidos de lo
 
 1. Inicie sesión en Admin y cree un producto sencillo.
 1. Cree un cliente, ya sea desde Administración o desde el front-end, y añada una dirección de envío para él.
-1. Mueva banners.php a `magento_root/pub/` carpeta.
-1. Generar titulares utilizando  `php pub/banners.php` comando. Generará 10.000 banners simples y 1.000 banners con reglas de venta.
+1. Mueva banners.php a la carpeta `magento_root/pub/`.
+1. Genere titulares utilizando el comando `php pub/banners.php`. Generará 10.000 banners simples y 1.000 banners con reglas de venta.
 1. Inicie sesión en el cliente creado anteriormente en el front-end.
 1. Añadir el producto creado anteriormente al carro de compras.
 1. Vaya a la página de cierre de compra (cierre de compra/carro).
-1. Monitorización de `banner/ajax/load` tiempo de carga de la solicitud:
+1. Supervisar el tiempo de carga de la solicitud `banner/ajax/load`:
 
    * Sin `bin/magento dev:query-log:enable`
    * Con `bin/magento dev:query-log:enable`
@@ -55,22 +55,22 @@ Esto se solucionó refactorizando la forma en que se cargan los contenidos de lo
 
 <u>Resultados esperados</u>:
 
-Disminución del número de consultas de BD para `magento_banner_content` y tiempo de carga de la página de carro/cierre de compra.
+Disminución en el número de consultas de BD para `magento_banner_content` y el tiempo de carga de la página de carrito/cierre de compra.
 
 <u>Resultados reales</u>:
 
-Aumento en el número de consultas de BD para `magento_banner_content` y tiempo de carga de la página de carro/cierre de compra.
+Aumento en el número de consultas de BD para `magento_banner_content` y el tiempo de carga de la página del carro de compras/cierre de compra.
 
 ## Aplicar el parche
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en el [!DNL Quality Patches Tool] guía.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce sobre infraestructura en la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
-## Información adicional
+## Más información
 
-<u>contenido de banners.php</u>:
+<u>banners.php content</u>:
 
 ```php
 \Banner::class);
@@ -132,9 +132,9 @@ for ($i = 0; $i < 1000; $i++) {
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en el [!DNL Quality Patches Tool] guía.
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

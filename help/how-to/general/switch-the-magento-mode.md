@@ -13,5 +13,5 @@ ht-degree: 0%
 
 Consulte los siguientes artículos en nuestra documentación para desarrolladores:
 
-* Adobe Commerce 2.3: [Definición del modo de funcionamiento](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-mode.html)
-* Adobe Commerce 2.4: [Definición del modo de funcionamiento](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html)
+* Adobe Commerce 2.3: [Establecer el modo de operación](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-mode.html)
+* Adobe Commerce 2.4: [Establecer el modo de operación](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-mode.html)

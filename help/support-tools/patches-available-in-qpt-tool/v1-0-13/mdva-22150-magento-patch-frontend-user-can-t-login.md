@@ -15,24 +15,24 @@ ht-degree: 0%
 
 El parche MDVA-22150 resuelve el problema cuando un usuario de front-end no puede iniciar sesión después de una compra anulada con un cupón. Esto ocurre cuando un usuario de front-end utiliza un código de cupón en un producto que se ha deshabilitado antes de completar la compra. El resultado es que el usuario de front-end ya no puede iniciar sesión y recibe un error 503. Otro efecto de este problema es que la capacidad de administrar los carros de compras de los clientes en el Administrador deja de funcionar.
 
-Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.13 está instalado. Tenga en cuenta que el problema se corrigió en la versión 2.3.4 de Adobe Commerce.
+Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.13. Tenga en cuenta que el problema se corrigió en la versión 2.3.4 de Adobe Commerce.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:** Adobe Commerce en infraestructura en la nube 2.3.2
+**El parche se ha creado para la versión de Adobe Commerce:** Adobe Commerce en la infraestructura en la nube 2.3.2
 
-**Compatible con las versiones de Adobe Commerce:** Adobe Commerce en infraestructura en la nube y Adobe Commerce 2.3.1 - 2.3.3-p1
+**Compatible con versiones de Adobe Commerce:** Adobe Commerce en infraestructura en la nube y Adobe Commerce 2.3.1 - 2.3.3-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
 <u>Pasos a seguir:</u>
 
 1. Inicie sesión en Admin y cree un producto configurable.
-1. Ir a **Reglas del carro** y cree un código de cupón con algún descuento.
+1. Vaya a **Reglas del carro de compras** y cree un código de cupón con algún descuento.
 1. Cree una cuenta de cliente en el front-end.
 1. Añada el producto al carro de compras, siga el proceso de cierre de compra e introduzca el cupón.
 1. Después de introducir el cupón, no envíe la solicitud, sino que aborte la solicitud y cierre la sesión.
@@ -58,7 +58,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) sección.
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

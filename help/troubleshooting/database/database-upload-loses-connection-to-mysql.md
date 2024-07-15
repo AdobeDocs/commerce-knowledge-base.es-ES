@@ -35,14 +35,14 @@ Esto suele deberse a la falta de espacio en disco para importar la base de datos
 
 ## Solución
 
-Compruebe si hay falta de espacio en disco. Para ello, ejecute el `netcat` comando en la CLI frente al puerto de base de datos 3306; aparecerá un mensaje disco lleno si está lleno:
+Compruebe si hay falta de espacio en disco. Para ello, ejecute el comando `netcat` en la CLI con el puerto de base de datos 3306; aparecerá un mensaje de disco lleno si está lleno:
 
 ```
 web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-Deberá asignar más espacio para la base de datos en su `services.yaml` e implemente si tiene espacio sin utilizar. Para ver los pasos, consulte [Espacio en disco de servicio](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space).
+Necesitará asignar más espacio para la base de datos en su `services.yaml` e implementarlo si tiene espacio sin utilizar. Para ver los pasos, consulte [Espacio en disco de servicio](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space).
 
 Nota: En el plan de arquitectura Pro, puede comprobar el espacio asignado en la partición ejecutando el siguiente comando: `df -h`
 

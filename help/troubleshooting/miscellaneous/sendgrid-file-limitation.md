@@ -1,6 +1,6 @@
 ---
-title: '''[!DNL SendGrid] limitación de archivos para Adobe Commerce Cloud'
-description: Este artículo proporciona una solución al problema  [!DNL SendGrid] limitación para Adobe Commerce en la infraestructura en la nube.
+title: '[!DNL SendGrid] limitación de archivos para Adobe Commerce Cloud'
+description: Este artículo proporciona una solución a la limitación  [!DNL SendGrid]  para Adobe Commerce en la infraestructura en la nube.
 feature: Deploy, Marketing Tools
 role: Developer, Admin
 exl-id: 48629f48-8100-4128-9211-53d947aecd49
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # [!DNL SendGrid] limitación para Adobe Commerce Cloud
 
-Este artículo proporciona algunas soluciones para lo siguiente [!DNL SendGrid] limitación para Adobe Commerce en la infraestructura en la nube.
+Este artículo proporciona algunas soluciones a la limitación [!DNL SendGrid] para Adobe Commerce en la infraestructura en la nube.
 
 ## Productos y versiones afectados
 
@@ -24,14 +24,14 @@ Este artículo proporciona algunas soluciones para lo siguiente [!DNL SendGrid] 
 
 Intenta enviar archivos adjuntos grandes en correos electrónicos y ve estos errores de registro:
 
-Entrada `/var/log/mail.log`
+En `/var/log/mail.log`
 
 ```shell
 Month Date Time i-xxxxxxxxxxxxxxxxx postfix/sendmail[21408]: fatal: no-reply@xxxxxxxx.com(8080): message file too big
 Month Date Time i-xxxxxxxxxxxxxxxxx postfix/sendmail[26434]: fatal: no-reply@xxxxxxxxx.com(8080): message file too big
 ```
 
-Entrada `/var/log/exception.log`
+En `/var/log/exception.log`
 
 Producción:
 
@@ -47,7 +47,7 @@ Ensayo2:
 
 ## Causa
 
-[!DNL SendGrid] tiene una limitación del sistema de 30 MB para el correo electrónico. Se recomienda no utilizar archivos adjuntos que superen los 10 Mb. Consulte [Enviando archivos adjuntos](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh) en la documentación de SendGrid para obtener más información.
+[!DNL SendGrid] tiene una limitación del sistema de 30 MB para el correo electrónico. Se recomienda no utilizar archivos adjuntos que superen los 10 Mb. Consulte [Envío de archivos adjuntos](https://docs.sendgrid.com/ui/sending-email/attachments-with-digioh) en la documentación de SendGrid para obtener más información.
 
 ## Solución
 
@@ -57,4 +57,4 @@ Ensayo2:
 
 ## Lectura relacionada
 
-* [[!DNL SendGrid] servicio de correo electrónico](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html) en nuestra Guía de infraestructura en la nube de Commerce.
+* [[!DNL SendGrid] servicio de correo electrónico](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html) en nuestra Guía de infraestructura de Commerce en la nube.

@@ -17,7 +17,7 @@ Este artículo proporciona un parche para el problema conocido de Adobe Commerce
 
 ## Problema
 
-Si Google Analytics está habilitado para la tienda, cuando un cliente con uBlock u otro bloqueador de anuncios instalado continúa con el cierre de compra, la variable `trackingCode.js` Se ha bloqueado la carga del archivo y RequireJS interrumpe el flujo de ejecución de JS. Esto causa problemas al cargar la página de cierre de compra.
+Si Google Analytics está habilitado para el almacén, cuando un cliente con uBlock uBlock instalado u otro bloqueador de anuncios continúa con la desprotección, se bloquea la carga del archivo `trackingCode.js` y RequireJS interrumpe el flujo de ejecución de JS. Esto causa problemas al cargar la página de cierre de compra.
 
 <u>Pasos a seguir</u> :
 
@@ -26,11 +26,11 @@ Requisitos previos: Un bloqueador de anuncios debe estar instalado y activo en e
 1. En el Administrador de Commerce, habilite y configure la funcionalidad Google Analytics.
 1. Abra una página de producto en la tienda.
 1. Añadir productos al carro de compras.
-1. Haga clic en **Ir a Cierre de compra** vínculo.
+1. Haga clic en el vínculo **Ir a cierre de compra**.
 
 <u>Resultado esperado</u>: la página de cierre de compra se carga y el cliente puede completar el cierre de compra.
 
-<u>Resultado real</u>: la página de cierre de compra no se carga; el indicador de carga nunca desaparece.
+<u>Resultado real</u>: la página de cierre de compra no se carga; el indicador de giro de carga nunca desaparece.
 
 ## Parche
 
@@ -57,6 +57,6 @@ Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor pro
 
 ## Vínculos útiles
 
-* [El problema tratado en GitHub](https://github.com/magento/magento2/pull/13061)
+* [Problema tratado en GitHub](https://github.com/magento/magento2/pull/13061)
 
 ## Archivos adjuntos

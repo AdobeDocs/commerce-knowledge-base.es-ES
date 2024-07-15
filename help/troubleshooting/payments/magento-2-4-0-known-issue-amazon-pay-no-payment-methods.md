@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problema conocido de Adobe Commerce 2.4.0: Amazon pay, sin métodos de pago
 
-Este artículo proporciona una solución para un problema conocido de Adobe Commerce 2.4.0 en el que faltan métodos de pago cuando los clientes utilizan **Volver al cierre de compra estándar**, después de habilitar Amazon pay.
+Este artículo proporciona una solución para un problema conocido de Adobe Commerce 2.4.0 en el que faltan métodos de pago cuando los clientes usan **Volver al cierre de compra estándar**, una vez que han habilitado Amazon Pay.
 
 ## Productos y versiones afectados
 
@@ -25,7 +25,7 @@ Adobe Commerce local y Adobe Commerce en la infraestructura en la nube v2.3.5.p1
 1. Añada cualquier elemento al carro de compras y continúe con el cierre de compra.
 1. Inicie sesión en su cuenta de Amazon Pay.
 1. Seleccione una dirección y continúe con el cierre de compra.
-1. Clic **Volver al cierre de compra estándar**.
+1. Haga clic en **Volver al cierre de compra estándar**.
 1. Continúe con el cierre de compra.
 
 <u>Resultados esperados:</u>

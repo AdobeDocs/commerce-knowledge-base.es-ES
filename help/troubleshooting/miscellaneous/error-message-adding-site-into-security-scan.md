@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Mensaje de error al añadir sitios al análisis de seguridad
 
-Este artículo proporciona posibles soluciones para el problema cuando un usuario no puede agregar sitios al [Commerce Security Scan](https://account.magento.com/scanner/dashboard/).
+Este artículo proporciona posibles soluciones para el problema cuando un usuario no puede agregar sitios al [análisis de seguridad de Commerce](https://account.magento.com/scanner/dashboard/).
 
 ## Productos y versiones afectados
 
@@ -22,7 +22,7 @@ Este artículo proporciona posibles soluciones para el problema cuando un usuari
 
 ## Problema
 
-El usuario no puede añadir sitios al [Commerce Security Scan](https://account.magento.com/scanner/dashboard/). El siguiente mensaje de error aparece al intentar agregar un sitio: *No se puede enviar el sitio para su análisis.*
+El usuario no puede agregar sitios al [Examen de seguridad de Commerce](https://account.magento.com/scanner/dashboard/). El siguiente mensaje de error aparece al intentar agregar un sitio: *No se puede enviar el sitio para su análisis.*
 
 ## Solución
 
@@ -31,10 +31,10 @@ El usuario no puede añadir sitios al [Commerce Security Scan](https://account.m
    * 34 196 167 176
    * 3.218.25.102
 
-1. El código de confirmación distingue entre tiempo y minúsculas. Si han transcurrido más de 30 minutos desde la **Agregar sitio** se ha hecho clic en el vínculo, probablemente el código haya caducado.
+1. El código de confirmación distingue entre tiempo y minúsculas. Si han pasado más de 30 minutos desde que se hizo clic en el vínculo **Agregar sitio**, es probable que el código haya caducado.
 1. No olvide limpiar la caché y asegurarse de que el código de validación aparece en el cuerpo de origen de la página principal. El código de confirmación debe insertarse según las especificaciones de marcado del HTML: el comentario del HTML se puede insertar en el cuerpo de la página (sugerimos colocarlo en la sección de pie de página); la etiqueta META debe estar solo en la sección del encabezado.
-1. Antes de hacer clic **Verificar código de confirmación**, abra la consola de desarrollador del navegador y haga clic en el icono **Red** y compruebe la respuesta desde magento.com. Debe ser HTTP 200 (OK) y el cuerpo de la respuesta debe contener un objeto JSON.
-1. Si el código de respuesta es HTTP 200 y el cuerpo de respuesta es un objeto JSON y la variable `verified` el valor de propiedad es `false`, significa que el código no se encuentra en la página. El `details` el valor de la propiedad debe contener la explicación. Por ejemplo, si el almacén utiliza un certificado SSL autofirmado, probablemente se producirá un error de conexión.
+1. Antes de hacer clic en **Verificar código de confirmación**, abra la consola para desarrolladores del explorador, haga clic en la ficha **Red** y compruebe la respuesta en magento.com. Debe ser HTTP 200 (OK) y el cuerpo de la respuesta debe contener un objeto JSON.
+1. Si el código de respuesta es HTTP 200 y el cuerpo de respuesta es un objeto JSON y el valor de la propiedad `verified` es `false`, significa que el código no se encuentra en la página. El valor de la propiedad `details` debe contener la explicación. Por ejemplo, si el almacén utiliza un certificado SSL autofirmado, probablemente se producirá un error de conexión.
 
 Si sigue sin poder agregar sitios, complete los siguientes pasos:
 
@@ -53,4 +53,4 @@ Si sigue sin poder agregar sitios, complete los siguientes pasos:
 
 ## Lectura relacionada
 
-* [Análisis de seguridad](https://docs.magento.com/user-guide/magento/security-scan.html) en nuestra guía del usuario.
+* [Examen de seguridad](https://docs.magento.com/user-guide/magento/security-scan.html) en nuestra guía del usuario.

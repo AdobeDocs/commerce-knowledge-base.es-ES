@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Parche de MDVA-28409: error en el servidor web de Adobe Commerce: memoria insuficiente
 
-El parche MDVA-28409 resuelve el problema en el que el trabajo cron para eliminar ofertas se detuvo debido a la necesidad de procesar un gran número de elementos. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.5 está instalado.
+El parche MDVA-28409 resuelve el problema en el que el trabajo cron para eliminar ofertas se detuvo debido a la necesidad de procesar un gran número de elementos. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) v.1.0.5.
 
 ## Productos y versiones afectados
 
@@ -21,7 +21,7 @@ Adobe Commerce local y Adobe Commerce en la infraestructura en la nube 2.3.4 - 2
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -37,13 +37,13 @@ select * from cron_schedule where job_code like '%sales_clean_quotes%'
 
 <u>Resultado esperado:</u>
 
-El estado de `sales_clean_quotes` el trabajo cron debe ser `success`.
+El estado del trabajo cron de `sales_clean_quotes` debe ser `success`.
 
 <u>Resultado real:</u>
 
-El estado de `sales_clean_quotes` el trabajo cron es `running` o `error`.
+El estado del trabajo cron de `sales_clean_quotes` es `running` o `error`.
 
-Otra forma de confirmar que hay un trabajo cron que no puede eliminar comillas obsoletas es asignar el resultado de la consulta desde **Paso 1** (`executed_at`) con las marcas de tiempo de cualquier error de memoria en `/var/log/cron.log`. Si hay un trabajo cron que no puede procesar la cantidad de datos, puede ver un mensaje similar al siguiente:
+Otra forma de confirmar que hay un trabajo cron que no puede quitar las comillas obsoletas es asignar el resultado de la consulta del **Paso 1** (`executed_at`) a las marcas de tiempo de cualquier error de memoria en `/var/log/cron.log`. Si hay un trabajo cron que no puede procesar la cantidad de datos, puede ver un mensaje similar al siguiente:
 
 ```
 PHP Fatal error:  Allowed memory size of 1073741824 bytes exhausted (tried to allocate 4096 bytes) in /app/vendor/magento/framework/DB/Statement/Pdo/Mysql.php on line 91
@@ -64,7 +64,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) sección.
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

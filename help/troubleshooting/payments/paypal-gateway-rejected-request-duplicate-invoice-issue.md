@@ -54,16 +54,16 @@ De forma predeterminada, PayPal no permite procesar la misma factura dos veces.
 Cambia tu perfil de PayPal para permitir varios pagos por identificador de factura. Debes realizar estos cambios a través de PayPal.
 
 1. Inicie sesión en su cuenta en [https://www.paypal.com](https://www.paypal.com/).
-1. Clic **Perfil** > **Perfil y configuración** (esquina superior derecha).
-1. Ir a **Mis herramientas de venta**.
-1. Vaya a **Recibir un pago y administrar mi riesgo** > **Bloquear pagos** y haga clic en **Actualizar**.
-1. **Preferencias de venta**, haga clic en **Preferencias de recepción de pago**.
+1. Haga clic en **Perfil** > **Perfil y configuración** (esquina superior derecha).
+1. Ve a **Mis herramientas de venta**.
+1. Vaya a **Pago y administración de mi riesgo** > **Bloquear pagos** y haga clic en **Actualizar**.
+1. **Preferencias de venta**, haz clic en **Preferencias de recepción de pago**.
 1. En **Bloquear pagos accidentales**, elija **No, permitir varios pagos por identificador de factura**.    ![paypal_allow_multiple_payments_per_invoice_id.png](assets/paypal_allow_multiple_payments_per_invoice_id.png)
 1. Desplácese hacia abajo y haga clic en **Guardar**.
 
 ## Más información
 
-* [Bloquear pagos accidentales](https://developer.paypal.com/docs/admin/setup-account/#block-accidental-payments) en Documentos de desarrolladores de PayPal.
+* [Bloquear pagos accidentales](https://developer.paypal.com/docs/admin/setup-account/#block-accidental-payments) en los documentos para desarrolladores de PayPal.
 * Pagos mediante PayPal en nuestra guía de usuario:
    * [Pago y envío con PayPal Express](/docs/commerce-admin/stores-sales/payments/paypal/paypal-express-checkout.html)
    * [Otras soluciones de PayPal](/docs/commerce-admin/stores-sales/payments/paypal/paypal.html)

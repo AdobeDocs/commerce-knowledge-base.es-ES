@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # MDVA-30112: gran número de incoherencias en la reserva
 
-El parche MDVA-30112 resuelve el problema en el que tiene un número inesperadamente grande de [incoherencias de reserva](https://devdocs.magento.com/guides/v2.4/inventory/inventory-cli-reference.html#what-causes-reservation-inconsistencies) en el `inventory_reservation` tabla. Las incoherencias en las reservas incluyen pedidos abiertos no registrados y pedidos completos que no están registrados. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.8 está instalado. Tenga en cuenta que el problema se corrigió en la versión 2.4.2 de Adobe Commerce.
+El parche MDVA-30112 resuelve el problema que presenta un número inesperadamente elevado de [incoherencias en la reserva](https://devdocs.magento.com/guides/v2.4/inventory/inventory-cli-reference.html#what-causes-reservation-inconsistencies) en la tabla `inventory_reservation`. Las incoherencias en las reservas incluyen pedidos abiertos no registrados y pedidos completos que no están registrados. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.8. Tenga en cuenta que el problema se corrigió en la versión 2.4.2 de Adobe Commerce.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce en infraestructura en la nube 2.3.5
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce local y Adobe Commerce en la infraestructura en la nube 2.3.4 - 2.3.5-p2, 2.4.0 - 2.4.1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-El [del mismo tamaño](https://devdocs.magento.com/guides/v2.4/inventory/inventory-cli-reference.html#list-inconsistencies-command) value es el valor de cuántos pedidos se cargan a la vez. Cuando hay más pedidos que este valor, Adobe Commerce considera que los pedidos con estado pendiente son incoherencias.
+El valor [tamaño de grupo](https://devdocs.magento.com/guides/v2.4/inventory/inventory-cli-reference.html#list-inconsistencies-command) es el valor de cuántos pedidos se cargarán a la vez. Cuando hay más pedidos que este valor, Adobe Commerce considera que los pedidos con estado pendiente son incoherencias.
 
 >[!NOTE]
 >
@@ -39,7 +39,7 @@ El [del mismo tamaño](https://devdocs.magento.com/guides/v2.4/inventory/invento
 
 <u>Requisitos previos</u>:
 
-Ejecute el siguiente comando en la CLI para enumerar las incoherencias en la reserva en la `inventory_reservation` tabla:
+Ejecute el siguiente comando en la CLI para enumerar las incoherencias en la reserva en la tabla `inventory_reservation`:
 
 ```
 magento inventory:reservation:list-inconsistencies
@@ -58,7 +58,7 @@ Verá un número inesperadamente alto de incoherencias en la reserva o el comand
 1. Realice tres pedidos:
    * Asigne a cada uno un solo producto.
    * Utilice el método de pago Cheque/Giro Postal, por lo que el estado del pedido será &quot;pendiente&quot;.
-1. Se pueden ver tres registros con -1 cantidad en la variable `inventory_reservation` tabla. Ejecute el siguiente comando en la CLI para ver cualquier incoherencia:
+1. Se pueden ver tres registros con -1 cantidad en la tabla `inventory_reservation`. Ejecute el siguiente comando en la CLI para ver cualquier incoherencia:
 
    ```
    bin/magento inventory:reservation:list-inconsistencies
@@ -99,7 +99,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

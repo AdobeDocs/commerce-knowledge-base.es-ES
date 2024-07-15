@@ -23,17 +23,17 @@ Adobe Commerce en infraestructura en la nube 2.4.3 - 2.4.6
 Para acceder e iniciar sesión en el nerdlet de New Relic Observation for Adobe Commerce:
 
 1. En la página de inicio de New Relic, haga clic en **Aplicaciones**.
-1. Clic **Observación para Adobe Commerce**.
+1. Haga clic en **Observación para Adobe Commerce**.
 1. Se abre el nerdlet Observation for Adobe Commerce.
-1. Haga clic en **Seleccione una cuenta** y seleccione una cuenta.
+1. Haz clic en el menú desplegable **Seleccionar una cuenta** y selecciona una cuenta.
 1. Puede rellenar el ID del proyecto, el número de cuenta de New Relic o el nombre de la cuenta, o examinar la lista de cuentas.
 1. Haga clic en el menú desplegable azul claro con el icono del reloj (hacia la parte superior derecha de la ventana de nerdlet).
-1. Si está intentando identificar la causa de un evento/problema, seleccione una hora antes de la fecha y hora del ticket para ver si hubo algún evento/dato anterior. Puede utilizar los lapsos de tiempo preestablecidos o establecer un lapso de tiempo personalizado seleccionando **Establecer personalizado**.
-1. En las pestañas, haga clic en **Infra**. Hay tres gráficos de niveles de vCPU:
-   * El primer gráfico muestra **Vista de nivel de vCPU sobre el cronograma MÁS DE 2 semanas (deberá seleccionar un cronograma MÁS DE 2 semanas). NOTA: La tasa de muestra será por día. Si el tamaño del clúster aumenta o disminuye en un día, el tamaño del nivel final se mostrará al día siguiente**.
-   * El segundo gráfico muestra **Vista de nivel de vCPU en el cronograma (es necesario seleccionar un cronograma SUPERIOR a 24 horas pero no superior a 2 semanas)**.
-   * El tercer gráfico muestra el **La vista de nivel de vCPU sobre la línea de tiempo POR NODO, debería mirar la línea de tiempo MENOS de 24 horas**.
+1. Si está intentando identificar la causa de un evento/problema, seleccione una hora antes de la fecha y hora del ticket para ver si hubo algún evento/dato anterior. Puede usar los lapsos de tiempo preestablecidos o establecer un lapso de tiempo personalizado seleccionando **Establecer personalizado**.
+1. En las fichas, haga clic en **Información**. Hay tres gráficos de niveles de vCPU:
+   * El primer gráfico muestra **vista de nivel de vCPU en la escala de tiempo MÁS DE 2 semanas (necesitará seleccionar una escala de tiempo MÁS DE 2 semanas). NOTA: La tasa de muestra será por día. Si los tamaños o las reducciones de tamaño del clúster se producen en un día, el tamaño del nivel final se mostrará al día siguiente**.
+   * El segundo gráfico muestra **la vista del nivel de vCPU en la escala de tiempo (es necesario seleccionar una escala de tiempo SUPERIOR a 24 horas pero no superior a 2 semanas)**.
+   * El tercer gráfico muestra la vista de nivel de **vCPU en la escala de tiempo POR NODO; debería ver la escala de tiempo MENOS de 24 horas**.
 
 ## Lectura relacionada
 
-* [Información general de Observación para Adobe Commerce](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md) en nuestra base de conocimiento de soporte.
+* [Resumen de la observación de Adobe Commerce](/help/support-tools/observation-for-adobe-commerce/observation-adobe-commerce-overview.md) en nuestra base de conocimiento de soporte.

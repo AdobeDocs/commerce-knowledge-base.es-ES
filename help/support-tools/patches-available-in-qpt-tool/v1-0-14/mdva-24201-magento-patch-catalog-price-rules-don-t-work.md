@@ -15,17 +15,17 @@ ht-degree: 0%
 
 El parche MDVA-24201 resuelve el problema de que las reglas de precios de catálogo activas en la base de datos no se aplican en el front-end.
 
-Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.14 está instalado. Tenga en cuenta que el problema se corrigió en la versión 2.3.5 de Adobe Commerce.
+Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.14. Tenga en cuenta que el problema se corrigió en la versión 2.3.5 de Adobe Commerce.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:** Adobe Commerce en infraestructura en la nube 2.3.3
+**El parche se ha creado para la versión de Adobe Commerce:** Adobe Commerce en la infraestructura en la nube 2.3.3
 
-**Compatible con las versiones de Adobe Commerce:** Adobe Commerce en infraestructura en la nube y Adobe Commerce local 2.3.0 - 2.3.4-p2
+**Compatible con versiones de Adobe Commerce:** Adobe Commerce en infraestructura en la nube y Adobe Commerce local 2.3.0 - 2.3.4-p2
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -35,17 +35,17 @@ Instale una nueva instancia de Magento con datos de ejemplo.
 
 <u>Pasos a seguir</u>:
 
-1. Iniciar sesión en **Panel de administración** > **Marketing** > **Regla de precio de catálogo** > **Añadir nueva regla**, realice la siguiente configuración:
-   1. Configure las variables **Nombre de regla**.
-   1. Establecer **Activo** = *No.*
+1. Inicie sesión en **Panel de administración** > **Marketing** > **Regla de precios de catálogo** > **Agregar nueva regla**, realice la siguiente configuración:
+   1. Establezca el **nombre de regla**.
+   1. Conjunto **Activo** = *No.*
    1. Establecer condiciones: **Categoría** = *4*. (Ejemplo: Bolsas)
    1. Establecer acciones:
       1. Establecer **Aplicar como**   **porcentaje del original**.
       1. Establecer **Importe de descuento** = *10*.
       1. Guarde y, a continuación, continúe editando.
-   1. Haga clic en **Programar nueva actualización**:
-      * Configure las variables **Nombre de regla**.
-      * Establecer **Activo** = *Sí*.
+   1. Haz clic en **Programar nueva actualización**:
+      * Establezca el **nombre de regla**.
+      * Definir **Activo** = *Sí*.
       * Guardar.
 1. Vaya al servidor y ejecute:
 
@@ -70,7 +70,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) sección.
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

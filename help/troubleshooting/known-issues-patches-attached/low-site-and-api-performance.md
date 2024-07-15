@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Bajo rendimiento del sitio y la API
 
-Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.1 relacionado con tener un bajo rendimiento del sitio y la API debido a un largo tiempo necesario para escribir `debug.log`.
+Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.1 relacionado con un bajo rendimiento del sitio y la API debido a un tiempo prolongado necesario para escribir `debug.log`.
 
 ## Problema
 
-El rendimiento del sitio es lento. Las operaciones de API se ejecutan lentamente, por ejemplo, actualizando productos con la variable `PUT` método. Si examina más de cerca las operaciones con New Relic, la mayor parte de la memoria y la CPU se consumen escribiendo en `/var/log/debug.log`.
+El rendimiento del sitio es lento. Las operaciones de API se ejecutan lentamente; por ejemplo, actualizando productos mediante el método `PUT`. Si examina más de cerca las operaciones con New Relic, la mayor parte de la memoria y la CPU se consumen escribiendo en `/var/log/debug.log`.
 
 ## Solución
 

@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # Falta el archivo CSV de productos exportados en la columna de estado de Adobe Commerce
 
-Este artículo proporciona una solución al problema cuando no puede localizar la columna de estado (es decir, indicando si el producto está habilitado o deshabilitado) en el archivo CSV que contiene los productos exportados. El estado del producto se indica mediante la variable [!UICONTROL product_online] columna.
+Este artículo proporciona una solución al problema cuando no puede localizar la columna de estado (es decir, indicando si el producto está habilitado o deshabilitado) en el archivo CSV que contiene los productos exportados. El estado del producto se indica mediante la columna [!UICONTROL product_online].
 
 ## Productos y versiones afectados
 
-Adobe Commerce (todos los métodos de implementación) todo [versiones compatibles](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce (todos los métodos de implementación) [todas las versiones compatibles](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problema
 
-No puede localizar el [!UICONTROL status] en el archivo CSV que contiene los productos exportados. Por lo tanto, por ejemplo, exporta un CSV de todos los SKU, con su estado, pero la tabla parece no tener el [!UICONTROL status] columna.
+No puede encontrar la columna [!UICONTROL status] en el archivo CSV que contiene los productos exportados. Por lo tanto, por ejemplo, exporta un CSV de todos los SKU, con su estado, pero la tabla parece no tener la columna [!UICONTROL status].
 
 <u>Pasos a seguir:</u>
 
-1. En el Administrador de Adobe Commerce, seleccione **[!UICONTROL System]**, en **[!UICONTROL Data Transfer]** select **[!UICONTROL Export]**.
-1. En el **[!UICONTROL Export Settings]** , seleccione en la **[!UICONTROL Entity Type]** menú desplegable **[!UICONTROL Products]**.
-1. Buscar por **[!UICONTROL status]**, enumeradas en **[!UICONTROL Attribute Code]**. Verá ese código de atributo en la lista de atributos disponibles (**[!UICONTROL Enable Product]**).
+1. En el Administrador de Adobe Commerce, seleccione **[!UICONTROL System]**, en **[!UICONTROL Data Transfer]** seleccione **[!UICONTROL Export]**.
+1. En la sección **[!UICONTROL Export Settings]**, seleccione en la lista desplegable **[!UICONTROL Entity Type]** **[!UICONTROL Products]**.
+1. Busque **[!UICONTROL status]**, que aparece en **[!UICONTROL Attribute Code]**. Verá ese código de atributo en la lista de atributos disponibles (**[!UICONTROL Enable Product]**).
 1. Haga clic en **[!UICONTROL Export]**.
 
 <u>Resultado esperado:</u>
@@ -36,19 +36,19 @@ En el archivo CSV que acaba de exportar, verá una columna denominada [!UICONTRO
 
 <u>Resultado real:</u>
 
-No ve una columna etiquetada como [!UICONTROL status] en el archivo CSV exportado.
+No ve una columna denominada [!UICONTROL status] en el archivo csv exportado.
 
 ## Causa
 
-Se ha cambiado el nombre del atributo de estado del producto en el archivo CSV. Ahora es el [!UICONTROL product_online] columna.
+Se ha cambiado el nombre del atributo de estado del producto en el archivo CSV. Ahora es la columna [!UICONTROL product_online].
 
 ## Solución
 
-1. Seleccionar **[!UICONTROL System]**, en **[!UICONTROL Data Transfer]** select **[!UICONTROL Import]**.
-1. Clic **[!UICONTROL Download Sample File]**.
-1. Se puede ver el [!UICONTROL product_online] en el archivo CSV.
+1. Seleccione **[!UICONTROL System]**, en **[!UICONTROL Data Transfer]** seleccione **[!UICONTROL Import]**.
+1. Haga clic en **[!UICONTROL Download Sample File]**.
+1. Puede ver la columna [!UICONTROL product_online] en el archivo CSV.
 
 ## Lectura relacionada
 
-* [Uso de archivos CSV](https://docs.magento.com/user-guide/system/data-csv.html) en nuestra guía del usuario.
+* [Trabajando con archivos CSV](https://docs.magento.com/user-guide/system/data-csv.html) en nuestra guía del usuario.
 * [Referencia de atributos de exportación de productos](https://docs.magento.com/user-guide/system/data-attributes-product.html) en nuestra guía del usuario.

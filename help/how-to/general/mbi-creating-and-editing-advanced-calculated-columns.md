@@ -12,18 +12,18 @@ ht-degree: 0%
 
 # MBI: Creación y edición de columnas calculadas avanzadas
 
-[Usuarios administradores](https://docs.magento.com/mbi/administrator/user-management/user-management.html) tienen la capacidad de crear y editar ciertas columnas calculadas en el Administrador de Datas Warehouse. Estas columnas calculadas le permiten configurar los informes que busca para responder a preguntas comerciales clave.
+[Los usuarios administradores](https://docs.magento.com/mbi/administrator/user-management/user-management.html) tienen la capacidad de crear y editar ciertas columnas calculadas en el Administrador de Datas Warehouse. Estas columnas calculadas le permiten configurar los informes que busca para responder a preguntas comerciales clave.
 
 Para obtener la lista de columnas calculadas que puede crear en el Administrador de Datas Warehouse, así como instrucciones para asegurarse de que las configura correctamente, consulte los siguientes artículos en nuestra guía del usuario:
 
-* [Creación de columnas calculadas](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/creating-calculated-columns.html)
+* [Creando columnas calculadas](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/creating-calculated-columns.html)
 * [Tipos de columnas calculadas](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/calc-column-types.html)
 * [Explicación y evaluación de las relaciones de tabla](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/table-relationships.html)
-* [Creación de rutas para columnas calculadas](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/create-paths-calc-columns.html)
+* [Creando rutas de acceso para las columnas calculadas](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/create-paths-calc-columns.html)
 
 ## ¡Todavía necesito ayuda!
 
-Si necesita ayuda para crear una columna calculada normal o desea crear o editar una columna calculada avanzada, [póngase en contacto con nuestro equipo](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) e incluir lo siguiente:
+Si necesita ayuda para crear una columna calculada normal o desea crear o editar una columna calculada avanzada, [póngase en contacto con nuestro equipo](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) e incluya lo siguiente:
 
 * ¿Qué estás tratando de hacer?
 * ¿En qué tabla necesita crear las nuevas columnas?
@@ -37,5 +37,5 @@ Si no está seguro de cómo responder a alguna de estas preguntas, no se preocup
 
 * [Guía del usuario de MBI](https://docs.magento.com/mbi)
 * [MBI: discrepancias de datos](/help/troubleshooting/miscellaneous/mbi-data-discrepancies.md)
-* [MBI: Analista de datos](https://docs.magento.com/mbi/data-analyst.html)
-* [MBI: Obtención de ayuda con Magento BI](https://docs.magento.com/mbi/getting-started/support.html)
+* [MBI: analista de datos](https://docs.magento.com/mbi/data-analyst.html)
+* [MBI: obteniendo ayuda con el Magento BI](https://docs.magento.com/mbi/getting-started/support.html)

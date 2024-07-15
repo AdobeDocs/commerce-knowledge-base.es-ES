@@ -30,18 +30,18 @@ Una razón para la degradación del rendimiento puede ser que se deshabiliten ci
 
 ## Solución
 
-1. En primer lugar, compruebe el estado de la caché de Adobe Commerce para ver si este es el problema. Para esto, [SSH a su entorno](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) y ejecute el siguiente comando:
+1. En primer lugar, compruebe el estado de la caché de Adobe Commerce para ver si este es el problema. Para ello, [SSH a su entorno](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh) y ejecute el siguiente comando:
 
    ```bash
    php bin/magento cache:status
    ```
 
-   Esto mostraría el estado de cada tipo de caché (&quot;0&quot; para deshabilitado, &quot;1&quot; para habilitado). O puede obtener esta información en la `app/etc/env.php` archivo.
+   Esto mostraría el estado de cada tipo de caché (&quot;0&quot; para deshabilitado, &quot;1&quot; para habilitado). O puede obtener esta información en el archivo `app/etc/env.php`.
 
 1. Investigue los tipos de caché deshabilitados. Todos los tipos de caché de Adobe Commerce deben habilitarse, a menos que haya recibido instrucciones alternativas de Adobe. Las extensiones de terceros no deben requerir la desactivación de la caché de Adobe Commerce.
 1. Si la investigación confirma que algunos tipos de caché están deshabilitados por error, actívelos ejecutando el siguiente comando para cada tipo de caché: `php bin/magento cache:enable <your_disabled_cache_type>`
 
-Si hay dudas o preguntas sobre si un determinado tipo de caché de Adobe Commerce puede o debe deshabilitarse, [ponerse en contacto con soporte de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) pedir recomendaciones.
+Si tiene dudas o preguntas sobre si cierto tipo de caché de Adobe Commerce se puede o se debe deshabilitar, [póngase en contacto con el servicio de atención al cliente de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para obtener recomendaciones.
 
 ## Lectura relacionada
 

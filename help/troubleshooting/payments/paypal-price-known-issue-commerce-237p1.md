@@ -29,12 +29,12 @@ Al realizar un pedido mediante el método de pago PayPal Express Checkout, el pr
 
 1. En el frente de la tienda, añada cualquier producto al carro de compras (producto A, precio $50).
 1. Haga clic en el vínculo carro de compras para abrirlo.
-1. Haga clic en **Pago y envío mediante PayPal** botón.
+1. Haz clic en el botón **Pago y envío por PayPal**.
 1. Utiliza tus credenciales de PayPal para iniciar sesión en PayPal y enviar el pago.
 1. Finalizar la colocación del pedido en la tienda.
 1. Vuelva al catálogo y añada un producto diferente (producto B, precio 100 $) al carro de compras.
 1. Haga clic en el vínculo carro de compras para abrirlo.
-1. Haga clic en **Pago y envío mediante PayPal** botón.
+1. Haz clic en el botón **Pago y envío por PayPal**.
 
 <u>Resultado real:</u>
 
@@ -51,7 +51,7 @@ Aplique el parche proporcionado en este artículo.
 
 ## Parche
 
-Utilice el siguiente enlace para descargar un archivo .zip que contenga el parche: [MC42674-composer.patch.zip](assets/MC42674-composer.patch.zip).
+Use el siguiente vínculo para descargar un archivo .zip que contenga el parche: [MC42674-composer.patch.zip](assets/MC42674-composer.patch.zip).
 
 ### Versiones de Adobe Commerce compatibles
 

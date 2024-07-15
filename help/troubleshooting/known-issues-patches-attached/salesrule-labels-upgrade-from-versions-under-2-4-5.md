@@ -1,6 +1,6 @@
 ---
-title: '**[!UICONTROL salesRules]** problemas con las etiquetas al actualizar desde versiones < 2.4.5'
-description: Aplicar un parche para hacer frente a la **[!UICONTROL salesRules]** al actualizar desde versiones de Adobe Commerce < 2.4.5.
+title: '**[!UICONTROL salesRules]** problemas de etiquetas al actualizar desde versiones < 2.4.5'
+description: Aplique un parche para solucionar los problemas **[!UICONTROL salesRules]** al actualizar desde versiones de Adobe Commerce < 2.4.5.
 source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
 workflow-type: tm+mt
 source-wordcount: '169'
@@ -8,9 +8,9 @@ ht-degree: 0%
 
 ---
 
-# **[!UICONTROL salesRules]** etiquetas problemas al actualizar desde versiones &lt; 2.4.5
+# **[!UICONTROL salesRules]** problemas de etiquetas al actualizar desde versiones &lt; 2.4.5
 
-El **[!UICONTROL salesRules]** la funcionalidad de ensayo de etiquetas se ha introducido en Adobe Commerce [2.4.5](/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html). El cambio puede provocar problemas al actualizar desde Adobe Commerce &lt; 2.4.5 a cualquier versión >= 2.4.5. Después de la actualización, existe la posibilidad de que **[!UICONTROL salesRules]** las etiquetas no coinciden. Para solucionar el problema, se debe aplicar un parche justo después de la actualización a una versión más reciente de Adobe Commerce.
+La funcionalidad de ensayo de etiquetas **[!UICONTROL salesRules]** se introdujo en Adobe Commerce [2.4.5](/docs/commerce-operations/release/notes/adobe-commerce/2-4-5.html). El cambio puede provocar problemas al actualizar desde Adobe Commerce &lt; 2.4.5 a cualquier versión >= 2.4.5. Después de la actualización, existe la posibilidad de que las etiquetas **[!UICONTROL salesRules]** no coincidan. Para solucionar el problema, se debe aplicar un parche justo después de la actualización a una versión más reciente de Adobe Commerce.
 
 ## Productos y versiones afectados
 
@@ -24,7 +24,7 @@ Utilice el siguiente parche adjunto:
 
 ## Cómo aplicar el parche
 
-1. Siga los pasos de [Realización de una actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) en la guía de Commerce.
-1. Aplique el parche adjunto antes de la **[!UICONTROL Update metadata]** fase.
-(También puede aplicar el parche después de completar el **[!UICONTROL Update metadata]** fase, pero entonces debe ejecutar `bin/magento setup:upgrade` una vez más).
-1. Continúe con el resto de los pasos indicados en [Realización de una actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
+1. Siga los pasos de [Realizar una actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) en la guía de Commerce.
+1. Aplicar el parche adjunto antes de la fase **[!UICONTROL Update metadata]**.
+(También puede aplicar el parche una vez que haya completado la fase **[!UICONTROL Update metadata]**, pero tendrá que ejecutar `bin/magento setup:upgrade` de nuevo).
+1. Continúe con el resto de los pasos de [Realizar una actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).

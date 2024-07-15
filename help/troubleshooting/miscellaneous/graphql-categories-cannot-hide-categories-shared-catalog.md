@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ## Problema
 
-Categorías de GraphQL y `categoryList` las consultas omiten el permiso de categoría para ocultar categorías en un catálogo compartido. Esto les sucede a todos los comerciantes en Adobe Commerce 2.4.3 con la función de catálogo compartido B2B activada.
+Las categorías de GraphQL y las consultas `categoryList` omiten el permiso de categoría para ocultar categorías en un catálogo compartido. Esto les sucede a todos los comerciantes en Adobe Commerce 2.4.3 con la función de catálogo compartido B2B activada.
 
 <u>Pasos a seguir</u>:
 
@@ -34,8 +34,8 @@ Esto les sucede a todos los comerciantes en Adobe Commerce 2.4.3 con una tienda 
 1. Asigne algunos productos a cada una de estas categorías.
 1. Asigne CAT1 al catálogo personalizado y anule la asignación de CAT2 al catálogo privado personalizado. Esto anula la asignación de todos los productos CAT2 del catálogo compartido.
 1. Guarde el catálogo personalizado.
-1. Establezca el permiso de categoría para CAT2 en *Denegar* Examine la categoría y establezca el grupo de clientes en el catálogo privado anterior.
-1. Ejecute el `categoryList query` o las categorías consultan como el usuario de la compañía desde el paso tres.
+1. Establezca el permiso de categoría para CAT2 en *Denegar* categoría de exploración y establezca el grupo de clientes en el catálogo privado anterior.
+1. Ejecute la consulta `categoryList query` o las categorías como usuario de la compañía desde el paso tres.
 
 <u>Resultados esperados</u>:
 
@@ -51,8 +51,8 @@ No se ha implementado la funcionalidad.
 
 ## Solución
 
-El problema se va a solucionar en el ámbito de la versión 2.4.4 y los comerciantes deberían [enviar un ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para obtener un parche personalizado si necesita una solución antes de la versión 2.4.4.
+El problema se solucionará en el ámbito de la versión 2.4.4, y los comerciantes deberían [enviar un ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para obtener un parche personalizado si necesitan una solución antes de la versión 2.4.4.
 
 ## Lectura relacionada
 
-* [Práctica recomendada Adobe Commerce límites de número de categorías](https://support.magento.com/hc/en-us/articles/360048176832) en nuestra base de conocimiento de soporte.
+* [Límites en el número de categorías de Adobe Commerce de prácticas recomendadas](https://support.magento.com/hc/en-us/articles/360048176832) en nuestra base de conocimiento de soporte.

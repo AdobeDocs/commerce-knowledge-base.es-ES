@@ -23,7 +23,7 @@ Durante la instalación con el Asistente para la instalación, el proceso se det
 
 Las causas comunes de este problema incluyen:
 
-* La configuración de PHP para [`max_execution_time`](http://php.net/manual/en/info.configuration.php#ini.max-execution-time)
+* Configuración de PHP para [`max_execution_time`](http://php.net/manual/en/info.configuration.php#ini.max-execution-time)
 * Valores de tiempo de espera para nginx y Varnish
 
 ## Solución:
@@ -32,11 +32,11 @@ Configure todas las siguientes opciones según corresponda.
 
 ### Todos los servidores web y Barnish {#all-web-servers-and-varnish}
 
-1. Busque su `php.ini` uso de un [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) archivo.
-1. Como usuario con `root` privilegios, abrir `php.ini` en un editor de texto.
-1. Busque el `max_execution_time` configuración.
-1. Cambie su valor a `18000` .
-1. Guardar los cambios en `php.ini` y salga del editor de texto.
+1. Busque su `php.ini` usando un archivo de [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo).
+1. Como usuario con privilegios de `root`, abra `php.ini` en un editor de texto.
+1. Busque la configuración `max_execution_time`.
+1. Cambie su valor a `18000`
+1. Guarde los cambios en `php.ini` y salga del editor de texto.
 1. Reinicie Apache:
 
    * CentOS: `service httpd restart`
@@ -46,7 +46,7 @@ Configure todas las siguientes opciones según corresponda.
 
 ### nginx solamente {#nginx-only}
 
-Si utiliza nginx, utilice nuestro incluido `nginx.conf.sample` o agregue una configuración de tiempo de espera en el archivo de configuración del host nginx a `location ~ ^/setup/index.php` como sigue:
+Si usa nginx, use nuestro `nginx.conf.sample` incluido o agregue una configuración de tiempo de espera en el archivo de configuración del host nginx a la sección `location ~ ^/setup/index.php` de la siguiente manera:
 
 ```php
 location ~ ^/setup/index.php {
@@ -60,7 +60,7 @@ Reiniciar nginx: `service nginx restart`
 
 ### Solo barniz {#varnish-only}
 
-Si utiliza Barniz, edite `default.vcl` y añada un valor de límite de tiempo de espera a `backend` estrofa como sigue:
+Si usa Barnish, edite `default.vcl` y agregue un valor de límite de tiempo de espera a la estrofa `backend` de la siguiente manera:
 
 ```php
 backend default {

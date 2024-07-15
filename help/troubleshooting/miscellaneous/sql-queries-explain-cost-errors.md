@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Consultas SQL: EXPLICAR errores de coste
 
-Este artículo proporciona soluciones para los errores de coste EXPLAIN cuando se ejecutan consultas SQL fallidas. PostgreSQL utiliza algo llamado [el comando EXPLAIN](https://www.postgresql.org/docs/9.5/static/using-explain.html) para determinar el coste de las consultas SQL. Creamos el Report Builder SQL para que también utilice este comando, lo que significa que si el coste se considera demasiado alto (la cantidad de recursos necesarios para ejecutar la consulta supera nuestros umbrales), la consulta no se ejecutará y se mostrará el mensaje EXPLAIN.
+Este artículo proporciona soluciones para los errores de coste EXPLAIN cuando se ejecutan consultas SQL fallidas. PostgreSQL usa algo llamado [el comando EXPLAIN](https://www.postgresql.org/docs/9.5/static/using-explain.html) para determinar el costo de las consultas SQL. Creamos el Report Builder SQL para que también utilice este comando, lo que significa que si el coste se considera demasiado alto (la cantidad de recursos necesarios para ejecutar la consulta supera nuestros umbrales), la consulta no se ejecutará y se mostrará el mensaje EXPLAIN.
 
 Esto puede deberse a varias razones. A continuación se indican los mensajes que podría recibir, qué significan y cómo solucionarlos.
 
 ## No se puede ejecutar la consulta. El valor de costo EXPLAIN de \[xxx\] es demasiado alto para ejecutar esta consulta.
 
-Si ve este mensaje, significa que la consulta se consideró demasiado costosa para ejecutarse. Tenemos dos recomendaciones para esta situación: una es eliminar cualquier cláusula ORDER BY de la consulta, ya que son operaciones costosas. La segunda es seguir los consejos de nuestra [artículo de optimización](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) para modificar la consulta.
+Si ve este mensaje, significa que la consulta se consideró demasiado costosa para ejecutarse. Tenemos dos recomendaciones para esta situación: una es eliminar cualquier cláusula ORDER BY de la consulta, ya que son operaciones costosas. El segundo es seguir las sugerencias de nuestro [artículo de optimización](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) para modificar su consulta.
 
 ## No se puede ejecutar la consulta. Esta consulta devuelve \[xxx\] filas, lo que supera el límite de 10 000
 

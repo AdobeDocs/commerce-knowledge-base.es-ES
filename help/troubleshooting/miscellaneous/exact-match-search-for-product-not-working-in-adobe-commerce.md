@@ -28,9 +28,9 @@ Tiene productos con valores de atributo `Saga 1` y `Saga 16` en las tiendas Adob
 
 <u>Pasos a seguir:</u>
 
-1. En la tienda delante de una tienda con tecnología Adobe Commerce 2.3, introduzca *Saga 1* en el campo de búsqueda y haga clic en **Buscar**.
-1. Observe que en los resultados de búsqueda, solo obtiene los productos con el valor de atributo `Saga 1`.
-1. En la tienda delante de una tienda con tecnología Adobe Commerce 2.4, introduzca *Saga 1* en el campo de búsqueda y haga clic en **Buscar**.
+1. En la tienda de una tienda con tecnología Adobe Commerce 2.3, escribe *Saga 1* en el campo de búsqueda y haz clic en **Buscar**.
+1. Observe que en los resultados de búsqueda sólo se obtienen los productos con el valor de atributo `Saga 1`.
+1. En la tienda de una tienda con tecnología Adobe Commerce 2.4, escribe *Saga 1* en el campo de búsqueda y haz clic en **Buscar**.
 
 <u>Resultado real:</u>
 

@@ -1,6 +1,6 @@
 ---
-title: "Adobe Commerce Intelligence Essentials: actualizar método de pago o cancelar suscripción"
-description: Este artículo explica cómo los clientes mes a mes de Adobe Commerce Intelligence Essentials pueden cancelar sus suscripciones o actualizar su método de pago para sus suscripciones existentes.
+title: "Adobe Commerce Intelligence Essentials: actualizar el método de pago o cancelar la suscripción"
+description: Este artículo explica cómo los clientes de Adobe Commerce Intelligence Essentials pueden cancelar sus suscripciones o actualizar su método de pago para sus suscripciones existentes.
 exl-id: 45e95451-6d17-44c7-81d3-87f5876b5758
 feature: Commerce Intelligence
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
@@ -10,13 +10,13 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce Intelligence Essentials: actualizar método de pago o cancelar suscripción
+# Adobe Commerce Intelligence Essentials: actualizar el método de pago o cancelar la suscripción
 
-Este artículo explica cómo los clientes mes a mes de Adobe Commerce Intelligence Essentials pueden cancelar sus suscripciones o actualizar su método de pago para sus suscripciones existentes.
+Este artículo explica cómo los clientes de Adobe Commerce Intelligence Essentials pueden cancelar sus suscripciones o actualizar su método de pago para sus suscripciones existentes.
 
 ## Productos y versiones afectados
 
-* Commerce Intelligence Essentials: solo es relevante para clientes de Essentials de un mes a otro. No para clientes que tienen acceso a Essentials como parte de su contrato comercial.
+* Commerce Intelligence Essentials: Solo relevante para clientes de Essentials de un mes a otro. No para clientes que tienen acceso a Essentials como parte de su contrato comercial.
 
 ## Commerce Intelligence Essentials: actualizar/cancelar suscripciones
 

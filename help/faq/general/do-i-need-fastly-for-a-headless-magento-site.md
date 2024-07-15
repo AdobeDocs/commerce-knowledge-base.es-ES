@@ -25,7 +25,7 @@ Estoy desarrollando una implementación sin encabezado de Adobe Commerce. ¿Toda
 No, tú no. En esta situación, puede omitir el uso de Fastly - al menos, en el comienzo del desarrollo.
 
 La única situación que es posible que no desee habilitar es para una implementación sin encabezado.
-Consulte [Cloud para Adobe Commerce > Rápidamente](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) en nuestra documentación para desarrolladores.
+Consulte [Nube para Adobe Commerce > Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) en nuestra documentación para desarrolladores.
 
 Aún así, lo más probable es que necesite Fastly para utilizar su certificado SSL.
 
@@ -33,5 +33,5 @@ Todos los clientes de Adobe Commerce en la infraestructura en la nube obtienen u
 
 ## Más información
 
-* [Sitios web sin encabezado: ¿Cuál es el gran problema con la arquitectura disociada?](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) por [Josh Koenig](https://pantheon.io/team/josh-koenig).
-* [Rápido](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) en nuestra documentación para desarrolladores.
+* [Sitios web sin encabezado: ¿Cuál es el problema con la arquitectura disociada?](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) por [Josh Koenig](https://pantheon.io/team/josh-koenig).
+* [Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html) en nuestra documentación para desarrolladores.

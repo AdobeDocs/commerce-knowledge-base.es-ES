@@ -30,9 +30,9 @@ Todas las versiones de Adobe Commerce on-premise y Adobe Commerce en la nube has
 
 <u>Pasos a seguir:</u>
 
-1. Ir a **Tiendas** > **Configuración** > **Clientes** > **Configuración del cliente** > **Crear nuevas opciones de cuenta** y establecer **Habilitar asignación automática** hasta **Grupo de clientes** hasta *Sí*.
-1. Ir a **General** > **Información de tienda** > y establezca un país y un número de IVA válidos.
-1. Haga clic en **Validar número de IVA**.
+1. Vaya a **Tiendas** > **Configuración** > **Clientes** > **Configuración del cliente** > **Crear nuevas opciones de cuenta** y establezca **Habilitar asignación automática** a **Grupo de clientes** en *Sí*.
+1. Vaya a **General** > **Información de la tienda** > y establezca un país y un número de IVA válidos.
+1. Haz clic en **Validar número de IVA**.
 
 <u>Resultado esperado:</u>
 
@@ -44,7 +44,7 @@ Se muestra el siguiente error: &quot;*Error durante la verificación del número
 
 ## Solución
 
-Aplique la variable [parche](assets/MDVA-27623_EE_2.3.2-p2_COMPOSER_v1.patch.zip) mencionado en este artículo.
+Aplique el [parche](assets/MDVA-27623_EE_2.3.2-p2_COMPOSER_v1.patch.zip) proporcionado en este artículo.
 
 ## Parche
 

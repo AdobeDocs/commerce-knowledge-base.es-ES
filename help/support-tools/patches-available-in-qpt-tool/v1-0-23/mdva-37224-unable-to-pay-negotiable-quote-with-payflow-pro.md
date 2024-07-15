@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-37224: No se puede pagar una &quot;cotización negociable&quot; con PayFlow Pro
 
-El parche MDVA-37224 soluciona el problema cuando los clientes no pueden pagar por una **Cotización negociable** con Paypal PayFlow Pro. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.23 está instalado. El ID del parche es MDVA-37224. Tenga en cuenta que está programado que el problema se corrija en la versión 2.4.3 de Adobe Commerce.
+El parche MDVA-37224 soluciona el problema cuando los clientes no pueden pagar un **presupuesto negociable** con PayFlow Pro de PayPal. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.23. El ID del parche es MDVA-37224. Tenga en cuenta que está programado que el problema se corrija en la versión 2.4.3 de Adobe Commerce.
 
 ## Productos y versiones afectados
 
@@ -22,7 +22,7 @@ El parche MDVA-37224 soluciona el problema cuando los clientes no pueden pagar p
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -30,7 +30,7 @@ El parche MDVA-37224 soluciona el problema cuando los clientes no pueden pagar p
 
 * Adobe Commerce con módulo B2B instalado
 * Funcionalidad de empresa habilitada
-* **Cotización negociable** funcionalidad habilitada
+* **Funcionalidad de presupuesto negociable** habilitada
 * Existe un usuario de empresa
 * El método de pago PayFlow Pro de PayPal está activado y configurado
 * El método de pago PayPal PayFlow Pro está permitido para B2B
@@ -39,12 +39,12 @@ El parche MDVA-37224 soluciona el problema cuando los clientes no pueden pagar p
 <u>Pasos a seguir</u>:
 
 1. Abra la Tienda.
-1. Añadir **Product 1** al carro de compras.
-1. Crear un **Cotización negociable** para **Product 1**.
-1. Añadir **Product 2** al carro de compras.
-1. En Administración, acepte las **Cotización negociable** creado en el paso 3.
-1. En la Tienda, abra esto **Cotización negociable** y continúe con el cierre de compra.
-1. Seleccione el **Método de pago** = *PayPal PayFlow Pro* en el **Revisión y pagos** paso.
+1. Agregue **Producto 1** al carro de compras.
+1. Crear un **presupuesto negociable** para **producto 1**.
+1. Agregue **Producto 2** al carro de compras.
+1. Desde el administrador, acepte el **presupuesto negociable** creado en el paso 3.
+1. Desde la Tienda, abre este **Presupuesto negociable** y continúa con el cierre de compra.
+1. Seleccione el **método de pago** = *PayPal PayFlow Pro* en el paso **Revisar y efectuar pagos**.
 1. Realice el pedido.
 
 <u>Resultados esperados</u>:
@@ -84,7 +84,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
 * 
-   * [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+   * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) sección.
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

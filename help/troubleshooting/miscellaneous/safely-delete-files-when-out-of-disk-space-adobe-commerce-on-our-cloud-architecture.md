@@ -16,7 +16,7 @@ ht-degree: 0%
 ## Productos y versiones afectados
 
 * Adobe Commerce en infraestructura en la nube 2.4.2 - 2.4.7
-* Esto es específico de los clústeres Pro dedicados. Los entornos de Inicio e Integración son de un solo nodo y no tienen el `/data/exports` directorio.
+* Esto es específico de los clústeres Pro dedicados. Los entornos de Inicio e Integración son de un solo nodo y no tienen el directorio `/data/exports`.
 
 ## Signos de poco espacio en disco
 
@@ -28,15 +28,15 @@ Para ver la cantidad de espacio en disco que utiliza el sistema de archivos, eje
 
 ## Cómo eliminar archivos de forma segura para aumentar el espacio en disco
 
-Puede eliminar archivos de los puntos de montaje de la aplicación, desde su `/app` ruta o pasante `/mnt/shared`. Existen dos formas diferentes de acceder a los mismos archivos.
+Puede eliminar archivos de los puntos de montaje de la aplicación, de la ruta de acceso `/app` o a través de `/mnt/shared`. Existen dos formas diferentes de acceder a los mismos archivos.
 
 >[!WARNING]
 >
 >**Nunca modifique ni elimine el contenido de`/data/exports`**.
 >
->`/data/exports` es el almacenamiento subyacente detrás del sistema de archivos compartido, y es administrado por GlusterFS.
+>`/data/exports` es el almacenamiento subyacente detrás del sistema de archivos compartido y está administrado por GlusterFS.
 >
->El sistema de archivos contiene no solo el contenido del archivo, sino también metadatos sobre el estado del sistema de archivos para permitir la sincronización >entre los nodos del clúster. **Cambiar o eliminar archivos directamente dentro de este sistema de archivos dañará el sistema de archivos compartido, requiriendo reparaciones extensas o recuperación de datos.**
+>El sistema de archivos contiene no solo el contenido del archivo, sino también metadatos sobre el estado del sistema de archivos para permitir la sincronización >entre los nodos del clúster. **Si cambia o elimina archivos directamente dentro de este sistema de archivos, se dañará el >sistema de archivos compartido, lo que requerirá reparaciones extensas o recuperación de datos.**
 
 Para localizar los archivos más grandes que puedan ser buenos candidatos para borrar, ejecute el siguiente comando (en proyectos grandes o ocupados puede tardar hasta una hora):
 

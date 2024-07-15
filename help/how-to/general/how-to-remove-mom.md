@@ -11,6 +11,6 @@ ht-degree: 0%
 
 # Cómo quitar el Magento Order Management (MOM)
 
-1. Deshabilite la integración de MOM siguiendo los pasos indicados en [Desactivar o activar la integración](/docs/commerce-admin/systems/integrations/mcom.html#disable-or-enable-the-integration).
-1. Deshabilite el módulo MOM siguiendo los pasos indicados en [Desinstalación de módulos](/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
-1. Para extraer datos de pedidos completos, ofrecemos la API. Para obtener más información, consulte [Ordenar repositorio](https://omsdocs.magento.com/specifications/#magento.sales.order_repository) en nuestro Adobe | Documentos de OMS de Magento, que tratan sobre la información de pedidos (order_repository). Utilice el [sección de especificaciones](https://omsdocs.magento.com/specifications/#services) en nuestro Adobe | Magento OMS Docs para utilizar otras API y extraer distintos tipos de información.
+1. Deshabilite la integración de MOM siguiendo los pasos de [Deshabilite o habilite la integración](/docs/commerce-admin/systems/integrations/mcom.html#disable-or-enable-the-integration).
+1. Deshabilite el módulo MOM siguiendo los pasos de [Desinstalar módulos](/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
+1. Para extraer datos de pedidos completos, ofrecemos la API. Puede obtener más información revisando [Repositorio de pedidos](https://omsdocs.magento.com/specifications/#magento.sales.order_repository) en nuestro Adobe | Documentos de OMS de Magento, que tratan sobre la información de pedidos (order_repository). Use la [sección de especificaciones](https://omsdocs.magento.com/specifications/#services) en nuestro Adobe | Magento OMS Docs para utilizar otras API y extraer distintos tipos de información.

@@ -21,18 +21,18 @@ En este artículo se describe un problema conocido de Adobe Commerce 2.4.2 en el
 
 ## Problema
 
-<u>Condición previa</u> :
+<u>Condición Previa</u> :
 
 Habilitar pago Venmo en la configuración de Braintree.
 
 <u>Pasos a seguir</u> :
 
 1. En la tienda, agregue cualquier artículo al carro de compras.
-1. Continúe en **Finalizar compra**.
+1. Continuar con **cierre de compra**.
 1. Seleccione el método de envío adecuado.
-1. Seleccionar **Venmo** como forma de pago.
-1. Clic **Pagar con Venmo**.
-1. Clic **Realizar pedido**.
+1. Selecciona **Venmo** como forma de pago.
+1. Haz clic en **Pagar con Venmo**.
+1. Haga clic en **Realizar pedido**.
 
 <u>Resultados reales</u>:
 

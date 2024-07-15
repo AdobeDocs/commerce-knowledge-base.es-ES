@@ -17,7 +17,7 @@ En este tema se sugiere una solución a un problema típico de rendimiento de re
 
 ## Productos y versiones afectados
 
-* Adobe Commerce en la infraestructura en la nube (todas las versiones) `Master/Production/Staging` Entornos que se aprovechan rápidamente
+* Adobe Commerce en la infraestructura en la nube (todas las versiones) `Master/Production/Staging` entornos que aprovechan Fastly
 
 ## Problema
 
@@ -25,9 +25,9 @@ En Adobe Commerce, en la infraestructura de la nube, no se pueden realizar grand
 
 ## Causa
 
-El `routes.yaml` archivo en el `.magento/routes.yaml` define las rutas para su Adobe Commerce en la infraestructura en la nube.
+El archivo `routes.yaml` del directorio `.magento/routes.yaml` define las rutas para su Adobe Commerce en la infraestructura de la nube.
 
-Si el tamaño de su `routes.yaml` tiene 32 KB o más, debería descargar las redirecciones/reescrituras que no sean de regex a Fastly.
+Si el tamaño del archivo de `routes.yaml` es de 32 KB o más, debería descargar las redirecciones/reescrituras que no sean de regex a Fastly.
 
 Esta capa de Nginx no puede gestionar un gran número de redirecciones/reescrituras que no sean de regex, o se producirán problemas de rendimiento.
 
@@ -39,7 +39,7 @@ Los siguientes pasos detallarán cómo colocar redirecciones en Fastly en lugar 
 
 1. Crear un diccionario de Edge.
 
-   En primer lugar, puede utilizar [Fragmentos de VCL en Adobe Commerce](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) para definir un diccionario de Edge. Esto contendrá las redirecciones.
+   Primero, puede usar [fragmentos de VCL en Adobe Commerce](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) para definir un diccionario de Edge. Esto contendrá las redirecciones.
 
    Algunas advertencias a esto:
 
@@ -74,9 +74,9 @@ Los siguientes pasos detallarán cómo colocar redirecciones en Fastly en lugar 
 
 1. Administrar el redireccionamiento.
 
-   Cuando se encuentra una coincidencia, se realiza la acción que está definida para eso `obj.status`, en este caso un redireccionamiento de movimiento permanente 301.
+   Cuando se encuentra una coincidencia, se realiza la acción definida para ese(a) `obj.status`, en este caso una redirección de movimiento permanente 301.
 
-   Uso de un fragmento final en `vcl_error` para devolver los códigos de error 301 al cliente:
+   Use un último fragmento de código en `vcl_error` para devolver los códigos de error 301 al cliente:
 
    ```
      if (obj.status == 912) {
@@ -87,7 +87,7 @@ Los siguientes pasos detallarán cómo colocar redirecciones en Fastly en lugar 
           }
    ```
 
-   Con este bloque, estamos comprobando si el código de error pasado desde `vcl_recv` coincide y, si es así, estableceremos la ubicación en el mensaje de error transmitido y, a continuación, cambiaremos el código de estado a 301 y el mensaje a &quot;Movido permanentemente&quot;. En ese momento, la respuesta debe estar lista para volver al cliente.
+   Con este bloque, estamos comprobando si el código de error pasado desde `vcl_recv` coincide y, si es así, estableceremos la ubicación en el mensaje de error pasado, luego cambiaremos el código de estado a 301 y el mensaje a &quot;Movido permanentemente&quot;. En ese momento, la respuesta debe estar lista para volver al cliente.
 
 ### Servicio de fase
 
@@ -100,6 +100,6 @@ Si no desea ejecutar un entorno de ensayo de Adobe Commerce, pero desea ver el a
 ## Lectura relacionada
 
 * [Referencia de VCL de Fastly](https://docs.fastly.com/vcl/)
-* [Configuración de rutas](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) en nuestra documentación para desarrolladores.
-* [Configuración rápida](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en nuestra documentación para desarrolladores.
-* [Hoja de trucos de expresiones regulares VCL](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) en nuestra documentación para desarrolladores.
+* [Configure rutas](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) en nuestra documentación para desarrolladores.
+* [Configurado rápidamente](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en nuestra documentación para desarrolladores.
+* [Hoja de referencia de expresiones regulares VCL](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) en nuestra documentación para desarrolladores.

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Buscar tablas MySQL grandes
 
-Para identificar las tablas grandes, conéctese a la base de datos como se describe en la [Conexión a la base de datos](https://devdocs.magento.com/cloud/project/project-conf-files_services-mysql.html#connect-to-the-database) artículo y ejecute el siguiente comando, donde `project_id` es su ID de proyecto de Cloud:
+Para identificar las tablas grandes, conéctese a la base de datos como se describe en el artículo [Conectarse a la base de datos](https://devdocs.magento.com/cloud/project/project-conf-files_services-mysql.html#connect-to-the-database) y ejecute el siguiente comando, donde `project_id` es su Id. de proyecto en la nube:
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

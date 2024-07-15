@@ -12,22 +12,22 @@ ht-degree: 0%
 
 # Vínculo Magento.com e inicios de sesión en la cuenta de accounts.magento.cloud
 
-A partir del 1 de abril de 2020, Adobe Commerce requerirá que los usuarios que tengan una cuenta en [accounts.magento.cloud](https://accounts.magento.cloud/) para vincular esta cuenta con su [Magento.com](https://account.magento.com/customer/account/login/) cuenta. Esto hará que la [Magento.com](https://account.magento.com/customer/account/login/) inicio de sesión de cuenta es el método de inicio de sesión principal para ambas cuentas y mejora la seguridad de los usuarios.
+A partir del 1 de abril de 2020, Adobe Commerce requerirá que los usuarios que tengan una cuenta en [accounts.magento.cloud](https://accounts.magento.cloud/) vinculen esta cuenta con su cuenta de [Magento.com](https://account.magento.com/customer/account/login/). Esto hará que el inicio de sesión en la cuenta de [Magento.com](https://account.magento.com/customer/account/login/) sea el método de inicio de sesión principal para ambas cuentas y mejorará la seguridad de los usuarios.
 
-Usuarios en [accounts.magento.cloud](https://accounts.magento.cloud/) Puede conectar estas cuentas mediante uno de estos dos métodos:
+Los usuarios de [accounts.magento.cloud](https://accounts.magento.cloud/) pueden conectar estas cuentas mediante uno de los dos métodos siguientes:
 
 ## Método 1
 
-1. Ir a **Configuración de cuenta** en [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) después de iniciar sesión con su método preferido.
-1. Abra el **Inicio de sesión único** de la página.
-1. Si la variable **Proveedor: Magento.com** Informes &quot;Estado no conectado&quot;, seleccione la opción **Conexión con Magento.com** botón.
+1. Vaya a **Configuración de la cuenta** en [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) después de iniciar sesión con su método preferido.
+1. Abra la sección **Inicio de sesión único** de la página.
+1. Si el **Proveedor: Magento.com** informa de &quot;Estado no conectado&quot;, selecciona el botón **Conectar con Magento.com**.
 1. Se le redirigirá a [https://account.magento.com/applications/customer/login/](https://account.magento.com/applications/customer/login/).
 1. Desde allí, puede crear una cuenta de Adobe Commerce o iniciar sesión en una existente.
 
 ## Método 2
 
-1. Iniciar sesión en [https://account.magento.com](https://account.magento.com/).
-1. Vaya a una pestaña independiente para [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user).
+1. Inicie sesión en [https://account.magento.com](https://account.magento.com/).
+1. Vaya a una ficha independiente a [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user).
 1. Haga clic en &quot;Conectar con [Magento.com](https://account.magento.com/customer/account/login/)&quot;.
 
 ## Lectura relacionada

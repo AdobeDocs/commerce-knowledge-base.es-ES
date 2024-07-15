@@ -17,7 +17,7 @@ Este artículo proporciona un parche para el problema conocido de Adobe Commerce
 
 ## Problema
 
-Al establecer/cambiar el precio especial de un producto, la fecha y la hora actuales se guardan en la base de datos como un valor para `special_from_date` (no visible al editar un producto). Si edita el precio especial y su cuenta de usuario de administrador está configurada en una configuración regional de interfaz diferente, podría establecerse un valor incorrecto en `special_from_date` debido a los problemas en el análisis del formato de fecha para diferentes configuraciones regionales.
+Cuando establece o cambia el precio especial de un producto, la fecha y la hora actuales se guardan en la base de datos como un valor para el atributo `special_from_date` (no visible al editar un producto). Si edita el precio especial y su cuenta de usuario de administrador está configurada en una configuración regional de interfaz diferente, podría establecerse un valor incorrecto en `special_from_date` debido a los problemas al analizar el formato de fecha para diferentes configuraciones regionales.
 
 <u>Pasos a seguir</u>:
 
@@ -26,14 +26,14 @@ Requisitos previos: la configuración regional del usuario administrador es ingl
 1. Inicie sesión en el administrador de Commerce.
 1. Vaya a la configuración de la cuenta de usuario de administrador.
 1. Configure la Configuración regional de la interfaz a Ucraniano.
-1. Clic **Guardar cuenta**.
-1. Ir a **Catálogo** > **Product**.
+1. Haga clic en **Guardar cuenta**.
+1. Vaya a **Catálogo** > **Producto**.
 1. Seleccione cualquier producto.
-1. En la página del producto, haga clic en **Precios avanzados**.
+1. En la página de productos, haz clic en **Precios avanzados**.
 1. Añade un precio especial.
 1. Guarde el producto.
 1. Repita los pasos 7-9.
-1. Ir a **Sistema** > **Registros de acciones**.
+1. Vaya a **Sistema** > **Registros de acciones**.
 1. Compruebe el registro para ver si hay actualizaciones del producto.
 
 <u>Resultados esperados</u>:

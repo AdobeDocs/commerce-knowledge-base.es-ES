@@ -29,7 +29,7 @@ Tiene un archivo .csv válido que contiene productos agrupados.
 
 <u>Pasos a seguir</u>:
 
-1. Importe el archivo utilizando la variable [Funcionalidad de importación](https://docs.magento.com/m2/ee/user_guide/system/data-import.html).
+1. Importe el archivo con la [funcionalidad de importación](https://docs.magento.com/m2/ee/user_guide/system/data-import.html).
 1. Abra la página del producto del paquete.
 
 <u>Resultados esperados</u>:
@@ -46,7 +46,7 @@ La posición de opciones no se ha declarado explícitamente.
 
 ## Solución
 
-1. Declare una posición explícitamente para cada opción en la `position` parámetro del `bundle_values` en el archivo .csv. Para obtener instrucciones detalladas, consulte [Editar los datos del producto](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) en nuestra guía del usuario.
+1. Declare una posición explícitamente para cada opción en el parámetro `position` de la columna `bundle_values` del archivo .csv. Para obtener instrucciones detalladas, consulte [Editar los datos del producto](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) en nuestra guía del usuario.
 1. Repita la operación de importación.
 
-Para obtener información general sobre la importación, consulte [Importando paquete de producto](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) en nuestra guía del usuario.
+Para obtener información general sobre la importación, consulte [Importación del producto del paquete](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) en nuestra guía del usuario.

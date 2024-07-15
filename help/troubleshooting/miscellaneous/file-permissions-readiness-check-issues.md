@@ -20,7 +20,7 @@ Este artículo proporciona una corrección para los problemas de comprobación d
 La forma de resolver el problema depende de si tiene una configuración de un usuario o de dos:
 
 * *Un usuario* significa que inicia sesión en el servidor de Adobe Commerce con el mismo usuario que también ejecuta el servidor web. Este tipo de configuración es común en entornos de alojamiento compartido.
-* *Dos usuarios* significa que normalmente *no puede* inicie sesión como usuario del servidor web o cambie a él. Normalmente, se inicia sesión como un usuario y se ejecuta el servidor web como un usuario diferente. Esto es típico en el alojamiento privado o si tiene su propio servidor.
+* *Dos usuarios* significa que normalmente *no puede* iniciar sesión como usuario del servidor web o cambiar a él. Normalmente, se inicia sesión como un usuario y se ejecuta el servidor web como un usuario diferente. Esto es típico en el alojamiento privado o si tiene su propio servidor.
 
 ## Resolución de un usuario
 
@@ -34,13 +34,13 @@ Si no tiene acceso desde la línea de comandos, utilice un cliente FTP o una apl
 
 ## Resolución para dos usuarios
 
-Para introducir todos los comandos en una línea, introduzca lo siguiente suponiendo que Adobe Commerce está instalado en `/var/www/html/magento2` y el nombre del grupo de servidores web es `apache`:
+Para especificar opcionalmente todos los comandos en una línea, escriba lo siguiente suponiendo que Adobe Commerce esté instalado en `/var/www/html/magento2` y que el nombre del grupo de servidores web sea `apache`:
 
 ```bash
 $ cd /var/www/html/magento2 && find var vendor pub/static pub/media app/etc -type f -exec chmod g+w {} + && find var vendor pub/static pub/media app/etc -type d -exec chmod g+ws {} + && chown -R :apache . && chmod u+x bin/magento
 ```
 
-En el sistema de archivos de evento, los permisos se establecen incorrectamente y el propietario del sistema de archivos de Adobe Commerce no los puede cambiar. Puede introducir el comando como usuario con `root` privilegios:
+En el sistema de archivos de evento, los permisos se establecen incorrectamente y el propietario del sistema de archivos de Adobe Commerce no puede cambiarlos. Puede introducir el comando como usuario con privilegios de `root`:
 
 ```bash
 $ cd /var/www/html/magento2 && sudo find var vendor

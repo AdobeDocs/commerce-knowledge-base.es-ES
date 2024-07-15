@@ -21,7 +21,7 @@ Este artículo explica cómo solucionar los problemas causados por la clave de c
 
 ## Problema
 
-Después de importar un [volcado base datos](/help/how-to/general/create-database-dump-on-cloud.md) desde Producción hasta Entornos de ensayo/integración, los números de tarjeta de crédito guardados parecen incorrectos y/o los pagos fallan en integraciones de pago que requieren el uso de credenciales de comerciante.
+Después de importar un [volcado de la base de datos](/help/how-to/general/create-database-dump-on-cloud.md) desde los entornos Producción a Ensayo/Integración, los números de tarjeta de crédito guardados parecen incorrectos y/o los pagos fallan en las integraciones de pago que requieren el uso de credenciales de comerciante.
 
 ## Causa
 
@@ -33,8 +33,8 @@ Debe copiar la clave de cifrado del entorno de origen y agregarla al entorno de 
 
 Para copiar la clave de cifrado:
 
-1. SSH al proyecto que fue el origen del volcado de la base de datos, como se describe en [SSH al entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) en nuestra documentación para desarrolladores.
-1. Abrir `app/etc/env.php` en un editor de texto.
+1. SSH al proyecto que era la fuente del volcado de la base de datos, tal como se describe en [SSH al entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) en nuestra documentación para desarrolladores.
+1. Abra `app/etc/env.php` en un editor de texto.
 1. Copie el valor de `key` para `crypt`.
 
 ```php
@@ -43,13 +43,13 @@ return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
 
 Para establecer el valor clave del proyecto de destino:
 
-1. Abra el [Consola de nube](https://console.adobecommerce.com) y busque el proyecto.
-1. Establezca el valor del [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) (en nuestra documentación para desarrolladores), tal como se describe en [Configuración del proyecto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) en nuestra documentación para desarrolladores. Esto almacenará en déclencheur el proceso de implementación y `CRYPT_KEY` se anularán en el `app/etc/env.php` en cada implementación.
+1. Abra [Cloud Console](https://console.adobecommerce.com) y busque el proyecto.
+1. Establezca el valor de la variable [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) (en nuestra documentación para desarrolladores), tal como se describe en [Configure su proyecto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) en nuestra documentación para desarrolladores. Esto almacenará en déclencheur el proceso de implementación y `CRYPT_KEY` se anulará en el archivo `app/etc/env.php` en cada implementación.
 
-De forma opcional, puede anular manualmente la clave de cifrado en `app/etc/env.php` archivo:
+Opcionalmente, puede anular manualmente la clave de cifrado en el archivo `app/etc/env.php`:
 
 1. SSH al entorno de destino.
-1. Abrir `app/etc/env.php` en un editor de texto.
-1. Pegue los datos copiados como `key` valor de `crypt`.
-1. Guarde los elementos editados `env.php`.
-1. Limpie la caché en el entorno de destino ejecutando `bin/magento cache:clean` o en el Administrador de Commerce, en **Sistema** > **Herramientas** > **Administración de caché**.
+1. Abra `app/etc/env.php` en un editor de texto.
+1. Pegue los datos copiados como el valor `key` para `crypt`.
+1. Guarde el(la) `env.php` editado(a).
+1. Limpie la caché en el entorno de destino ejecutando `bin/magento cache:clean` o en el administrador de Commerce en **Sistema** > **Herramientas** > **Administración de caché**.

@@ -17,7 +17,7 @@ Este artículo proporciona un parche para el problema conocido de Adobe СCommer
 
 ## Problema
 
-En el Administrador, si selecciona los registros de cliente o cliente que desea eliminar, filtre la cuadrícula y, a continuación, seleccione **Eliminar** acción, se eliminan todos los registros.
+En el Administrador, si selecciona los registros de cliente o cliente que desea eliminar, filtra la cuadrícula y, a continuación, selecciona la acción **Eliminar**, se eliminarán todos los registros.
 
 <u>Pasos a seguir</u>:
 

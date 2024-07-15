@@ -33,17 +33,17 @@ Se carga la página.
 
 <u>Resultado real</u>
 
-Recibe el error HTTP 503 (Servicio no disponible). El Apache `error.log` incluye el siguiente mensaje:
+Recibe el error HTTP 503 (Servicio no disponible). Apache `error.log` incluye el siguiente mensaje:
 
-*El comando &quot;Order&quot; no es válido; es posible que esté mal escrito o que esté definido por un módulo no incluido en la configuración del servidor.*
+*El comando &#39;Order&#39; no es válido, quizás esté mal escrito o definido por un módulo no incluido en la configuración del servidor.*
 
 ## Causa {#details}
 
-Módulo de compatibilidad de Apache 2.4 `mod_access_compat` está deshabilitada, lo que provoca que las reescrituras de URL de Adobe Commerce no funcionen correctamente.
+El módulo de compatibilidad de Apache 2.4 `mod_access_compat` está deshabilitado, lo que hace que las reescrituras de URL de Adobe Commerce no funcionen correctamente.
 
 ## Solución {#suggested-solution}
 
-Habilite la `mod_access_compat` Módulo Apache y reinicie Apache, ejecutando lo siguiente como usuario con privilegios &quot;root&quot;:
+Habilite el módulo Apache `mod_access_compat` y reinicie Apache ejecutando el siguiente comando como usuario con privilegios &quot;root&quot;:
 
 ```bash
 a2enmod access_compat
@@ -80,5 +80,5 @@ apache2
 
 * [Documentación de Apache sobre mod\_access\_compat](https://httpd.apache.org/docs/current/mod/mod_access_compat.html)
 * [Documentación de Apache sobre mod\_authz\_host](https://httpd.apache.org/docs/current/mod/mod_authz_host.html)
-* [Ordenar, Permitir y Denegar desde la Guía definitiva de Apache](https://docstore.mik.ua/orelly/linux/apache/ch05_06.htm)
+* [Pedir, permitir, denegar desde la guía de Apache Definitive](https://docstore.mik.ua/orelly/linux/apache/ch05_06.htm)
 * [askubuntu.com](https://askubuntu.com/questions/335228/changes-in-apache-config-between-12-04-2-and-12-04-3-lts)

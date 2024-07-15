@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Vuelva al formulario de inicio de sesión de administrador de Commerce con el error &quot;La sesión actual ha caducado&quot;.
 
-Este artículo ofrece posibles soluciones para el problema de inicio de sesión del administrador de Commerce, en el que se le redirige de nuevo al formulario de inicio de sesión con el siguiente mensaje de error: *&quot;Su sesión actual ha caducado&quot;*. Las soluciones incluyen comprobar los problemas de configuración de tiempo del servidor y cambiar la configuración de almacenamiento de la sesión.
+Este artículo ofrece las posibles soluciones para el problema de inicio de sesión del administrador de Commerce, en el que se le redirige de nuevo al formulario de inicio de sesión con el siguiente mensaje de error: *&quot;Su sesión actual ha caducado&quot;*. Las soluciones incluyen comprobar los problemas de configuración de tiempo del servidor y cambiar la configuración de almacenamiento de la sesión.
 
 ## Ediciones y versiones afectadas:
 
@@ -47,13 +47,13 @@ Consulte la siguiente sección para ver las soluciones.
 
 ### Comprobar problemas de configuración de tiempo del servidor
 
-Compruebe el registro de sesión creado en la `admin_user_session` tabla. Si los valores de `created_at` y/o `updated_at` son incorrectos, podría deberse al problema con la configuración de la hora del servidor. Pida al administrador del sistema del servidor que lo compruebe. Tenga en cuenta que la hora en la base de datos está configurada en UTC de forma predeterminada.
+Compruebe el registro de sesión creado en la tabla `admin_user_session`. Si los valores de `created_at` y/o `updated_at` son incorrectos, podría deberse al problema con la configuración de la hora del servidor. Pida al administrador del sistema del servidor que lo compruebe. Tenga en cuenta que la hora en la base de datos está configurada en UTC de forma predeterminada.
 
 ### Cambio del almacenamiento de sesión
 
-Intente cambiar el almacenamiento de la sesión. Utilice la información de la [Cómo localizar los archivos de sesión](https://devdocs.magento.com/guides/v2.3/config-guide/sessions.html) artículo en nuestra documentación para desarrolladores para saber dónde se almacena su sesión y cambiarla editando el `app/etc/env.php` archivo.
+Intente cambiar el almacenamiento de la sesión. Use la información del artículo [Cómo localizar los archivos de sesión](https://devdocs.magento.com/guides/v2.3/config-guide/sessions.html) en nuestra documentación para desarrolladores para saber dónde se almacena su sesión y cámbiela editando el archivo `app/etc/env.php`.
 
-Por ejemplo, para iniciar el almacenamiento de la sesión en el sistema de archivos, cambie el `'session'` como se indica a continuación:
+Por ejemplo, para iniciar el almacenamiento de la sesión en el sistema de archivos, cambie la sección `'session'` de la siguiente manera:
 
 ```php
 ....
@@ -64,12 +64,12 @@ Por ejemplo, para iniciar el almacenamiento de la sesión en el sistema de archi
 ....
 ```
 
-Ejecute el `bin/magento app:config:import` para importar los datos de configuración.
+Ejecute el comando `bin/magento app:config:import` para importar los datos de configuración.
 
 
 ## Lectura relacionada
 
-* [Importación de datos de archivos de configuración](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) en nuestra documentación para desarrolladores
+* [Importar datos de archivos de configuración](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) en nuestra documentación para desarrolladores
 * [Configurar Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) en nuestra documentación para desarrolladores
-* [Vuelva al formulario de inicio de sesión del administrador de Commerce con el error &quot;Su cuenta está temporalmente desactivada&quot;.](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) en nuestra base de conocimiento de soporte
-* [Volver a dirigir al formulario de inicio de sesión sin errores al intentar iniciar sesión en el administrador de Commerce](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md) en nuestra base de conocimiento de soporte
+* [Vuelva a redirigir al formulario de inicio de sesión de administrador de Commerce con el error &quot;Su cuenta está temporalmente deshabilitada&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) en nuestra base de conocimiento de soporte
+* [Vuelva al formulario de inicio de sesión sin errores al intentar iniciar sesión en el administrador de Commerce](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md) en nuestra base de conocimiento de asistencia

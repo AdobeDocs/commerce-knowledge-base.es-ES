@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> [El motor de búsqueda del catálogo MySQL se eliminará en Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Debe tener el host de Elasticsearch configurado antes de instalar la versión 2.4.0. Consulte [Elasticsearch de instalación y configuración](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
+> [El motor de búsqueda del catálogo MySQL se eliminará en Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md). Debe tener el host de Elasticsearch configurado antes de instalar la versión 2.4.0. Consulte [Instalar y configurar el Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html).
 
-El artículo proporciona una corrección para los casos en los que el estado del índice de Elasticsearch no es &quot;*verde*&#39;. &#39;*amarillo*&#39; indica normal, y &#39;*rojo*&#39; indica que es incorrecto. El estado &quot;amarillo&quot; o &quot;rojo&quot; puede ocurrir junto con los productos que faltan o la visualización de información antigua del producto.
+El artículo proporciona una corrección para los casos en los que el estado del índice de Elasticsearch no es &#39;*green*&#39;. &#39;*amarillo*&#39; indica normal y &#39;*rojo*&#39; indica malo. El estado &quot;amarillo&quot; o &quot;rojo&quot; puede ocurrir junto con los productos que faltan o la visualización de información antigua del producto.
 
 ## Versiones y productos afectados
 
@@ -24,7 +24,7 @@ El artículo proporciona una corrección para los casos en los que el estado del
 
 ## Problema
 
-El índice de búsqueda del catálogo del Elasticsearch es lento, lo que da como resultado un estado de &#39;*amarillo*&#39; o &#39;*rojo*&#39; en lugar de &#39;*verde*&#39;. También es posible que experimente cambios que faltan en el front-end.
+El índice de búsqueda del catálogo de Elasticsearch es lento, lo que da como resultado un estado de &#39;*amarillo*&#39; o &#39;*rojo*&#39; en lugar de &#39;*verde*&#39;. También es posible que experimente cambios que faltan en el front-end.
 
 ## Causa
 
@@ -55,8 +55,8 @@ Cree un nuevo volcado de mysql antes de seguir estos pasos y realizarlos fuera d
    curl --silent -X GET localhost:9200/_cat/indices?v
    ```
 
-Si estos pasos no funcionan, [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Si estos pasos no funcionan, [envíe un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Lectura relacionada
 
-Para obtener más información, consulte [API de estado de clúster de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html).
+Para obtener más información, consulte la [API de estado de clúster de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/cluster-health.html).

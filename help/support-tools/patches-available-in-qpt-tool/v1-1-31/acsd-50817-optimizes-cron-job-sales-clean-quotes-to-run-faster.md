@@ -11,31 +11,31 @@ ht-degree: 0%
 
 ---
 
-# ACSD-50817: optimiza el trabajo de cron `sales_clean_quotes` para ejecutarse más rápido
+# ACSD-50817: optimiza el trabajo cron `sales_clean_quotes` para que se ejecute más rápido
 
-El parche ACSD-50817 optimiza el trabajo de cron `sales_clean_quotes` para ejecutarse más rápido añadiendo un índice compuesto en la `store_id` y `updated_at` columnas de la tabla de comillas. Este parche está disponible cuando la variable [!DNL Quality Patches Tool (QPT)] 1.1.31 está instalado. El ID del parche es ACSD-50817.
+El parche ACSD-50817 optimiza el trabajo cron `sales_clean_quotes` para que se ejecute más rápido al agregar un índice compuesto en las columnas `store_id` y `updated_at` de la tabla de comillas. Esta revisión está disponible cuando está instalado [!DNL Quality Patches Tool (QPT)] 1.1.31. El ID del parche es ACSD-50817.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.5-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.7 - 2.4.6
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-El trabajo cron `sales_clean_quotes` es demasiado lento. Con este parche, se ha optimizado para que se ejecute más rápido añadiendo un índice compuesto en la `store_id` y `updated_at` columnas de la tabla de comillas.
+El trabajo cron `sales_clean_quotes` es demasiado lento. Con este parche, se ha optimizado para que se ejecute más rápido agregando un índice compuesto en las columnas `store_id` y `updated_at` de la tabla de comillas.
 
 <u>Pasos a seguir</u>:
 
-1. Genere entre 50 y 80 millones de presupuestos con `updated_at` establecer como período &lt; 30 días.
+1. Generar 50-80 millones de presupuestos con `updated_at` establecido como un período &lt; 30 días.
 1. Ejecute el trabajo cron `sales_clean_quotes` o la siguiente consulta en la tabla de oferta:
 
    ```cron
@@ -46,7 +46,7 @@ El trabajo cron `sales_clean_quotes` es demasiado lento. Con este parche, se ha 
 
 <u>Resultados esperados</u>
 
-Trabajo cron `sales_clean_quotes` está optimizado para ejecutarse más rápido añadiendo un índice compuesto en la `store_id` y `updated_at` columnas de la tabla de comillas.
+El trabajo cron `sales_clean_quotes` está optimizado para ejecutarse más rápido al agregar un índice compuesto en las columnas `store_id` y `updated_at` de la tabla de comillas.
 
 <u>Resultados reales</u>
 
@@ -56,14 +56,14 @@ La consulta es demasiado lenta.
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en el [!DNL Quality Patches Tool] guía.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce sobre infraestructura en la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en el [!DNL Quality Patches Tool] guía.
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

@@ -26,12 +26,12 @@ Cuando se crean o actualizan los productos del catálogo mediante programación 
 
 ## Causa
 
-El problema podría aparecer debido a las restricciones ACL establecidas para los roles de administrador de instancias de Adobe Commerce. En el caso de una aplicación de arranque, no habrá sesiones de administración inicializadas con la configuración de ACL adecuada. Esto provocaría que las validaciones fallaran en el `Magento_AdminGws` , que es responsable de la comprobación de permisos en dichas acciones.
+El problema podría aparecer debido a las restricciones ACL establecidas para los roles de administrador de instancias de Adobe Commerce. En el caso de una aplicación de arranque, no habrá sesiones de administración inicializadas con la configuración de ACL adecuada. Esto provocará que las validaciones no se realicen correctamente en el módulo `Magento_AdminGws`, que es responsable de la comprobación de permisos en dichas acciones.
 
 ## Solución para un estado de producto incorrecto
 
-Establezca una preferencia de ID dinámico para `Magento\Framework\Authorization\PolicyInterface`, tal como se describe en la [ObjectManager>Actualizaciones programáticas del producto](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) en nuestra documentación para desarrolladores.
+Establezca una preferencia de ID dinámico para `Magento\Framework\Authorization\PolicyInterface`, tal como se describe en el tema [ObjectManager>Actualizaciones programáticas del producto](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) de nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 
-* [Github: No se puede cambiar el estado del producto creado con productRepository](https://github.com/magento/magento2/issues/5664)
+* [Github: no se puede cambiar el estado del producto creado con productRepository](https://github.com/magento/magento2/issues/5664)

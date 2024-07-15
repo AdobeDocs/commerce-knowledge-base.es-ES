@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problema conocido de Adobe Commerce 2.3.6, 2.4.0-p1, 2.4.1: inicio de sesión dotdigital
 
-Este artículo describe un problema conocido de Adobe Commerce 2.3.6, 2.4.0-p1 y 2.4.1 en el que es imposible iniciar sesión en [dotdigital](https://dotdigital.com/) mediante el Panel de administración cuando la cuenta dotdigital esté habilitada.
+Este artículo describe un problema conocido de Adobe Commerce 2.3.6, 2.4.0-p1 y 2.4.1 en el que es imposible iniciar sesión en [dotdigital](https://dotdigital.com/) mediante el Panel de administración cuando la cuenta dotdigital está habilitada.
 
 ## Productos y versiones afectados
 
@@ -30,8 +30,8 @@ Este artículo describe un problema conocido de Adobe Commerce 2.3.6, 2.4.0-p1 y
 
 <u>Pasos a seguir</u>:
 
-1. Ir a **Tiendas** > **Configuración** > **DOTDIGITAL** > **Configuración de chat** > **Habilitado** se establece en *Sí.*
-1. Haga clic en **Configurar** in **Configurar el widget de chat** o **Configuración de equipos de chat**.
+1. Vaya a **Tiendas** > **Configuración** > **DOTDIGITAL** > **Configuración de chat** > **Habilitado** está establecido en *Sí.*
+1. Haz clic en **Configurar** en **Configurar el widget de chat** o en **Configurar los equipos de chat**.
 
 <u>Resultados esperados</u>:
 
@@ -47,4 +47,4 @@ Solución alternativa: utilice un explorador alternativo a Safari para esta situ
 
 ## Lectura relacionada
 
-[Problema conocido de Adobe Commerce 2.4.1: la dirección de vértice no se valida con diferentes direcciones de envío/facturación](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) en nuestra base de conocimiento de soporte.
+[Problema conocido de Adobe Commerce 2.4.1: la dirección de vértice no se valida con direcciones de envío/facturación diferentes](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) en nuestra base de conocimiento de soporte.

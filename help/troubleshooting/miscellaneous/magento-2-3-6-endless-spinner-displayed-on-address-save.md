@@ -31,5 +31,5 @@ El problema se solucionó en Adobe Commerce 2.3.1.
 
 ## Lectura relacionada
 
-* [No se permiten direcciones diferentes al anular la selección de &quot;Mi dirección de facturación y de envío es la misma&quot; mediante la limpieza de direcciones de vértice](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md) en nuestra base de conocimiento de soporte.
-* [Mensaje de validación de dirección de vértice de Adobe Commerce 2.4.1: Actualización de dirección de publicación](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) en nuestra base de conocimiento de soporte.
+* [No se permiten direcciones diferentes al anular la selección de &#39;Mi dirección de facturación y envío es la misma&#39; mediante la limpieza de VertexAddress](/help/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.md) en nuestra base de conocimiento de soporte técnico.
+* [Adobe Commerce 2.4.1 Vertex Address validation message post address update](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) en nuestra base de conocimiento de asistencia.

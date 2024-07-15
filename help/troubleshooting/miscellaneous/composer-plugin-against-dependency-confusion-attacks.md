@@ -21,7 +21,7 @@ Este artículo proporciona información sobre el complemento del compositor lanz
 
 ## Problema
 
-Se detecta un caso potencial de ataque de confusión de dependencia activo a través de al menos una de las dependencias directas o indirectas definidas en `composer.json` por el complemento compositor `magento/composer-dependency-version-audit-plugin` durante la instalación/actualización del compositor.
+Se ha detectado un caso potencial de ataque de confusión de dependencias activo a través de al menos una de las dependencias directas o indirectas definidas en `composer.json` por el complemento del compositor `magento/composer-dependency-version-audit-plugin` durante la instalación/actualización del compositor.
 
 <u>Pasos a seguir</u>:
 
@@ -47,5 +47,5 @@ Los atacantes pueden aprovechar esta vulnerabilidad si un paquete solo está dis
 
 ### Expectativas de los desarrolladores de extensiones
 
-* No hay forma de saber con certeza si el paquete de un complemento, si de un repositorio público, se ha visto comprometido o no. El complemento detectará cuándo una versión pública de un paquete en packagist.org tiene una versión superior a la disponible en un repositorio privado como [repo.magento.com](https://repo.magento.com). Recomendamos encarecidamente que los desarrolladores de extensiones eviten estas situaciones y no publiquen versiones más recientes públicamente que las disponibles a través de [repo.magento.com](https://repo.magento.com).
+* No hay forma de saber con certeza si el paquete de un complemento, si de un repositorio público, se ha visto comprometido o no. El complemento detectará cuando una versión pública de un paquete en packagist.org tenga una versión superior a la disponible en un repositorio privado como [repo.magento.com](https://repo.magento.com). Recomendamos encarecidamente que los desarrolladores de extensiones eviten estas situaciones y no publiquen versiones más recientes públicamente que las disponibles a través de [repo.magento.com](https://repo.magento.com).
 * Adobe Commerce entiende que el proceso de revisión del mercado puede retrasar la disponibilidad de la versión de las extensiones, pero el proceso está ahí para mantener a los comerciantes seguros y para ayudar a los desarrolladores de extensiones a encontrar errores accidentales que podrían haberse perdido.

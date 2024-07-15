@@ -25,16 +25,16 @@ El nuevo dominio está redirigiendo al dominio predeterminado en el entorno actu
 
 ## Causa
 
-Sucede cuando las variables no se actualizan después de agregar un nuevo dominio o cuando el valor incorrecto [!DNL Fastly] el servicio se ha configurado en el entorno.
+Sucede cuando las variables no se actualizan después de agregar un nuevo dominio o cuando se ha configurado el servicio [!DNL Fastly] incorrecto en el entorno.
 
 ## Solución
 
-1. Si el dominio se redirige dentro del mismo entorno, asegúrese de haber configurado la variable [Variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#modify-variables).
-1. Si el dominio se está redireccionando a otro entorno, compruebe si ha configurado el [!DNL Fastly] ejecutar el siguiente comando: `bin/magento fastly:conf:get -s`
+1. Si el dominio se está redireccionando dentro del mismo entorno, asegúrese de haber configurado las [variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#modify-variables).
+1. Si el dominio se está redireccionando a otro entorno, compruebe si ha configurado el servicio [!DNL Fastly] correcto ejecutando el siguiente comando: `bin/magento fastly:conf:get -s`
 
 >[!NOTE]
 >
->Puede encontrar el [!DNL Fastly] Credenciales de API iniciando sesión en cada entorno (ensayo/producción) y comprobando el `/mnt/shared/fastly_tokens.txt` archivo. Para obtener más información, consulte [configurar [!DNL Fastly] servicios](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en la Guía de infraestructura de Commerce en la nube.
+>Puede encontrar las credenciales de la API [!DNL Fastly] iniciando sesión en cada entorno (Ensayo/Producción) y comprobando el archivo `/mnt/shared/fastly_tokens.txt`. Para obtener más información, consulte [configure [!DNL Fastly] services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en la Guía de infraestructura en la nube de Commerce.
 
 Si las dos configuraciones anteriores son correctas, envíe un ticket de asistencia.
 

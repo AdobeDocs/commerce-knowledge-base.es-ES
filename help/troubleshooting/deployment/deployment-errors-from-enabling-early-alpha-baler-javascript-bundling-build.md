@@ -30,8 +30,8 @@ No recomendamos que los comerciantes utilicen el módulo Baler en un entorno de 
 
 <u>Pasos a seguir</u>:
 
-1. El comerciante intenta insertar el **SCD\_USE\_BALER** en la fase de compilación del `.magento.env.yaml` , que habilita el paquete Javascript de Baler.
-1. El comerciante también agrega la dependencia del compositor de Baler: `"magento/module-baler": "1.0.0-alpha"` hasta `require` sección de `composer.json`.
+1. El comerciante intenta insertar la variable **SCD\_USE\_BALER** en la fase de compilación del archivo `.magento.env.yaml`, que habilita el paquete de empaquetado Javascript de Baler.
+1. El comerciante también agrega la dependencia del compositor de Baler: `"magento/module-baler": "1.0.0-alpha"` a la sección `require` de `composer.json`.
 
 <u>Resultado esperado</u>:
 
@@ -54,7 +54,7 @@ El módulo de Baler se encuentra actualmente en la fase inicial de desarrollo al
 
 Puede revisar la documentación existente del Alpha de embaladores en [Github/Magento/Baler/Introducción al alfa](https://github.com/magento/baler/blob/master/docs/ALPHA.md). Sin embargo, no está listo para su uso en producción y se utiliza bajo su propio riesgo. En su lugar, se recomienda combinar o agrupar archivos Javascript (JS) mediante el paquete integrado (paquete básico) de Adobe Commerce para la optimización de archivos.
 
-* Puede activar la combinación o el agrupamiento en la administración (la combinación y el agrupamiento no se pueden activar al mismo tiempo): **Tiendas** > **Configuración** > **Configuración** > **Avanzadas** > **Desarrollador** > **Configuración de JavaScript**.
+* Puede activar la combinación o el agrupamiento en Admin (la combinación y el agrupamiento no se pueden habilitar al mismo tiempo): **Tiendas** > **Configuración** > **Configuración** > **Avanzado** > **Desarrollador** > **Configuración de JavaScript**.
 * También puede habilitar el paquete integrado (paquete básico) de Adobe Commerce desde la línea de comandos: `php -f bin/magento config:set dev/js/enable_js_bundling 1`
 
-Para obtener más información, consulte [Optimización de archivos CSS y Javascript en Adobe Commerce en infraestructuras en la nube y Adobe Commerce local](https://support.magento.com/hc/en-us/articles/360044482152).
+Para obtener más información, consulte [Optimización de archivos CSS y Javascript en Adobe Commerce en la infraestructura en la nube y Adobe Commerce local](https://support.magento.com/hc/en-us/articles/360044482152).

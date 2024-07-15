@@ -24,27 +24,27 @@ Este artículo describe un problema conocido de Adobe Commerce 2.4.1 en el que l
 
 Requisitos previos:
 
-Activar **Limpieza de direcciones de vértice**. Para ver los pasos, consulte [Configurar la limpieza de direcciones de tienda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html) en nuestra guía del usuario.
+Habilitar **Limpieza de direcciones de vértice**. Para ver los pasos, consulte [Configuración de la limpieza de direcciones de tienda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html) en nuestra guía del usuario.
 
 <u>Pasos a seguir:</u>
 
 1. Cree una cuenta e inicie sesión.
-1. Añadir un elemento al carro de compras haciendo clic en **Añadir al carro**. Haga clic en el icono Carro de compras y luego en **Continuar con el cierre**.
-1. Introduzca una dirección válida en **Dirección de envío** field.
+1. Agregue un elemento al carro de compras haciendo clic en **Agregar al carro de compras**. Haga clic en el icono Carro de compras y, a continuación, haga clic en **Continuar con la compra**.
+1. Escriba una dirección válida en el campo **Dirección de envío**.
 1. Marque una de las opciones en **Métodos de envío**. Luego haga clic en **Siguiente**.
-1. Si la validación de direcciones sugiere información de dirección diferente, haga clic en **Actualizar dirección** y haga clic en **Siguiente**.
-1. Desmarque la **Mi dirección de facturación y envío es la misma** casilla de verificación
+1. Si la validación de direcciones sugiere información de direcciones diferente, haz clic en **Actualizar dirección** y haz clic en **Siguiente**.
+1. Desmarque la casilla de verificación **Mi dirección de facturación y envío es la misma**.
 
 <u>Primer escenario:</u>
 
-Siga las [más de seis pasos](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) y luego:
+Siga los [seis pasos anteriores](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) y, a continuación:
 
 1. Introduzca una nueva dirección de facturación válida.
-1. Haga clic en **Actualizar** botón. Mostrará el mensaje o la sugerencia de la siguiente manera: *La dirección no es válida.* A continuación se incluye una sugerencia de dirección como: *Código postal : XXXXX- XXXX Street : XXX City street XXX*
-1. Haga clic en **Actualizar** botón (no haga clic en el **Actualizar dirección** botón de sugerencia de dirección de Vértice).
-1. Haga clic en **Editar** de la dirección de facturación actualizada.
+1. Haz clic en el botón **Actualizar**. Mostrará el mensaje o la sugerencia de la siguiente manera: *La dirección no es válida.* Seguirá con una sugerencia de dirección como: *Código postal : XXXXX- XXXX Street : XXX City street XXX*
+1. Haz clic en el botón **Actualizar** (no hagas clic en el botón **Actualizar dirección** de la sugerencia de direcciones de Vértice).
+1. Haz clic en el botón **Editar** de la dirección de facturación actualizada.
 1. Seleccione la dirección de la lista desplegable de direcciones.
-1. Haga clic en **Actualizar** botón.
+1. Haz clic en el botón **Actualizar**.
 
 <u>Resultado esperado:</u>
 
@@ -52,16 +52,16 @@ Se elimina el mensaje de validación o sugerencia antiguo.
 
 <u>Resultado real:</u>
 
-El mensaje/sugerencia de validación. *&quot;No hemos encontrado una dirección válida Código postal: XXXXX-XXXX Street : XXX City street XXX&quot;* el mensaje es **NO** eliminado. El mismo problema se produce si se introduce una dirección no válida en el formulario.
+El mensaje/sugerencia de validación *&quot;No se encontró una dirección válida Código postal: XXXXX-XXXX Street : XXX City street XXX&quot;* El mensaje **NOT** se ha eliminado. El mismo problema se produce si se introduce una dirección no válida en el formulario.
 
 <u>Segundo escenario:</u>
 
-Siga las [más de seis pasos](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) y luego:
+Siga los [seis pasos anteriores](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md#first_sixth) y, a continuación:
 
 1. Rellene el formulario de direcciones con una dirección válida.
-1. Haga clic en **Actualizar** botón. Mostrará el mensaje o la sugerencia de la siguiente manera: *La dirección no es válida.* A continuación se incluye una sugerencia de dirección como: *Código postal : XXXXX-XXXX Street : XXX City street XXX*.
-1. Haga clic en **Actualizar** botón (no haga clic en el **Actualizar dirección** botón de sugerencia de dirección de vértice).
-1. Compruebe la ***Mi dirección de facturación y envío es la misma*** menú desplegable.
+1. Haz clic en el botón **Actualizar**. Mostrará el mensaje o la sugerencia de la siguiente manera: *La dirección no es válida.* Seguirá con una sugerencia de dirección como: *Código postal : XXXXX-XXXX Street : XXX City street XXX*.
+1. Haz clic en el botón **Actualizar** (no hagas clic en el botón **Actualizar dirección** de sugerencia de dirección de vértice).
+1. Comprueba que ***Mi dirección de facturación y envío es la misma*** lista desplegable.
 
 <u>Resultado esperado:</u>
 
@@ -69,7 +69,7 @@ Se elimina el mensaje de validación o sugerencia antiguo.
 
 <u>Resultado real:</u>
 
-El mensaje/sugerencia de validación. *&quot;No hemos encontrado una dirección válida Código postal: XXXXX-XXXX Street XXX City street XXX&quot;* el mensaje es **NO** eliminado. El mismo problema se produce si se introduce una dirección no válida en el formulario.
+El mensaje o sugerencia de validación *&quot;No se encontró una dirección válida Código postal: XXXXX-XXXX Street XXX City street XXX&quot;* el mensaje **NOT** se ha eliminado. El mismo problema se produce si se introduce una dirección no válida en el formulario.
 
 ## Lectura relacionada en nuestra base de conocimiento de soporte:
 

@@ -30,9 +30,9 @@ El catálogo de la tienda contiene productos, no datos de muestra de Adobe Comme
 1. Vaya a la tienda y cree una cuenta de cliente.
 1. Añada un producto al carro de compras, complete el cierre de compra y envíe un pedido.
 1. Inicie sesión en Admin.
-1. Vaya a **Clientes,** luego elija **Todos los clientes**.
+1. Vaya a **Clientes,** y, a continuación, elija **Todos los clientes**.
 1. Para el cliente recién creado, haga clic en **Editar**.
-1. Clic **Pedidos** en el panel de la izquierda.
+1. Haga clic en **Pedidos** en el panel de la izquierda.
 
 <u>Resultado esperado</u>:
 
@@ -61,6 +61,6 @@ El parche también es compatible (pero es posible que no resuelva el problema) c
 
 ## Cómo aplicar el parche
 
-Consulte [Cómo aplicar un parche del compositor proporcionado por Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de soporte, para obtener instrucciones.
+Consulte [Cómo aplicar un parche del compositor proporcionado por Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de asistencia para obtener instrucciones.
 
 ## Archivos adjuntos

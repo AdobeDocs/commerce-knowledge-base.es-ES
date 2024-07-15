@@ -30,8 +30,8 @@ Para la arquitectura de plan Pro de Adobe Commerce en la infraestructura en la n
 
 ## Para sincronizar archivos de un entorno a otro
 
-Para sincronizar archivos de un entorno a otro, utilice el `rsync` comando. Para obtener más información, consulte [Implemente código y migre archivos y datos estáticos > Migrar archivos mediante rsync](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html#migrate-files-using-rsync) en nuestra documentación para desarrolladores.
+Para sincronizar archivos de un entorno a otro, use el comando `rsync`. Para obtener más información, consulte [Implementar código y migrar datos y archivos estáticos > Migrar archivos mediante rsync](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html#migrate-files-using-rsync) en nuestra documentación para desarrolladores.
 
 >[!NOTE]
 >
->Si desea sincronizar el código de integración a ensayo, debe hacerlo desde la rama de integración. Para ver los pasos, consulte [Sincronización desde el elemento principal del entorno](/docs/commerce-cloud-service/user-guide/project/console-branches.html#sync-an-environment) en nuestra documentación para desarrolladores.
+>Si desea sincronizar el código de integración a ensayo, debe hacerlo desde la rama de integración. Para ver los pasos, consulte [Sincronización del elemento principal del entorno](/docs/commerce-cloud-service/user-guide/project/console-branches.html#sync-an-environment) en nuestra documentación para desarrolladores.

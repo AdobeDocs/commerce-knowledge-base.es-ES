@@ -13,32 +13,32 @@ ht-degree: 0%
 
 # MDVA-31763: Las reglas de precios de catálogo se revierten hasta la reindexación manual
 
-El parche MDVA-31763 resuelve el problema en el que las reglas de precios de catálogo se revierten hasta la reindexación manual. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5 está instalado. El ID del parche es MDVA-31763. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+El parche MDVA-31763 resuelve el problema en el que las reglas de precios de catálogo se revierten hasta la reindexación manual. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.5. El ID del parche es MDVA-31763. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.5-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.0 - 2.4.3-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-Cuándo `catalogrule_product` el indexador parcial se ejecuta en productos configurables, las reglas del catálogo desaparecen.
+Cuando se ejecuta el indexador parcial `catalogrule_product` en productos configurables, las reglas del catálogo desaparecen.
 
 <u>Pasos a seguir</u>:
 
 1. Inicie sesión en el servidor de administración.
-1. Ir a **Tiendas** > **Atributos** > **Product** y busque el atributo &quot;manufacturer&quot;.
-   * Añada algunas opciones y configure &quot;Usar para condiciones de regla de promoción&quot; en *Sí*.
-1. Ir a **Tiendas** > **Atributos** > **Conjuntos de atributos**.
+1. Vaya a **Tiendas** > **Atributos** > **Producto** y busque el atributo &quot;fabricante&quot;.
+   * Agregue algunas opciones y establezca &quot;Usar para condiciones de regla de promoción&quot; en *Sí*.
+1. Vaya a **Tiendas** > **Atributos** > **Conjuntos de atributos**.
    * Seleccione el conjunto de atributos predeterminado y agréguele el atributo &quot;manufacturer&quot;.
 1. Cree un producto configurable con un par de variaciones.
 1. Establezca el valor de atributo &quot;fabricante&quot; para el producto configurable creado anteriormente.
@@ -46,7 +46,7 @@ Cuándo `catalogrule_product` el indexador parcial se ejecuta en productos confi
    * Activo = Sí
    * Sitios web = Sitio web principal
    * Grupos de clientes = SIN SESIÓN INICIADA
-   * Condiciones: fabricante = \&lt;selected value=&quot;&quot; for=&quot;&quot; configurable=&quot;&quot; product=&quot;&quot;>
+   * Condiciones: fabricante = \&lt;valor seleccionado para el producto configurable>
    * Acciones: cualquier descuento
 1. Haga un índice completo.
 1. Compruebe el precio del producto en PDP y asegúrese de que el precio es correcto.
@@ -72,7 +72,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) sección.
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

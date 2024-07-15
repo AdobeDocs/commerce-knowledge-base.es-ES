@@ -21,7 +21,7 @@ En este tema se describe una solución a un problema típico que podría experim
 
 ## Problema
 
-Al implementar el código en todos los entornos, los scripts de compilación e implementación verifican la `master/production/staging` La rama de se implementa para mantener los Google Analytics habilitados. Al implementar ramas de desarrollo (o secundarias) de entornos maestros a desarrolladores (integración), el script de implementación deshabilita los Google Analytics.
+Al implementar el código en todos los entornos, los scripts de compilación e implementación comprueban que la rama `master/production/staging` está implementada para mantener los Google Analytics habilitados. Al implementar ramas de desarrollo (o secundarias) de entornos maestros a desarrolladores (integración), el script de implementación deshabilita los Google Analytics.
 
 ## Causa
 
@@ -29,7 +29,7 @@ Se trata de una función diseñada para garantizar que los datos del desarrollad
 
 ## Solución
 
-Si desea tener los Google Analytics siempre habilitados, establezca la variable de implementación `ENABLE_GOOGLE_ANALYTICS = true`, tal como se describe en [Implementación de variables](https://devdocs.magento.com/guides/v2.3/cloud/env/variables-deploy.html#enable_google_analytics) en nuestra documentación para desarrolladores.
+Si desea que los Google Analytics estén siempre habilitados, establezca la variable de implementación `ENABLE_GOOGLE_ANALYTICS = true`, tal como se describe en [Implementar variables](https://devdocs.magento.com/guides/v2.3/cloud/env/variables-deploy.html#enable_google_analytics) en nuestra documentación para desarrolladores.
 
 >[!NOTE]
 >

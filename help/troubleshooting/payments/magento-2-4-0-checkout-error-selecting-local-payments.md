@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Este artículo trata sobre una solución para un problema conocido en Adobe Commerce durante el cierre de compra, donde aparece un mensaje de error al seleccionar un método de pago local para algunos países. Esto ocurre en los siguientes países: Bélgica, Italia, Países Bajos, Polonia y España.
 
-El mensaje de error, &quot;*Actualmente no hay métodos de pago disponibles. Actualice la dirección de facturación.*&quot;, pero los métodos de pago locales seguirán apareciendo y funcionando correctamente. Habrá disponible una corrección permanente en Adobe Commerce 2.4.1.
+El mensaje de error &quot;*Actualmente no hay métodos de pago disponibles. Actualice la dirección de facturación.*&quot; aparecerá, pero los métodos de pago locales seguirán apareciendo y funcionando correctamente. Habrá disponible una corrección permanente en Adobe Commerce 2.4.1.
 
 ## Productos y versiones afectados
 
@@ -28,7 +28,7 @@ El mensaje de error, &quot;*Actualmente no hay métodos de pago disponibles. Act
 
 * Adobe Commerce 2.4.0 está instalado.
 * Crear un producto y una categoría.
-* Configurar [Método de pago del Braintree](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/braintree.html).
+* Configurar [método de pago de Braintree](https://devdocs.magento.com/guides/v2.4/graphql/payment-methods/braintree.html).
 
 <u>Pasos a seguir</u>:
 
@@ -44,7 +44,7 @@ Los métodos de pago locales deben mostrarse normalmente, sin mensaje de error.
 
 <u>Resultado real</u>:
 
-El mensaje de error, &quot;*Actualmente no hay métodos de pago disponibles. Actualice la dirección de facturación.*&quot;, pero los métodos de pago locales seguirán mostrándose y funcionando correctamente.
+El mensaje de error &quot;*Actualmente no hay métodos de pago disponibles. Actualice la dirección de facturación.*&quot;, pero los métodos de pago locales seguirán mostrándose y funcionando correctamente.
 
 ## Solución
 

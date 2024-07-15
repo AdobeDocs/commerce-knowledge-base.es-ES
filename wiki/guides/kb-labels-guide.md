@@ -8,7 +8,7 @@ ht-degree: 0%
 # Guía de etiquetas de KB
 
 Este documento proporciona directrices para agregar etiquetas a artículos en la Base de conocimiento de soporte de Adobe Commerce.
-Las etiquetas (también denominadas etiquetas) mejoran la experiencia de búsqueda en [Base de conocimiento de asistencia de Adobe Commerce](https://support.magento.com/hc/en-us).
+Las etiquetas (también denominadas etiquetas) mejoran la experiencia de búsqueda en [Adobe Commerce Support Knowledge Base](https://support.magento.com/hc/en-us).
 Las etiquetas se añaden en el campo &quot;etiquetas&quot; de la sección de metadatos de un archivo de artículo, separadas por comas, sin espacio entre una coma y la siguiente etiqueta.
 Consulte [../../.github/CONTRIBUTING.md#metadata] para obtener más información.
 
@@ -84,7 +84,8 @@ Consulte las secciones siguientes para obtener recomendaciones detalladas sobre 
 
 * Agregue una etiqueta independiente para cada versión de Adobe Commerce. Ejemplo: &quot;2.3.7&quot;
 * No agregue etiquetas para los intervalos.
-Es decir, si 2.3.0-2.3.5 se ve afectado, agregue: &quot;2.3.0,2.3.1,2.3.2,2.3.2-p2,2.3.3,2.3.3-p1,2.3.4,2.3.4-p2,2.3.5-p1,2.3.5-p2&quot; NO &quot;2.3.0-2.3.5&quot;
+Es decir, si 2.3.0-2.3.5 se ve afectado, añada: &quot;2.3.0,2.3.1,2.3.2,2.3.2-p2,2.3.3,2.3.3-p1,2.3.4,2.3.4-p2,2.3.5-p1,2.3.5-p2&quot;
+NO &quot;2.3.0-2.3.5&quot;
 * No agregue etiquetas con .x. Ejemplo: &quot;2.3.x&quot;
 
 ## Etiquetas para el tipo de contenido (según la categoría)

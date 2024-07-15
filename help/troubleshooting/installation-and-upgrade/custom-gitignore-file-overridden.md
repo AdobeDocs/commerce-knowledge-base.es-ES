@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # El comando de instalación del Compositor anula el archivo .gitignore, Adobe Commerce
 
-Este artículo proporciona una solución para cuando se realiza un seguimiento de `.gitignore` composer anula el archivo en Adobe Commerce en cloud Infrastructure 2.4.2-p1 y 2.3.7.
+Este artículo proporciona una solución para los casos en los que el compositor anula un archivo de seguimiento de `.gitignore` en Adobe Commerce en la infraestructura en la nube 2.4.2-p1 y 2.3.7.
 
 ## Productos y versiones afectados
 
@@ -21,7 +21,7 @@ Adobe Commerce en la infraestructura en la nube 2.4.2-p1 y 2.3.7.
 
 ## Problema
 
-`.gitignore` se está sobrescribiendo el archivo al ejecutar el comando de instalación del compositor.
+El archivo `.gitignore` se está sobrescribiendo al ejecutar el comando de instalación del compositor.
 
 <u>Pasos a seguir</u>:
 
@@ -39,7 +39,7 @@ Adobe Commerce en la infraestructura en la nube 2.4.2-p1 y 2.3.7.
    1. `echo "/this/line/should/stay" >> .gitignore`
    1. `git init`
    1. `git add * && git add .*`
-   1. `git commit -m "Init"` # archivo enviado al repositorio
+   1. `git commit -m "Init"` archivo # enviado al repositorio
    1. `rm -rf vendor/*`
    1. `composer install`
    1. `git diff`
@@ -58,15 +58,15 @@ Adobe Commerce en la infraestructura en la nube 2.4.2-p1 y 2.3.7.
 
 <u>Resultado esperado</u>:
 
-`.gitignore` no se sobrescribe con composer.
+El compositor no reemplaza a `.gitignore`.
 
 <u>Resultado real</u>:
 
-`.gitignore` es anulado por cada ejecución de instalación del compositor.
+`.gitignore` se reemplaza con cada ejecución de instalación del compositor.
 
 ## Solución
 
-Para mantener la personalización `.gitignore file` debe ignorarlo en la sección `magento-deploy-ignore` sección.
+Para conservar su `.gitignore file` personalizado, debe ignorarlo en la sección `magento-deploy-ignore`.
 
 ```git
 {
@@ -84,4 +84,4 @@ Para mantener la personalización `.gitignore file` debe ignorarlo en la secció
 
 ## Lectura relacionada
 
-* [¡El archivo .gitignore rastreado es anulado por el compositor!](https://github.com/magento/magento2/issues/32888) en GitHub de Magento2.
+* [El compositor anula el archivo .gitignore rastreado.](https://github.com/magento/magento2/issues/32888) en GitHub de Magento2.

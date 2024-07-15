@@ -26,13 +26,13 @@ https:&#x200B;//mydomain.com.c.&lt;projectid>.magento.cloud/ ya no es accesible.
 <u>Pasos a seguir:</u>
 
 1. Inicie sesión en el proyecto.
-1. Clic **Acceso al proyecto** para obtener una lista de URL y SSH.
+1. Haga clic en **Acceder al proyecto** para obtener una lista de direcciones URL y SSH.
 
 <u>Resultados reales:</u>
 
 La página no se puede cargar con el siguiente error:
 
-*NET::ERR\_CERT\_INVALID*  *Alerta TLS, certificado incorrecto (554):*
+*NET::ERR\_CERT\_INVALID* *Alerta TLS, certificado incorrecto (554):*
 
 <u>Resultados esperados:</u>
 
@@ -47,8 +47,8 @@ El encubrimiento de origen es una función de seguridad que permite a Adobe Comm
 ## Solución
 
 * Si el sitio de la nube está activo, cambie a https://mydomain.com/.
-* Si tiene un sitio activo (que no esté en la nube), con el dominio https://mydomain.com/, configure un subdominio `mcprod.mydomain.com` y actualice su **URL básica** hasta *https://mcprod.mydomain.com* en su lugar, then [apuntar el DNS a Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
+* Si tiene un sitio activo (que no está en la nube), usando el dominio https://mydomain.com/, configure un subdominio `mcprod.mydomain.com` y actualice la **URL base** a *https://mcprod.mydomain.com* en su lugar, entonces [señale el DNS a Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
 
 ## Lectura relacionada
 
-[Preguntas frecuentes sobre la activación de encubrimiento Fastly origin](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) en nuestra base de conocimiento de soporte.
+[Preguntas frecuentes sobre la habilitación del encubrimiento de origen rápido](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) en nuestra base de conocimiento de soporte.

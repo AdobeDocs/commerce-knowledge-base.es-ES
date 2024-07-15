@@ -17,7 +17,7 @@ Este artículo explica los errores que puede experimentar al instalar Payment Se
 
 ## Productos y versiones afectados
 
-* [Servicios de pago](https://marketplace.magento.com/magento-payment-services.html) ahora es compatible con las versiones de Adobe Commerce 2.4.0 a 2.4.4.
+* [Servicios de pago](https://marketplace.magento.com/magento-payment-services.html) ahora es compatible con las versiones 2.4.0 a 2.4.4 de Adobe Commerce.
 
 ## Problema - Claves de composición incorrectas
 
@@ -28,11 +28,11 @@ Al instalar la extensión de servicios de pago, puede que aparezca un mensaje de
 1. Intento de [instalar Payment Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html).
 1. Consulte el siguiente error:
 
-   *No se ha podido encontrar una versión coincidente del paquete magento/payment-services. Revise la ortografía del paquete, la restricción de versión y que el paquete esté disponible en una estabilidad que coincida con su estabilidad mínima (estable).*
+   *No se encontró una versión coincidente del paquete magento/payment-services. Compruebe la ortografía del paquete, la restricción de versión y que el paquete está disponible en una estabilidad que coincida con su estabilidad mínima (estable).*
 
 <u>Resultado esperado</u>:
 
-Puedes seguir estos [instrucciones de instalación](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) en nuestra documentación para desarrolladores para instalar correctamente Payment Services.
+Puede seguir estas [instrucciones de instalación](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) en nuestra documentación para desarrolladores para instalar correctamente Payment Services.
 
 <u>Resultado real</u>:
 
@@ -44,7 +44,7 @@ Durante la instalación se han utilizado claves de composición incorrectas.
 
 ### Solución
 
-Compruebe que [las claves de composición están vinculadas al ID del Magento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#incorrect-composer-keys) se utiliza durante el registro de servicios de pago.
+Compruebe que [sus claves de Compositor están vinculadas al identificador de Magento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#incorrect-composer-keys) utilizado durante el registro de Servicios de pago.
 
 ## Problema: uso del mismo espacio de datos en varias instancias
 
@@ -59,7 +59,7 @@ Al crear un proyecto de SaaS, Commerce genera uno o más espacios de datos de Sa
 * Adobe Commerce: un espacio de datos de producción, dos espacios de datos de prueba
 * Magento Open Source: un espacio de datos de producción, sin espacios de datos de prueba
 
-Siga las instrucciones de [Clave de API de Commerce y clave privada](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#obtain-api-credentials) para configurar correctamente la extensión de servicios de pago.
+Siga las instrucciones de la [clave de API de Commerce y clave privada](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#obtain-api-credentials) para configurar correctamente la extensión de servicios de pago.
 
 ## Problema - No hay suficiente memoria para PHP
 
@@ -74,7 +74,7 @@ Al instalar la extensión de servicios de pago, puede que vea un mensaje de erro
 
 <u>Resultado esperado</u>:
 
-Puedes seguir estos [instrucciones de instalación](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) en nuestra documentación para desarrolladores para instalar correctamente Payment Services.
+Puede seguir estas [instrucciones de instalación](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html) en nuestra documentación para desarrolladores para instalar correctamente Payment Services.
 
 <u>Resultado real</u>:
 

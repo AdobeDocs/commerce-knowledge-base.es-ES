@@ -21,7 +21,7 @@ Los clientes pasan por el proceso de pago y rellenan todos los formularios, incl
 
 <u>Pasos a seguir</u> :
 
-**Requisitos previos**: la funcionalidad de carro de compras persistente está habilitada. Compruebe si está habilitado en el Administrador, en **Tiendas** > **Configuración** > **Clientes** o **Tiendas** > **Configuración** > **Ventas,** según la versión de Adobe Commerce.
+**Requisitos previos**: La funcionalidad de carro de compras persistente está habilitada. Compruebe si está habilitado en el Administrador, en **Tiendas** > **Configuración** > **Clientes** o en **Tiendas** > **Configuración** > **Ventas,** según su versión de Adobe Commerce.
 
 1. Ve a la tienda.
 1. Agregar productos al carro de compras.
@@ -47,7 +47,7 @@ El parche se adjunta a este artículo. Para descargarlo, desplácese hacia abajo
 
 ### Versiones de Adobe Commerce compatibles
 
-**El parche se ha creado para:**
+**El parche se creó para:**
 
 * Adobe Commerce 2.2.3
 

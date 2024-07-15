@@ -51,11 +51,11 @@ Los parches no son compatibles con ninguna otra versión de Adobe Commerce.
 
 ### Cómo aplicar el parche
 
-Descomprima el archivo descargado `.zip` y aplique el parche como se describe en [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
+Descomprima el archivo `.zip` descargado y aplique el parche tal como se describe en [Cómo aplicar un parche de compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md).
 
 >[!WARNING]
 >
->Si sospecha que su tienda está experimentando un ataque de denegación de servicio, Adobe recomienda reducir los límites de entrada predeterminados a un valor más bajo para imponer restricciones en el número de recursos que se pueden solicitar.  Puede personalizar los límites predeterminados mediante programación [argumentos del constructor de clase](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html)
+>Si sospecha que su tienda está experimentando un ataque de denegación de servicio, Adobe recomienda reducir los límites de entrada predeterminados a un valor más bajo para imponer restricciones en el número de recursos que se pueden solicitar.  Puede personalizar los límites predeterminados mediante programación usando [argumentos de constructor de clase](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/di-xml-file.html)
 >como se describe en nuestra documentación para desarrolladores: [Seguridad de API > Limitación de velocidad > Entradas máximas de parámetros](https://devdocs.magento.com/guides/v2.4/get-started/api-security.html#rate-limiting).
 
 ## Lectura relacionada

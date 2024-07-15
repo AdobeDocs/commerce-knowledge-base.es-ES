@@ -30,7 +30,7 @@ Si ha sufrido una interrupción que podría deberse a una base de datos sobrecar
    grep 'Query_time: [5-9][0-9]\|Query_time: [0-9][0-9][0-9]' /var/log/mysql/mysql-slow.log -A 3
    ```
 
-1. Ir a <https://www.unixtimestamp.com/> (o un convertidor de marcas de tiempo Unix similar) e inserte la marca de tiempo del momento en el que se ejecutó la consulta lenta.
+1. Vaya a <https://www.unixtimestamp.com/> (o a un convertidor de marcas de tiempo Unix similar) e inserte la marca de tiempo del momento en que se ejecutó la consulta lenta.
 1. Si el tiempo se correlaciona con cualquier interrupción del sitio que haya experimentado, podría deberse a una base de datos sobrecargada. Compruebe qué cargas había en la base de datos en ese momento. Algunos ejemplos de estas cargas podrían ser:
 
 * Procesos Cron
@@ -39,13 +39,13 @@ Si ha sufrido una interrupción que podría deberse a una base de datos sobrecar
 * Creación de volcados
 
 
-### Analizar consultas mediante [!DNL Percona Toolkit] (Adobe Commerce Pro: solo arquitectura de nube)
+### Analizar consultas con [!DNL Percona Toolkit] (Adobe Commerce Pro: solo arquitectura de nube)
 
-Si el proyecto de Adobe Commerce está implementado en una arquitectura Pro, puede usar el complemento [!DNL Percona Toolkit] para analizar consultas.
+Si el proyecto de Adobe Commerce está implementado en una arquitectura Pro, puede usar [!DNL Percona Toolkit] para analizar consultas.
 
-1. Ejecute el `pt-query-digest --type=slowlog` comando contra registros de consulta lentos de MySQL.
-   * Para saber la ubicación de los registros de consultas lentas, consulte **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** en nuestra documentación para desarrolladores.
-   * Consulte la [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest) documentación.
+1. Ejecute el comando `pt-query-digest --type=slowlog` con los registros de consulta lentos de MySQL.
+   * Para encontrar la ubicación de los registros de consultas lentas, consulte **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** en nuestra documentación para desarrolladores.
+   * Consulte la documentación de [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest).
 1. En función de los problemas encontrados, realice pasos para corregir la consulta, de modo que se ejecute más rápidamente.
 
 ## Comprobando la &quot;lista de procesos&quot; de MySQL

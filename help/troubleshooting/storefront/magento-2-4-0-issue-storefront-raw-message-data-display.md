@@ -24,7 +24,7 @@ Este artículo proporciona una solución para el problema cuando todos los mensa
 
 <u>Pasos a seguir:</u>
 
-1. Ir a **Crear nueva cuenta** página de la tienda.
+1. Vaya a la página **Crear nueva cuenta** de la tienda.
 1. Cree una nueva cuenta mediante un correo electrónico registrado. Se muestra el siguiente mensaje:
 
 `There+is+already+an+account+with+this+email+address.+If+you+are+sure+that+it+is+your+email+address,+click+here+to+get+your+password+and+access+your+account.`

@@ -1,9 +1,10 @@
 ---
 title: "ACSD-56741: Solución de problemas de configuración de bases de datos con déclencheur MySQL personalizados"
-description: Aplique el parche ACSD-56741 para corregir el problema de Adobe Commerce donde aparece un mensaje de error *Intentando acceder al desplazamiento de la matriz en un valor de tipo nulo* durante setup:upgrade debido a un déclencheur MySQL personalizado en la base de datos no relacionado con la indexación y [!DNL MView].
+description: Aplique el parche ACSD-56741 para corregir el problema de Adobe Commerce donde aparece un mensaje de error *Intentando acceder al desplazamiento de la matriz en el valor de tipo null* durante setup:upgrade debido a un déclencheur MySQL personalizado en la base de datos no relacionado con la indexación y  [!DNL MView].
 feature: Install
 role: Admin, Developer
-source-git-commit: 216ce1035584e4c049029073ee0017d3616cdbd6
+exl-id: 97839140-03c5-44f0-ba75-935d62f5bf90
+source-git-commit: 7cd830d9ba4af6350a14e0cdb50439d2d07084dc
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 0%
@@ -12,25 +13,25 @@ ht-degree: 0%
 
 # ACSD-56741: solución de problemas de configuración de bases de datos con déclencheur MySQL personalizados
 
-El parche ACSD-56741 corrige el problema en el que se mostraba un mensaje de error *Intentando obtener acceso al desplazamiento de la matriz en un valor de tipo nulo* aparece durante `setup:upgrade` debido a un déclencheur MySQL personalizado en la base de datos no relacionado con la indexación y [!DNL MView]. Este parche está disponible cuando la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48 está instalado. El ID del parche es ACSD-56741. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.5.0
+La revisión ACSD-56741 corrige el problema en el que aparece un mensaje de error *Intentando obtener acceso al desplazamiento de la matriz en un valor de tipo null* durante `setup:upgrade` debido a un déclencheur MySQL personalizado en la base de datos no relacionado con la indexación y [!DNL MView]. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.48. El ID del parche es ACSD-56741. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.5.0
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.6-p3
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.6 - 2.4.6-p4
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-Un mensaje de error *Intentando obtener acceso al desplazamiento de la matriz en un valor de tipo nulo* aparece durante `setup:upgrade` debido a un déclencheur MySQL personalizado en la base de datos no relacionado con la indexación y [!DNL MView].
+Aparece un mensaje de error *Al intentar obtener acceso al desplazamiento de la matriz en un valor de tipo null* durante `setup:upgrade` debido a un déclencheur MySQL personalizado en la base de datos no relacionado con la indexación y [!DNL MView].
 
 <u>Pasos a seguir</u>:
 
@@ -55,20 +56,20 @@ La actualización de la instalación finaliza sin ningún error.
 
 La actualización de la instalación se cierra con un mensaje de error:
 
-*Advertencia: Intentando acceder al desplazamiento de la matriz en un valor de tipo nulo*.
+*Advertencia: se está intentando obtener acceso al desplazamiento de matriz en un valor de tipo null*.
 
 ## Aplicar el parche
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en el [!DNL Quality Patches Tool] guía.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce sobre infraestructura en la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en el [!DNL Quality Patches Tool] guía.
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

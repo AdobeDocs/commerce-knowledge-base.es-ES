@@ -37,7 +37,7 @@ labels: patch: 2041.1,article,labels,tags
 ---
 ```
 
-Para evitar este error, ajuste el título o las etiquetas (o ambos si tienen dos puntos) en **comillas simples**.
+Para evitar este error, ajuste el título o las etiquetas (o ambos si ambos tienen dos puntos) entre **comillas simples**.
 
 **Ejemplo:**
 
@@ -61,7 +61,7 @@ labels: patch: 2041.1,'article',labels,tags
 ---
 ```
 
-Este error se corrige ajustando el título o las etiquetas (o ambos) en **comillas dobles**.
+Este error se corrige envolviendo el título o las etiquetas (o ambos) entre **comillas dobles**.
 
 **Ejemplo:**
 
@@ -83,7 +83,7 @@ labels: patch: 2041.1,'article',"labels",can't,tags
 ---
 ```
 
-Cuando esto sucede, ajuste el título o las etiquetas (o ambos) en **comillas dobles** y use un **barra invertida** para omitir todas las comillas dobles del título y las etiquetas.
+Cuando esto suceda, ajuste el título o las etiquetas (o ambos) entre **comillas dobles** y use una **barra invertida** para omitir todas las comillas dobles del título y las etiquetas.
 
 **Ejemplo:**
 

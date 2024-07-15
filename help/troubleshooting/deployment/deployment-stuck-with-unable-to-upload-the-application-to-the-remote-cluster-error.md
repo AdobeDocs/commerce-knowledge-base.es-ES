@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # La implementación se bloqueó con el error &quot;No se puede cargar la aplicación en el clúster remoto&quot;
 
-Este artículo proporciona una solución para el problema de Adobe Commerce, donde la implementación se bloquea y el siguiente mensaje de error se puede encontrar en el registro de implementación: *&quot;Error: no se puede cargar la aplicación en el clúster remoto&quot;*.
+Este artículo proporciona una solución para el problema de Adobe Commerce, donde la implementación se bloquea y el siguiente mensaje de error se puede encontrar en el registro de implementación: *&quot;Error: No se puede cargar la aplicación en el clúster remoto&quot;*.
 
 ## Productos y versiones afectados
 
@@ -31,7 +31,7 @@ La implementación se ha completado correctamente.
 
 <u>Resultado real</u>:
 
-La implementación se atasca y aparece el siguiente mensaje de error en el registro de errores de implementación de la interfaz de usuario de la nube: *&quot;Error: no se puede cargar la aplicación en el clúster remoto&quot; encontrado en el registro de implementación después de una implementación fallida, el sitio puede mostrar el error &quot;Tiempo de espera de primer byte 503&quot;*.
+La implementación se atasca y en el registro de errores de implementación de la interfaz de usuario de la nube se muestra el siguiente mensaje de error: *&quot;Error: No se puede cargar la aplicación en el clúster remoto&quot; encontrado en el registro de implementación tras una implementación fallida, el sitio puede mostrar el error &quot;503 tiempo de espera del primer byte&quot;*.
 
 ## Causa
 
@@ -48,4 +48,4 @@ Directorios que se deben considerar para la limpieza:
 * `var/debug/`
 * `var`
 
-Para obtener más información sobre cómo aumentar el espacio en disco si utiliza la arquitectura del plan de inicio de la infraestructura en la nube de Adobe Commerce, consulte [Aumente el espacio en disco para el entorno de integración en la nube](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md) en nuestra base de conocimiento de soporte. Las mismas instrucciones se pueden utilizar para aumentar el espacio del entorno de integración de arquitectura de plan Pro de Adobe Commerce en la infraestructura en la nube. Para Producción/ensayo profesional, debe hacer lo siguiente [presentar un ticket al Soporte de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket-Submit-a-support-ticket) y solicitar más espacio en disco. Pero, por lo general, no tendrá que lidiar con esto en el plan de ensayo/producción de Pro, ya que Adobe Commerce monitoriza estos parámetros por usted y alerta y/o toma acciones según el contrato.
+Para obtener más información sobre cómo aumentar el espacio en disco si utiliza la arquitectura del plan de inicio de la infraestructura en la nube de Adobe Commerce, consulte [Aumento del espacio en disco para el entorno de integración en la nube](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md) en nuestra base de conocimiento de asistencia. Las mismas instrucciones se pueden utilizar para aumentar el espacio del entorno de integración de arquitectura de plan Pro de Adobe Commerce en la infraestructura en la nube. Para Pro Production/Staging, debe [enviar un ticket al Soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket-Submit-a-support-ticket) y solicitar más espacio en disco. Pero, por lo general, no tendrá que lidiar con esto en el plan de ensayo/producción de Pro, ya que Adobe Commerce monitoriza estos parámetros por usted y alerta y/o toma acciones según el contrato.

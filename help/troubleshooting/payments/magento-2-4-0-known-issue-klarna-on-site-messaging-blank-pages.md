@@ -25,9 +25,9 @@ En este artículo se describe un problema conocido de Adobe Commerce 2.4.0 con e
 <u>Pasos a seguir:</u>
 
 1. En Commerce Admin, vaya a **Tiendas** > **Configuración** > **Ventas** > **Métodos de pago** > **Klarna** > **Mensajería en el sitio de Klarna**.
-1. Establecer **Activar** hasta *Sí*.
-1. Deje el **Tema de diseño** en blanco.
-1. Guarde la configuración haciendo clic en **Guardar configuración**.
+1. Establecer **Enable** en *Yes*.
+1. Deje el campo **Diseño del tema** en blanco.
+1. Para guardar la configuración, haga clic en **Guardar configuración**.
 1. Vaya a la tienda y navegue a cualquier página de producto.
 
 <u>Resultado esperado:</u>
@@ -40,4 +40,4 @@ Se muestra una página en blanco.
 
 ## Solución
 
-Si habilita la mensajería en el sitio de Klarna, asegúrese siempre de que la variable **Tema de diseño** El campo no está en blanco.
+Si habilita la mensajería en el sitio de Klarna, asegúrese siempre de que el campo **Tema de diseño** no esté en blanco.

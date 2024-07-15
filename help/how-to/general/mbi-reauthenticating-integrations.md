@@ -31,8 +31,8 @@ Esto puede deberse a varias razones:
 
 El estado de todas las integraciones se encuentra en la página Integraciones ( **Administrar datos > Integraciones** ):
 
-![Integraciones_página.png](assets/Integrations_page.png)
+![Integraciones_page.png](assets/Integrations_page.png)
 
 Para volver a autenticarse, es posible que tenga que volver a introducir las credenciales de la cuenta. En algunos casos, es posible que deba generar nuevas claves API para la integración problemática. Haga clic en el nombre de la integración del problema para iniciar el proceso de reautorización.
 
-Si el problema persiste, [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Si el problema persiste, [envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

@@ -44,10 +44,10 @@ Security Scan Tool se basa en la Web y se accede a él desde la cuenta en línea
 
 ## ¿Cómo puedo suscribirme para utilizar la herramienta de exploración de seguridad? {#how-do-i-sign-up-to-use-the-magento-security-scan-tool}
 
-Los comerciantes pueden registrarse para utilizar Security Scan Tool para explorar sus tiendas web desde su cuenta de Adobe Commerce ([account.magento.com](https://account.magento.com)). Siga el enlace para inscribirse en la Herramienta de exploración de seguridad [aquí](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686).
+Los comerciantes pueden registrarse para utilizar la herramienta de análisis de seguridad y analizar sus tiendas web desde su cuenta de Adobe Commerce ([account.magento.com](https://account.magento.com)). Siga el vínculo para registrarse en la herramienta de análisis de seguridad [aquí](https://account.magento.com/scanner/dashboard/?_ga=2.83981338.267715797.1615821601-2099431409.1611073686).
 
 ## ¿Qué puedo hacer si encuentro un falso positivo en el informe de análisis? {#what-do-i-do-if-i-come-across-a-false-positive-in-the-scan-report}
 
 Recomendamos a nuestros comerciantes que investiguen todos los análisis fallidos y tomen las medidas adecuadas para resolver estos problemas. Después de la investigación, si los comerciantes se encuentran con un resultado de análisis que parece ser un falso positivo, solicitamos al comerciante que notifique al Adobe para tomar las medidas adecuadas.
 
-Para enviar un informe de falsos positivos, introduzca un ticket con el servicio de asistencia de Adobe Commerce Merchant para que podamos evaluar el falso positivo, realizar los cambios necesarios o proporcionar recomendaciones para evitar ver este tipo de notificaciones en el futuro. Los comerciantes también pueden informar de un falso positivo enviándonos un correo electrónico a [securityscan@magento.com](mailto:securityscan@magento.com).
+Para enviar un informe de falsos positivos, introduzca un ticket con el servicio de asistencia de Adobe Commerce Merchant para que podamos evaluar el falso positivo, realizar los cambios necesarios o proporcionar recomendaciones para evitar ver este tipo de notificaciones en el futuro. Los comerciantes también pueden informar sobre un falso positivo enviándonos un correo electrónico a [securityscan@magento.com](mailto:securityscan@magento.com).

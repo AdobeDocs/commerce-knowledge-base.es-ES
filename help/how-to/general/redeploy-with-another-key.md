@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Este artículo proporciona instrucciones sobre cómo volver a implementar Adobe Commerce en la infraestructura en la nube con claves de autenticación diferentes. Por ejemplo, es posible que haya utilizado las claves de otra cuenta o que haya utilizado claves de Magento Open Source en lugar de claves de Adobe Commerce.
 
-Si utilizó las claves incorrectas, la implementación falla. Para recuperarse, debe clonar el proyecto y añadir las claves correctas a `auth.json`y presione el cambio en la rama maestra.
+Si utilizó las claves incorrectas, la implementación falla. Para recuperarse, debe clonar el proyecto, agregar las claves correctas a `auth.json` e insertar el cambio en la rama maestra.
 
-En este artículo, suponemos que su proyecto tiene un `master` solo rama (`master` es la rama predeterminada cuando se crea un proyecto por primera vez).
+En este artículo, suponemos que su proyecto tiene solamente una rama `master` (`master` es la rama predeterminada cuando crea un proyecto por primera vez).
 
 Para volver a implementar con las claves de autenticación correctas:
 
@@ -34,7 +34,7 @@ Para volver a implementar con las claves de autenticación correctas:
    ```
 
 1. Cambie al directorio raíz del proyecto.
-1. Abrir `auth.json` en un editor de texto.
+1. Abra `auth.json` en un editor de texto.
 
    ```json
    {
@@ -65,4 +65,4 @@ Para volver a implementar con las claves de autenticación correctas:
 
 1. Espere a que se complete la implementación.
 
-Los mensajes indican si la implementación se realizó correctamente. Para confirmar que la implementación se ha realizado correctamente, vaya a uno de los **Rutas de entorno** se muestra en la pantalla.
+Los mensajes indican si la implementación se realizó correctamente. Para confirmar que la implementación se ha realizado correctamente, vaya a una de las **rutas del entorno** que se muestran en la pantalla.

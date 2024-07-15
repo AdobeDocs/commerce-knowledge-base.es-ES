@@ -1,6 +1,6 @@
 ---
-title: run `setup:static-content:problema deploy` deployed_version.txt
-description: Este artículo proporciona una corrección para el error "deployed_version.txt" no se puede escribir al ejecutar la configuración:static-content:deploy` comando manualmente.
+title: ejecutar problema "setup:static-content:deploy` deployed_version.txt
+description: Este artículo proporciona una corrección para el error "deployed_version.txt" no se puede escribir al ejecutar el comando "setup:static-content:deploy" manualmente.
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer
@@ -11,13 +11,13 @@ ht-degree: 0%
 
 ---
 
-# correr `setup:static-content:deploy` problema deployed_version.txt
+# ejecutar `setup:static-content:deploy` problema deployed_version.txt
 
-Este artículo proporciona una corrección para `deployed_version.txt` no es un error grabable al ejecutar el `setup:static-content:deploy` comando manualmente.
+Este artículo proporciona una corrección para el error no se puede escribir en `deployed_version.txt` al ejecutar el comando `setup:static-content:deploy` manualmente.
 
 ## Problema
 
-Si sigue las recomendaciones de Adobe Commerce sobre la infraestructura en la nube para utilizar [Administración de configuración](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) (y mueva la generación de recursos estáticos a la fase de compilación para reducir el tiempo de inactividad del sitio web durante la implementación), puede encontrar el siguiente error al ejecutar el `setup:static-content:deploy` comando manualmente:
+Si sigue las recomendaciones de Adobe Commerce sobre la infraestructura en la nube para usar [Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) (y mueve la generación de recursos estáticos a la fase de compilación para reducir el tiempo de inactividad del sitio web durante la implementación), podría encontrar el siguiente error al ejecutar el comando `setup:static-content:deploy` manualmente:
 
 ```
 {{cloud-project-id}}_stg@i:~$ php bin/magento setup:static-content:deploy
@@ -36,7 +36,7 @@ No se recomienda ejecutar la implementación de contenido estático manualmente 
 
 ## Solución
 
-Si aún desea ejecutar la implementación de contenido estático, elimine los enlaces simbólicos en la `pub/static` y ejecute el `setup:static-content:deploy` comando de nuevo:
+Si aún desea ejecutar la implementación de contenido estático, quite los enlaces simbólicos del directorio `pub/static` y ejecute de nuevo el comando `setup:static-content:deploy`:
 
 ```
 find pub/static/ -maxdepth 1 -type l -delete

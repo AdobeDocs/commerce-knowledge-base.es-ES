@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # El menú principal (Categorías) no se muestra en las subpáginas que tengan activada la opción Rápidamente
 
-Este artículo proporciona una corrección para cuando el menú principal (o el [Menú de navegación superior de categoría](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) en nuestra guía del usuario) no se muestra en la tienda para subpáginas (por ejemplo, *blog/página*) cuando Fastly o Varnish está habilitado.
+Este artículo proporciona una corrección cuando el menú principal (o el [menú de navegación superior por categorías](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) de nuestra guía del usuario) no se muestra en la tienda para subpáginas (por ejemplo, *blog/página*) cuando Fastly o Varnish están habilitados.
 
-**Causa:** los no permitidos `/` carácter (barra) en el *Clave de URL* de la página (Configuración de optimización del motor de búsqueda). El carácter suele añadirse cuando *Ruta de URL* (con ubicación de página completa) se especifica por error en lugar de *Clave de URL*: por ejemplo, *blog/página\_nombre* en lugar de solo *page\_name*.
+**Causa:** el carácter (barra) `/` no permitido en el parámetro *URL Key* de la página (configuración de optimización del motor de búsqueda). El carácter generalmente se agrega cuando se especifica por error *Ruta de URL* (con ubicación de página completa) en lugar de *Clave de URL*: por ejemplo, *blog/página\_name* en lugar de solo *página\_name*.
 
-**Solución:** elimine el `/` carácter (barra diagonal); para *Clave de URL* , especifique solo el nombre de la página.
+**Solución:** quita el carácter `/` (barra diagonal); para el parámetro *URL Key*, especifica solamente el nombre de página.
 
 ## Versiones afectadas
 
@@ -27,35 +27,35 @@ Este artículo proporciona una corrección para cuando el menú principal (o el 
 
 ## Problema
 
-El menú principal (también denominado [Menú de navegación superior de categoría](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) en nuestra guía del usuario) no se muestra en la tienda para subpáginas cuando Fastly u otros servicios basados en Varnish están habilitados.
+El menú principal (también conocido como [menú de navegación superior por categorías](/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) en nuestra guía del usuario) no se muestra en la tienda para las subpáginas cuando está habilitado Fastly u otros servicios basados en Varnish.
 
 ## Causa
 
-El problema se debe a que no está permitido `/` carácter (barra), agregado a *Clave de URL* (Configuración de optimización del motor de búsqueda).
+El problema se debe al carácter (barra) `/` no permitido, agregado al parámetro *URL Key* (configuración de optimización del motor de búsqueda).
 
-El carácter suele añadirse cuando *Ruta de URL* (con la ubicación de la página completa, incluido el recurso o directorio principal de la página) se especifica por error en lugar de *Clave de URL*: por ejemplo, *blog/página\_nombre* en lugar de solo *page\_name*.
+El carácter generalmente se agrega cuando se especifica por error *Ruta de URL* (con ubicación de página completa, incluido el recurso o directorio principal de la página) en lugar de *Clave de URL*: por ejemplo, *blog/página\_name* en lugar de solo *página\_name*.
 
-![Parámetro de clave URL para la configuración de SEO](assets/seo_url_key.png)
+![Parámetro de clave de URL para la configuración de SEO](assets/seo_url_key.png)
 
 ## Solución
 
-Retire el `/` carácter (barra diagonal) de *Clave de URL* para todas las páginas de la tienda.
+Elimina el carácter `/` (barra diagonal) del parámetro *Clave de URL* para todas las páginas de tu tienda.
 
-En otras palabras, utilice *Clave de URL* en lugar de *Ruta de URL*: mencione solo el nombre de página sin recurso/directorio principal.
+En otras palabras, use *clave de URL* en lugar de *ruta de URL*: mencione solo el nombre de página sin recurso o directorio principal.
 
 ### Recommendations en jerarquía de páginas y SEO
 
-Para establecer la jerarquía de páginas, utilice el **Jerarquía** del menú Editar página.
+Para establecer la jerarquía de páginas, utilice la sección **Jerarquía** del menú Editar página.
 
 ![Configuración de jerarquía](assets/hierarchy_hr.png)
 
-También puede utilizar el **Contenido** > **Elementos** > **Jerarquía** menú: para obtener soluciones de jerarquía más complejas.
+También puede usar el menú **Contenido** > **Elementos** > **Jerarquía** para obtener soluciones de jerarquía más complejas.
 
-Para fines de SEO en páginas de producto, utilice las reescrituras de URL (**Marketing** > **SEO y búsqueda** > **Reescrituras de URL**).
+Para fines de SEO en páginas de productos, use las reescrituras de URL (**Marketing** > **SEO y búsqueda** > **reescrituras de URL**).
 
 ## Más información en nuestra guía de usuario
 
-El *Clave de URL* parámetro para SEO:
+El parámetro *URL Key* para SEO:
 
 * [Optimización del motor de búsqueda](/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html)
 * [Adición de una nueva página](/docs/commerce-admin/content-design/elements/pages/page-add.html)

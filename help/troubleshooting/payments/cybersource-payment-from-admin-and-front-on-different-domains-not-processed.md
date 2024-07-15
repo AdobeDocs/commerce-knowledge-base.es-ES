@@ -17,17 +17,17 @@ Este artículo proporciona un parche para la limitación conocida de Adobe Comme
 
 >[!NOTE]
 >
->La integración principal de pagos de Adobe Commerce Cybersource está obsoleta desde la versión 2.3.3 y se eliminará completamente en la versión 2.4.0. Utilice el [extensión oficial](https://marketplace.magento.com/cybersource-global-payment-management.html) del mercado en su lugar.
+>La integración principal de pagos de Adobe Commerce Cybersource está obsoleta desde la versión 2.3.3 y se eliminará completamente en la versión 2.4.0. En su lugar, use la [extensión oficial](https://marketplace.magento.com/cybersource-global-payment-management.html) del mercado.
 
 ## Problema
 
-La implementación anterior de la integración de Cybersource permitía procesar pagos de un solo dominio. Como resultado, si la tienda de Adobe Commerce está en un dominio diferente al de la administración de Commerce, se produce el siguiente error al intentar realizar un pedido con Cybersource en la administración: &quot; *Carga denegada por X-Frame-Options: https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ no permite tramas de origen cruzado.* ..&quot;
+La implementación anterior de la integración de Cybersource permitía procesar pagos de un solo dominio. Como resultado, si la tienda de Adobe Commerce está en un dominio diferente al del administrador de Commerce, recibirá el siguiente error al intentar realizar un pedido con Cybersource en el administrador: &quot; *Carga denegada por X-Frame-Options: https://%your\_domain%/cybersource/SilentOrder/TokenResponse/ no permite la creación de tramas de origen cruzado.* ..&quot;
 
 <u>Pasos a seguir</u>:
 
 1. Configure el administrador en un subdominio diferente.
 1. Configure Cybersource para la tienda en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Métodos de pago** > **CyberSource**.
-1. Ir a **Ventas** > **Pedidos**.
+1. Vaya a **Ventas** > **Pedidos**.
 1. Cree un nuevo pedido.
 1. Crear nuevo cliente.
 1. Introduzca los detalles del cliente.
@@ -35,13 +35,13 @@ La implementación anterior de la integración de Cybersource permitía procesar
 1. Seleccione Cybersource como método de pago.
 1. Envíe el pedido.
 
-<u>Resultado esperado</u>: el pedido se realiza sin problemas.
+<u>Resultado esperado</u>: el pedido se realizó sin problemas.
 
-<u>Resultado real</u>: La página Pedido muestra un icono de carga, pero el pedido nunca se realiza. El error se muestra en la consola.
+<u>Resultado real</u>: la página Pedido muestra un icono cargando, pero el pedido nunca se realiza. El error se muestra en la consola.
 
 ## Solución
 
-El parche adjunto proporciona la mejora para la integración con Cybersource. Después de aplicar el parche, debe crear otro perfil con Cybersource para procesar pagos en el administrador y añadir las credenciales necesarias en la configuración de Cybersource en el administrador de Commerce en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Métodos de pago** > **CyberSource**.
+El parche adjunto proporciona la mejora para la integración con Cybersource. Después de aplicar el parche, debe crear otro perfil con Cybersource para procesar pagos en el administrador y agregar las credenciales necesarias en la configuración de Cybersource en el administrador de Commerce en **Tiendas** > Configuración > **Configuración** > **Ventas** > **Métodos de pago** > **CyberSource**.
 
 >[!NOTE]
 >

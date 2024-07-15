@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Configurar rápidamente el plan de inicio en la nube
 
-Consulte la [Configuración rápida](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html) en nuestra documentación para desarrolladores.
+Consulte [Configurar rápidamente](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html) en nuestra documentación para desarrolladores.

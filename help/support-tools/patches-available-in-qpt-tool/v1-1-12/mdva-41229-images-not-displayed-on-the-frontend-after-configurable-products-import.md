@@ -13,21 +13,21 @@ ht-degree: 2%
 
 # MDVA-41229: las imágenes disponibles en el back-end no se muestran en el front-end después de importar productos configurables
 
-El parche MDVA-41229 resuelve el problema de que las imágenes disponibles en el back-end no se muestran en el front-end después de importar productos configurables. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12 está instalado. El ID del parche es MDVA-41229. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+El parche MDVA-41229 resuelve el problema de que las imágenes disponibles en el back-end no se muestran en el front-end después de importar productos configurables. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.12. El ID del parche es MDVA-41229. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.2-p2 y 2.4.3-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.0 - 2.4.3-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -36,7 +36,7 @@ Las imágenes disponibles en el servidor no se muestran en el front-end después
 <u>Pasos a seguir</u>:
 
 1. Instale un Adobe Commerce limpio.
-1. Añada un atributo personalizado en **Tiendas** > **Atributos** > **Product** > **Añadir nuevo atributo** con la configuración siguiente:
+1. Para agregar un atributo personalizado, ve a **Tiendas** > **Atributos** > **Producto** > **Agregar nuevo atributo** con la siguiente configuración:
    * Propiedades:
       * Propiedades de atributo:
          * Etiqueta predeterminada: Establecer tamaño
@@ -73,9 +73,9 @@ Las imágenes disponibles en el servidor no se muestran en el front-end después
       * Visible en las páginas del catálogo en la tienda: Sí
       * Se utiliza en la lista de productos: Sí
       * Se utiliza para ordenar en la lista de productos: No
-1. Añada este atributo al conjunto de atributos predeterminado dentro del grupo de detalles del producto (**Tiendas** > **Atributos** > **Conjunto de atributos**).
+1. Agregue este atributo al conjunto de atributos predeterminado dentro del grupo Detalles del producto (**Almacenes** > **Atributos** > **Conjunto de atributos**).
 1. Descargue las imágenes configuradas en la carpeta var dentro del directorio raíz de Adobe Commerce.
-1. Ir a **Sistema** > **Transferencia de datos** > e importe el archivo con las siguientes opciones:
+1. Vaya a **Sistema** > **Transferencia de datos** > e importe el archivo con las siguientes opciones:
    * Configuración de importación:
       * Tipo de entidad: productos
    * Comportamiento de importación:
@@ -89,7 +89,7 @@ Las imágenes disponibles en el servidor no se muestran en el front-end después
    * Archivo para importar:
       * Seleccionar archivo para importar
       * Directorio de archivos de imágenes: déjelo vacío
-1. Vaya a la tienda para `/product-set.html` y cambiar entre diferentes tamaños de conjunto. Para Set Size 24, no habrá galería.
+1. Vaya a la tienda en `/product-set.html` página y cambie entre diferentes tamaños de conjunto. Para Set Size 24, no habrá galería.
 
 <u>Resultados esperados</u>:
 
@@ -110,7 +110,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

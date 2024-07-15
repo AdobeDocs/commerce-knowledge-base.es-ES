@@ -26,12 +26,12 @@ Cuando una tienda tiene Amazon Pay y otro pago asignado a diferentes países, y 
 
 Una actualización de página web es una solución para el problema.
 
-Para resolver este problema y eliminar el error, se ha creado un [parche](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip).
+Para resolver este problema y eliminar el error, hemos creado un [parche](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip).
 
 <u>Requisitos previos</u>:
 
 * Se crea un producto simple.
-* **Cheque/giro postal** solo está habilitado para países específicos (en **Almacenar** > **Configuración** > **Ventas** > **Métodos de pago**).
+* El cheque o giro postal **1} solo está habilitado en determinados países (en** Tienda **>** Configuración **>** Ventas **>** Métodos de pago **).**
 
 * Ejemplo: Pago de Países Aplicables = Países Específicos
 * Ejemplo: Pago desde países específicos = Reino Unido
@@ -45,26 +45,26 @@ Para resolver este problema y eliminar el error, se ha creado un [parche](assets
 
    * País = *Estados Unidos*
 
-1. Selecciona la tarifa de envío y pulsa **Siguiente**.
+1. Seleccione la tarifa de envío y haga clic en **Siguiente**.
 
    * Se abre el paso de pago.
    * No hay pagos disponibles.
    * Mensaje: **No hay ninguna forma de pago disponible.**
-   * No hay ninguna **Realizar pedido** botón.
+   * No hay ningún botón **Realizar pedido**.
 
-1. Vuelva a la **Paso de envío** y cambie el valor a:
+1. Vuelva al **Paso de envío** y cambie el valor a:
 
    * País = *Reino Unido*
 
-1. Selecciona la tarifa de envío y pulsa **Siguiente**.
+1. Seleccione la tarifa de envío y haga clic en **Siguiente**.
 
 <u>Resultado esperado</u>:
 
 Se abre el paso Pago.
 
 * **Pago contra reembolso** aparece.
-* **Cheque/giro postal** aparece.
-* El **Realizar pedido** aparece el botón.
+* Aparece **Cheque/giro postal**.
+* Aparece el botón **Realizar pedido**.
 
 <u>Resultado real</u>:
 
@@ -72,11 +72,11 @@ Se abre el paso Pago.
 
 * No hay pagos disponibles.
 * Mensaje: *No hay ninguna forma de pago disponible.*
-* No hay ninguna **Realizar pedido** botón.
+* No hay ningún botón **Realizar pedido**.
 
 ## Solución
 
-[Aplicar el parche](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip) más abajo.
+[Aplicar el parche](assets/BUNDLE-2546_EE_2.3.5-p1.composer.patch.zip) siguiente.
 
 ## Parche
 

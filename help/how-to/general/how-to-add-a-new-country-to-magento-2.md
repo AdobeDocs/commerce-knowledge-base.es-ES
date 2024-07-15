@@ -14,7 +14,7 @@ ht-degree: 0%
 
 En este artículo se explica cómo agregar un país que no esté presente en Adobe Commerce ni en la biblioteca de configuración regional de Zend. Esto requiere cambios en el código y la base de datos que constituyen personalizaciones del cliente según los términos del acuerdo aplicables. Tenga en cuenta que los materiales de ejemplo incluidos en este artículo se proporcionan &quot;TAL CUAL&quot; sin garantía de ningún tipo. Ni el Adobe ni ninguna otra entidad afiliada están obligados a mantener, corregir, actualizar, cambiar, modificar o apoyar estos materiales. Aquí describiremos los principios básicos de lo que se debe hacer para lograr esto.
 
-En este ejemplo, creamos un nuevo módulo de Adobe Commerce con un parche de datos que se aplica durante el proceso de instalación o actualización de Adobe Commerce, y añadimos un País abstracto con el código de país XX a Adobe Commerce. El [Directorio de Adobe Commerce](https://developer.adobe.com/commerce/php/module-reference/module-directory/) crea una lista inicial de países y, a continuación, utiliza Parches de configuración para anexar territorios a esa lista. Este artículo explica cómo crear un nuevo módulo que anexará un nuevo país a la lista. Puede revisar el código del módulo de Adobe Commerce Directory existente como referencia. Esto se debe a que el siguiente módulo de ejemplo continúa con el trabajo del módulo Directorio de crear una lista de países y regiones, y reutiliza partes del código de los parches de configuración del módulo Adobe Commerce Directory.
+En este ejemplo, creamos un nuevo módulo de Adobe Commerce con un parche de datos que se aplica durante el proceso de instalación o actualización de Adobe Commerce, y añadimos un País abstracto con el código de país XX a Adobe Commerce. El [directorio de Adobe Commerce](https://developer.adobe.com/commerce/php/module-reference/module-directory/) crea una lista inicial de países y luego usa parches de configuración para anexar territorios a esa lista. Este artículo explica cómo crear un nuevo módulo que anexará un nuevo país a la lista. Puede revisar el código del módulo de Adobe Commerce Directory existente como referencia. Esto se debe a que el siguiente módulo de ejemplo continúa con el trabajo del módulo Directorio de crear una lista de países y regiones, y reutiliza partes del código de los parches de configuración del módulo Adobe Commerce Directory.
 
 ## Documentación recomendada
 
@@ -24,8 +24,8 @@ Consulte los siguientes temas en la documentación para desarrolladores antes de
 
 * [Guía para desarrolladores de PHP](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/bk-extension-dev-guide.html)
 * [Resumen del módulo](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html)
-* [Crear un nuevo módulo](https://devdocs.magento.com/videos/fundamentals/create-a-new-module/)
-* [Archivos de configuración del módulo](https://devdocs.magento.com/guides/v2.4/config-guide/config/config-files.html)
+* [Crear nuevo módulo](https://devdocs.magento.com/videos/fundamentals/create-a-new-module/)
+* [Archivos de configuración de módulo](https://devdocs.magento.com/guides/v2.4/config-guide/config/config-files.html)
 
 ## Información necesaria
 
@@ -35,20 +35,34 @@ Un nuevo país debe tener un nombre único, ID de país, ISO2 y códigos ISO3 en
 
 En este ejemplo, vamos a crear un nuevo módulo llamado \`ExtraCountries\` con la siguiente estructura de directorio:
 
-(Para obtener más información sobre la estructura del módulo, consulte [Resumen del módulo](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html) en nuestra documentación para desarrolladores).
+(Para obtener más información sobre la estructura del módulo, consulte [Información general del módulo](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html) en nuestra documentación para desarrolladores).
 
 <pre><ExtraCountries>
  |
  <etc>
- | | | config.xml | di.xml | module.xml |
+ | |
+ | config.xml
+ | di.xml
+ | module.xml
+ |
  <Plugin>
- | | | <Framework>
- | | |   <Locale>
- | | | TranslatedListsPlugin.php |
+ | |
+ | <Framework>
+ |   |
+ |   <Locale>
+ |     |
+ |     TranslatedListsPlugin.php
+ |
  <Setup>
- | | | <Patch>
- | | |   <Data>
- | | | AddDataForAbstractCountry.php | composer.json registration.php</pre>
+ | |
+ | <Patch>
+ |   |
+ |   <Data>
+ |     |
+ |     AddDataForAbstractCountry.php
+ |
+ composer.json
+ registration.php</pre>
 
 >[!NOTE]
 >
@@ -58,9 +72,9 @@ En este ejemplo, vamos a crear un nuevo módulo llamado \`ExtraCountries\` con l
 
 En este archivo XML se define una nueva configuración de módulo. Las siguientes configuraciones y etiquetas se pueden editar para ajustar la nueva configuración predeterminada del país.
 
-* `allow` - Para añadir el país recién añadido a la lista de &quot;Permitir países&quot; de forma predeterminada, añada el nuevo Código de país al final del `allow` contenido de etiquetas. Los códigos de país están separados por comas. Tenga en cuenta que esta etiqueta sobrescribirá los datos del `Directory` archivo de configuración del módulo *(Directory/etc/config.xml)* `allow` por eso repetimos todos los códigos aquí, además de agregar el nuevo.
-* `optional_zip_countries` - Si el código postal del país recién añadido debe ser opcional, añada el código de país al final del contenido de la `optional_zip_countries` etiqueta. Los códigos de país están separados por comas. Tenga en cuenta que esta etiqueta sobrescribirá los datos del `Directory` archivo de configuración del módulo *(Directory/etc/config.xml)* `optional_zip_countries` por eso repetimos todos los códigos aquí, además de agregar el nuevo.
-* `eu_countries` - Si el país recién añadido debe formar parte de la lista de países de la Unión Europea de forma predeterminada, añada el código de país al final del contenido de la `eu_countries` etiqueta. Los códigos de país están separados por comas. Tenga en cuenta que esta etiqueta sobrescribirá los datos del `Store` archivo de configuración del módulo *(\_Store/etc/config.xml\_)* `eu_countries` por eso repetimos todos los códigos aquí, además de agregar el nuevo.
+* `allow` - Para agregar el país recién agregado a la lista &quot;Permitir países&quot; de manera predeterminada, anexe el nuevo código de país al final del contenido de la etiqueta `allow`. Los códigos de país están separados por comas. Tenga en cuenta que esta etiqueta sobrescribirá los datos del archivo de configuración del módulo `Directory` *(Directory/etc/config.xml)* `allow`, por lo que repetimos todos los códigos aquí además de agregar el nuevo.
+* `optional_zip_countries`: si el código postal del país recién agregado debe ser opcional, anexe el código de país al final del contenido de la etiqueta `optional_zip_countries`. Los códigos de país están separados por comas. Tenga en cuenta que esta etiqueta sobrescribirá los datos del archivo de configuración del módulo `Directory` *(Directory/etc/config.xml)* `optional_zip_countries`, por lo que repetimos todos los códigos aquí además de agregar el nuevo.
+* `eu_countries`: si el país recién agregado debe formar parte de la lista de países de la Unión Europea de forma predeterminada, anexe el código de país al final del contenido de la etiqueta `eu_countries`. Los códigos de país están separados por comas. Tenga en cuenta que esta etiqueta sobrescribirá los datos del archivo de configuración del módulo `Store` *(\_Store/etc/config.xml\_)* `eu_countries` etiqueta, por lo que repetimos todos los códigos aquí además de agregar el nuevo.
 * `config.xml` ejemplo de archivo
 
 ```xml
@@ -83,17 +97,17 @@ En este archivo XML se define una nueva configuración de módulo. Las siguiente
 </config>
 ```
 
-Para obtener más información sobre los archivos de configuración del módulo, consulte [Guía para desarrolladores de PHP > Definición de archivos de configuración](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/required-configuration-files.html) en nuestra documentación para desarrolladores.
+Para obtener más información sobre los archivos de configuración del módulo, consulte [PHP Developer Guide > Define Configurations files](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/required-configuration-files.html) en nuestra documentación para desarrolladores.
 
-Tenga en cuenta que estos cambios son opcionales y solo afectarán a la pertenencia predeterminada del nuevo país a las listas &quot;Permitir países&quot;, &quot;Código postal es opcional para&quot; y &quot;Países de la Unión Europea&quot;. Si se omite este archivo de la estructura del módulo, se añadirá un nuevo país, pero tendrá que configurarse manualmente en **Administrador** > **Tiendas** > *Configuración* > **Configuración** > **General** > **Opciones de país** página de configuración de.
+Tenga en cuenta que estos cambios son opcionales y solo afectarán a la pertenencia predeterminada del nuevo país a las listas &quot;Permitir países&quot;, &quot;Código postal es opcional para&quot; y &quot;Países de la Unión Europea&quot;. Si se omite este archivo de la estructura del módulo, se agregará un nuevo país, pero tendrá que configurarse manualmente en la página de configuración de **Administración** > **Tiendas** > *Configuración* > **Configuración** > **General** > **Opciones de país**.
 
 ### ExtraCountries/etc/di.xml
 
-El `di.xml` el archivo configura qué dependencias inserta el administrador de objetos. Consulte <a>Guía para desarrolladores de PHP > The di.xml</a> en nuestra documentación para desarrolladores para obtener más información sobre `di.xml`.
+El archivo `di.xml` configura qué dependencias inserta el administrador de objetos. Consulte <a>Guía para desarrolladores de PHP > The di.xml</a> en nuestra documentación para desarrolladores para obtener más información sobre `di.xml`.
 
-En nuestro ejemplo, debemos registrar un `_TranslatedListsPlugin_` que traducirá los códigos de país recién introducidos a nombres de país completos, si los códigos no están presentes en los datos de localización de la Biblioteca de Zend Locale.
+En nuestro ejemplo, debemos registrar un `_TranslatedListsPlugin_` que traducirá los códigos de país recién introducidos a un nombre de país completo, si los códigos no están presentes en los datos de localización de la biblioteca local de Zend.
 
-`di.xml` ejemplo
+Ejemplo de `di.xml`
 
 ```xml
 <?xml version="1.0"?>
@@ -109,9 +123,9 @@ En nuestro ejemplo, debemos registrar un `_TranslatedListsPlugin_` que traducir�
 
 En el archivo de registro del módulo debemos especificar la dependencia para el módulo &quot;Adobe Commerce Directory&quot; asegurándonos de que el módulo &quot;Extra Country&quot; se registre y ejecute después del módulo Directory.
 
-Consulte [Administración de dependencias de módulo](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html#managing-module-dependencies) en nuestra documentación para desarrolladores para obtener más información sobre las dependencias de los módulos.
+Consulte [Administración de dependencias de módulo](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html#managing-module-dependencies) en nuestra documentación para desarrolladores para obtener más información sobre las dependencias de módulo.
 
-`module.xml` ejemplo
+Ejemplo de `module.xml`
 
 ```xml
 <?xml version="1.0"?>
@@ -126,7 +140,7 @@ Consulte [Administración de dependencias de módulo](https://devdocs.magento.co
 
 ### ExtraCountries/Plugin/Framework/Locale/TranslatedListsPlugin.php
 
-En el `aroundGetCountryTranslation()` método del complemento debemos traducir un código de país en un nombre de país completo. Este paso es necesario para los países que no tienen un nombre completo asociado con un nuevo código de país en la Biblioteca de configuración regional de Zend.
+En el método del complemento `aroundGetCountryTranslation()` debemos traducir un código de país a un nombre de país completo. Este paso es necesario para los países que no tienen un nombre completo asociado con un nuevo código de país en la Biblioteca de configuración regional de Zend.
 
 ```php
 <?php
@@ -171,9 +185,9 @@ class TranslatedListsPlugin
 
 Este parche de datos se ejecutará durante el proceso de instalación/actualización de Adobe Commerce y añadirá un nuevo registro de país a la base de datos.
 
-Consulte [Desarrollo de parches de datos y esquemas](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/declarative-schema/data-patches.html) en nuestra documentación para desarrolladores para obtener más información sobre los parches de datos.
+Consulte [Desarrollar parches de esquema y datos](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/declarative-schema/data-patches.html) en nuestra documentación para desarrolladores para obtener más información sobre los parches de datos.
 
-En el ejemplo siguiente, puede ver que la variable `$data` matriz del método `apply()` contiene los códigos de ID de país, ISO2 e ISO3 para el nuevo país, y estos datos se están insertando en la base de datos.
+En el ejemplo siguiente, puede ver que la matriz `$data` del método `apply()` contiene códigos de Id. de país, ISO2 e ISO3 para el nuevo país, y que estos datos se están insertando en la base de datos.
 
 ```php
 <?php
@@ -252,7 +266,7 @@ class AddDataForAbstractCountry implements DataPatchInterface, PatchVersionInter
 
 ### ExtraCountries/registration.php
 
-Este es un ejemplo del archivo registration.php. Para obtener más información sobre el registro de módulos, consulte [Guía para desarrolladores de PHP > Registrar su componente](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html) en nuestra documentación para desarrolladores.
+Este es un ejemplo del archivo registration.php. Para obtener más información sobre el registro de módulos, consulta [Guía para desarrolladores de PHP > Registrar tu componente](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html) en nuestra documentación para desarrolladores.
 
 ```php
 <?php
@@ -296,7 +310,7 @@ Para obtener más información sobre composer.json, consulte [Guía para desarro
 
 ## Instalación del módulo
 
-Para saber cómo instalar el módulo, consulte [Ubicaciones de módulos](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html#module-locations) en nuestra documentación para desarrolladores.
+Para saber cómo instalar el módulo, consulte [Ubicaciones del módulo](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html#module-locations) en nuestra documentación para desarrolladores.
 
 Una vez que el directorio del módulo se coloque en una ubicación correcta, ejecute `bin/magento setup:upgrade` para aplicar los parches de datos y registrar el complemento de traducción.
 

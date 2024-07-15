@@ -28,7 +28,7 @@ Este artículo proporciona soluciones para el problema de las implementaciones f
 
 Las implementaciones fallan y los registros de implementación contienen información similar a la siguiente:
 
-*Error grave: UnexpectedValueException no detectada: El token de oauth de github para github.com contiene caracteres no válidos: &quot;ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot; en /app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129*
+*Error grave: Uncatch UnexpectedValueException: El token de oauth de github para github.com contiene caracteres no válidos: &quot;ghp_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx&quot; en /app/vendor/composer/composer/src/Composer/IO/BaseIO.php:129*
 
 ## Causa
 
@@ -38,13 +38,13 @@ Las claves de Compositor obsoletas causan errores en el token de Github, lo que 
 
 Para resolver el problema, actualice su versión de Composer a la 1.10.22:
 
-1. En el entorno local, ejecute `composer require “composer/composer”:”>1.10.21`.
-1. Esto añade el requisito para esa versión del paquete Composer. Compruebe el archivo de bloqueo - `composer/composer` la versión debe ser 1.0.22 o superior.
-1. Confirmar `composer.json` y `composer.lock` e inserte una implementación.
+1. En su entorno local, ejecute `composer require “composer/composer”:”>1.10.21`.
+1. Esto añade el requisito para esa versión del paquete Composer. Compruebe el archivo de bloqueo: la versión `composer/composer` debe ser 1.0.22 o superior.
+1. Confirme `composer.json` y `composer.lock` y envíe una implementación.
 
-Si este método no funciona, [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Si este método no funciona, [envíe un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Lectura relacionada
 
 * [Blog de Github: Detrás de los nuevos formatos de token de autenticación de GitHub](https://github.blog/2021-04-05-behind-githubs-new-authentication-token-formats/)
-* [Artículo de noticias de InfoQ.com: GitHub cambia el formato de tokens para mejorar la identificación, la exploración secreta y la entropía](https://www.infoq.com/news/2021/04/github-new-token-format/)
+* [Artículo de noticias de InfoQ.com: GitHub cambia el formato de token para mejorar la identificación, la detección de secretos y la entropía](https://www.infoq.com/news/2021/04/github-new-token-format/)

@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # MDVA-42768: GraphQL muestra un precio incorrecto cuando los productos secundarios están agotados
 
-El parche MDVA-42768 soluciona el problema de que GraphQL muestra el precio incorrecto cuando los productos secundarios de un producto configurable no están disponibles. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 está instalado. El ID del parche es MDVA-42768. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+El parche MDVA-42768 soluciona el problema de que GraphQL muestra el precio incorrecto cuando los productos secundarios de un producto configurable no están disponibles. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10. El ID del parche es MDVA-42768. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.2
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.4 - 2.4.3-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-Cuando los productos secundarios de un producto configurable están agotados y la configuración Mostrar productos sin existencias está activada, la consulta GraphQL muestra el precio normal del producto como **0**.
+Cuando los productos secundarios de un producto configurable están agotados y la configuración Mostrar productos sin existencias está habilitada, la consulta de GraphQL muestra el precio normal del producto como **0**.
 
 <u>Requisitos previos</u>:
 
@@ -39,9 +39,9 @@ Se instalan los datos de ejemplo.
 
 <u>Pasos a seguir</u>:
 
-1. Habilite la configuración del producto Mostrar sin existencias en el administrador de Commerce yendo a **Tiendas** > **Configuración** > **Catálogo** > **Inventario**.
+1. Habilite la opción Mostrar producto sin existencias en el administrador de Commerce. Para ello, vaya a **Tiendas** > **Configuración** > **Catálogo** > **Inventario**.
 1. Cree un producto configurable y asígnele un producto secundario simple.
-1. Establezca el inventario del producto de variante (simple) en **Sin existencias**.
+1. Establezca el inventario del producto variante (simple) en **Agotado**.
 1. Reindexe.
 1. Ejecute la siguiente consulta de GraphQL:
 
@@ -85,7 +85,7 @@ Se instalan los datos de ejemplo.
    }
    ```
 
-1. Compruebe la sección de respuesta `minimum_price` > `regular price`.
+1. Compruebe la sección de respuestas `minimum_price` > `regular price`.
 
 <u>Resultados esperados</u>:
 
@@ -106,7 +106,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

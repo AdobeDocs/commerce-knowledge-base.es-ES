@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # ACSD-53643: el pedido tiene un total incorrecto al realizar un pedido de compra
 
-El parche ACSD-53643 corrige el problema en el que el pedido tiene un total incorrecto al realizar un pedido de compra con productos desactivados o sin existencias. Este parche está disponible cuando la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.41 está instalado. El ID del parche es ACSD-53643. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
+El parche ACSD-53643 corrige el problema en el que el pedido tiene un total incorrecto al realizar un pedido de compra con productos desactivados o sin existencias. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.41. El ID del parche es ACSD-53643. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.6
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.3 - 2.4.6-p3
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -36,11 +36,11 @@ El total del pedido es incorrecto al realizar un pedido de compra con productos 
 <u>Pasos a seguir</u>:
 
 1. Instalar *[!UICONTROL B2B]* y *[!UICONTROL Inventory]*.
-1. Ir a **[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL B2B]** y establecer **[!UICONTROL Company]** = *Sí* y **[!UICONTROL Purchase Order]** = *Sí*.
+1. Vaya a **[!UICONTROL Admin]** > **[!UICONTROL Store]** > **[!UICONTROL Configuration]** > **[!UICONTROL B2B]** y establezca **[!UICONTROL Company]** = *Sí* y **[!UICONTROL Purchase Order]** = *Sí*.
 1. Borre la caché de configuración.
-1. Crear una nueva compañía, activarla y habilitar *[!UICONTROL Purchase order]* para la empresa.
+1. Cree una nueva compañía, actívela y habilite *[!UICONTROL Purchase order]* para la compañía.
 1. Cree un nuevo usuario para la compañía.
-1. Crear un *Regla de aprobación* para aprobar todas las solicitudes de más de *1 USD* por el administrador de la empresa.
+1. Cree una *regla de aprobación* para aprobar todos los pedidos de más de *1 USD* por parte del administrador de la compañía.
 1. Cree una fuente adicional.
 1. Inicie sesión como el nuevo usuario de la empresa.
 1. Añada dos productos al carro de compras y realice un pedido de compra.
@@ -53,8 +53,8 @@ El total del pedido es incorrecto al realizar un pedido de compra con productos 
 
 <u>Resultados esperados</u>:
 
-* No se puede realizar el pedido aunque haya un producto en el pedido *inhabilitado* o *sin existencias*.
-* *[!UICONTROL Place Order]* El botón está oculto.
+* No se puede realizar el pedido aunque un producto del pedido esté *deshabilitado* o *agotado*.
+* El botón *[!UICONTROL Place Order]* está oculto.
 
 <u>Resultados reales</u>:
 
@@ -64,14 +64,14 @@ El pedido realizado contiene únicamente el primer producto activo, pero el tota
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en el [!DNL Quality Patches Tool] guía.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce sobre infraestructura en la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en el [!DNL Quality Patches Tool] guía.
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

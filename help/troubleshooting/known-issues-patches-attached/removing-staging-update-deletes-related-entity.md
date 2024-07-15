@@ -29,7 +29,7 @@ Cuando se elimina una actualización de programación activa entre sus fechas de
 1. Cree una nueva subcategoría en **Catálogo** > **Categorías**.
 1. Cree una nueva actualización de ensayo con la hora de inicio y finalización.
 1. Espere hasta que se aplique la actualización; ese es el momento de inicio.
-1. Elimine la actualización con el **Ver/Editar** vínculo.
+1. Elimine la actualización mediante el vínculo **Ver/Editar**.
 
 <u>Resultados esperados</u>:
 

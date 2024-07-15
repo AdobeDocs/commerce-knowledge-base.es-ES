@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # La invalidación del almacenamiento en caché de Adobe Commerce en la infraestructura en la nube v2.3.5 de GraphQL no funciona
 
-Este artículo proporciona un parche para el problema en el que GraphQL `GET` La solicitud devuelve información obsoleta si el cliente cambia la información del producto.
+Este artículo proporciona un parche para el problema en el que la solicitud de GraphQL `GET` devuelve información obsoleta si el cliente cambia la información del producto.
 
 ## Productos y versiones afectados
 
@@ -33,11 +33,11 @@ Fastly almacena en caché las solicitudes de GraphQL y recupera la versión en c
 
 <u>Resultados esperados</u>:
 
-El `X-Cache` el encabezado contiene `MISS`.
+El encabezado `X-Cache` contiene `MISS`.
 
 <u>Resultados reales</u>:
 
-El `X-Cache` el encabezado contiene `HIT`, lo que significa que la respuesta se almacena en caché.
+El encabezado `X-Cache` contiene `HIT`, lo que significa que la respuesta se almacena en caché.
 
 ## Solución
 
@@ -73,6 +73,6 @@ El parche también es compatible (pero es posible que no resuelva el problema) c
 
 ## Cómo aplicar el parche
 
-Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones sobre cómo aplicar un parche de composer.
+Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones sobre cómo aplicar un parche del compositor.
 
 ## Archivos adjuntos

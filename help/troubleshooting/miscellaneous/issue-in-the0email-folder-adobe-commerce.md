@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problema de permiso de carpeta var/export en Adobe Commerce en la nube
 
-Este artículo proporciona una solución a un problema en el que no puede exportar datos de productos debido a un problema de permisos de archivos en el servidor de `var/export/email` carpeta. Los síntomas incluyen exportaciones de productos y catálogos no disponibles en la interfaz de usuario, pero visibles al utilizar SSH.
+Este artículo proporciona una solución a un problema en el que no puede exportar datos de productos debido a un problema de permisos de archivos en el servidor en la carpeta `var/export/email`. Los síntomas incluyen exportaciones de productos y catálogos no disponibles en la interfaz de usuario, pero visibles al utilizar SSH.
 
 ## Productos y versiones afectados
 
@@ -21,13 +21,13 @@ Adobe Commerce en infraestructura en la nube, 2.3.0-2.3.7-p2, 2.4.0-2.4.3-p1
 
 ## Problema
 
-No puede exportar archivos en `var/export/email` o `var/export/archive` carpeta.
-Esto no se pudo implementar debido a los permisos de `var/export/email` o `var/export/email/archive` porque esa carpeta de archivos se crea en forma de correo electrónico (y si solo realizo la exportación/correo electrónico a veces, sigue habiendo un problema) aparte de agregar algo para tener en cuenta la subcarpeta `var/export/email/archive`.
+No puede exportar archivos en la carpeta `var/export/email` o `var/export/archive`.
+Esto no pudo implementarse debido a permisos en `var/export/email` o `var/export/email/archive` porque esa carpeta de archivo se crea en el correo electrónico y si solo realizo la exportación o el correo electrónico (a veces todavía hay un problema) aparte de agregar algo a la cuenta para la subcarpeta `var/export/email/archive`.
 
 <u>Pasos a seguir</u>:
 
 En el Administrador, vaya a **Sistema** > *Transferencia de datos* > **Exportar**.
-Seleccione los archivos CSV que desea guardar en `var/export/` carpeta.
+Seleccione los archivos CSV que desea guardar en la carpeta `var/export/`.
 
 <u>Resultado esperado</u>:
 
@@ -41,9 +41,9 @@ Recibirá el mismo mensaje para todos los tipos de exportación: Advanced Pricin
 
 ## Causa
 
-Esto se debe a una carpeta creada dentro de `/var` que tiene permisos imperfectos: `d-wxrwsr-T`. El bit T sticky significa que los usuarios solo pueden eliminar los archivos que poseen, pero el ejecutable que falta significa que no pueden crear archivos en el directorio.
+Esto se debe a una carpeta creada dentro de `/var` con permisos imperfectos: `d-wxrwsr-T`. El bit T sticky significa que los usuarios solo pueden eliminar los archivos que poseen, pero el ejecutable que falta significa que no pueden crear archivos en el directorio.
 
-Esto suele notarse cuando el sistema crea una carpeta llamada `export`, que contiene una carpeta llamada `email`, que contiene una carpeta llamada `archive`.
+Esto se observa a menudo cuando el sistema crea una carpeta llamada `export`, que contiene una carpeta llamada `email`, que contiene una carpeta llamada `archive`.
 
 Para comprobar si el directorio tiene estos permisos mal configurados, ejecute el siguiente comando en CLI/Terminal:
 
@@ -67,4 +67,4 @@ chmod 777 -R var/export/
 
 ## Lectura relacionada
 
-* [Exportar](https://docs.magento.com/user-guide/system/data-export.html) en nuestra guía del usuario.
+* [Exportar](https://docs.magento.com/user-guide/system/data-export.html) en nuestra guía de usuario.

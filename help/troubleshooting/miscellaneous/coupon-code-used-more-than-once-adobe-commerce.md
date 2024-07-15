@@ -42,11 +42,11 @@ El cupón se puede utilizar más de una vez.
 
 ## Causa
 
-Los comerciantes no tienen `sales.rule.update.coupon.usage` la configuración y ejecución del consumidor de, lo que provoca un comportamiento incorrecto.
+Los comerciantes no han configurado y ejecutado el consumidor `sales.rule.update.coupon.usage`, lo que provoca un comportamiento incorrecto.
 
 ## Solución
 
-Añada el `sales.rule.update.coupon.usage` al consumidor de `app/etc/env.php` archivo.
+Agregar el consumidor `sales.rule.update.coupon.usage` al archivo `app/etc/env.php`.
 
 ```php
 ...

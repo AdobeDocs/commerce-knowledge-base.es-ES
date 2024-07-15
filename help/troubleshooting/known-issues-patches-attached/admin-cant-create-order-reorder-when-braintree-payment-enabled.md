@@ -25,7 +25,7 @@ Este artículo proporciona un parche para el problema de Adobe Commerce 2.4.5 en
 
 <u>Pasos a seguir</u>:
 
-1. Se utiliza la integración del Braintree principal (**Tiendas** > **Configuraciones** > **Ventas** > **Método de pago** > **Braintree**).
+1. Se usa la integración del Braintree principal (**Tiendas** > **Configuraciones** > **Ventas** > **Método de pago** > **Braintree**).
 1. Con Tienda Luma, realice un pedido.
 1. Vaya a la IU de administración > **Ventas**.
 1. Intente crear un nuevo pedido para un cliente o vaya a un pedido realizado anteriormente y haga clic en **Reordenar**.
@@ -58,7 +58,7 @@ El parche se adjunta a este artículo. Para descargarlo, haga clic en el siguien
 
 >[!NOTE]
 >
->Además, para Adobe Commerce en comerciantes de infraestructura en la nube: Adobe ha incluido la corrección en los parches de la nube para Commerce versión 1.0.18. Consulte la [Notas de la versión de Cloud Patches for Commerce](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html) en nuestra documentación para desarrolladores para encontrar instrucciones sobre cómo aplicar el paquete más reciente.
+>Además, para Adobe Commerce en comerciantes de infraestructura en la nube: Adobe ha incluido la corrección en los parches de la nube para Commerce versión 1.0.18. Consulte [Parches de nube para las notas de la versión de Commerce](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html) en nuestra documentación para desarrolladores para obtener instrucciones sobre cómo aplicar el paquete más reciente.
 
 ### Versiones de Adobe Commerce compatibles:
 
@@ -74,4 +74,4 @@ El parche se ha creado para:
 
 ## Cómo aplicar el parche
 
-Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de asistencia para obtener instrucciones.
+Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de soporte técnico para obtener instrucciones detalladas.

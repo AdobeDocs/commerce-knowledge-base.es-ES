@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # &quot;Error 500&quot; después de hacer doble clic en Eliminar vínculo en el carro de compras
 
-Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.0 relacionado con los clientes que obtienen un error al intentar eliminar dos veces un elemento del carro de compras (haciendo doble clic en el *Eliminar* o haciendo clic en él en diferentes pestañas).
+Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.0 relacionado con los clientes que reciben un error al intentar eliminar dos veces un elemento del carro de compras (haciendo doble clic en el vínculo *Quitar* o haciendo clic en él en diferentes pestañas).
 
 ## Problema
 
-Cuando los clientes hagan doble clic en *Eliminar* en el carro de compras, al intentar eliminar un producto de este, aparece una página en blanco con el siguiente mensaje de error: *&quot;Esta página no funciona. ERROR HTTP 500&quot;.* El mismo problema sucede si un cliente abre dos pestañas del explorador con la página del carro de compras y elimina el producto primero en una pestaña y, a continuación, en la segunda.
+Cuando los clientes hacen doble clic en el vínculo *Quitar* del carro de compras, al intentar quitar un producto de este, obtienen una página en blanco con el siguiente mensaje de error: *&quot;Esta página no funciona. ERROR HTTP 500&quot;.* El mismo problema sucede si un cliente abre dos pestañas del explorador con la página del carro de compras y quita el producto primero en una pestaña y luego en la segunda.
 
 <u>Pasos a seguir</u> :
 
@@ -33,9 +33,9 @@ O
 1. Eliminar el producto del carro de compras.
 1. Abra la segunda pestaña y vuelva a eliminar el producto.
 
-<u>Resultado esperado</u> : el producto se elimina del carro de compras sin errores.
+<u>Resultado esperado</u> : El producto se ha eliminado del carro de compras sin errores.
 
-<u>Resultado real</u> : el producto se elimina con el error: *&quot;Esta página no funciona. ERROR HTTP 500&quot;* mensaje de error.
+<u>Resultado real</u> : El producto se eliminó con el error: *&quot;Esta página no funciona. Mensaje de error HTTP 500&quot;*.
 
 ## Parche
 

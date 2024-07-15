@@ -1,6 +1,6 @@
 ---
-title: '"ACSD-49973: rendimiento mejorado al recuperar productos agrupados mediante [!DNL GraphQL]'''
-description: Aplique el parche ACSD-49973 para solucionar el problema de Adobe Commerce donde se produce una degradación del rendimiento al recuperar productos agrupados mediante [!DNL GraphQL].
+title: "ACSD-49973: rendimiento mejorado al recuperar productos agrupados mediante  [!DNL GraphQL]"
+description: Aplique el parche ACSD-49973 para corregir el problema de Adobe Commerce donde se produce una degradación del rendimiento al recuperar productos agrupados mediante  [!DNL GraphQL].
 exl-id: 7d7fce0f-40f9-4dec-aee7-1014690ccd7c
 feature: GraphQL, Products
 role: Admin
@@ -13,39 +13,39 @@ ht-degree: 0%
 
 # ACSD-49973: rendimiento mejorado al recuperar productos agrupados mediante [!DNL GraphQL]
 
-El parche ACSD-49973 mejora el rendimiento al recuperar productos agrupados mediante [!DNL GraphQL]. Este parche está disponible cuando la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.30 está instalado. El ID del parche es ACSD-49973. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.7.
+El parche ACSD-49973 mejora el rendimiento al recuperar productos agrupados mediante [!DNL GraphQL]. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.30. El ID del parche es ACSD-49973. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.4-p2
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.4-p3
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-La degradación del rendimiento se produce al recuperar productos agrupados mediante [!DNL GraphQL].
+Se produce una degradación del rendimiento al recuperar productos agrupados mediante [!DNL GraphQL].
 
 <u>Requisitos previos</u>:
 
-Crear 2000 paquetes de productos utilizando [Kit de herramientas de rendimiento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html).
+Cree 2000 paquetes de productos usando [Performance toolkit](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/generate-data.html).
 
 <u>Pasos a seguir</u>:
 
-1. Habilite la [!DNL DB] registrador de consultas:
+1. Habilitar el registrador de consultas [!DNL DB]:
 
    ```
    bin/magento dev:query-log:enable
    ```
 
-1. Ejecute lo siguiente [!DNL GraphQL] consulta:
+1. Ejecute la siguiente consulta [!DNL GraphQL]:
 
    ```GraphQL
    {
@@ -63,28 +63,28 @@ Crear 2000 paquetes de productos utilizando [Kit de herramientas de rendimiento]
    }
    ```
 
-1. Marque `var/log/db.log` para solicitudes a `catalog_product_bundle_selection` tabla.
+1. Buscar solicitudes en la tabla `catalog_product_bundle_selection` de `var/log/db.log`.
 
 <u>Resultados esperados</u>:
 
-Solicitudes a `catalog_product_bundle_selection` no debe estar presente en el `var/log/db.log`.
+Las solicitudes para la tabla `catalog_product_bundle_selection` no deben estar presentes en `var/log/db.log`.
 
 <u>Resultados reales</u>:
 
-Hay 2000 solicitudes para `catalog_product_bundle_selection` que se activan al mismo tiempo, lo que provoca una degradación del rendimiento.
+Hay 2000 solicitudes a `catalog_product_bundle_selection` tabla que se activan al mismo tiempo, lo que provoca una degradación del rendimiento.
 
 ## Aplicar el parche
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en el [!DNL Quality Patches Tool] guía.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce sobre infraestructura en la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en el [!DNL Quality Patches Tool] guía.
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

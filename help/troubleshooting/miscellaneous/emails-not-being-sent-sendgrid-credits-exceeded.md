@@ -25,7 +25,7 @@ No existen límites estrictos en el número de correos electrónicos que se pued
 
 ## Cómo comprobar si se han superado tus créditos:
 
-Arquitectura del plan Pro de Adobe Commerce en la infraestructura en la nube: consulte la `/var/log/mail.log` - podría ver un mensaje como este:
+Arquitectura del plan Pro de Adobe Commerce en la infraestructura de la nube: Compruebe `/var/log/mail.log`; es posible que vea un mensaje como este:
 
 `May 28 21:13:00 <i-node> postfix/error[21335]: BC7941A2BBF: to=<to@email.com>, relay=none, delay=4642, delays=4642/0.56/0/0.03, dsn=4.0.0, status=deferred (delivery temporarily suspended: SASL authentication failed; server smtp.sendgrid.net[ip address] said: 451 Authentication failed: Maximum credits exceeded).`
 
@@ -35,8 +35,8 @@ Hay límites en la cantidad de correos electrónicos permitidos que se pueden en
 
 ## Solución
 
-* Si ve este mensaje en el entorno de producción, [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) y proporcione el mensaje anterior y solicite que se aumenten los créditos.
-* Si no ve este mensaje o también está en Adobe Commerce en la arquitectura del plan de inicio de la infraestructura en la nube, [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) y mencionan que la `mail.log` no indica que se hayan superado los créditos.
+* Si ve este mensaje en el entorno de producción, [envíe un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), proporcione el mensaje anterior y solicite que se aumenten los créditos.
+* Si no ve este mensaje o está en Adobe Commerce en la arquitectura del plan de inicio de la infraestructura en la nube, [envíe también un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) y mencione que el archivo `mail.log` no indica que se hayan excedido los créditos.
 
 ## Lectura relacionada
 

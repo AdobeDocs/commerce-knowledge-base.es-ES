@@ -28,7 +28,8 @@ Adobe Commerce 2.4.5, cuyo lanzamiento está programado para agosto de 2022, con
 
 ## Parche
 
-El ID de parche es AC-3022 disponible en la versión 1.1.16 de la herramienta de parches de calidad. Consulte la [Herramienta Parches de calidad (QPT) > Uso](https://devdocs.magento.com/quality-patches/usage.html) artículo en nuestra documentación para desarrolladores para obtener información sobre cómo utilizar QPT e instalar parches.
+El ID de parche es AC-3022 disponible en la versión 1.1.16 de la herramienta de parches de calidad.
+Consulte el artículo [Herramienta de parches de calidad (QPT) > Uso](https://devdocs.magento.com/quality-patches/usage.html) en nuestra documentación para desarrolladores para obtener información sobre cómo usar QPT e instalar parches.
 
 El parche se aplica a las siguientes versiones de Adobe Commerce:
 
@@ -37,5 +38,5 @@ El parche se aplica a las siguientes versiones de Adobe Commerce:
 
 ## Lectura relacionada
 
-* [Transportistas > DHL](https://docs.magento.com/user-guide/shipping/dhl.html) en nuestra guía del usuario
-* [Métodos de envío](https://docs.magento.com/user-guide/configuration/sales/delivery-methods.html) en nuestra guía del usuario
+* [Transportistas de envío > DHL](https://docs.magento.com/user-guide/shipping/dhl.html) en nuestra guía de usuario
+* [Métodos de envío](https://docs.magento.com/user-guide/configuration/sales/delivery-methods.html) en nuestra guía de usuario

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # robots.txt no se ha actualizado para mostrar la configuración predeterminada
 
-El artículo proporciona una solución para cuando haya configurado `robots.txt` correctamente, por ejemplo, por [Prácticas recomendadas para Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931) pero el `robots.txt` no se está actualizando o muestra la configuración predeterminada.
+El artículo proporciona una solución para cuando haya configurado `robots.txt` correctamente, por ejemplo, según las [prácticas recomendadas para Adobe Commerce robots.txt](https://support.magento.com/hc/en-us/articles/360048754931), pero `robots.txt` no se está actualizando o muestra la configuración predeterminada.
 
 ## Productos y versiones afectados
 
@@ -21,20 +21,20 @@ El artículo proporciona una solución para cuando haya configurado `robots.txt`
 
 ## Problema
 
-No se puede cambiar el valor predeterminado `robots.txt` configuración.
+No se puede cambiar la configuración predeterminada de `robots.txt`.
 
 <u>Pasos a seguir:</u>
 
 1. Acceda al panel de administración.
-1. Añadir contenido a **Contenido** > Diseño > **Configuración** > **Editar instrucción personalizada de`robots.txt`** como el texto &quot;hello&quot; y guarde los cambios.
-1. Visite la `robots.txt` url.
+1. Agregue contenido a **Contenido** > Diseño > **Configuración** > **Edite la instrucción personalizada de`robots.txt`** archivo, como el texto &quot;hello&quot;, y guarde los cambios.
+1. Visite la URL `robots.txt`.
 
 <u>Resultado esperado:</u>
 `robots.txt` tiene el texto guardado.
 
 <u>Resultado real:</u>
 
-`robots.txt` el archivo no cambia.
+`robots.txt` archivo no cambia.
 
 ## Causa
 
@@ -42,8 +42,8 @@ La indexación por motores de búsqueda está desactivada.
 
 ## Solución
 
-Habilite la indexación por motores de búsqueda. Consulte [Configurar la indexación por motor de búsqueda](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html#configure-indexing-by-search-engine) en nuestra documentación para desarrolladores.
+Habilite la indexación por motores de búsqueda. Consulte [Configurar la indexación mediante el motor de búsqueda](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html#configure-indexing-by-search-engine) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 
-* [Añadir robots de mapa del sitio y de motor de búsqueda](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) en nuestra documentación para desarrolladores.
+* [Agregue robots de mapa del sitio y de motor de búsqueda](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) en nuestra documentación para desarrolladores.

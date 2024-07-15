@@ -32,12 +32,12 @@ Ha iniciado sesión en el administrador de Commerce.
 
 <u>Resultado real</u>:
 
-Se le redirigirá de nuevo al formulario de inicio de sesión y se mostrará el siguiente mensaje de error: *&quot;Tu cuenta está temporalmente desactivada. Inténtelo de nuevo más tarde&quot;.*.
+Se le redirigirá de nuevo al formulario de inicio de sesión y se mostrará el siguiente mensaje de error: *&quot;Su cuenta está temporalmente deshabilitada. Inténtelo de nuevo más tarde&quot;*.
 
 ## Solución
 
 1. Cree una copia de seguridad de base de datos.
-1. Utilice una herramienta de base de datos como [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin), o acceda a la base de datos manualmente desde la línea de comandos. En el `admin_user` tabla de base de datos, para su registro de usuario administrador, compruebe si `is_active` se configura como &quot;`1`&quot; y `lock_expires` es `NULL`. Restablezca estos valores si es necesario.
+1. Use una herramienta de base de datos como [phpMyAdmin](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos. En la tabla de la base de datos `admin_user`, para el registro de usuario administrador, compruebe si `is_active` está establecido en &quot;`1`&quot; y `lock_expires` es `NULL`. Restablezca estos valores si es necesario.
 
 ## Lectura relacionada en nuestra base de conocimiento de soporte
 

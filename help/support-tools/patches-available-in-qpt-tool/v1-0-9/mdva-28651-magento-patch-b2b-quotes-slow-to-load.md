@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-28651: B2B: las cotizaciones tardan en cargarse
 
-El parche MDVA-28651 resuelve el problema en el que se producen varios problemas de rendimiento con la carga de presupuestos. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) v.1.0.9 está instalado. Tenga en cuenta que el problema estaba programado para solucionarse en la versión 2.4.2 de Adobe Commerce.
+El parche MDVA-28651 resuelve el problema en el que se producen varios problemas de rendimiento con la carga de presupuestos. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) v.1.0.9. Tenga en cuenta que el problema estaba programado para solucionarse en la versión 2.4.2 de Adobe Commerce.
 
 ## Productos y versiones afectados
 
@@ -22,7 +22,7 @@ El parche MDVA-28651 resuelve el problema en el que se producen varios problemas
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -35,15 +35,15 @@ Problemas de rendimiento en la página de lista de presupuesto de cliente:
 <u>Pasos a seguir</u>
 
 1. Tiene más de 40 presupuestos asignados a un cliente.
-1. Inicie sesión y explore **Mis comillas** página.
+1. Inicie sesión y explore la página **Mis presupuestos**.
 
 <u>Resultado real</u>
 
-El tiempo de respuesta para cargar completamente el contenido del **Mis comillas** página (carga de la página + datos mostrados en la cuadrícula) es ~ 45 segundos.
+El tiempo de respuesta para cargar completamente el contenido de la página **Mis comillas** (carga de la página + datos mostrados en la cuadrícula) es de ~ 45 segundos.
 
 <u>Resultado esperado</u>
 
-El tiempo de respuesta para cargar completamente el contenido del **Mis comillas** debe ser inferior a 45 segundos.
+El tiempo de respuesta para cargar completamente el contenido de la página **Mis comillas** debe ser inferior a 45 segundos.
 
 ## Aplicar el parche
 
@@ -56,7 +56,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) sección.
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

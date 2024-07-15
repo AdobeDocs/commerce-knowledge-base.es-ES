@@ -15,11 +15,11 @@ ht-degree: 0%
 
 Este artículo proporciona una solución para cuando la caché de la página se calienta y falla con un error:
 
-*ERROR: error en el calentamiento:`<website link>`*
+*ERROR: error en la preparación:`<website link>`*
 
 ## Productos y versiones afectados
 
-* Adobe Commerce en la infraestructura en la nube, todo [versiones compatibles](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce en la infraestructura de la nube, todas [las versiones compatibles](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## Problema
 
@@ -35,7 +35,7 @@ Páginas o cargas de sitios completos.
 
 <u>Resultado real</u>:
 
-El sitio no está disponible o el tiempo de respuesta es demasiado alto. *ERROR: error en el calentamiento:`<website link>`*
+El sitio no está disponible o el tiempo de respuesta es demasiado alto. *ERROR: error en la preparación:`<website link>`*
 
 ## Causa
 
@@ -43,7 +43,7 @@ El calentamiento de la caché no funciona con el control de acceso HTTP habilita
 
 ## Solución
 
-Asegúrese de que no tiene habilitado el control de acceso: vaya a la rama o entorno específico y haga clic en **Configuración** y marque la opción **Control de acceso HTTP** configuración: no se puede producir el calentamiento de la caché en este caso y el control de acceso debe deshabilitarse.
+Asegúrese de que no tiene habilitado el control de acceso: vaya a la rama o entorno específico, haga clic en el icono **Configuración** y compruebe la configuración de **control de acceso HTTP**; en este caso, no se puede calentar la caché y hay que deshabilitar el control de acceso.
 
 ## Lectura relacionada
 

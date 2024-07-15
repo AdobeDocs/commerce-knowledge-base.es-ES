@@ -17,12 +17,12 @@ Este artículo proporciona información general sobre la herramienta Parches de 
 
 ## Productos y versiones afectados
 
-* Adobe Commerce local, todo [versiones compatibles](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
-* Adobe Commerce en la infraestructura en la nube, todo [versiones compatibles](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce local, todas [las versiones compatibles](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
+* Adobe Commerce en la infraestructura de la nube, todas [las versiones compatibles](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 ## Qué es la herramienta Parches de calidad
 
-El [Herramienta Parches de calidad](https://github.com/magento/quality-patches) (QPT) son parches individuales desarrollados por el Adobe y la comunidad de Magento Open Source.
+La [Herramienta de Parches de Calidad](https://github.com/magento/quality-patches) (QPT) son parches individuales desarrollados por el Adobe y la comunidad de Magento Open Source.
 
 Le permite hacer lo siguiente:
 
@@ -32,17 +32,17 @@ Le permite hacer lo siguiente:
 
 Este es un ejemplo de la tabla de estado que puede obtener para ver los parches disponibles:
 
-![Magento_parches_lista](assets/status_table.png)
+![lista_parches_Magento](assets/status_table.png)
 
 La herramienta está diseñada para permitirle autoabastecerse con parches para problemas que pueda experimentar con Adobe Commerce o aplicar fácilmente los parches sugeridos por el soporte de Adobe Commerce.
 
 >[!NOTE]
 >
->QPT es solo para parches de calidad. Los parches de seguridad están disponibles en [Centro de seguridad de Magento](https://magento.com/security/patches).
+>QPT es solo para parches de calidad. Los parches de seguridad están disponibles en el [Centro de seguridad del Magento](https://magento.com/security/patches).
 
 ## Parches disponibles en la herramienta Parches de calidad
 
-Consulte la [Herramienta Parches de calidad](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores para obtener la lista de parches disponibles.
+Consulte [Herramienta de parches de calidad](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores para ver la lista de parches disponibles.
 
 ## Cómo instalar y utilizar la herramienta Parches de calidad
 
@@ -50,13 +50,13 @@ Los comandos de instalación y uso son diferentes para Adobe Commerce local y pa
 
 ### Cómo instalar y utilizar QPT para Adobe Commerce local
 
-Consulte la [Guía de actualización de software > Parches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) en nuestra documentación para desarrolladores para obtener detalles sobre cómo instalar y utilizar QPT para aplicar y revertir parches.
+Consulte [Guía de actualización de software > Parches](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching/mqp.html) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches.
 
 ### Cómo instalar y utilizar QPT para Adobe Commerce en la infraestructura en la nube
 
-Consulte la [Cloud for Adobe Commerce > Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura en la nube.
+Consulte [Cloud for Adobe Commerce > Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores para obtener más información sobre cómo instalar y utilizar QPT para aplicar y revertir parches en Adobe Commerce en la infraestructura en la nube.
 
 ## Lectura relacionada
 
-* [Notas de la versión de Parches de calidad](https://devdocs.magento.com/quality-patches/release-notes.html) en nuestra documentación para desarrolladores.
-* [Cómo aplicar los parches del compositor proporcionados por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de soporte.
+* [Notas de la versión de la herramienta Parches de calidad](https://devdocs.magento.com/quality-patches/release-notes.html) en nuestra documentación para desarrolladores.
+* [Cómo aplicar parches de compositor proporcionados por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de soporte.

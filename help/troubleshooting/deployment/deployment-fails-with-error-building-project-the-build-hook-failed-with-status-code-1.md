@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # La implementación falla con &quot;Error al crear el proyecto: Error del vínculo de compilación con el código de estado 1&quot;
 
-Este artículo habla sobre las causas y las soluciones del problema de infraestructura en la nube de Adobe Commerce, donde la fase de compilación del proceso de implementación falla y el mensaje de error se resume con lo siguiente: *&quot;Error al crear el proyecto: Error en el vínculo de compilación con código de estado 1&quot;*.
+Este artículo trata sobre las causas y soluciones del problema de infraestructura en la nube de Adobe Commerce, donde la fase de compilación del proceso de implementación falla y el mensaje de error se resume con: *&quot;Error al crear el proyecto: El vínculo de compilación falló con el código de estado 1&quot;*.
 
 ## Productos y versiones afectados
 
@@ -32,11 +32,11 @@ La implementación se ha completado correctamente.
 <u>Resultado real</u>:
 
 1. La fase de creación falla y todo el proceso de implementación se queda atascado.
-1. En el registro de errores de implementación, el mensaje de error termina con lo siguiente: *&quot;Error al crear el proyecto: error en el vínculo de compilación con código de estado 1. Compilación anulada&quot;.*
+1. En el registro de errores de implementación, el mensaje de error termina con: *&quot;Error al crear el proyecto: Error en el vínculo de generación con el código de estado 1. Compilación anulada&quot;.*
 
 ## Causa
 
-Existen varias razones por las que la creación de entornos falla. Normalmente, en el registro de implementación, verá un mensaje de error largo, donde la primera parte sería más específica con respecto al motivo y la conclusión sería *&quot;Error al crear el proyecto: error en el vínculo de compilación con código de estado 1. Compilación anulada&quot;.*
+Existen varias razones por las que la creación de entornos falla. Normalmente, en el registro de implementación verá un mensaje de error largo, donde la primera parte sería más específica con respecto al motivo y la conclusión sería *&quot;Error al crear el proyecto: El vínculo de compilación falló con el código de estado 1. Compilación anulada&quot;.*
 
 Si mira más de cerca la primera parte específica del problema, le ayudará a identificar el problema. Estas son las más comunes y la siguiente sección proporciona soluciones para ellas:
 
@@ -47,9 +47,9 @@ Si mira más de cerca la primera parte específica del problema, le ayudará a i
 
 ## Solución
 
-* Compruebe que haya suficiente espacio de almacenamiento. Para obtener información sobre cómo comprobar el espacio disponible, consulte la [Compruebe el espacio en disco en el entorno de la nube mediante CLI](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md) artículo. Puede considerar la posibilidad de limpiar los directorios de registro o aumentar el espacio en disco.
+* Compruebe que haya suficiente espacio de almacenamiento. Para obtener información sobre cómo comprobar el espacio disponible, consulte el artículo [Comprobar el espacio en disco en el entorno de la nube mediante CLI](/help/how-to/general/check-disk-space-on-cloud-environment-using-cli.md). Puede considerar la posibilidad de limpiar los directorios de registro o aumentar el espacio en disco.
 * Asegúrese de que ECE-Tools está configurado correctamente.
-* Compruebe si es el parche el que causa la avería. Resolver el conflicto o contacto [Asistencia de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Consulte a continuación para obtener más información.
+* Compruebe si es el parche el que causa la avería. Resuelva el conflicto o comuníquese con [Soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Consulte a continuación para obtener más información.
 * Compruebe si es la extensión personalizada la que está causando el problema. Resuelva el conflicto o póngase en contacto con los desarrolladores de la extensión para la solución.
 
 En los párrafos siguientes se proporcionan más detalles.
@@ -63,11 +63,11 @@ Directorios que se deben considerar para la limpieza:
 * `var/debug/`
 * `var`
 
-Para obtener más información sobre cómo aumentar el espacio en disco si utiliza la arquitectura del plan de inicio de Adobe Commerce en la infraestructura en la nube, consulte la [Aumente el espacio en disco para el entorno de integración en la nube](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md). Las mismas instrucciones se pueden utilizar para aumentar el espacio de Adobe Commerce en la infraestructura en la nube. Para Producción profesional/Ensayo, debe presentar un ticket a [Asistencia de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)y solicitan un mayor espacio en disco. Pero es monitoreado por Platform. Pero, por lo general, no tendrá que lidiar con esto en la arquitectura de ensayo/producción de Pro, ya que Adobe Commerce supervisa estos parámetros por usted y le alerta o toma medidas según el contrato.
+Para obtener más información sobre cómo aumentar el espacio en disco si utiliza la arquitectura del plan de inicio de la infraestructura en la nube de Adobe Commerce, consulte [Aumento del espacio en disco para el entorno de integración en la nube](/help/how-to/general/increase-disk-space-for-integration-environment-on-cloud.md). Las mismas instrucciones se pueden utilizar para aumentar el espacio de Adobe Commerce en la infraestructura en la nube. Para Pro Production/Staging, debes enviar un ticket al [Soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) y solicitar más espacio en el disco. Pero es monitoreado por Platform. Pero, por lo general, no tendrá que lidiar con esto en la arquitectura de ensayo/producción de Pro, ya que Adobe Commerce supervisa estos parámetros por usted y le alerta o toma medidas según el contrato.
 
 ### Asegúrese de que las herramientas ECE están correctamente configuradas
 
-1. Asegúrese de que los vínculos de compilación se definen correctamente en la variable `magento.app.yaml` archivo. Si utiliza Adobe Commerce 2.2.X, los vínculos de creación deben definirse de la siguiente manera:
+1. Asegúrese de que los vínculos de compilación se definen correctamente en el archivo `magento.app.yaml`. Si utiliza Adobe Commerce 2.2.X, los vínculos de creación deben definirse de la siguiente manera:
 
    ```yaml
    # We run build hooks before your application has been packaged.
@@ -78,11 +78,11 @@ Para obtener más información sobre cómo aumentar el espacio en disco si utili
        php ./vendor/bin/ece-tools deploy
    ```
 
-   Utilice el [Actualización a ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) artículo de referencia.
+   Use el artículo [Actualizar a ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) para referencia.
 
-1. Asegúrese de que el paquete ECE-tools esté presente en el `composer.lock` ejecutando el siguiente comando:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;nombre&quot;: &quot;magento/ece-tools&quot;</code>&#39; composer.lock</code></pre>    Si se especifican, la respuesta tendría el siguiente aspecto:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
+1. Asegúrese de que el paquete ECE-tools esté presente en el archivo `composer.lock` ejecutando el siguiente comando:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; composer.lock</code></pre>    Si se especifican, la respuesta tendría el siguiente aspecto:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
 
-Consulte la [Actualización a ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) artículo de referencia.
+Consulte el artículo [Actualizar a ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) para obtener una referencia.
 
 ### ¿El parche está causando el problema?
 
@@ -103,7 +103,7 @@ W: build
 E: Error building project: The build hook failed with status code 1. Aborted build.
 ```
 
-Estos mensajes de error significan que el parche que está intentando aplicar se ha creado para una versión diferente de Adobe Commerce o que está en conflicto con las personalizaciones o con los parches aplicados anteriormente. Intente resolver el conflicto o el contacto [Asistencia de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Estos mensajes de error significan que el parche que está intentando aplicar se ha creado para una versión diferente de Adobe Commerce o que está en conflicto con las personalizaciones o con los parches aplicados anteriormente. Intente resolver el conflicto o póngase en contacto con el [Soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### ¿La extensión de está causando el problema?
 

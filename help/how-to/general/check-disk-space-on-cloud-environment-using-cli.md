@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Compruebe el espacio en disco usando CLI en Adobe Commerce en el entorno de infraestructura en la nube
 
-Consulte la [Administrar espacio en disco](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html) artículo en nuestra documentación para desarrolladores.
+Consulte el artículo [Administrar espacio en disco](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html) en nuestra documentación para desarrolladores.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # La instalación de Adobe Commerce 2.4.0 falla con la memoria caché de tiendas obsoletas
 
-Este artículo proporciona una solución para el problema en el que la instalación de Adobe Commerce 2.4.0 falla con el siguiente mensaje de error: *No se ha definido el sitio web predeterminado. Configure el sitio web e inténtelo de nuevo.* se muestra en la consola.
+Este artículo proporciona una solución para el problema en el que la instalación de Adobe Commerce 2.4.0 falla con el siguiente mensaje de error: *El sitio web predeterminado no está definido. Configure el sitio web e inténtelo de nuevo.* se muestra en la consola.
 
 ## Productos y versiones afectados
 
@@ -23,7 +23,7 @@ Este artículo proporciona una solución para el problema en el que la instalaci
 ## Problema
 
 <u>Requisitos previos:</u>
-Una extensión de terceros con dependencias de API para el módulo Almacenar en comandos CLI se configura según sea necesario en `composer.json`. Esto provoca que la instalación de Adobe Commerce 2.4.0 falle con un mensaje de error: *No se ha definido el sitio web predeterminado. Configure el sitio web e inténtelo de nuevo.* se muestra en la consola.
+Una extensión de terceros con dependencias de API para el módulo Almacenar en comandos CLI se configura según se requiere en `composer.json`. Esto provoca que la instalación de Adobe Commerce 2.4.0 falle con un mensaje de error: *El sitio web predeterminado no está definido. Configure el sitio web e inténtelo de nuevo.* se muestra en la consola.
 
 ## Causa
 
@@ -33,7 +33,7 @@ El problema aparece para las extensiones de terceros que dependen de almacenes e
 
 Antes de la instalación de Adobe Commerce 2.4.0, los comerciantes deben:
 
-1. Elimine estas extensiones de terceros de `composer.json`.
+1. Quite estas extensiones de terceros de `composer.json`.
 1. Instalar Adobe Commerce sin extensiones.
 1. Añada las extensiones después de la instalación.
 

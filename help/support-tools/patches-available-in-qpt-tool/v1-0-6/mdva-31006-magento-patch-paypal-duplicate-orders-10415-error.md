@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-31006: error de 10415 de pedidos duplicados de PayPal
 
-El parche MDVA-31006 soluciona el problema de que el uso del pago por pago y envío de PayPal Express crea pedidos duplicados con un error 10415. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.6 está instalado. El problema se solucionó en Adobe Commerce 2.4.2.
+El parche MDVA-31006 soluciona el problema de que el uso del pago por pago y envío de PayPal Express crea pedidos duplicados con un error 10415. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.6. El problema se solucionó en Adobe Commerce 2.4.2.
 
 ## Productos y versiones afectados
 
@@ -21,7 +21,7 @@ El parche MDVA-31006 soluciona el problema de que el uso del pago por pago y env
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -31,28 +31,28 @@ El usuario no se envía a la página de pedidos correctos de Adobe Commerce, por
 
 * Adobe Commerce está instalado.
 * El pago mediante pago y envío de PayPal Express está configurado.
-* Inicie sesión en Commerce admin. Ir a **Tiendas** > **Configuración** > **Ventas** > **Métodos de pago** > seleccionar **Pago y envío de PayPal Express** > **Configurar** > **Configuración avanzada** > **Omitir paso de revisión de pedido** > *No*.
+* Inicie sesión en Commerce admin. Vaya a **Tiendas** > **Configuración** > **Ventas** > **Métodos de pago** > seleccione **Cierre de compra de PayPal Express** > **Configurar** > **Configuración avanzada** > **Omitir paso de revisión de pedido** > *No*.
 
 <u>Pasos a seguir</u>:
 
 1. Inicie sesión como usuario.
-1. Seleccione un elemento y haga clic en **Añadir al carro**.
-1. Haga clic en el carro de compras y en **Continuar con el cierre**.
+1. Seleccione un elemento y haga clic en **Agregar al carro**.
+1. Haga clic en el carrito y luego en **Continuar con la compra**.
 1. Acceda a la ventana PayPal Express y realice un pago.
 1. Se le redirigirá a la página de revisión de pedidos de Adobe Commerce.
-1. Pulse el botón **Realizar pedido** botón.
+1. Presione el botón **Realizar pedido**.
 1. Error del sistema de emulación debido a problemas de infraestructura del servidor. El usuario verá una página en blanco.
 1. Actualice la página.
 
 <u>Resultados esperados</u>:
 
-* Se redirige al cliente a la página de revisión de pedidos y aparece un mensaje de error &quot;*Ya se ha completado una transacción de pago correcta. Compruebe si el pedido se ha realizado.*&quot;
-* En payment.log, que se encuentra en `/var/log/payment.log`Sin embargo, hay un 10415 de error, pero solo se creó un pedido.
+* Se redirige al cliente a la página de revisión de pedidos y aparece un mensaje de error &quot;*Ya se ha completado una transacción de pago correcta. Compruebe si se ha realizado el pedido.*&quot;
+* En el archivo payment.log, que se encuentra en `/var/log/payment.log`, hay un 10415 de error, pero solo se creó un pedido.
 
 <u>Resultados reales</u>:
 
 * Como el cliente no se envía a la página de éxito de pedidos de Adobe Commerce, actualiza la página en blanco y se realiza un segundo pedido, por lo que se crean dos pedidos duplicados.
-* En payment.log, que se encuentra en `/var/log/payment.log`, se produce un 10415 de error.
+* En el archivo payment.log, que se encuentra en `/var/log/payment.log`, hay un 10415 de error.
 
 ## Aplicar el parche
 
@@ -65,7 +65,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Los clientes nuevos no se muestran en la cuadrícula del cliente después de la importación de CSV
 
-Este artículo proporciona una solución para el problema de cuando no puede ver nuevos clientes en **Clientes** > **Todos los clientes** después de una importación desde un `.csv` archivo. La solución es establecer el `customer_grid` indexador al modo &quot;Actualizar al guardar&quot; y reindexe manualmente la cuadrícula del cliente.
+Este artículo proporciona una solución para el problema cuando no puede ver nuevos clientes en **Clientes** > **Todos los clientes** después de una importación de un archivo de `.csv`. La solución consiste en establecer el indizador `customer_grid` en el modo &quot;Actualizar al guardar&quot; y reindexar manualmente la cuadrícula del cliente.
 
 ## Versiones afectadas
 
@@ -22,23 +22,23 @@ Este artículo proporciona una solución para el problema de cuando no puede ver
 
 ## Problema
 
-Después de importar nuevos clientes desde un `.csv` mediante la funcionalidad de importación nativa de Adobe Commerce, es posible que no pueda ver los nuevos registros del cliente en **Clientes** > **Todos los clientes** en el Administrador hasta que reindexe manualmente el `customer_grid` indexador.
+Después de importar nuevos clientes desde un archivo de `.csv` mediante la funcionalidad de importación nativa de Adobe Commerce, es posible que no pueda ver los registros de nuevos clientes en **Clientes** > **Todos los clientes** en el administrador hasta que reindexe manualmente el indizador `customer_grid`.
 
 ## Causa
 
-El modo de indexación &quot;Actualización programada&quot; en Adobe Commerce 2.2.0 y versiones posteriores no admite el `customer_grid` indexador debido a problemas de rendimiento.
+El modo de indización &quot;Actualización programada&quot; de Adobe Commerce 2.2.0 y versiones posteriores no admite el indizador `customer_grid` debido a problemas de rendimiento.
 
 ## Solución
 
-Configure las variables `customer_grid` indexador que se reindexará utilizando el modo &quot;Actualizar al guardar&quot;. Para ello, siga los siguientes pasos:
+Configure el indizador `customer_grid` para que se reindexe usando el modo &quot;Actualizar al guardar&quot;. Para ello, siga los siguientes pasos:
 
 1. Inicie sesión en el administrador de Commerce.
-1. Clic **Sistema** > **Herramientas** > **Administración de índices**.
+1. Haga clic en **Sistema** > **Herramientas** > **Administración de índices**.
 1. Seleccione la casilla de verificación situada junto a Indexador de cuadrícula de cliente.
-1. En el **Acciones** , seleccione la opción *Actualizar al guardar*.
-1. Clic **Enviar**.
+1. En la lista desplegable **Acciones**, seleccione *Actualizar al guardar*.
+1. Haga clic en **Enviar**.
 
-También recomendamos reindexar manualmente el `customer_grid` indexador después de configurar el modo de indexación para garantizar que el índice esté actualizado y pueda trabajar con cron. Para reindexar manualmente, utilice el siguiente comando:
+También recomendamos reindexar manualmente el indexador `customer_grid` después de configurar el modo de indexación para garantizar que el índice esté actualizado y pueda trabajar con cron. Para reindexar manualmente, utilice el siguiente comando:
 
 `bin/magento indexer:reindex customer_grid`
 
@@ -46,5 +46,5 @@ También recomendamos reindexar manualmente el `customer_grid` indexador despué
 
 Vínculos a temas relacionados en nuestra documentación para desarrolladores:
 
-* [Resumen de indexación](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
+* [Resumen de indización](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
 * [Administrar los indexadores](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)

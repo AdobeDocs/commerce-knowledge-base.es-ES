@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # MDVA-43091: No se puede solicitar el producto empaquetado al administrador
 
-El parche MDVA-43091 resuelve el problema en el que los usuarios no pueden solicitar el producto empaquetado al administrador de Commerce. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 está instalado. El ID del parche es MDVA-43091. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+El parche MDVA-43091 resuelve el problema en el que los usuarios no pueden solicitar el producto empaquetado al administrador de Commerce. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10. El ID del parche es MDVA-43091. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.3-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.3 - 2.4.3-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-Al intentar solicitar un producto agrupado desde el administrador, se produce el siguiente error: *No se puede usar la cantidad decimal para este producto.*
+Al intentar solicitar el producto agrupado al administrador, se produce el siguiente error: *No puede utilizar la cantidad decimal para este producto.*
 
 <u>Pasos a seguir</u>:
 
@@ -39,7 +39,7 @@ Al intentar solicitar un producto agrupado desde el administrador, se produce el
 1. Cree dos productos simples.
 1. Cree un producto agrupado con dos opciones.
 1. Cree una cuenta de cliente en el front-end.
-1. Ir a **Administrador** > **Ventas** > **Pedidos** > **Crear nuevo pedido**.
+1. Vaya a **Administración** > **Ventas** > **Pedidos** > **Crear nuevo pedido**.
    * Seleccione la cuenta de cliente creada justo ahora.
    * Intente agregar el producto agrupado al carro de compras.
 
@@ -62,7 +62,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

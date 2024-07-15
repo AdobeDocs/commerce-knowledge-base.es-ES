@@ -37,7 +37,7 @@ Si no ha configurado correctamente el correo electrónico del remitente o si el 
    ```
 
    * Si no devuelve ningún resultado, significa que la dirección del remitente no se ha configurado.
-   * Si devuelve un resultado, continúe a **Paso 2**.
+   * Si devuelve un resultado, continúe con **Paso 2**.
 
 1. Si el correo electrónico ha aparecido en su carpeta de correo no deseado, haga clic en el vínculo del mensaje. Si el vínculo ha caducado, intente iniciar sesión de nuevo para repetir el proceso.
 1. Una vez que haya obtenido acceso, vaya a **Tiendas** > **Configuración** > **General** > **Almacenar direcciones de correo electrónico** y configure las direcciones de correo electrónico.
@@ -48,7 +48,7 @@ Si no ha configurado correctamente el correo electrónico del remitente o si el 
 php -r "mail(<your email address>,<subject>,<content>,'To: <sender email>');"
 ```
 
-Busque el correo electrónico en la carpeta de correo no deseado. Si el correo electrónico aparecía allí, [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login) para solicitar que el dominio se etiquete en blanco en SendGrid.
+Busque el correo electrónico en la carpeta de correo no deseado. Si el correo electrónico aparecía allí, [envía un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login) para solicitar que el dominio se marque como blanco en SendGrid.
 
 ## Lectura relacionada
 

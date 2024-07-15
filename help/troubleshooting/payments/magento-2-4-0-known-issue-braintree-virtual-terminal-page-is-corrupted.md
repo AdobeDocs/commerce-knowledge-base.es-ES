@@ -30,11 +30,11 @@ En Commerce Admin, vaya a **Ventas** > **Terminal virtual de Braintree** . ** **
 
 <u>Resultado esperado:</u>
 
-El **Terminal virtual de Braintree** La página se carga con la IU adecuada.
+La página **Terminal virtual de Braintree** se carga con la interfaz de usuario adecuada.
 
 <u>Resultado real:</u>
 
-La interfaz de usuario de **Terminal virtual de Braintree** La página está rota.
+La interfaz de usuario de la página **Terminal virtual de Braintree** está dañada.
 
 ### Escenario 2: se ha configurado el método de pago del Braintree
 
@@ -44,11 +44,11 @@ En Commerce Admin, vaya a **Ventas** > **Terminal virtual de Braintree** . ** **
 
 <u>Resultado esperado:</u>
 
-El **Terminal virtual de Braintree** La página se carga con la interfaz de usuario adecuada y se muestra una advertencia que indica que el Braintree aún no está configurado.
+La página **Terminal virtual de Braintree** se carga con la interfaz de usuario adecuada y se muestra una advertencia que indica que el Braintree aún no está configurado.
 
 <u>Resultado real:</u>
 
-La interfaz de usuario de **Terminal virtual de Braintree** La página está rota y no se muestra ninguna advertencia.
+La interfaz de usuario de la página **Terminal virtual de Braintree** está dañada y no se muestra ninguna advertencia.
 
 ## Solución
 

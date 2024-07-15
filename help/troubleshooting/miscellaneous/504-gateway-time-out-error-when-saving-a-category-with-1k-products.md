@@ -23,14 +23,14 @@ Este artículo sugiere una solución para el problema de tiempo de espera que pu
 
 ## Problema
 
-Requisitos previos: **Tiendas** > **Configuración** > **CATÁLOGO** > **Catálogo** > **Utilizar ruta de categorías para URL de productos** se establece en *Sí* para la vista de la tienda.
+Requisitos previos: La opción **Tiendas** > **Configuración** > **CATÁLOGO** > **Catálogo** > **Usar ruta de categorías para las direcciones URL de productos** está establecida en *Sí* para la vista de la tienda.
 
 <u>Pasos a seguir</u>
 
-1. En Commerce Admin, vaya a **Catálogo** > **Categorías**.
+1. En el Administrador de Commerce, vaya a **Catálogo** > **Categorías**.
 1. Abra una categoría grande, como más de 1000 productos asignados.
 1. Añada un producto a la categoría.
-1. Clic **Guardar categoría**.
+1. Haga clic en **Guardar categoría**.
 
 <u>Resultado esperado:</u>
 
@@ -46,19 +46,19 @@ El proceso tarda más tiempo que el tiempo de espera configurado del servidor.
 
 ## Solución
 
-Desactivación de la **Generar reescrituras de URL de &quot;categoría/producto&quot;** Esta opción eliminará todas las reescrituras de URL de categorías/productos de la base de datos y reducirá significativamente el tiempo necesario para las operaciones con categorías grandes.
+Al deshabilitar la opción **Generar reescrituras de URL de &quot;categoría/producto&quot;** se eliminarán todas las reescrituras de URL de categoría/producto de la base de datos y se reducirá significativamente el tiempo necesario para las operaciones con categorías grandes.
 
 >[!WARNING]
 >
 >Si desactiva esta opción, se eliminarán de forma permanente las reescrituras de URL de categorías/productos sin la capacidad de restaurarlas.
 
-Para deshabilitar la variable **Generar reescrituras de URL de &quot;categoría/producto&quot;** opción:
+Para deshabilitar la opción **Generar reescrituras de URL de &quot;categoría/producto&quot;**:
 
 1. En el Administrador de Commerce, vaya a **Tiendas** > **Configuración** > **CATÁLOGO** > **Catálogo**.
-1. En la esquina superior izquierda de la página de configuración, en **Ámbito** , establezca el ámbito de configuración en *Configuración predeterminada*.
-1. Establecer **Generar reescrituras de URL de &quot;categoría/producto&quot;** hasta *No*.
-1. Clic **Guardar configuración**.
-1. Limpiar la caché ejecutando    ```bash    bin/magento cache:clean    ```    o en el Administrador de Commerce, en **Sistema** > **Herramientas** > **Administración de caché**.
+1. En la esquina superior izquierda de la página de configuración, en el campo **Ámbito**, establezca el ámbito de configuración en *Configuración predeterminada*.
+1. Establecer **Generar reescrituras de URL de &quot;categoría/producto&quot;** en *No*.
+1. Haga clic en **Guardar configuración**.
+1. Limpiar la caché ejecutando    ```bash    bin/magento cache:clean    ```    o en el Administrador de Commerce en **Sistema** > **Herramientas** > **Administración de caché**.
 
 Ahora puede agregar productos a categorías o mover categorías con un gran número de productos, y estas operaciones tardarán mucho menos tiempo y no deberían causar tiempo de espera.
 

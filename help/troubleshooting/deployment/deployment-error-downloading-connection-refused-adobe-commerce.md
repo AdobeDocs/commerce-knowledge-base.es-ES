@@ -29,7 +29,7 @@ Adobe Commerce en la infraestructura en la nube, [todas las versiones compatible
 
 ## Problema
 
-La implementación falla con un **error de curl 7** Mensaje.
+La implementación falla con un mensaje de **curl error 7**.
 
 <u>Pasos a seguir</u>:
 
@@ -41,7 +41,7 @@ La implementación es correcta.
 
 <u>Comportamiento real</u>:
 
-La implementación falla y se produce el siguiente error: *error de curl 7 al descargar... puerto 443: conexión rechazada* aparece en el registro de implementación.
+La implementación falla y aparece el siguiente error: *curl error 7 al descargar ... puerto 443: Conexión rechazada* en el registro de implementación.
 
 ## Causa
 
@@ -60,5 +60,5 @@ Para comprobar quién es un superusuario en el proyecto, consulte [Ver la funci�
 ## Lectura recomendada
 
 * [Solucionador de problemas de implementación de Adobe Commerce](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-deployment-troubleshooter.html).
-* [No se pudo acceder a Adobe Commerce en el repositorio en la nube: Error 403 prohibido o 404 no encontrado al implementar](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
-* [La implementación falla con &quot;Error al crear el proyecto: Error del vínculo de compilación con el código de estado 1&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
+* No se pudo acceder a [Adobe Commerce en el repositorio en la nube: error 403 prohibido o 404 no encontrado al implementar](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
+* [La implementación falla con &quot;Error al generar el proyecto: Error en el vínculo de compilación con el código de estado 1&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).

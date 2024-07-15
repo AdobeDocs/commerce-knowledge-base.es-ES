@@ -26,13 +26,13 @@ Los cambios que realice en la base de datos no se reflejan en la tienda o hay un
 
 ## Causa
 
-Si los indexadores son [configurado para actualizar según lo programado](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers)Sin embargo, el problema puede deberse a una o más tablas con registros de cambios demasiado grandes o a que no se han configurado déclencheur MySQL.
+Si los indexadores están [configurados para actualizarse según la programación](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers), el problema podría deberse a una o más tablas con registros de cambios demasiado grandes o a que no se han configurado déclencheur MySQL.
 
 ### Tablas de registro de cambios sobredimensionadas
 
-Las tablas del registro de cambios crecen de manera tan grande si la variable `indexer_update_all_views` el trabajo cron no se ha completado correctamente varias veces.
+Las tablas de registro de cambios crecen de ese modo si el trabajo cron de `indexer_update_all_views` no se completa correctamente varias veces.
 
-Las tablas de registro de cambios son las tablas de base de datos en las que se realiza un seguimiento de los cambios en las entidades. Un registro se almacena en una tabla de registro de cambios mientras no se aplique el cambio, que realiza el `indexer_update_all_views` trabajo cron. Existen varias tablas de registro de cambios en una base de datos de Adobe Commerce, con un nombre que se ajusta al siguiente patrón: INDEXER\_TABLE\_NAME + ‘\_cl’, por ejemplo `catalog_category_product_cl`, `catalog_product_category_cl`. Puede encontrar más detalles sobre cómo se realiza el seguimiento de los cambios en la base de datos en la [Resumen de indexación > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) artículo en nuestra documentación para desarrolladores.
+Las tablas de registro de cambios son las tablas de base de datos en las que se realiza un seguimiento de los cambios en las entidades. Un registro se almacena en una tabla de registro de cambios mientras no se aplique el cambio, que realiza el trabajo cron de `indexer_update_all_views`. Hay varias tablas de registro de cambios en una base de datos de Adobe Commerce, con nombres según el siguiente patrón: INDEXER\_TABLE\_NAME + ‘\_cl’, por ejemplo `catalog_category_product_cl`, `catalog_product_category_cl`. Puede encontrar más detalles sobre cómo se realiza el seguimiento de los cambios en la base de datos en el artículo [Resumen de la indexación > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) de nuestra documentación para desarrolladores.
 
 ### Déclencheur de base de datos MySQL no configurados
 
@@ -46,18 +46,18 @@ Sospecharía que no se han configurado déclencheur de base de datos, si despué
 
 ### Evite el sobretamaño de las tablas del registro de cambios
 
-Asegúrese de que la variable `indexer_update_all_views` el trabajo cron siempre se completa correctamente.
+Asegúrese de que el trabajo cron de `indexer_update_all_views` siempre se complete correctamente.
 
-Puede utilizar la siguiente consulta SQL para obtener todas las instancias fallidas del `indexer_update_all_views` trabajo cron:
+Puede utilizar la siguiente consulta SQL para obtener todas las instancias erróneas del trabajo cron `indexer_update_all_views`:
 
 ```sql
 select * from cron_schedule where job_code = "indexer_update_all_views" and status
   <> "success" and status <> "pending";
 ```
 
-O puede comprobar su estado en los registros buscando el `indexer_update_all_views` entradas:
+O puede comprobar su estado en los registros buscando las `indexer_update_all_views` entradas:
 
-* `<install_directory>/var/log/cron.log` - para las versiones 2.3.1+ y 2.2.8+
+* `<install_directory>/var/log/cron.log`: para las versiones 2.3.1+ y 2.2.8+
 * `<install_directory>/var/log/system.log` - para versiones anteriores
 
 ### Restablecer déclencheur de tabla MySQL
@@ -71,7 +71,7 @@ Utilice el siguiente comando para realizar esta operación.
 
 >[!WARNING]
 >
->Antes de cambiar los modos del indexador, recomendamos colocar el sitio web en [mantenimiento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) modo y [deshabilitar trabajos de cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) para evitar bloqueos de la base de datos.
+>Antes de cambiar los modos del indizador, recomendamos poner su sitio web en modo [mantenimiento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode) y [deshabilitar los trabajos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#disable-cron-jobs) para evitar bloqueos de la base de datos.
 
 ```bash
 php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
@@ -84,4 +84,4 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 ## Lectura relacionada
 
 <ul><li title="Las tablas MySQL son demasiado grandes"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">Las tablas MySQL son demasiado grandes</a> en nuestra base de conocimiento de soporte.</li>
-<li title="Las tablas MySQL son demasiado grandes"><a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Información general del indizador &gt; Mview</a> en nuestra documentación para desarrolladores.</li></ul>
+<li title="Las tablas MySQL son demasiado grandes"><a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Resumen del indizador &gt; Mview</a> en nuestra documentación para desarrolladores.</li></ul>

@@ -48,9 +48,9 @@ Para solucionarlo:
 
 1. Cambie la versión de Composer para poder descargar el software de Adobe Commerce mediante cualquiera de estas acciones:
 
-   * Degradar Composer con el siguiente comando: `composer self-update 1.0.0-alpha11`.
-   * Actualice Composer a una versión posterior al 26 de noviembre de 2015: `composer self-update`.
+   * Modifique el Compositor mediante el siguiente comando: `composer self-update 1.0.0-alpha11`.
+   * Actualizar el Compositor a una versión posterior al 26 de noviembre de 2015: `composer self-update`.
 
 1. Elimine el directorio y los subdirectorios de Adobe Commerce.
-1. Vuelva a intentar la descarga mediante uno de estos métodos `[composer create-project](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)` o `[git clone](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/dev_install.html)`.
-1. Después de descargar correctamente el software de Adobe Commerce, actualice Compositor: `composer self-update`.
+1. Vuelva a intentar la descarga utilizando `[composer create-project](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)` o `[git clone](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/dev_install.html)`.
+1. Después de descargar correctamente el software de Adobe Commerce, actualice el Compositor: `composer self-update`.

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Este artículo proporciona una corrección para los casos en los que los comerciantes intentan actualizar a Adobe Commerce (todos los métodos de implementación) o al Magento Open Source 2.4.3 o 2.3.7-p1 y ven el siguiente error:
 
-*Error grave de PHP: Error no detectado: Llamada a una función indefinida Magento\Framework\Filesystem\Directory\str_contains() en &lt;...>/magento/vendor/magento/framework/Filesystem/Directory/DenyListPathValidator.php:74*
+*Error grave de PHP: Error no detectado: Llamada a la función indefinida Magento\Framework\Filesystem\Directory\str_contains() en &lt;...>/magento/vendor/magento/framework/Filesystem/Directory/DenyListPathValidator.php:74*
 
 El problema se solucionará en el ámbito de las versiones 2.4.4, 2.4.3-p1 y 2.3.7-p2.
 
@@ -42,7 +42,7 @@ Error grave de PHP.
 
 ## Solución
 
-Como solución alternativa, ejecute el siguiente comando en CLI/Terminal: `composer require symfony/polyfill-php80` desde la carpeta raíz del Magento o instale un parche de composer.
+Como solución alternativa, ejecute el siguiente comando en CLI/Terminal: `composer require symfony/polyfill-php80` desde la carpeta raíz del Magento o instale una revisión del compositor.
 
 Para solucionar el problema de la versión 2.4.3, Adobe Commerce (todos los métodos de implementación) y los comerciantes de Magento Open Source deben aplicar el parche:
 
@@ -58,4 +58,4 @@ Consulte [Cómo aplicar un parche del compositor proporcionado por el Magento](/
 
 ## Lectura relacionada
 
-GitHub [Comando PHP 8 no compatible en el #33680 Magento 2.4.3 EE](https://github.com/magento/magento2/issues/33680)
+[Comando PHP 8 no compatible en el Magento 2.4.3 EE #33680](https://github.com/magento/magento2/issues/33680) de GitHub

@@ -33,7 +33,7 @@ No hay error.
 
 <u>Resultado real</u>:
 
-Tras la actualización a laminas/laminas-escaper:2.7.1 aparece un mensaje de error en la página de edición del producto (o gestión del producto): *TypeError: rawurlencode() espera que el parámetro 1 sea una cadena, int indicado en /var/www/magento/vendor/laminas/laminas-escaper/src/Escaper.php:246*
+Después de actualizar a laminas/laminas-escaper:2.7.1 se muestra un mensaje de error en una página de edición de producto (o administración de producto): *TypeError: rawurlencode() espera que el parámetro 1 sea una cadena, int indicado en /var/www/magento/vendor/laminas/laminas-escaper/src/Escaper.php:246*
 Este error se produce en las páginas de front-end y administración, lo que provoca que el contenido de la página se distorsione.
 
 ## Causa
@@ -42,8 +42,8 @@ laminas/laminas-escaper 2.7.1 comenzó a utilizar una validación de tipo estric
 
 ## Solución
 
-Ejecutar `composer require laminas/laminas-escaper:2.7.0` en el directorio raíz de cada proyecto.
+Ejecute `composer require laminas/laminas-escaper:2.7.0` en el directorio raíz de cada proyecto.
 
 ## Lectura relacionada
 
-Documentación de laminas: [escapador de láminas](https://docs.laminas.dev/laminas-escaper/)
+Documentación de laminas: [laminas-escaper](https://docs.laminas.dev/laminas-escaper/)

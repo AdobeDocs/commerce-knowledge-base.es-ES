@@ -24,7 +24,7 @@ En este artículo se describe una emisión conocida de Adobe Commerce 2.4.0 y 2.
 
 <u>Requisitos previos:</u>
 
-En la configuración de método de pago del Braintree, defina **Habilitar Venmo mediante el Braintree** = *Sí* con **Acción de pago** = *Autorización*; **Habilitar Vault para pagos con tarjeta** = *No*.
+En la configuración del método de pago del Braintree, establezca **Habilitar Venmo a través del Braintree** = *Sí* con **Acción de pago** = *Autorización*; **Habilitar Vault para pagos con tarjeta** = *No*.
 
 <u>Pasos a seguir:</u>
 

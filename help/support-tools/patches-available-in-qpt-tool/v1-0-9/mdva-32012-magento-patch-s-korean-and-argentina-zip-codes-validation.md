@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Parche MDVA-32012: validación de códigos postales de Corea del Sur y Argentina
 
-El parche MDVA-32012 resuelve el problema en el que los códigos postales argentinos y surcoreanos no se validan debido a cambios o variaciones en los formatos de los códigos postales nacionales. Los códigos postales de Corea del Sur ahora deben tener 5 dígitos, mientras que antes eran de 6 dígitos. Los códigos postales argentinos pueden ser numéricos y alfanuméricos. El parche MDVA-32012 significa que estos formatos para valores de código postal se validarán para estos países. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.9 está instalado. Tenga en cuenta que está programado que el problema se corrija en la versión 2.4.2 de Adobe Commerce.
+El parche MDVA-32012 resuelve el problema en el que los códigos postales argentinos y surcoreanos no se validan debido a cambios o variaciones en los formatos de los códigos postales nacionales. Los códigos postales de Corea del Sur ahora deben tener 5 dígitos, mientras que antes eran de 6 dígitos. Los códigos postales argentinos pueden ser numéricos y alfanuméricos. El parche MDVA-32012 significa que estos formatos para valores de código postal se validarán para estos países. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.9. Tenga en cuenta que está programado que el problema se corrija en la versión 2.4.2 de Adobe Commerce.
 
 ## Productos y versiones afectados
 
@@ -22,13 +22,13 @@ El parche MDVA-32012 resuelve el problema en el que los códigos postales argent
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
 La introducción de códigos postales de 5 dígitos de Corea del Sur o de Argentina alfanuméricos genera una advertencia:
 
-*El código postal proporcionado parece no ser válido. Ejemplo: [1234 (si se introduce una dirección alfanumérica argentina)] o [123-456 (si se introduce una dirección de Corea del Sur de 5 dígitos)]. Si cree que es el correcto, puede ignorar este aviso.*
+*El código postal proporcionado parece no ser válido. Ejemplo: [1234 (si se especificó una dirección argentina alfanumérica)] o [123-456 (si se especificó una dirección surcoreana de 5 dígitos)]. Si cree que es el correcto, puede ignorar este aviso.*
 
 <u>Pasos a seguir</u>:
 
@@ -57,7 +57,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

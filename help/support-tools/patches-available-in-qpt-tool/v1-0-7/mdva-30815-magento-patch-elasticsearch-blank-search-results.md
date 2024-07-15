@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-30815: resultados de búsqueda en blanco del Elasticsearch
 
-El parche MDVA-30815 corrige el problema en el que Elasticsearch muestra una página en blanco cuando se cambian las opciones del limitador de los resultados de búsqueda. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.7 está instalado. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.3.5.
+El parche MDVA-30815 corrige el problema en el que Elasticsearch muestra una página en blanco cuando se cambian las opciones del limitador de los resultados de búsqueda. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.7. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.3.5.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce en infraestructura en la nube 2.3.3
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.2 - 2.3.3-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -35,14 +35,14 @@ Al utilizar el Elasticsearch, si cambia las opciones del limitador de los result
 
 <u>Requisitos previos</u>:
 
-El Elasticsearch es **activado**. Ir a **TIENDAS** > **Configuración** > **Configuración** > **Catálogo** > **Búsqueda en catálogo**.
+El Elasticsearch está **habilitado**. Vaya a **TIENDAS** > **Configuración** > **Configuración** > **Catálogo** > **Búsqueda en el catálogo**.
 
 <u>Pasos a seguir</u>:
 
 1. Vaya a su sitio.
 1. Busque un producto en el campo de búsqueda principal.
 1. Una vez mostradas las páginas de resultados de búsqueda, haga clic en la última página de las páginas de resultados de búsqueda.
-1. Seleccionar **Mostrar xx por página** en la opción limitador. Asegúrese de que este es un límite de número de resultados de búsqueda diferente al configurado actualmente.
+1. Seleccione **Mostrar xx por página** en la opción de limitador. Asegúrese de que este es un límite de número de resultados de búsqueda diferente al configurado actualmente.
 
 <u>Resultados esperados</u>:
 
@@ -50,7 +50,7 @@ La página muestra el número configurado de resultados del producto.
 
 <u>Resultados reales</u>:
 
-Se muestra una página en blanco. Este error también se puede ver en la `var/report` : *\`&quot;0&quot;:&quot;SQLSTATE\[42000\]: Error de sintaxis o infracción de acceso: 1064 Tiene un error en la sintaxis SQL; compruebe el manual que corresponde a la versión de su servidor MySQL para ver la sintaxis correcta para usar near&#39;\`*
+Se muestra una página en blanco. Este error también se puede ver en `var/report` : *\`&quot;0&quot;:&quot;SQLSTATE\[42000\]: Error de sintaxis o infracción de acceso: 1064 Tiene un error en la sintaxis SQL; consulte el manual correspondiente a su versión del servidor MySQL para ver la sintaxis correcta para usar cerca de&#39;\`*
 
 ## Aplicar el parche
 
@@ -63,7 +63,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

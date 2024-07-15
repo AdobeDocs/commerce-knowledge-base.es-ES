@@ -13,40 +13,40 @@ ht-degree: 0%
 
 # MDVA-38827: Los clientes reciben un error de envío de pedidos por correo electrónico
 
-El parche MDVA-38827 corrige el problema en el que los clientes reciben un correo electrónico de envío de pedidos que contiene el siguiente mensaje de error: *Se ha producido un error al generar este contenido*. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.0 está instalado. El ID del parche es MDVA-38827. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+El parche MDVA-38827 corrige el problema en el que los clientes reciben un correo electrónico de envío de pedidos que contiene el siguiente mensaje de error: *Lo sentimos, se ha producido un error al generar este contenido*. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.1.0. El ID del parche es MDVA-38827. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 Adobe Commerce en infraestructura en la nube 2.4.2-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 Adobe Commerce (todos los métodos de implementación) 2.3.3-p1 - 2.4.2-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-Cuando se selecciona la opción Notificar a los clientes por correo electrónico para el envío, los clientes reciben un correo electrónico con el siguiente mensaje de error: *Se ha producido un error al generar este contenido*.
+Cuando se selecciona la opción Notificar a los clientes por correo electrónico para el envío, los clientes reciben un correo electrónico con el siguiente mensaje de error: *Lo sentimos, se ha producido un error al generar este contenido*.
 
 <u>Pasos a seguir</u>:
 
-1. Ir a **Marketing** > **Comunicaciones** > **Plantillas de correo electrónico** y seleccione **Añadir nueva plantilla**.
-   * Seleccionar **Ventas del Magento** > **Nuevo envío**.
-   * Haga clic en **Cargar plantilla**.
-   * Añada un nombre de plantilla (por ejemplo, Plantilla de envíos principal) y haga clic en **Guardar**.
-1. Ir a **Almacenar** > Configuración > **Configuración** > **Ventas** > **Correo electrónico de ventas**:
-   * Activar **Comentarios del envío**.
-   * Seleccionar **Plantilla de envíos principal** (consulte la parte &quot;Añadir un nombre de plantilla&quot; del paso 1) en Plantilla de correo electrónico de comentario de envío y Plantilla de correo electrónico de comentario de envío para invitado.
-1. Haga un pedido. Vaya al panel Administración > **Ventas** > **Pedido**, haga clic en **Ver** y, a continuación, envíe el pedido.
+1. Vaya a **Marketing** > **Comunicaciones** > **Plantillas de correo electrónico** y seleccione **Agregar nueva plantilla**.
+   * Seleccione **Ventas de Magento** > **Nuevo envío**.
+   * Haz clic en **Cargar plantilla**.
+   * Agregue un nombre de plantilla (por ejemplo, Plantilla de envíos principal) y haga clic en **Guardar**.
+1. Vaya a **Tienda** > Configuración > **Configuración** > **Ventas** > **Correo electrónico de ventas**:
+   * Habilitar **comentarios de envío**.
+   * Seleccione **Plantilla de envío principal** (consulte la parte &quot;Agregar un nombre de plantilla&quot; del Paso 1) en Plantilla de correo electrónico de comentario de envío y Plantilla de correo electrónico de comentario de envío para invitado.
+1. Haga un pedido. Vaya al panel de administración > **Ventas** > **Pedido**, haga clic en **Ver** y envíe el pedido.
 1. El estado del pedido cambiará de Pendiente a Procesamiento.
-1. Clic **Envíos** en el menú de la barra lateral izquierda y haga clic en **Ver** para ver el pedido.
-1. Agregar un comentario en **Texto del comentario** abajo **Historial de envíos** y marque la casilla **Notificar al cliente por correo electrónico**.
-1. Clic **Enviar comentario**.
+1. Haga clic en **Envíos** en el menú de la barra lateral izquierda y, a continuación, haga clic en **Ver** para ver el pedido.
+1. Agregue un comentario en **Texto del comentario** debajo de **Historial de envíos** y marque la casilla **Notificar al cliente por correo electrónico**.
+1. Haga clic en **Enviar comentario**.
 
 <u>Resultados esperados</u>:
 
@@ -54,7 +54,7 @@ Se genera un correo electrónico de ventas con comentarios sobre el envío.
 
 <u>Resultados reales</u>:
 
-Se recibe el siguiente mensaje de error en el correo electrónico: *Lo sentimos, se ha producido un error al generar este contenido.*
+Se recibió el siguiente mensaje de error en el correo electrónico: *Lo sentimos, se produjo un error al generar este contenido.*
 
 ## Aplicar el parche
 
@@ -67,7 +67,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

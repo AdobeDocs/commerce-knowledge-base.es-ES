@@ -33,30 +33,30 @@ No puede acceder al proyecto de Adobe Commerce en la nube correcto cuando hay ca
 
 Este problema suele ocurrir cuando el inicio de sesión único (SSO) del propietario del proyecto anterior sigue integrado con Adobe.com después de:
 
-1. Se le ha transferido la propiedad del proyecto en la nube a usted (el usuario) y verá la cuenta del propietario del proyecto original. Haga clic aquí para ver [solución](#solution-for-cause-one-and-two).
+1. Se le ha transferido la propiedad del proyecto en la nube a usted (el usuario) y verá la cuenta del propietario del proyecto original. Haga clic aquí para la [solución](#solution-for-cause-one-and-two).
 
    O
 
-1. Usted (el usuario) se ha trasladado a otra empresa, junto con un cambio en la dirección de correo electrónico y en los proyectos a los que tiene acceso. Verá los proyectos a los que se le había concedido acceso en su función o compañía anterior. Haga clic aquí para ver [solución](#solution-for-cause-one-and-two).
+1. Usted (el usuario) se ha trasladado a otra empresa, junto con un cambio en la dirección de correo electrónico y en los proyectos a los que tiene acceso. Verá los proyectos a los que se le había concedido acceso en su función o compañía anterior. Haga clic aquí para la [solución](#solution-for-cause-one-and-two).
 
    O
 
-1. Ha cambiado su dirección de correo electrónico en https://account.adobe.com a otra dirección de correo electrónico que no está asociada actualmente a un proyecto en la nube. Haga clic aquí para ver [solución](#solution-for-cause-three).
+1. Ha cambiado su dirección de correo electrónico en https://account.adobe.com a otra dirección de correo electrónico que no está asociada actualmente a un proyecto en la nube. Haga clic aquí para la [solución](#solution-for-cause-three).
 
 ## Solución para la causa uno y dos {#solution-for-cause-one-and-two}
 
 La solución para cuando el problema se debe a uno y dos es desconectar la integración de inicio de sesión único con Adobe.com. Siga los pasos a continuación para desconectarse:
 
-1. En https://accounts.magento.cloud/user, expanda **[!UICONTROL Single Sign-On]** sección. Clic **[!UICONTROL Disconnect from Adobe.com]**, para desconectar.
+1. En https://accounts.magento.cloud/user, expanda la sección **[!UICONTROL Single Sign-On]**. Haga clic en **[!UICONTROL Disconnect from Adobe.com]** para desconectarse.
 
    ![inicio de sesión único-adobe-connect](assets/sso-adobe-disconnect.png)
 
-1. Clic **[!UICONTROL Disconnect]**.
+1. Haga clic en **[!UICONTROL Disconnect]**.
 
    ![adobe-desconectar](assets/adobe-disconnect.png)
 
 1. Cerrar sesión.
-1. Haga clic en **[!UICONTROL Adobe.com]** botón.
+1. Haga clic en el botón **[!UICONTROL Adobe.com]**.
 
    ![Magento.com](assets/adobe-welcome-login.png)
 
@@ -64,4 +64,4 @@ La solución para cuando el problema se debe a uno y dos es desconectar la integ
 
 ## Solución para la causa tres {#solution-for-cause-three}
 
-Si el problema se ha debido a la causa tres, pida a un superusuario del proyecto que añada su nueva dirección de correo electrónico al proyecto. Para obtener más información, consulte [Administrar el acceso de usuario](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).
+Si el problema se ha debido a la causa tres, pida a un superusuario del proyecto que añada su nueva dirección de correo electrónico al proyecto. Para obtener más información, consulte [Administrar acceso de usuario](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).

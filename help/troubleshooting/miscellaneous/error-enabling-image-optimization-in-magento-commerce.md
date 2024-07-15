@@ -21,7 +21,7 @@ Este artículo proporciona una solución para el problema cuando la optimizació
 
 ## Problema
 
-En la página Configuración rápida, junto al fragmento de Fastly IO, verá el estado Actual: \_disabled \_with el siguiente mensaje: Póngase en contacto con el representante de ventas o envíe un correo electrónico a `support@fastly.com` para solicitar la activación de optimización de imágenes para su servicio de Fastly.
+En la página Configuración rápida, junto al fragmento de Fastly IO, verá el estado Actual: \_disabled \_with el siguiente mensaje: Póngase en contacto con su representante de ventas o envíe un correo electrónico a `support@fastly.com` para solicitar la activación de optimización de imágenes para su servicio de Fastly.
 
 ## Causa
 
@@ -29,4 +29,4 @@ Es posible que el sitio aún no esté activo. Existen procesos para cargar previ
 
 ## Solución
 
-Crear un [Ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) y solicitar optimización de imágenes.
+Cree un [ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) y solicite la optimización de imágenes.

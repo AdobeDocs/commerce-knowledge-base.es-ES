@@ -12,9 +12,9 @@ ht-degree: 0%
 
 # ¿Puedo programar actualizaciones de Ensayo de contenido para precios en un catálogo compartido?
 
-Adobe Commerce no ofrece la funcionalidad de programar una actualización de precios ([Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) para uno o más productos de un catálogo compartido.
+Adobe Commerce no ofrece la funcionalidad de programar una actualización de precios ([Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) para uno o varios productos de un catálogo compartido.
 
-Esto significa que no puede programar dicha actualización de precios directamente desde el **Establecer precios y estructura** del panel de administración de Commerce (no hay **Programar nueva actualización** en este menú).
+Eso significa que no puedes programar una actualización de precios directamente desde el menú **Establecer precios y estructura** del panel de administración de Commerce (no hay ningún botón **Programar nueva actualización** en este menú).
 
 Sin embargo, puede utilizar métodos alternativos y programar una actualización de precios para:
 
@@ -23,12 +23,12 @@ Sin embargo, puede utilizar métodos alternativos y programar una actualización
 
 ## Programar actualización de precios para un grupo de clientes
 
-1. Inicio [programar una nueva actualización de producto](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html).
-1. Desplácese hacia abajo hasta el **Precio** y haga clic en **Precios avanzados**.
+1. Iniciar [programación de una nueva actualización de producto](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html).
+1. Desplácese hacia abajo hasta el campo **Precio** y haga clic en **Precios avanzados**.
 
    ![advanced_price.png](assets/advanced_pricing.png){width="600"}
 
-1. En el **Sección Precio de Grupo de Clientes**, seleccione el grupo de clientes necesario y establezca el precio actualizado.
+1. En la sección **Precio de grupo de clientes**, seleccione el grupo de clientes necesario y establezca el precio actualizado.
 
    ![customer_group_price.png](assets/customer_group_price.png){width="700"}
 
@@ -40,7 +40,7 @@ Recuerde: los catálogos compartidos aprovechan los precios del grupo de cliente
 
 **Documentación relacionada**
 
-* [Programación de una actualización (ensayo de contenido)](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html) en nuestra guía del usuario.
+* [Programando una actualización (Ensayo de contenido)](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging-scheduled-update.html) en nuestra guía del usuario.
 * [Precios avanzados](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html) en nuestra guía del usuario.
 
 ## Programar actualización de precios para el precio base

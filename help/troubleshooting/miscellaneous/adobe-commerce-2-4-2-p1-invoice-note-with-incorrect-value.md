@@ -26,20 +26,20 @@ Cuando se cambia el grupo de clientes en el momento de crear el pedido, la factu
 
 <u>Pasos a seguir</u>:
 
-1. Crear un **Probar cuenta de cliente** y agréguelo a la **Grupo de clientes minoristas**.
-1. Crear un **Nuevo pedido** para el cliente de prueba, añada **Product** y **Dirección**.
-1. Seleccionar **Método de envío**.
-1. En el **Información de cuenta** sección, cambiar grupo de clientes de **Minorista** hasta **Gobierno**.
-1. Clic **Realizar pedido**.
-1. Clic **Factura** > **Enviar factura**.
+1. Crear una **cuenta de cliente de prueba** y agregarla al **grupo de clientes minoristas**.
+1. Cree un **nuevo pedido** para el cliente de prueba, agregue **producto** y **dirección**.
+1. Seleccione **Método de envío**.
+1. En la sección **Información de la cuenta**, cambie el grupo de clientes de **Minorista** a **Gobierno**.
+1. Haga clic en **Realizar pedido**.
+1. Haga clic en **Factura** > **Enviar factura**.
 
 <u>Resultados esperados</u>:
 
-La nota siguiente debe aparecer debajo de **Notas de este pedido**  sección: &quot;Factura de vértice enviada correctamente. Importe: 0,00 $&quot;.
+La nota siguiente debería aparecer en la sección **Notas de este pedido**: &quot;Factura de vértice enviada correctamente. Importe: 0,00 $&quot;.
 
 <u>Resultados reales</u>:
 
-La nota siguiente aparece debajo de **Notas de este pedido** sección: &quot;Factura de vértice enviada correctamente. Importe: 3,23 $&quot;.
+La nota siguiente aparece en la sección **Notas de este pedido**: &quot;Factura de vértice enviada correctamente. Importe: 3,23 $&quot;.
 
 ## Solución
 

@@ -20,8 +20,8 @@ En este vídeo, aprenderá lo siguiente:
 * Por qué es importante
 * Cómo crear su propio análisis de cohorte en Magento BI
 
-Para ver el vídeo, vaya a [Commerce Intelligence: Report Builder de cohorte](/docs/commerce-learn/tutorials/business-intelligence/cohort-report-builder.html) en Adobe Experience League.
+Para ver el video, ve a [Commerce Intelligence - Report Builder de cohorte](/docs/commerce-learn/tutorials/business-intelligence/cohort-report-builder.html) en Adobe Experience League.
 
-**¿Quieres seguir?** Consulte nuestra [Tutorial del Report Builder de cohortes](/docs/commerce-business-intelligence/mbi/analyze/sql/cohort-rpt-bldr.html) para instrucciones escritas.
+**¿Quieres seguir?** Consulte nuestro [tutorial para Report Builder de cohortes](/docs/commerce-business-intelligence/mbi/analyze/sql/cohort-rpt-bldr.html) para obtener instrucciones por escrito.
 
-Una vez que se sienta cómodo utilizando el Report Builder de cohorte, por qué no explorar la creación de un **cualitativo** ¿análisis de cohorte? Consulte la [Tutorial sobre creación de un análisis de cohorte cualitativo](/docs/commerce-business-intelligence/mbi/analyze/sql/create-qual-cohort-analysis.html?lang=en) para obtener más información.
+Una vez que se sienta cómodo usando el Report Builder de cohorte, ¿por qué no explorar la creación de un análisis de cohorte **cualitativo**? Consulte [Creación de un tutorial de análisis de cohorte cualitativo](/docs/commerce-business-intelligence/mbi/analyze/sql/create-qual-cohort-analysis.html?lang=en) para obtener más información.

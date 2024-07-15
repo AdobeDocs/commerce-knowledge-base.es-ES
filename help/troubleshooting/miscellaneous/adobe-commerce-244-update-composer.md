@@ -29,8 +29,8 @@ Al actualizar a Adobe Commerce 2.4.4 o superior después de julio de 2022, es po
 
 Requisitos previos: Adobe Commerce 2.4.3 o anterior está instalado.
 
-1. Inicie la actualización como se describe en [Realización de una actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
-1. Ejecute el `composer update` para actualizar la aplicación de Adobe Commerce.
+1. Inicie la actualización tal como se describe en [Realizar una actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
+1. Ejecute el comando `composer update` para actualizar la aplicación de Adobe Commerce.
 
 <u>Resultados esperados</u>:
 
@@ -58,13 +58,13 @@ Plugin initialization failed (require(app/etc/NonComposerComponentRegistration.p
 
 ## Causa
 
-A partir de julio de 2022, Composer cambiará el valor predeterminado de [`allow-plugins` opción](https://getcomposer.org/doc/06-config.md#allow-plugins) hasta `{}` Los complementos y ya no se cargarán a menos que se permitan.
+A partir de julio de 2022, el Compositor cambia el valor predeterminado de la opción [`allow-plugins` ](https://getcomposer.org/doc/06-config.md#allow-plugins) a `{}` y los complementos ya no se cargarán a menos que se permita.
 
 ## Solución
 
-Añada lo siguiente a su `composer.json` , según cómo haya instalado Adobe Commerce:
+Agregue lo siguiente al archivo `composer.json`, según la instalación de Adobe Commerce:
 
-* Si se ha creado el proyecto [uso del `composer create-project` mando](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html#get-the-metapackage):
+* Si el proyecto se ha creado [con el comando `composer create-project`](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html#get-the-metapackage):
 
   ```json
   "config": {
@@ -76,7 +76,7 @@ Añada lo siguiente a su `composer.json` , según cómo haya instalado Adobe Com
   }
   ```
 
-* Si el proyecto se ha creado de otra manera y no tiene `"dealerdirect/phpcodesniffer-installer"` in `"require-dev"` sección:
+* Si el proyecto se creó de otra manera y no tiene `"dealerdirect/phpcodesniffer-installer"` en la sección `"require-dev"`:
 
   ```json
   "config": {
@@ -87,4 +87,4 @@ Añada lo siguiente a su `composer.json` , según cómo haya instalado Adobe Com
   }
   ```
 
-Después de actualizar el `composer.json` , ejecute el `composer update` y reinicie el proceso de actualización.
+Después de actualizar el archivo `composer.json`, ejecute el comando `composer update` y reinicie el proceso de actualización.

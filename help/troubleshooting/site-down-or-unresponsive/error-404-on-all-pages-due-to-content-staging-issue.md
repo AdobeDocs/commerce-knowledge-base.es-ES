@@ -24,9 +24,9 @@ Este artículo proporciona una corrección para el problema de infraestructura d
 
 >[!NOTE]
 >
->Este artículo no se aplica a la situación en la que se obtiene un error 404 al intentar [previsualización de la actualización de ensayo](https://docs.magento.com/user-guide/cms/content-staging-scheduled-update.html#preview-the-scheduled-change). Si encuentra ese problema, abra una [ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+>Este artículo no se aplica a la situación en la que recibes un error 404 al intentar [previsualizar la actualización de ensayo](https://docs.magento.com/user-guide/cms/content-staging-scheduled-update.html#preview-the-scheduled-change). Si encuentra ese problema, abra un [ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
-El acceso a cualquier página de la tienda o al administrador provoca el error 404 (la página &quot;¡Uy!, nuestro mal...&quot;) después de realizar operaciones con actualizaciones programadas para los recursos de contenido de la tienda mediante [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) (actualizaciones para los recursos de contenido de tienda programados con la variable [Magento\_Módulo de ensayo](https://developer.adobe.com/commerce/php/module-reference/)). Por ejemplo, es posible que haya eliminado un producto con una actualización programada o que haya eliminado la fecha de finalización de la actualización programada.
+El acceso a cualquier página de la tienda o al administrador provoca el error 404 (la página &quot;¡Uy!, nuestra página es incorrecta...&quot;) después de realizar operaciones con actualizaciones programadas para los recursos de contenido de la tienda mediante [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) (actualizaciones para los recursos de contenido de la tienda programados mediante el [módulo Magento\_Ensayo](https://developer.adobe.com/commerce/php/module-reference/)). Por ejemplo, es posible que haya eliminado un producto con una actualización programada o que haya eliminado la fecha de finalización de la actualización programada.
 
 Un recurso de contenido de tienda incluye:
 
@@ -42,11 +42,11 @@ Algunos escenarios se analizan en la sección Causa a continuación.
 
 ## Causa
 
-El `flag` La tabla de la base de datos (DB) contiene vínculos no válidos a `staging_update` tabla.
+La tabla `flag` de la base de datos (DB) contiene vínculos no válidos a la tabla `staging_update`.
 
 El problema está relacionado con el Ensayo de contenido. A continuación se presentan dos escenarios particulares; tenga en cuenta que podría haber más situaciones que pongan en déclencheur el problema.
 
-**Escenario 1:** Eliminar un recurso de contenido de tienda que:
+**Escenario 1:** Se está eliminando un recurso de contenido de almacén que:
 
 * tiene una actualización programada con el ensayo de contenido
 * la actualización tiene una fecha de finalización (es decir, la fecha de caducidad después de la cual el recurso actualizado vuelve a su versión anterior)
@@ -54,7 +54,7 @@ El problema está relacionado con el Ensayo de contenido. A continuación se pre
 
 Al mismo tiempo, es posible que el problema no se produzca si un recurso eliminado no tiene fecha de finalización para la actualización programada.
 
-**Escenario 2:** Eliminar la fecha/hora de finalización de una actualización programada.
+**Escenario 2:** al eliminar la fecha/hora de finalización de una actualización programada.
 
 ### Identificar si el problema está relacionado
 
@@ -68,19 +68,19 @@ Para identificar si el problema que está experimentando es el descrito en este 
    -> WHERE flag_code = 'staging';
 ```
 
-Si la consulta devuelve una tabla donde `update_exists` El valor es &quot;0&quot; y, a continuación, un vínculo no válido al `staging_update` existe en la base de datos y los pasos descritos en la [Sección Solución](#solution) ayudará a resolver el problema. A continuación se muestra un ejemplo del resultado de la consulta con `update_exists` valor igual a &quot;0&quot;:
+Si la consulta devuelve una tabla donde el valor `update_exists` es &quot;0&quot;, existe un vínculo no válido a la tabla `staging_update` en la base de datos y los pasos descritos en la [sección de soluciones](#solution) ayudarán a resolver el problema. A continuación se muestra un ejemplo del resultado de la consulta con un valor de `update_exists` igual a &quot;0&quot;:
 
 ![update_exists_0.png](assets/update_exists_0.png)
 
-Si la consulta devuelve una tabla donde `update_exists` el valor es &quot;1&quot; o un resultado vacío, significa que el problema no está relacionado con las actualizaciones de ensayo. A continuación se muestra un ejemplo del resultado de la consulta con `update_exists` valor igual a 1:
+Si la consulta devuelve una tabla en la que el valor `update_exists` es &quot;1&quot; o un resultado vacío, significa que el problema no está relacionado con las actualizaciones de ensayo. A continuación se muestra un ejemplo del resultado de la consulta con un valor de `update_exists` igual a &quot;1&quot;:
 
-![updates_exist_1.png](assets/updates_exist_1.png)
+![actualizaciones_existen_1.png](assets/updates_exist_1.png)
 
-En este caso, puede hacer referencia a la variable [Solucionador de problemas de Site Down](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) para solucionar problemas.
+En este caso, puede consultar [Solucionador de problemas de caída del sitio](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) para obtener ideas sobre la solución de problemas.
 
 ## Solución
 
-1. Ejecute la siguiente consulta para eliminar el vínculo no válido a `staging_update` tabla:
+1. Ejecute la siguiente consulta para eliminar el vínculo no válido a la tabla `staging_update`:
 
    ```sql
    DELETE FROM flag WHERE flag_code = 'staging';
@@ -88,4 +88,4 @@ En este caso, puede hacer referencia a la variable [Solucionador de problemas de
 
 1. Espere a que se ejecute el trabajo cron (se ejecuta en hasta cinco minutos si está configurado correctamente) o ejecútelo manualmente si no tiene cron configurado.
 
-El problema debe resolverse directamente después de corregir el vínculo no válido. Si el problema persiste, [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+El problema debe resolverse directamente después de corregir el vínculo no válido. Si el problema persiste, [envíe un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

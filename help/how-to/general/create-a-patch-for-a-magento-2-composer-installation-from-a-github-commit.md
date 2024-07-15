@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Cree un parche para la instalación del Compositor de Adobe Commerce a partir de una confirmación de GitHub
 
-Consulte la [Sección Parches personalizados de la sección Aplicación de parches](https://devdocs.magento.com/guides/v2.3/comp-mgr/patching.html#custom-patches) en nuestra documentación para desarrolladores.
+Consulte la sección [Parches personalizados de la sección Aplicación de parches](https://devdocs.magento.com/guides/v2.3/comp-mgr/patching.html#custom-patches) en nuestra documentación para desarrolladores.

@@ -25,11 +25,11 @@ Este artículo proporciona soluciones para los casos en los que los productos no
 <u>Pasos a seguir</u>:
 
 1. Inicie sesión en el administrador de Commerce.
-1. Ir a **Catálogo** > **Productos**.
+1. Vaya a **Catálogo** > **Productos**.
 
    ![open_product_page_magento_2.4.1.png](assets/open_product_page_magento_2.4.1.png)
 
-1. Clic **Añadir producto** y pasar por el proceso de creación del producto. O importe productos desde un archivo CSV.
+1. Haga clic en **Agregar producto** y continúe con el proceso de creación del producto. O importe productos desde un archivo CSV.
 
 <u>Resultado esperado</u>:
 
@@ -47,15 +47,15 @@ Esto puede deberse a varias razones. Siga los pasos a continuación para comprob
 
 Cada uno de los siguientes puntos puede resolver el problema.
 
-* Compruebe la configuración del producto en Administración. Ir a **Catálogo** > **Productos**, abra la página del producto y asegúrese de que los siguientes campos están correctamente configurados:
-   * **Activar producto** = *Sí.*
-   * **Estado de stock**: *En stock*. O si *Sin existencias* es el valor correcto, asegúrese de que **Mostrar productos sin existencias** (**TIENDAS** > **Configuración** > **Configuración** > **CATÁLOGO** > **Inventario** > **Opciones de Stock** > **Mostrar productos sin existencias**) se ha definido en *Sí* (configurado a nivel global).
+* Compruebe la configuración del producto en Administración. Vaya a **Catálogo** > **Productos**, abra la página del producto y asegúrese de que los campos siguientes estén correctamente configurados:
+   * **Habilitar producto** = *Sí.*
+   * **Estado de stock**: *En stock*. O si *Sin existencias* es el valor correcto, asegúrese de que **Mostrar productos sin existencias** (**TIENDAS** > **Configuración** > **Configuración** > **CATÁLOGO** > **Inventario** > **Opciones de existencias** > **Mostrar productos sin existencias**) esté establecido en *Sí* (configurado a nivel global).
    * **Categorías**: si intenta encontrar el producto en una página de categoría, compruebe que el producto esté asignado a la categoría. Para simplificar la resolución de problemas, cree una nueva categoría desde la página actual y asígnele un producto.
-   * **Visibilidad** = *Catálogo, Buscar.*
-   * En el **Producto en sitios web** , asegúrese de que el producto está asignado al sitio web correcto.
+   * **Visibilidad** = *Catálogo, búsqueda.*
+   * En la sección **Producto en sitios web**, asegúrese de que el producto esté asignado al sitio web correcto.
    * Cambie el selector de ámbito a la vista de tienda donde intenta encontrar el producto en la tienda y compruebe la misma configuración.
-* Realice la reindexación completa ejecutando `bin/magento indexer:reindex` de la consola y vacíe toda la caché de la Admin, en **Sistema** > **Herramientas** > **Administración de caché**, o desde la consola ejecutando `bin/magento cache:clean`.
-* Si lo anterior no ayuda, puede iniciar una investigación adicional comprobando los registros en la `var/log` directorio.
+* Realice el reindexado completo, ejecutando `bin/magento indexer:reindex` desde la consola, y vacíe toda la caché en el administrador, en **Sistema** > **Herramientas** > **Administración de caché**, o desde la consola ejecutando `bin/magento cache:clean`.
+* Si lo anterior no ayuda, puede iniciar una investigación adicional comprobando los registros en el directorio `var/log`.
 
 ## Lectura relacionada en nuestra base de conocimiento de soporte
 

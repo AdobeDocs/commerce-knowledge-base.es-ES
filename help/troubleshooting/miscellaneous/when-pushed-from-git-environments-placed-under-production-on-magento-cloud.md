@@ -47,9 +47,9 @@ Esto no es un error. Para configurar una rama principal para otra rama, el comer
 
 ## Solución
 
-Una rama principal solo se puede establecer después de que el comerciante haya insertado una rama recién creada y la haya activado. Consulte [Adobe Commerce en la infraestructura en la nube > Integración de Bitbucket](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) en nuestra documentación para desarrolladores.
+Una rama principal solo se puede establecer después de que el comerciante haya insertado una rama recién creada y la haya activado. Consulte [Adobe Commerce en la infraestructura de la nube > Integración de Bitbucket](https://devdocs.magento.com/cloud/integrations/bitbucket-integration.html#create-a-new-cloud-branch) en nuestra documentación para desarrolladores.
 
-Para actualizar una rama principal para la rama existente en el servidor, utilice el `magento-cloud environment:info` en la CLI de magento-cloud.
+Para actualizar un elemento principal para la rama existente en el servidor, utilice el comando `magento-cloud environment:info` en la CLI de Magento en la nube.
 
 Ejemplo de uso:
 
@@ -59,4 +59,4 @@ Esto establecerá la rama principal en &quot;Ensayo&quot; para la rama extraída
 
 ## Lectura relacionada
 
-* [Adobe Commerce en la infraestructura en la nube > CLI de magento en la nube](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html) en nuestra documentación para desarrolladores.
+* [Adobe Commerce en la infraestructura de la nube > magento-cloud CLI](https://devdocs.magento.com/cloud/reference/cli-ref-topic.html) en nuestra documentación para desarrolladores.

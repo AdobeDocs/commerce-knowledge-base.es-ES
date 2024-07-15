@@ -14,7 +14,7 @@ ht-degree: 0%
 
 Los trabajos cron de Adobe Commerce en la infraestructura de la nube no terminan de ejecutarse, se quedan atascados e impiden que se ejecuten otros trabajos cron. Este artículo muestra cómo restablecer manualmente los trabajos cron atascados.
 
-Utilice este comando con precaución. Se recomienda leer el [Restablecer trabajos cron](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html) artículo en nuestra base de conocimiento de asistencia para obtener más información.
+Utilice este comando con precaución. Recomendamos leer el artículo [Restablecer trabajos de cron](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html) en nuestra base de conocimiento de soporte técnico para obtener más detalles.
 
 ## Pasos
 
@@ -23,11 +23,11 @@ Utilice este comando con precaución. Se recomienda leer el [Restablecer trabajo
 >Desde [ECE-Tools v2002.0.4](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/cloud-release-archive.html#v2002.0.4) puede restablecer manualmente los trabajos cron atascados mediante un comando CLI a través del acceso SSH.
 
 1. [SSH a su entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
-1. Ejecute este comando: `./vendor/bin/ece-tools cron:unlock`
+1. Ejecutar este comando: `./vendor/bin/ece-tools cron:unlock`
 
 ## Advertencias
 
-* El comando se restablece **todo** trabajos cron, incluidos los que se están ejecutando; **utilícelo sólo en casos excepcionales**.
+* El comando restablece **todos** los trabajos cron, incluidos los que se están ejecutando actualmente; **utilícelo solo en casos excepcionales**.
 * Evite utilizar esta solución cuando se estén ejecutando indexadores.
 
 ## Léalo en nuestra base de conocimiento de asistencia:

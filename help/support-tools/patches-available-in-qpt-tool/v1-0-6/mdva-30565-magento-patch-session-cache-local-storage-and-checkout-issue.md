@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-30565: problema de registro y almacenamiento local de caché de sesión
 
-El parche de MDVA-30565 soluciona el problema del almacenamiento local y el cierre de compra de la caché de sesión. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.6 está instalado.
+El parche de MDVA-30565 soluciona el problema del almacenamiento local y el cierre de compra de la caché de sesión. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.6.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce en infraestructura en la nube 2.3.3-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.2 - 2.3.3-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -35,14 +35,14 @@ Los artículos del carro de compras aún se pueden ver en la página del carro d
 
 <u>Pasos a seguir</u>:
 
-1. Habilite el carro de compras persistente en el administrador de Commerce. (**Habilitar persistencia** = &quot;*Sí*&quot;)
-1. Inicie sesión como cliente en el front-end. Esto crea el `persistent_shopping_cart` e inicia una sesión persistente.
+1. Habilite el carro de compras persistente en el administrador de Commerce. (**Habilitar Persistencia** = &quot;*Sí*&quot;)
+1. Inicie sesión como cliente en el front-end. Esto crea la cookie `persistent_shopping_cart` e inicia una sesión persistente.
 1. Añadir un producto al carro de compras.
-1. Espere hasta que se agote el tiempo de espera de la sesión de front-end o elimine el `PHPSESSID` cookie.
+1. Espere hasta que se agote el tiempo de espera de la sesión de front-end o elimine la cookie `PHPSESSID`.
 1. Ahora es un usuario invitado, pero si va al carro de compras, aún puede ver el producto que se agregó como cliente registrado.
-1. Eliminar el producto del carro de compras y ahora el carro de compras está vacío. Puede ver que Adobe Commerce elimina el `persistent_shopping_cart` cookie en este evento.
+1. Eliminar el producto del carro de compras y ahora el carro de compras está vacío. Puede ver que Adobe Commerce elimina la cookie `persistent_shopping_cart` en este evento.
 1. Añada un nuevo producto al carro de compras y vaya a la página del carro de compras.
-1. Ahora, en la consola del explorador, se muestra `V1/guest-carts/4/estimate-shipping-methods` La solicitud ahora devuelve una respuesta 404 con un mensaje `{"message":"No such entity        with %fieldName = %fieldValue","parameters":{"fieldName":"cartId","fieldValue":0}}`
+1. Ahora, en la consola del explorador, muestra la solicitud `V1/guest-carts/4/estimate-shipping-methods` y devuelve una respuesta 404 con el mensaje `{"message":"No such entity        with %fieldName = %fieldValue","parameters":{"fieldName":"cartId","fieldValue":0}}`
 
 <u>Resultados esperados</u>:
 
@@ -50,7 +50,7 @@ La solicitud de método de envío de estimación devuelve los resultados correct
 
 <u>Resultados reales</u>:
 
-La solicitud del método de envío de estimación falla con un error como, &quot;*Lo sentimos, no hay presupuestos disponibles para este pedido en este momento.*&quot;
+La solicitud del método de envío de estimación falla con un error como, &quot;*Lo sentimos, no hay ofertas disponibles para este pedido en este momento.*&quot;
 
 ## Aplicar el parche
 
@@ -63,7 +63,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

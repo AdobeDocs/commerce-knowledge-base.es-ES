@@ -14,7 +14,7 @@ ht-degree: 0%
 # Error al purgar la caché en el administrador de Commerce
 
 En este artículo se explica cómo identificar la causa de un mensaje de error que se produce al purgar la caché en el administrador de Commerce. Cuando intente purgar la caché a través del administrador, recibirá el siguiente mensaje:
-*El archivo /app/project-id/pub/media/catalog/product/cache/directory/filename&quot; no se puede eliminar. Advertencia:!unlink(/app/project id/pub/media/catalog/product/cache/directory/filename): No existe ese archivo o directorio*
+El archivo */app/project-id/pub/media/catalog/product/cache/directory/filename&quot; no se puede eliminar. Advertencia:!unlink(/app/project id/pub/media/catalog/product/cache/directory/filename): no existe ese archivo o directorio*
 
 ## Productos y versiones afectados
 
@@ -56,7 +56,7 @@ ls: cannot access 'pub/media/catalog/product/cache/directory/filename/': No such
 ```
 
 se intentó borrar los archivos cuando ya se había completado la operación. Esto no es un error; es un problema de concurrencia de mensajería que se espera que ocurra a veces. No hay problema para solucionar.
-Sin embargo, si el resultado muestra que los archivos siguen en la caché, debe [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Sin embargo, si el resultado muestra que los archivos aún están en la caché, debe [enviar un vale de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Lectura relacionada
 

@@ -24,33 +24,33 @@ Este artículo proporciona una solución para el problema conocido de Adobe Comm
 
 <u>Pasos a seguir</u>:
 
-1. Vaya a la **Panel de administración** > **Ventas** > **Pedidos**.
-1. Haga clic en **Crear nuevo pedido** botón.
+1. Vaya a **Panel de administración** > **Ventas** > **Pedidos**.
+1. Haga clic en el botón **Crear nuevo pedido**.
 1. Seleccione el cliente creado.
 1. Vaya a la tienda como cliente creado.
-1. Vaya a la **Product** página. Haga clic en **Actualizar** botón en el **Productos vistos recientemente** sección de **Actividades del cliente**.
+1. Vaya a la página **Producto**. Haga clic en el botón **Actualizar** en la sección **Productos vistos recientemente** de **Actividades del cliente**.
 1. Vuelve a la tienda.
 1. Realice un pedido utilizando los productos creados.
-1. Vuelva a la **Panel de administración** y haga clic en **Actualizar** del botón **Últimos artículos pedidos** sección de **Actividades del cliente**.
-1. Vuelve a la tienda. Añadir el producto creado a **Lista de comparación**.
-1. Vuelva a la **Panel de administración**. Haga clic en **Actualizar** del botón **Productos en la lista de comparación** sección de **Actividades del cliente**.
+1. Vuelva al **Panel de administración** y haga clic en el botón **Actualizar** de la sección **Últimos artículos pedidos** de **Actividades del cliente**.
+1. Vuelve a la tienda. Agregue el producto creado a la **Lista de comparación**.
+1. Volver al **Panel de administración**. Haga clic en el botón **Actualizar** de la sección **Productos en la lista de comparación** de **Actividades del cliente**.
 1. Vuelve a la tienda.
-1. Elimine el producto creado de **Lista de comparación**.
-1. Vuelva a la **Panel de administración**.
-1. Haga clic en **Actualizar** del botón **Productos comparados recientemente** sección de **Actividades del cliente**.
+1. Quitar el producto creado de la **Lista de comparación**.
+1. Volver al **Panel de administración**.
+1. Haga clic en el botón **Actualizar** de la sección **Productos comparados recientemente** de **Actividades del cliente**.
 1. Vuelve a la tienda.
 
 <u>Resultados esperados</u>:
 
-El nombre del producto debe aparecer en la **Productos vistos recientemente**, **Últimos artículos pedidos**, **Productos en la lista de comparación**, y **Productos comparados recientemente** sección.
+El nombre del producto debe aparecer en las secciones **Productos vistos recientemente**, **Últimos artículos pedidos**, **Productos en la lista de comparación** y **Productos comparados recientemente**.
 
 <u>Resultados reales</u>:
 
-La página se desplaza hacia arriba cada vez que **Actualizar** Haga clic en el botón. El nombre del producto no aparece en la sección adecuada.
+La página se desplaza hacia arriba cada vez que se hace clic en un botón **Actualizar**. El nombre del producto no aparece en la sección adecuada.
 
 ## Solución
 
-El usuario administrador puede actualizar una solución **Actividades del cliente** haciendo clic en **Actualizar cambios** en la parte inferior de la barra lateral. Está previsto resolver el problema en el parche de Adobe Commerce 2.4.1.
+Una solución es que el usuario administrador puede actualizar **las actividades del cliente** haciendo clic en el botón **Actualizar cambios** en la parte inferior de la barra lateral. Está previsto resolver el problema en el parche de Adobe Commerce 2.4.1.
 
 ![mceclip0.png](assets/mceclip0.png)
 

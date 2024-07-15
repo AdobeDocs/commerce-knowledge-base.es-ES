@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # ECE-Tools y errores de actualización de parches Adobe Commerce cloud Infrastructure 2.2.x., 2.3.x
 
-Este artículo proporciona una solución para el problema en el que ve mensajes de error que incluyen &quot;*error al abrir el flujo:*&quot; o &quot;*No existe ese archivo o directorio*&quot; al intentar implementar actualizaciones en ECE-Tools, parches u otros cambios.
+Este artículo proporciona una solución para el problema en el que se ven mensajes de error que incluyen &quot;*no se pudo abrir el flujo:*&quot; o &quot;*No existe ese archivo o directorio*&quot; al intentar implementar actualizaciones en ECE-Tools, parches u otros cambios.
 
 ## Productos y versiones afectados
 
@@ -21,7 +21,7 @@ Adobe Commerce en infraestructura en la nube 2.2.x., 2.3.x
 
 ## Problema
 
-Los errores al intentar implementar actualizaciones en ECE-Tools, parches u otros cambios incluyen: errores de PHP en la consola en la nube y en el `var/log/cloud.log`
+Los errores al intentar implementar actualizaciones en ECE-Tools, parches u otros cambios incluyen: errores de PHP en la consola de Cloud y en `var/log/cloud.log`
 
 ```
 W: PHP Warning: require(<path to file>): failed to open stream: No such file or directory in <path to file> on line 70
@@ -65,11 +65,11 @@ on line 63 in /app/vendor/magento/framework/App/ErrorHandler.php:61
 
 ## Causa
 
-Configuración incorrecta de su `composer.json` archivo.
+Configuración incorrecta del archivo `composer.json`.
 
 ## Solución
 
-Si falta una configuración en la `composer.json` , algunos directorios no se copiarán de la base de código de Adobe Commerce. El paquete y la actualización/parche no se pueden aplicar porque no se encontrarán los archivos.
+Si falta una configuración en el archivo `composer.json`, algunos directorios no se copiarán de la base de código de Adobe Commerce. El paquete y la actualización/parche no se pueden aplicar porque no se encontrarán los archivos.
 
 Cambie la sección adicional para que coincida con la proporcionada a continuación y vuelva a intentar la implementación.
 

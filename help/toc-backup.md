@@ -327,7 +327,7 @@ ht-degree: 0%
       * [2.4 Taller de actualización de Adobe Commerce el 26 de enero de 2022](/help/announcements/adobe-commerce-announcements/2-4-upgrade-webinar.md)
       * [El motor de búsqueda del catálogo MySQL se eliminará en Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
       * [Acceso a los datos de los clientes y privacidad de Adobe support](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
-   * Centro de ayuda Noticias {#news}
+   * Noticias del Centro de ayuda {#news}
       * [La documentación de MBI se movió](/help/announcements/help-center-news/mbi-documentation-got-moved.md)
       * [Boletín de la BC de soporte de Adobe Commerce quincenal: nuevos artículos y actualizaciones](/help/announcements/help-center-news/bi-weekly-adobe-commerce-support-kb-newsletter-what-new-and-what-updated.md)
       * [La Base de conocimiento de asistencia de Adobe Commerce comienza a aceptar contribuciones](/help/announcements/help-center-news/github-repo-for-external-contributions.md)
@@ -338,11 +338,11 @@ ht-degree: 0%
       * [Práctica recomendada de tamaño de caché de Realpath](/help/best-practices/configuration/realpath-cache-size-best-practice.md)
       * [Optimización de archivos CSS y JS en Adobe Commerce](/help/best-practices/configuration/optimize-css-and-js-files-in-magento-commerce.md)
    * Base de datos {#database}
-      * [Actualización de Adobe Commerce 2.3.5: tablas compactas a dinámicas](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
+      * [actualización a Adobe Commerce 2.3.5: tablas compactas a dinámicas](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html)
       * [Práctica recomendada para el uso de déclencheur](/help/best-practices/database/best-practice-for-triggers-usage.md)
-      * [Problemas más comunes de las bases de datos en Adobe Commerce sobre la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
+      * [Problemas más comunes de la base de datos en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
       * [Práctica recomendada de Adobe Commerce en la infraestructura en la nube para la conexión esclava de MySQL](/help/best-practices/database/magento-commerce-cloud-best-practice-for-slave-connection.md)
-      * [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+      * [Prácticas recomendadas de bases de datos para Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
    * General {#general}
       * [_isScopePrivate en bloques de contenido privado ralentiza el rendimiento de Adobe Commerce](/help/best-practices/general/isscopeprivate-in-private-content-blocks-slows-magento-performance.md)
       * [Prácticas recomendadas de solución de problemas para Adobe Commerce en infraestructura en la nube](/help/best-practices/general/troubleshooting-best-practices-for-magento-commerce-cloud.md)
@@ -370,7 +370,7 @@ ht-degree: 0%
       * [Práctica recomendada para imágenes en Adobe Commerce en la infraestructura en la nube](/help/best-practices/performance/best-practice-for-images-in-magento-commerce-cloud.md)
       * [Práctica recomendada de Adobe Commerce: realización de acciones críticas en el administrador](/help/best-practices/performance/magento-best-practice-conducting-critical-actions-in-admin.md)
       * [Práctica recomendada de Adobe Commerce: deshabilitar informes si no se utiliza](/help/best-practices/performance/magento-best-practice-disable-reports-if-not-using.md)
-      * [Indexadores &quot;Actualización según lo programado&quot; optimiza el rendimiento de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
+      * [Los indexadores &quot;Actualizar según lo programado&quot; optimizan el rendimiento de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)
       * [Variaciones de productos de prácticas recomendadas para Adobe Commerce](/help/best-practices/performance/best-practice-magento-product-variations.md)
       * [Prácticas recomendadas Rendimiento de colocación de pedidos de Adobe Commerce](/help/best-practices/performance/best-practice-magento-order-placement-performance.md)
       * [práctica recomendada de Adobe Commerce: habilitar el procesamiento asincrónico de pedidos](/help/best-practices/performance/magento-best-practice-enable-asynchronous-orders-processing.md)
@@ -379,7 +379,7 @@ ht-degree: 0%
       * [Prácticas recomendadas para las opciones de atributos de productos de Adobe Commerce](/help/best-practices/performance/best-practices-for-magento-product-attribute-options.md)
 * Solución de problemas {#troubleshooting}
    * [Información general](/help/troubleshooting/overview.md)
-   * Solución general de problemas {#general}
+   * Solución de problemas general {#general}
       * [Solucionar problemas del módulo Product Recommendations en Adobe Commerce](/help/troubleshooting/general/troubleshoot-product-recommendations-module-in-magento-commerce.md)
       * [Elimine archivos de forma segura cuando el disco se quede sin espacio en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/general/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md)
       * [robots.txt no se ha actualizado para mostrar la configuración predeterminada](/help/troubleshooting/general/robots-txt-not-updated-or-displaying-default-settings.md)
@@ -480,7 +480,7 @@ ht-degree: 0%
       * [Diagnóstico de una discrepancia de datos](/help/troubleshooting/general/diagnosing-a-data-discrepancy.md)
       * [Error de implementación: SQLSTATE[HY000]](/help/troubleshooting/general/deployment-error-sql-hy000.md)
       * [Vuelva al formulario de inicio de sesión de administrador de Commerce con el error &quot;La sesión actual ha caducado&quot;.](/help/troubleshooting/general/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
-      * [Redis anuda la configuración de errores de deserialización:static-content:implementar](/help/troubleshooting/general/redis-unserialize-error-setup-static-content-deploy.md)
+      * [Redis anuda la instalación del error de deserialización:static-content:deploy](/help/troubleshooting/general/redis-unserialize-error-setup-static-content-deploy.md)
       * [La instalación falla; no se puede crear install.log](/help/troubleshooting/general/installation-fails-cannot-create-install-log.md)
       * [Sitio en modo de mantenimiento, pero disponible para los clientes](/help/troubleshooting/general/site-in-maintenance-mode-but-available-to-customers.md)
       * [Problema de crédito de tienda durante el cierre de compra en Adobe Commerce 2.3.5](/help/troubleshooting/general/store-credit-issue-during-checkout-in-magento-2-3-5.md)
@@ -598,7 +598,7 @@ ht-degree: 0%
       * [AJAX Las solicitudes de alto rendimiento de los recursos provocan un rendimiento deficiente](/help/troubleshooting/general/high-throughput-ajax-requests-cause-poor-performance.md)
       * [PWA Studio: El explorador muestra el error &quot;No se puede proxy a&quot;](/help/troubleshooting/general/pwa-studio-browser-displays-cannot-proxy-to-error.md)
       * [Problema conocido de Adobe Commerce 2.4.0: Páginas en blanco de mensajería en el sitio de Klarna](/help/troubleshooting/general/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
-      * [ejecutar configuración:static-content:problema de deploy_version.txt](/help/troubleshooting/general/run-setup-static-content-deploy-deployed-version-txt-issue.md)
+      * [ejecutar el problema setup:static-content:deploy_version.txt](/help/troubleshooting/general/run-setup-static-content-deploy-deployed-version-txt-issue.md)
       * [El cupón de un solo uso se utiliza varias veces, Adobe Commerce](/help/troubleshooting/general/coupon-code-used-more-than-once-adobe-commerce.md)
       * [Vuelva al formulario de inicio de sesión del administrador de Commerce con el error &quot;Su cuenta está temporalmente desactivada&quot;.](/help/troubleshooting/general/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md)
       * [Los Google Analytics se desactivan después de la implementación](/help/troubleshooting/general/google-analytics-gets-disabled-after-deployment.md)
@@ -619,7 +619,7 @@ ht-degree: 0%
       * [2.3.4 Revisión de problemas de PayPal](/help/troubleshooting/known-issues-patches-attached/2-3-4-paypal-issue-hotfix.md)
       * [Adobe Commerce 2.4.4: No se pueden crear facturas parciales](/help/troubleshooting/known-issues-patches-attached/braintree-partial-invoice-error-apple-pay-google-pay.md)
       * [Los nuevos pedidos se envían al archivo](/help/troubleshooting/known-issues-patches-attached/new-orders-are-sent-to-archive.md)
-      * [Actualizar la publicación directa de Authorize.Net de MD5 a SHA-512](/help/troubleshooting/known-issues-patches-attached/update-authorize.net-direct-post-from-md5-to-sha-512.md)
+      * [Actualizar Authorize.Net Direct Post de MD5 a SHA-512](/help/troubleshooting/known-issues-patches-attached/update-authorize.net-direct-post-from-md5-to-sha-512.md)
       * [Adobe Commerce de errores cron de trabajo de informes avanzados](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-cron-job-errors-magento-commerce.md)
       * [Eliminar los intentos de inicio de sesión erróneos de la base de datos](/help/troubleshooting/known-issues-patches-attached/remove-failed-login-attempts-from-the-database.md)
       * [Actualice los informes avanzados para que se ejecuten en su propio grupo cron](/help/troubleshooting/known-issues-patches-attached/update-advanced-reporting-to-run-on-its-own-cron-group.md)
@@ -672,7 +672,7 @@ ht-degree: 0%
 * Guía del Centro de ayuda {#help-center-guide}
    * [Guía del usuario del Centro de ayuda de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
    * [Actualización de directiva de ciclo vital de ticket de soporte de Adobe Commerce](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
-* Procedimientos {#how-to}
+* Cómo... {#how-to}
    * [Información general](/help/how-to/overview.md)
    * [MBI Essentials: actualizar método de pago o cancelar suscripción](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
    * [Vídeo de formación de MBI: Report Builder SQL](/help/how-to/general/mbi-training-video-sql-report-builder.md)
@@ -731,7 +731,7 @@ ht-degree: 0%
    * [MBI: Creación y edición de columnas calculadas avanzadas](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
    * [Comprobar el límite de espacio en disco para Adobe Commerce en la infraestructura en la nube](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md)
    * [Certificados SSL (TLS) para Adobe Commerce en infraestructura en la nube](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
-   * [No se puede acceder a la última versión beta](/help/how-to/general/cannot-access-the-latest-beta-version.md)
+   * [No se puede acceder a la última versión de Beta](/help/how-to/general/cannot-access-the-latest-beta-version.md)
    * [Cambiar el modo de aplicación](/help/how-to/general/switch-the-magento-mode.md)
    * [Cómo iniciar sesión en la cuenta de Fastly proporcionada con Adobe Commerce en la infraestructura en la nube](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Mostrar el número de informe de errores de Adobe Commerce en lugar del error Fastly 503](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
@@ -742,7 +742,7 @@ ht-degree: 0%
    * [Sugerencias de pruebas de terceros para Adobe Commerce en infraestructuras en la nube](/help/how-to/general/share-access-third-party.md)
    * [Acceso a la Guía de asistencia al cliente de Adobe Commerce](/help/how-to/general/access-the-magento-commerce-customer-support-guide.md)
    * [Suscripción a las actualizaciones de estado de Adobe Commerce](/help/how-to/general/how-to-subscribe-to-adobe-magento-status-updates.md)
-* FAQ {#faq}
+* PREGUNTAS FRECUENTES {#faq}
    * [Información general](/help/faq/overview.md)
    * [Firewall de aplicaciones web (WAF) con tecnología Fastly: preguntas frecuentes](/help/faq/general/web-application-firewall-waf-powered-by-fastly-the-faq.md)
    * [Amortización de las integraciones de pagos de Core Adobe Commerce](/help/faq/general/depreciation-of-core-magento-payment-integrations.md)
@@ -1058,7 +1058,7 @@ ht-degree: 0%
    * [ACSD-45488: producto configurable con varios orígenes que no se devuelve en stock automáticamente](/help/support-tools/patches-available-in-qpt-tool/acsd-45488-configurable-product-with-multiple-sources-not-returned-to-in-stock.md)
    * [ACSD-46146: Dos correos electrónicos de confirmación de pedido enviados después de realizar el pedido desde el administrador](/help/support-tools/patches-available-in-qpt-tool/acsd-46146-two-order-confirmation-emails-are-sent-after-placing-order-from-admin.md)
    * [MDVA-43824: La acción de cancelación del pedido falló con el error &quot;No ha cancelado el artículo&quot;](/help/support-tools/patches-available-in-qpt-tool/mdva-43824-order-cancellation-action-failed-with-error.md)
-   * [MDVA-39605: El TTL de caché de Redis (fecha de caducidad) tiene un valor incorrecto](/help/support-tools/patch-available-in-qpt-tool/mdva-39605-redis-cache-ttl-expiration-date-has-wrong-value.md)
+   * [MDVA-39605: el TTL de caché de Redis (fecha de caducidad) tiene un valor incorrecto](/help/support-tools/patch-available-in-qpt-tool/mdva-39605-redis-cache-ttl-expiration-date-has-wrong-value.md)
    * [MDVA-30599: customer_is_guest no se ha configurado correctamente](/help/support-tools/patches-available-in-qpt-tool/mdva-30599-magento-patch-customer_is_guest-is-set-incorrectly.md)
    * [MDVA-44100: todos los FTP se asignan al último producto del carro de compras](/help/support-tools/patches-available-in-qpt-tool/mdva-44100-all-fpts-are-assigned-to-the-last-product-in-the-shopping-cart-and-reset-for-other-product.md)
    * [MDVA-21095: INSERT INTO &quot;search_tmp...&quot; no termina nunca después de la actualización masiva de atributos](/help/support-tools/patches-available-in-qpt-tool/mdva-21095-insert-into-search_tmp...-never-ends-after-mass-attribute-update.md)

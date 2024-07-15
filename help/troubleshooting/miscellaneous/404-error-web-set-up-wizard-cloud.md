@@ -43,9 +43,9 @@ El Asistente para configuración web se ha deshabilitado para todas las instanci
 
 Esta función está desactivada en Adobe Commerce en la infraestructura en la nube.
 
-Consulte [Instalación, administración y actualización de extensiones](https://devdocs.magento.com/cloud/howtos/install-components.html) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce en nuestra infraestructura en la nube.
-Consulte [Instalación rápida de](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce de forma local.
+Consulte [Instalar, administrar y actualizar extensiones](https://devdocs.magento.com/cloud/howtos/install-components.html) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce en nuestra infraestructura en la nube.
+Consulte [Instalación rápida](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce local.
 
 ## Lectura relacionada
 
-* Consulte [Instalación de una extensión](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension) en nuestra documentación para desarrolladores.
+* Consulte [Instalar una extensión](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension) en nuestra documentación para desarrolladores.

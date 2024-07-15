@@ -21,7 +21,7 @@ Al realizar un pedido desde el panel de administración, se queda atascado en la
 
 <u>Pasos a seguir</u>
 
-1. Ir a **[!UICONTROL Sales]** > **[!UICONTROL Orders]** y seleccione un cliente para crear un pedido.
+1. Vaya a **[!UICONTROL Sales]** > **[!UICONTROL Orders]** y seleccione un cliente para crear un pedido.
 2. Seleccione la tienda para realizar el pedido desde la pantalla del selector de tienda.
 
 <u>Resultado esperado</u>
@@ -44,5 +44,5 @@ El parche se ha creado para y es compatible con Adobe Commerce en la infraestruc
 
 ## Cómo aplicar el parche
 
-* Para obtener instrucciones sobre la aplicación de parches para Adobe Commerce en la infraestructura en la nube, consulte [Aplicar parches](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en nuestra Guía de infraestructura en la nube de Commerce.
-* Para obtener instrucciones sobre la aplicación de parches para Adobe Commerce local, consulte [Aplicar parches](/docs/commerce-operations/upgrade-guide/patches/apply.html?lang=en#composer) en nuestra Guía de actualización de Commerce.
+* Para obtener instrucciones sobre la aplicación de parches para Adobe Commerce en la infraestructura en la nube, consulte [Aplicar parches](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en nuestra Guía de Commerce en la infraestructura en la nube.
+* Para obtener instrucciones sobre cómo aplicar parches para Adobe Commerce local, consulte [Aplicar parches](/docs/commerce-operations/upgrade-guide/patches/apply.html?lang=en#composer) en nuestra Guía de actualización de Commerce.

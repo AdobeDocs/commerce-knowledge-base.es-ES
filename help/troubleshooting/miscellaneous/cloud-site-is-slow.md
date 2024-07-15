@@ -49,7 +49,7 @@ Los siguientes párrafos proporcionan más detalles para cada paso.
 
 El primer paso para corregir un sitio atascado por tráfico intenso es garantizar que las páginas con el tráfico más intenso, como la página principal de la tienda y las páginas de categoría de nivel superior, se almacenen en caché correctamente.
 
-Puede averiguar las tasas de aciertos de caché para estas páginas revisando la `X-Cache` Encabezados HTTP que utilizan cURL, tal como se describe en [Comprobación de caché mediante cURL](https://docs.fastly.com/guides/debugging/checking-cache#using-curl) en la documentación de Fastly. O compruebe los mismos encabezados con la pestaña de red de la barra de herramientas del desarrollador de su explorador web favorito.
+Puede averiguar las tasas de aciertos de caché para estas páginas revisando los encabezados HTTP `X-Cache` mediante cURL, tal como se describe en [Comprobación de caché mediante cURL](https://docs.fastly.com/guides/debugging/checking-cache#using-curl) en la documentación de Fastly. O compruebe los mismos encabezados con la pestaña de red de la barra de herramientas del desarrollador de su explorador web favorito.
 
 Fastly suele respetar los encabezados de respuesta procedentes de la aplicación; sin embargo, si todos los encabezados están configurados en &quot;no almacenar en caché&quot; y para que la página &quot;caduque en el pasado&quot;, Fastly no puede almacenar en caché la página.
 
@@ -65,14 +65,14 @@ Si la página de índice tiene una tasa de visitas baja, puede corregirla reduci
 
 Para comprobar la tasa de aciertos de caché general:
 
-1. [Obtener credenciales rápidamente](http://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#cloud-fastly-creds) para su entorno de Adobe Commerce en la nube.
+1. [Obtenga credenciales de Fastly](http://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#cloud-fastly-creds) para su Adobe Commerce en el entorno de infraestructura en la nube.
 1. Ejecute el siguiente comando cURL de Linux/macOS para comprobar la tasa de visitas del sitio durante los últimos 30 minutos, reemplazando y con los valores de las credenciales de Fastly:
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`
 
-   También puede comprobar las tasas de visitas históricas del último día o mes cambiando la opción de consulta de intervalo de tiempo de `?by=minute` hasta `?by=hour` o `?by=day`. Para obtener más información sobre la obtención de estadísticas de caché de Fastly, consulte [Opciones de consulta](https://docs.fastly.com/api/stats#Query) en la documentación de Fastly.
+   También puede comprobar las tasas de visitas históricas del último día o mes cambiando la opción de consulta de intervalo de tiempo de `?by=minute` a `?by=hour` o `?by=day`. Para obtener más información sobre cómo obtener estadísticas de caché de Fastly, consulte [Opciones de consulta](https://docs.fastly.com/api/stats#Query) en la documentación de Fastly.
 
-   El `| json_pp` imprime la salida de respuesta JSON utilizando la variable `json_pp` utilidades. Si obtiene un error_&#39;json\_pp not found&#39;_, instale el `json_pp` o utilice otra herramienta de línea de comandos para la impresión con sangría de JSON. También puede eliminar la variable `| json_pp` y ejecute de nuevo el comando. El resultado de la respuesta JSON no tiene formato, pero puede ejecutarlo a través de un embellecedor JSON para limpiarlo.
+   La opción `| json_pp` imprime correctamente el resultado de la respuesta JSON con la utilidad `json_pp`. Si obtiene un error_&#39;json\_pp not found&#39;_, instale la utilidad `json_pp` o use otra herramienta de línea de comandos para la impresión con sangría de JSON. Como alternativa, elimine el parámetro `| json_pp` y ejecute de nuevo el comando. El resultado de la respuesta JSON no tiene formato, pero puede ejecutarlo a través de un embellecedor JSON para limpiarlo.
 
 Una tasa de visitas superior al 0,90 o al 90 % indica que la caché de página completa está funcionando.
 
@@ -81,9 +81,9 @@ Una tasa de visitas inferior al 0,85 o al 85 % puede indicar un problema de conf
 #### Resolución de problemas de tasa de aciertos de caché general
 
 1. Mediante las estadísticas de tasa de visitas por hora y por día, identifique cuándo comenzó a disminuir la tasa de visitas. Si la tasa de visitas disminuyó repentinamente aproximadamente al mismo tiempo que implementó un cambio en el sitio, considere revertir el cambio hasta que se reduzca la carga del sitio.
-1. Compruebe la configuración en Commerce Admin, en **Tiendas** > **Configuración** > Avanzado > **Sistema** > **Caché de página completa**. Asegúrese de que **TTL para contenido público** El valor no se ha establecido en un nivel demasiado bajo.
-1. Asegúrese de que ha [cargó los fragmentos de VCL](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
-1. Si utiliza fragmentos de VCL personalizados, devíselos para un uso correcto de las acciones &quot;pass&quot; o &quot;pipe&quot;: deben utilizarse con cuidado y, como mínimo, con una condición de algún tipo. Para obtener más sugerencias, consulte [Fragmentos de VCL personalizados de Fastly](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html) en nuestra documentación para desarrolladores.
+1. Compruebe la configuración en el administrador de Commerce, en **Tiendas** > **Configuración** > Avanzada > **Sistema** > **Caché de página completa**. Asegúrese de que el valor **TTL para contenido público** no esté configurado demasiado bajo.
+1. Asegúrese de [cargar los fragmentos de VCL](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
+1. Si utiliza fragmentos de VCL personalizados, devíselos para un uso correcto de las acciones &quot;pass&quot; o &quot;pipe&quot;: deben utilizarse con cuidado y, como mínimo, con una condición de algún tipo. Para obtener más sugerencias, consulte [Fragmentos personalizados de VCL de Fastly](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html) en nuestra documentación para desarrolladores.
 
 ### Paso 3: Identificar los sitios web que causan la alta carga del servidor
 
@@ -112,7 +112,7 @@ Ver más líneas con
 magento-cloud log access --lines=500
 ```
 
-Puede ver este registro y comprobar si una gran parte de las solicitudes provienen de una dirección IP específica. Otra forma es utilizar `awk` , `sort` y `uniq` para contar automáticamente las direcciones IP que se producen con más frecuencia en el registro, como las siguientes:
+Puede ver este registro y comprobar si una gran parte de las solicitudes provienen de una dirección IP específica. Otra forma es usar `awk`, `sort` y `uniq` para contar automáticamente las direcciones IP que aparecen con más frecuencia en el registro, como las siguientes:
 
 ```bash
 magento-cloud log access --lines 2000 | awk '{print $1}' | sort | uniq -c | sort
@@ -127,12 +127,12 @@ magento-cloud log
 
 no funciona, puede conectarse al servidor remoto con SSH y comprobar el archivo de registro en `/var/log/access.log`
 
-Después de identificar las direcciones IP que causan una carga pesada en el servidor, puede bloquearlas configurando una lista de bloqueados IP desde en el panel de administración de Commerce, en **Tiendas** > **Configuración** > AVANZADO > **Sistema** > **Caché de página completa** > **Configuración rápida** > **Bloqueo**.
+Después de identificar las direcciones IP que causan una carga pesada en el servidor, puede bloquearlas configurando una lista de bloqueados IP desde en el panel de administración de Commerce, en **Almacenes** > **Configuración** > AVANZADA > **Sistema** > **Caché de página completa** > **Configuración rápida** > **Bloqueo**.
 
 Si no puede acceder a su administrador debido a una carga pesada, puede utilizar la API de Fastly para configurar las reglas de bloqueo:
 
-1. Cree la ACL como se describe en la [Trabajar con ACL mediante la API](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api) Documentación de Fastly.
-1. En el `recv` , cree un fragmento de VCL con el siguiente contenido, y reemplace ACL\_NAME\_GOES\_HERE por el nombre de la ACL que se creó en el paso anterior:
+1. Cree la ACL como se describe en [Uso de ACL mediante el documento de Fastly de API](https://docs.fastly.com/guides/access-control-lists/working-with-acls-using-the-api).
+1. En la sección `recv`, cree un fragmento de VCL con el siguiente contenido, después de reemplazar ACL\_NAME\_GOES\_HERE con el nombre de la ACL que se creó en el paso anterior:
 
    ```
    if( req.http.Fastly-Client-IP ~ ACL_NAME_GOES_HERE ) {

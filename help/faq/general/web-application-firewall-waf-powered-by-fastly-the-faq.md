@@ -14,7 +14,7 @@ ht-degree: 0%
 
 ## ¿Cómo funciona el WAF en la nube administrado de Adobe Commerce (con tecnología de Fastly)?
 
-Los firewalls de aplicaciones web (WAF) impiden [tráfico malintencionado](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) para impedir la entrada en sitios y redes filtrando el tráfico con un conjunto de reglas de seguridad. Déclencheur El tráfico que infringe cualquiera de las reglas se bloquea antes de que pueda dañar los sitios o la red.
+Los firewalls de aplicaciones web (WAF) impiden que [tráfico malintencionado](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) entre en sitios y redes filtrando el tráfico en un conjunto de reglas de seguridad. Déclencheur El tráfico que infringe cualquiera de las reglas se bloquea antes de que pueda dañar los sitios o la red.
 
 El WAF en la nube de Adobe Commerce proporciona una política de WAF con un conjunto de reglas diseñado para proteger las aplicaciones web de Adobe Commerce de una amplia gama de ataques.
 
@@ -84,7 +84,7 @@ La solución WAF que vende directamente Fastly es una oferta de pago que incluye
 </tr>
 <tr>
 <td style="width: 145.5px; vertical-align: top;">Ataques de inyección de JavaScript</td>
-<td style="width: 497.5px;">Las reglas WAF protegen contra la inserción de código JavaScript malintencionado en las comunicaciones del cliente con los servicios web. Los patrones o puntuaciones de explotación comunes se filtran a través de WAF para garantizar la integridad del servicio de origen.</td>
+<td style="width: 497.5px;">Las reglas WAF protegen contra el código JavaScript malintencionado que se inserta en las comunicaciones del cliente con los servicios web. Los patrones o puntuaciones de explotación comunes se filtran a través de WAF para garantizar la integridad del servicio de origen.</td>
 </tr>
 </tbody>
 </table>
@@ -104,11 +104,11 @@ Se estima que cada solicitud sin caché tiene de 1,5 milisegundos (ms) a 20 ms d
 
 ## ¿Pueden los clientes crear y modificar listas negras de IP para bloquear el tráfico?
 
-Sí, los clientes pueden habilitar el bloqueo por país y acceder a la lista de control (ACL) desde Adobe Commerce en la interfaz de usuario de administración de la infraestructura de la nube. Utilice estas funciones en casos en los que desee bloquear el acceso de visitantes procedentes de países específicos o determinadas direcciones IP o intervalos de IP. Si desea que los visitantes bloqueados vean una página personalizada en lugar de un código de error, puede crear una página de error personalizada cargando el HTML en el menú Configuración rápida. Consulte [Creación de una página de error/mantenimiento personalizada](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en nuestra documentación para desarrolladores.
+Sí, los clientes pueden habilitar el bloqueo por país y acceder a la lista de control (ACL) desde Adobe Commerce en la interfaz de usuario de administración de la infraestructura de la nube. Utilice estas funciones en casos en los que desee bloquear el acceso de visitantes procedentes de países específicos o determinadas direcciones IP o intervalos de IP. Si desea que los visitantes bloqueados vean una página personalizada en lugar de un código de error, puede crear una página de error personalizada cargando el HTML en el menú Configuración rápida. Consulte [Crear una página de error/mantenimiento personalizada](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en nuestra documentación para desarrolladores.
 
 ## ¿Dónde puedo comprobar el estado operativo de mi servicio WAF?
 
-La disponibilidad general del servicio WAF se informa en el [Página de estado de Fastly](https://status.fastly.com/). No se han proporcionado informes de disponibilidad para el WAF de clientes individuales.
+La disponibilidad general del servicio WAF se indica en la [página de estado rápido](https://status.fastly.com/). No se han proporcionado informes de disponibilidad para el WAF de clientes individuales.
 
 ## ¿Adobe Commerce proporciona la administración de incidentes para el servicio WAF?
 
@@ -118,7 +118,7 @@ En este momento no se ofrece la administración de incidentes.
 
 Aunque Adobe Commerce no tiene un Centro de Operaciones de Seguridad, tenemos un proceso de operaciones de seguridad que nos permite emplear los recursos adecuados para responder a los incidentes de seguridad en tiempo real. También ofrecemos soporte de seguimiento del sol 24/7/365.
 
-También puede obtener noticias y actualizaciones de seguridad relacionadas con Adobe Commerce en el [Centro de seguridad](https://helpx.adobe.com/security.html).
+También puedes obtener noticias y actualizaciones de seguridad relacionadas con Adobe Commerce en [Centro de seguridad](https://helpx.adobe.com/security.html).
 
 ## ¿Qué soporte está disponible?
 
@@ -128,11 +128,11 @@ La compatibilidad con WAF ofrece los siguientes recursos para ayudarle a mitigar
 * Clasificación de falsos positivos en curso para tratar casos en los que el WAF bloquea el tráfico legítimo
 * Configuración de cualquier regla estándar nueva introducida como parte de las actualizaciones de la versión de WAF
 
-Consulte la [SLA de nube](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf) términos para obtener información de soporte adicional, incluidas definiciones de gravedad, tiempos de respuesta, canales y disponibilidad.
+Consulte los términos de [SLA en la nube](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Magento-Support-Services-Terms-and-Conditions.pdf) para obtener información de soporte adicional, incluidas definiciones de gravedad, tiempos de respuesta, canales y disponibilidad.
 
 ## Si el WAF está bloqueando el tráfico legítimo o causando otros problemas, ¿cómo puedo obtener ayuda?
 
-[Enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) en el [Centro de ayuda de Adobe Commerce](https://support.magento.com). Indique que el ticket está relacionado con el servicio WAF e incluya el identificador (ID) de solicitud bloqueado.
+[Envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) en el [Centro de ayuda de Adobe Commerce](https://support.magento.com). Indique que el ticket está relacionado con el servicio WAF e incluya el identificador (ID) de solicitud bloqueado.
 
 El sistema de tickets de asistencia de Adobe Commerce rastrea la comunicación entre nuestros ingenieros de asistencia y el personal de un cliente. Este sistema proporciona una transcripción con marca de tiempo de las comunicaciones y envía correos electrónicos al cliente y al personal de Adobe Commerce a medida que se actualizan los tickets.
 
@@ -160,12 +160,12 @@ La siguiente tabla resume los canales de soporte y la disponibilidad para el Sop
 </tr>
 <tr>
 <td>Escalación de emergencia*</td>
-<td>Consulte <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html">Línea directa de notificaciones P1 de Adobe Commerce</a> artículo para números de EE. UU. e internacionales.</td>
+<td>Consulte el artículo de la <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html">línea directa de notificaciones P1 de Adobe Commerce</a> para obtener números de Estados Unidos e internacionales.</td>
 </tr>
 </tbody>
 </table>
 
-*\* La línea telefónica de asistencia gratuita de Adobe Commerce está reservada únicamente para incidentes de prioridad 1. Las llamadas sin prioridad 1 ralentizarán la respuesta general a los problemas*
+*\* La línea telefónica de asistencia gratuita de Adobe Commerce está reservada únicamente para incidentes de prioridad 1. Las llamadas que no son de prioridad 1 ralentizarán la respuesta general a los problemas*
 
 ## ¿Cómo se clasifican los falsos positivos?
 

@@ -25,7 +25,7 @@ Se produce un error 403 al intentar acceder a la herramienta de análisis de tod
 
 <u>Pasos a seguir:</u>
 
-Inicie sesión en el panel de administración de Commerce y haga clic en **Informes** > *System Insights* > **Herramienta de análisis de todo el sitio**.
+Inicie sesión en el panel de administración de Commerce y haga clic en **Informes** > *Información del sistema* > **Herramienta de análisis de todo el sitio**.
 
 <u>Resultado esperado:</u>
 
@@ -33,12 +33,12 @@ Verá la herramienta de análisis de todo el sitio.
 
 <u>Resultado real:</u>
 
-Verá lo siguiente: *Error 403.*
+Verá: *Error 403.*
 
 
 ## Solución
 
-Para asegurarse de que la herramienta de análisis de todo el sitio tiene el acceso adecuado a su aplicación, ejecute el siguiente comando en la CLI. Reemplazar `<store URL>` con la URL de la tienda:
+Para asegurarse de que la herramienta de análisis de todo el sitio tiene el acceso adecuado a su aplicación, ejecute el siguiente comando en la CLI. Reemplazar `<store URL>` por la URL de la tienda:
 
 ```cURL
 curl -sIL -X GET <store URL>/swat/key/index | grep HTTP
@@ -57,26 +57,26 @@ Si el código de respuesta es 403, es posible que tenga la protección de bots d
 
 ### Corrección del código de respuesta 200 y salida JSON
 
-Si la respuesta es el código 200 correcto y la salida JSON, [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para escalar el problema con el acceso a la herramienta de análisis de todo el sitio.
+Si la respuesta es el código 200 y la salida JSON correctos, [envíe un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para escalar el problema con el acceso a la herramienta de análisis en todo el sitio.
 
 
 ### 500 (Error grave) código de respuesta
 
 Si un código de respuesta es 500 (error grave), instale el parche MDVA-38526. Utilice uno de los siguientes enlaces para descargar el parche, según el tipo de parche que desee:
 
-* parche de Adobe Commerce en la infraestructura en la nube: [MDVA-38526_EE_2.4.1-p1_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_v3.patch.zip)
-* parche del compositor de infraestructuras en la nube de Adobe Commerce: [MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip)
+* parche de Adobe Commerce en la infraestructura de la nube: [MDVA-38526_EE_2.4.1-p1_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_v3.patch.zip)
+* parche del compositor de infraestructura en la nube de Adobe Commerce: [MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip](assets/MDVA-38526_EE_2.4.1-p1_COMPOSER_v3.patch.zip)
 
 El parche se aplica a Adobe Commerce en las versiones 2.4.1 y posteriores de la infraestructura en la nube.
 
 ### Respuesta no JSON
 
-Si el resultado de la respuesta no es JSON, podría deberse a una implementación PWA/sin encabezado. Si utiliza la implementación sin encabezado, actualice la configuración UPWARD para evitar las solicitudes al origen de Adobe Commerce. Para ello, en el Administrador de Adobe Commerce, en **Tiendas** > **Configuración** > **General** > **Web** > **Configuración del PWA UPWARD** > **Lista de permitidos de nombre**, agregue *aplastar*.
+Si el resultado de la respuesta no es JSON, podría deberse a una implementación PWA/sin encabezado. Si utiliza la implementación sin encabezado, actualice la configuración UPWARD para evitar las solicitudes al origen de Adobe Commerce. Para ello, en el Administrador de Adobe Commerce, en **Tiendas** > **Configuración** > **General** > **Web** > **Configuración de PWA ASCENDENTE** > **Lista de permitidos de nombre de pila**, agregue *swat*.
 
-![Upward_configuration](assets/upward_pwa.png)
+![Configuración_ascendente](assets/upward_pwa.png)
 
-Si sigue sin poder acceder a la herramienta de análisis de todo el sitio, la próxima vez que inicie sesión en el panel de administración de Commerce y vaya a **Informes** > *System Insights* > **Herramienta de análisis de todo el sitio**, [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Si todavía no puede acceder a la herramienta de análisis de todo el sitio, la próxima vez que inicie sesión en el panel de administración de Commerce y navegue hasta **Informes** > *Información del sistema* > **Herramienta de análisis de todo el sitio**, [envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Lectura relacionada
 
-* [Guía de la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)
+* [Guía de herramientas de análisis para todo el sitio](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)

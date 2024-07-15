@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Este artículo proporciona soluciones para los errores que pueden producirse al ejecutar la herramienta de migración de datos.
 
-## Documentos/campos de origen no asignados {#source-documents-fields-not-mapped}
+## Documentos/campos de Source no asignados {#source-documents-fields-not-mapped}
 
 ### Mensajes de error
 
@@ -40,15 +40,15 @@ en lugar de los de origen.
 
 Algunas entidades de la versión 1 de Adobe Commerce (en la mayoría de los casos, procedentes de extensiones) no existen en la base de datos de la versión 2 de Adobe Commerce.
 
-Este mensaje aparece porque la herramienta de migración de datos ejecuta pruebas internas para comprobar que las tablas y los campos son coherentes entre sí *origen* (Adobe Commerce 1) y *destino* (Adobe Commerce 2).
+Este mensaje aparece porque la herramienta de migración de datos ejecuta pruebas internas para comprobar que las tablas y los campos son coherentes entre las bases de datos *source* (Adobe Commerce 1) y *destination* (Adobe Commerce 2).
 
 ### Posibles soluciones
 
 * Instale las extensiones de Adobe Commerce 2 correspondientes desde [Commerce Marketplace](https://marketplace.magento.com/).     Si los datos en conflicto se originan en una extensión que agrega propios elementos de estructura de base de datos, la versión de Adobe Commerce 2 de la misma extensión puede agregar dichos elementos a la base de datos de destino (Adobe Commerce 2), lo que soluciona el problema.
-* Utilice el `-a` al ejecutar la herramienta para resolver automáticamente los errores y evitar que se detenga la migración.
+* Utilice el argumento `-a` al ejecutar la herramienta para resolver automáticamente los errores y evitar que se detenga la migración.
 * Configure la herramienta para ignorar los datos problemáticos.
 
-Para ignorar entidades de base de datos, agregue `<ignore>` a una entidad en la `map.xml` archivo, así:
+Para omitir entidades de base de datos, agregue la etiqueta `<ignore>` a una entidad del archivo `map.xml` de la siguiente manera:
 
 ```xml
 ...
@@ -71,7 +71,7 @@ Para ignorar entidades de base de datos, agregue `<ignore>` a una entidad en la 
 
 >[!WARNING]
 >
->Antes de ignorar entidades por fichero de mapa o utilizando `-a` , asegúrese de que no necesita los datos afectados en su tienda de Adobe Commerce 2.
+>Antes de ignorar entidades por archivo de asignación o utilizando la opción `-a`, asegúrese de que no necesita los datos afectados en su tienda de Adobe Commerce 2.
 
 ## La clase no está asignada en el registro {#class-does-not-exist-but-mentioned}
 
@@ -83,13 +83,13 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Causa
 
-No se pudo encontrar una clase del código base de Adobe Commerce 1 en el código base de Adobe Commerce 2 durante el [Paso de migración de EAV](https://devdocs.magento.com/guides/v2.3/migration/migration-tool-internal-spec.html#eav) en nuestra documentación para desarrolladores. En la mayoría de los casos, la clase que falta pertenece a un [extensión](https://glossary.magento.com/extension).
+No se pudo encontrar una clase del código base de Adobe Commerce 1 en el código base de Adobe Commerce 2 durante el [paso de migración EAV](https://devdocs.magento.com/guides/v2.3/migration/migration-tool-internal-spec.html#eav) en nuestra documentación para desarrolladores. En la mayoría de los casos, la clase que falta pertenece a una [extensión](https://glossary.magento.com/extension).
 
 ### Posibles soluciones
 
 * Instale la extensión de Adobe Commerce 2 correspondiente.
-* Ignore el atributo que causa el problema.    Para ello, añada el atributo a `ignore` grupo en el `eav-attribute-groups.xml.dist` archivo.
-* Añadir asignación de clase mediante `class-map.xml.dist` archivo.
+* Ignore el atributo que causa el problema.    Para ello, agregue el atributo al grupo `ignore` en el archivo `eav-attribute-groups.xml.dist`.
+* Agregue la asignación de clase mediante el archivo `class-map.xml.dist`.
 
 ## Error de restricción de clave externa
 
@@ -101,13 +101,13 @@ Foreign key <KEY_NAME> constraint fails on source database. Orphan records id: <
 
 ### Causa
 
-Faltan registros de base de datos en el `parent_table` a la que el `field_id` de la `child_table` está apuntando a.
+Faltan registros de base de datos en el `parent_table` al que señala el `field_id` del `child_table`.
 
 ### Posible solución
 
-Elimine los registros del `child_table` , si no los necesita.
+Elimine los registros de `child_table` si no los necesita.
 
-Para conservar los registros, deshabilite la variable `Data Integrity Step` mediante la modificación de la herramienta de migración de datos `config.xml` .
+Para conservar los registros, deshabilite `Data Integrity Step` modificando `config.xml` de la herramienta de migración de datos
 
 ## Duplicados en reescrituras de URL
 
@@ -119,13 +119,13 @@ Request path: towel.html Store ID: 2 Target path: catalog/product/view/id/12
 
 ### Causa
 
-El `Target path` en una reescritura de URL debe especificarse mediante un par único de `Request path` + `Store ID` . Este error informa de dos entradas que utilizan el mismo `Request path` + `Store ID` par con dos diferentes `Target path` valores.
+`Target path` en una reescritura de URL debe estar especificado por un par único de `Request path` + `Store ID` Este error informa de dos entradas que utilizan el mismo par `Request path` + `Store ID` con dos valores `Target path` diferentes.
 
 ### Posible solución
 
-Habilite la `auto_resolve_urlrewrite_duplicates` en su `config.xml` archivo.
+Habilite la opción `auto_resolve_urlrewrite_duplicates` en el archivo `config.xml`.
 
-Esta configuración agrega una cadena hash a los registros en conflicto de [URL](https://glossary.magento.com/url) reescribe y muestra el resultado de la resolución en la interfaz de la línea de comandos.
+Esta configuración agrega una cadena hash a los registros en conflicto de [reescrituras de URL](https://glossary.magento.com/url) y muestra el resultado de la resolución en la interfaz de línea de comandos.
 
 ## Discrepancia de entidades {#mismatch-of-entities}
 
@@ -143,7 +143,7 @@ Los registros que faltan se producen cuando un cliente realiza un pedido durante
 
 ### Posible solución
 
-Ejecute la herramienta de migración de datos en `Delta` modo para transferir cambios incrementales.
+Ejecute la herramienta de migración de datos en el modo `Delta` para transferir los cambios incrementales.
 
 ## Deltalog no está instalado {#deltalog-is-not-installed}
 
@@ -155,9 +155,9 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### Causa
 
-Este error se produce durante [migración incremental](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-delta.html) (en nuestra documentación para desarrolladores) de cambios en los datos. Significa tablas deltalog (con prefijo ) `m2_cl_*`) no se encontraron en la base de datos de Adobe Commerce 1. La herramienta instala estas tablas durante [migración de datos](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-data.html) (en nuestra documentación para desarrolladores), así como déclencheur de bases de datos que realizan un seguimiento de los cambios y rellenan tablas de cuadros de diálogo.
+Este error se produce durante la [migración incremental](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-delta.html) (en nuestra documentación para desarrolladores) de cambios en los datos. Significa que no se encontraron tablas deltalog (con prefijo `m2_cl_*`) en la base de datos de Adobe Commerce 1. La herramienta instala estas tablas durante la [migración de datos](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-data.html) (en nuestra documentación para desarrolladores), así como los déclencheur de la base de datos que realizan un seguimiento de los cambios y rellenan las tablas de cuadros de diálogo.
 
-Una de las razones del error podría ser que está intentando migrar de un *copia* de su tienda de Adobe Commerce 1 activa, no de la propia tienda activa. Cuando se realiza una copia desde un almacén de Adobe Commerce 1 activo que nunca se ha migrado, la copia no contiene los déclencheur ni las tablas de deltalog adicionales necesarias para completar una migración de delta, por lo que la migración falla. La herramienta de migración de datos NO realiza comparaciones entre las bases de datos de AC1 y AC2 para migrar las diferencias. En su lugar, la herramienta utiliza los déclencheur y las tablas de deltalog instalados durante la primera migración para realizar migraciones delta posteriores. En tal caso, la copia de la base de datos de Adobe Commerce 1 activa no contendrá los déclencheur ni las tablas de cuadros de diálogo de deltalog que la herramienta de migración de datos utiliza para realizar una migración.
+Una de las razones del error podría ser que está intentando migrar desde una *copia* de su tienda Adobe Commerce 1 activa, no desde la propia tienda Live. Cuando se realiza una copia desde un almacén de Adobe Commerce 1 activo que nunca se ha migrado, la copia no contiene los déclencheur ni las tablas de deltalog adicionales necesarias para completar una migración de delta, por lo que la migración falla. La herramienta de migración de datos NO realiza comparaciones entre las bases de datos de AC1 y AC2 para migrar las diferencias. En su lugar, la herramienta utiliza los déclencheur y las tablas de deltalog instalados durante la primera migración para realizar migraciones delta posteriores. En tal caso, la copia de la base de datos de Adobe Commerce 1 activa no contendrá los déclencheur ni las tablas de cuadros de diálogo de deltalog que la herramienta de migración de datos utiliza para realizar una migración.
 
 ### Posible solución
 

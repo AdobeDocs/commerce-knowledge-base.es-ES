@@ -11,36 +11,36 @@ ht-degree: 0%
 
 ---
 
-# ACSD-49849: el correo electrónico del cliente se sustituye por [!DNL PayPal] email
+# ACSD-49849: el correo electrónico del cliente se ha reemplazado por [!DNL PayPal] correo electrónico
 
-El parche ACSD-49849 corrige el problema en el que el correo electrónico de un cliente se sustituye por un [!DNL PayPal's] correo electrónico al realizar un pedido con [!DNL PayPal Express] mediante GraphQL. Este parche está disponible cuando la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.29 está instalado. El ID del parche es ACSD-49849. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.6.
+El parche ACSD-49849 corrige el problema en el cual el correo electrónico de un cliente se reemplaza con un correo electrónico de [!DNL PayPal's] al realizar un pedido con [!DNL PayPal Express] a través de GraphQL. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.29. El ID del parche es ACSD-49849. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.6.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.5-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.7 - 2.4.5-p2
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-El correo electrónico de un cliente se sustituye por un [!DNL PayPal's] correo electrónico al realizar un pedido con [!DNL PayPal Express] mediante GraphQL.
+El correo electrónico de un cliente se reemplaza con un correo electrónico [!DNL PayPal's] al realizar un pedido con [!DNL PayPal Express] a través de GraphQL.
 
 <u>Pasos a seguir</u>:
 
-1. Ir a **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Payments]**.
-1. Habilitar y configurar [!DNL PayPal Express] y establecer **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]**.
-1. Ir a **[!UICONTROL Catalog]** > **[!UICONTROL Products]** y cree un producto sencillo.
-1. Complete el cierre de compra de invitados con GraphQL. Para obtener más información, consulte [Tutorial de cierre de compra de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) en la documentación para desarrolladores de Adobe Commerce.
-1. Uso [!DNL PayPal Express] como forma de pago.
-1. Tenga en cuenta el correo electrónico utilizado en el paso donde [configurar el correo electrónico para el carro de compras](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/set-email-address/) en la documentación para desarrolladores de Adobe Commerce.
+1. Vaya a **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Payments]**.
+1. Habilite y configure [!DNL PayPal Express] y establezca **[!UICONTROL Payment Action]** = **[!UICONTROL Sale]**.
+1. Vaya a **[!UICONTROL Catalog]** > **[!UICONTROL Products]** y cree un producto simple.
+1. Complete el cierre de compra de invitados con GraphQL. Para obtener más información, consulte el [tutorial de cierre de compra de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) en la documentación para desarrolladores de Adobe Commerce.
+1. Usar [!DNL PayPal Express] como método de pago.
+1. Tenga en cuenta el correo electrónico que utilizó en el paso en el que [configuró su correo electrónico para el carro de compras](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/set-email-address/) en la documentación para desarrolladores de Adobe Commerce.
 1. Una vez realizado el pedido, vaya al administrador de Adobe Commerce y compruebe el correo electrónico en el pedido creado.
 
 <u>Resultados esperados</u>:
@@ -49,20 +49,20 @@ El correo electrónico es el mismo que se establece durante el cierre de compra.
 
 <u>Resultados reales</u>:
 
-El correo electrónico configurado durante la desprotección se anula con el correo electrónico configurado en la [!DNL PayPal] cuenta.
+El correo electrónico establecido durante la desprotección se anula con el correo electrónico establecido en la cuenta de [!DNL PayPal].
 
 ## Aplicar el parche
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en el [!DNL Quality Patches Tool] guía.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce sobre infraestructura en la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en el [!DNL Quality Patches Tool] guía.
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

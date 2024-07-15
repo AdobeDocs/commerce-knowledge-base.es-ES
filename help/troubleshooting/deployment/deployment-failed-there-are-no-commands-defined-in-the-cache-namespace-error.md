@@ -42,11 +42,11 @@ Se ha implementado correctamente.
 
 <u>Resultados reales</u>:
 
-No se ha implementado correctamente. En los registros se ve un error de implementación con un mensaje similar al siguiente *No hay comandos en el espacio de nombres de caché*.
+No se ha implementado correctamente. En los registros ve un error de implementación con un mensaje similar al siguiente *No hay comandos en el espacio de nombres de la caché*.
 
 ### Causa
 
-El **core_config_data** contiene configuraciones para un ID de tienda o un ID de sitio web que ya no existe en la base de datos. Esto ocurre cuando ha importado una copia de seguridad de base de datos desde otra instancia o entorno y las configuraciones de esos ámbitos permanecen en la base de datos aunque se hayan eliminado los almacenes o sitios web asociados.
+La tabla **core_config_data** contiene configuraciones para un identificador de tienda o sitio web que ya no existe en la base de datos. Esto ocurre cuando ha importado una copia de seguridad de base de datos desde otra instancia o entorno y las configuraciones de esos ámbitos permanecen en la base de datos aunque se hayan eliminado los almacenes o sitios web asociados.
 
 ### Solución
 
@@ -82,7 +82,7 @@ Para resolver este problema, identifique las filas no válidas que quedan en esa
 
    `bin/magento`
 
-   Si obtiene un error como el siguiente que indica que el sitio web con ID X solicitado no se encontró, tendrá configuraciones restantes en la base de datos de sitios web, así como tiendas que se han eliminado.
+   Si obtiene un error como el siguiente que indica que no se encontró el sitio web con el ID X solicitado, tiene configuraciones restantes        en la base de datos desde sitios web, así como tiendas que se han eliminado.
 
    ```
    In WebsiteRepository.php line 110:
@@ -102,7 +102,7 @@ Para resolver este problema, identifique las filas no válidas que quedan en esa
    delete from core_config_data where scope='websites' and scope_id not in (select website_id from store_website);
    ```
 
-Para confirmar que la solución funcionó, ejecute el `bin/magento` de nuevo. Ya no debería ver los errores y puede implementarlos correctamente.
+Para confirmar que la solución funcionó, ejecute de nuevo el comando `bin/magento`. Ya no debería ver los errores y puede implementarlos correctamente.
 
 ## Lectura relacionada
 

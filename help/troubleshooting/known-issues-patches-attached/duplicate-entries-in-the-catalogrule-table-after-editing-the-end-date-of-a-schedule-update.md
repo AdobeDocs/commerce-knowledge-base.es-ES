@@ -13,33 +13,33 @@ ht-degree: 0%
 
 # Duplicar entradas en la tabla de catálogos después de editar la fecha de finalización de una actualización de programación
 
-Este artículo proporciona un parche para el problema conocido de Adobe Commerce 2.2.3 en el que editar la fecha u hora de finalización de una actualización programada de regla de precios de catálogo resulta en añadir entradas duplicadas a `catalogrule` tabla y errores en la `catalogrule_rule` (Producto de regla de catálogo) reindexador.
+Este artículo proporciona un parche para el problema conocido de Adobe Commerce 2.2.3 en el que editar la fecha u hora de finalización de una actualización de programación de reglas de precios de catálogo resulta en agregar entradas duplicadas a la tabla `catalogrule` y errores en el reíndice del indexador `catalogrule_rule` (producto de reglas de catálogo).
 
 ## Problema
 
-Al cambiar la fecha u hora de finalización de una actualización programada de regla de precios de catálogo existente, se crean registros duplicados en la variable `catalogrule` tabla de base de datos. Como resultado, la variable `catalogrule_rule` reindex genera el siguiente error en el registro de excepciones: *Ya existe un elemento con el mismo ID*.
+Al cambiar la fecha u hora de finalización de una actualización de programación de reglas de precios de catálogo existente, se crean entradas duplicadas en la tabla de base de datos `catalogrule`. Como resultado, el reíndice `catalogrule_rule` produce el siguiente error en el registro de excepciones: *Ya existe un elemento con el mismo identificador*.
 
 <u>Pasos a seguir</u>:
 
-Requisitos previos: `catalogrule_rule` el indexador se ha establecido en *[Actualización según lo programado](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)* modo.
+Requisitos previos: el indizador `catalogrule_rule` está establecido en el modo *[Actualizar según lo programado](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/indexer-configuration.html)*.
 
-1. En el Administrador de Commerce, cree una nueva regla de precio de catálogo en **Marketing** > **Promociones** > **Regla de precio de catálogo**.
-1. En el **Regla de precio de catálogo** cuadrícula, haga clic en **Editar** y programe una nueva actualización y establezca **Estado** hasta *Activo.*
-1. Clic **Ver/Editar** junto a la actualización recién creada y cambie la fecha de finalización a una hora anterior.
+1. En el administrador de Commerce, cree una nueva regla de precio de catálogo en **Marketing** > **Promociones** > **Regla de precio de catálogo**.
+1. En la cuadrícula **Regla de precio de catálogo**, haz clic en **Editar**, programa una nueva actualización y establece **Estado** en *Activo.*
+1. Haga clic en **Ver/Editar** junto a la actualización recién creada y cambie la fecha de finalización a una hora anterior.
 1. Guarde la actualización.
-1. Ejecute el comando reindex para `catalogrule_rule` indexador.
+1. Ejecute el comando reindex para el indizador `catalogrule_rule`.
 
 <u>Resultado esperado</u>:
 
-El `catalogrule_rule` el indexador se ha reindexado correctamente. No hay entradas duplicadas en `catalogrule` tabla.
+El indizador `catalogrule_rule` se ha reindexado correctamente. No hay entradas duplicadas en la tabla `catalogrule`.
 
 <u>Resultado real</u>:
 
-Reindex falla con el siguiente error: *Ya existe un elemento con el mismo ID*, porque hay entradas duplicadas en la variable `catalogrule` tabla.
+Reindex falla con el siguiente error: *Ya existe un elemento con el mismo Id.*, porque hay entradas duplicadas en la tabla `catalogrule`.
 
 ## Solución
 
-Para solucionar el problema, debe aplicar el parche adjunto y eliminar las entradas duplicadas existentes. Consulte la [Eliminar entradas duplicadas](#remove) para obtener más información sobre cómo comprobar si existen los duplicados y eliminarlos.
+Para solucionar el problema, debe aplicar el parche adjunto y eliminar las entradas duplicadas existentes. Consulte la sección [Quitar entradas duplicadas](#remove) para obtener detalles sobre cómo comprobar si existen entradas duplicadas y eliminarlas.
 
 ## Parche
 
@@ -60,7 +60,7 @@ El parche también es compatible (pero es posible que no resuelva el problema) c
 
 ## Cómo aplicar el parche
 
-Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones en nuestra base de conocimiento de asistencia.
+Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones en nuestra base de conocimiento de soporte.
 
 ## Eliminar entradas duplicadas {#remove}
 
@@ -80,7 +80,7 @@ Siga estos pasos para localizar las entradas duplicadas y eliminarlas:
 
    ![table_results1.png](assets/table_results1.png)
 
-   Tenga en cuenta que en determinadas tablas el nombre del campo con ID de entidad será diferente de `entity_id`. Por ejemplo, en la variable `cms_page` mesa, sería... `page_id` en lugar de `entity_id`.
+   Tenga en cuenta que en determinadas tablas el nombre del campo con ID de entidad será diferente de `entity_id`. Por ejemplo, en la tabla `cms_page`, sería `page_id` en lugar de `entity_id`.
 
 1. A continuación, debe echar un vistazo más de cerca a los duplicados y comprender cuáles deben eliminarse. Utilice una consulta similar a la siguiente para ver los duplicados. Reemplace el nombre de tabla, el nombre del ID de entidad y el valor según los resultados recibidos en el paso anterior.
 
@@ -92,7 +92,7 @@ Siga estos pasos para localizar las entradas duplicadas y eliminarlas:
 
    ![table_results2.png](assets/table_results2.png)
 
-   El `created_in` y `updated_in` Los valores de deben seguir este patrón: `created_in` el valor de la fila actual es igual al `updated_in` en la fila anterior. Además, la variable **primera fila** debe contener created\_in = 1 y la variable **última fila** debe contener updated\_in = 2147483647. (Si solo hay 1 fila, debe ver created\_in=1 **y** actualizado\_in=2147483647). Las filas para las que se ha roto este patrón deben eliminarse. En nuestro ejemplo, sería la fila con `row_id` =2052 como segunda y tercera filas comparten el mismo valor para created_in: 1540837826, lo que no debería suceder.
+   Los valores `created_in` y `updated_in` deben seguir este patrón: el valor `created_in` de la fila actual es igual al valor `updated_in` de la fila anterior. Además, la **primera fila** debe contener created\_in = 1 y la **última fila** debe contener updated\_in = 2147483647. (Si solo hay 1 fila, debe ver created\_in=1 **and** updated\_in=2147483647). Las filas para las que se ha roto este patrón deben eliminarse. En nuestro ejemplo, sería la fila con `row_id` =2052, ya que la segunda y la tercera filas comparten el mismo valor para created_in: 1540837826, lo que no debería suceder.
 
 1. Elimine el duplicado con una consulta similar a la siguiente. Reemplace el nombre de tabla, el nombre del ID de entidad y el valor según los resultados recibidos en los pasos anteriores:
 
@@ -106,11 +106,11 @@ Siga estos pasos para localizar las entradas duplicadas y eliminarlas:
    bin/magento cache:clean
    ```
 
-   o en el Administrador de Commerce, en **Sistema** > **Herramientas** > **Administración de caché**.
+   o en el Administrador de Commerce en **Sistema** > **Herramientas** > **Administración de caché**.
 
 ## Vínculos útiles en nuestra documentación para desarrolladores
 
 * [Aplicar parches personalizados a Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html)
-* [Visualización y administración de registros de Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html))
+* [Ver y administrar registros para Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html))
 
 ## Archivos adjuntos

@@ -21,7 +21,7 @@ Este artículo describe un problema conocido de la versión 2.4.2 local de Adobe
 
 ## Problema
 
-La imagen del producto se guarda en `s3` contenedor, pero no se sincroniza con el `pub/media` directorio. Este problema solo se produce cuando se utilizan ambos:
+La imagen del producto se guardó en el bloque `s3`, pero no se sincronizó con el directorio `pub/media`. Este problema solo se produce cuando se utilizan ambos:
 
 * Nginx habilitado para el sitio para cambiar el tamaño de las imágenes
 * AWS `s3` como almacenamiento de medios
@@ -32,10 +32,10 @@ Adobe Commerce instalado con Nginx.
 
 <u>Pasos a seguir</u>:
 
-1. Configuración de Adobe Commerce para utilizar AWS `s3` como almacenamiento de medios.
-1. Configure Nginx con el `nginx.conf.sample` archivo de configuración proporcionado en el directorio de instalación de Adobe Commerce y un host virtual Nginx. Consulte [Configuración De Nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) en nuestra documentación para desarrolladores.
+1. Configure Adobe Commerce para que use AWS `s3` como almacenamiento de medios.
+1. Configure Nginx usando el archivo de configuración `nginx.conf.sample` proporcionado en el directorio de instalación de Adobe Commerce y un host virtual Nginx. Consulte [Configurar Nginx](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/nginx.html#configure-nginx-ubuntu) en nuestra documentación para desarrolladores.
 1. Cree un producto sencillo con una imagen de producto.
-1. Nginx tiene una configuración sin comentarios para cambiar el tamaño de la imagen en `nginx.conf.sample` similar a esto:
+1. Nginx tiene una configuración sin comentarios para el cambio de tamaño de la imagen en `nginx.conf.sample` similar a esta:
 
 ```conf
 load_module /etc/nginx/modules/ngx_http_image_filter_module.so;

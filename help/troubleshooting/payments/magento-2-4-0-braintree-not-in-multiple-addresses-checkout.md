@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Este artículo proporciona una solución para un problema conocido de Adobe Commerce 2.4.0 en el que los métodos de pago del Braintree no se incluyen al trabajar con el cierre de compra de varias direcciones. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.1.
 
-Nota: Adobe Commerce recomienda utilizar [Extensión de Braintree de Commerce Marketplace](https://marketplace.magento.com/paypal-module-braintree.html) para las versiones 2.3 y posteriores de, a fin de mantener la conformidad con el PSD. La extensión no ofrece la funcionalidad de cierre de compra de varias direcciones.
+Nota: Adobe Commerce recomienda usar la [extensión de Braintree de Commerce Marketplace](https://marketplace.magento.com/paypal-module-braintree.html) para las versiones 2.3 y posteriores con el fin de mantener el cumplimiento de PSD. La extensión no ofrece la funcionalidad de cierre de compra de varias direcciones.
 
 ## Productos y versiones afectados
 
@@ -34,10 +34,10 @@ Se utiliza la integración del Braintree principal.
 1. Inicie sesión como cliente.
 1. Añadir un producto al carro de compras.
 1. Abra el carro de compras.
-1. Prensa **Ver y editar el carro**.
-1. Prensa **Desproteger con varias direcciones**.
-1. Prensa **Ir a Información de envío**.
-1. Prensa **Continuar a Información de facturación**.
+1. Pulse **Ver y editar carro**.
+1. Presione **Desproteger con varias direcciones**.
+1. Pulse **Ir a la información de envío**.
+1. Pulse **Continuar con la información de facturación**.
 
 <u>Resultado esperado</u>:
 

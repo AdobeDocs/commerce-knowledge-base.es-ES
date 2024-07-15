@@ -17,7 +17,7 @@ Este artículo proporciona un parche para el problema conocido de Adobe Commerce
 
 ## Problema
 
-Los clientes (empresas) pueden crear correctamente una cuenta de empresa en el sitio, pero obtener la *&quot;No existe esa entidad con customerId =&quot;* y *&quot;Aún no tiene una cuenta de compañía&quot;* mensajes de error. También pueden obtener el *&quot;500 Error interno del servidor&quot;* al intentar acceder a la página Perfil de la compañía.
+Los clientes (empresas) pueden crear correctamente una cuenta de empresa en el sitio, pero obtener los mensajes de error *&quot;No existe esa entidad con customerId = &quot;* y *&quot;Aún no tiene una cuenta de empresa&quot;*. También pueden obtener el *&quot;Error interno del servidor 500&quot;* al intentar obtener acceso a la página Perfil de la compañía.
 
 ## Parche
 

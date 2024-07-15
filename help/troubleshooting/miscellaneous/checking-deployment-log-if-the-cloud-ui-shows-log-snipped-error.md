@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Comprobación del registro de implementación si la IU de la nube tiene *registro recortado* error
+# Comprobando el registro de implementación si la IU de la nube tiene *error de registro recortado*
 
-Este artículo proporciona una solución para el problema en el que Adobe Commerce en la interfaz de usuario de la infraestructura en la nube muestra el *registro recortado porque era demasiado largo* mensaje de error al intentar ver el registro de implementación en la interfaz de usuario del proyecto de la nube. (No se aplica al [Consola de Adobe Commerce Cloud](https://console.adobecommerce.com/).)
+Este artículo proporciona una solución para el problema en el que Adobe Commerce en la interfaz de usuario de la infraestructura en la nube muestra el *registro recortado porque era demasiado largo* mensaje de error al intentar ver el registro de implementación en la interfaz de usuario del proyecto en la nube. (No se aplica a [la consola de Adobe Commerce Cloud](https://console.adobecommerce.com/)).
 
 ## Productos afectados
 
@@ -25,16 +25,16 @@ Al intentar ver el registro de implementación en la interfaz de usuario del pro
 
 ## Pasos a seguir
 
-1. Vaya a la dirección URL del proyecto y haga clic en **Estado** de la implementación en cuestión.
-1. Si el registro es demasiado largo para mostrarlo en la interfaz de usuario, se mostrará el siguiente mensaje de error: *registro recortado porque era demasiado largo*.
+1. Vaya a la dirección URL del proyecto y haga clic en el **Estado** de la implementación en cuestión.
+1. Si el registro es demasiado largo para mostrarlo en la interfaz de usuario, se mostrará el mensaje de error: *registro recortado porque es demasiado largo*.
 
 ## Causa
 
-Tenga en cuenta que el registro que se muestra en la interfaz de usuario no debe tratarse como la fuente fiable, especialmente si descubre que el sitio no responde o no funciona correctamente después de que la implementación se haya enumerado con un estado de éxito. También debe comprobarlo con los registros del servidor. Consulte [Visualización y administración de registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) en nuestra documentación para desarrolladores.
+Tenga en cuenta que el registro que se muestra en la interfaz de usuario no debe tratarse como la fuente fiable, especialmente si descubre que el sitio no responde o no funciona correctamente después de que la implementación se haya enumerado con un estado de éxito. También debe comprobarlo con los registros del servidor. Consulte [Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) en nuestra documentación para desarrolladores.
 
 ## Solución
 
-1. Asegúrese de que tiene [CLI de Magento Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) instalado en su entorno local de.
+1. Asegúrese de que tiene [CLI de Magento Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) instalado en su entorno local.
 1. Ejecute el siguiente comando:
 
    ```bash
@@ -66,5 +66,5 @@ Tenga en cuenta que el registro que se muestra en la interfaz de usuario no debe
 
 ## Lecturas relacionadas en nuestra documentación para desarrolladores:
 
-* [Adobe Commerce en la infraestructura en la nube > Creación e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
-* [Adobe Commerce en la infraestructura de la nube > Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+* [Adobe Commerce en infraestructura en la nube > Generar e implementar](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
+* [Adobe Commerce en infraestructura de nube > Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)

@@ -1,6 +1,6 @@
 ---
-title: '''ACSD-54965: [!UICONTROL Visual Merchandising] la rejilla no muestra el stock correcto"'
-description: Aplique el parche ACSD-54965 para solucionar el problema de Adobe Commerce donde la variable [!UICONTROL Visual Merchandising] la cuadrícula no muestra las existencias correctas cuando se asigna un producto a las existencias personalizadas.
+title: "ACSD-54965: la cuadrícula [!UICONTROL Visual Merchandising] no muestra las existencias correctas"
+description: Aplique el parche ACSD-54965 para corregir el problema de Adobe Commerce en el que la cuadrícula [!UICONTROL Visual Merchandising] no muestra las existencias correctas cuando se asigna un producto a las existencias personalizadas.
 feature: Merchandising, Categories
 role: Admin, Developer
 exl-id: 13d98f55-ca2c-4064-b66f-ab2cdeb37382
@@ -11,27 +11,27 @@ ht-degree: 0%
 
 ---
 
-# ACSD-54965: [!UICONTROL Visual Merchandising] la cuadrícula no muestra las existencias correctas
+# ACSD-54965: la cuadrícula [!UICONTROL Visual Merchandising] no muestra las existencias correctas
 
-El parche ACSD-54965 corrige el problema en el que la variable [!UICONTROL Visual Merchandising] la cuadrícula no muestra las existencias correctas cuando se asigna un producto a las existencias personalizadas. Este parche está disponible cuando la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.45 está instalado. El ID del parche es ACSD-54965. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
+El parche ACSD-54965 corrige el problema en el que la cuadrícula [!UICONTROL Visual Merchandising] no muestra las existencias correctas cuando se asigna un producto a las existencias personalizadas. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.45. El ID del parche es ACSD-54965. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.5-p2
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.5 - 2.4.5-p5
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-El [!UICONTROL Visual Merchandising] la cuadrícula no muestra las existencias correctas cuando se asigna un producto a las existencias personalizadas.
+La cuadrícula [!UICONTROL Visual Merchandising] no muestra las existencias correctas cuando se asigna un producto a las existencias personalizadas.
 
 <u>Pasos a seguir</u>:
 
@@ -41,28 +41,28 @@ El [!UICONTROL Visual Merchandising] la cuadrícula no muestra las existencias c
    * Un producto solo con el stock personalizado.
    * Un producto solo con las existencias predeterminadas.
 1. Añada estos productos a una categoría.
-1. Vaya a la [!UICONTROL visual Merchandising] cuadrícula (*[!UICONTROL Products in Category]*).
+1. Ir a la cuadrícula [!UICONTROL visual Merchandising] (*[!UICONTROL Products in Category]*).
 
 <u>Resultados reales</u>:
 
-En el *[!UICONTROL All Store Views]* ámbitos, el producto con existencias personalizadas no muestra ninguna cantidad. Es solo cuando la variable *[!UICONTROL Default Store View]* ámbito seleccionado, el stock personalizado muestra la cantidad del producto.
+En los ámbitos *[!UICONTROL All Store Views]*, el producto con existencias personalizadas no muestra ninguna cantidad. Solo cuando se selecciona el ámbito *[!UICONTROL Default Store View]*, el inventario personalizado muestra la cantidad del producto.
 
 <u>Resultados esperados</u>:
 
-La cuadrícula muestra toda la información de stock si el ámbito es *[!UICONTROL All Store Views]*.
+La cuadrícula muestra toda la información de existencias si el ámbito es *[!UICONTROL All Store Views]*.
 
 ## Aplicar el parche
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en el [!DNL Quality Patches Tool] guía.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce sobre infraestructura en la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en el [!DNL Quality Patches Tool] guía.
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

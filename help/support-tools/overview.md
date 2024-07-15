@@ -37,4 +37,4 @@ Adobe Commerce ofrece una variedad de herramientas de soporte que le ayudan y le
    * [Alertas administradas para Adobe Commerce: alerta de advertencia de Apdex](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md)
    * [Alertas administradas para Adobe Commerce: alerta de advertencia de CPU](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-cpu-warning-alert.md)
 * Herramienta de evaluación del sitio de Commerce
-   * [Evaluación del sitio de Commerce](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html)
+   * [Evaluación del sitio Commerce](https://experienceleague.adobe.com/tools/commerce-site-assessment/index.html)

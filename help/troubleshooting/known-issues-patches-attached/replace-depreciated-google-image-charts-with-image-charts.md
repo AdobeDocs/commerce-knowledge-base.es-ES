@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Reemplazar gráficos de imágenes de Google depreciados por gráficos de imágenes
 
-La mayoría de las ediciones y versiones de Adobe Commerce utilizan actualmente [Gráficos de imagen de Google](https://developers.google.com/chart/image/) para procesar gráficos estáticos en los paneles de administración. A partir del 14 de marzo de 2019, Google dejará de admitir gráficos de imágenes de Google. Para resolver este problema, proporcionamos un parche para reemplazar los gráficos de imágenes de Google por [Image-Charts](https://www.image-charts.com/) servicio gratuito.
+La mayoría de las ediciones y versiones de Adobe Commerce actualmente usan [Google Image Charts](https://developers.google.com/chart/image/) para procesar gráficos estáticos en los paneles de administración. A partir del 14 de marzo de 2019, Google dejará de admitir gráficos de imágenes de Google. Para resolver este problema, proporcionamos un parche para reemplazar los gráficos de imágenes de Google con [gráficos de imágenes](https://www.image-charts.com/) servicio gratuito.
 
 ## Versiones afectadas
 
@@ -26,7 +26,7 @@ La mayoría de las ediciones y versiones de Adobe Commerce utilizan actualmente 
 
 ## Problema
 
-Google dejó de admitir gráficos de imágenes de Google el 14 de marzo de 2019. Los usuarios de Adobe Commerce 1.X y Adobe Commerce 2.2.X de todas las versiones no podrán ver los gráficos estáticos a menos que descarguen y apliquen el parche y sustituyan los gráficos de imágenes de Google por la solución Image-Charts. Los gráficos mostrados tendrán el mismo diseño y funcionalidad que los gráficos de imágenes de Google a través del servicio de cuenta gratuita Image-Charts con un [RGPD](https://www.image-charts.com/data-processing-addendum.html) directiva de privacidad de cumplimiento. Para ver opciones adicionales, consulte [Image-Charts](https://www.image-charts.com/).
+Google dejó de admitir gráficos de imágenes de Google el 14 de marzo de 2019. Los usuarios de Adobe Commerce 1.X y Adobe Commerce 2.2.X de todas las versiones no podrán ver los gráficos estáticos a menos que descarguen y apliquen el parche y sustituyan los gráficos de imágenes de Google por la solución Image-Charts. Los gráficos mostrados tendrán el mismo diseño y funcionalidad que los gráficos de imágenes de Google a través del servicio de cuenta gratuita Image-Charts con una política de privacidad de cumplimiento de [RGPD](https://www.image-charts.com/data-processing-addendum.html). Para obtener más opciones, vea [Image-Charts](https://www.image-charts.com/).
 
 ## Solución
 
@@ -34,14 +34,14 @@ Para poder ver gráficos estáticos en el administrador de Commerce, descargue y
 
 ### Adobe Commerce local
 
-1. Guarde el [adjunto MAGETWO-98833\_composer\_patch-2019-04-15-04-38-57.patch](assets/MAGETWO-98833_composer_patch-2019-04-15-04-38-57.patch.zip) aplique el parche y cárguelo en el directorio raíz de Adobe Commerce.
+1. Guarde el parche [adjunto MAGETWO-98833\_composer\_patch-2019-04-15-04-38-57.patch](assets/MAGETWO-98833_composer_patch-2019-04-15-04-38-57.patch.zip) y cárguelo en el directorio raíz de Adobe Commerce.
 1. Ejecute el siguiente comando SSH, habiendo sustituido el nombre del parche por uno real:
 
    ```git
    patch -p1 < MAGETWO-98833_composer_patch-2019-04-15-04-38-57.patch
    ```
 
-   Si el comando anterior no funciona, intente utilizar `-p2` en lugar de `-p1`.)
+   Si el comando anterior no funciona, intente usar `-p2` en lugar de `-p1`.)
 
 1. Para que se reflejen los cambios, actualice la caché en el Administrador en **Sistema** > **Administración de caché**.
 
@@ -51,8 +51,8 @@ Para los comerciantes de Cloud, el parche se incluirá en la actualización de h
 
 ### Magento 2 Open Source
 
-1. Ir a [https://magento.com/tech-resources/download\#download2291](https://magento.com/tech-resources/download#download2291).
-1. En el **Seleccione el formato** , seleccione la versión de composición y haga clic en **Descargar**.
+1. Vaya a [https://magento.com/tech-resources/download\#download2291](https://magento.com/tech-resources/download#download2291).
+1. En la lista desplegable **Seleccione su formato**, seleccione la versión de composición y haga clic en **Descargar**.
 1. Cargue el parche en el directorio raíz de Adobe Commerce.
 1. Ejecute el siguiente comando SSH, habiendo sustituido el nombre del parche por uno real:
 
@@ -60,7 +60,7 @@ Para los comerciantes de Cloud, el parche se incluirá en la actualización de h
    patch -p1 < MAGETWO-98833_composer_patch-2019-04-15-04-37-48.patch
    ```
 
-   (Si el comando anterior no funciona, intente utilizar `-p2` en lugar de `-p1`.)
+   (Si el comando anterior no funciona, intente usar `-p2` en lugar de `-p1`).
 
 1. Para que se reflejen los cambios, actualice la caché en el Administrador en **Sistema** > **Administración de caché**.
 
@@ -68,29 +68,29 @@ Para los comerciantes de Cloud, el parche se incluirá en la actualización de h
 
 Siga estos pasos para descargar y aplicar el parche:
 
-1. Guarde el [adjunto MPERF-10509-EE-2019-03-13-06-32-19.diff](assets/MPERF-10509-EE-2019-03-13-06-32-19.diff.zip) aplique el parche y cárguelo en el directorio raíz de Adobe Commerce.
+1. Guarde el parche [adjunto MPERF-10509-EE-2019-03-13-06-32-19.diff](assets/MPERF-10509-EE-2019-03-13-06-32-19.diff.zip) y cárguelo en el directorio raíz de Adobe Commerce.
 1. Ejecute el siguiente comando SSH:
 
    ```git
    patch -p1 < MPERF-10509-EE-2019-03-13-06-32-19.diff
    ```
 
-   (Si el comando anterior no funciona, intente utilizar `-p2` en lugar de `-p1`.)
+   (Si el comando anterior no funciona, intente usar `-p2` en lugar de `-p1`).
 
 1. Para que se reflejen los cambios, actualice la caché en el Administrador en **Sistema** > **Administración de caché**.
 
-### Magento 1 Código abierto
+### Magento 1 Abrir Source
 
 Siga estos pasos para descargar y aplicar el parche:
 
-1. Clic [**este vínculo**](https://magento.com/tech-resources/download#download2283) para localizar el parche de gráficos del tablero de administración.
+1. Haga clic en [**este vínculo**](https://magento.com/tech-resources/download#download2283) para localizar el parche de gráficos del tablero de administración.
 1. Seleccionar
 
    ```git
    MPERF-10509.diff
    ```
 
-   desde el **Seleccione el formato** y haga clic en Descargar.
+   en la lista desplegable **Seleccione su formato** y haga clic en Descargar.
 
 1. Cargue el archivo en el directorio raíz de Adobe Commerce.
 1. Ejecute el siguiente comando SSH:
@@ -99,7 +99,7 @@ Siga estos pasos para descargar y aplicar el parche:
    patch -p1 < MPERF-10509.diff
    ```
 
-   (Si el comando anterior no funciona, intente utilizar `-p2` en lugar de `-p1`.)
+   (Si el comando anterior no funciona, intente usar `-p2` en lugar de `-p1`).
 
 1. Para que se reflejen los cambios, actualice la caché en el Administrador en **Sistema** > **Administración de caché**.
 

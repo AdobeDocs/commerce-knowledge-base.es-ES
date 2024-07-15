@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce 2.4.0: error 404 al eliminar los puntos de recompensa en el cierre de compra de envío múltiple
 
-Este artículo proporciona una solución para un problema conocido en Adobe Commerce 2.4.0 para un &quot;*404 No encontrado*&quot;error de página web al eliminar puntos de recompensa en una página de pago de envío múltiple. Actualmente, en la página de pago multienvío, al intentar eliminar los puntos de recompensa que se utilizaban para pagar un pedido, un &quot;*404 No encontrado* Se muestra la página &quot; en lugar de la cancelación correcta de puntos de recompensa. Este problema se resolverá en con un parche de Adobe Commerce 2.4.1.
+Este artículo proporciona una solución para un problema conocido en Adobe Commerce 2.4.0 por un error de página web &quot;*404 no encontrado*&quot; al eliminar puntos de recompensa en una página de pago de envío múltiple. Actualmente, en la página de pago multienvío, al intentar eliminar los puntos de recompensa que se usaron para pagar un pedido, se muestra una página &quot;*404 no encontrado*&quot; en lugar de la cancelación correcta de puntos de recompensa. Este problema se resolverá en con un parche de Adobe Commerce 2.4.1.
 
 ## Productos y versiones afectados
 
@@ -24,30 +24,30 @@ Este artículo proporciona una solución para un problema conocido en Adobe Comm
 <u>Pasos a seguir</u>
 
 1. Vaya a la tienda e inicie sesión como cliente.
-1. Añada al menos dos productos a **Carro de compras**.
-1. Abra el **Minicarrito**.
-1. Haga clic en **Ver y editar el carro** vínculo.
-1. Haga clic en **Desproteger con varias direcciones** vínculo.
-1. Seleccione las direcciones de envío en la **Enviar a varias direcciones** página.
-1. Haga clic en **Ir a Información de envío** botón.
-1. Seleccione el **Tarifa plana: método de envío fijo** para cada dirección.
-1. Haga clic en **Continuar a Información de facturación** botón.
-1. Compruebe la **Use sus puntos de recompensa** de la casilla de verificación **Información de facturación** página.
-1. Haga clic en **Ir a Revisar tu pedido** botón.
-1. Haga clic en **Eliminar** para eliminar los puntos de recompensa.
+1. Agregue al menos dos productos al **Carro de compras**.
+1. Abra el **minicarrito**.
+1. Haga clic en el vínculo **Ver y editar carro**.
+1. Haga clic en el vínculo **Desproteger con varias direcciones**.
+1. Seleccione las direcciones de envío en la página **Enviar a varias direcciones**.
+1. Haz clic en el botón **Ir a la información de envío**.
+1. Seleccione la **tarifa fija - Método de envío fijo** para cada dirección.
+1. Haz clic en el botón **Continuar con la información de facturación**.
+1. Marque la casilla **Usar sus puntos de recompensa** en la página **Información de facturación**.
+1. Haz clic en el botón **Ir a revisar tu pedido**.
+1. Haz clic en el vínculo **Eliminar** de cualquier dirección para eliminar los puntos de recompensa.
 
 <u>Resultados esperados</u>
 
-* El **Carro de compras** página debería aparecer.
-* El &quot;*Ha eliminado los puntos de recompensa de este pedido.* Debería aparecer el mensaje &quot;.
+* Debería aparecer la página **Carro de compras**.
+* El &quot;*Ha eliminado los puntos de recompensa de este pedido.Debería aparecer el mensaje*&quot;.
 
 <u>Resultado real</u>
 
-A &quot;*404 No encontrado* Aparece la página de error &quot;.
+Aparece una página de error &quot;*404 no encontrado*&quot;.
 
 ## Solución
 
-La solución consiste en que el comprador vuelva al **Carrito** y eliminar los puntos de recompensa de la **Carrito** página web. Se espera que el problema se solucione en el parche de la versión 2.4.1 de Adobe Commerce, cuyo lanzamiento está programado para el cuarto trimestre de 2020.
+La solución consiste en hacer que el comprador vuelva al **carro** y elimine los puntos de recompensa de la página web del **carro**. Se espera que el problema se solucione en el parche de la versión 2.4.1 de Adobe Commerce, cuyo lanzamiento está programado para el cuarto trimestre de 2020.
 
 ## Lectura relacionada
 

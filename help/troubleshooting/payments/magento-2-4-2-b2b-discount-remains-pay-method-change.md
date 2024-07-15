@@ -26,7 +26,7 @@ En este artículo se describe una incidencia conocida de Adobe Commerce 2.4.2 B2
 
 <u>Pasos a seguir</u> :
 
-1. Crear un carro **Regla de precio** que está vinculado a una forma de pago (Ejemplo: Los usuarios de PayPal obtienen un descuento del 20 %).
+1. Crea una **Regla de precio** del carro de compras que esté vinculada a un método de pago (Ejemplo: Los usuarios de PayPal obtienen un descuento del 20%).
 1. Crea un pedido y selecciona PayPal como forma de pago. Se aplica el descuento.
 1. Se aprueba la OC.
 1. Vaya a la página de pago para completar el pedido.
@@ -36,7 +36,7 @@ En este artículo se describe una incidencia conocida de Adobe Commerce 2.4.2 B2
 
 El descuento por la forma de pago permanece aplicado al total del pedido.  No se muestra ningún mensaje de error. El propietario de la tienda podrá ver cómo se ha producido comprobando el historial de pedidos.
 
-<u>Resultados esperados</u> : el descuento por método de pago se elimina del total del pedido, según lo esperado.
+<u>Resultados esperados</u>: el descuento de método de pago se ha eliminado del total del pedido, tal como se esperaba.
 
 ## Solución
 

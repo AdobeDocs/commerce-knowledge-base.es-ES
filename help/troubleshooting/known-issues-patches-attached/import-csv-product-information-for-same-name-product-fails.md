@@ -13,26 +13,26 @@ ht-degree: 0%
 
 # Error al importar información de producto CSV para el mismo producto con nombre
 
-Este artículo proporciona un parche para el problema conocido de Adobe Commerce 2.2.3 relacionado con la obtención de errores al intentar importar una `.csv` archivo con información de productos si hay productos con el mismo nombre.
+Este artículo proporciona una revisión para el problema conocido de Adobe Commerce 2.2.3 relacionado con la obtención de errores al intentar importar un archivo de `.csv` con información de productos si hay productos con el mismo nombre.
 
 ## Problema
 
-Cuando un `.csv` Cuando se importa un archivo con información de productos y hay productos con el mismo nombre, aparece el siguiente error en el paso Comprobar datos: *&quot;`URL Key XYZ was already generated for an item with the SKU %sku%"`*. El problema se debe a que se vuelven a escribir las direcciones URL de los productos durante la importación, incluso cuando no hay ninguna columna para las direcciones URL de los productos en la importación `.csv` archivo.
+Cuando se importa un archivo de `.csv` con información de productos y hay productos con el mismo nombre, aparece el siguiente error en el paso Comprobar datos: *&quot;`URL Key XYZ was already generated for an item with the SKU %sku%"`*. El problema se debe a que se han vuelto a escribir las direcciones URL de los productos durante la importación, incluso cuando no hay ninguna columna para las direcciones URL de los productos en el archivo importado `.csv`.
 
 <u>Pasos a seguir</u>:
 
 1. Cree dos productos configurables con el mismo nombre en el Administrador de Commerce.
-1. Crear un `.csv` para importar los datos de esos productos, que tiene, por ejemplo, estas columnas: `sku` | `product_type` | `name` | `product_websites` | `store_view_code`
-1. Ir a **Sistema** > **Transferencia de datos** > **Importar** y seleccione la `.csv` archivo.
-1. Clic **Comprobar datos**.
+1. Cree un archivo de `.csv` para importar los datos de esos productos, que tiene, por ejemplo, estas columnas: `sku` | `product_type` | `name` | `product_websites` | `store_view_code`
+1. Vaya a **Sistema** > **Transferencia de datos** > **Importar** y seleccione el archivo `.csv`.
+1. Haga clic en **Comprobar datos**.
 
 <u>Resultado esperado</u>:
 
-No se han encontrado problemas; puede importar el `.csv` archivo correctamente.
+No se encontraron problemas; puede importar el archivo `.csv` correctamente.
 
 <u>Resultado real</u>:
 
-Se muestra el siguiente mensaje de error: *&quot;La clave URL XYZ ya se generó para un artículo con el SKU %sku%&quot;* No obstante, no es posible importar el archivo.
+Se muestra el siguiente mensaje de error: *&quot;La clave URL XYZ ya se generó para un elemento con el SKU %sku%&quot;*, no es posible importar el archivo.
 
 ## Parche
 

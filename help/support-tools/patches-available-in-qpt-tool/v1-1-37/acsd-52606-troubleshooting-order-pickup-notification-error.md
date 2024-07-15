@@ -1,6 +1,6 @@
 ---
 title: 'ACSD-52606: mensaje de error mostrado cuando el usuario hace clic en "Notificar pedido está listo para su recogida"'
-description: Aplique el parche ACSD-52606 para solucionar el problema de Adobe Commerce, donde se muestra un mensaje de error cuando el usuario hace clic en **[!UICONTROL Notify Order is Ready for Pickup]**.
+description: Aplique el parche ACSD-52606 para solucionar el problema de Adobe Commerce donde se muestra un mensaje de error cuando el usuario hace clic en **[!UICONTROL Notify Order is Ready for Pickup]**.
 feature: Orders, User Account
 role: Admin, Developer
 exl-id: c3e69eb1-90bf-46cf-9b53-110e40e0c3c1
@@ -13,25 +13,25 @@ ht-degree: 0%
 
 # ACSD-52606: mensaje de error que se muestra cuando el usuario hace clic en &quot;Notificar pedido está listo para su recogida&quot;
 
-El parche ACSD-52606 corrige el problema en el que se mostraba un mensaje de error *Su pedido no está listo para recoger* cuando el usuario hace clic en **[!UICONTROL Notify Order is Ready for Pickup]**. Este parche está disponible cuando la variable [!DNL Quality Patches Tool (QPT)] 1.1.37 está instalado. El ID del parche es ACSD-52606. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
+La revisión ACSD-52606 corrige el problema en el que se muestra un mensaje de error *Su pedido no está listo para ser recogido* cuando el usuario hace clic en **[!UICONTROL Notify Order is Ready for Pickup]**. Esta revisión está disponible cuando está instalado [!DNL Quality Patches Tool (QPT)] 1.1.37. El ID del parche es ACSD-52606. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.4
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.0 - 2.4.6-p2
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-Un mensaje de error *Su pedido no está listo para recoger* se muestra en la pantalla cuando el usuario hace clic en **[!UICONTROL Notify Order is Ready for Pickup]**.
+Se muestra un mensaje de error *Su pedido no está listo para su recogida* en la pantalla cuando el usuario hace clic en **[!UICONTROL Notify Order is Ready for Pickup]**.
 
 <u>Requisitos previos</u>:
 
@@ -43,11 +43,11 @@ Los módulos de inventario están instalados.
 1. Crear un nuevo origen y stock.
 1. Asigne el nuevo origen al sitio web predeterminado.
 1. Habilite la ubicación de recogida para el origen recién creado.
-1. Ir a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]** y habilitar **[!UICONTROL In-Store Delivery]**.
-1. Crear un *En stock* producto simple con *CANTIDAD=0* para todas las existencias y *[!UICONTROL Manage Stock = No]* y asígnelo a ambos orígenes.
-1. Cree un pedido desde el front-end con el producto creado en el paso anterior, eligiendo *[!UICONTROL In-Store Pickup]* como método de envío.
+1. Vaya a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Delivery Methods]** > **[!UICONTROL In-Store Delivery]** y habilite **[!UICONTROL In-Store Delivery]**.
+1. Cree un producto simple de *En existencia* con *CANT=0* para todos los inventarios y *[!UICONTROL Manage Stock = No]* y asígnelo a ambos orígenes.
+1. Cree un pedido desde el front-end con el producto creado en el paso anterior, eligiendo *[!UICONTROL In-Store Pickup]* como método de entrega.
 1. En Administración, vaya a **[!UICONTROL Sales]** > **[!UICONTROL Orders]** > **[!UICONTROL Invoice that order]**.
-1. Clic **[!UICONTROL Notify order is ready for pickup]**.
+1. Haga clic en **[!UICONTROL Notify order is ready for pickup]**.
 
 <u>Resultados esperados</u>:
 
@@ -55,20 +55,20 @@ Se le notificará sin errores.
 
 <u>Resultados reales</u>:
 
-Recibe el siguiente mensaje de error: *Su pedido no está listo para recoger*.
+Recibe el siguiente mensaje de error: *Su pedido no está listo para su recogida*.
 
 ## Aplicar el parche
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en el [!DNL Quality Patches Tool] guía.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce sobre infraestructura en la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en el [!DNL Quality Patches Tool] guía.
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

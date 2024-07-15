@@ -1,6 +1,6 @@
 ---
-title: Error [!DNL opensearch] el motor de búsqueda no existe. Volver a caer en [!DNL livesearch].
-description: Este artículo proporciona una solución al problema en el que ve el error `Error- [!DNL opensearch] el motor de búsqueda no existe. Volver a caer en [!DNL livesearch].`, en Adobe Commerce en la infraestructura en la nube.
+title: Error [!DNL opensearch] el motor de búsqueda no existe. Volviendo a  [!DNL livesearch].
+description: Este artículo proporciona una solución al problema donde se ve el error "Error- [!DNL opensearch] el motor de búsqueda no existe. Volver a  [!DNL livesearch].`, en Adobe Commerce en la infraestructura en la nube.
 feature: Deploy, Search
 role: Developer
 exl-id: a6cc981d-b8f0-402d-8771-60d2f21f09f8
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# Error [!DNL opensearch] el motor de búsqueda no existe. Volver a caer en [!DNL livesearch].
+# Error [!DNL opensearch]. El motor de búsqueda no existe. Volviendo a [!DNL livesearch].
 
-Este artículo proporciona una solución al problema en el que ve el error: *Error: [!DNL opensearch] el motor de búsqueda no existe. Volver a caer en [!DNL livesearch].* en Adobe Commerce en la infraestructura en la nube donde [!DNL Live Search] se utiliza.
+Este artículo proporciona una solución al problema donde se muestra el error: *Error: [!DNL opensearch] el motor de búsqueda no existe. Volviendo a [!DNL livesearch].* en Adobe Commerce en la infraestructura de nube donde se usa [!DNL Live Search].
 
 ## Productos y versiones afectados
 
@@ -23,11 +23,11 @@ Este artículo proporciona una solución al problema en el que ve el error: *Err
 ## Problema
 
 El siguiente mensaje se muestra en los registros (y se puede observar en [!DNL New Relic]):
-*Error: [!DNL opensearch] el motor de búsqueda no existe. Volver a caer en [!DNL livesearch].*
+*Error: el motor de búsqueda [!DNL opensearch] no existe. Volviendo a [!DNL livesearch].*
 
 ## Solución
 
-1. Modifique la `.magento.env.yaml` archivo.
+1. Modifique el archivo `.magento.env.yaml`.
 1. Busque las líneas siguientes:
 
    ```yaml
@@ -37,8 +37,8 @@ El siguiente mensaje se muestra en los registros (y se puede observar en [!DNL N
          engine: opensearch
    ```
 
-1. Si no tiene estas líneas, agréguelas al `.magento.env.yaml` archivo.
-1. Si existen estas líneas, **modificación del motor** de *[!DNL opensearch]* hasta *[!DNL livesearch]*.
+1. Si no tiene estas líneas, agréguelas al archivo `.magento.env.yaml`.
+1. Si existen estas líneas, **modifique el motor** de *[!DNL opensearch]* a *[!DNL livesearch]*.
 1. Confirme el cambio y vuelva a implementar.
 
 ## Lectura relacionada

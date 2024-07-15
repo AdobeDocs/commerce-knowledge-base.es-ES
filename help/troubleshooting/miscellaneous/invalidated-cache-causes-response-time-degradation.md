@@ -41,23 +41,23 @@ Hay dos tipos de caché en Adobe Commerce:
 
 ### Compruebe si ha invalidado la caché
 
-Puede encontrar información sobre los tipos de caché invalidados en la `<install_directory>/var/log/debug.log` archivo.
+Puede encontrar información sobre los tipos de caché invalidados en el archivo `<install_directory>/var/log/debug.log`.
 
 Para ello:
 
 1. Abrir `<install_directory>/var/log/debug.log`
-1. Buscar &quot; *cache\_invalidate* &quot; mensaje.
+1. Busque el mensaje &quot; *cache\_invalidate*&quot;.
 1. A continuación, compruebe la etiqueta especificada. Indica qué caché se vació. Es posible que tenga problemas debido a la caché invalidada si ve una etiqueta sin un ID de entidad en particular especificado, por ejemplo:
-   * `cat_p` : significa caché de productos de catálogo.
+   * `cat_p`: significa caché de producto de catálogo.
    * `cat_c` - caché de categoría de catálogo.
    * `FPC` - caché de página completa.
    * `CONFIG` - caché de configuración.
 
-   Tener incluso uno de ellos vaciado ralentizaría la respuesta del sitio web. Si la etiqueta contiene un ID de entidad, por ejemplo, `category_product_1258`, esto indicaría la caché de un producto o categoría en particular, etc. El vaciado de la caché de un producto o categoría en particular no haría que el tiempo de respuesta disminuyera significativamente.
+   Tener incluso uno de ellos vaciado ralentizaría la respuesta del sitio web. Si la etiqueta contiene un id de entidad, por ejemplo, `category_product_1258`, esto indicaría la caché de un producto o categoría en particular, etc. El vaciado de la caché de un producto o categoría en particular no haría que el tiempo de respuesta disminuyera significativamente.
 
-A continuación se muestra un ejemplo de un `debug.log` que contiene registros sobre `cat_p` y `category_product_15044` se ha vaciado la caché:
+A continuación se muestra un ejemplo de un(a) `debug.log` que contiene registros que indican que se ha vaciado la caché de `cat_p` y `category_product_15044`:
 
-![ejemplo del contenido debug.log](assets/debug_log_sample.png)
+![muestra del contenido debug.log](assets/debug_log_sample.png)
 
 Normalmente, la caché se invalida debido a lo siguiente:
 
@@ -67,4 +67,4 @@ Normalmente, la caché se invalida debido a lo siguiente:
 ## Recomendación
 
 1. Evite vaciar la caché de la CLI de Commerce.
-1. Configuración de indexadores en **Actualizar según lo programado** en lugar de **Actualizar al guardar el modo** porque este último déclencheur la reindexación completa. Para ver una referencia, consulte [Administrar los indexadores > Configurar indexadores](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) en nuestra documentación para desarrolladores.
+1. Configure los indexadores a **Actualizar mediante programación** en lugar de **Actualizar en el modo de guardado** porque este último déclencheur la reindexación completa. Como referencia, consulte [Administrar los indexadores > Configurar indexadores](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) en nuestra documentación para desarrolladores.

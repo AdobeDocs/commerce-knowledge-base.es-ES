@@ -17,7 +17,7 @@ Este artículo proporciona un parche para el problema de rendimiento conocido de
 
 ## Problema
 
-Es posible que Adobe Commerce esté enviando contenido redundante [Solicitudes de Ajax](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md) desde la tienda hasta el servidor para obtener la información del banner y la información del cliente. Estas solicitudes de Ajax tienen un impacto en el rendimiento, especialmente en condiciones de alta carga (gran volumen y alto tráfico). Por lo tanto, si no se utiliza la funcionalidad Banner, se recomienda que [deshabilitar la salida del módulo Adobe Commerce Banner](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md) y aplique el parche para mejorar la recuperación de información del cliente.
+Es posible que Adobe Commerce esté enviando [solicitudes de Ajax](/help/troubleshooting/miscellaneous/high-throughput-ajax-requests-cause-poor-performance.md) redundantes desde la tienda al servidor para obtener la información del banner y la información del cliente. Estas solicitudes de Ajax tienen un impacto en el rendimiento, especialmente en condiciones de alta carga (gran volumen y alto tráfico). Por lo tanto, si no se usa la funcionalidad Banner, se recomienda [deshabilitar por completo la salida del módulo Banner de Adobe Commerce](/help/troubleshooting/miscellaneous/disable-magento-banner-output-to-improve-site-performance.md) y aplicar el parche para mejorar la recuperación de información del cliente.
 
 ## Parche
 
@@ -32,7 +32,7 @@ El parche es válido para los siguientes productos y versiones:
 * Adobe Commerce en la infraestructura en la nube 2.2.9
 * Adobe Commerce local 2.2.9
 
-Si tiene una versión diferente de Adobe Commerce, considere la posibilidad de actualizar a la última versión 2.3.x. Si esta no es una opción actualmente, [Póngase en contacto con Soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) y solicite un parche para su versión.
+Si tiene una versión diferente de Adobe Commerce, considere la posibilidad de actualizar a la última versión 2.3.x. Si esta no es una opción actualmente, comuníquese con el [soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) y solicite un parche para su versión.
 
 ## Cómo aplicar el parche
 

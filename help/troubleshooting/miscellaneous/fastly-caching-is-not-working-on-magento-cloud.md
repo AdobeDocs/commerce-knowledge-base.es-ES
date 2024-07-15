@@ -34,7 +34,7 @@ Normalmente, las configuraciones, las credenciales incorrectas o las extensiones
 
 ### Probar con el comando dig
 
-En primer lugar, compruebe los encabezados con un comando dig en la dirección URL. En una aplicación de terminal, introduzca dig `<url>` para verificar que los servicios de Fastly se muestran en los encabezados. Para pruebas de excavación adicionales, consulte Fastly&#39;s [Pruebas antes de cambiar el DNS](https://docs.fastly.com/guides/basic-configuration/testing-setup-before-changing-domains).
+En primer lugar, compruebe los encabezados con un comando dig en la dirección URL. En una aplicación de terminal, escriba dig `<url>` para comprobar que los servicios de Fastly se muestran en los encabezados. Para obtener más pruebas de excavación, consulte [Prueba de Fastly antes de cambiar el DNS](https://docs.fastly.com/guides/basic-configuration/testing-setup-before-changing-domains).
 
 Por ejemplo:
 
@@ -46,12 +46,12 @@ Por ejemplo:
 
 A continuación, utilice un comando curl para comprobar que existen X-Magento-Tags e información de encabezado adicional. El formato del comando difiere para Ensayo y Producción.
 
-Para obtener más información sobre estos comandos, evite Fastly al inyectar `-H "host:URL"`, reemplace por origin a la ubicación de conexión (información CNAME de la hoja de cálculo de OneDrive), `-k` ignora SSL y `-v` proporciona respuestas detalladas. Si los encabezados se muestran correctamente, compruebe el sitio activo y vuelva a comprobar los encabezados.
+Para obtener más información acerca de estos comandos, omita Fastly al insertar `-H "host:URL"`, reemplace con origin en la ubicación de conexión (información CNAME de la hoja de cálculo de OneDrive), `-k` ignora SSL y `-v` proporciona respuestas detalladas. Si los encabezados se muestran correctamente, compruebe el sitio activo y vuelva a comprobar los encabezados.
 
 * Si se producen problemas de encabezado al visitar directamente los servidores de origen omitiendo Fastly, es posible que tenga problemas en el código, con extensiones o con la infraestructura.
 * Si no encuentra errores que afecten directamente a los servidores de origen, pero faltan encabezados que afecten al dominio activo mediante Fastly, puede tener errores de Fastly.
 
-Primero, compruebe su **sitio activo** para comprobar los encabezados de respuesta. El comando pasa por la extensión Fastly para recibir respuestas. Si no recibe los encabezados correctos, debe probar los servidores de origen directamente. Este comando devuelve los valores del `Fastly-Magento-VCL-Uploaded` y `X-Cache` encabezados.
+En primer lugar, compruebe su **sitio activo** para comprobar los encabezados de respuesta. El comando pasa por la extensión Fastly para recibir respuestas. Si no recibe los encabezados correctos, debe probar los servidores de origen directamente. Este comando devuelve los valores de los encabezados `Fastly-Magento-VCL-Uploaded` y `X-Cache`.
 
 1. En un terminal, introduzca el siguiente comando para probar la dirección URL activa del sitio:
 
@@ -59,7 +59,7 @@ Primero, compruebe su **sitio activo** para comprobar los encabezados de respues
    curl http://<live URL> -vo /dev/null -HFastly-Debug:1 [--resolve]
    ```
 
-   Uso `--resolve` solo si la dirección URL activa no está configurada con DNS y no tiene establecida una ruta estática. Por ejemplo:
+   Use `--resolve` solo si la dirección URL activa no está configurada con DNS y no tiene establecida una ruta estática. Por ejemplo:
 
    ```
    curl http://www.mymagento.biz -vo /dev/null -HFastly-Debug:1
@@ -71,19 +71,19 @@ Primero, compruebe su **sitio activo** para comprobar los encabezados de respues
    < Fastly-Magento-VCL-Uploaded: yes    < X-Cache: HIT, MISS
    ```
 
-Para probar **Ensayo** :
+Para probar **Staging**:
 
 ```
 curl http[s]://staging.<your domain>.c.<instanceid>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
 ```
 
-Para probar **Equilibrador de carga de producción** :
+Para probar **Equilibrador de carga de producción**:
 
 ```
 curl http[s]://<your domain>.c.<project ID>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
 ```
 
-Para probar **Nodo Origen de producción** :
+Para probar **nodo de origen de producción**:
 
 ```
 curl http[s]://<your domain>.{1|2|3}.<project ID>.ent.magento.cloud -H "host: <url>" -k -vo /dev/null -HFastly-Debug:1
@@ -170,9 +170,9 @@ Para comprobar que Fastly está habilitado en ensayo y producción, compruebe la
    "fastly-magento2": {    "type": "vcs",    "url": "https://github.com/fastly/fastly-magento2.git"    }
    ```
 
-1. Si utiliza la administración de configuración, debería tener un archivo de configuración. Edite el archivo app/etc/config.app.php (2.0, 2.1) o app/etc/config.php (2.2) y asegúrese de que la configuración `'Fastly_Cdn' => 1` es correcto. La configuración no debe ser `'Fastly_Cdn' => 0` (lo que significa deshabilitado). Si ha habilitado Fastly, elimine el archivo de configuración y ejecute el comando bin/magento magento-cloud:scd-dump para actualizar. Para ver una descripción detallada de este archivo, consulte [Ejemplo de administración de la configuración específica del sistema](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html#manage-the-system-specific-configuration) en la Guía de configuración.
+1. Si utiliza la administración de configuración, debería tener un archivo de configuración. Edite el archivo app/etc/config.app.php (2.0, 2.1) o app/etc/config.php (2.2) y asegúrese de que la configuración `'Fastly_Cdn' => 1` sea correcta. La configuración no debe ser `'Fastly_Cdn' => 0` (lo que significa deshabilitado). Si habilitó Fastly, elimine el archivo de configuración y ejecute el comando bin/magento magento-cloud:scd-dump para actualizar. Para ver una descripción detallada de este archivo, consulte [Ejemplo de administración de la configuración específica del sistema](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/technical-details.html#manage-the-system-specific-configuration) en la Guía de configuración.
 
-Si el módulo no está instalado, debe instalarlo en un [Entorno de integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) y se implementan en Ensayo y producción. Consulte [Configuración rápida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) para obtener instrucciones en la Guía de Commerce sobre infraestructura en la nube.
+Si el módulo no está instalado, debe instalarlo en una rama de [entorno de integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) e implementarlo en Ensayo y producción. Consulte [Configuración rápida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) para obtener instrucciones en la Guía de Commerce sobre infraestructura en la nube.
 
 ### Fastly-Magento-VCL-Uploaded no está presente
 
@@ -190,9 +190,9 @@ Si obtiene el mismo resultado, utilice los comandos curl y compruebe los encabez
 
 Si el problema persiste, es probable que otra extensión restablezca estos encabezados. Repita el siguiente procedimiento en Ensayo para desactivar las extensiones y encontrar cuál es la causa del problema. Después de localizar las extensiones que causan el problema, deberá deshabilitar las extensiones en Producción.
 
-1. Para desactivar las extensiones, siga los pasos que se indican en [Administración de extensiones](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=en#manage-extensions) de la guía de Commerce sobre infraestructura en la nube.
+1. Para deshabilitar las extensiones, siga los pasos que se indican en la sección [Administrar extensiones](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html?lang=en#manage-extensions) de la guía de Commerce en infraestructura de nube.
 1. Después de deshabilitar las extensiones, vaya a **[!UICONTROL System]** > **[!UICONTROL Tools]** > **[!UICONTROL Cache Management]**.
-1. Clic **[!UICONTROL Flush Magento Cache]**.
+1. Haga clic en **[!UICONTROL Flush Magento Cache]**.
 1. Ahora habilite una extensión a la vez, guardando la configuración y vaciando la caché.
 1. Pruebe los comandos curl y compruebe los encabezados de respuesta.
 1. Repita los pasos 4 y 5 para activar y probar los comandos curl. Cuando los encabezados de Fastly ya no se muestran, ha encontrado la extensión que causa problemas con Fastly.
@@ -202,5 +202,5 @@ Cuando aísle la extensión que está restableciendo los encabezados de Fastly, 
 ## Más información en nuestra documentación para desarrolladores:
 
 * [Acerca de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Configuración rápida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* [Fragmentos de VCL personalizados de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
+* [Configurar rápidamente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
+* [Fragmentos personalizados de VCL de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)

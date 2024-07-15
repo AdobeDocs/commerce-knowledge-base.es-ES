@@ -27,4 +27,4 @@ fatal: The remote end hung up unexpectedly
 
 ## Solución {#solution}
 
-Cargue su clave SSH en GitHub como se describe en [la página de ayuda de GitHub](https://help.github.com/articles/generating-ssh-keys) .
+Cargue su clave SSH en GitHub tal como se describe en [la página de ayuda de GitHub](https://help.github.com/articles/generating-ssh-keys) .

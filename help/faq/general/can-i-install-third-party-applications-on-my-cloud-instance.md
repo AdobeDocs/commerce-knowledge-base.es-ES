@@ -18,7 +18,7 @@ No. No se permite la instalación de aplicaciones de terceros (como WordPress o 
 
 ### Condiciones del contrato de servicio
 
-Adobe Commerce on cloud Infrastructure Edition [Acuerdo de condiciones de servicio](https://magento.com/legal/terms/cloud-terms) En su artículo 18 dispone lo siguiente:
+El Contrato de términos de servicio [Adobe Commerce on cloud Infrastructure Edition](https://magento.com/legal/terms/cloud-terms) establece lo siguiente en su artículo 18:
 
 > El cliente acepta que Adobe Commerce y el Servicio no se utilizarán para alojar otras aplicaciones de software de terceros que no dependan directamente del Software.
 
@@ -29,10 +29,10 @@ Al ser una solución en la nube, el Adobe asume toda la responsabilidad por la s
 Como proveedor de soluciones de nivel 1 con certificación PCI, Adobe Commerce en la infraestructura en la nube debe seguir el estándar de seguridad de datos PCI y asegurarse de lo siguiente:
 
 >... Desarrollar y mantener sistemas y aplicaciones seguros
-> ([Enfoque de Adobe para el cumplimiento de PCI](https://magento.com/pci-compliance) Requisito 6, Mantener un programa de administración de vulnerabilidades)
+> ([Método de Adobe para el cumplimiento de PCI](https://magento.com/pci-compliance) Requisito 6, Mantener un programa de administración de vulnerabilidades)
 
 Dado que el Adobe no puede garantizar la conformidad con PCI de las aplicaciones de terceros, la instalación de dichas aplicaciones en servidores en la nube no está permitida.
 
 ## Sugerencia: Utilice extensiones de Commerce Marketplace para mejorar las integraciones
 
-Para mejorar la integración de su aplicación de Adobe Commerce en la infraestructura en la nube con las soluciones de terceros alojadas en servidores externos, le recomendamos que utilice el [Commerce Marketplace](https://marketplace.magento.com) extensiones que pueden adaptarse a su propósito.
+Para mejorar la integración de su aplicación de Adobe Commerce en la nube con las soluciones de terceros alojadas en servidores externos, le recomendamos que utilice las extensiones de [Commerce Marketplace](https://marketplace.magento.com) que puedan adaptarse a su propósito.

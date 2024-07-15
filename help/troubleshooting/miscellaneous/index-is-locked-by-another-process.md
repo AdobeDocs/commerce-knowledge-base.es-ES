@@ -21,7 +21,7 @@ Este artículo trata sobre un problema común de indexación en Adobe Commerce e
 
 ## Problema
 
-Durante una reindexación completa en su CLI, Adobe Commerce le muestra el mensaje de error: *&#39;El índice está bloqueado por otro proceso de reindexación. Omitiendo.&#39;* En otras palabras, cuando el proceso o el tipo de índice están bloqueados, no se puede reindexar ese tipo de índice bloqueado en particular. El reíndice siempre omitirá ese tipo de índice.
+Durante una reindexación completa en su CLI, Adobe Commerce le muestra el mensaje de error: El índice de *está bloqueado por otro proceso de reindexación. Omitiendo.&#39;* En otras palabras, cuando el proceso o el tipo de índice están bloqueados, no se puede reindexar ese tipo de índice bloqueado en particular. El reíndice siempre omitirá ese tipo de índice.
 
 ## Causa
 
@@ -81,7 +81,7 @@ En nuestra guía del usuario:
 
 En nuestra documentación para desarrolladores:
 
-* [Información general de indexación](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
+* [Información general de indización](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html)
 * [Prácticas recomendadas de indizadores](https://devdocs.magento.com/guides/v2.3/performance-best-practices/configuration.html#indexers)
 * [Configurar Y Ejecutar Cron](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-cron.html)
 * [Administrar Los Indexadores](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html)

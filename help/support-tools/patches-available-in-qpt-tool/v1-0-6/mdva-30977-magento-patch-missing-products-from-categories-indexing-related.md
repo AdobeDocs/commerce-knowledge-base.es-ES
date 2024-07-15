@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-30977: productos que faltan en las categorías, relacionados con la indexación
 
-El parche MDVA-30977 soluciona los problemas con los productos mostrados en las páginas de categorías de tiendas durante las reindexaciones o las acciones masivas con un gran número de productos. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) v.1.0.6 está instalado. Estos problemas están programados para solucionarse en Adobe Commerce 2.4.2.
+El parche MDVA-30977 soluciona los problemas con los productos mostrados en las páginas de categorías de tiendas durante las reindexaciones o las acciones masivas con un gran número de productos. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) v.1.0.6. Estos problemas están programados para solucionarse en Adobe Commerce 2.4.2.
 
 ## Productos y versiones afectados
 
@@ -21,7 +21,7 @@ El parche se ha creado para Adobe Commerce en la infraestructura en la nube 2.3.
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problemas
 
@@ -32,9 +32,9 @@ El número de productos que se muestra en la página de categoría de la tienda 
 <u>Pasos a seguir:</u>
 
 1. Cree al menos 30000 productos en dos categorías, al menos 15000 productos en cada categoría.
-1. Ir a **Catálogo** > **Productos** en el Administrador de comercio.
-1. Seleccione todos los productos de la cuadrícula y realice una actualización masiva de atributos. Por ejemplo, set **Nuevo** = *Sí* atributo.
-1. Ejecute el trabajo cron de Magento utilizando `bin/magento cron:run` dos veces.
+1. Vaya a **Catálogo** > **Productos** en el Administrador de Commerce.
+1. Seleccione todos los productos de la cuadrícula y realice una actualización masiva de atributos. Por ejemplo, establezca el atributo **New** = *Yes*.
+1. Ejecute el trabajo cron de Magento usando el comando `bin/magento cron:run` dos veces.
 1. Actualice las páginas de categorías en Storefront mientras Adobe Commerce realiza la actualización de productos 30000.
 
 <u>Resultado esperado:</u>
@@ -47,7 +47,7 @@ El número de productos en las categorías es diferente en cada actualización d
 
 ### Problema 2
 
-Cuando se ejecuta la reindexación completa del inventario, las páginas de categoría quedan vacías y la variable *No podemos encontrar productos que coincidan con la selección* se muestra el mensaje.
+Cuando se ejecuta la reindexación completa del inventario, las páginas de categoría se vacían y se muestra el mensaje *No podemos encontrar productos que coincidan con la selección*.
 
 <u>Pasos a seguir:</u>
 
@@ -79,7 +79,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) sección.
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

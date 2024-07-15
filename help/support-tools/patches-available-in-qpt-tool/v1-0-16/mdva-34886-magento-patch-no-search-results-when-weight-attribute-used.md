@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-34886: no hay resultados de búsqueda cuando se utiliza el atributo &quot;weight&quot;
 
-El parche MDVA-34886 resuelve el problema de que la búsqueda no devuelve resultados cuando el atributo de peso se configura como en el que se puede buscar. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.16 está instalado. Tenga en cuenta que el problema se corrigió en la versión 2.4.3 de Adobe Commerce.
+El parche MDVA-34886 resuelve el problema de que la búsqueda no devuelve resultados cuando el atributo de peso se configura como en el que se puede buscar. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.16. Tenga en cuenta que el problema se corrigió en la versión 2.4.3 de Adobe Commerce.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 Adobe Commerce en infraestructura en la nube 2.3.5-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 Adobe Commerce en infraestructura en la nube y Adobe Commerce local 2.3.2 - 2.4.2
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -36,9 +36,9 @@ La búsqueda no devuelve resultados cuando el atributo de peso se configura como
 <u>Pasos a seguir</u>:
 
 1. Configure el Elasticsearch.
-1. Vaya a **Administrador** > **Tiendas** > **Atributos** > **Product**. Edite el **Grosor** y establezca su atributo **Buscable** = *Sí*.
+1. Vaya a **Administración** > **Tiendas** > **Atributos** > **Producto**. Edite el atributo **Weight** y establezca su atributo **Searchable** = *Yes*.
 1. Guarde el atributo y borre la caché de configuración.
-1. En el front-end, busque un valor de texto (ejemplo: *bolso*).
+1. En el front-end, busque un valor de texto (Ejemplo: *bag*).
 1. Observe que la búsqueda no devuelve ningún resultado.
 1. El registro de excepciones contendrá un mensaje de error como:
 
@@ -65,7 +65,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-) sección.
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-QPT-tool-).

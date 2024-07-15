@@ -1,6 +1,6 @@
 ---
-title: 'Información general: [!DNL Quality Patches Tool] (QPT) v1.1.48'
-description: Esta subsección proporciona una descripción detallada de los problemas corregidos por los parches disponibles en [!DNL Quality Patches Tool] (QPT) v1.1.48.
+title: "Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.48"
+description: Esta subsección proporciona una descripción detallada de los problemas corregidos por los parches disponibles en  [!DNL Quality Patches Tool] (QPT) v1.1.48.
 feature: Tools and External Services
 role: Admin, Developer
 exl-id: 6170c616-312c-4de3-98dc-e2c27c376608
@@ -17,16 +17,16 @@ Esta subsección proporciona una descripción detallada de los problemas corregi
 
 QPT v1.1.48 incluye los siguientes parches:
 
-1. **ACSD-55566**: corrige el problema en el que las variables *[!UICONTROL mergeCart mutation]* falla con un *Error interno del servidor* en la respuesta de GraphQL al combinar los carros de compras de origen y destino tienen los mismos elementos agrupados.
-1. **ACSD-56546**: corrige el problema en el que los productos configurables y agrupados se muestran como *[!UICONTROL Out of Stock]* en la tienda cuando la variable *[!UICONTROL Display Out of Stock Product]* La configuración de está deshabilitada.
-1. **ACSD-56635**: corrige el problema en el que el cliente importado se duplica con la misma dirección de correo electrónico cuando la importación se utiliza con [!UICONTROL Account Sharing] establezca en *[!UICONTROL Global]*.
-1. **ACSD-56741**: corrige el mensaje de error *Intentando obtener acceso al desplazamiento de la matriz en un valor de tipo nulo* que se muestra durante `setup:upgrade` cuando la base de datos contiene un déclencheur MySQL personalizado no relacionado con el mecanismo de indexación y [!DNL MView].
-1. **ACSD-57315**: corrige el problema en el que se crea una nueva transacción en [!DNL PayPal Payflow Pro] cada vez que **[!UICONTROL Fetch]** se hace clic en el botón en la pantalla ver transacción del [!UICONTROL Admin].
-1. **ACSD-57337**: corrige un problema en el cual un usuario administrador con restricciones de acceso a sitios web específicos puede ver compañías de todos los sitios web en *[!UICONTROL Companies]* rejilla.
-1. **ACSD-57394**: corrige la ordenación de productos incorrecta mediante varios campos de ordenación en GraphQL.
-1. **ACSD-57565**: corrige el problema en el que las variables *[!UICONTROL Order]* El panel muestra información de pedido incorrecta hasta que se actualiza el período de tiempo. El panel ahora muestra las estadísticas de pedido correctas en la primera carga.
+1. **ACSD-55566**: corrige el problema en el que *[!UICONTROL mergeCart mutation]* falla con un *error interno del servidor* en la respuesta de GraphQL al combinar los carros de compras de origen y destino que tienen los mismos elementos agrupados.
+1. **ACSD-56546**: corrige el problema en el cual los productos configurables y agrupados se muestran como *[!UICONTROL Out of Stock]* en la tienda cuando la configuración de *[!UICONTROL Display Out of Stock Product]* está deshabilitada.
+1. **ACSD-56635**: corrige el problema en el que el cliente importado se duplica con la misma dirección de correo electrónico cuando se usa la importación con [!UICONTROL Account Sharing] establecido en *[!UICONTROL Global]*.
+1. **ACSD-56741**: corrige el mensaje de error *Intentando obtener acceso al desplazamiento de la matriz en un valor de tipo null* que se muestra durante `setup:upgrade` cuando la base de datos contiene un déclencheur MySQL personalizado no relacionado con el mecanismo de indexación y [!DNL MView].
+1. **ACSD-57315**: corrige el problema en el que se crea una nueva transacción en [!DNL PayPal Payflow Pro] cada vez que se hace clic en el botón **[!UICONTROL Fetch]** en la pantalla Ver transacción en [!UICONTROL Admin].
+1. **ACSD-57337**: corrige el problema en el que un usuario administrador con restricciones de acceso a sitios web específicos puede ver compañías de todos los sitios web en la cuadrícula *[!UICONTROL Companies]*.
+1. **ACSD-57394**: corrige la ordenación incorrecta de productos por varios campos de ordenación en GraphQL.
+1. **ACSD-57565**: corrige el problema en el que el panel *[!UICONTROL Order]* muestra información de pedido incorrecta hasta que se actualiza el período de tiempo. El panel ahora muestra las estadísticas de pedido correctas en la primera carga.
 1. **ACSD-57854**: corrige el problema en el que las solicitudes de GraphQL de productos devuelven categorías deshabilitadas en las agregaciones de categorías.
-1. **ACSD-58008**: corrige el problema que se producía cuando al actualizar una actualización programada se elimina la versión anterior del elemento ensayado si no se especifica una fecha de finalización.
+1. **ACSD-58008**: corrige el problema por el cual al actualizar una actualización programada se elimina la versión anterior del elemento ensayado si no se especifica una fecha de finalización.
 
 Utilice el menú de la izquierda para navegar a una página específica del parche.
 

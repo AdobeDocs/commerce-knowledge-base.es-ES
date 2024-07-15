@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-30265: el vínculo de seguimiento en el correo electrónico devuelve 404 Página no encontrada
 
-El parche MDVA-30265 soluciona el problema del error &quot;404 Page not Found&quot; (404 página no encontrada) cuando el cliente hace clic en el vínculo de seguimiento de envíos en el correo electrónico de confirmación del pedido. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.5 está instalado. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
+El parche MDVA-30265 soluciona el problema del error &quot;404 Page not Found&quot; (404 página no encontrada) cuando el cliente hace clic en el vínculo de seguimiento de envíos en el correo electrónico de confirmación del pedido. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.5. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.5-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.3 a 2.4.1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -35,12 +35,12 @@ Una vez creado el envío para un pedido realizado, se envía un correo electrón
 
 <u>Pasos a seguir</u>:
 
-1. Instale Adobe Commerce 2.4. Para ver los pasos, consulte [Instalar Adobe Commerce mediante Composer](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html) en nuestra documentación para desarrolladores.
+1. Instale Adobe Commerce 2.4. Para ver los pasos, consulte [Instalar Adobe Commerce mediante Compositor](https://devdocs.magento.com/guides/v2.4/install-gde/composer.html) en nuestra documentación para desarrolladores.
 1. Haga un pedido.
-1. Vaya al panel Administración > **Ventas** > **Pedidos**. Busque el pedido que acaba de crear y ábralo.
-1. Cree un envío y añada un número de seguimiento (Transportista = Valor personalizado). Para ver los pasos, consulte [Order Management > Creación de Envíos](https://docs.magento.com/user-guide/sales/shipments-create.html) en nuestra guía del usuario.
+1. Vaya al Panel de administración > **Ventas** > **Pedidos**. Busque el pedido que acaba de crear y ábralo.
+1. Cree un envío y añada un número de seguimiento (Transportista = Valor personalizado). Para ver los pasos, consulte [Order Management > Creación de un envío](https://docs.magento.com/user-guide/sales/shipments-create.html) en nuestra guía del usuario.
 1. Recibe un correo electrónico. Haga clic en el vínculo de seguimiento para comprobar si funciona.
-1. Crear una factura. Para ver los pasos, consulte [Gestión de Pedidos > Creación de una factura](https://docs.magento.com/user-guide/sales/invoice-create.html) en nuestra guía del usuario. A continuación, haga clic de nuevo en el vínculo de seguimiento anterior.
+1. Crear una factura. Para ver los pasos, consulte [Order Management > Creación de una factura](https://docs.magento.com/user-guide/sales/invoice-create.html) en nuestra guía del usuario. A continuación, haga clic de nuevo en el vínculo de seguimiento anterior.
 
 <u>Resultados esperados</u>:
 
@@ -61,7 +61,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

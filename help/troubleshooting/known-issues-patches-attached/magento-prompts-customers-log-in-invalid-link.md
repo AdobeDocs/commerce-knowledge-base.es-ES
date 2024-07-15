@@ -21,13 +21,13 @@ El artículo proporciona un vínculo al parche para un problema conocido de Adob
 
 ## Problema
 
-Adobe Commerce solicita a los clientes que inicien sesión mostrando este mensaje: *&quot;Esta cuenta no está confirmada. Haga clic aquí para reenviar el correo electrónico de confirmación&quot;*. El **Haga clic aquí** El vínculo debe abrir la página Enviar vínculo de confirmación, pero está inactivo.
+Adobe Commerce pide a los clientes que inicien sesión mostrando este mensaje: *&quot;Esta cuenta no está confirmada. Haga clic aquí para reenviar el correo electrónico de confirmación &quot;*. El vínculo **Haga clic aquí** debe abrir la página Enviar vínculo de confirmación, pero está inactivo.
 
 ## Solución
 
-Hay un parche para este problema disponible en Recursos técnicos de Adobe Commerce: [Reenviar parche de problema de vínculo de correo electrónico de confirmación de cuenta para Adobe Commerce 2.3.5](https://magento.com/tech-resources/download?_ga=2.193540264.409362045.1590506265-807369446.1578680711#download2368). Habrá disponible una corrección permanente en Adobe Commerce 2.3.6, cuyo lanzamiento está programado para el cuarto trimestre de 2020.
+Hay un parche para este problema disponible en Recursos técnicos de Adobe Commerce: [Reenviar parche del problema del vínculo del correo electrónico de confirmación de cuenta para Adobe Commerce 2.3.5](https://magento.com/tech-resources/download?_ga=2.193540264.409362045.1590506265-807369446.1578680711#download2368). Habrá disponible una corrección permanente en Adobe Commerce 2.3.6, cuyo lanzamiento está programado para el cuarto trimestre de 2020.
 
-Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones sobre cómo aplicar un parche de composer.
+Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones sobre cómo aplicar un parche del compositor.
 
 ## Lectura relacionada
 

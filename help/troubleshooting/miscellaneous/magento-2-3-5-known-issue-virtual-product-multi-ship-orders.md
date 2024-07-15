@@ -25,7 +25,7 @@ En este artículo se explica un problema conocido de Adobe Commerce 2.3.5 por el
 <u>Pasos a seguir</u>:
 
 1. En la tienda, agregue productos físicos y virtuales al carro de compras.
-1. Continúe con el cierre de compra y seleccione **Desproteger con varias direcciones**.
+1. Realice el cierre de compra y seleccione **Retirar con varias direcciones**.
 1. Añada toda la información necesaria y realice el pedido.
 
 <u>Resultado esperado</u>:

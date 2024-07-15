@@ -17,7 +17,7 @@ Este artículo explica los errores que puede experimentar al utilizar la herrami
 
 ## Productos y versiones afectados
 
-* [Actualizar herramienta de compatibilidad](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) es compatible con las versiones de Adobe Commerce a partir de 2.3.0.
+* [La herramienta de compatibilidad de actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview.html) es compatible con las versiones de Adobe Commerce a partir de la 2.3.0.
 
 ## Error de segmentación
 
@@ -47,7 +47,7 @@ bin/uct upgrade:check --current-version=2.4.4 path/to/the/module
    bin/uct upgrade:check INSTALLATION_DIR -c M2_VERSION
    ```
 
-1. La única salida es `Upgrade compatibility tool`:
+1. El único resultado es `Upgrade compatibility tool`:
 
    ```terminal
    bin/uct upgrade:check /var/www/project/magento/ -c 2.4.1
@@ -62,7 +62,7 @@ Hay dos soluciones posibles para evitar esta limitación de memoria PHP.
 
 <u>Solución 1</u>:
 
-Anule la limitación de memoria estableciendo `memory_limit` hasta `-1`:
+Anule la limitación de memoria estableciendo `memory_limit` en `-1`:
 
 ```bash
 php -d memory_limit=-1 /bin/uct upgrade:check INSTALLATION_DIR -c M2_VERSION
@@ -70,11 +70,11 @@ php -d memory_limit=-1 /bin/uct upgrade:check INSTALLATION_DIR -c M2_VERSION
 
 >[!NOTE]
 >
-> El `M2_VERSION` es la versión de Adobe Commerce de destino que desea comparar con la instancia de Adobe Commerce.
+> `M2_VERSION` es la versión de Adobe Commerce de destino que desea comparar con la instancia de Adobe Commerce.
 
 <u>Solución 2</u>:
 
-Añadir el `-m` La opción permite que la herramienta de compatibilidad de actualización analice cada módulo específico de forma independiente para evitar encontrar dos módulos con el mismo nombre en la instancia de Adobe Commerce.
+Añadir la opción `-m` permite que la herramienta de compatibilidad de actualización analice cada módulo específico de forma independiente para evitar encontrar dos módulos con el mismo nombre en la instancia de Adobe Commerce.
 
 Esta opción de comando también permite a la herramienta de compatibilidad de actualización analizar una carpeta que contiene varios módulos:
 
@@ -82,4 +82,4 @@ Esta opción de comando también permite a la herramienta de compatibilidad de a
 bin/uct upgrade:check /<dir>/<instance-name> -m /vendor/<vendor-name>/
 ```
 
-Consulte la [Ejecutar la herramienta en una interfaz de línea de comandos](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html) para obtener más información acerca de las opciones de la interfaz de línea de comandos.
+Consulte la página [Ejecutar la herramienta en una interfaz de línea de comandos](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run.html) para obtener más información sobre las opciones de la interfaz de línea de comandos.

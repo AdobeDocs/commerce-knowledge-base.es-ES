@@ -17,4 +17,4 @@ Observación para Adobe Commerce es un nerdlet de New Relic para ver el estado d
 
 La pestaña Resumen de Observación para Adobe Commerce tiene por objeto ver rápidamente algunos de los problemas que experimentan los sitios para ayudarle a resolver automáticamente o identificar las posibles causas básicas de los problemas del sitio. Las pestañas adicionales proporcionan información a nivel más profundo sobre los servicios de componentes, la base de datos, la infraestructura y los estados de proceso.
 
-Para ver la guía completa sobre cómo utilizar Observation for Adobe Commerce en la infraestructura en la nube, vaya a [Observación para Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) guía en Experience League.
+Para ver la guía completa sobre cómo usar Observation for Adobe Commerce en la infraestructura en la nube, ve a la guía de [Observation for Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/tools/observation-for-adobe-commerce/intro.html) en Experience League.

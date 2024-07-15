@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Cron] el trabajo está atascado en el estado **en ejecución**"
-description: Este artículo proporciona soluciones para cuando Adobe Commerce [!DNL cron] los trabajos no terminan de ejecutarse y persisten en estado de "ejecución", lo que impide que otros [!DNL cron] trabajos en ejecución. Esto puede ocurrir por varios motivos, como problemas de red, bloqueos de aplicaciones o problemas de reimplementación.
+title: "[!DNL Cron] trabajo está atascado en estado **en ejecución**"
+description: Este artículo proporciona soluciones para los casos en los que los trabajos de Adobe Commerce [!DNL cron] no terminan de ejecutarse y persisten en estado de "ejecución", lo que impide que se ejecuten otros  [!DNL cron] trabajos. Esto puede ocurrir por varios motivos, como problemas de red, bloqueos de aplicaciones o problemas de reimplementación.
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Cron] el trabajo está atascado en estado &quot;en ejecución&quot;
+# El trabajo [!DNL Cron] se ha quedado atascado en el estado &quot;en ejecución&quot;
 
-Este artículo proporciona soluciones para cuando Adobe Commerce [!DNL cron] los trabajos no terminan de ejecutarse y persisten en estado de &quot;ejecución&quot;, lo que impide que otros [!DNL cron] trabajos en ejecución. Esto puede ocurrir por varios motivos, como problemas de red, bloqueos de aplicaciones o problemas de reimplementación.
+Este artículo proporciona soluciones cuando los trabajos de Adobe Commerce [!DNL cron] no terminan de ejecutarse y persisten en estado de &quot;ejecución&quot;, lo que impide que se ejecuten otros trabajos de [!DNL cron]. Esto puede ocurrir por varios motivos, como problemas de red, bloqueos de aplicaciones o problemas de reimplementación.
 
 ## Productos y versiones afectados
 
@@ -21,38 +21,38 @@ Adobe Commerce en la infraestructura en la nube, todas las versiones
 
 ## Síntoma {#symptom}
 
-Síntomas de [!DNL cron] los trabajos que se deben restablecer incluyen:
+Los síntomas de [!DNL cron] trabajos que deben restablecerse incluyen:
 
-* Aparece una gran cantidad de trabajos en `cron_schedule` cola
+* Aparece una gran cantidad de trabajos en la cola `cron_schedule`
 * El rendimiento del sitio empieza a degradarse
 * Los trabajos no se ejecutan según lo programado
 
 ## Soluciones {#solutions}
 
-### Solución para detener todo [!DNL cron] trabajos a la vez {#solution-stop-all-crons-at-once}
+### Solución para detener todos los [!DNL cron] trabajos a la vez {#solution-stop-all-crons-at-once}
 
 >[!WARNING]
 >
->Ejecutar este comando sin el `--job-code` restablecimientos de opción *todo* [!DNL cron] trabajos, incluidos los que se están ejecutando actualmente, por lo que recomendamos utilizarlo solo en casos excepcionales, como después de comprobar que todos los [!DNL cron] se deben restablecer los trabajos. Volver a implementar ejecuta este comando de forma predeterminada para restablecer [!DNL cron] trabajos, de modo que se recuperen correctamente después de que el entorno se haya vuelto a crear. Evite utilizar esta solución cuando se estén ejecutando indexadores.
+>La ejecución de este comando sin la opción `--job-code` restablece *todos* los trabajos de [!DNL cron], incluidos los que se están ejecutando actualmente, por lo que se recomienda usarlos únicamente en casos excepcionales, como después de comprobar que se deben restablecer todos los trabajos de [!DNL cron]. La reimplementación ejecuta este comando de forma predeterminada para restablecer [!DNL cron] trabajos, de modo que se recuperen correctamente después de realizar la copia de seguridad del entorno. Evite utilizar esta solución cuando se estén ejecutando indexadores.
 
-Para resolver este problema, debe restablecer el [!DNL cron] trabajos que utilizan el `cron:unlock` comando. Este comando cambia el estado del [!DNL cron] trabajo en la base de datos, finalizando el trabajo a la fuerza para permitir que continúen otros trabajos programados.
+Para resolver este problema, debe restablecer los trabajos de [!DNL cron] mediante el comando `cron:unlock`. Este comando cambia el estado del trabajo [!DNL cron] en la base de datos y lo finaliza forzosamente para permitir que continúen otros trabajos programados.
 
-1. Abra un terminal y use su [Claves SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) para conectarse al entorno afectado.
+1. Abra un terminal y use sus [claves SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) para conectarse al entorno afectado.
 1. Obtenga las credenciales de la base de datos MySQL:    ```shell    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp    ```
-1. Conexión a la base de datos mediante `mysql` :    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
-1. Seleccione el `main` base de datos:    ```shell    use main    ```
-1. Buscar todos los recursos en ejecución [!DNL cron] trabajos:    ```shell    SELECT * FROM cron_schedule WHERE status = 'running';    ```
-1. Copie el `job_code` de cualquier trabajo que dure más de lo normal.
-1. Utilice los ID de programación del paso anterior para desbloquear elementos específicos [!DNL cron] trabajos:    ```shell    ./vendor/bin/ece-tools cron:unlock --job-code=<job_code_1> [... --job-code=<job_code_x>]    ```
+1. Conectar con la base de datos mediante `mysql` :    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
+1. Seleccione la base de datos `main`:    ```shell    use main    ```
+1. Buscar todos los trabajos de [!DNL cron] en ejecución:    ```shell    SELECT * FROM cron_schedule WHERE status = 'running';    ```
+1. Copie el `job_code` de cualquier trabajo que se ejecute más de lo normal.
+1. Use los identificadores de programación del paso anterior para desbloquear [!DNL cron] trabajos específicos:    ```shell    ./vendor/bin/ece-tools cron:unlock --job-code=<job_code_1> [... --job-code=<job_code_x>]    ```
 
-### Solución para detener un único [!DNL cron] {#solution-stop-a-single-cron}
+### Solución para detener un solo(a) [!DNL cron] {#solution-stop-a-single-cron}
 
-1. Abra un terminal y use su [Claves SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) para conectarse al entorno afectado.
+1. Abra un terminal y use sus [claves SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) para conectarse al entorno afectado.
 1. Compruebe las tareas de larga ejecución mediante el siguiente comando:
 
    ```date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'```
 
-1. En la salida, como en la salida de ejemplo a continuación, verá la fecha actual y la lista de procesos. El `START` La columna muestra la fecha y la hora de inicio del proceso:
+1. En la salida, como en la salida de ejemplo a continuación, verá la fecha actual y la lista de procesos. La columna `START` muestra la fecha y la hora de inicio del proceso:
 
    ```
    Wed May  8 22:41:31 UTC 2019
@@ -72,8 +72,8 @@ Para resolver este problema, debe restablecer el [!DNL cron] trabajos que utiliz
    bxc2qly+ 25896 29.0  0.6 475320 109876 ?       R    20:51   0:00 /usr/bin/php7.1-zts /app/bxc2qlykqhbqe/bin/magento cron:run --group=ddg_automation --bootstrap=standaloneProcessStarted=1
    ```
 
-1. Si ve una carrera larga [!DNL cron] trabajos que pueden bloquear el proceso de implementación, puede terminar el proceso utilizando la variable `kill` comando. Puede identificar el **ID de proceso** (se encontró el `PID` ), y luego ponga eso `PID` en el comando para cerrar el proceso.
-El **proceso de eliminación** el comando es:
+1. Si ve [!DNL cron] trabajos de larga duración que podrían bloquear el proceso de implementación, puede terminar el proceso con el comando `kill`. Puede identificar el **ID de proceso** (se encontró la columna `PID`) y, a continuación, colocar ese `PID` en el comando para matar el proceso.
+El comando **kill process** está:
 
    ```kill -9 <PID>```
 

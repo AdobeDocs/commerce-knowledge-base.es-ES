@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Error &quot;El código de área no está establecido&quot; al ejecutar `setup:upgrade`
 
-Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.3 relacionado con la obtención de la *&quot;No se ha establecido el código de área&quot;* error al ejecutar el siguiente comando:
+Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.3 relacionado con la obtención del error *&quot;El código de área no está establecido&quot;* al ejecutar el siguiente comando:
 
 ```bash
 setup:upgrade
@@ -31,7 +31,7 @@ Al ejecutar el
 bin/magento setup:upgrade
 ```
 
-, recibirá el siguiente mensaje de error: *&quot;Módulo &#39;Magento\_AdvancedSalesRule&#39;: Instalación de datos...No se ha establecido el código de área: El código de área debe establecerse antes de iniciar una sesión&quot;* y se interrumpe la ejecución del comando. El problema aparece porque se solicita la configuración de área antes de que se establezca. El parche permite detectar el error y no interrumpir el proceso de actualización.
+, recibe el siguiente mensaje de error: *&quot;Module &#39;Magento\_AdvancedSalesRule&#39;: Instalando datos...Código de área no establecido: El código de área debe establecerse antes de iniciar una sesión&quot;* y se interrumpe la ejecución del comando. El problema aparece porque se solicita la configuración de área antes de que se establezca. El parche permite detectar el error y no interrumpir el proceso de actualización.
 
 ## Parche
 

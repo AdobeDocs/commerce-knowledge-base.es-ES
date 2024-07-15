@@ -17,7 +17,7 @@ Adobe Commerce local, Adobe Commerce en la infraestructura en la nube y Magento 
 
 >[!WARNING]
 >
->Si no se instala/configura el Elasticsearch 6/7 antes de intentar actualizar, podrían producirse problemas graves con Adobe Commerce. Tenga en cuenta que las actualizaciones de servicios en Adobe Commerce en la infraestructura en la nube no se pueden insertar en el entorno de producción sin un aviso de 48 horas laborables a nuestro equipo de infraestructura. Esto es necesario, ya que tenemos que asegurarnos de tener un ingeniero de asistencia técnica de infraestructura disponible para actualizar la configuración dentro de un periodo de tiempo deseado con un tiempo de inactividad mínimo en el entorno de producción. Así que 48 horas antes de cuando sus cambios deben estar en producción [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) detallando la actualización de servicio necesaria e indicando la hora en la que desea que se inicie el proceso de actualización.
+>Si no se instala/configura el Elasticsearch 6/7 antes de intentar actualizar, podrían producirse problemas graves con Adobe Commerce. Tenga en cuenta que las actualizaciones de servicios en Adobe Commerce en la infraestructura en la nube no se pueden insertar en el entorno de producción sin un aviso de 48 horas laborables a nuestro equipo de infraestructura. Esto es necesario, ya que tenemos que asegurarnos de tener un ingeniero de asistencia técnica de infraestructura disponible para actualizar la configuración dentro de un periodo de tiempo deseado con un tiempo de inactividad mínimo en el entorno de producción. Así que 48 horas antes de que sus cambios deban estar en producción [envíe un ticket de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) detallando su actualización de servicio requerida e indicando la hora en que desea que comience el proceso de actualización.
 
 La razón para la eliminación del motor de búsqueda MySQL es que Elasticsearch proporciona capacidades de búsqueda superiores, así como optimizaciones de rendimiento del catálogo.
 
@@ -36,15 +36,15 @@ La razón para la eliminación del motor de búsqueda MySQL es que Elasticsearch
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">MySQL</td>
-<td style="width: 478.2px;">Debe instalar Elasticsearch. Consulte <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html">Elasticsearch de instalación y configuración</a> en nuestra documentación para desarrolladores.</td>
+<td style="width: 478.2px;">Debe instalar Elasticsearch. Consulte <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html">Instalar y configurar el Elasticsearch</a> en nuestra documentación para desarrolladores.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">Elasticsearch (sin versión en la lista)</td>
-<td style="width: 478.2px;">Utiliza el Elasticsearch 2 y debe actualizar al Elasticsearch 7 (opción preferida) o 6. Consulte <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html#es-upgrade6">Elasticsearch de actualización</a> y <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html">Configuración de Commerce para utilizar Elasticsearch</a> en nuestra documentación para desarrolladores para obtener más información.</td>
+<td style="width: 478.2px;">Utiliza el Elasticsearch 2 y debe actualizar al Elasticsearch 7 (opción preferida) o 6. Consulte <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html#es-upgrade6">Actualización del Elasticsearch</a> y <a href="https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/configure-magento.html">Configuración de Commerce para usar el Elasticsearch</a> en nuestra documentación para desarrolladores para obtener más detalles.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">ELASTICSEARCH 5</td>
-<td style="width: 478.2px;">El Elasticsearch 5 ha alcanzado su límite <a href="https://www.elastic.co/support/eol">Fin de vida útil</a> y ha quedado obsoleto en Adobe Commerce 2.4.0. Actualice a Elasticsearch 7 (preferido) o 6.</td>
+<td style="width: 478.2px;">El Elasticsearch 5 ha llegado a su <a href="https://www.elastic.co/support/eol">fin de vida útil</a> y ha quedado obsoleto en Adobe Commerce 2.4.0. Actualice a Elasticsearch 7 (preferido) o 6.</td>
 </tr>
 <tr>
 <td class="wysiwyg-text-align-center" style="width: 133px;">ELASTICSEARCH 6 o 7</td>
@@ -59,9 +59,9 @@ La razón para la eliminación del motor de búsqueda MySQL es que Elasticsearch
 
 ## Instalación:
 
-Cuando Adobe Commerce local y Magento Open Source 2.4.0 se publiquen, Elasticsearch será un componente necesario, por lo que debe tener un host de Elasticsearch configurado antes de instalar la versión 2.4.0. Consulte [Elasticsearch de instalación y configuración](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) en nuestra documentación para desarrolladores.
+Cuando Adobe Commerce local y Magento Open Source 2.4.0 se publiquen, Elasticsearch será un componente necesario, por lo que debe tener un host de Elasticsearch configurado antes de instalar la versión 2.4.0. Consulte [Instalar y configurar el Elasticsearch](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-overview.html) en nuestra documentación para desarrolladores.
 
-De forma predeterminada, la búsqueda de Adobe Commerce utilizará el Elasticsearch 7 como motor de búsqueda e intentará conectarse a un servidor en localhost:9200. También se admite el Elasticsearch 6.x. Si la configuración no coincide con los valores predeterminados, puede establecerlos con los argumentos pasados a `setup:install`, de la misma manera que se configura la conexión a la base de datos.
+De forma predeterminada, la búsqueda de Adobe Commerce utilizará el Elasticsearch 7 como motor de búsqueda e intentará conectarse a un servidor en localhost:9200. También se admite el Elasticsearch 6.x. Si la configuración no coincide con los valores predeterminados, puede configurarlos con los argumentos pasados a `setup:install`, de la misma manera que se configura la conexión a la base de datos.
 
 Por ejemplo, `setup:install --elasticsearch-host=es.mystore.com`
 

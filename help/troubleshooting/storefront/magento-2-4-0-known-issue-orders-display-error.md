@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problema conocido de Adobe Commerce 2.4.0: error de visualización de pedidos
 
-Este artículo proporciona una solución para un problema conocido en Adobe Commerce por un error de visualización de pedidos. Cuando los clientes inician sesión, revisan sus pedidos en **Mi cuenta** menú (**Mi cuenta > Mis pedidos**), la cuadrícula de pedidos no puede cambiar el número de pedidos por página a 20 desde la página 2 cuando hay 11 pedidos. Además, si hay más pedidos de los configurados para mostrar por página, al navegar a la última página con pedidos, al cambiar el número de pedidos mostrados por página se produce el mensaje de error: *No ha realizado ningún pedido*. Este problema se resolverá en Adobe Commerce 2.4.1.
+Este artículo proporciona una solución para un problema conocido en Adobe Commerce por un error de visualización de pedidos. Cuando los clientes que iniciaron sesión revisan sus pedidos en el menú **Mi cuenta** (**Mi cuenta > Mis pedidos**), la cuadrícula de pedidos no puede cambiar el número de pedidos por página a 20 desde la página 2 cuando hay 11 pedidos. Además, si hay más pedidos de los que se ha configurado para mostrar por página, al navegar a la última página con pedidos, al cambiar el número de pedidos mostrados por página se genera el mensaje de error: *No ha realizado ningún pedido*. Este problema se resolverá en Adobe Commerce 2.4.1.
 
 ## Productos y versiones afectados
 
@@ -30,10 +30,10 @@ Este artículo proporciona una solución para un problema conocido en Adobe Comm
 <u>Pasos a seguir</u>
 
 1. Cree 11 pedidos con productos.
-1. Ir a **Mi cuenta**.
+1. Vaya a **Mi cuenta**.
 1. Ir a **Mis pedidos**.
 1. Haga clic en la segunda página para mostrar el undécimo pedido en la cuadrícula de pedidos.
-1. Seleccionar **Mostrar = 20 por página** en el menú desplegable.
+1. Seleccione **Mostrar = 20 por página** en el menú desplegable.
 
 <u>Resultado esperado</u>
 
@@ -41,11 +41,11 @@ Los 11 pedidos se muestran en la primera página, según lo esperado.
 
 <u>Resultado real</u>
 
-El *No ha realizado ningún pedido* se muestra un mensaje de error.
+Se muestra el mensaje de error *No ha realizado ningún pedido*.
 
 ## Solución
 
-La solución consiste en que el comprador vuelva a abrir **Mis pedidos** y, a continuación, la lista de pedidos se mostrará correctamente. El problema se solucionará en la próxima versión, Adobe Commerce 2.4.1, cuyo lanzamiento está programado para el cuarto trimestre de 2020.
+La solución consiste en que el comprador vuelva a abrir la página **Mis pedidos** y, a continuación, la lista de pedidos se mostrará correctamente. El problema se solucionará en la próxima versión, Adobe Commerce 2.4.1, cuyo lanzamiento está programado para el cuarto trimestre de 2020.
 
 ## Lecturas relacionadas en nuestra base de conocimiento de soporte
 

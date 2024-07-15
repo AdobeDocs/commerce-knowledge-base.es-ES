@@ -19,7 +19,7 @@ Este artículo proporciona soluciones para los errores que puede experimentar cu
 
    * v2.2.3+ es compatible con ES 5.x
    * v2.2.8+ y v2.3.1+ admiten ES 6.x
-   * No se recomienda ES v2.x y v5.x debido a [Fin de vida útil](https://www.elastic.co/support/eol). Sin embargo, si tiene Adobe Commerce v2.3.1 y desea utilizar ES 2.x o ES 5.x, debe [Cambiar el Elasticsearch php Client](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
+   * No se recomienda las versiones 2.x y 5.x de ES debido a [fin de vida útil](https://www.elastic.co/support/eol). Sin embargo, si tienes Adobe Commerce v2.3.1 y quieres usar ES 2.x o ES 5.x, debes [Cambiar el Elasticsearch php Client](https://devdocs.magento.com/guides/v2.3/config-guide/elasticsearch/es-downgrade.html).
 
 * Magento Open Source v2.3.0+ es compatible con ES 5.x y 6.x (pero se recomienda 6.x).
 
@@ -37,7 +37,7 @@ Este artículo proporciona soluciones para los errores que puede experimentar cu
 <code>{"0":"{\"error\":{\"root_cause\":[{\"type\":\"illegal_argument_exception\",\"reason\":\"Fielddata is disabled on text fields by default. Set fielddata=true on [%attribute_code%]] in order to load fielddata in memory by uninverting the inverted index. Note that this can however use significant memory.\"}]</code>
 </td>
 <td>
-<a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html">El Elasticsearch 5 está configurado, pero la página de búsqueda no se carga con el error "Los datos de campo están desactivados..."</a> en nuestra base de conocimiento de soporte.
+El Elasticsearch <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled...-error.html">5 está configurado, pero la página de búsqueda no se carga con el error "Los datos de campo están deshabilitados..." </a> en nuestra base de conocimiento de soporte.
 </td>
 </tr>
 <tr>
@@ -45,13 +45,13 @@ Este artículo proporciona soluciones para los errores que puede experimentar cu
 <code>Elasticsearch\Common\Exceptions\NoNodesAvailableException: Noticed exception 'Elasticsearch\Common\Exceptions\NoNodesAvailableException' with message 'No alive nodes found in your cluster' in /app/&lt;projectid&gt;/vendor/elasticsearch/elasticsearch/src/Elasticsearch/ConnectionPool/StaticNoPingConnectionPool.php:51</code>
 </td>
 <td>
-No se eliminan los índices de Elasticsuite.  Consulte <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">Los índices de seguimiento de ElasticSuite causan problemas con Elasticsearch</a> en nuestra base de conocimiento de soporte.
+No se eliminan los índices de Elasticsuite.  Ver los índices de seguimiento de <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">ElasticSuite causa problemas con el Elasticsearch</a> en nuestra base de conocimiento de soporte.
  </td>
 </tr>
 <tr>
 <td>Error de PHP</td>
 <td>
-<i>No se han encontrado nodos activos en su clúster","1":"#0 /app/&lt;projectid&gt;/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Transport.php</i>
+<i>No se encontraron nodos activos en su clúster","1":"#0 /app/&lt;projectid&gt;/vendor/elasticsearch/elasticsearch/src/Elasticsearch/Transport.php</i>
 </td>
 <td rowspan="4">
 <ul>
@@ -59,26 +59,27 @@ No se eliminan los índices de Elasticsuite.  Consulte <a href="https://experien
 <li><a href="https://www.cyberciti.biz/datacenter/linux-unix-bsd-osx-cannot-write-to-hard-disk/">8 consejos para resolver los problemas del disco duro de los sistemas Linux y Unix como el disco lleno o no puede escribir en el disco</a></li>
 <li><a href="https://serverfault.com/questions/315181/df-says-disk-is-full-but-it-is-not">error del servidor: df dice que el disco está lleno, pero no lo está</a></li>
 <li><a href="https://unix.stackexchange.com/questions/125429/tracking-down-where-disk-space-has-gone-on-linux">unix.stackexchange.com: ¿Rastreando dónde se ha ido el espacio en disco en Linux?</a></li>
-<li>Los archivos de registro no se archivan con la regularidad suficiente. Consulte <a href="https://docs.magento.com/m2/ee/user_guide/system/action-log-archive.html#configure-the-log-archive">Configuración del archivo de registro</a> en nuestra documentación para desarrolladores.</li>
+<li>Los archivos de registro no se archivan con la regularidad suficiente. Consulte <a href="https://docs.magento.com/m2/ee/user_guide/system/action-log-archive.html#configure-the-log-archive">Configurar el archivo de registro</a> en nuestra documentación para desarrolladores.</li>
 <li>Los directorios del sistema de archivos no están optimizados. Consulte <a href="https://docs.magento.com/m2/ee/user_guide/system/file-optimization.html">Optimización de archivos</a> en nuestra documentación para desarrolladores.</li>
 <li>Si las soluciones de la documentación anterior no resuelven el problema, póngase en contacto con el equipo de cuenta de Adobe de para solicitar almacenamiento adicional.</li>
 </ul>
 </li>
-<li>Si el disco no se ha quedado sin almacenamiento pero sigue recibiendo mensajes de error en la columna izquierda, <a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket">enviar un ticket de asistencia</a>.</li>
+<li>Si el disco no se ha quedado sin almacenamiento, pero sigue recibiendo mensajes de error en la columna izquierda, <a href="/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket">envíe un ticket de asistencia</a>.</li>
 </ul>
 <ul>
-<li>Consulte <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">Los índices de seguimiento de ElasticSuite causan problemas con Elasticsearch</a> en nuestra base de conocimiento de soporte.
+<li>Ver los índices de seguimiento de <a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.html">ElasticSuite causa problemas con el Elasticsearch</a> en nuestra base de conocimiento de soporte.
 </li>
 </ul>
 </td>
 </tr>
 <tr>
 <td><code>Curl</code> error</td>
-<td>Ejecución de la <code>curl</code> comando para comprobar el estado del Elasticsearch:<code>curl -m1 localhost:9200/_cluster/health?pretty</code>(o<code>curl -m1 elasticsearch.internal:9200/_cluster/health?pretty</code>para cuentas de inicio) produce este error: <i>Error: curl: (7) No se pudo conectar con el puerto localhost 9200: Conexión rechazada</i> </td>
+<td>La ejecución del comando <code>curl</code> para comprobar el estado del Elasticsearch:<code>curl -m1 localhost:9200/_cluster/health?pretty</code>(o<code>curl -m1 elasticsearch.internal:9200/_cluster/health?pretty</code>para cuentas de inicio) produce este error: <i>Error: curl: (7) No se pudo conectar al puerto localhost 9200: Conexión rechazada</i> </td>
 </tr>
 <tr>
 <td>Error de la línea de comandos</td>
-<td>Ejecutando <code>$ bin/magento indexer:reindex catalogsearch_fulltext</code> produce este error <i>Error desconocido en el proceso del indexador de búsqueda en el catálogo: No se han encontrado nodos activos en el clúster</i>
+<td>La ejecución de <code>$ bin/magento indexer:reindex catalogsearch_fulltext</code> produce este error <i>Error desconocido en el proceso del indizador de búsqueda en el catálogo:
+        No se encontraron nodos activos en su clúster</i>
 </td>
 </tr>
 <tr>

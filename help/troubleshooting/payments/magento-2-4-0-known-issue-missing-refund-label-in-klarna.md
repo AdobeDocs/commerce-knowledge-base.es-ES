@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problema conocido de Adobe Commerce 2.4.0: falta la etiqueta &quot;Reembolso&quot; en Klarna
 
-Este artículo proporciona una solución para un problema conocido en Administración para un problema que falta **Reembolso** en Klarna VBE (extensión agrupada de proveedor). Cuando en el portal de Klarna que realiza un reembolso, la **Reembolso** La etiqueta no se muestra junto al producto agrupado que se reembolsó.
+Este artículo proporciona una solución para un problema conocido en Administración para una etiqueta **Reembolso** que falta en Klarna VBE (extensión agrupada de proveedor). En el portal de Klarna que realiza un reembolso, la etiqueta **Reembolso** no se muestra junto al producto agrupado que se reembolsó.
 
 ## Productos y versiones afectados
 
@@ -29,29 +29,29 @@ Este artículo proporciona una solución para un problema conocido en Administra
 
 <u>Pasos a seguir</u>
 
-1. Vaya al front-end de Adobe Commerce y añada un producto agrupado a **carrito**.
+1. Vaya al front-end de Adobe Commerce y agregue un producto agrupado al **carro**.
 1. Vaya a Cierre de compra.
-1. Introduzca la información del consumidor en el cierre de compra y haga clic en **Siguiente**.
-1. Seleccionar **Opción KP** y haga clic en **Realizar pedido**.
-1. Ir a **Administrador** > **Ventas** > **Pedidos**.
+1. Escriba la información del consumidor en el cierre de compra y haga clic en **Siguiente**.
+1. Seleccione **KP option** y haga clic en **Realizar pedido**.
+1. Vaya a **Administración** > **Ventas** > **Pedidos**.
 1. Abra el pedido.
 1. Crear factura para el producto.
-1. Ir a **Facturas** > **Seleccionar factura** > Haga clic **Nota de crédito** > Haga clic **Reembolso** (No **Reembolso sin conexión**).
+1. Vaya a **Facturas** > **Seleccionar factura** > Haga clic en **Nota de crédito** > Haga clic en **Reembolso** (no en **Reembolso sin conexión**).
 1. Ve al portal Klarna.
 1. Abra el pedido.
-1. El **Reembolso** la etiqueta está presente.
+1. La etiqueta **Reembolso** está presente.
 
 <u>Resultado esperado</u>
 
-En el portal Klarna, la **Reembolso** la etiqueta se muestra junto al producto que se ha reembolsado.
+En el portal de Klarna, la etiqueta **Reembolso** se muestra junto al producto que se reembolsó.
 
 <u>Resultado real</u>
 
-En el portal Klarna, la **Reembolso** la etiqueta no se muestra junto al producto que se ha reembolsado.
+En el portal de Klarna, la etiqueta **Reembolso** no se muestra al lado del producto que ha sido reembolsado.
 
 ## Solución
 
-La solución para este problema es ignorar lo que falta **Reembolso** etiqueta en el portal de Klarna para productos agrupados reembolsados. El reembolso se ha producido, aunque el **Reembolso** la etiqueta no se ha mostrado. Se espera que el problema se solucione en Adobe Commerce 2.4.1, cuyo lanzamiento está programado para el cuarto trimestre de 2020.
+La solución a este problema es ignorar la etiqueta **Reembolso** que falta en el portal de Klarna para los productos agrupados con reembolso. Se ha realizado el reembolso, aunque no se mostraba la etiqueta **Reembolso**. Se espera que el problema se solucione en Adobe Commerce 2.4.1, cuyo lanzamiento está programado para el cuarto trimestre de 2020.
 
 ## Lecturas relacionadas en nuestra base de conocimiento de soporte:
 

@@ -23,4 +23,4 @@ Sí, para mantener los sistemas sincronizados continuamente, Adobe Commerce obti
 
 ## Para desactivar estos correos electrónicos:
 
-Siga estas instrucciones para [Actualización de las preferencias de notificación en el sitio de Amazon](https://sellercentral.amazon.com/gp/help/external/G871).
+Siga estas instrucciones para [actualizar preferencias de notificación en el sitio de Amazon](https://sellercentral.amazon.com/gp/help/external/G871).

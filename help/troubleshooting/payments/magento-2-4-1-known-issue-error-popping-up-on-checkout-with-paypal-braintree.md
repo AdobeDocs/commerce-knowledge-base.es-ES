@@ -29,12 +29,12 @@ Aparece un mensaje de error que desaparece en el paso Facturación del Pago y en
 1. En la tienda, inicie sesión como cliente (si está habilitado en Administración, puede tratarse de un cierre de compra para invitados).
 1. Añadir un producto al carro de compras.
 1. Haga clic para abrir la previsualización del carro de compras.
-1. Clic **Ver y editar el carro**.
-1. En la página Carro, haga clic en **Desproteger con varias direcciones**.
-1. Clic **Ir a Información de envío** y especifique las direcciones.
-1. Clic **Continuar a Información de facturación**.
-1. Seleccionar **Braintree de PayPal** y haga clic en **PayPal** botón.
-1. En la ventana emergente, haga clic en **Aceptar y pagar**.
+1. Haga clic en **Ver y editar carro**.
+1. En la página Carro de compras, haga clic en **Retirar con varias direcciones**.
+1. Haga clic en **Ir a la información de envío** y especifique las direcciones.
+1. Haga clic en **Continuar con la información de facturación**.
+1. Seleccione **Braintree de PayPal** y haga clic en el botón **PayPal**.
+1. En la ventana emergente, haz clic en **Aceptar y pagar**.
 
 <u>Resultado esperado:</u>
 
@@ -42,7 +42,7 @@ El pedido se realiza sin ningún error.
 
 <u>Resultado real:</u>
 
-Se realiza el pedido, pero con un error. El *No se ha podido inicializar el cierre de compra de PayPal. Póngase en contacto con el propietario de la tienda*.  el error se muestra durante un segundo y desaparece.
+Se realiza el pedido, pero con un error. No se pudo inicializar el proceso de pago y envío de *PayPal. Póngase en contacto con el propietario de la tienda*.  el error se muestra durante un segundo y desaparece.
 
 ## Fix
 

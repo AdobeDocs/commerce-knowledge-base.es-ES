@@ -21,13 +21,13 @@ Adobe Commerce (todos los métodos de implementación) 2.4.4
 
 ## Problema
 
-Cuando se usa Apple Pay o Google Pay como forma de pago, los usuarios reciben el error &quot;*El comando &quot;vault_capture&quot; no existe. Compruebe el comando e inténtelo de nuevo.*&quot; al crear facturas parciales.
+Al usar Apple Pay o Google Pay como métodos de pago, los usuarios reciben el error &quot;*El comando ‘vault_capture’ no existe. Compruebe el comando e inténtelo de nuevo.*&quot; al crear facturas parciales.
 
 <u>Pasos a seguir</u>:
 
 1. Abra el sitio web de Adobe Commerce.
 1. Añadir un producto simple al carro de compras (cantidad 2).
-1. Elegir **Apple Pay** o **Google Pay** como forma de pago del carro de compras.
+1. Elige **Apple Pay** o **Google Pay** como forma de pago del carro de compras.
 1. Realice el pedido.
 1. Abra los detalles del pedido desde el back-end.
 1. Crear una factura parcial.
@@ -39,7 +39,7 @@ Se crean facturas parciales.
 
 <u>Resultados reales</u>:
 
-Se crea la primera factura parcial. Al crear la segunda factura parcial, los usuarios reciben el siguiente error: *El comando &quot;vault_capture&quot; no existe. Compruebe el comando e inténtelo de nuevo*.
+Se crea la primera factura parcial. Al crear la segunda factura parcial, los usuarios reciben el siguiente error: *El comando ‘vault_capture’ no existe. Compruebe el comando e inténtelo de nuevo*.
 
 ## Causa
 

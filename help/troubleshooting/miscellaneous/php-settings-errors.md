@@ -22,16 +22,16 @@ Las comprobaciones de disponibilidad garantizan que tenga al menos 1 GB de memor
 Para aumentar el límite de memoria PHP:
 
 1. Inicie sesión en el servidor de Adobe Commerce.
-1. Busque su `php.ini` mediante el siguiente comando:
+1. Busque el archivo `php.ini` con el siguiente comando:
 
    ```
    bash    $ php --ini
    ```
 
-1. Como usuario con `root` privilegios, utilice un editor de texto para abrir el `php.ini` especificado por `Loaded Configuration File`.
-1. Localizar `memory_limit`.
-1. Cámbielo a un valor de `2GB` para uso y depuración normales.
-1. Guardar los cambios en `php.ini` y salga del editor de texto.
+1. Como usuario con privilegios de `root`, use un editor de texto para abrir el `php.ini` especificado por `Loaded Configuration File`.
+1. Busque `memory_limit`.
+1. Cámbielo a un valor de `2GB` para su uso y depuración normales.
+1. Guarde los cambios en `php.ini` y salga del editor de texto.
 1. Reinicie el servidor web. A continuación se muestran ejemplos:
 
    * CentOS: `service httpd restart`
@@ -42,17 +42,17 @@ Para aumentar el límite de memoria PHP:
 
 ## error de max-input-vars debido a formularios grandes
 
-Las configuraciones con un número elevado de vistas de tienda, productos, atributos u opciones pueden generar formularios que superen el límite preestablecido de PHP. Si el número de valores enviados supera el `max-input-vars` límite establecido en `php.ini` (el valor predeterminado es 1000), los datos restantes no se transfieren y los valores de la base de datos no se actualizan. Cuando esto sucede, aparece una advertencia en el registro de PHP:
+Las configuraciones con un número elevado de vistas de tienda, productos, atributos u opciones pueden generar formularios que superen el límite preestablecido de PHP. Si el número de valores enviados supera el límite de `max-input-vars` establecido en `php.ini` (el valor predeterminado es 1000), los datos restantes no se transfieren y los valores de la base de datos no se actualizan. Cuando esto sucede, aparece una advertencia en el registro de PHP:
 
 ```terminal
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
-No hay ningún valor &quot;adecuado&quot; para `max-input-vars`; depende del tamaño y la complejidad de la configuración. Modifique el valor en `php.ini` como sea necesario. Consulte [Configuración de PHP requerida](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
+No hay ningún valor &quot;adecuado&quot; para `max-input-vars`; depende del tamaño y la complejidad de la configuración. Modifique el valor del archivo `php.ini` según sea necesario. Consulte [Configuración de PHP requerida](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
 
 ## error de nivel máximo de anidamiento de función xdebug
 
-Consulte [Durante la instalación, error de nivel de anidamiento de función máxima xdebug](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md).
+Ver [Durante la instalación, error de nivel máximo de anidamiento de función xdebug](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md).
 
 ## Los errores se muestran al acceder a una plantilla PHTML
 
@@ -64,7 +64,7 @@ Parse error: syntax error, unexpected 'data' (T_STRING)
 
 ### Solución: establezca `asp_tags = off` en php.ini
 
-Varias plantillas tienen sintaxis para admitir el nivel abstracto en plantillas (utilice distintos motores de plantillas como Twig) envueltas en `<% %>` etiquetas, así [plantilla](https://github.com/magento/magento2/blob/2.0/app/code/Magento/Catalog/view/adminhtml/templates/product/edit/base_image.phtml) para mostrar una imagen de producto:
+Varias plantillas tienen sintaxis para admitir el nivel abstracto en plantillas (utilice distintos motores de plantillas como Twig) envueltas en `<% %>` etiquetas, como esta [plantilla](https://github.com/magento/magento2/blob/2.0/app/code/Magento/Catalog/view/adminhtml/templates/product/edit/base_image.phtml) para mostrar una imagen de producto:
 
 ```php
 <img
@@ -76,4 +76,4 @@ Varias plantillas tienen sintaxis para admitir el nivel abstracto en plantillas 
 
 Más información sobre [asp\_tags](http://php.net/manual/en/ini.core.php#ini.asp-tags).
 
-Editar `php.ini` y establecer `asp_tags = off`. Para obtener más información, consulte [Configuración de PHP requerida](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).
+Edite `php.ini` y establezca `asp_tags = off`. Para obtener más información, consulte [Configuración de PHP requerida](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html).

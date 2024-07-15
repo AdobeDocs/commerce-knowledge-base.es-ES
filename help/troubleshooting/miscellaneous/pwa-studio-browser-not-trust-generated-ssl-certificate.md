@@ -41,9 +41,9 @@ La generación de certificados está a cargo de [devcert](https://github.com/dav
 
 La versión debe ser 1.0 o superior (o LibreSSL 2, en el caso de OSX High Sierra).
 
-Puede instalar versiones superiores de OpenSSL con [Homebrew](https://brew.sh/) en OSX, [Chocolate](https://chocolatey.org/) en Windows o en el administrador de paquetes de su distribución Linux.
+Puede instalar versiones superiores de OpenSSL con [Homebrew](https://brew.sh/) en OSX, [Chocolatey](https://chocolatey.org/) en Windows o el administrador de paquetes de su distribución Linux.
 
-Si está ejecutando Linux, asegúrese de que `libnss3-tools` (o el equivalente) está instalado en su sistema. Para obtener más información, consulte esta sección de la [devcert](https://github.com/davewasmer/devcert#skipcertutil) léame.
+Si está ejecutando Linux, asegúrese de que `libnss3-tools` (o el equivalente) esté instalado en su sistema. Se ha proporcionado más información en esta sección del archivo léame [devcert](https://github.com/davewasmer/devcert#skipcertutil).
 
 Algunos usuarios han sugerido eliminar la carpeta devcert para almacenar en déclencheur la regeneración de certificados.
 

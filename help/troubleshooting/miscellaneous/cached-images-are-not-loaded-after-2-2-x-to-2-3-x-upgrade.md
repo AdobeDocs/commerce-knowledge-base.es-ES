@@ -23,11 +23,11 @@ Este artículo proporciona la solución al problema de que las imágenes en cach
 
 Después de actualizar Adobe Commerce de 2.2.X a 2.3.X, las imágenes de producto en caché no están disponibles y se muestra una página 404 en su lugar.
 
-El problema se debe a una configuración de Nginx incorrecta establecida en `.magento.app.yaml`: `index.php` (o ninguno) se usa para `"/media"` ubicación en lugar de `passthru: /get.php`.
+El problema se debe al conjunto de configuración de Nginx incorrecto en `.magento.app.yaml`: `index.php` (o ninguno) se usa para la ubicación `"/media"` en lugar de `passthru: /get.php`.
 
 ## Solución
 
-1. Compruebe su `.magento.app.yaml` archivo de configuración, en `"/media"` ubicación. La configuración correcta tiene el siguiente aspecto:
+1. Compruebe su archivo de configuración de `.magento.app.yaml`, en la ubicación `"/media"`. La configuración correcta tiene el siguiente aspecto:
 
    ```yaml
    "/media":
@@ -38,13 +38,13 @@ El problema se debe a una configuración de Nginx incorrecta establecida en `.ma
        passthru: "/get.php"
    ```
 
-1. If `passthru` no se ha establecido en `"/get.php"` y `expires` no está configurada, siga estos pasos.
+1. Si `passthru` no está establecido en `"/get.php"` y `expires` no está establecido, siga estos pasos.
 1. Corrija el archivo de configuración.
    * Plan de inicio: corrija el archivo usted mismo e inserte los cambios.
    * Plan Pro:
    * Integración: corrija el archivo usted mismo e inserte los cambios.
-   * Ensayo y producción: corrija el archivo usted mismo, inserte los cambios y cree un [ticket de asistencia de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para que se aplique.
+   * Ensayo y producción: corrija el archivo usted mismo, inserte los cambios y cree un [vale de soporte de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para que se aplique.
 
-1. Habilite la optimización de imágenes rápida en el administrador de Commerce (debe configurarse previamente), tal como se describe en <https://devdocs.magento.com/guides/v2.3/cloud/cdn/fastly-image-optimization.html>.
+1. Habilite la optimización de imágenes rápida en el administrador de Commerce (la configuración de Fastly debe ser anterior), tal como se describe en <https://devdocs.magento.com/guides/v2.3/cloud/cdn/fastly-image-optimization.html>.
 
-Si la configuración es correcta, pero el problema persiste, continúe con la investigación o póngase en contacto con [Asistencia de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Si la configuración es correcta, pero el problema persiste, continúa investigando o ponte en contacto con el [Soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).

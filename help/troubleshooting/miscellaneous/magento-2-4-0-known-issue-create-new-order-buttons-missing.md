@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problema conocido de Adobe Commerce 2.4.0: faltan los botones Crear nuevo pedido
 
-Este artículo proporciona una solución alternativa para un problema conocido en el Administrador de Commerce de dos botones que faltan en la página de creación de pedidos. Al crear un pedido nuevo para un cliente nuevo o existente, no es posible añadir productos al pedido desde el catálogo ya que la variable **Añadir productos por SKU** y **Añadir productos** faltan botones. Esto se debe a que el agrupamiento de JS está habilitado. Habrá una corrección disponible en Adobe Commerce 2.4.1.
+Este artículo proporciona una solución alternativa para un problema conocido en el Administrador de Commerce de dos botones que faltan en la página de creación de pedidos. Al crear un pedido nuevo para un cliente nuevo o existente, no es posible agregar productos al pedido desde el catálogo, ya que faltan los botones **Agregar productos por SKU** y **Agregar productos**. Esto se debe a que el agrupamiento de JS está habilitado. Habrá una corrección disponible en Adobe Commerce 2.4.1.
 
 ## Productos y versiones afectados
 
@@ -24,17 +24,17 @@ Este artículo proporciona una solución alternativa para un problema conocido e
 
 <u>Pasos a seguir</u>
 
-1. Ir a **Clientes > Todos los clientes**.
-1. Haga clic en **Editar** vínculo de un cliente.
-1. Haga clic en **Crear pedido** botón.
+1. Vaya a **Clientes > Todos los clientes**.
+1. Haga clic en el vínculo **Editar** de un cliente.
+1. Haga clic en el botón **Crear pedido**.
 
 <u>Resultado esperado</u>
 
-El **Añadir productos por SKU** y **Añadir productos** botones aparecen en la **Crear nuevo pedido** página.
+Los botones **Agregar productos por SKU** y **Agregar productos** aparecen en la página **Crear nuevo pedido**.
 
 <u>Resultado real</u>
 
-El **Añadir productos por SKU** y **Añadir productos** faltan botones en la **Crear nuevo pedido** página.
+Los botones **Agregar productos por SKU** y **Agregar productos** no aparecen en la página **Crear nuevo pedido**.
 
 ## Solución
 

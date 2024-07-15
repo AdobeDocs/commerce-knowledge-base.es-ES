@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: El explorador muestra el error &quot;No se puede proxy a&quot;.
 
-En este tema se describe una solución cuando el explorador web muestra un &quot;*No se puede enviar proxy a*&quot; y la consola muestra un
+En este tema se describe una solución cuando el explorador web muestra &quot;*No se puede usar el proxy para*&quot; y la consola muestra un
 
 ```
 ENOTFOUND
@@ -37,7 +37,7 @@ error al usar Progressive Web App (PWA) Studio para Adobe Commerce.
 
 <u>Resultado real</u>:
 
-* Su explorador web muestra el mensaje &quot;*No se puede enviar proxy a*&quot;y la consola muestra un error similar al siguiente:
+* Su explorador web muestra el error &quot;*No se puede proxy a*&quot; y la consola muestra un error como:
 
 ```
     ENOTFOUND
@@ -51,7 +51,7 @@ NodeJS no puede resolver el nombre de host de su tienda Adobe Commerce.
 ## Solución
 
 1. Asegúrese de que la tienda de Adobe Commerce se carga en más de un explorador web.
-1. Si está ejecutando un servidor DNS local o VPN, agregue una entrada al archivo host (ubicado en `/etc/hosts`) y asigne manualmente este dominio ([Instrucciones genéricas sobre la edición de archivos host](https://linuxize.com/post/how-to-edit-your-hosts-file/)) para que NodeJS pueda resolverlo.
+1. Si está ejecutando un servidor DNS local o VPN, agregue una entrada a su archivo host (ubicado en `/etc/hosts`) y asigne manualmente este dominio ([Instrucciones genéricas sobre la edición de archivos host](https://linuxize.com/post/how-to-edit-your-hosts-file/)) para que NodeJS pueda resolverlo.
 
 ## Lectura relacionada
 

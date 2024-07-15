@@ -17,7 +17,7 @@ Este artículo proporciona una solución para los casos en los que los módulos 
 
 ## Productos y versiones afectados
 
-* Adobe Commerce (todos los métodos de implementación) todo  [versiones compatibles](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+* Adobe Commerce (todos los métodos de implementación) [todas las versiones compatibles](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problema
 
@@ -31,7 +31,7 @@ Este es el comportamiento esperado, ya que las extensiones agrupadas por proveed
 
 ## Solución
 
-Instale/compre las extensiones oficiales por separado. Están disponibles en la [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+Instale/compre las extensiones oficiales por separado. Están disponibles en el [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 
 ## Lectura relacionada
 

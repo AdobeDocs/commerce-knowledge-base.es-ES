@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # ACSD-45241: la cantidad de existencias del producto virtual se ha calculado incorrectamente
 
-El parche ACSD-45241 corrige el problema en el que la cantidad de existencias del producto virtual se calcula de forma incorrecta después de crear un abono. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17 está instalado. El ID del parche es ACSD-45241. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.4.
+El parche ACSD-45241 corrige el problema en el que la cantidad de existencias del producto virtual se calcula de forma incorrecta después de crear un abono. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.17. El ID del parche es ACSD-45241. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.4.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.2
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.5 - 2.4.4
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -41,18 +41,18 @@ La cantidad de stock de un producto virtual se calcula incorrectamente después 
 1. Añadir el producto al carro de compras.
 1. Realice un pedido con el producto virtual creado en el paso uno.
 1. Mantenga el estado del pedido como Pendiente. No es necesario procesar el pago.
-1. `order_created` registro creado en `inventory_reservation`. La cantidad de producto virtual muestra 100 con una cantidad vendible de 99.
-1. Abra la solicitud y vaya a **Factura** > **Enviar factura**.
-1. `invoice_created` registro creado en `inventory_reservation`. La cantidad de producto virtual es ahora 99, y la cantidad vendible también es 99.
-1. Crear un abono sin seleccionar **Volver a stock**.
+1. Registro `order_created` creado en `inventory_reservation`. La cantidad de producto virtual muestra 100 con una cantidad vendible de 99.
+1. Abra el pedido y vaya a **Factura** > **Enviar factura**.
+1. Registro `invoice_created` creado en `inventory_reservation`. La cantidad de producto virtual es ahora 99, y la cantidad vendible también es 99.
+1. Crear un abono sin seleccionar **Volver a Stock**.
 
 <u>Resultados esperados</u>:
 
-No se crea ningún registro nuevo en `inventory_reservation`y la cantidad de stock del producto virtual no cambia.
+No se crea ningún registro nuevo en `inventory_reservation` y la cantidad de existencias del producto virtual no se modifica.
 
 <u>Resultados reales</u>:
 
-A `creditmemo_created` el registro se crea en `inventory_reservation`, y la cantidad de stock de producto virtual se ajusta a 98 con la cantidad vendible como 99.
+Se crea un registro `creditmemo_created` en `inventory_reservation` y la cantidad de existencias del producto virtual se ajusta a 98 con la cantidad vendible como 99.
 
 ## Aplicar el parche
 
@@ -65,7 +65,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Autor en Markdown
 
-Generalmente, utilizamos [Guía de estilo de sintaxis de Adobe Experience League Markdown](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), pero hay algunas diferencias y excepciones. Además, en determinados casos se requieren determinadas etiquetas de HTML.
+Por lo general, utilizamos la [Guía de estilo de sintaxis de Adobe Experience League Markdown](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), pero existen algunas diferencias y excepciones. Además, en determinados casos se requieren determinadas etiquetas de HTML.
 
 Los siguientes son ejemplos del formato Markdown que se utiliza más comúnmente en nuestro repositorio.
 
@@ -23,11 +23,11 @@ Para aplicar cursiva al texto, utilice un solo asterisco:
 
 `This text will be *italics*`
 
-Para aplicar formato subrayado al texto, utilice la variable `<ins>` etiqueta:
+Para aplicar formato subrayado al texto, use la etiqueta `<ins>`:
 
 `<ins>This text will be underlined</ins>`
 
-Para añadir un salto de línea, utilice la variable `<br>` Etiqueta de HTML.
+Para agregar un salto de línea, use la etiqueta de HTML `<br>`.
 
 
 ## Encabezados
@@ -54,8 +54,11 @@ Para insertar un bloque de código, encierre el bloque de código entre comillas
 
 \`\`\` sql
 
-SELECCIONAR TABLE_NAME COMO `Table`, ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
-FROM information_schema.TABLES WHERE TABLE_SCHEMA = &quot;%project_id%&quot; ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
+SELECCIONAR TABLE_NAME COMO `Table`,
+ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
+FROM: information_schema.TABLES
+WHERE TABLE_SCHEMA = &quot;%project_id%&quot;
+ORDENAR POR (DATA_LENGTH + INDEX_LENGTH) DESC;
 
 \`\`\`
 
@@ -81,7 +84,7 @@ your code here
 </pre></code>
 ```
 
-Donde ``%language-code%`` son los códigos definidos por [Idiomas compatibles con Prisma.js](https://prismjs.com/#supported-languages).
+Donde ``%language-code%`` son los códigos definidos por [idiomas compatibles con Prisma.js](https://prismjs.com/#supported-languages).
 
 ## Listas
 
@@ -130,7 +133,7 @@ Los vínculos externos son directos:
 
 Cualquier tipo de archivo adjunto debe tener los formatos .png, .jpg y .jpeg. Por motivos de seguridad, solo aceptamos archivos adjuntos que estén en uno de los tres formatos.
 
-Para insertar una imagen, colóquela en *activos* en la misma carpeta de sección que el artículo y utilice la siguiente sintaxis para insertar la imagen en el artículo:
+Para insertar una imagen, coloque la imagen en la subcarpeta *assets* en la misma carpeta de sección que el artículo y utilice la siguiente sintaxis para insertar la imagen en el artículo:
 
 ```markdown
 ![alt text](assets/image.png)
@@ -162,17 +165,17 @@ Este es un vínculo a este encabezado:
 [this is link to the anchor in the same article](#this-is-header)
 ```
 
-Si necesita hacer referencia a un elemento que no sea un encabezado, utilice el HTML para definir el elemento que desea agregar y utilice el [atributo de id](https://www.w3schools.com/html/html_id.asp). A continuación, puede utilizar Markdown o HTML para hacer referencia a este ID.
+Si necesita hacer referencia a un elemento que no sea un encabezado, use el HTML para definir el elemento que desea agregar y use [id atributo](https://www.w3schools.com/html/html_id.asp). A continuación, puede utilizar Markdown o HTML para hacer referencia a este ID.
 
 ### Vínculos relativos y vínculos a otros artículos
 
-No utilice vínculos relativos para hacer referencia a los artículos de nuestra base de conocimiento de soporte. Estos vínculos no funcionarán cuando su artículo se publique en [Centro de ayuda de Adobe Commerce](https://support.magento.com/hc/en-us).
-Utilice hipervínculos completos desde el [Centro de ayuda de Adobe Commerce](https://support.magento.com/hc/en-us).
+No utilice vínculos relativos para hacer referencia a los artículos de nuestra base de conocimiento de soporte. Esos vínculos no funcionarán cuando tu artículo se publique en el [Centro de ayuda de Adobe Commerce](https://support.magento.com/hc/en-us).
+Use hipervínculos completos del [Centro de ayuda de Adobe Commerce](https://support.magento.com/hc/en-us).
 
 
 ## Tablas
 
-Uso [Formato del HTML para tablas](https://www.w3schools.com/html/html_tables.asp).
+Usar formato de HTML [para tablas](https://www.w3schools.com/html/html_tables.asp).
 
 
 ## Advertencias y bloques de información

@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Error al purgar la caché de Fastly en la nube (la solicitud de purga no se procesó correctamente)
 
-Este artículo proporciona una corrección para cuando utiliza una opción de depuración de Fastly y recibe el error: *La solicitud de purga no se ha procesado correctamente*. Fastly es un servicio de CDN y almacenamiento en caché incluido con Adobe Commerce en planes e implementaciones de infraestructura en la nube. Si intenta utilizar una opción de depuración de Fastly y no se procesa, es posible que tenga credenciales de Fastly incorrectas en el entorno o que se haya encontrado un problema.
+Este artículo proporciona una corrección para los casos en los que usa una opción de purga de Fastly y recibe el error: *La solicitud de purga no se procesó correctamente*. Fastly es un servicio de CDN y almacenamiento en caché incluido con Adobe Commerce en planes e implementaciones de infraestructura en la nube. Si intenta utilizar una opción de depuración de Fastly y no se procesa, es posible que tenga credenciales de Fastly incorrectas en el entorno o que se haya encontrado un problema.
 
 Esta información le ayuda a verificar y probar los encabezados de Fastly para su sitio activo y servidores de origen.
 
@@ -37,7 +37,7 @@ Es posible que tenga credenciales incorrectas establecidas en el entorno o que n
 Compruebe si tiene el ID de servicio rápido y el token de API correctos en su entorno. Si tiene credenciales de ensayo en producción, es posible que las depuraciones no se procesen o procesen incorrectamente.
 
 1. Inicie sesión en el administrador local de Commerce como administrador.
-1. Clic **Tiendas** > Configuración > **Configuración** > **Avanzadas** > **Sistema** y ampliar **Caché de página completa**.    ![magento_full_page_cache_2.4.1.png](assets/magento_full_page_cache_2.4.1.png)
+1. Haga clic en **Tiendas** > Configuración > **Configuración** > **Avanzado** > **Sistema** y expanda **Caché de página completa**.    ![magento_full_page_cache_2.4.1.png](assets/magento_full_page_cache_2.4.1.png)
 1. Expanda Configuración de Fastly y verifique el ID de servicio de Fastly y el token de API para su entorno.
 1. Si modifica los valores, haga clic en Credenciales de prueba.
 
@@ -49,12 +49,12 @@ Si las credenciales son correctas, es posible que tenga problemas con sus VCL. P
 curl -X GET -s https://api.fastly.com/service/<Service ID>/version/<Editable Version #>/snippet -H "Fastly-Key:FASTLY_API_TOKEN"
 ```
 
-Revise la lista de VCL. Si tiene problemas con las VCL predeterminadas de Fastly, puede volver a cargar o verificar el contenido según el [VCL predeterminados rápidos](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets). Para editar sus VCL personalizados, consulte [Fragmentos de VCL personalizados de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) en la Guía de infraestructura de Commerce en la nube.
+Revise la lista de VCL. Si tiene problemas con las VCL predeterminadas de Fastly, puede volver a cargar o comprobar el contenido según las [VCL predeterminadas de Fastly](https://github.com/fastly/fastly-magento2/tree/master/etc/vcl_snippets). Para editar sus VCL personalizados, consulte [Fragmentos personalizados de VCL de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) en la Guía de infraestructura de Commerce en la nube.
 
 ## Más información
 
 En nuestra documentación para desarrolladores:
 
 * [Acerca de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Configuración rápida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
-* [Fragmentos de VCL personalizados de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)
+* [Configurar rápidamente](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html)
+* [Fragmentos personalizados de VCL de Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html)

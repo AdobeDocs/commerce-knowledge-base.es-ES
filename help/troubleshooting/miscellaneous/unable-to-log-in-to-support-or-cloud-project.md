@@ -17,11 +17,11 @@ Este artículo proporciona una solución para cuando tenga problemas para inicia
 
 ## Productos y versiones afectados
 
-Adobe Commerce (todos los métodos de implementación) todo [versiones compatibles](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
+Adobe Commerce (todos los métodos de implementación) [todas las versiones compatibles](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf)
 
 ## Problema
 
-Cuando vaya a [https://account.magento.com/customer/account/login/](https://account.magento.com/customer/account/login/) o [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user) es posible que observe que ahora hay un formulario de inicio de sesión unificado y que ya no puede introducir sus credenciales como lo había hecho anteriormente.
+Al ir a [https://account.magento.com/customer/account/login/](https://account.magento.com/customer/account/login/) o [https://accounts.magento.cloud/user](https://accounts.magento.cloud/user), es posible que observe que ahora hay un formulario de inicio de sesión unificado y que ya no puede escribir sus credenciales como lo había hecho anteriormente.
 
 <u>Pasos a seguir</u>:
 

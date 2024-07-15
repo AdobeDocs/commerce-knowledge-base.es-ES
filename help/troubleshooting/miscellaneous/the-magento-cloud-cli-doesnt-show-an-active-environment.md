@@ -1,6 +1,6 @@
 ---
-title: La "nube de Magento" [!DNL CLI] no muestra un entorno activo
-description: Este artículo describe un problema conocido de Adobe Commerce en el que la nube de Magento de [!DNL CLI] (herramienta de línea de comandos) no muestra un entorno activo.
+title: La nube de Magento  [!DNL CLI]  no muestra un entorno activo
+description: En este artículo se describe un problema conocido de Adobe Commerce en el cual Magento-cloud [!DNL CLI]  (herramienta de línea de comandos) no muestra un entorno activo.
 feature: Cloud, Integration, Configuration
 role: Developer
 exl-id: 3c1b5de2-8888-4531-9dc1-cd478e3c96fc
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# El `Magento-cloud` [!DNL CLI] no muestra un entorno activo
+# `Magento-cloud` [!DNL CLI] no muestra un entorno activo
 
 ## Problema
 
-Hay varios entornos activos y está intentando interactuar con un entorno ejecutando un `Magento-cloud` [!DNL CLI] (herramienta de línea de comandos). (Por ejemplo: `ssh`, `db:size`, `db:sql`, etc.)
+Hay varios entornos activos y está intentando interactuar con un entorno ejecutando un comando `Magento-cloud` [!DNL CLI] (herramienta de línea de comandos). (Por ejemplo: `ssh`, `db:size`, `db:sql`, etc.)
 Sin embargo, el indicador para elegir el entorno deseado no muestra este entorno. (Por ejemplo: el entorno de integración)
 
 ```
@@ -34,7 +34,7 @@ Es posible que el entorno no esté disponible debido a una implementación en cu
 
 ## Solución
 
-Tendrá que especificar manualmente el entorno con la variable `e|-environment` Indicador.
+Deberá especificar manualmente el entorno con el indicador `e|-environment`.
 
 1. Busque la lista de entornos activos y tome nota de los nombres de los entornos:
 

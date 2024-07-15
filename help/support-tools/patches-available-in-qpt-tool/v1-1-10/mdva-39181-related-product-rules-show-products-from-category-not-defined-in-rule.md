@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-39181: Las reglas de producto relacionadas muestran productos de la categoría sin definir en la regla
 
-El parche MDVA-39181 resuelve el problema en el que las reglas de producto relacionadas muestran productos de una categoría no definida en la regla. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10 está instalado. El ID del parche es MDVA-39181. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
+El parche MDVA-39181 resuelve el problema en el que las reglas de producto relacionadas muestran productos de una categoría no definida en la regla. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.10. El ID del parche es MDVA-39181. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.5.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.2
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.1 - 2.4.3-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -39,9 +39,9 @@ Instalar datos de ejemplo.
 
 <u>Pasos a seguir</u>:
 
-1. Cree una marca de atributo y agréguela a **Conjunto de atributos superiores**.
-1. Elegir **Josie**, **Augusta**, y **Ingrid** Chaquetas para agregar a la marca Kitty de **Mujer** > **Tops** > **categoría Chaquetas**.
-1. Elegir **Beaumont**, **Hyperion**, y **Kenobi** Chaquetas para agregar a la marca Kitty de **Hombres** > **Tops** > **categoría Chaqueta**.
+1. Cree una marca de atributo y agréguela al conjunto de atributos **Tops**.
+1. Elige las chaquetas **Josie**, **Augusta** e **Ingrid** para agregarlas al Brand Kitty desde **Mujer** > **Tops** > **Chaquetas de la categoría**.
+1. Elige las chaquetas **Beaumont**, **Hyperion** y **Kenobi** para añadirlas a Brand Kitty desde **Hombres** > **Tops** > **Categoría de chaqueta**.
 1. Crear un producto relacionado con:
 
    ```markdown
@@ -66,7 +66,7 @@ Instalar datos de ejemplo.
    ```
 
 1. Abra el SKU WJ04 en la parte frontal y compruebe los productos relacionados.
-1. Actualizar el ID de categoría de **Mujer** > **Tops** > **Chaquetas** en caso de que sea diferente a esto.
+1. Actualice el identificador de categoría de **Mujeres** > **Tops** > **Chaquetas** en caso de que sea diferente a esto.
 
 <u>Resultados esperados</u>:
 
@@ -87,7 +87,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

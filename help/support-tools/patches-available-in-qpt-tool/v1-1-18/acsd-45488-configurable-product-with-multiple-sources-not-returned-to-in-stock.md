@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # ACSD-45488: producto configurable con varios orígenes que no se devuelve en stock automáticamente
 
-El parche ACSD-45488 resuelve el problema en el que un producto configurable con varias fuentes no se devuelve a en stock automáticamente. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18 está instalado. El ID del parche es ACSD-45488. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+El parche ACSD-45488 resuelve el problema en el que un producto configurable con varias fuentes no se devuelve a en stock automáticamente. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.18. El ID del parche es ACSD-45488. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.2-p2
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.2 - 2.4.5
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -38,19 +38,19 @@ Un producto configurable con varios orígenes no se devuelve a en stock automát
 1. Crear un origen de stock secundario.
 1. Cree un producto configurable con dos productos virtuales asociados.
 1. Asigne los productos asociados al origen de stock predeterminado y establezca la cantidad en uno.
-1. Compruebe la `stock_status` de `cataloginventory_stock_status`.
-1. Configure ambos productos asociados para que sean *sin existencias*.
-1. Compruebe la `stock_status` de `cataloginventory_stock_status`.
-1. Configurar ambos productos asociados para que sean *en stock*.
-1. Compruebe la `stock_status` de `cataloginventory_stock_status`.
+1. Compruebe `stock_status` de `cataloginventory_stock_status`.
+1. Establezca ambos productos asociados en *sin existencias*.
+1. Compruebe `stock_status` de `cataloginventory_stock_status`.
+1. Establezca ambos productos asociados en *en stock*.
+1. Compruebe `stock_status` de `cataloginventory_stock_status`.
 
 <u>Resultados esperados</u>:
 
-El estado de stock del producto configurable se actualiza a *en stock* cuando los productos asociados estén configurados para estar en stock.
+El estado de existencias del producto configurable se actualiza a *en existencias* cuando los productos asociados están disponibles.
 
 <u>Resultados reales</u>:
 
-El estado de stock del producto configurable no se actualiza a *en stock* cuando los productos asociados estén configurados para estar en stock.
+El estado de existencias del producto configurable no se actualiza a *en existencias* cuando los productos asociados están disponibles.
 
 ## Aplicar el parche
 
@@ -63,7 +63,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

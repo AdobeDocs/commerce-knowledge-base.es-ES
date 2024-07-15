@@ -21,8 +21,8 @@ Las páginas de tienda dejan de estar disponibles y devuelven el error 404. El p
 
 <u>Pasos a seguir</u>:
 
-1. En el Administrador de Commerce, cree una nueva regla de precio de catálogo en **Marketing** > **Promociones** > **Regla de precio de catálogo**.
-1. En el **Regla de precio de catálogo** cuadrícula, haga clic en **Editar,** programar una nueva actualización y establecer **Estado** hasta *Activo.*
+1. En el administrador de Commerce, cree una nueva regla de precio de catálogo en **Marketing** > **Promociones** > **Regla de precio de catálogo**.
+1. En la cuadrícula **Regla de precio de catálogo**, haz clic en **Editar,** programar una nueva actualización y establece **Estado** en *Activo.*
 1. Vaya a **Contenido** > **Ensayo de contenido** > **Tablero.**
 1. Seleccione la actualización creada recientemente y cambie su hora de inicio.
 1. Guarde los cambios.
@@ -42,10 +42,10 @@ Para restaurar las páginas del catálogo y poder utilizar completamente la func
 A continuación se ofrece una descripción detallada de los pasos necesarios:
 
 1. [Aplicar el parche](#patch).
-1. En el Administrador de Commerce, elimine la regla de precio de catálogo relacionada con el problema (donde se actualizó la hora de inicio). Para ello, abra la página de regla en **Marketing** > **Promociones** > **Regla de precio de catálogo** y haga clic en **Eliminar regla**.
-1. Al acceder a la base de datos, se elimina manualmente el registro relacionado del `catalogrule` tabla.
-1. Corrija los vínculos no válidos en la base de datos. Consulte la [párrafo relacionado](#fix_links) para obtener más información.
-1. En el Administrador de Commerce, en **Marketing**, vaya a **Promociones** > **Regla de precio de catálogo** y cree la nueva regla con la configuración requerida.
+1. En el Administrador de Commerce, elimine la regla de precio de catálogo relacionada con el problema (donde se actualizó la hora de inicio). Para ello, abra la página de reglas en **Marketing** > **Promociones** > **Regla de precios de catálogo** y haga clic en **Eliminar regla**.
+1. Al obtener acceso a la base de datos, se elimina manualmente el registro relacionado de la tabla `catalogrule`.
+1. Corrija los vínculos no válidos en la base de datos. Consulte [párrafo relacionado](#fix_links) para obtener detalles.
+1. En el Administrador de Commerce en **Marketing**, vaya a **Promociones** > **Regla de precio de catálogo** y cree la nueva regla con la configuración requerida.
 1. Borre la caché del explorador en **Sistema** > **Administración de caché**.
 1. Asegúrese de que los trabajos de cron estén configurados correctamente y se puedan ejecutar correctamente.
 
@@ -76,16 +76,16 @@ Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor pro
 >
 >Recomendamos encarecidamente crear una copia de seguridad de la base de datos antes de cualquier manipulación de la misma. También recomendamos probar primero las consultas en el entorno de desarrollo.
 
-Realice los siguientes pasos para corregir las filas con vínculos no válidos a `staging_update` tabla.
+Realice los siguientes pasos para corregir las filas con vínculos no válidos a la tabla `staging_update`.
 
-1. Compruebe si los vínculos no válidos a `staging_update` existe en la `flag` tabla. Estos serían registros donde `flag_code=staging`.
-1. Identifique la versión no válida del `flag` mediante la siguiente consulta:
+1. Compruebe si los vínculos no válidos a la tabla `staging_update` existen en la tabla `flag`. Estos serían registros donde `flag_code=staging`.
+1. Identifique la versión no válida de la tabla `flag` mediante la siguiente consulta:
 
    ```sql
    SELECT flag_data FROM flag WHERE flag_code = 'staging';
    ```
 
-1. Desde el `staging_update` , seleccione la versión existente que sea menor que la versión actual (no válida) y obtenga el valor de versión que sea dos números hacia atrás. Lo toma, no la versión anterior, para evitar la situación en la que la versión anterior es la versión máxima en el `staging_update` tabla que podría aplicarse y que aún necesitamos volver a aplicarla.
+1. En la tabla `staging_update`, seleccione la versión existente que sea menor que la versión actual (no válida) y recupere el valor de la versión que sea dos números. Lo toma, no la versión anterior, para evitar la situación en la que la versión anterior es la versión máxima de la tabla `staging_update` que se podría aplicar y aún necesitamos volver a aplicarla.
 
    ```sql
    SELECT id FROM staging_update WHERE id < %current_id% ORDER BY id DESC LIMIT 1, 1
@@ -93,7 +93,7 @@ Realice los siguientes pasos para corregir las filas con vínculos no válidos a
 
    La versión que recibe como respuesta es su versión válida `id`.
 
-1. Para las filas con vínculos no válidos en la variable `flag` , configure la `flag_data` a datos que contendrán un id de versión válido. Esto ayuda a ahorrar rendimiento en el paso de reindexación y permite evitar la reindexación de todas las entidades.
+1. Para las filas con vínculos no válidos en la tabla `flag`, establezca los valores de `flag_data` en datos que contengan un identificador de versión válido. Esto ayuda a ahorrar rendimiento en el paso de reindexación y permite evitar la reindexación de todas las entidades.
 
    ```sql
    UPDATE flag SET flag_data=REPLACE(flag_data, '%invalid_id%', '%new_valid_id%') WHERE flag_code='staging';

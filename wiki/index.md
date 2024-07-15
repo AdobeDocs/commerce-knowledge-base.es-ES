@@ -9,7 +9,7 @@ ht-degree: 0%
 
 Le damos la bienvenida a la página principal de la documentación del repositorio de la Base de conocimiento de asistencia de Adobe Commerce.
 Aquí puede encontrar documentos que le ayudan a realizar las contribuciones y plantillas más adecuadas, que sirven para el mismo propósito.
-Si necesita obtener más información sobre el flujo de contribución general, vaya a [Guía del colaborador](../.github/CONTRIBUTING.md).
+Si necesita obtener información sobre el flujo de contribución general, vaya a [Guía del colaborador](../.github/CONTRIBUTING.md).
 
 ## Guías
 

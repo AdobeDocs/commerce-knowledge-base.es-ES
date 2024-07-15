@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Cambiar dirección de correo electrónico de la cuenta Adobe actual
 
-Este artículo explica cómo cambiar la dirección de correo electrónico actual registrada en [cuenta Adobe](https://account.adobe.com/) a una nueva dirección actualmente no registrada en [cuenta Adobe](https://account.adobe.com/) o el [cuenta de Magento](https://account.magento.com/).
+En este artículo se explica cómo cambiar la dirección de correo electrónico actual registrada en la [cuenta de Adobe](https://account.adobe.com/) por una nueva dirección actualmente no registrada en la [cuenta de Adobe](https://account.adobe.com/) o en la [cuenta de Magento](https://account.magento.com/).
 
 ## Productos y versiones afectados
 
@@ -28,6 +28,6 @@ Si no tiene acceso a la dirección de correo electrónico actual, configure el r
 
 Siga estos pasos para cambiar la dirección de correo electrónico:
 
-1. Restablezca la contraseña utilizada con la dirección de correo electrónico anterior. Siga las instrucciones indicadas en [Restablecer contraseña olvidada](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) en la ayuda de Adobe x.
+1. Restablezca la contraseña utilizada con la dirección de correo electrónico anterior. Siga las instrucciones indicadas en [Restablecer contraseña olvidada](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) en la ayuda de Adobe.
 1. El vínculo para restablecer la contraseña se envía al buzón del propietario actual con instrucciones.
-1. Vaya a [página de cuenta Adobe](https://account.adobe.com) para iniciar sesión con el nuevo correo electrónico y configurar la contraseña.
+1. Vaya a la [página de cuenta de Adobe](https://account.adobe.com) para iniciar sesión con el nuevo correo electrónico y configurar la contraseña.

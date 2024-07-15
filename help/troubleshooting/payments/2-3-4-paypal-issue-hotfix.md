@@ -29,8 +29,8 @@ Se produce un error al introducir el país y la región durante la realización 
 1. Activar Pago y envío de PayPal Express.
 1. Añadir un producto al carro de compras como invitado o cuando haya iniciado sesión.
 1. Vaya a Pago y envío.
-1. Selecciona tu dirección de envío. Por ejemplo, la variable *RU* . A continuación, introduzca una entrada en **Estado/Provincia** field. Por ejemplo, *Nottinghamshire*.
-1. Haga clic en **Realizar pedido** para realizar el pedido. Recibe una página de pedido correcta y un correo electrónico de confirmación de pedido.
+1. Selecciona tu dirección de envío. Por ejemplo, *UK*. A continuación, introduzca una entrada en el campo **Estado/Provincia**. Por ejemplo, *Nottinghamshire*.
+1. Haga clic en el botón **Realizar pedido** para realizar el pedido. Recibe una página de pedido correcta y un correo electrónico de confirmación de pedido.
 
 <u>Resultado esperado:</u>
 
@@ -47,9 +47,9 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 ## Solución
 
-Para comerciantes locales de Adobe Commerce: Aplique la variable [revisión,](https://magento.com/tech-resources/download#download2353) que está disponible en la sección Descargas en [magento.com](https://magento.com) portal en Mi cuenta.
+Para comerciantes locales de Adobe Commerce: aplique la revisión [hotfix,](https://magento.com/tech-resources/download#download2353) que está disponible en la sección Descargas del portal [magento.com](https://magento.com) en Mi cuenta.
 
-Para Adobe Commerce en comerciantes de infraestructura en la nube: Adobe ha incluido la corrección en los parches de nube para Commerce v1.0.2. Consulte la [Notas de la versión de Cloud Patches for Commerce](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) en nuestra documentación para desarrolladores para encontrar instrucciones sobre cómo aplicar el paquete más reciente.
+Para Adobe Commerce en comerciantes de infraestructura en la nube: Adobe ha incluido la corrección en los parches de nube para Commerce v1.0.2. Consulte [Parches de nube para las notas de la versión de Commerce](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) en nuestra documentación para desarrolladores para obtener instrucciones sobre cómo aplicar el paquete más reciente.
 
 ## Cómo aplicar el parche
 
@@ -57,4 +57,4 @@ Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor pro
 
 ## Lectura relacionada
 
-* [Información de la versión > Notas de la versión de Adobe Commerce 2.3.4 > Aplicación del problema de cierre de compra de PayPal Express con el parche de región para Adobe Commerce 2.3.4 para solucionar un problema crítico de cierre de compra de PayPal Express](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue) en nuestra documentación para desarrolladores.
+* [Información de la versión > Notas de la versión de Adobe Commerce 2.3.4 > Aplique el problema de cierre de compra de PayPal Express con el parche de región para Adobe Commerce 2.3.4 para solucionar un problema crítico de cierre de compra de PayPal Express](https://devdocs.magento.com/guides/v2.3/release-notes/release-notes-2-3-4-commerce.html#apply-the-paypal-express-checkout-issue-with-region-patch-for-magento-234-to-address-a-critical-paypal-express-checkout-issue) en nuestra documentación para desarrolladores.

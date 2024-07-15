@@ -13,17 +13,17 @@ ht-degree: 0%
 
 # MDVA-33289 patch: Javascript en la dirección durante el cierre de compra
 
-El parche de MDVA-33289 soluciona el problema donde Javascript aparece en la dirección en el momento del pago. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.19 está instalado. El ID del parche es MDVA-33289. Tenga en cuenta que el problema estaba programado para solucionarse en Adobe Commerce 2.4.3.
+El parche de MDVA-33289 soluciona el problema donde Javascript aparece en la dirección en el momento del pago. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.19. El ID del parche es MDVA-33289. Tenga en cuenta que el problema estaba programado para solucionarse en Adobe Commerce 2.4.3.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:** Adobe Commerce en la infraestructura en la nube 2.4.1
+**El parche se ha creado para la versión de Adobe Commerce:** Adobe Commerce en la infraestructura en la nube 2.4.1
 
-**Compatible con las versiones de Adobe Commerce:** Adobe Commerce en infraestructura en la nube y Adobe Commerce local 2.4.0 - 2.4.2
+**Compatible con versiones de Adobe Commerce:** Adobe Commerce en infraestructura en la nube y Adobe Commerce local 2.4.0 - 2.4.2
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -31,7 +31,7 @@ Al desproteger con Google Tag Manager (GTM) habilitado, Javascript se muestra en
 
 <u>Pasos a seguir</u>:
 
-1. Activar GTM. Consulte [Google Tag Manager](https://docs.magento.com/user-guide/marketing/google-tag-manager.html) en nuestra guía del usuario, para obtener más información.
+1. Activar GTM. Consulte [Administrador de etiquetas de Google](https://docs.magento.com/user-guide/marketing/google-tag-manager.html) en nuestra guía del usuario para obtener más información.
 1. En la tienda, agregue algunos productos al carro de compras.
 1. Eche un vistazo.
 
@@ -54,7 +54,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

@@ -28,10 +28,10 @@ Las versiones de ElasticSuite anteriores a 2.9.8 / 2.10.7 almacenan índices de 
 Si se instala el complemento de terceros ElasticSuite, es posible que experimente problemas de memoria del Elasticsearch y que el servicio del Elasticsearch se bloquee debido a los índices de seguimiento de ElasticSuite. Los síntomas incluyen:
 
 * El Elasticsearch se bloquea sin errores de memoria.
-* Al ejecutar un comando de mantenimiento `curl -m1 localhost:9200/_cluster/health?pretty` o `curl -m1 elasticsearch.internal:9200/_cluster/health?pretty` (para cuentas iniciales) hay cientos o miles de `unassigned_shards`
+* Al ejecutar un comando de mantenimiento `curl -m1 localhost:9200/_cluster/health?pretty` o `curl -m1 elasticsearch.internal:9200/_cluster/health?pretty` (para cuentas de inicio) hay cientos o miles de `unassigned_shards`
 * El rendimiento del Elasticsearch o del sitio está gravemente degradado.
-* *&quot;No se han encontrado nodos activos en su clúster&quot;* en la implementación del Elasticsearch o registre errores.
-* *&quot;Rechazando actualización de asignación a [&lt;\*>_ tracking_log_event _&lt;\*>]&quot;* en implementación o registro de errores.
+* *&quot;No se encontraron nodos activos en su clúster&quot;* en la implementación del Elasticsearch o en los errores de registro.
+* *&quot;Rechazando actualización de asignación a [&lt;\*>_ tracking_log_event _&lt;\*>]&quot;* en errores de implementación o registro.
 
 ## Causa
 
@@ -43,7 +43,7 @@ ElasticSuite tiene una nueva función que crea índices de seguimiento. Estos í
 
 Una vez que haya actualizado el complemento ElasticSuite a una versión superior a la 2.8.0, puede configurar una limpieza periódica de los índices.
 
-Ir a **Tiendas** > **Configuración** > **Seguimiento** > **Configuración global** > **Retraso de retención**
+Vaya a **Tiendas** > **Configuración** > **Seguimiento** > **Configuración global** > **Demora de retención**
 
 El período de retención predeterminado es de 365 días. Puede reducirlo a 30 o 15 días.
 
@@ -53,7 +53,7 @@ Una vez que haya actualizado el complemento ElasticSuite a la versión > 2.9.8 /
 
 Aún puede reducir el periodo de retención:
 
-Ir a **Tiendas** > **Configuración** > **Seguimiento** > **Configuración global** > **Retraso de retención**
+Vaya a **Tiendas** > **Configuración** > **Seguimiento** > **Configuración global** > **Demora de retención**
 
 El periodo de retención predeterminado es de 12 meses (generará 12 índices). Puede reducirlo a 3 o 6 meses.
 
@@ -68,5 +68,5 @@ Cree un trabajo cron para eliminar los índices de seguimiento. Este comando eli
 
 Si desea eliminar índices en una frecuencia de tiempo establecida, cree un trabajo cron consultando los siguientes artículos en nuestra documentación para desarrolladores:
 
-* [Configuración de un trabajo cron personalizado y un grupo cron (tutorial)](https://devdocs.magento.com/guides/v2.3/config-guide/cron/custom-cron-tut.html)
-* [Configuración de trabajos cron](https://devdocs.magento.com/guides/v2.3/cloud/configure/setup-cron-jobs.html)
+* [Configurar un trabajo cron personalizado y un grupo cron (tutorial)](https://devdocs.magento.com/guides/v2.3/config-guide/cron/custom-cron-tut.html)
+* [Configurar trabajos cron](https://devdocs.magento.com/guides/v2.3/cloud/configure/setup-cron-jobs.html)

@@ -44,7 +44,7 @@ La solución depende de si ha modificado o no intencionadamente los archivos en 
 
 #### Ha modificado archivos intencionadamente
 
-Resuelva manualmente los conflictos de la forma habitual. Si no está seguro de qué hacer, consulte [Ayuda de GitHub](https://help.github.com/).
+Resuelva manualmente los conflictos de la forma habitual. Si no está seguro de qué hacer, consulte la [ayuda de GitHub](https://help.github.com/).
 
 #### No ha modificado ningún archivo de forma intencionada
 
@@ -71,6 +71,6 @@ Pruebe cualquiera de las siguientes opciones:
 
   >[!NOTE]
   >
-  >El Adobe no recomienda ni respalda ninguna configuración de GitHub en particular. Los anteriores son solo sugerencias. Para obtener más información, consulte [Ayuda de GitHub](https://help.github.com/).
+  >El Adobe no recomienda ni respalda ninguna configuración de GitHub en particular. Los anteriores son solo sugerencias. Para obtener más información, consulte la [ayuda de GitHub](https://help.github.com/).
 
   Continúe donde lo dejó con la actualización de Adobe Commerce.

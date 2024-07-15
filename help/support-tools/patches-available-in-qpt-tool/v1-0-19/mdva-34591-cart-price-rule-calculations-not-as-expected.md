@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-34591: Los cálculos de reglas de precios del carro de compras no son los esperados
 
-El parche MDVA-34591 corrige el problema en el que la regla de precio del carro de compras con **El descuento de cantidad máxima se aplica a** no funciona correctamente si se aplican varias reglas de precios del carro de compras. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.19 está instalado. El ID del parche es MDVA-34591. Tenga en cuenta que está programado que el problema se corrija en la versión 2.4.3 de Adobe Commerce.
+El parche MDVA-34591 corrige el problema en el que la regla de precio del carro de compras con **Descuento máximo de cantidad aplicado a** no funciona correctamente si se aplican varias reglas de precio del carro de compras. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.19. El ID del parche es MDVA-34591. Tenga en cuenta que está programado que el problema se corrija en la versión 2.4.3 de Adobe Commerce.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 Adobe Commerce en infraestructura en la nube 2.3.6
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 Adobe Commerce local y Adobe Commerce en la infraestructura en la nube 2.3.0-2.4.2
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -40,7 +40,7 @@ Adobe Commerce local y Adobe Commerce en la infraestructura en la nube 2.3.0-2.4
 
 1. Ve a la tienda.
 
-1. Agregar ocho cantidades de un conjunto de productos a precio = *51 $* cada uno al carro de compras.
+1. Agregue ocho cantidades de un conjunto de productos al precio = *$51* cada una al carro de compras.
 
 1. Compruebe el importe del descuento en el carro de compras.
 
@@ -53,7 +53,7 @@ El descuento calculado correcto es de 234 $, tal como se esperaba.
   Reglas de precios de carro de compras coincidentes: Regla 2, Regla 1\
   Aplicar regla 2 (50% de descuento), por lo que Descuento = 204 $\
   Aplicar regla 1 (10 de 3 elementos), por lo que Descuento = 30 $\
-  Descuento total = MIN ( 408/2 + 10x3, 8 &#42; 51) = MÍN. (204 + 30, 8 &#42; 51) = 234 $
+  Descuento total = MIN ( 408/2 + 10x3, 8 &#42; 51) = MIN (204 + 30, 8 &#42; 51) = 234 $
 
 <u>Resultados reales</u>:
 
@@ -77,7 +77,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-) sección.
+Para obtener información sobre otros parches disponibles en QPT, consulte la sección [Parches disponibles en QPT](https://support.magento.com/hc/en-us/sections/360010506631-Patches-available-in-MQP-tool-).

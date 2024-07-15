@@ -22,40 +22,40 @@ Este artículo proporciona un parche para un problema conocido de Adobe Commerce
 
 ## Problema
 
-<u>Requisitos previos</u>: cree un pedido utilizando el método de envío FedEx, DHL, UPS o USPS.
+<u>Requisitos previos</u>: cree un pedido con el método de envío FedEx, DHL, UPS o USPS.
 
 ### Escenario 1: crear una etiqueta al añadir un envío
 
 <u>Pasos a seguir:</u>
 
 1. Abra el pedido realizado en el Administrador, en **Ventas** > **Pedidos**.
-1. Haga clic en **Enviar** botón. El **Nuevo envío** se abre la página.
+1. Haga clic en el botón **Enviar**. Se abre la página **Nuevo envío**.
 
 <u>Resultado esperado:</u>
 
-El **Crear etiqueta de envío** La casilla de verificación se muestra en la parte inferior de la página.
+La casilla **Crear etiqueta de envío** se muestra en la parte inferior de la página.
 
 <u>Resultado real:</u>
 
-El **Crear etiqueta de envío** La casilla de verificación no se muestra.
+No se muestra la casilla de verificación **Crear etiqueta de envío**.
 
 ### Escenario 2: crear una etiqueta para el envío existente
 
 <u>Pasos a seguir:</u>
 
 1. Abra el pedido realizado en el Administrador, en **Ventas** > **Pedidos**.
-1. Haga clic en **Enviar** botón. El **Nuevo envío** se abre la página.
-1. Haga clic en **Enviar envío** botón. Se crea un envío.
+1. Haga clic en el botón **Enviar**. Se abre la página **Nuevo envío**.
+1. Haz clic en el botón **Enviar envío**. Se crea un envío.
 1. Abra el envío recién creado.
-1. Haga clic en **Crear etiqueta de envío** botón. El **Crear paquetes** se abre.
+1. Haga clic en el botón **Crear etiqueta de envío**. Se abre el cuadro de diálogo **Crear paquetes**.
 
 <u>Resultado esperado:</u>
 
-El **Añadir productos al paquete** botón en el **Crear paquetes** La ventana modal muestra campos con artículos de pedido.
+El botón **Agregar productos al paquete** de la ventana modal **Crear paquetes** muestra campos con elementos de pedido.
 
 <u>Resultado real:</u>
 
-El **Crear paquetes** La ventana modal no se muestra correctamente, no es posible añadir artículos de pedido al envío.
+La ventana modal **Crear paquetes** no se muestra correctamente, no es posible agregar artículos de pedido al envío.
 
 ## Solución
 
@@ -67,7 +67,7 @@ El parche se adjunta a este artículo. Para descargarlo, desplácese hacia abajo
 
 [MC-35514-2.4.0-CE-composer-2.patch](assets/MC-35514-2.4.0-CE-composer-2.patch.zip)
 
-El parche también está disponible para su descarga en ambos, `.git` y `.composer`, formatos en [Descargas de Adobe Commerce](https://magento.com/tech-resources/download) página, debajo de **Parches** en la navegación de la columna izquierda. Busque el parche de MC-35514.
+El parche también está disponible para su descarga en los formatos `.git` y `.composer` de la página [Descargas de Adobe Commerce](https://magento.com/tech-resources/download), en **Parches** en la navegación de la columna izquierda. Busque el parche de MC-35514.
 
 ### Versiones de Adobe Commerce compatibles:
 

@@ -22,11 +22,11 @@ Este artículo proporciona una solución para los problemas de funcionalidad del
 
 ## Problema
 
-Después de deshabilitar la salida del módulo en el administrador de Commerce, en **Tiendas** > **Configuración** > **Configuración** > AVANZADO > **Avanzadas** Sin embargo, es posible que comience a ver problemas relacionados con la funcionalidad del módulo.
+Después de deshabilitar la salida del módulo en el administrador de Commerce, en **Tiendas** > **Configuración** > **Configuración** > AVANZADA > **Avanzada**, es posible que empiece a ver problemas relacionados con la funcionalidad del módulo.
 
 ## Causa
 
-Desactivación de una salida de módulo en **Tiendas** > **Configuración** > **Configuración** > AVANZADO > **Avanzadas** deshabilita solo la salida (HTML, JS), pero no desactiva la funcionalidad de este módulo.
+Al deshabilitar una salida de módulo en **Almacenes** > **Configuración** > **Configuración** > AVANZADA > **Avanzada**, solo se deshabilita la salida (HTML, JS), pero no la funcionalidad de este módulo.
 
 ## Solución
 

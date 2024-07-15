@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Asignación de espacio en el plan inicial y la integración del plan profesional
 
-Para todos los entornos del plan inicial y el plan profesional [Entorno de integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md), puede asignar más espacio para MySQL en el `.magento/services.yaml` , aumentando el valor de `mysql: disk:` parámetro. Por ejemplo:
+Para todos los entornos de plan inicial y el plan Pro [entorno de integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md), puede asignar más espacio para MySQL en el archivo `.magento/services.yaml`, aumentando el parámetro `mysql: disk:`. Por ejemplo:
 
 ```yaml
 mysql:
@@ -23,9 +23,9 @@ mysql:
     disk: 2048
 ```
 
-Consulte la [Configurar el servicio MySQL](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-mysql.html) artículo de referencia.
+Consulte el artículo [Configurar el servicio MySQL](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-mysql.html) como referencia.
 
-Una vez que haya cambiado la `.magento/services.yaml` , debe confirmar y enviar los cambios para que se apliquen. La notificación push almacenará en déclencheur el proceso de implementación.
+Una vez que cambie el archivo `.magento/services.yaml`, debe confirmar e insertar los cambios para que se apliquen. La notificación push almacenará en déclencheur el proceso de implementación.
 
 >[!WARNING]
 >
@@ -33,9 +33,9 @@ Una vez que haya cambiado la `.magento/services.yaml` , debe confirmar y enviar 
 
 ## Asignar espacio en Ensayo o Producción de plan profesional
 
-Para realizar estos cambios en el entorno de ensayo o producción del plan Pro, debe crear un [ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed). Al enviar un ticket de asistencia para aumentar el almacenamiento, el servicio de asistencia técnica deberá saber a qué partición y en qué cantidad se debe aplicar el almacenamiento (`/mysql` o `/exports`). Una solicitud de aumento de almacenamiento requiere la aprobación de su equipo de cuenta de Adobe, que revisará la cantidad de almacenamiento autorizada (según el formulario de pedido) antes de aprobarla.
+Para realizar estos cambios en el entorno de ensayo o producción del plan Pro, debe crear un [vale de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed). Al enviar un vale de soporte técnico para aumentar el almacenamiento, el servicio de soporte técnico necesitará saber a qué partición y en qué cantidad se debe aplicar el almacenamiento (`/mysql` o `/exports`). Una solicitud de aumento de almacenamiento requiere la aprobación de su equipo de cuenta de Adobe, que revisará la cantidad de almacenamiento autorizada (según el formulario de pedido) antes de aprobarla.
 
 ## Reducir el espacio asignado no disponible (plan Pro y Starter)
 
-El Soporte de Adobe Commerce puede hacer crecer una partición (`/mysql` o `/exports`), pero no puede reducir una partición. Existe el riesgo de que se dañen los datos al hacerlo, por lo que no está disponible la disminución del almacenamiento para una partición.
+El soporte técnico de Adobe Commerce puede ampliar una partición (`/mysql` o `/exports`), pero no puede reducirla. Existe el riesgo de que se dañen los datos al hacerlo, por lo que no está disponible la disminución del almacenamiento para una partición.
 También es cierto para el plan de inicio, donde puede aumentar el espacio asignado usted mismo: no se recomienda reducir y podría provocar una corrupción catastrófica de los datos.

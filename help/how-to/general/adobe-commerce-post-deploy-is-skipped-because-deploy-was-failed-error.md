@@ -1,6 +1,6 @@
 ---
 title: Adobe Commerce * la implementación posterior se ha omitido porque la implementación ha fallado * error
-description: "Este artículo explica cómo investigar un error de implementación: *La implementación posterior a la implementación se omite porque la implementación falló*"
+description: "Este artículo explica cómo investigar un error de implementación: *Post-deploy se omite porque la implementación falló*"
 exl-id: cd0a3015-b7b9-442e-8ac1-89447ef12cd7
 feature: Deploy
 source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
@@ -10,9 +10,9 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce *la implementación posterior se omite porque la implementación ha fallado* error
+# Se ha omitido la implementación posterior de Adobe Commerce *porque se produjo un error en la implementación*
 
-Este artículo explica cómo investigar un error de implementación: *Se omite la implementación posterior porque se produjo un error en la implementación* que se produce durante la implementación en diferentes entornos, por ejemplo al actualizar.
+Este artículo explica cómo investigar un error de implementación: *Post-deploy se omite porque la implementación falló*, lo que ocurre durante la implementación en diferentes entornos, por ejemplo, al actualizar.
 
 ## Productos y versiones afectados
 
@@ -46,4 +46,4 @@ Indeterminado: la causa de este mensaje de error depende del código y la base d
     W:
 ```
 
-Para obtener el seguimiento de errores con el fin de determinar la causa real, SSH envía al servidor y comprueba el archivo de registro `var/log/install_upgrade.log`.
+Para obtener el seguimiento de errores con el fin de determinar la causa real, SSH al servidor y compruebe el archivo de registro `var/log/install_upgrade.log`.

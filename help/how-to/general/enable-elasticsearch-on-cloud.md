@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Habilitar Elasticsearch en la nube
 
-Consulte la [Configuración del servicio de Elasticsearch](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) artículo en nuestra documentación para desarrolladores para obtener información sobre la configuración de Elasticsearch para Adobe Commerce en la infraestructura en la nube.
+Consulte el artículo [Configurar el servicio de Elasticsearch](https://devdocs.magento.com/guides/v2.3/cloud/project/project-conf-files_services-elastic.html#elasticsearch-software-compatibility) en nuestra documentación para desarrolladores para obtener información sobre la configuración de Elasticsearch para Adobe Commerce en la infraestructura en la nube.

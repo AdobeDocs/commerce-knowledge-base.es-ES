@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Error &quot;La versión actual de RDBMS no es compatible&quot; en la implementación
 
-Este artículo proporciona una solución para cuando una implementación falla y tiene el siguiente error en el registro de implementación: *no se admite la versión actual de RDBMS*.
+Este artículo proporciona una solución para los casos en los que una implementación falla y tiene el siguiente error en el registro de implementación: *no se admite la versión actual de RDBMS*.
 
 ## Productos y versiones afectados
 
@@ -45,12 +45,12 @@ Su versión de MariaDB no es compatible con la versión de Adobe Commerce a la q
 Debe actualizar el servicio MariaDB a una versión compatible antes de actualizar la aplicación.
 
 
-Para la rama de integración en Adobe Commerce sobre la arquitectura del plan Pro de la infraestructura en la nube (y todas las ramas en la arquitectura de inicio), siga [Configurar servicio](https://devdocs.magento.com/cloud/project/services.html) en nuestra documentación para desarrolladores.
+Para la rama de integración en la arquitectura del plan Pro de Adobe Commerce en la infraestructura en la nube (y todas las ramas en la arquitectura de inicio), siga [Configurar servicio](https://devdocs.magento.com/cloud/project/services.html) en nuestra documentación para desarrolladores.
 
-Para la arquitectura del plan de ensayo y producción en Adobe Commerce en la infraestructura en la nube Pro, [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para solicitar que los servicios se actualicen antes de implementar la actualización de la versión de Adobe Commerce.
+Para la arquitectura del plan Pro de ensayo y producción en Adobe Commerce en la infraestructura en la nube, [envíe un vale de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para solicitar que los servicios se actualicen antes de implementar la actualización de la versión de Adobe Commerce.
 
 
 ## Lectura relacionada
 
 * [Prácticas recomendadas para compilaciones e implementación](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) en nuestra documentación para desarrolladores.
-* [Actualización de Adobe Commerce 2.3.5: tablas compactas a dinámicas](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) en nuestra base de conocimientos de asistencia.
+* [Actualización a Adobe Commerce 2.3.5: tablas compactas a dinámicas](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) en nuestra base de conocimientos de soporte.

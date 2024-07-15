@@ -25,16 +25,16 @@ No puede aplicar el parche MDVA-43395.
 
 ## Causa
 
-Los comerciantes en la nube no necesitan aplicar el parche MDVA-43395 por separado si tienen [magento/magento-cloud-patch 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016) instalado, que ya incluye el parche.
+Los comerciantes de la nube no necesitan aplicar el parche MDVA-43395 por separado si tienen instalado [magento/magento-cloud-patch 1.0.16](https://devdocs.magento.com/cloud/release-notes/mcp-release-notes.html#v1016), que ya incluye el parche.
 
 ## Solución
 
-Para resolver el problema, elimine los parches MDVA-43395 y MDVA-43443 de la `m2-hotfixes` y vuelva a implementarlo.
+Para resolver el problema, quite los parches MDVA-43395 y MDVA-43443 del directorio `m2-hotfixes` y vuelva a implementarlos.
 
-Si pudo aplicar el parche MDVA-43443 a través de la `m2-hotfixes` , aún tendría que eliminarlo como se ha mencionado anteriormente. Las versiones futuras de Adobe Commerce tendrán estos parches ya contenidos, por lo que podría provocar errores en la implementación si se actualizara más tarde.
+Si pudiera aplicar el parche MDVA-43443 a través del directorio `m2-hotfixes`, aún tendría que eliminarlo como se mencionó anteriormente. Las versiones futuras de Adobe Commerce tendrán estos parches ya contenidos, por lo que podría provocar errores en la implementación si se actualizara más tarde.
 
-Para comprobar si se ha aplicado el parche, ejecute el `vendor/bin/magento-patches -n status |grep 43443` comando.
-Si muestra varios resultados como este, debe quitar el parche MDVA-43443 del `m2-hotfixes` carpeta:
+Para comprobar si se ha aplicado la revisión, ejecute el comando `vendor/bin/magento-patches -n status |grep 43443`.
+Si muestra varios resultados como este, debe quitar el parche MDVA-43443 de la carpeta `m2-hotfixes`:
 
 ```bash
 $ vendor/bin/magento-patches -n status |grep 43443

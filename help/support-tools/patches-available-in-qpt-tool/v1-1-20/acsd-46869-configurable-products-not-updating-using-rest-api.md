@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # ACSD-46869: los productos configurables no se actualizan mediante la API de REST al cerrar la compra
 
-El parche ACSD-46869 corrige el problema en el que los productos configurables no se actualizan mediante la API de REST al cerrar la compra. Este parche está disponible cuando la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.20 está instalado. El ID del parche es ACSD-46869. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
+El parche ACSD-46869 corrige el problema en el que los productos configurables no se actualizan mediante la API de REST al cerrar la compra. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.20. El ID del parche es ACSD-46869. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.6.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.4
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.4 - 2.4.5
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL QPT] página de aterrizaje](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la [[!DNL QPT] página de aterrizaje](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -36,8 +36,8 @@ Los productos configurables no se actualizan mediante la API de REST durante el 
 <u>Pasos a seguir</u>:
 
 1. Cree un producto configurable con atributos de color y tamaño.
-1. Seleccionar **[!UICONTROL Options]** y añada el producto al carro de compras.
-1. Ir a **[!UICONTROL Checkout]**, actualice el tamaño varias veces excepto para la cantidad y compruebe la solicitud y la respuesta.
+1. Seleccione **[!UICONTROL Options]** y agregue el producto al carro de compras.
+1. Vaya a **[!UICONTROL Checkout]**, actualice el tamaño varias veces excepto para la cantidad y compruebe la solicitud y la respuesta.
 1. Recibirá la siguiente respuesta cuando actualice el tamaño.
 
 ```REST API
@@ -53,7 +53,7 @@ El valor se actualiza según los cambios.
 
 <u>Resultados reales</u>:
 
-`option_value` no se actualiza, por lo que cuando se realiza el pedido, tiene el valor de tamaño antiguo.
+`option_value` no se ha actualizado, por lo que cuando se realiza el pedido, tiene el valor de tamaño anterior.
 
 ## Aplicar el parche
 
@@ -64,9 +64,9 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/support-tools/patches/check-patch-for-magento-issue-with-magento-quality-patches.html) en nuestra base de conocimiento de soporte.
 
 Para obtener información sobre otros parches disponibles en [!DNL QPT], consulte [Parches disponibles en [!DNL QPT]](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía de la herramienta Parches de calidad.

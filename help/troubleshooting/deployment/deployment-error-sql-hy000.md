@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Error de implementación: SQLSTATE[HY000]
 
-Este artículo proporciona una solución para el problema en el que la implementación falla debido a SQLSTATE[HY000] error.
+Este artículo proporciona una solución para el problema en el que la implementación falla debido al error SQLSTATE[HY000].
 
 ## Productos y versiones afectados
 

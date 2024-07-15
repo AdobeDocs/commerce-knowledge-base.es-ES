@@ -17,37 +17,37 @@ Este artículo enumera algunos ejemplos rápidos comunes de errores graves de PH
 
 ## Ejemplo
 
-*&quot;Error grave de PHP: tiempo de ejecución máximo de 60 segundos superado en....&quot;*
+*&#39;Error grave de PHP: tiempo de ejecución máximo de 60 segundos superado en....&#39;*
 
 ## Solución
 
-Puede actualizar el tiempo máximo de ejecución estableciendo un valor personalizado `max_execution_time` valor en su `php.ini` y volver a implementar.
+Puede actualizar el tiempo máximo de ejecución estableciendo un valor `max_execution_time` personalizado en el archivo `php.ini` y volviendo a implementar.
 
 Por ejemplo:
 
 `max_execution_time = 120`
 
-Consulte la [Personalizar la configuración de php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) artículo.
+Consulte el artículo [Personalizar la configuración de php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html).
 
 ## Ejemplo
 
-*&quot;Error grave de PHP: Tamaño de memoria permitido de 792723456 bytes agotado&quot;* (Eso es sólo un ejemplo de tamaño de bytes.)
+*&#39;Error grave de PHP: Se agotó el tamaño de memoria permitido de 792723456 bytes&#39;* (Es solo un ejemplo de tamaño de bytes).
 
 ## Solución
 
-Personalice su `php.ini` configuración. Consulte esto [Personalizar la configuración de php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html) artículo.
+Personalizar la configuración de `php.ini`. Consulte este artículo [Personalizar la configuración de php.ini](https://devdocs.magento.com/cloud/project/magento-app-php-ini.html).
 
 ## Ejemplo
 
-*&quot;Advertencia de PHP: Desconocido: no se pudo abrir el flujo: no existe el archivo o directorio&quot;*
+*&#39;Advertencia de PHP: Desconocido: no se pudo abrir el flujo: no existe el archivo o directorio&#39;*
 
 ## Solución
 
-Asegúrese de no quitar los extremos de estilo Windows en la `php.ini` archivo. En Windows, los extremos de línea finalizan con una combinación de un retorno de carro (ASCII 0x0d o \r) y una nueva línea (\n), también denominada CR/LF.
+Asegúrese de no quitar los extremos de estilo Windows del archivo `php.ini`. En Windows, los extremos de línea finalizan con una combinación de un retorno de carro (ASCII 0x0d o \r) y una nueva línea (\n), también denominada CR/LF.
 
 ## Ejemplo
 
-*&quot;Error grave de PHP: PDOException no detectada: SQLSTATE\[HY000\] \[1040\] Demasiadas conexiones en&quot;*
+*&#39;Error grave de PHP: PDOException no capturado: SQLSTATE\[HY000\] \[1040\] Demasiadas conexiones en&#39;*
 
 ## Solución
 
@@ -55,11 +55,11 @@ El entorno MySQL se ha quedado sin espacio en disco. Proporcione más espacio en
 
 ## Ejemplo
 
-*&quot;Error grave de PHP: TypeError no capturado: Valor devuelto del Magento&quot;*
+*&#39;Error grave de PHP: TypeError no detectado: Valor devuelto del Magento&#39;*
 
 ## Solución
 
-Compruebe la `<root>/tmp` porque está probablemente lleno. Si está lleno, proporcione más espacio en el directorio. Esto podría implicar simplemente mover archivos a otro directorio o eliminarlos.
+Compruebe el directorio `<root>/tmp` porque probablemente esté lleno. Si está lleno, proporcione más espacio en el directorio. Esto podría implicar simplemente mover archivos a otro directorio o eliminarlos.
 
 ## Lectura relacionada
 
@@ -70,4 +70,4 @@ En nuestra documentación para desarrolladores:
 * [Verificación de Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/redis-session.html#redis-verify)
 * [Configurar Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html)
 * [Error de límite de memoria PHP](https://devdocs.magento.com/guides/v2.3/install-gde/trouble/php/tshoot_php-set.html#trouble-php-memory)
-* [Soluciones a problemas comunes: límite de memoria](https://devdocs.magento.com/guides/v2.3/test/unit/unit_test_execution_cli.html#solutions-to-common-problems)
+* [Soluciones a problemas comunes - Límite de memoria](https://devdocs.magento.com/guides/v2.3/test/unit/unit_test_execution_cli.html#solutions-to-common-problems)

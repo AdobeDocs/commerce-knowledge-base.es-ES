@@ -12,4 +12,4 @@ ht-degree: 0%
 
 # Ubicaciones de registro (directorios) para el plan Pro: integración, ensayo, producción
 
-Consulte [Visualización y administración de registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) en el *Guía de Commerce en la infraestructura de Cloud* para saber dónde encontrar los registros de compilación e implementación, aplicación y servicio de los proyectos de Adobe Commerce implementados en la infraestructura en la nube.
+Consulte [Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) en la *Guía de infraestructura en la nube de Commerce* para saber dónde encontrar los registros de compilación e implementación, aplicación y servicio para los proyectos de Adobe Commerce implementados en la infraestructura en la nube.

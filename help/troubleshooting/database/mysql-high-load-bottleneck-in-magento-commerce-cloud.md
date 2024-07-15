@@ -22,20 +22,20 @@ En este tema se analiza una solución cuando la carga alta de MySQL causa un pro
 ### Requisitos previos
 
 * ECE Tools versión 2002.0.16 y superior
-* Servicio APM de New Relic (**Su cuenta de Adobe Commerce en la infraestructura de la nube incluye el software para el servicio APM de New Relic** junto con una clave de licencia).
+* Servicio de APM de New Relic (**Su cuenta de Adobe Commerce en la infraestructura de la nube incluye el software para el servicio de APM de New Relic** junto con una clave de licencia.)
 
-Para obtener más información sobre el servicio APM de New Relic y su configuración con su cuenta de Adobe Commerce en la infraestructura de la nube, vaya a [Servicios de New Relic](https://devdocs.magento.com/guides/v2.3/cloud/project/new-relic.html) y [Introducción a New Relic APM](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/).
+Para obtener más información sobre el servicio APM de New Relic y su configuración con su cuenta de Adobe Commerce en la infraestructura de la nube, vaya a [Servicios de New Relic](https://devdocs.magento.com/guides/v2.3/cloud/project/new-relic.html) e [Introducción a APM de New Relic](https://docs.newrelic.com/docs/apm/new-relic-apm/getting-started/introduction-apm/).
 
 ## Problema
 
-<u>Pasos Para Ver Si El Problema Le Afecta</u>
+<u>Pasos Para Ver Si El Problema Te Afecta</u>
 
 1. En el gráfico de información general de APM de New Relic, compruebe si hay la primera indicación de que MySQL se ha convertido en un cuello de botella. Vea la siguiente imagen de muestra donde MySQL se ha convertido en un cuello de botella y toma la mayoría del tiempo de las transacciones web:
 
    ![KB-372_image002.png](assets/KB-372_image002.png)
 
    Observe cómo la línea roja discontinua en la imagen muestra una tendencia ascendente perceptible en el tiempo de transacciones web de MySQL y luego alcanza picos en niveles aún más altos.
-1. Desde aquí puede ir a su **Base de datos** pantalla en la que puede ver la segunda indicación de alto rendimiento o lento `SELECT` consultas en MySQL, y en la siguiente imagen de ejemplo puede ver al ordenar por **Más tiempo**, su tienda, en este ejemplo, es lenta `SELECT` Consultas MySQL.
+1. Desde aquí puede ir a la pantalla de **Base de datos**, donde puede ver la segunda indicación de alto rendimiento o `SELECT` consultas lentas en MySQL, y en la siguiente imagen de muestra puede ver al ordenar por **Más tiempo que consume**, su tienda, en este ejemplo, es lenta en `SELECT` consultas MySQL.
 
    ![KB-372_image003_BlurredExtension.png](assets/KB-372_image003_BlurredExtension.png)
 
@@ -43,25 +43,25 @@ Analice las transacciones lentas en New Relic APM. Si ve un gran volumen de cons
 
 ## Causa
 
-Su tienda de Adobe Commerce en la infraestructura de la nube tiene un alto rendimiento o es lenta `SELECT` Consultas MySQL.
+El almacén de Adobe Commerce en la infraestructura de la nube tiene un alto rendimiento o es lento en `SELECT` consultas MySQL.
 
 ## Solución
 
 >[!WARNING]
 >
->Para la arquitectura escalada (arquitectura dividida), redis conexiones esclavas **NO DEBERÍA** estar activado. Puede comprobar si su arquitectura está escalada desde la dirección URL de su proyecto, p. ej. `https://console.adobecommerce.com/<owner-user-name>/<project-ID>/<environment-name>`. Haga clic en **[!UICONTROL SSH]**. Si hay más de tres nodos, se utiliza la arquitectura a escala. Si habilita Lecturas esclavas de Redis en la arquitectura escalada, el cliente recibirá errores en las conexiones de Redis que no puedan conectarse. Esto tiene que ver con la configuración de los clústeres para procesar las conexiones de Redis. Los Esclavos de Redis siguen activos, pero no se usarán para Redis Reads. Recomendamos que la arquitectura escalada use Adobe Commerce 2.3.5 o posterior e implemente la nueva configuración back-end de Redis e implemente el almacenamiento en caché L2 para Redis.
+>Para la arquitectura escalada (arquitectura dividida), las conexiones esclavas de Redis **NO DEBERÍAN** habilitarse. Para comprobar si su arquitectura está escalada, vaya a la dirección URL de su proyecto, p. ej. `https://console.adobecommerce.com/<owner-user-name>/<project-ID>/<environment-name>`. Haga clic en **[!UICONTROL SSH]**. Si hay más de tres nodos, se utiliza la arquitectura a escala. Si habilita Lecturas esclavas de Redis en la arquitectura escalada, el cliente recibirá errores en las conexiones de Redis que no puedan conectarse. Esto tiene que ver con la configuración de los clústeres para procesar las conexiones de Redis. Los Esclavos de Redis siguen activos, pero no se usarán para Redis Reads. Recomendamos que la arquitectura escalada use Adobe Commerce 2.3.5 o posterior e implemente la nueva configuración back-end de Redis e implemente el almacenamiento en caché L2 para Redis.
 
-Si se observan estas dos indicaciones, se `SLAVE` Las conexiones para la base de datos MySQL y Redis pueden ayudar a distribuir la carga entre diferentes nodos.
+Si se experimentan estas dos indicaciones, habilitar las conexiones de `SLAVE` para la base de datos MySQL y Redis puede ayudar a distribuir la carga entre nodos diferentes.
 
-Adobe Commerce puede leer varias bases de datos o Redis de forma asíncrona. Actualización del `.magento.env.yaml` archivo estableciendo en `true` los valores `MYSQL_USE_SLAVE_CONNECTION` y `REDIS_USE_SLAVE_CONNECTION` para utilizar un **de solo lectura** conexión a la base de datos para recibir tráfico de solo lectura en un nodo no maestro. Esto mejora el rendimiento mediante el equilibrio de carga, ya que solo un nodo necesita gestionar el tráfico de lectura-escritura. Configure como. `false` para quitar cualquier matriz de conexión de solo lectura existente de `env.php` archivo.
+Adobe Commerce puede leer varias bases de datos o Redis de forma asíncrona. Actualizando el archivo `.magento.env.yaml` estableciendo en `true` los valores `MYSQL_USE_SLAVE_CONNECTION` y `REDIS_USE_SLAVE_CONNECTION` para utilizar una conexión de **solo lectura** con la base de datos para recibir tráfico de solo lectura en un nodo no maestro. Esto mejora el rendimiento mediante el equilibrio de carga, ya que solo un nodo necesita gestionar el tráfico de lectura-escritura. Establezca el valor en `false` para quitar cualquier matriz de conexión de solo lectura existente del archivo `env.php`.
 
 ### Pasos
 
-1. Edite su `.magento.env.yaml` y agregue el siguiente contenido:
+1. Edite su archivo de `.magento.env.yaml` y agregue el siguiente contenido:
 
    ![KB-372_image004.png](assets/KB-372_image004.png)
 
-   Puede encontrar más detalles en [Implementación de variables en DevDocs](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection).
+   Puede encontrar más detalles en [Implementar variables en DevDocs](https://devdocs.magento.com/cloud/env/variables-deploy.html#mysql_use_slave_connection).
 
 1. Confirme los cambios e inserte los cambios.
 1. La inserción de cambios iniciará un nuevo proceso de implementación. Una vez completada correctamente la implementación, debe configurar la instancia de Adobe Commerce en la infraestructura en la nube para que utilice conexiones esclavas.
@@ -70,20 +70,20 @@ Adobe Commerce puede leer varias bases de datos o Redis de forma asíncrona. Act
 
 A continuación se muestran las preguntas comunes que puede hacerse al considerar el uso de la funcionalidad de conexiones esclavas para su Adobe Commerce en el almacén de infraestructura en la nube.
 
-* ¿Hay algún problema o limitación conocidos para utilizar conexiones esclavas? **No tenemos ningún problema conocido con el uso de conexiones esclavas. Solo asegúrese de que está utilizando el paquete ece-tools actualizado más recientemente. Las instrucciones están aquí en [cómo actualizar el paquete ece-tools](https://devdocs.magento.com/cloud/project/ece-tools-update.html).**
-* ¿Existe latencia adicional al utilizar conexiones esclavas? *Sí, la latencia entre AZ (zonas de disponibilidad cruzada) es mayor y reduce el rendimiento de una Adobe Commerce en una instancia de infraestructura en la nube en el caso de que la instancia no se sobrecargue y pueda llevar la carga completa. Pero claramente, si la instancia está sobrecargada - maestro-esclavo ayudará con el rendimiento al distribuir la carga en la base de datos MySQL o Redis a través de diferentes nodos.*
+* ¿Hay algún problema o limitación conocidos para utilizar conexiones esclavas? **No tenemos ningún problema conocido relacionado con el uso de conexiones esclavas. Solo asegúrese de que está utilizando el paquete ece-tools actualizado más recientemente. Las instrucciones están aquí en [cómo actualizar el paquete ece-tools](https://devdocs.magento.com/cloud/project/ece-tools-update.html).**
+* ¿Existe latencia adicional al utilizar conexiones esclavas? *Sí, la latencia entre AZ (zonas de disponibilidad cruzada) es mayor y reduce el rendimiento de una Adobe Commerce en una instancia de infraestructura en la nube en el caso de que la instancia no esté sobrecargada y pueda llevar toda la carga. Pero claramente, si la instancia está sobrecargada, maestro-esclavo ayudará con el rendimiento al distribuir la carga en la base de datos MySQL o Redis en diferentes nodos.*
 
-  **En clústeres no sobrecargados** -  **Las conexiones esclavas ralentizan el rendimiento en un 10-15 %**, que es una de las razones por las que no es predeterminada.
+  **En clústeres no sobrecargados** - **Las conexiones esclavas ralentizarán el rendimiento en un 10-15%**, una de las razones por las que no es predeterminado.
 
-  *Pero en los clústeres sobrecargados, hay un aumento del rendimiento porque estos 10-15 % se reducen reduciendo la carga por tráfico.*
-* ¿Debo habilitar esta configuración para mi tienda? *Si tiene una carga alta o espera una carga alta en la base de datos MySQL o Redis, definitivamente necesita habilitar Slave Connections. Para un cliente normal con tráfico promedio, esto es **no**una configuración óptima para habilitarla.*
+  *Pero en los clústeres sobrecargados, hay un aumento de rendimiento porque estos 10-15% se reducen reduciendo la carga por el tráfico.*
+* ¿Debo habilitar esta configuración para mi tienda? *Si tiene una carga alta o espera una carga alta en la base de datos MySQL o en Redis, definitivamente necesita habilitar Slave Connections. Para un cliente normal con tráfico promedio,**no**es una configuración óptima para habilitarlo.*
 
 ## Lectura relacionada
 
 En nuestra documentación para desarrolladores:
 
-* [Implementación de variables](https://devdocs.magento.com/cloud/env/variables-deploy.html).
-* [Configurar replicación de base de datos opcional](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master_slavedb.html).
+* [Implementar variables](https://devdocs.magento.com/cloud/env/variables-deploy.html).
+* [Configurar replicación opcional de base de datos](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master_slavedb.html).
 * [paquete ece-tools](https://devdocs.magento.com/cloud/reference/ece-tools-reference.html).
 
 >[!NOTE]

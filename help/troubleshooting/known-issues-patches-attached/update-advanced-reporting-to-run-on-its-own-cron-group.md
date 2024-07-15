@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Actualice los informes avanzados para que se ejecuten en su propio grupo cron
 
-Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.3.0 en el que los informes avanzados no muestran datos. Esto se debe al trabajo de informes avanzados `analytics_collect_data` no se ejecuta según la programación. Este artículo proporciona un parche que creará un grupo cron de informes avanzados `analytics`.
+Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.3.0 en el que los informes avanzados no muestran datos. Esto se debe a que el trabajo de informes avanzados `analytics_collect_data` no se ejecuta de acuerdo con la programación. Este artículo proporciona una revisión que creará un grupo cron de informes avanzados `analytics`.
 
 ## Problema
 
@@ -21,13 +21,13 @@ No se cargan datos en el módulo Informes avanzados.
 
 ## Parche
 
-El parche se adjunta a este artículo. El parche mueve el `analytics` tareas de trabajo cron del grupo predeterminado a `analytics`.
+El parche se adjunta a este artículo. El parche mueve las tareas de trabajo cron `analytics` del grupo predeterminado a `analytics`.
 
 Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre del archivo o haga clic en el siguiente vínculo:
 
 [MDVA-19640\_EE\_2.3.0\_COMPOSER\_v1.patch](assets/MDVA-19640_EE_2.3.0_COMPOSER_v1.patch.zip)
 
-Después de aplicar el parche, ejecute la siguiente consulta SQL. La consulta debe ejecutarse para cambiar registros en `cron_schedule` tabla.
+Después de aplicar el parche, ejecute la siguiente consulta SQL. La consulta debe ejecutarse para cambiar los registros de la tabla `cron_schedule`.
 
 ```
 UPDATE core_config_data

@@ -26,9 +26,9 @@ Los usuarios no pueden añadir productos al carro de compras si la opción Permi
 <u>Pasos a seguir</u>:
 
 1. Inicie sesión en el administrador de Commerce.
-1. Ir a **Almacenar** > **Configuración** > **General** > **Opciones de país**
-1. Anular la selección de todas las opciones de **Permitir países** field.
-1. Clic **Guardar configuración** para guardar la configuración.
+1. Ir a **Tienda** > **Configuración** > **General** > **Opciones de país**
+1. Anule la selección de todas las opciones del campo **Permitir países**.
+1. Haga clic en **Guardar configuración** para guardar la configuración.
 1. Vaya a la tienda e intente agregar un producto al carro de compras.
 
 <u>Resultado esperado:</u>
@@ -51,7 +51,7 @@ customer-data.js:87 Uncaught Error: [object Object]
 
 ## Causa
 
-La configuración de Adobe Commerce recupera `null` en caso de que una configuración de selección múltiple no tenga elementos seleccionados. Esta configuración se procesaba correctamente en versiones de PHP anteriores a la 8.1. Sin embargo, en PHP 8.1 no funciona correctamente debido a los errores que son causados por el &quot;[Pasar argumentos nulos a no admisibles de funciones internas en PHP 8.1 es obsoleto](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg)&quot;.
+La configuración de Adobe Commerce recupera `null` en caso de que una configuración de selección múltiple no tenga elementos seleccionados. Esta configuración se procesaba correctamente en versiones de PHP anteriores a la 8.1. Sin embargo, en PHP 8.1 no funciona correctamente debido a los errores que causan &quot;[Deprecate pasa argumentos nulos a no admisibles de funciones internas en PHP 8.1](https://wiki.php.net/rfc/deprecate_null_to_scalar_internal_arg)&quot;.
 
 ## Soluciones
 
@@ -65,4 +65,4 @@ Consulte [Cómo aplicar un parche del compositor proporcionado por Adobe Commerc
 
 ## Vínculos útiles
 
-[Aplicar parches personalizados a Adobe Commerce en la infraestructura en la nube](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
+[Aplique parches personalizados a Adobe Commerce en la infraestructura en la nube](https://devdocs.magento.com/guides/v2.3/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.

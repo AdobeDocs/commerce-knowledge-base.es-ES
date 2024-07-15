@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-36464: la configuración de envío de correo electrónico no funciona en el nivel de vista de tienda
 
-El parche de MDVA-36464 soluciona el problema de que la configuración de envío de correo electrónico no funciona en el nivel de vista de tienda. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.21 está instalado. El ID del parche es MDVA-36464. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.3.
+El parche de MDVA-36464 soluciona el problema de que la configuración de envío de correo electrónico no funciona en el nivel de vista de tienda. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.21. El ID del parche es MDVA-36464. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.3.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 Adobe Commerce en infraestructura en la nube 2.4.0-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 Adobe Commerce (todos los métodos de implementación) 2.4.0 - 2.4.2
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -37,20 +37,20 @@ Instale Adobe Commerce limpio.
 
 <u>Pasos a seguir</u>:
 
-1. Crear un sitio web, una tienda y una vista de tienda adicionales (en este ejemplo, el segundo sitio web es *sitio web2*).
-1. Deshabilitar **Notificación por correo electrónico** a nivel global en **Almacenar** > **Configuración** > **Avanzadas** > **Sistema** > **Configuración de envío de correo**.
-1. Activar **Notificación por correo electrónico** en el *sitio web2* level (**Desactivar comunicaciones por correo electrónico** = *No*).
+1. Cree un sitio web, tienda y vista de tienda adicionales (en este ejemplo, el segundo sitio web es *website2*).
+1. Deshabilitar **notificación por correo electrónico** a nivel global en **Almacén** > **Configuración** > **Avanzado** > **Sistema** > **Configuración de envío de correo**.
+1. Habilitar **notificación por correo electrónico** en el nivel *sitio web2* (**Deshabilitar comunicaciones por correo electrónico** = *No*).
 1. En Administración, cree un nuevo usuario y asígnelo al *sitio web2*.
 1. En Administración, en la página de edición del cliente, haga clic en **Restablecer contraseña** para el cliente creado anteriormente en el paso 4.
 
 <u>Resultados esperados</u>:
 
-Tanto la **correo electrónico de bienvenida** y el **restablecer correo electrónico de contraseña** se envían, según lo esperado, porque **Desactivar comunicaciones por correo electrónico** = *No* para el segundo sitio web (ejemplo: *sitio web2*).
+Tanto el **correo electrónico de bienvenida** como el **correo electrónico para restablecer la contraseña** se envían, según lo esperado, porque **Deshabilitar las comunicaciones por correo electrónico** = *No* para el segundo sitio web (Ejemplo: *sitio web2*).
 
 <u>Resultados reales</u>:
 
-* El **correo electrónico de bienvenida** después de que no se active la creación del nuevo cliente.
-* El **restablecer correo electrónico de contraseña** no se activa.
+* No se ha activado el **correo electrónico de bienvenida** tras la creación del nuevo cliente.
+* No se ha activado el **correo electrónico para restablecer la contraseña**.
 
 ## Aplicar el parche
 
@@ -63,7 +63,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

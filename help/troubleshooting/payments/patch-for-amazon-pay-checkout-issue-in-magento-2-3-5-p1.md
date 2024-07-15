@@ -24,7 +24,7 @@ Este parche resuelve el problema de la incapacidad para cambiar un método de pa
 
 Cuando un comprador cierra la compra con Amazon Pay, inicia sesión, continúa con el paso de pago e intenta cambiar su tarjeta de crédito de pago desde el widget de pagos, aparece un mensaje de error. El cierre de compra no se puede completar si el comprador ignora el error y continúa con el cierre de compra.
 
-Para resolver este problema y eliminar el error, se ha creado un [parche](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip).
+Para resolver este problema y eliminar el error, hemos creado un [parche](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip).
 
 <u>Pasos a seguir</u>:
 
@@ -33,13 +33,13 @@ Para resolver este problema y eliminar el error, se ha creado un [parche](assets
 1. Seleccione el método de envío y continúe con el paso de pago.
 1. Intente cambiar la tarjeta de crédito por otra diferente.
 
-<u>Resultado esperado</u>: Se selecciona una tarjeta de crédito diferente como método de pago sin error.
+<u>Resultado esperado</u>: se ha seleccionado una tarjeta de crédito diferente como método de pago sin error.
 
-<u>Resultado real</u>: Aparece el mensaje de error: *&quot;Póngase en contacto con este comerciante para que le ayude a completar su pedido&quot;.*
+<u>Resultado real</u>: Aparece el mensaje de error: *&quot;Póngase en contacto con este comerciante para que le ayude a completar su pedido.&quot;*
 
 ## Solución
 
-[Aplicar el parche](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip) más abajo.
+[Aplicar el parche](assets/BUNDLE-2554_EE_2.3.5-p1.composer.patch.zip) siguiente.
 
 ## Parche
 

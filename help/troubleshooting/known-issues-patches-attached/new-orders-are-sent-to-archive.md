@@ -27,7 +27,7 @@ Cuando los clientes realizan pedidos, aparecen en la cuadrícula de pedidos arch
 
 1. Añada cualquier producto al carro de compras en la tienda, continúe con el cierre de compra y realice el pedido.
 1. En el Administrador de Commerce, vaya a **Ventas** > **Operaciones** > **Pedido**. Ver el orden que aparece en la cuadrícula.
-1. Vaya a **Ventas** > **Archivar** > **Pedidos**. Consulte el nuevo orden en la cuadrícula.
+1. Vaya a **Ventas** > **Archivo** > **Pedidos**. Consulte el nuevo orden en la cuadrícula.
 
 <u>Resultados esperados</u>:
 

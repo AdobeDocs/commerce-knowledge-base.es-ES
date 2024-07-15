@@ -30,4 +30,4 @@ Una vez instalada la herramienta, puede comprobar si hay parches disponibles, ap
 Consulte nuestra documentación para desarrolladores para obtener más información:
 
 * [Parches disponibles en la herramienta Parches de calidad](https://devdocs.magento.com/quality-patches/tool.html#patch-grid)
-* [Notas de la versión de Parches de calidad](https://devdocs.magento.com/quality-patches/release-notes.html)
+* [Notas de la versión de la herramienta Parches de calidad](https://devdocs.magento.com/quality-patches/release-notes.html)

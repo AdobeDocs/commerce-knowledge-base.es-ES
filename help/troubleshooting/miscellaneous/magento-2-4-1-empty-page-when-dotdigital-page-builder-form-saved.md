@@ -24,10 +24,10 @@ Este artículo proporciona una solución para un problema conocido de Adobe Comm
 
 <u>Pasos a seguir</u>
 
-1. Ir a **Panel de administración** > **Contenido** > **Páginas** y seleccione **Editar** de cualquier página.
-1. Ir a **Contenido** y haga clic en **Editar con Page Builder** botón.
-1. Arrastre el **formulario dotdigital** bloquear y seleccionar **Editar**.
-1. Seleccione uno de los formularios de prueba y elija **Incrustado** y guarde el formulario.
+1. Vaya a **Panel de administración** > **Contenido** > **Páginas** y seleccione **Editar** de cualquier página.
+1. Vaya a **Contenido** y haga clic en el botón **Editar con Page Builder**.
+1. Arrastre el bloque **dotdigital form** y seleccione **Editar**.
+1. Seleccione uno de los formularios de prueba, luego elija el modo **Incrustado** y guarde el formulario.
 1. Guarde la modificación de la página.
 
 <u>Resultado esperado:</u>
@@ -46,5 +46,5 @@ La solución consiste en utilizar un explorador alternativo a Safari. Está prev
 
 * [¿Qué es Page Builder?](https://devdocs.magento.com/page-builder/docs/) en nuestra documentación para desarrolladores.
 * [Configuración de Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/setup.html) en nuestra documentación para desarrolladores.
-* [Page Builder](https://docs.magento.com/user-guide/cms/page-builder.html) en nuestra guía del usuario.
+* [Generador de páginas](https://docs.magento.com/user-guide/cms/page-builder.html) en nuestra guía del usuario.
 * [Page Builder: elementos](https://docs.magento.com/user-guide/cms/page-builder-elements.html) en nuestra guía del usuario.

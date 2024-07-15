@@ -14,7 +14,7 @@ ht-degree: 0%
 El título debe describir brevemente el problema; se prefiere un máximo de 70 caracteres.<br/>
 (Ejemplo: &quot;Error de falta de memoria durante la instalación o actualización&quot;.)
 
-Consulte [Contribución > Metadatos](../../CONTRIBUTING.md#metadata) para obtener más información sobre los metadatos.
+Consulte [Contribución > Metadatos](../../CONTRIBUTING.md#metadata) para obtener información adicional sobre los metadatos.
 
 Introducción de uno o dos párrafos: una breve descripción del tema. Los primeros 140 caracteres son importantes para fines de la SEO.
 
@@ -23,7 +23,7 @@ Introducción de uno o dos párrafos: una breve descripción del tema. Los prime
 * Adobe Commerce local x.x.x
 * Adobe Commerce en infraestructura en la nube x.x.x
 
-(*Alternativamente, si las mismas versiones en la nube o en línea se ven afectadas, puede decir:*)
+(*Alternativamente, si las mismas versiones en la nube o locales se ven afectadas, puede decir:*)
 
 Adobe Commerce (todos los métodos de implementación) x.x.x
 
@@ -68,6 +68,6 @@ Si hay una solución temporal, especifíquela como una sección independiente de
 ## Lectura relacionada
 
 * [Tema del artículo](https://docs.magento.com/user-guide/) en nuestra guía del usuario.
-* [Tema del artículo](https://devdocs.magento.com) en nuestra documentación para desarrolladores. También puede decir para diferenciar entre instrucciones en devdocs para usuarios en la nube o locales: &quot;[Tema del artículo](https://devdocs.magento.com) en nuestra documentación para desarrolladores para Adobe Commerce sobre la infraestructura en la nube&quot;. vs &quot;[Tema del artículo](https://devdocs.magento.com) en nuestra documentación para desarrolladores para Adobe Commerce local&quot;.
-* [Tema del artículo](https://support.magento.com/hc/en-us) en nuestra base de conocimiento de soporte.
+* [Tema de artículo](https://devdocs.magento.com) en nuestra documentación para desarrolladores. También puede decir que para diferenciar entre instrucciones en devdocs para usuarios en la nube y locales: &quot;[Tema del artículo](https://devdocs.magento.com) en nuestra documentación para desarrolladores para Adobe Commerce sobre infraestructura en la nube&quot;. frente a &quot;[tema del artículo](https://devdocs.magento.com) en nuestra documentación para desarrolladores para Adobe Commerce local&quot;.
+* [Tema de artículo](https://support.magento.com/hc/en-us) en nuestra base de conocimiento de soporte.
 * Cualquier recurso relacionado (blogs, foros, StackOverflow, etc.)

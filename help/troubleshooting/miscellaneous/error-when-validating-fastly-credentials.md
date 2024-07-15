@@ -26,25 +26,25 @@ El usuario recibe un error al validar las credenciales de Fastly.
 
 ## Solución
 
-1. Asegúrese de que tiene el ID de servicio de Fastly y el token de API correctos e intente validar de nuevo. Para obtener instrucciones detalladas, consulte [Prueba de las credenciales de Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) en nuestra documentación para desarrolladores.
+1. Asegúrese de que tiene el ID de servicio de Fastly y el token de API correctos e intente validar de nuevo. Para obtener instrucciones detalladas, consulte [Probar las credenciales de Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials) en nuestra documentación para desarrolladores.
 1. Si la verificación de las credenciales falla, ejecute el siguiente comando curl para confirmar el estado del servicio:
 
    ```curl
    curl -H "Fastly-Key: <API key>" https://api.fastly.com/service/<service ID>/version/active
    ```
 
-1. Si el comando anterior devuelve un error similar al siguiente: *{&quot;msg&quot;:&quot;Token $TOKEN caducó el 28 de septiembre de 2021:03:37Z&quot;}*, envíe un ticket de asistencia para solicitar un nuevo token de API.
+1. Si el comando anterior devuelve un error similar al siguiente: *{&quot;msg&quot;:&quot;Token $TOKEN caducó el 2021-09-28T02:03:37Z&quot;}*, envíe un vale de asistencia para solicitar un nuevo token de API.
 
-   Para obtener información sobre cómo enviar un ticket de asistencia, consulte [Guía del usuario del Centro de ayuda de Adobe Commerce > TICKETS DE ASISTENCIA](/help/help-center-guide/help-center/magento-help-center-user-guide.md#support-tickets) en nuestra base de conocimiento de soporte.
+   Para obtener información sobre cómo enviar un vale de soporte, consulte [Guía del usuario del Centro de ayuda de Adobe Commerce > TICKETS DE SOPORTE](/help/help-center-guide/help-center/magento-help-center-user-guide.md#support-tickets) en nuestra base de conocimiento de soporte técnico.
 
    >[!NOTE]
    >
    >Nunca comparta contraseñas o tokens de API válidos/activos directamente en el ticket, ya que tendremos que revocar el token actual y generar uno nuevo por motivos de seguridad.
 
-1. Si el comando no devuelve el error, asegúrese de que está ejecutando la versión más reciente de [!DNL Fastly] extensión. Si su versión es anterior a la de 1.2.203, primero debe hacer clic en **[!UICONTROL Save Config]** antes de poder probar las credenciales.
+1. Si el comando no devuelve el error, asegúrese de que está ejecutando la versión más reciente de la extensión [!DNL Fastly]. Si su versión es anterior a la de 1.2.203, primero debe hacer clic en **[!UICONTROL Save Config]** para poder probar las credenciales.
 
 ## Lecturas relacionadas en nuestra documentación para desarrolladores:
 
 * [Cloud for Adobe Commerce > Fastly > Cuenta de servicio y credenciales de Fastly](https://devdocs.magento.com/cloud/cdn/cloud-fastly.html#fastly-service-account-and-credentials)
 
-* [Cloud for Adobe Commerce > Configuración de Fastly > Prueba de las credenciales de Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials)
+* [Cloud for Adobe Commerce > Configurar rápidamente > Probar las credenciales de Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#test-the-fastly-credentials)

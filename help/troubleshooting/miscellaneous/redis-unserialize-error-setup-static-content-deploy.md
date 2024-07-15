@@ -1,6 +1,6 @@
 ---
-title: Redis unserialize error `setup:static-content:deploy`
-description: Este artículo proporciona una corrección para el error Redis unserialize al ejecutar la configuración de Magento:static-content:deploy`.
+title: Error de eliminación de serialización de redis `setup:static-content:deploy`
+description: Este artículo proporciona una corrección para el error Redis unserialize al ejecutar `magento setup:static-content:deploy`.
 exl-id: 4bc88933-3bf9-4742-b864-b82d3c1b07a9
 feature: Cache, Deploy, Page Content, SCD, Services, Variables
 role: Developer
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 ---
 
-# Error Redis al anular la serialización `setup:static-content:deploy`
+# Error al anular la serialización `setup:static-content:deploy`
 
 Este artículo proporciona una corrección para el error Redis unserialize al ejecutar `magento setup:static-content:deploy`.
 
-Ejecutando `magento setup:static-content:deploy` causa el error de Redis:
+La ejecución de `magento setup:static-content:deploy` causa el error de Redis:
 
 ```
 [Exception]
@@ -25,13 +25,13 @@ Notice: unserialize(): Error at offset 0 of 1 bytes in
 
 El problema se debe a procesos de interferencia paralelos en la conexión Redis.
 
-Para resolverlo, ejecute `setup:static-content:deploy` en modo de subproceso único, configurando la siguiente variable de entorno:
+Para resolver el problema, ejecute `setup:static-content:deploy` en modo de subproceso único estableciendo la siguiente variable de entorno:
 
 ```
 STATIC_CONTENT_THREADS =1
 ```
 
-o bien, ejecute el `setup:static-content:deploy` seguido del comando `-j 1` (o `--jobs=1` ) argumento.
+o bien, ejecute el comando `setup:static-content:deploy` seguido del argumento `-j 1` (o `--jobs=1` ).
 
 Tenga en cuenta que deshabilitar el subprocesamiento múltiple ralentiza el proceso de implementación de recursos estáticos.
 
@@ -43,7 +43,7 @@ Tenga en cuenta que deshabilitar el subprocesamiento múltiple ralentiza el proc
 
 ## Problema
 
-Ejecución de la `setup:static-content:deploy` El comando provoca el error de Redis:
+La ejecución del comando `setup:static-content:deploy` provoca el siguiente error de Redis:
 
 ```php
 )
@@ -79,17 +79,17 @@ Command php ./bin/magento setup:static-content:deploy --jobs=3  en_US  returned 
 
 El problema se debe a procesos de interferencia paralelos en la conexión de Redis.
 
-Aquí, un proceso en `App/Config/Type/System.php` esperaba una respuesta para `system_defaultweb`, pero recibió una respuesta para `system_cache_exists` que se hizo por un proceso diferente. Consulte la explicación detallada en [Publicación de Jason Woods](https://github.com/magento/magento2/issues/9287#issuecomment-302362283).
+Aquí, un proceso de `App/Config/Type/System.php` esperaba una respuesta para `system_defaultweb`, pero recibió una respuesta para `system_cache_exists` realizada por un proceso diferente. Vea la explicación detallada en la publicación de [Jason Woods](https://github.com/magento/magento2/issues/9287#issuecomment-302362283).
 
 ## Solución
 
-Desactivar paralelismo y ejecutar `setup:static-content:deploy` en modo de subproceso único, configurando la siguiente variable de entorno:
+Deshabilite el paralelismo y ejecute `setup:static-content:deploy` en modo de un solo subproceso estableciendo la siguiente variable de entorno:
 
 ```
 STATIC_CONTENT_THREADS =1
 ```
 
-Además, puede ejecutar el `setup:static-content:deploy` seguido del comando `-j 1` (o `--jobs=1`) argumento.
+También puede ejecutar el comando `setup:static-content:deploy` seguido del argumento `-j 1` (o `--jobs=1`).
 
 >[!NOTE]
 >
@@ -100,4 +100,4 @@ Además, puede ejecutar el `setup:static-content:deploy` seguido del comando `-j
 En nuestra documentación para desarrolladores:
 
 * [Configurar Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
-* [Actualización de la línea de comandos](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html)
+* [Actualización de línea de comandos](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html)

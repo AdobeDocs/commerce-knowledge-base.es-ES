@@ -26,7 +26,7 @@ Este artículo proporciona un parche para el problema conocido de Adobe Commerce
 
 1. Realice y complete un pedido con uno de los siguientes métodos de envío principales: FedEx, DHL, UPS y USPS.
 1. Cree y autorice devoluciones para este pedido.
-1. Abra un **Información de devolución** y haga clic en la **Crear etiqueta de envío** botón.
+1. Abra una página **Información de devolución** autorizada y haga clic en el botón **Crear etiqueta de envío**.
 1. Seleccione el método de envío, añada un producto a un paquete y haga clic en Guardar.
 
 <u>Resultado esperado:</u>
@@ -35,11 +35,11 @@ Se ha creado correctamente una etiqueta de envío y verá un mensaje: *Ha creado
 
 <u>Resultado real:</u>
 
-El **Información de devolución** está rota y ve un mensaje de error en la página Devolver información: *Información general Se han realizado cambios en esta sección que no se han guardado. Esta pestaña contiene datos no válidos*.
+La página **Devolver información** está dañada y verá un mensaje de error en la página Devolver información: *Se han realizado cambios de información general en esta sección que no se han guardado. Esta ficha contiene datos no válidos*.
 
 ## Solución
 
-Aplicar [parche](assets/MC-35984-2.4.0-CE-composer.patch.zip) mencionado en este artículo.
+Aplicar [parche](assets/MC-35984-2.4.0-CE-composer.patch.zip) proporcionado en este artículo.
 
 ## Parche
 
@@ -47,11 +47,11 @@ El parche se adjunta a este artículo. Para descargarlo, desplácese hacia abajo
 
 [MC-35984-2.4.0-CE-composer.patch](assets/MC-35984-2.4.0-CE-composer.patch.zip)
 
-El parche también está disponible para su descarga en ambos, `.git` y `.composer`, formatos en [Descargas de Adobe Commerce](https://magento.com/tech-resources/download) página, debajo de **Parches** en la navegación de la columna izquierda. Busque el parche de MC-35984.
+El parche también está disponible para su descarga en los formatos `.git` y `.composer` de la página [Descargas de Adobe Commerce](https://magento.com/tech-resources/download), en **Parches** en la navegación de la columna izquierda. Busque el parche de MC-35984.
 
 ## Cómo aplicar el parche
 
-Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra página de conocimientos de asistencia.
+Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra página de conocimientos de soporte técnico.
 
 ## Lecturas relacionadas en nuestra base de conocimiento de soporte:
 

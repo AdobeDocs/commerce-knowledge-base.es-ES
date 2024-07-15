@@ -55,7 +55,7 @@ La instalación requiere comandos CLI para la instancia de Adobe Commerce. Puede
 
 #### Instalación de Google reCAPTCHA y actualizaciones del formulario de cierre de compra
 
-El `magento/module-paypal-recaptcha` El paquete contiene actualizaciones del formulario de pago de integración con Google reCAPTCHA y Payflow Pro. Incluso si tiene el módulo reCAPTCHA instalado y configurado, le recomendamos que instale este paquete.
+El paquete `magento/module-paypal-recaptcha` contiene actualizaciones del formulario de pago de la integración con Google reCAPTCHA y Payflow Pro. Incluso si tiene el módulo reCAPTCHA instalado y configurado, le recomendamos que instale este paquete.
 
 Ejecute los siguientes comandos para instalarlo.
 
@@ -86,7 +86,7 @@ bin/magento cache:clean
 
 #### Instalar actualizaciones de formularios de cierre de compra para CAPTCHA
 
-El `magento/module-paypal-captcha` contiene la integración con el módulo nativo CAPTCHA de Adobe Commerce.
+El paquete `magento/module-paypal-captcha` contiene la integración con el módulo CAPTCHA nativo de Adobe Commerce.
 
 Ejecute los siguientes comandos para instalarlo:
 
@@ -120,7 +120,7 @@ bin/magento cache:clean
 Una vez instalado el paquete, configure Google reCAPTCHA (recomendado) o CAPTCHA como se describe en los siguientes documentos:
 
 * [Google reCAPTCHA](https://docs.magento.com/user-guide/stores/security-google-recaptcha.html) en nuestra guía del usuario.
-* [CAPTCHA](https://docs.magento.com/user-guide/stores/security-captcha.html) en nuestra guía del usuario.
+* [CAPTCHA](https://docs.magento.com/user-guide/stores/security-captcha.html) en nuestra guía de usuario.
 
 La nueva opción del formulario de cierre de compra es:
 
@@ -129,13 +129,13 @@ La nueva opción del formulario de cierre de compra es:
 
 ## Asistencia y contactos de PayPal
 
-Póngase en contacto con el servicio de asistencia al comerciante de PayPal Payflow para obtener más información sobre los servicios de protección contra el fraude. Puedes solicitar al equipo de Soporte de PayPal que habilite [Servicios básicos de protección contra el fraude](https://developer.paypal.com/api/nvp-soap/payflow/fraud-protection/) filtros para proporcionar el control más estricto posible sobre los pagos, de modo que pueda denegar automáticamente los pagos que puedan dar lugar a transacciones fraudulentas y aceptar pagos que no suelen ser un problema. Tenga en cuenta que una vez que active los filtros de los Servicios de protección contra el fraude de PayPal, las transacciones pueden tardar hasta dos horas en liquidarse.
+Póngase en contacto con el servicio de asistencia al comerciante de PayPal Payflow para obtener más información sobre los servicios de protección contra el fraude. Puede solicitar al equipo de Soporte de PayPal que habilite los filtros de [Servicios básicos de protección contra el fraude](https://developer.paypal.com/api/nvp-soap/payflow/fraud-protection/) para proporcionar el control más estricto posible sobre los pagos, de modo que pueda denegar automáticamente los pagos que puedan dar lugar a transacciones fraudulentas y aceptar pagos que no suelen ser un problema. Tenga en cuenta que una vez que active los filtros de los Servicios de protección contra el fraude de PayPal, las transacciones pueden tardar hasta dos horas en liquidarse.
 
 >[!NOTE]
 >
->Para obtener más información, consulte KB de PayPal [&quot;Adobe se ha puesto en contacto conmigo acerca de mi integración con Payflow Pro. ¿Qué tengo que hacer?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
+>Para obtener más información, consulta la sección &quot;El Adobe de PayPal de [ KB se ha puesto en contacto conmigo para informarme sobre mi integración con Payflow Pro. ¿Qué debo hacer?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
 
-**Detalles de asistencia de PayPal Payflow Merchant**
+**Detalles de asistencia al comerciante de PayPal Payflow**
 
 El horario laboral de Payflow Merchant Support es de lunes a viernes de 7:00 AM a 8:00 PM CST. Puede ponerse en contacto con el servicio de asistencia al comerciante de Payflow para obtener ayuda por teléfono o correo electrónico:
 

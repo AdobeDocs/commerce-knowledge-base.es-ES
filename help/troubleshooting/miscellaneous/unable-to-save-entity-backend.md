@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # No se puede guardar el backend de Adobe Commerce de entidad
 
-Este artículo proporciona una solución para los casos en los que no pueda guardar una entidad en el backend de Adobe Commerce. Por ejemplo, cuando no puede editar ni guardar un archivo específico `cart_price` regla.
+Este artículo proporciona una solución para los casos en los que no pueda guardar una entidad en el backend de Adobe Commerce. Por ejemplo, cuando no puede editar ni guardar una regla `cart_price` específica.
 
 ## Productos y versiones afectados
 
@@ -24,14 +24,14 @@ Este problema puede afectar a todas las versiones de Adobe Commerce que tienen c
 
 Al intentar reconfigurar la tienda, la página se vuelve a cargar y los cambios no se guardan. Se puede ver un mensaje en `var/log/system.log`:
 
-*[2021-11-27 00:30:52] report.WARNING: El tamaño de sesión de 418056 excedió el tamaño máximo de sesión permitido de 256000. [][]*
+*[2021-11-27 00:30:52] informe.ADVERTENCIA: el tamaño de la sesión de 418056 superó el tamaño máximo de sesión permitido de 256000. [][]*
 
 <u>Pasos a seguir</u>:
 
 Un ejemplo de configuración de tienda que no se guarda:
 
-1. Seleccione una regla en la tienda de Adobe Commerce en Producción > **Marketing** > **Reglas de precios del carrito**.
-1. Elija una regla y configúrela en *Inactivo* y guarde el cambio.
+1. Seleccione una regla en la tienda Adobe Commerce en Producción > **Marketing** > **Reglas de precio del carro de compras**.
+1. Elija una regla y establézcala en *Inactiva* y guarde el cambio.
 
 <u>Resultado esperado</u>:
 
@@ -48,8 +48,8 @@ Este problema está relacionado con la nueva funcionalidad introducida recientem
 
 ## Solución
 
-Aumente el valor &quot;Tamaño máximo de sesión&quot; en (**Tiendas** > **Configuración** > **Avanzadas** > **Sistema** > **Seguridad** > Tamaño máximo de la sesión).
+Aumente el valor &quot;Tamaño máximo de sesión&quot; en (**Almacenes** > **Configuración** > **Avanzado** > **Sistema** > **Seguridad** > Tamaño máximo de sesión).
 
 ## Lectura relacionada
 
-* [Menú de marketing](https://docs.magento.com/user-guide/marketing/marketing-menu.html) en nuestra guía del usuario.
+* [Menú de mercadotecnia](https://docs.magento.com/user-guide/marketing/marketing-menu.html) en nuestra guía del usuario.

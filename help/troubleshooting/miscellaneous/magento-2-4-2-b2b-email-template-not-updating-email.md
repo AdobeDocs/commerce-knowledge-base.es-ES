@@ -26,8 +26,8 @@ Este artículo describe un problema conocido de Adobe Commerce 2.4.2 B2B en el q
 <u>Pasos a seguir</u>:
 
 1. El administrador de la empresa crea un pedido de compra en el front-end.
-1. Consulte el correo electrónico de aprobación automática. El **nombre del cliente** / **tipo de cambio** deben ser valores esperados.
-1. Cambiar símbolo de moneda (**Tiendas > Configuración > Configuración de divisa > Configuración de divisa > Opciones de divisa**) en Nombre del administrador y del administrador de la empresa, en la página Cuenta de cliente.
+1. Consulte el correo electrónico de aprobación automática. **nombre de cliente** / **tasa de cambio** deben ser valores esperados.
+1. Cambie el símbolo de moneda (**Tiendas > Configuración > Configuración de moneda > Opciones de moneda**) en el nombre del administrador y del administrador de la empresa en la página Cuenta de cliente.
 1. El administrador de clientes crea otro pedido de compra en el administrador.
 1. Consulte el correo electrónico de aprobación automática.
 

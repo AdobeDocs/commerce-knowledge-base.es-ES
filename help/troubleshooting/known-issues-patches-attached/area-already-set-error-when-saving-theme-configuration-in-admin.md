@@ -13,23 +13,23 @@ ht-degree: 0%
 
 # Error &quot;El área ya está establecida&quot; al guardar la configuración del tema en el administrador
 
-Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.4 relacionado con la obtención de la *&quot;El área ya está configurada&quot;* mensaje de error al intentar establecer una temática para la vista de tienda predeterminada en el administrador de Commerce.
+Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.4 relacionado con la obtención del mensaje de error *&quot;El área ya está establecida&quot;* al intentar establecer un tema para la vista de tienda predeterminada en el administrador de Commerce.
 
 ## Problema
 
-Obtienes el &quot; *Se ha producido un error al guardar esta configuración: el área ya está definida* Mensaje de error &quot; al intentar establecer una temática para la vista de tienda predeterminada.
+Recibió el mensaje de error &quot;*Se produjo un error al guardar esta configuración: el área ya está establecida*&quot; al intentar establecer un tema para la vista de tienda predeterminada.
 
 <u>Pasos a seguir</u>:
 
 1. Inicie sesión en el administrador de Commerce.
 1. Vaya a **Contenido** > **Diseño** > **Configuración**.
 1. Establezca el ámbito de configuración en *Vista de tienda predeterminada*.
-1. Cambie la temática en la **Tema aplicado** menú desplegable. Por ejemplo, desde *Luma* hasta *En blanco.*
-1. Clic **Guardar configuración**.
+1. Cambie el tema en la lista desplegable **Tema aplicado**. Por ejemplo, de *Luma* a *En blanco.*
+1. Haga clic en **Guardar configuración**.
 
 <u>Resultado esperado</u>: el tema seleccionado se aplica a la vista de tienda predeterminada.
 
-<u>Resultado real</u> : El tema no se aplica, el *&quot;Se ha producido un error al guardar esta configuración: el área ya está configurada&quot;* se muestra un mensaje de error.
+<u>Resultado real</u>: el tema no se aplica, se muestra el mensaje de error *&quot;Se produjo un error al guardar esta configuración: el área ya está establecida&quot;*.
 
 ## Parche
 

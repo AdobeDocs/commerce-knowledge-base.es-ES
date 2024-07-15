@@ -1,6 +1,6 @@
 ---
 title: Revisiones revisadas para la pérdida de acceso a Google Maps en todas las versiones de Adobe Commerce
-description: 'Este artículo proporciona una corrección para los comerciantes de Adobe Commerce que no son compatibles con ningún [!DNL Google Maps] versiones a partir de 3.54+.'
+description: 'Este artículo proporciona una corrección para los comerciantes de Adobe Commerce que no son compatibles con ninguna de las  [!DNL Google Maps] versiones recientes a partir de la versión 3.54+.'
 feature: Install, Upgrade
 role: Developer
 source-git-commit: cf235c2fdd7a36d7e3b126de35c51e6711cd3845
@@ -10,40 +10,40 @@ ht-degree: 0%
 
 ---
 
-# Parches revisados para [!DNL Google Maps] pérdida de acceso en todas las versiones de Adobe Commerce
+# Revisiones para [!DNL Google Maps] pérdida de acceso en todas las versiones de Adobe Commerce
 
-Este artículo proporciona una corrección para los comerciantes de Adobe Commerce que no son compatibles con ningún [!DNL Google Maps] versiones a partir de 3.54+. Esta corrección sirve para resolver el problema de que los comerciantes de Adobe Commerce no tienen acceso a [!DNL Google Maps] en cualquier versión de Adobe Commerce.
+Este artículo proporciona una corrección para comerciantes de Adobe Commerce que no son compatibles con ninguna versión reciente de [!DNL Google Maps] a partir de la versión 3.54 o posterior. Esta corrección sirve para resolver el problema en el cual los comerciantes de Adobe Commerce ya no tienen acceso a [!DNL Google Maps] en ninguna versión de Adobe Commerce.
 
 ## Versiones y productos afectados
 
 * Versiones de Adobe Commerce y otras tecnologías utilizadas.
-* Adobe Commerce *2.4.4* - *2.4.7* en la nube y en las versiones locales.
+* Adobe Commerce *2.4.4* - *2.4.7* en la nube y versiones locales.
 
 ## Problema
 
-Activado *14 de junio de 2024* [!DNL Google Maps] version *3,53* llegó al final de su vida útil y fue desactivado por [!DNL Google].
+El *14 de junio de 2024* [!DNL Google Maps], versión *3.53* llegó al final de su vida útil y fue desactivada por [!DNL Google].
 
 Para obtener más información, consulte [[!DNL Google Maps Platform: Maps JavaScript API]](https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
 
-Adobe Commerce no era compatible con ningún [!DNL  Google Maps] versiones a partir de 3.54+.
+Adobe Commerce no era compatible con ninguna versión de [!DNL  Google Maps] reciente de la versión 3.54 o posterior.
 
-La incompatibilidad se debe a una versión heredada `prototype.js script`, que se cargó mediante `lib/web/legacy-build.min.js` reemplaza la función Array.from nativa, que genera un conflicto directo con [!DNL  Google Maps] API.
+La incompatibilidad se debe a la heredada `prototype.js script`, que se cargó a través de `lib/web/legacy-build.min.js` e invalida la función Array.from nativa, lo que provoca un conflicto directo con la API [!DNL  Google Maps].
 
 Consulte [[!DNL Google Maps: JS Best Practices]](https://developers.google.com/maps/documentation/javascript/best-practices).
 
 <u>Pasos a seguir</u> :
 
 1. Haga clic en **[!UICONTROL Content]** > **[!UICONTROL Pages]** > y seleccione un **[!UICONTROL New Page]**.
-1. Expanda el bloque de contenido y haga clic en el icono Editar **[!DNL PageBuilder]** botón.
-1. Arrastre el bloque de contenido de mapa desde el **[!DNL PageBuilder]** de menú a página.
+1. Expanda el bloque de contenido y haga clic en el botón Editar **[!DNL PageBuilder]**.
+1. Arrastre el bloque de contenido de mapa del menú **[!DNL PageBuilder]** a la página.
 
 <u>Resultado esperado:</u>
 
-[!DNL Google Maps] debería funcionar según lo esperado.
+[!DNL Google Maps] debe funcionar según lo esperado.
 
 <u> Resultado real:</u>
 
-Al soltar el bloque de contenido de mapa de **[!DNL PageBuilder]** a la página, un mensaje de error como el siguiente *&quot;¡Lo siento! Se ha producido un error&quot;* se muestra.
+Al soltar el bloque de contenido de mapa del menú **[!DNL PageBuilder]** en la página, aparece un mensaje de error como *&quot;Lo sentimos. Se produjo un error&quot;* se muestra.
 
 ## Solución
 
@@ -67,7 +67,8 @@ Utilice los siguientes parches adjuntos, según la versión de Adobe Commerce:
 
 **Tenga en cuenta**
 
-Este problema se solucionará de forma permanente en el ámbito de las versiones de parches de solo seguridad de agosto: 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10
+Este problema se solucionará de forma permanente en el ámbito de las versiones de parches de solo seguridad de agosto:
+2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10
 
 ## Lectura relacionada
 

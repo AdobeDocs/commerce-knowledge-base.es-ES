@@ -26,16 +26,16 @@ Se muestra un error inespecífico cuando el pago de los invitados está desactiv
 
 <u>Requisitos previos</u>:
 
-1. En el Administrador de Commerce, en **Tiendas** > **Configuración** > **Ventas** > **Finalizar compra**, configurado **Permitir cierre de compra de invitado** = *No*.
-1. Habilite PayPal a través del Braintree como se describe en la [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) en nuestra guía del usuario.
+1. En el Administrador de Commerce, en **Tiendas** > **Configuración** > **Ventas** > **Cierre de compra**, establezca **Permitir cierre de compra de invitados** = *No*.
+1. Habilite PayPal a través del Braintree como se describe en [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) en nuestra guía de usuario.
 
 <u>Pasos a seguir</u>:
 
 1. Añadir un producto al carro de compras como invitado.
-1. Seleccionar **Minicarrito** y haga clic en **Pagar con PayPal**.
+1. Selecciona **Minicarrito** y haz clic en **Pagar con PayPal**.
 1. Completa el proceso de pago por PayPal y luego llegarás a la página de revisión de pedidos.
-1. Seleccionar **Método de envío**.
-1. Clic **Realizar pedido**.
+1. Seleccione **Método de envío**.
+1. Haga clic en **Realizar pedido**.
 
 <u>Resultados esperados</u>:
 
@@ -59,6 +59,6 @@ La solución a este problema es que el cliente puede iniciar sesión en una tien
 
 ## Lectura relacionada
 
-* [Práctica recomendada para la cantidad de productos en el carro de compras en Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) en nuestra base de conocimiento de soporte.
-* [Tutorial de procesamiento de pedidos: Paso 1. Añadir elementos al carro de compras](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) en nuestra documentación para desarrolladores
-* [Tutorial de cierre de compra de GraphQL: Paso 1. Añadir productos al carro de compras](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) en nuestra documentación para desarrolladores
+* [Práctica recomendada para la cantidad de productos que hay en el carro de compras en Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) en nuestra base de conocimiento de soporte.
+* [Tutorial de procesamiento de pedidos: Paso 1. Agregue elementos al carro de compras ](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) en nuestra documentación para desarrolladores
+* [Tutorial de cierre de compra de GraphQL: Paso 1. Agregue productos al carro ](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) en nuestra documentación para desarrolladores

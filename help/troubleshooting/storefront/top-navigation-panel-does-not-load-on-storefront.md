@@ -1,6 +1,6 @@
 ---
 title: El panel de navegación superior no se carga en la tienda
-description: Este artículo proporciona soluciones de configuración a los problemas de Varnish Edge Side Includes (ESI), en los que el contenido de ciertas páginas, normalmente el panel de navegación superior, no se muestra en la tienda si Varnish se utiliza para el almacenamiento en caché.
+description: Este artículo proporciona soluciones de configuración a los problemas de Varnish Edge Side Includes (ESI), donde el contenido de ciertas páginas, generalmente el panel de navegación superior, no se muestra en la tienda si Varnish se usa para el almacenamiento en caché.
 exl-id: e7f9b773-1a2d-4c3b-9e1f-a1781fbc898c
 feature: Categories, Site Navigation, Storefront, Variables
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # El panel de navegación superior no se carga en la tienda
 
-Este artículo proporciona soluciones de configuración a los problemas de Varnish Edge Side Includes (ESI), en los que el contenido de ciertas páginas, normalmente el panel de navegación superior, no se muestra en la tienda si Varnish se utiliza para el almacenamiento en caché.
+Este artículo proporciona soluciones de configuración a los problemas de Varnish Edge Side Includes (ESI), donde el contenido de ciertas páginas, generalmente el panel de navegación superior, no se muestra en la tienda si Varnish se usa para el almacenamiento en caché.
 
 ## Productos y versiones afectados
 
@@ -51,8 +51,8 @@ Los posibles motivos del problema son los siguientes:
 
 Para resolver los problemas, debe realizar una configuración adicional de Barnish y reiniciar Varnish.
 
-1. Como usuario con `root` privilegios, abra el archivo de configuración de Desvanecimiento en un editor de texto. Consulte la [Modifique la configuración del sistema de barniz](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) en nuestra documentación para desarrolladores para obtener información sobre dónde puede ubicarse este archivo para diferentes sistemas operativos.
-1. En el `DAEMON_OPTS variable`, agregue `-p feature=+esi_ignore_https`, `-p  feature=+esi_ignore_other_elements`, `-p  feature=+esi_disable_xml_check`. Este aspecto sería el siguiente:
+1. Como usuario con privilegios de `root`, abra el archivo de configuración de Desvanecer en un editor de texto. Consulte [Modificar la configuración del sistema Varnish](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) en nuestra documentación para desarrolladores para obtener información sobre dónde se puede ubicar este archivo para diferentes sistemas operativos.
+1. En `DAEMON_OPTS variable`, agregue `-p feature=+esi_ignore_https`, `-p  feature=+esi_ignore_other_elements`, `-p  feature=+esi_disable_xml_check`. Este aspecto sería el siguiente:
 
    ```bash
    DAEMON_OPTS="-a :6081 \    -p feature=+esi_ignore_other_elements \    -p feature=+esi_disable_xml_check \    -p feature=+esi_ignore_https \    -T localhost:6082 \    -f /etc/varnish/default.vcl \    -S /etc/varnish/secret \    -s malloc,256m"
@@ -64,5 +64,5 @@ Para resolver los problemas, debe realizar una configuración adicional de Barni
 
 ## Lectura relacionada
 
-* [Configuración de Varnish y su servidor web](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) en nuestra documentación para desarrolladores.
+* [Configure Varnish y su servidor web](https://devdocs.magento.com/guides/v2.3/config-guide/varnish/config-varnish-configure.html#config-varnish-config-sysvcl) en nuestra documentación para desarrolladores.
 * [Documentación de barniz](https://varnish-cache.org/docs/5.1/reference/index.html)

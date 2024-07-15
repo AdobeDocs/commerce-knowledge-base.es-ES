@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Error &quot;La clase no se puede guardar en el directorio de códigos&quot;
 
-Este artículo describe cómo solucionar el problema en el que la forma en que especificó las dependencias impide que las clases se generen automáticamente sobre la marcha y se obtiene el *&quot;La clase no se puede guardar en el directorio generated/code&quot;* mensaje de error.
+Este artículo describe cómo solucionar el problema en el que la forma en que especificó las dependencias impide que las clases se generen automáticamente sobre la marcha y se obtiene el mensaje de error *&quot;La clase no se puede guardar en el directorio generated/code&quot;*.
 
 ## Productos y versiones afectados
 
@@ -26,7 +26,7 @@ Este artículo describe cómo solucionar el problema en el que la forma en que e
 1. En su entorno local, escriba una clase personalizada con una dependencia en la clase generada automáticamente.
 1. Ejecute el escenario en el que se activa la clase personalizada y vea que funciona correctamente.
 1. Confirme e inserte sus cambios en el entorno de integración. Esto almacenaría en déclencheur el proceso de implementación. La implementación es correcta.
-1. En el [entorno de integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md), ejecute el escenario en el que se activa la clase personalizada.
+1. En el [entorno de integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md), ejecute el escenario donde se activará la clase personalizada.
 
 <u>Resultado esperado</u>
 
@@ -34,15 +34,15 @@ Todo funciona correctamente, del mismo modo que en su entorno local.
 
 <u>Resultado real</u>
 
-Error con el mensaje de error que indica que la clase no se puede guardar en el `generated/code` directorio.
+Error con el mensaje de error que indica que la clase no se puede guardar en el directorio `generated/code`.
 
 ## Causa
 
-La causa del problema es que la clase de la que depende no se genera durante la implementación y no se puede generar más adelante sobre la marcha cuando se activa la clase porque `generated/code` El directorio no está disponible para escribir una vez completada la implementación.
+La causa del problema es que la clase de la que depende no se genera durante la implementación y no se puede generar más adelante cuando se activa la clase, ya que el directorio `generated/code` no está disponible para escribir una vez completada la implementación.
 
 Esto puede deberse a dos razones principales:
 
-* Caso 1: La clase con dependencias de clases generadas automáticamente se encuentra en el punto de entrada (como `index.php` ), que no se analiza para detectar dependencias durante la implementación.
+* Caso 1: La clase con dependencias en clases generadas automáticamente se encuentra en el punto de entrada (como `index.php` ), que no se analiza para detectar dependencias durante la implementación.
 * Caso 2: La dependencia de la clase generada automáticamente se especifica directamente (compárela con el uso recomendado del constructor para declarar la dependencia).
 
 ## Solución
@@ -103,7 +103,7 @@ Debe seguir estos pasos:
        }
    ```
 
-1. Editar el punto de entrada `my_api/index.php` para que tenga el siguiente aspecto:
+1. Edite el punto de entrada `my_api/index.php` para que tenga el siguiente aspecto:
 
    ```php
      <?php

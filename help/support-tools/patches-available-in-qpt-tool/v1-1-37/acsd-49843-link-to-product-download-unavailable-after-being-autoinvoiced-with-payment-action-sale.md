@@ -1,6 +1,6 @@
 ---
-title: '49843 ACSD: el vínculo de descarga de producto no está disponible después de facturarse automáticamente con [!UICONTROL Payment Action] = [!UICONTROL Intent Sale]'
-description: Aplique el parche ACSD-49843 para solucionar el problema de Adobe Commerce en el que el vínculo de descarga de productos no está disponible después de que el artículo solicitado se factura automáticamente mediante un método de pago en línea cuando [!UICONTROL Payment Action] se establece en [!UICONTROL Intent Sale].
+title: "49843 ACSD: el vínculo de descarga de producto no está disponible después de facturarse automáticamente con [!UICONTROL Payment Action] = [!UICONTROL Intent Sale]"
+description: Aplique el parche ACSD-49843 para solucionar el problema de Adobe Commerce en el que el vínculo de descarga de productos no está disponible después de que un método de pago en línea factura automáticamente el artículo pedido cuando [!UICONTROL Payment Action] se establece en [!UICONTROL Intent Sale].
 feature: Catalog Management, Configuration, Invoices, Orders, Storefront
 role: Admin, Developer
 exl-id: 4bfa3827-a2b1-4168-a39c-99c617ee4795
@@ -13,40 +13,40 @@ ht-degree: 0%
 
 # ACSD-49843: el vínculo de descarga de producto no está disponible después de facturarse automáticamente con [!UICONTROL Payment Action] = [!UICONTROL Intent Sale]
 
-El parche ACSD-49843 soluciona el problema de que el vínculo de descarga del producto no está disponible después de que el artículo solicitado se factura automáticamente mediante un método de pago en línea cuando [!UICONTROL Payment Action] se establece en [!UICONTROL Intent Sale]. Este parche está disponible cuando la variable [!DNL Quality Patches Tool (QPT)] 1.1.37 está instalado. El ID del parche es ACSD-49843. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
+El parche ACSD-49843 corrige el problema en el que el vínculo de descarga del producto no está disponible después de que un método de pago en línea haya facturado automáticamente el elemento solicitado cuando [!UICONTROL Payment Action] está establecido en [!UICONTROL Intent Sale]. Esta revisión está disponible cuando está instalado [!DNL Quality Patches Tool (QPT)] 1.1.37. El ID del parche es ACSD-49843. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.5-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.7 - 2.3.7-p4, 2.4.1 - 2.4.6-p2
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-El enlace de descarga del producto no está disponible después de que el artículo pedido se factura automáticamente mediante una forma de pago en línea cuando [!UICONTROL Payment Action] se establece en [!UICONTROL Intent Sale].
+El vínculo de descarga de productos no está disponible después de que un método de pago en línea haya facturado automáticamente el artículo pedido cuando [!UICONTROL Payment Action] está establecido en [!UICONTROL Intent Sale].
 
 <u>Pasos a seguir</u>:
 
-1. Inicie sesión en el administrador de Adobe Commerce y navegue hasta **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Configure Braintree]**.
+1. Inicie sesión en Adobe Commerce Admin y vaya a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Sales]** > **[!UICONTROL Configure Braintree]**.
 
-   * En el [!UICONTROL Payment Action] menú desplegable, seleccione **[!UICONTROL Intent Sale]** y establezca *[!UICONTROL Enable Card Payments]* hasta *Sí*.
+   * En la lista desplegable [!UICONTROL Payment Action], seleccione **[!UICONTROL Intent Sale]** y establezca *[!UICONTROL Enable Card Payments]* en *Sí*.
 
-1. Ir a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Downloadable Product Option]** > **[!UICONTROL Order Item status for Download]** y asegúrese de que está configurada en *&quot;Facturado&quot;*.
+1. Vaya a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Downloadable Product Option]** > **[!UICONTROL Order Item status for Download]** y asegúrese de que está establecido en *&quot;Facturado&quot;*.
 1. En la tienda, inicie sesión como cliente.
 
    * Añada cualquier producto descargable y un producto simple al carro de compras.
-   * Uso [!DNL Braintree Pay] para realizar el pedido con la opción de tarjeta.
+   * Use [!DNL Braintree Pay] para hacer el pedido con la opción de tarjeta.
 
-1. Ir a **[!UICONTROL My Orders]** y compruebe que la factura se crea automáticamente para el pedido y que los estados de artículo son *&quot;Facturado&quot;*.
-1. Ir a **[!UICONTROL My Downloadable Products]** y observe que el vínculo de descarga aún no está disponible.
+1. Vaya a **[!UICONTROL My Orders]** y compruebe que la factura se crea automáticamente para el pedido y que ambos estados de artículo son *&quot;Facturado&quot;*.
+1. Vaya a **[!UICONTROL My Downloadable Products]** y observe que el vínculo de descarga aún no está disponible.
 1. En el Administrador, vaya a ese pedido y cree un envío para él.
 1. En la tienda, vaya a **[!UICONTROL My Downloadable Products]** y observe que el vínculo de descarga ya está disponible.
 
@@ -62,14 +62,14 @@ El vínculo de descarga no está disponible aunque el estado del producto descar
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en el [!DNL Quality Patches Tool] guía.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce sobre infraestructura en la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en el [!DNL Quality Patches Tool] guía.
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

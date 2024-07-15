@@ -15,4 +15,4 @@ ht-degree: 0%
 
 Este diagrama de solución de problemas de localización descendente del sitio de Adobe Commerce se puede utilizar para identificar y resolver las causas de una caída del sitio.
 
-![imagen de diagrama de resolución de problemas de sitio caído](assets/updated_site_down_1.jpeg)
+![imagen del diagrama de solución de problemas de sitio caído](assets/updated_site_down_1.jpeg)

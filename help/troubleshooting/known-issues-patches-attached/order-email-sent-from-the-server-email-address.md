@@ -21,7 +21,7 @@ Los correos electrónicos de confirmación de pedido se envían desde la direcci
 
 <u>Pasos a seguir</u>:
 
-1. Realice un pedido con el **Enviar confirmación de pedido** casilla activada.
+1. Realice un pedido con la casilla **Enviar confirmación de pedido** marcada.
 1. Compruebe el correo electrónico.
 
 <u>Resultado esperado</u>:

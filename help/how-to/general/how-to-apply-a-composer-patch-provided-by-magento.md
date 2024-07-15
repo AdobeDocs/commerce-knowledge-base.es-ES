@@ -21,7 +21,7 @@ Este artículo explica cómo aplicar un parche del compositor para Adobe Commerc
 ## Cómo aplicar un parche del compositor para Adobe Commerce en la infraestructura en la nube {#cloud}
 
 1. Si no tiene un directorio llamado `m2-hotfixes` en la raíz del proyecto, cree uno.
-1. Copie el `%patch_name%.composer.patch` archivo(s) a `m2-hotfixes` directorio.
+1. Copie los `%patch_name%.composer.patch` archivos en el directorio `m2-hotfixes`.
 1. Añada, confirme e inserte los cambios de código:
 
    ```git
@@ -36,7 +36,7 @@ Este artículo explica cómo aplicar un parche del compositor para Adobe Commerc
    git push origin
    ```
 
-Para obtener información adicional sobre la aplicación de parches a proyectos en la nube, consulte [Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
+Para obtener información adicional sobre cómo aplicar parches a proyectos en la nube, consulte [Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
 
 ### Cómo aplicar un parche del compositor para Adobe Commerce local y de Magento Open Source {#commerce}
 
@@ -47,6 +47,6 @@ Para obtener información adicional sobre la aplicación de parches a proyectos 
    patch -p1 < %patch_name%.composer.patch
    ```
 
-   (Si el comando anterior no funciona, intente utilizar `-p2` en lugar de `-p1` )
+   (Si el comando anterior no funciona, intente usar `-p2` en lugar de `-p1` )
 
 1. Para que se reflejen los cambios, actualice la caché en el Administrador en **Sistema** > **Administración de caché**.

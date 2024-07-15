@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # El sitio no se puede cargar debido a que el modo de mantenimiento se ha dejado habilitado
 
-Este artículo proporciona una corrección para los casos en los que el sitio no se carga debido a que el modo de mantenimiento se ha dejado habilitado o no se ha deshabilitado automáticamente. Puede recibir un mensaje de error: *Servicio Temporalmente no disponible El servidor no puede atender temporalmente su solicitud debido a un tiempo de inactividad de mantenimiento o problemas de capacidad.*
+Este artículo proporciona una corrección para los casos en los que el sitio no se carga debido a que el modo de mantenimiento se ha dejado habilitado o no se ha deshabilitado automáticamente. Es posible que reciba un mensaje de error: *Servicio temporalmente no disponible El servidor no puede atender temporalmente su solicitud debido a tiempo de inactividad de mantenimiento o problemas de capacidad.*
 
 ## Versiones y productos afectados
 
@@ -44,4 +44,4 @@ bin/magento maintenance:disable
 
 ## Lectura relacionada
 
-Para aprender a utilizar el modo de mantenimiento, consulte [Habilitar o deshabilitar el modo de mantenimiento](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=maintenance%20mode) en nuestra documentación para desarrolladores.
+Para saber cuándo usar el modo de mantenimiento, consulte [Habilitar o deshabilitar el modo de mantenimiento](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=maintenance%20mode) en nuestra documentación para desarrolladores.

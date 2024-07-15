@@ -39,7 +39,7 @@ Instalaciones de B2B 1.2.0.
 
 <u>Resultado real</u>
 
-Cuándo `setup:upgrade` se ejecuta para instalar B2B 1.2.0, este error aparece en la `PurchaseOrder` módulo:
+Cuando `setup:upgrade` se ejecuta para instalar B2B 1.2.0, este error aparece en el módulo `PurchaseOrder`:
 
 ```php
 Module 'Magento_PurchaseOrder':
@@ -54,7 +54,7 @@ Aplique el parche proporcionado en este artículo.
 
 ## Parche
 
-El parche se adjunta a este artículo, disponible para descargar en ambos `.composer` y `.git` formatos (después de descomprimir los archivos).
+La revisión se adjunta a este artículo, disponible para su descarga en los formatos `.composer` y `.git` (después de descomprimir los archivos).
 
 Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre del archivo o haga clic en uno de los siguientes vínculos:
 
@@ -63,14 +63,14 @@ Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga cl
 
 ## Cómo aplicar un parche
 
-<u>parche de Composer </u>
+<u>Parche del compositor </u>
 
-Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones de composer patch.
+Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones sobre el parche del compositor.
 
 <u>parche de Git </u>
 
-* Consulte [Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en documentación para desarrolladores para instrucciones de parche de git para Adobe Commerce en la infraestructura en la nube.
-* Consulte [Aplicación de parches: parches personalizados](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) en documentación para desarrolladores para instrucciones de parche de git para Adobe Commerce.
+* Consulte [Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en la documentación para desarrolladores para obtener instrucciones sobre los parches de Git para Adobe Commerce en la infraestructura en la nube.
+* Consulte [Aplicación de parches: parches personalizados](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#custom-patches) en la documentación para desarrolladores para obtener instrucciones sobre los parches de Git para Adobe Commerce.
 
 ## Lectura relacionada
 

@@ -25,8 +25,8 @@ Observe la falta de un carácter de barra diagonal entre `magento2` y `index.php
 
 La URL de base no es correcta. La dirección URL base debe:
 
-* Comience por `http://` o `https://`
-* Termina con una barra diagonal ( `/` )
-* Haga que las mayúsculas y minúsculas del `web/unsecure/base_url` registro en la `core_config_data` tabla de base de datos
+* Iniciar con `http://` o `https://`
+* Finalizar con una barra diagonal ( `/` )
+* Coincida con las mayúsculas y minúsculas del registro `web/unsecure/base_url` de la tabla de base de datos `core_config_data`
 
 Vuelva a ejecutar la instalación con un valor válido.

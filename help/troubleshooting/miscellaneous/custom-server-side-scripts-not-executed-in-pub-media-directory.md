@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Los scripts personalizados del lado del servidor no se ejecutan en el directorio de medios pub
 
-Este artículo proporciona una corrección para los casos en los que los scripts personalizados del lado del servidor no se ejecutan si se colocan en `./pub/media/` de la aplicación de Adobe Commerce en la infraestructura de la nube. Se trata de una limitación de seguridad esperada, ya que `./pub/media/` el directorio es editable. Para hacer que las secuencias de comandos sean ejecutables, colóquelas en directorios no grabables, como `./app/code/` o `./pub/`.
+Este artículo proporciona una corrección para los casos en los que los scripts personalizados del lado del servidor no se ejecutan si se colocan en el directorio `./pub/media/` de la aplicación de Adobe Commerce en la infraestructura en la nube. Se trata de una limitación de seguridad esperada, ya que el directorio `./pub/media/` se puede escribir. Para que los scripts sean ejecutables, colóquelos en directorios que no se puedan escribir, como `./app/code/` o `./pub/`.
 
 ## Versiones afectadas
 
@@ -23,16 +23,16 @@ Este artículo proporciona una corrección para los casos en los que los scripts
 
 Los scripts personalizados del lado del servidor no se pueden ejecutar cuando se inician.
 
-Por ejemplo, cuando el usuario final (comprador de Adobe Commerce) hace clic en el vínculo que lleva a `\*.php` con el script (como *domain.com/media/directory/script.php* ), el script se está descargando en lugar de ejecutarse.
+Por ejemplo, cuando el usuario final (comprador de Adobe Commerce) hace clic en el vínculo que lleva al archivo `\*.php` con el script (como *domain.com/media/directory/script.php* ), el script se descarga en lugar de ejecutarse.
 
 ## Causa: ubicación incorrecta del archivo de script
 
-El problema se produce cuando los archivos de script se encuentran en `./pub/media/` directorio de la aplicación de Adobe Commerce en la infraestructura en la nube. Este es un comportamiento esperado: debido a limitaciones de seguridad, los archivos de los directorios grabables (`./pub/media/`) nunca se ejecutan.
+El problema ocurre cuando los archivos de script se encuentran en el directorio `./pub/media/` de la aplicación Adobe Commerce en la infraestructura de la nube. Este es un comportamiento esperado: debido a limitaciones de seguridad, los archivos de los directorios grabables (`./pub/media/`) nunca se ejecutan.
 
 ## Solución: coloque secuencias de comandos en directorios no grabables
 
-Almacene los scripts del lado del servidor en directorios no grabables, como `./app/code/` o `./pub/`  &quot;
+Almacene los scripts del lado del servidor en directorios no grabables, como `./app/code/` o `./pub/` &quot;
 
 ## Documentación relacionada
 
-* [Cloud for Adobe Commerce > Estructura del proyecto > Directorios grabables](https://devdocs.magento.com/guides/v2.3/cloud/project/project-start.html#write-dir) en nuestra documentación para desarrolladores.
+* [Cloud for Adobe Commerce > Estructura del proyecto > Directorios editables](https://devdocs.magento.com/guides/v2.3/cloud/project/project-start.html#write-dir) en nuestra documentación para desarrolladores.

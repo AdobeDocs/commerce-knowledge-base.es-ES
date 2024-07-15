@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Error de Advanced Reporting 404 en la solución de base de datos dividida
 
-Este artículo proporciona un parche para los usuarios de Adobe Commerce 2.3.x con [solución de base de datos dividida](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) que experimenta un error 404 al intentar utilizar el sistema de informes avanzado.
+Este artículo proporciona un parche para los usuarios de Adobe Commerce 2.3.x con la [solución de base de datos dividida](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) que experimentan un error 404 al intentar usar el sistema de informes avanzado.
 
 ## Productos y versiones afectados
 
@@ -25,7 +25,7 @@ El parche corrige el problema en el que se utiliza un nombre de conexión incorr
 
 ## Solución
 
-Aplique la variable [parche](assets/MDVA-26831_EE_2.3.4_v1.composer.patch.zip) mencionado en este artículo.
+Aplique el [parche](assets/MDVA-26831_EE_2.3.4_v1.composer.patch.zip) proporcionado en este artículo.
 
 ## Parche
 

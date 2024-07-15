@@ -30,12 +30,12 @@ No hay ninguna opción en Page Builder para añadir Product Recommendations. Pro
 ## Solución
 
 1. Compruebe si ha instalado el módulo por separado ejecutando el comando: `composer show magento/module-page-builder-product-recommendations`
-1. Si devuelve el siguiente mensaje: *No se han encontrado el paquete magento/module-page-builder-product-recommendations*, tendrá que instalarlo ejecutando el comando: `composer require magento/module-page-builder-product-recommendations`
+1. Si devuelve el siguiente mensaje: *No se encontró el paquete magento/module-page-builder-product-recommendations*, tendrá que instalarlo ejecutando el comando: `composer require magento/module-page-builder-product-recommendations`
 
-Al habilitar Product Recommendations en Page Builder, podrá hacer lo siguiente [agregar una unidad de recomendación](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) a cualquier contenido creado en Page Builder.
+Al habilitar Product Recommendations en Page Builder, podrá [agregar una unidad de recomendación](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) a cualquier contenido creado en Page Builder.
 
 ## Lectura relacionada
 
-* [Añadir contenido: Recommendations del producto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) en nuestra guía del usuario.
-* [Instalación y configuración de Product Recommendations](https://devdocs.magento.com/recommendations/install-configure.html) en nuestra documentación para desarrolladores.
+* [Agregar contenido: Recommendations del producto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) en nuestra guía del usuario.
+* [Instale y configure Product Recommendations](https://devdocs.magento.com/recommendations/install-configure.html) en nuestra documentación para desarrolladores.
 * [Guía del usuario de Adobe Commerce](https://docs.magento.com/user-guide/)

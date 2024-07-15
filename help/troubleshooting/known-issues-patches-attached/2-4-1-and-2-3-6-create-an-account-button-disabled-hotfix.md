@@ -17,29 +17,29 @@ Este artículo proporciona una revisión del problema que se produce cuando se l
 
 ## Problema
 
-El **Crear una cuenta** botón en el **Crear nueva cuenta** La página permanece deshabilitada si un comprador ha introducido datos no válidos. Esto evita que los compradores vuelvan a intentar crear una cuenta después de cometer un error.
+El botón **Crear una cuenta** de la página **Crear nueva cuenta** permanece deshabilitado si un comprador ha especificado datos no válidos. Esto evita que los compradores vuelvan a intentar crear una cuenta después de cometer un error.
 
 <u>Pasos a seguir</u>:
 
-1. Ir a **Crear nueva cuenta de cliente**.
-1. Rellene los campos del formulario. En el **Contraseña** , valores de entrada que no cumplen los requisitos de contraseña. Por ejemplo:
-   * Las contraseñas de **Contraseña** y el **Confirmar contraseña** los campos no coinciden.
-   * Las contraseñas de **Contraseña** y el **Confirmar contraseña** los campos no son lo suficientemente largos.
-1. Haga clic en **Crear una cuenta** botón.
+1. Vaya a **Crear nueva cuenta de cliente**.
+1. Rellene los campos del formulario. En el campo **Contraseña**, introduzca valores que no cumplan los requisitos de contraseña. Por ejemplo:
+   * Las contraseñas de los campos **Password** y **Confirm Password** no coinciden.
+   * Las contraseñas de los campos **Password** y **Confirm Password** no son lo suficientemente largas.
+1. Haga clic en el botón **Crear una cuenta**.
 
 <u>Resultados esperados</u>:
 
-* **Crear una cuenta** El botón debe permanecer activo/activado.
+* El botón **Crear una cuenta** debe permanecer activo/habilitado.
 * El usuario debe poder crear una nueva cuenta.
 
 <u>Resultados reales</u>:
 
-* **Crear una cuenta** El botón permanece desactivado, incluso después de rellenar todos los campos obligatorios con datos válidos o correctos.
+* El botón **Crear una cuenta** permanece deshabilitado, incluso después de rellenar todos los campos obligatorios con datos válidos o correctos.
 * El cliente no puede crear una cuenta nueva.
 
 ## Parche
 
-El parche se adjunta a este artículo. Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre del archivo o haga clic en el siguiente vínculo: [Descargar MC-38509-composer.patch](assets/MC-38509-composer.patch.zip)
+El parche se adjunta a este artículo. Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre de archivo o en el vínculo siguiente: [Descargar MC-38509-composer.patch](assets/MC-38509-composer.patch.zip)
 
 ## Versiones de Adobe Commerce compatibles:
 
@@ -56,5 +56,5 @@ Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/he
 
 ## Lectura relacionada
 
-* [GitHub Adobe Commerce > Enviar formulario de creación de cuenta no válido deja desactivado el botón de envío](https://github.com/magento/magento2/issues/30513)
+* [GitHub Adobe Commerce > Al enviar un formulario de creación de cuenta no válido, se desactiva el botón de envío](https://github.com/magento/magento2/issues/30513)
 * [Guía del usuario de Adobe Commerce > Introducción > Creación de una cuenta](https://docs.magento.com/user-guide/magento/magento-account-create.html)

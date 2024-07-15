@@ -11,33 +11,33 @@ ht-degree: 0%
 
 ---
 
-# ACSD-48694: *Cambio de estado no válido solicitado* error impide que el cliente realice el pedido
+# ACSD-48694: *Se ha solicitado un cambio de estado no válido* error que impide que el cliente realice el pedido
 
-El parche ACSD-48694 corrige el problema donde el error *Cambio de estado no válido solicitado* evita que un cliente realice un pedido. Este parche está disponible cuando la variable [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.27 está instalado. El ID del parche es ACSD-48694. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
+El parche ACSD-48694 corrige el problema en el que el error *Cambio de estado no válido solicitado* impide que un cliente realice un pedido. Esta revisión está disponible cuando está instalado [[!DNL Quality Patches Tool (QPT)]](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.27. El ID del parche es ACSD-48694. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.7.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.4
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.3.7 - 2.37-p4, 2.4.1 - 2.4.6
 
 >[!NOTE]
 >
->El parche podría aplicarse a otras versiones con [!DNL Quality Patches Tool] versiones. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool]. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-El error *Cambio de estado no válido solicitado* evita que un cliente realice un pedido.
+El error *Cambio de estado no válido solicitado* impide que un cliente realice un pedido.
 
 <u>Pasos a seguir</u>:
 
-1. Añada un ligero retraso durante la `/estimate-shipping-methods` solicitud incluyendo un `sleep()` en `app/code/Magento/Quote/Model/GuestCart/GuestShippingMethodManagement.php::estimateByExtendedAddress()` función, de modo que la `/estimate-shipping-methods` La solicitud se completa después de que `/shipping-information` al pasar del paso de envío al paso de pago durante el cierre de compra.
-1. Configure la sesión para utilizar [!DNL Redis] con el *disable_locked: 1* configuración.
-1. Abrir **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** y habilitar *[!UICONTROL Persistent Shopping Cart]*.
+1. Agregue un ligero retraso durante la solicitud `/estimate-shipping-methods` incluyendo una función `sleep()` en `app/code/Magento/Quote/Model/GuestCart/GuestShippingMethodManagement.php::estimateByExtendedAddress()`, de modo que la solicitud `/estimate-shipping-methods` se complete después de `/shipping-information` al pasar del paso de envío al de pago durante el cierre de compra.
+1. Configure la sesión para usar [!DNL Redis] con la configuración *disable_locked: 1*.
+1. Abra **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Customers]** y habilite *[!UICONTROL Persistent Shopping Cart]*.
 1. Inicie sesión como cliente y añada un producto al carro de compras.
 1. Deje que caduque la sesión del cliente. La cookie persistente y el carro de compras aún persisten.
 1. Ahora ve a Pago y envío, agrega la dirección de envío y navega a la sección de pago.
@@ -49,24 +49,24 @@ El error *Cambio de estado no válido solicitado* evita que un cliente realice u
 <u>Resultados esperados</u>:
 
 * No hay ningún error.
-* El pedido se ha realizado correctamente y *Gracias.* se muestra la página.
+* El pedido se ha hecho correctamente y se muestra la página *Gracias*.
 
 <u>Resultados reales</u>:
 
-El error *Cambio de estado no válido solicitado* se muestra, pero se realiza el pedido.
+Se muestra el error *Cambio de estado no válido solicitado*, pero se realiza el pedido.
 
 ## Aplicar el parche
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en el [!DNL Quality Patches Tool] guía.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce sobre infraestructura en la nube.
+* Adobe Commerce o Magento Open Source local: [[!DNL Quality Patches Tool] > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en la guía [!DNL Quality Patches Tool].
+* Adobe Commerce en la infraestructura de la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html) en la guía Commerce en la infraestructura de la nube.
 
 ## Lectura relacionada
 
-Para obtener más información acerca de [!DNL Quality Patches Tool], consulte:
+Para obtener más información sobre [!DNL Quality Patches Tool], consulte:
 
-* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
-* [Compruebe si el parche está disponible para su problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [[!DNL Quality Patches Tool] publicado: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Comprueba si el parche está disponible para tu problema de Adobe Commerce usando [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en el [!DNL Quality Patches Tool] guía.
+Para obtener información sobre otros parches disponibles en QPT, consulte [[!DNL Quality Patches Tool]: Buscar parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía [!DNL Quality Patches Tool].

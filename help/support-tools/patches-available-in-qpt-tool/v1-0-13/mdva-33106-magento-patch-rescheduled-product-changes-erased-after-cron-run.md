@@ -19,31 +19,31 @@ El parche MDVA-33106 corrige el problema en el que los cambios reprogramados del
 bin/magento cron:run
 ```
 
-se ejecuta el comando. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.13 está instalado. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.2.
+se ejecuta el comando. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](https://devdocs.magento.com/guides/v2.4/comp-mgr/patching.html#mqp) 1.0.13. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.2.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 Adobe Commerce en infraestructura en la nube 2.3.5-p2
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 Adobe Commerce en infraestructura en la nube y Adobe Commerce local 2.3.0 - 2.4.1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
 <u>Pasos a seguir</u>:
 
-1. En Commerce Admin, vaya a **Catálogo** > **Productos** y haga clic en editar. Observe el **Precio** por ejemplo, *9,99*.
-1. Clic **Programar nueva actualización** y rellene los detalles:
+1. En Commerce Admin, vaya a **Catálogo** > **Productos** y haga clic en Editar. Observe el valor **Price**, por ejemplo *9,99*.
+1. Haga clic en **Programar nueva actualización** y complete los detalles:
    * El nombre de la actualización no importa.
    * Establezca una fecha en el futuro, +1 año para la fecha de inicio y la fecha de finalización.
-   * Establecer precio en *1,99*.
+   * Establezca el precio en *1,99*.
    * Guardar cambios.
 1. Vaya al panel Ensayo de contenido y seleccione la vista de cuadrícula para ver si la coincidencia programada anterior.
 1. Seleccione la acción de edición junto a la actualización programada. Los datos deben seguir coincidiendo con lo anterior.
@@ -71,7 +71,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

@@ -14,10 +14,10 @@ ht-degree: 0%
 
 Para comprobar cuánto espacio tiene para cada Adobe Commerce en el entorno de la infraestructura en la nube:
 
-1. Inicie sesión en [Consola de nube](https://console.adobecommerce.com).
-1. En el **[!UICONTROL All projects]** , seleccione el proyecto correspondiente. En la esquina inferior, consulte disponibilidad de espacio en disco.
+1. Inicie sesión en [Cloud Console](https://console.adobecommerce.com).
+1. En el panel **[!UICONTROL All projects]**, seleccione el proyecto correspondiente. En la esquina inferior, consulte disponibilidad de espacio en disco.
 
-   ![project_space.png](/help/how-to/general/assets/project_space.png)
+   ![espacio_de_proyecto.png](/help/how-to/general/assets/project_space.png)
 
 ## Lectura relacionada
 

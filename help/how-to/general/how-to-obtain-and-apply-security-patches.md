@@ -1,6 +1,6 @@
 ---
 title: Cómo obtener y aplicar [!UICONTROL security patch]
-description: Este artículo contiene instrucciones sobre cómo obtener y aplicar una [!UICONTROL security patch] que se ha publicado, pero las instrucciones no están disponibles.
+description: Este artículo proporciona instrucciones sobre cómo obtener y aplicar un [!UICONTROL security patch] que se ha liberado, pero las instrucciones no están disponibles.
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
 source-git-commit: b15a1d008b6cc2bdce797768e6ee7029a747e6da
 workflow-type: tm+mt
@@ -9,9 +9,9 @@ ht-degree: 0%
 
 ---
 
-# Cómo obtener y aplicar una [!UICONTROL security patch]
+# Cómo obtener y aplicar un [!UICONTROL security patch]
 
-Este artículo contiene instrucciones sobre cómo obtener y aplicar una [!UICONTROL security patch] que se ha publicado, pero las instrucciones no están disponibles.
+Este artículo proporciona instrucciones sobre cómo obtener y aplicar un [!UICONTROL security patch] que se ha liberado, pero las instrucciones no están disponibles.
 
 ## Productos y versiones afectados
 
@@ -19,7 +19,7 @@ Adobe Commerce On-Premise y Cloud: todas las versiones
 
 ## Causa
 
-Más [!UICONTROL Security Patches] se publican sin ningún archivo físico ni revisión que aplicar.
+La mayoría de [!UICONTROL Security Patches] se han publicado sin que se aplique ningún archivo físico o revisión.
 
 ## Solución
 
@@ -45,15 +45,15 @@ Si no se menciona un archivo de parche o una revisión física en las Notas de l
 
 * **Nube:**
 
-1. Algunos [!UICONTROL Security Patches] puede estar incluido/publicado en la última versión de Cloud Tools Suite (ECE Tools) en Cloud Patches para Commerce. Consulte la [Notas de versión](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite)y, si se menciona una corrección de seguridad en la versión, actualice el paquete a esa versión.
+1. Es posible que algunos [!UICONTROL Security Patches] se incluyan o publiquen en la última versión de Cloud Tools Suite (herramientas ECE) en Cloud Patches para Commerce. Compruebe las [Notas de la versión](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) y, si se menciona una corrección de seguridad en la versión, actualice el paquete a esa versión.
 1. Si en las Notas de la versión no se menciona una corrección de seguridad, continúe leyendo.
 
 * **Nube o local:**
 
-* Si no hay disponible un archivo/revisión físico, [actualizar la versión de Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X a la última versión de parche 2.4.X-pY.
-* Si no hay disponible un archivo/revisión físico, [actualizar la versión de Adobe Commerce local](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X a la última versión de parche 2.4.X-pY.
+* Si no hay un archivo de revisión físico disponible, [actualice la versión de Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X a la última versión de revisión 2.4.X-pY.
+* Si no hay un archivo de revisión físico disponible, [actualice la versión On-Premise de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X a la última versión de revisión 2.4.X-pY.
 
 ## Lectura relacionada
 
-* Consulte [Notas de la versión de Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) en el *Guía de Adobe Commerce sobre infraestructura en la nube*.
-* Consulte [Actualización de la versión de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) en el *Guía de Adobe Commerce sobre infraestructura en la nube*.
+* Consulte [Notas de la versión del conjunto de herramientas de Commerce Cloud](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-tools-suite) en la *Guía de Adobe Commerce en la infraestructura de la nube*.
+* Consulte [Actualizar la versión de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) en la *Guía de Adobe Commerce en la infraestructura de la nube*.

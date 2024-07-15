@@ -27,10 +27,10 @@ Después de instalar o actualizar por primera vez para que Inventory management 
 
 ## Causa
 
-Al instalar o actualizar por primera vez, todos los productos se asignan al origen predeterminado, asociando todas las cantidades a dicho origen. El origen predeterminado se asigna al inventario de stock predeterminado, con el sitio web predeterminado asociado.
+Al instalar o actualizar por primera vez, todos los productos se asignan al origen predeterminado, asociando todas las cantidades a dicho origen. El Source predeterminado se asigna al Stock predeterminado, con el sitio web predeterminado asociado.
 
 ## Solución
 
 Si tiene más de un sitio web, debe añadir estos sitios web como Sales Channel a la acción predeterminada u otras acciones personalizadas.
 
-Consulte la [Sección de existencias de la guía de usuario/wiki](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) en nuestra guía del usuario para obtener más información sobre cómo hacerlo.
+Consulte la sección [Stock de la guía de usuario/wiki](https://docs.magento.com/m2/ce/user_guide/catalog/inventory-stock.html) en nuestra guía de usuario para obtener más información sobre cómo hacerlo.

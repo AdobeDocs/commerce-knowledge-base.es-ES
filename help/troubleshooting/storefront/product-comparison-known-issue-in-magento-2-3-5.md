@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Problema conocido en Adobe Commerce 2.3.5
 
-Este artículo contiene recomendaciones sobre cómo evitar un error conocido [comparación de productos](https://docs.magento.com/user-guide/marketing/product-compare.html) problema en Adobe Commerce local 2.3.5 y Adobe Commerce en la infraestructura en la nube 2.3.5.
+Este artículo proporciona recomendaciones sobre cómo evitar un problema conocido de [comparación de productos](https://docs.magento.com/user-guide/marketing/product-compare.html) en Adobe Commerce local 2.3.5 y Adobe Commerce en la infraestructura en la nube 2.3.5.
 
 ## Productos y versiones afectados
 
@@ -30,7 +30,7 @@ Especifique valores no vacíos para atributos de producto comparables o utilice 
 
 >[!NOTE]
 >
->Los atributos de producto están configurados para utilizarse en la comparación utilizando **Comparable en tienda** valor de configuración. Para obtener más información, consulte la [Creación de atributos de producto](https://docs.magento.com/user-guide/stores/attribute-product-create.html#step-4-describe-the-storefront-properties) en nuestra guía del usuario.
+>Los atributos del producto están configurados para utilizarse en la comparación mediante la configuración **Comparable en tienda**. Para obtener más información, consulte [Creación de atributos de producto](https://docs.magento.com/user-guide/stores/attribute-product-create.html#step-4-describe-the-storefront-properties) en nuestra guía del usuario.
 
 Habrá una corrección disponible en Adobe Commerce 2.3.6, cuyo lanzamiento está programado para el cuarto trimestre de 2020.
 

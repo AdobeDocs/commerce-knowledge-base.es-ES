@@ -24,7 +24,7 @@ Este artículo habla sobre los interbloqueos en MySQL para ayudar a identificarl
 
 Los interbloqueos en MySQL se producen cuando dos o más transacciones se retienen mutuamente y solicitan bloqueos. Los interbloqueos que están presentes no siempre indican un problema, pero a menudo son un síntoma de algún otro problema de MySQL o Adobe Commerce que se ha producido.
 
-A menudo, los registros de aplicación, implementación o MySQL mencionan un *&quot;punto muerto&quot;* error o el error *&quot;Se encontró un punto muerto al intentar bloquear; intente reiniciar la transacción&quot;.*
+A menudo, los registros de aplicación, implementación o MySQL mencionarán un error *&quot;interbloqueo&quot;* o el error *&quot;Interbloqueo encontrado al intentar obtener el bloqueo; intente reiniciar la transacción.&quot;*
 
 ## Causa
 
@@ -38,14 +38,14 @@ Por ejemplo, se recomienda evitar una importación atascada de la base de datos 
    * [Ubicaciones de registro de Magento Open Source y Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html)
    * [Adobe Commerce en la nube registra ubicaciones](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
 1. Compruebe la lista de procesos MySQL para ejecutar procesos con el comando `mysql -e 'show full processlist';`
-1. Si está en Adobe Commerce en una infraestructura en la nube, compruebe que el esclavo MySQL esté habilitado. Consulte este artículo: [Implementación de variables (MYSQL\_USE\_SLAVE\_CONNECTION)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection).
-1. En función de los errores implicados, la solución puede presentarse sola, o puede que necesite incluir su información de registro útil si necesita abrir un [Ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Si está en Adobe Commerce en una infraestructura en la nube, compruebe que el esclavo MySQL esté habilitado. Consulte este artículo: [Implementar variables (MYSQL\_USE\_SLAVE\_CONNECTION)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection).
+1. En función de los errores involucrados, la solución puede presentarse por sí misma, o puede que necesite incluir su información de registro útil si necesita abrir un [ticket de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Lectura relacionada
 
-* [Minimizar y gestionar interbloqueos](https://dev.mysql.com/doc/refman/5.7/en/innodb-deadlocks-handling.html)
+* [Cómo minimizar y gestionar interbloqueos](https://dev.mysql.com/doc/refman/5.7/en/innodb-deadlocks-handling.html)
 * [Optimización del indizador: cambio de tabla del indizador](https://developer.adobe.com/commerce/php/development/components/indexing/optimization/)
-* [Operaciones masivas: Consumir mensajes](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
+* [Operaciones en lotes - Consumir mensajes](https://developer.adobe.com/commerce/php/development/components/message-queues/bulk-operations/)
 
 >[!NOTE]
 >

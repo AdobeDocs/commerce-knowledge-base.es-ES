@@ -25,19 +25,19 @@ Modifier/AdvancedInventory.php on line 87
 
 ## Detalle
 
-Adobe Commerce 2.1 y versiones posteriores utilizan comentarios de código PHP en la `getDocComment` llamada de validación en [`getExtensionAttributes`](https://github.com/magento/magento2/blob/2.3/lib/internal/Magento/Framework/Api/ExtensionAttributesFactory.php#L64-L73) Método en `Magento\Framework\Api\ExtensionAttributesFactory.php`.
+Adobe Commerce 2.1 y versiones posteriores utilizan comentarios de código PHP en la llamada de validación `getDocComment` en el método [`getExtensionAttributes`](https://github.com/magento/magento2/blob/2.3/lib/internal/Magento/Framework/Api/ExtensionAttributesFactory.php#L64-L73) en `Magento\Framework\Api\ExtensionAttributesFactory.php`.
 
 Si habilitó la OPcache de PHP (que recomendamos), se muestra este error porque, de forma predeterminada, la configuración de OPcache [`opcache.save_comments`](http://php.net/manual/en/opcache.configuration.php#ini.opcache.save_comments) está deshabilitada.
 
 ## Solución
 
-Para resolver el problema, busque los ajustes de configuración de la caché de OP y habilite `opcache.save_comments` como sigue:
+Para resolver el problema, busque las opciones de configuración de OPcache y habilite `opcache.save_comments` de la siguiente manera:
 
 ### Paso 1: Localice la configuración de OPcache
 
 #### Para buscar los valores de configuración de OPcache:
 
-La configuración de la caché de PHP OP generalmente se encuentra en `php.ini` o `opcache.ini`. La ubicación puede depender de su sistema operativo y versión de PHP. El archivo de configuración de OPcache puede tener un `[opcache]` sección o configuración como `opcache.enable`.
+La configuración de OPcache de PHP se encuentra generalmente en `php.ini` o `opcache.ini`. La ubicación puede depender de su sistema operativo y versión de PHP. El archivo de configuración de OPcache puede tener una sección `[opcache]` o valores como `opcache.enable`.
 
 Siga estas directrices para encontrarlo:
 
@@ -53,14 +53,14 @@ Si no es así, utilice el siguiente comando para localizarlo:
 
 * Servidor web nginx con PHP-FPM: `/etc/php5/fpm/php.ini`.
 
-Si tiene más de uno `opcache.ini`, modifique todos ellos.
+Si tiene más de un(a) `opcache.ini`, modifíquelos(as) todos(as).
 
 
 ### Paso 2: Habilitar `opcache.save_comments`
 
 1. Abra el archivo de configuración de OPcache en un editor de texto.
-1. Localizar `opcache.save_comments` y quite los comentarios, si es necesario.
-1. Asegúrese de que su valor está establecido en `1`.
+1. Busque `opcache.save_comments` y quite el comentario, si es necesario.
+1. Asegúrese de que su valor esté establecido en `1`.
 1. Guarde los cambios y salga del editor de texto.
 1. Reinicie el servidor web:
 

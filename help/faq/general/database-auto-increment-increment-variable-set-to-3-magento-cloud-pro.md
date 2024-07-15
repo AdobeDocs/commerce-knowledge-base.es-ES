@@ -23,13 +23,13 @@ El ID de incremento utilizado en los clústeres no siempre se separa/incrementa 
 Cada uno de los tres servidores gestiona su propio espacio de ID, y el incremento que se utiliza depende de cuál es el servidor de base de datos principal MySQL (según la carga relativa), por lo que los huecos varían.
 Si se conecta SSH a cada nodo y se conecta a la instancia local de MySQL que se ejecuta en ese nodo usando el puerto 3307 (en lugar de estar proxy al &quot;principal&quot; en el puerto estándar 3306), verá la siguiente imagen:
 
-![auto_increment](assets/auto_increment_id.png)
+![incremento_automático](assets/auto_increment_id.png)
 
-Por ejemplo, si el nodo principal seleccionado es el nodo 1, donde `auto_increment_offset = 1`, el ID se incrementaría en 1. A continuación, si se selecciona un nuevo nodo principal más adelante, por ejemplo, el nodo 3, donde `auto_increment_offset = 3`, se incrementaría en 3 en su lugar.
+Por ejemplo, si el nodo principal seleccionado es el nodo 1 donde `auto_increment_offset = 1`, el identificador se incrementaría en 1. A continuación, si se selecciona un nuevo nodo principal más adelante (por ejemplo, el nodo 3 donde `auto_increment_offset = 3`), se incrementará en 3.
 
 ## Vínculos útiles
 
 Consulte en nuestra documentación para desarrolladores:
 
-* [Cloud para Adobe Commerce > Arquitectura Pro > Backup y recuperación ante desastres](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#backup-and-disaster-recovery)
-* [Cloud for Adobe Commerce > Instalar requisitos previos: base de datos](https://devdocs.magento.com/cloud/before/before-workspace-magento-prereqs.html#database)
+* [Nube para Adobe Commerce > Arquitectura Pro > Copia de seguridad y recuperación ante desastres](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#backup-and-disaster-recovery)
+* [Nube para Adobe Commerce > Instalar requisitos previos: base de datos](https://devdocs.magento.com/cloud/before/before-workspace-magento-prereqs.html#database)

@@ -25,10 +25,10 @@ Los Google Analytics no han realizado un seguimiento de los datos de conversión
 
 <u>Pasos a seguir</u>:
 
-1. Habilite y configure la funcionalidad de Google Analytics en el Administrador de Commerce en **Tiendas** > **Configuración** > **Configuración** > **Ventas** > **API de Google** > **Google Analytics**.
-1. Clic **Guardar configuración**.
+1. Habilite y configure la funcionalidad de los Google Analytics en la administración de Commerce en **Tiendas** > **Configuración** > **Configuración** > **Ventas** > **API de Google** > **Google Analytics**.
+1. Haga clic en **Guardar configuración**.
 1. Realiza un pedido en la tienda.
-1. Ir a **Panel de Google Analytics** > **Conversiones** > **Información general**.
+1. Vaya a **Panel de Google Analytics** > **Conversiones** > **Información general**.
 1. Establezca el intervalo de fechas en la fecha actual.
 
 <u>Resultado esperado</u>:

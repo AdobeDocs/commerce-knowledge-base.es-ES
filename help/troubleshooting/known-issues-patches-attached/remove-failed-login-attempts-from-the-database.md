@@ -26,7 +26,7 @@ Este artículo explica cómo eliminar las credenciales de inicio de sesión fall
 
 ## Problema
 
-En 2019, se informó a Adobe Commerce de un error que permitía registrar los intentos de inicio de sesión erróneos en una base de datos en Adobe Commerce 2.3.x y 2.2.x. En respuesta, Adobe Commerce incluyó una corrección para este problema en Adobe Commerce 2.3.3 y 2.2.10 (publicado en octubre de 2019). Aunque la corrección de ese error detuvo el registro de intentos de inicio de sesión fallidos, es posible que siga existiendo la información recopilada antes de actualizar a estas versiones actuales. Esta corrección más reciente borra la información de intentos de inicio de sesión que se había registrado anteriormente, si es que la hay.   CVE-2019-8118 se describe y rastrea en [Vulnerabilidades y exposiciones comunes](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-8118).
+En 2019, se informó a Adobe Commerce de un error que permitía registrar los intentos de inicio de sesión erróneos en una base de datos en Adobe Commerce 2.3.x y 2.2.x. En respuesta, Adobe Commerce incluyó una corrección para este problema en Adobe Commerce 2.3.3 y 2.2.10 (publicado en octubre de 2019). Aunque la corrección de ese error detuvo el registro de intentos de inicio de sesión fallidos, es posible que siga existiendo la información recopilada antes de actualizar a estas versiones actuales. Esta corrección más reciente borra la información de intentos de inicio de sesión que se había registrado anteriormente, si es que la hay.   CVE-2019-8118 se describe y se rastrea en [Vulnerabilidades y exposiciones comunes](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-8118).
 
 ## Solución
 
@@ -36,25 +36,25 @@ Dependerá de la versión de Adobe Commerce si necesita utilizar el script adjun
 
 Para estas versiones, debe aplicar el parche y ejecutar el script de limpieza de la base de datos adjunto para finalizar el registro continuo y eliminar los registros.
 
-1. Ejecute el parche del compositor para detener el registro. Este parche se adjunta al artículo. Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre del archivo o haga clic en el siguiente vínculo [CLEANUP\_PATCH\_COMPOSER\_2.3.2.patch](assets/CLEANUP_PATCH_COMPOSER_2.3.2.patch.zip). Para obtener instrucciones sobre cómo aplicar el parche, consulte [Cómo aplicar un parche del compositor proporcionado por Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de soporte.
+1. Ejecute el parche del compositor para detener el registro. Este parche se adjunta al artículo. Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre de archivo o haga clic en el vínculo siguiente [CLEANUP\_PATCH\_COMPOSER\_2.3.2.patch](assets/CLEANUP_PATCH_COMPOSER_2.3.2.patch.zip). Para obtener instrucciones sobre cómo aplicar el parche, consulte [Cómo aplicar un parche del compositor proporcionado por Adobe Commerce](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de asistencia.
 
-1. Ahora ejecute el script para limpiar la base de datos de los intentos de inicio de sesión fallidos preexistentes. Este script se adjunta al artículo. Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre del archivo o haga clic en el siguiente vínculo [DB\_CLEANUP\_SCRIPT\_v2.php](assets/DB_CLEANUP_SCRIPT_v2.php.zip).
+1. Ahora ejecute el script para limpiar la base de datos de los intentos de inicio de sesión fallidos preexistentes. Este script se adjunta al artículo. Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre de archivo, o bien haga clic en el siguiente vínculo [DB\_CLEANUP\_SCRIPT\_v2.php](assets/DB_CLEANUP_SCRIPT_v2.php.zip).
 
-Consulte la [**Cómo ejecutar el script**](/help/troubleshooting/known-issues-patches-attached/remove-failed-login-attempts-from-the-database.md#run_script) para obtener instrucciones.
+Consulte la sección [**Cómo ejecutar el script**](/help/troubleshooting/known-issues-patches-attached/remove-failed-login-attempts-from-the-database.md#run_script) para obtener instrucciones.
 
 **Adobe Commerce y versiones de Magento Open Source 2.3.3 y superiores/2.2.10 y superiores**<br>
-Solo para estas versiones, ejecute el siguiente script para borrar los registros antiguos (el registro había finalizado anteriormente para estas versiones mediante una corrección publicada en octubre de 2019). Este script se adjunta al artículo. Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre del archivo o haga clic en el siguiente vínculo [DB\_CLEANUP\_SCRIPT\_v2.php](assets/DB_CLEANUP_SCRIPT_v2.php.zip).
+Solo para estas versiones, ejecute el siguiente script para borrar los registros antiguos (el registro había finalizado anteriormente para estas versiones mediante una corrección publicada en octubre de 2019). Este script se adjunta al artículo. Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre de archivo, o bien haga clic en el siguiente vínculo [DB\_CLEANUP\_SCRIPT\_v2.php](assets/DB_CLEANUP_SCRIPT_v2.php.zip).
 
-Consulte la [**Cómo ejecutar el script**](/help/troubleshooting/known-issues-patches-attached/remove-failed-login-attempts-from-the-database.md#run_script) en nuestra base de conocimiento de soporte, para obtener instrucciones.
+Consulte la sección [**Cómo ejecutar el script**](/help/troubleshooting/known-issues-patches-attached/remove-failed-login-attempts-from-the-database.md#run_script) de nuestra base de conocimiento de soporte técnico para obtener instrucciones.
 
 **Cómo ejecutar el script**
 
 Siga las siguientes instrucciones para ejecutar el script:
 
-1. Put `DB_CLEANUP_SCRIPT_v2.php` en el directorio raíz de la instalación de Adobe Commerce o Magento Open Source (en el mismo directorio que la aplicación que contiene `app/bootstrap.php`).
+1. Coloque `DB_CLEANUP_SCRIPT_v2.php` en el directorio raíz de la instalación de Adobe Commerce o Magento Open Source (en el mismo directorio que la aplicación que contiene `app/bootstrap.php`).
 1. Ejecute este comando en el terminal: `php DB_CLEANUP_SCRIPT_v2.php` y se iniciará el proceso de limpieza de la base de datos.
 
-Si encuentra algún problema al ejecutar el script, [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) o envíenos un correo electrónico a [security@magento.com](mailto:security@magento.com).
+Si encuentra algún problema al ejecutar el script, [envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) o escríbanos a [security@magento.com](mailto:security@magento.com).
 
 **Archivos adjuntos**
 

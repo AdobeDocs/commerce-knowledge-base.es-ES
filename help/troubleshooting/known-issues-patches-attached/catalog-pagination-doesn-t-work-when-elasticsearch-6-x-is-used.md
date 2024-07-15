@@ -43,13 +43,13 @@ Los productos deben mostrarse en la segunda página.
 
 <u>Resultado real</u>:
 
-**&quot;***No podemos encontrar productos que coincidan con la selección***&quot;** El mensaje se muestra en la segunda página.
+**&quot;***No podemos encontrar productos que coincidan con el mensaje de la selección***&quot;** que se muestra en la segunda página.
 
 ## Solución
 
 Para solucionar el problema, aplique el parche adjunto a este artículo. Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga clic en el nombre del archivo o haga clic en el siguiente vínculo:
 
-[Descargar problema de paginación del catálogo en el parche de Elasticsearch 6.x](assets/Catalog_pagination_issue_on_Elasticsearch_6_composer-2019-10-11-08-07-41.patch.zip) - El parche es compatible con todas las versiones y ediciones afectadas.
+[Problema de paginación del catálogo de descargas en el parche de Elasticsearch 6.x](assets/Catalog_pagination_issue_on_Elasticsearch_6_composer-2019-10-11-08-07-41.patch.zip). El parche es compatible con todas las versiones y ediciones afectadas.
 
 >[!WARNING]
 >

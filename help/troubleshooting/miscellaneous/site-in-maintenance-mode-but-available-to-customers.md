@@ -41,8 +41,8 @@ Las páginas se siguen almacenando en caché, por lo que la página de mantenimi
 ## Solución visible a pesar de estar en modo de mantenimiento
 
 1. SSH a su entorno.
-1. Ejecute el `php bin/magento cache:clean` comando.
+1. Ejecute el comando `php bin/magento cache:clean`.
 
 ## Lectura relacionada
 
-[Habilitar o deshabilitar el modo de mantenimiento](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) en nuestra documentación para desarrolladores.
+[Habilite o deshabilite el modo de mantenimiento](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/install-cli-subcommands-maint.html) en nuestra documentación para desarrolladores.

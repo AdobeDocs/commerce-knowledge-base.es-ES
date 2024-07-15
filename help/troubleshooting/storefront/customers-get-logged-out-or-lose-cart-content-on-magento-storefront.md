@@ -38,7 +38,7 @@ El cliente se redirige a una página de pago correcta (u otra página correcta),
 
 ## Causa
 
-El atributo de cookie SameSite se establece en *Laxo* o no especificado (que se trata como configurado en *Laxo* ). Tener `SameSite` = *Laxo* deshabilita la transferencia de una cookie a direcciones URL externas mediante `POST` solicitudes.
+El atributo de cookie SameSite se ha establecido en *Lax* o no se ha especificado (que se trata como establecido en *Lax* ). Tener `SameSite` = *Lax* deshabilita la transferencia de una cookie a direcciones URL externas a través de `POST` solicitudes.
 
 ## Solución
 

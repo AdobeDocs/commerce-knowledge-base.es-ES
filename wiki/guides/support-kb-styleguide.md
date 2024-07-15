@@ -49,16 +49,16 @@ Cuando haya dudas, no use mayúsculas. En los encabezados, utilice mayúsculas c
 
 ## Elementos de IU
 
-* Todo lo que hace clic el usuario coloca en **negrita**. Por ejemplo, &quot;Haga clic en **Continuar**.&quot; Los valores de opción y los mensajes de error tienen el formato _cursiva_.
-* Siempre que sea posible, evite mencionar el tipo de elemento de la interfaz de usuario en las instrucciones. (Haga clic en **Siguiente**. frente a Haga clic en **Siguiente** botón.)
-* Utilice &quot;Choose&quot; y &quot;>&quot; en las secuencias de comandos. (Seleccionar **Editar** > **Preferencias**. frente a Haga clic en Editar | Preferencias.)
+* Todo lo que hace clic el usuario pone en **bold**. Por ejemplo: &quot;Haga clic en **Continuar**&quot;. Los valores de opción y los mensajes de error tienen el formato _cursiva_.
+* Siempre que sea posible, evite mencionar el tipo de elemento de la interfaz de usuario en las instrucciones. (Haga clic en **Siguiente**. vs. Haga clic en el botón **Siguiente**.)
+* Utilice &quot;Choose&quot; y &quot;>&quot; en las secuencias de comandos. (Elija **Editar** > **Preferencias**. frente a Haga clic en Editar | Preferencias.)
 * Preposición: &quot;en&quot; para el cuadro de diálogo, la ventana, son un, panel, vista, asistente, lista, carpeta, nodo.
 * Preposición: &quot;activado&quot; para pantalla, página, barra de herramientas, barra de menús, pestaña, panel, cinta de opciones.
-* Preposición: clic (clic) **Siguiente** frente a hacer clic en **Siguiente**).
+* Preposición: haz clic (haz clic en **Siguiente** frente a haz clic en **Siguiente**).
 
 ## Nombres de archivo
 
-Los nombres de archivo y las carpetas tienen formato de código. Ejemplo: El `/var/log` el directorio del sistema contiene registros para todos los entornos.
+Los nombres de archivo y las carpetas tienen formato de código. Ejemplo: el directorio del sistema `/var/log` contiene registros para todos los entornos.
 
 
 ## Números
@@ -200,13 +200,13 @@ No hay razón para mayúsculas.
 
 <td colspan="1">
 
-Mensaje de error: _&quot;Se ha producido un error.&quot;_
+Mensaje de error: _&quot;Se produjo un error.&quot;_
 
-Mensaje de error: __Se ha producido un error.__
+Mensaje de error: __Se produjo un error.__
 
 </td>
 
-<td colspan="1"> Mensaje de error:  <i>Se ha producido un error.</i> </td>
+<td colspan="1"> Mensaje de error: <i>Se produjo un error.</i> </td>
 
 <td colspan="1">
 </td>
@@ -221,7 +221,7 @@ Mensaje de error: __Se ha producido un error.__
 
 * Todos los elementos gráficos o no textuales tienen equivalentes textuales o texto alternativo. Ejemplo: ![example_image](/url "alt_text_for_this_image").
 
-* Todos los vínculos describen el destino del vínculo. Ejemplo [vincular](/uri "destination_of_the_link").
+* Todos los vínculos describen el destino del vínculo. Ejemplo [vínculo](/uri "destination_of_the_link").
 
 
 <!--
@@ -253,14 +253,14 @@ Al final de un artículo aparece únicamente una lista de vínculos especializad
 
 ### Vínculos a sitios web externos
 
-Utilice direcciones URL normales en lugar de goURL para vincular páginas de fuera de  [Adobe.com](http://Adobe.com).
+Use direcciones URL normales en lugar de goURL para vincular páginas fuera de [Adobe.com](http://Adobe.com).
 
 
 ## Comas
 
 En general, siga las recomendaciones del Manual de estilo de Chicago para la puntuación de estilo abierto, puntuando solo cuando sea necesario para evitar malinterpretaciones. Por ejemplo, puede omitir la coma antes de una conjunción en una oración compuesta si hay poco o ningún riesgo de malinterpretar. Utilice la coma donde sea necesario para una aclaración.
 
-* Utilice siempre la coma de serie (una coma que preceda a _y_ o _o_ en una lista de tres o más elementos): x, y y z
+* Use siempre la coma de serie (una coma que preceda a _y_ o _o_ en una lista de tres o más elementos): x, y y z
 
 * Coloque una coma antes de una conjunción que introduzca una cláusula independiente: &quot;Especifique una ubicación y escriba un nombre para la lista de archivos&quot;.
 
@@ -276,4 +276,4 @@ En general, siga las recomendaciones del Manual de estilo de Chicago para la pun
 
 ## Marca
 
-* El Magento Commerce ahora es Adobe Commerce. Consulte la [Cambiar marca de términos](https://github.com/magento/knowledge-base/wiki) wiki para obtener más información sobre cómo utilizar un idioma de promoción de la marca actualizado.
+* El Magento Commerce ahora es Adobe Commerce. Consulte la wiki [Cambiar la marca de los términos](https://github.com/magento/knowledge-base/wiki) para obtener más información sobre cómo usar un idioma de marca actualizado.

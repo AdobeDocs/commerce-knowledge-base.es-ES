@@ -17,7 +17,7 @@ Este artículo proporciona una solución para cuando la caché de la página se 
 
 ## Productos y versiones afectados
 
-* Adobe Commerce en la infraestructura en la nube, todo [versiones compatibles](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
+* Adobe Commerce en la infraestructura en la nube, todas [versiones compatibles](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf).
 
 ## Problema
 
@@ -37,7 +37,7 @@ El sitio no está disponible o el tiempo de respuesta es demasiado alto.
 
 ## Solución
 
-Limite el número de conexiones simultáneas durante el calentamiento de la caché. Esto requiere añadir la variable `WARM_UP_CONCURRENCY` variable posterior a la implementación para especificar el número de solicitudes de calentamiento que el script de calentamiento de caché puede enviar simultáneamente. Configurar esta opción puede ayudar a administrar la carga en la infraestructura en la nube de Adobe Commerce. Para ver los pasos, consulte [Variables posteriores a la implementación > WARM\_UP\_CONCURRENCY](https://devdocs.magento.com/cloud/env/variables-post-deploy.html#warm_up_concurrency) en nuestra documentación para desarrolladores.
+Limite el número de conexiones simultáneas durante el calentamiento de la caché. Esto requiere agregar la variable posterior a la implementación `WARM_UP_CONCURRENCY` para especificar el número de solicitudes de calentamiento que el script de calentamiento de caché puede enviar simultáneamente. Configurar esta opción puede ayudar a administrar la carga en la infraestructura en la nube de Adobe Commerce. Para ver los pasos, consulte [Post-deploy variables > WARM\_UP\_CONCURRENCY](https://devdocs.magento.com/cloud/env/variables-post-deploy.html#warm_up_concurrency) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 

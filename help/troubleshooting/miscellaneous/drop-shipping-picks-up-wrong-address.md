@@ -29,4 +29,4 @@ Magento Inventory no admite actualmente el uso del cálculo de tarifas de envío
 
 ## Lectura relacionada
 
-* [Preguntas frecuentes sobre inventario de Magento](https://github.com/magento/inventory/wiki/MSI-FAQs) en GitHub.
+* [Preguntas frecuentes sobre el inventario de Magento](https://github.com/magento/inventory/wiki/MSI-FAQs) en GitHub.

@@ -13,50 +13,50 @@ ht-degree: 0%
 
 # MDVA-30837: cantidad mínima de pedido para envío gratuito
 
-El parche MDVA-30837 agrega opciones de configuración para el cálculo del envío gratuito, de modo que el usuario pueda configurar la cantidad mínima del pedido para recibir el envío gratuito en función del subtotal (o total general). Esto permite realizar personalizaciones locales de los métodos de impuestos y envío. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.7 está instalado. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
+El parche MDVA-30837 agrega opciones de configuración para el cálculo del envío gratuito, de modo que el usuario pueda configurar la cantidad mínima del pedido para recibir el envío gratuito en función del subtotal (o total general). Esto permite realizar personalizaciones locales de los métodos de impuestos y envío. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.7. Tenga en cuenta que el problema se solucionó en Adobe Commerce 2.4.2.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce en infraestructura en la nube 2.3.4-p2
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce en infraestructura en la nube 2.3.1 - 2.3.4-p2
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
-El parche MDVA-30837 añade la opción de configuración para configurar el **Cantidad mínima del pedido** Configuración para obtener envío gratuito según el subtotal (o total general):
+El parche MDVA-30837 agrega la configuración para configurar la configuración de **Cantidad mínima del pedido** y obtener envíos gratuitos según el subtotal (o total general):
 
-* **Incluir impuesto al importe**: *Sí/No* en la configuración del método de envío gratuito.
-   * Cuándo **Incluir impuesto al importe** se establece en *Sí*, el importe mínimo del pedido se calcula como Subtotal + Impuestos - Descuento.
-   * Cuándo **Incluir impuesto al importe** se establece en *No*, la cantidad mínima del pedido se calcula como Subtotal - Descuento.
+* **Incluir impuesto en el importe**: *Sí/No* en la configuración del método de envío gratuito.
+   * Cuando **Incluir impuesto en el importe** se establece en *Sí*, el importe mínimo del pedido se calcula como Subtotal + Impuesto - Descuento.
+   * Cuando **Incluir impuesto en el importe** se establece en *No*, el importe mínimo del pedido se calcula como Subtotal - Descuento.
 
 <u>Pasos a seguir</u>:
 
-1. Ir a **Tiendas** > Configuración > **Configuración** > **Ventas** > **Impuestos** y configure lo siguiente:
+1. Vaya a **Tiendas** > Configuración > **Configuración** > **Ventas** > **Impuestos** y establezca lo siguiente:
 
    * Cálculo de impuestos basado en *Dirección de envío*
    * Habilitar comercio transfronterizo: *No*
-   * Mostrar precios de productos en el catálogo: *Exclusión de impuestos*
-   * Mostrar precios de envío: *Exclusión de impuestos*
-   * Mostrar precios: *Exclusión de impuestos*
-   * Mostrar subtotal: *Exclusión de impuestos*
-   * Mostrar importe de envío: *Exclusión de impuestos*
-   * Mostrar precios de envoltorio para regalos: *Exclusión de impuestos*
-   * Mostrar precios de tarjetas impresas: *Exclusión de impuestos*
+   * Mostrar precios de productos en el catálogo: *Impuestos excluidos*
+   * Mostrar precios de envío: *Impuestos excluidos*
+   * Mostrar precios: *Impuestos excluidos*
+   * Mostrar subtotal: *Impuestos excluidos*
+   * Mostrar importe de envío: *Impuestos excluidos*
+   * Mostrar precios de envoltorio para regalos: *Impuestos excluidos*
+   * Mostrar precios de tarjetas impresas: *Impuestos excluidos*
    * Incluir impuestos en el total del pedido: *Sí*
    * Mostrar resumen completo de impuestos: *Sí*
 
-1. Ir a **Ventas** > **Configuración de envío** > **Envío gratuito** y establecer **Cantidad mínima del pedido** = *30*.
-1. Ir a **Marketing** > Promociones > **Reglas de precio de carrito** y cree una nueva regla de precio (para ver los pasos detallados, consulte [Crear una regla de precio de carro](https://docs.magento.com/user-guide/marketing/price-rules-cart-create.html) en nuestra guía del usuario).
+1. Vaya a **Ventas** > **Configuración de envío** > **Envío gratuito** y establezca **Importe mínimo de pedido** = *30*.
+1. Vaya a **Marketing** > Promociones > **Reglas de precio del carro de compras** y cree una nueva regla de precio (para ver los pasos detallados, consulte [Crear una regla de precio del carro de compras](https://docs.magento.com/user-guide/marketing/price-rules-cart-create.html) en nuestra guía del usuario).
 
-   * Código de cupón = *Cupón específico*.
+   * Código De Cupón = *Cupón Específico*.
    * Condiciones: El subtotal es igual o superior a 25 $.
    * Acciones: Envío gratuito = *Para envíos con artículos coincidentes*.
 
@@ -68,10 +68,10 @@ El parche MDVA-30837 añade la opción de configuración para configurar el **Ca
 
 <u>Resultados esperados</u>:
 
-Hay una configuración adicional: Incluir impuestos al importe: *Sí*/*No* en la configuración del método de envío gratuito:
+Hay una configuración adicional - Incluir impuesto al importe: *Sí*/*No* en la configuración del método de envío gratuito:
 
-* Cuando Incluir Impuesto a Importe está establecido en *Sí*, el importe mínimo del pedido se calcula como Subtotal + Impuestos - Descuento.
-* Cuando Incluir Impuesto a Importe está establecido en *No*, el importe mínimo de pedido se calcula como Subtotal - Descuento.
+* Cuando Incluir impuesto en importe está establecido en *Sí*, el importe mínimo del pedido se calcula como Subtotal + Impuesto - Descuento.
+* Cuando Incluir impuesto en importe está establecido en *No*, el importe mínimo del pedido se calcula como Subtotal - Descuento.
 
 <u>Resultados reales</u>:
 
@@ -88,7 +88,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # MDVA-40488: los productos configurables con productos secundarios agotados no se muestran en el rango de precios correcto
 
-El parche MDVA-40488 resuelve el problema en el que los productos configurables con productos secundarios agotados no se muestran en su rango de precios correcto. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9 está instalado. El ID del parche es MDVA-40488. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+El parche MDVA-40488 resuelve el problema en el que los productos configurables con productos secundarios agotados no se muestran en su rango de precios correcto. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.9. El ID del parche es MDVA-40488. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.2-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 * Adobe Commerce (todos los métodos de implementación) 2.4.2 - 2.4.3-p1
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -35,27 +35,27 @@ Los productos configurables con productos secundarios agotados no se muestran en
 
 <u>Requisitos previos</u>:
 
-Vaya a Commerce > Administración > **tiendas** > **configuración** > **catalogar** > **Inventario** > **opciones sobre acciones** y establecer **Mostrar productos sin existencias** configuración a *Sí*.
+Vaya a Commerce Admin > **tiendas** > **configuración** > **catálogo** > **Inventario** > **opciones de stock** y establezca la configuración de **Mostrar productos sin existencias** en *Sí*.
 
 <u>Pasos a seguir</u>:
 
 1. Cree un producto configurable con dos productos asociados. Por ejemplo: productos simples rojo y marrón.
-1. Establezca el inventario del producto simple en Rojo y el estado de las existencias en *En stock* y, a continuación, establezca Habilitar estado del producto en *No*.
+1. Establezca el inventario del producto simple en Rojo, establezca el estado de stock en *En stock* y, a continuación, establezca el estado Habilitar producto en *No*.
 1. Establezca el inventario del producto simple Marrón y, a continuación, establezca el estado Habilitar producto en *Sí*.
-1. Asegúrese de que el estado de stock del producto configurable sea *En stock*.
-1. Cambie el inventario del producto simple Marrón a 0 y establezca el Estado de stock a *Sin existencias*.
+1. Asegúrese de que el estado de Stock del producto configurable sea *En Stock*.
+1. Cambie el inventario del producto simple Marrón a 0 y establezca el estado de las existencias en *Agotado*.
 1. En este punto, el estado de stock del producto configurable sigue siendo *En stock*.
 1. Realice una reindexación.
-1. Compruebe la `min_price` y `max_price` para el producto configurable en la `catalog_product_index_price` Tabla de BD: los dos valores se establecen en 0.
-1. Pero si establecemos el estado de stock del producto configurable en *Agotado* y reindexamos, entonces podemos ver no-cero `min_price` y `max_price` valores del producto configurable.
+1. Compruebe `min_price` y `max_price` para el producto configurable en la tabla de base de datos `catalog_product_index_price`; los dos valores se establecen en 0.
+1. Pero si establecemos el estado de stock del producto configurable en *Agotado* y reindexamos, podemos ver valores distintos de cero de `min_price` y `max_price` del producto configurable.
 
 <u>Resultados esperados</u>:
 
-Si todos los productos secundarios son *Sin existencias* y el propio producto configurable también es *Sin existencias*, el precio se calcula utilizando todos los productos secundarios.
+Si todos los productos secundarios están *Agotados* y el producto configurable en sí también está *Agotados*, el precio se calcula usando todos los productos secundarios.
 
 <u>Resultados reales</u>:
 
-El `min_price` y `max_price` valores del producto configurable en la variable `catalog_product_index_price` Las tablas de BD se definen como 0 cuando el estado de stock configurable es *En stock*, pero si es *Sin existencias* se convierten en valores distintos de cero.
+Los valores `min_price` y `max_price` del producto configurable en la tabla de base de datos `catalog_product_index_price` se establecen en 0 cuando el estado de existencias configurable es *En existencias*, pero si es *Sin existencias*, se convierten en valores distintos de cero.
 
 ## Aplicar el parche
 
@@ -68,7 +68,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener más información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

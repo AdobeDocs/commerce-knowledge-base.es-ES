@@ -25,18 +25,20 @@ Al modificar un perfil en la cuenta de la nube de, se pueden modificar los sigui
 
 Para modificar estos campos, siga estos pasos:
 
-1. Acceda a su cuenta en [inicio de sesión de cuenta Adobe](https://accounts.magento.cloud).
-1. Haga clic en **[!UICONTROL Account Settings]** pestaña.
-1. Seleccione el *crear nueva contraseña* casilla de verificación
+1. Acceda a su cuenta en [inicio de sesión en la cuenta de Adobe](https://accounts.magento.cloud).
+1. Haga clic en la ficha **[!UICONTROL Account Settings]**.
+1. Seleccione la casilla de verificación *crear nueva contraseña*.
 1. Realice los cambios necesarios y haga clic en *guardar*.
 
-**NOTA**: *Su contraseña no se cambiará.*
+**NOTA**: *No se cambiará la contraseña.*
 
 ## ¿Qué no se puede modificar?
 
-1. **[!UICONTROL Password]**: Para cambiar la contraseña, visite [restablecer contraseña de Adobe](https://account.adobe.com/), ya que este perfil está vinculado a su cuenta/dirección de correo electrónico allí.
+1. **[!UICONTROL Password]**:
+Para cambiar tu contraseña, visita [restablecimiento de contraseña de Adobe](https://account.adobe.com/), ya que este perfil está vinculado a tu cuenta/dirección de correo electrónico allí.
 
-1. **[!UICONTROL Email Address]**: La modificación de este campo depende de las circunstancias individuales.
+1. **[!UICONTROL Email Address]**:
+La modificación de este campo depende de las circunstancias individuales.
 
 Si necesita transferir la propiedad de su cuenta actual a un nuevo propietario o a una dirección de correo electrónico diferente, deberá actualizar el correo electrónico del usuario principal asociado a la cuenta.
 

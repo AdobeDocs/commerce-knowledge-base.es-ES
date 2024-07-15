@@ -11,9 +11,9 @@ ht-degree: 0%
 
 ---
 
-# No se puede guardar _envío_ como clave URL
+# No se puede guardar _shipping_ como clave de URL
 
-Este artículo proporciona una solución al problema cuando no puede guardar el envío como clave de URL (_por ejemplo, /shipping_) para productos o páginas de CMS. Cuando intente guardar la clave URL, recibirá un error que indica que se trata de una URL duplicada.
+Este artículo proporciona una solución para el problema cuando no puede guardar el envío como una clave URL (_p. ej., /shipping_) para productos o páginas de CMS. Cuando intente guardar la clave URL, recibirá un error que indica que se trata de una URL duplicada.
 
 ## Productos y versiones afectados
 
@@ -21,20 +21,20 @@ Adobe Commerce (todos los métodos de implementación) 2.4.x
 
 ## Problema
 
-No puede guardar una página de CMS con el término _envío_ en la clave URL.
+No puede guardar una página de CMS con el término _shipping_ en la clave de URL.
 
 <u>Pasos a seguir</u>:
 
-Crear un **[!UICONTROL CMS page]** con la clave URL como _envío_.
+Cree un(a) **[!UICONTROL CMS page]** con la clave de URL como _envío_.
 
 <u>Resultado esperado</u>:
 
-La página guarda con _envío_ como clave de URL.
+La página guarda _gastos de envío_ como clave de URL.
 
 <u>Resultado real</u>:
 
 No puede guardar debido a que se produce este error:
-*El valor especificado en el campo Clave de URL generaría una dirección URL que ya existe.*
+*El valor especificado en el campo Clave de dirección URL generaría una dirección URL que ya existe.*
 
 ## Causa
 
@@ -50,24 +50,24 @@ Envío es una palabra reservada definida en `vendor/magento/module-shipping/etc/
 
 ## Solución
 
-No puede usar el término _envío_ en la clave URL, aunque puede usar el término _envío_ combinado con otra letra o número (_Por ejemplo, shipping1 y shipping2_).
+No puedes usar el término _shipping_ en tu clave de URL; sin embargo, puedes usar el término _shipping_ combinado con otra carta o número (_por ejemplo, shipping1 y shipping2_).
 
-Aunque el término no tiene que ser _envío_+&lt;another number=&quot;&quot; or=&quot;&quot; letter=&quot;&quot;> : el término puede ser cualquier cadena siempre que la longitud no supere *255* caracteres.
+Aunque el término no tiene que ser _shipping_+&lt;otro número o letra>, puede ser cualquier cadena siempre que la longitud no exceda de *255* caracteres.
 
 ## Siga estos pasos:
 
 1. Inicie sesión en el administrador de Adobe Commerce.
-1. Ir a **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
-1. Clic **[!UICONTROL Add URL Rewrite]**.
-1. Seleccionar **[!UICONTROL Custom]** en el **[!UICONTROL Create URL Rewrite]** menú desplegable.
-   1. Escriba el [!UICONTROL Request Path] as **_envío_**.
-   1. En el **[!UICONTROL Target Path]**, escriba la nueva clave de URL (_Por ejemplo, &quot;shipping1&quot;_).
-   1. Seleccionar **[!UICONTROL No]** en el **[!UICONTROL Redirect]** menú desplegable.
+1. Vaya a **[!UICONTROL Marketing]** > **[!UICONTROL SEO & Search]** > **[!UICONTROL URL Rewrites]**.
+1. Haga clic en **[!UICONTROL Add URL Rewrite]**.
+1. Seleccione **[!UICONTROL Custom]** en la lista desplegable **[!UICONTROL Create URL Rewrite]**.
+   1. Escriba [!UICONTROL Request Path] como **_envío_**.
+   1. En **[!UICONTROL Target Path]**, escriba la nueva clave de dirección URL (_Por ejemplo, &quot;shipping1&quot;_).
+   1. Seleccione **[!UICONTROL No]** en la lista desplegable **[!UICONTROL Redirect]**.
 
 
-      (**Nota**: la ruta de solicitud es lo que introduce un usuario en el explorador y la ruta de destino es a donde debe redirigirse.)
+      (**Nota**: la ruta de solicitud es lo que un usuario introduce en el explorador y la ruta de destino es a donde debe redirigirse.)
 
-Además, evite utilizar estas palabras clave con la etiqueta *reservado* palabras clave que hacen que aparezca la misma excepción. El uso de cualquiera de estas palabras clave enumeradas a continuación como valor de clave URL provocará que aparezca el mismo error.
+Además, evite utilizar estas palabras clave etiquetadas como *reserved* palabras clave que hacen que aparezca la misma excepción. El uso de cualquiera de estas palabras clave enumeradas a continuación como valor de clave URL provocará que aparezca el mismo error.
 
 
 ```

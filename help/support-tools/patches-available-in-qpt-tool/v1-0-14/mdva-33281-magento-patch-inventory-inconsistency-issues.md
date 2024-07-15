@@ -13,21 +13,21 @@ ht-degree: 0%
 
 # Parche MDVA-33281: problemas de incoherencia de inventario
 
-El parche MDVA-33281 soluciona tres problemas de incoherencia de inventario. Haga clic en los problemas vinculados en la sección Problema para ver los pasos para reproducir estos errores. Este parche está disponible cuando la variable [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.14 está instalado.
+El parche MDVA-33281 soluciona tres problemas de incoherencia de inventario. Haga clic en los problemas vinculados en la sección Problema para ver los pasos para reproducir estos errores. Este parche está disponible cuando está instalada la [Herramienta Parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.0.14.
 
 ## Productos y versiones afectados
 
-**El parche se crea para la versión de Adobe Commerce:**
+**El parche se ha creado para la versión de Adobe Commerce:**
 
 Adobe Commerce en infraestructura en la nube 2.3.5-p1
 
-**Compatible con las versiones de Adobe Commerce:**
+**Compatible con versiones de Adobe Commerce:**
 
 Adobe Commerce en infraestructura en la nube 2.3.4 - 2.3.5-p2
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el `magento/quality-patches` paquete a la versión más reciente y compruebe la compatibilidad en la [[!DNL Quality Patches Tool]: Página Buscar Parches](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://devdocs.magento.com/quality-patches/tool.html#patch-grid). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -35,11 +35,11 @@ El parche corrige problemas de incoherencia del inventario como:
 
 * **Error grave de PHP** al ejecutar `bin/magento inventory:reservation:list-inconsistencies` en la CLI debido a un tipo de parámetro de SKU incorrecto.
 * **Duplicar datos** en la lista de incoherencias.
-* **Nueva reserva** se creará antes de realizar el pedido (realización anterior basada en la reserva después de realizar el pedido). En caso de errores en la realización del pedido, se añadirá una reserva adicional para compensar.
+* **Se creará una nueva reserva** antes de realizar el pedido (realización anterior basada en la reserva después de realizar el pedido). En caso de errores en la realización del pedido, se añadirá una reserva adicional para compensar.
 
 >[!NOTE]
 >
->También hay un parche MDVA-30112 que resuelve el problema donde hay un número inesperadamente grande de [incoherencias de reserva](https://devdocs.magento.com/guides/v2.4/inventory/inventory-cli-reference.html#what-causes-reservation-inconsistencies) en nuestra documentación para desarrolladores, en la `inventory_reservation` tabla. Para obtener la solución, consulte [Parche del Magento MDVA-30112: incoherencias en la reserva de un gran número](/help/support-tools/patches-available-in-qpt-tool/v1-0-8/mdva-30112-magento-patch-large-number-reservation-inconsistencies.md) en nuestra base de conocimiento de soporte.
+>También hay un parche MDVA-30112 que resuelve el problema donde hay un número inesperadamente grande de [incoherencias en la reserva](https://devdocs.magento.com/guides/v2.4/inventory/inventory-cli-reference.html#what-causes-reservation-inconsistencies) en nuestra documentación para desarrolladores, en la tabla `inventory_reservation`. Para obtener la solución, consulte [parche del Magento MDVA-30112: gran número de incoherencias en las reservas](/help/support-tools/patches-available-in-qpt-tool/v1-0-8/mdva-30112-magento-patch-large-number-reservation-inconsistencies.md) en nuestra base de conocimiento de asistencia.
 
 ## Error grave de PHP
 
@@ -71,7 +71,10 @@ Los datos duplicados están en `inventory_reservation table`.
 
 Para solucionar las incoherencias en las reservas, ejecute el siguiente comando:
 
-<pre>SELECT *, COUNT(*) FROM inventory_reservation GROUP BY metadatos, sku, cantidad HAVING COUNT(*) &gt; 1</pre>
+<pre>SELECCIONAR *, RECUENTO(*)
+DESDE inventory_reservation
+AGRUPAR POR metadatos, SKU, cantidad
+HAVING COUNT(*) &gt; 1</pre>
 
 <u>Resultados esperados</u>:
 
@@ -88,8 +91,8 @@ Hay duplicados.
 Nueva reserva creada antes de realizar el pedido:
 
 1. Importe la base de datos.
-1. Ejecutar `bin/magento setup:upgrade` en la terminal.
-1. Enumerar incoherencias ejecutando `bin/magento inventory:reservation:list-inconsistencies        -i -r` en la terminal.
+1. Ejecute `bin/magento setup:upgrade` en el terminal.
+1. Enumerar incoherencias ejecutando `bin/magento inventory:reservation:list-inconsistencies        -i -r` en el terminal.
 
 <u>Resultados esperados</u>:
 
@@ -110,7 +113,7 @@ Para aplicar parches individuales, utilice los siguientes vínculos según el m�
 
 Para obtener más información sobre la herramienta Parches de calidad, consulte:
 
-* [Lanzamiento de la herramienta Parches de Calidad: una nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de soporte.
+* [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para más información sobre otros parches disponibles en QPT, consulte la [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://devdocs.magento.com/quality-patches/tool.html#patch-grid) en nuestra documentación para desarrolladores.

@@ -11,7 +11,7 @@ ht-degree: 0%
 
 ---
 
-# Adobe Commerce cloud: el reíndice ha finalizado con `Killed` message
+# nube de Adobe Commerce: el reíndice ha finalizado con el mensaje `Killed`
 
 ## Productos y versiones afectados
 
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Problema
 
-Está intentando ejecutar un reíndice en la rama de integración (o en el ensayo del proyecto de arquitectura inicial) y el proceso se está finalizando con el `Killed` Mensaje.
+Está intentando ejecutar un reíndice en la rama de integración (o en Ensayo del proyecto de arquitectura inicial) y el proceso está finalizando con el mensaje `Killed`.
 
 ## Causa
 
@@ -31,11 +31,11 @@ El motivo más común es un gran número de productos, tiendas o grupos de clien
 1. Reduzca el número de productos (así como los grupos de clientes y las tiendas, si corresponde).
 1. Limite el uso a uno o dos usuarios simultáneos.
 1. Deshabilite los trabajos cron y ejecute manualmente según sea necesario.
-1. Si no se ha hecho anteriormente, solicite una actualización a los entornos de integración mejorada . Tome nota de la restricción en el número de entornos a los que estaría limitado una vez que se haya realizado la actualización. Consulte la [Solicitud de mejora del entorno de integración: Pro y Starter](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) artículo en nuestra base de conocimiento de asistencia para obtener más información.
+1. Si no se ha hecho anteriormente, solicite una actualización a los entornos de integración mejorada . Tome nota de la restricción en el número de entornos a los que estaría limitado una vez que se haya realizado la actualización. Consulte el artículo [Solicitud de mejora del entorno de integración - Pro y Starter](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) en nuestra base de conocimiento de asistencia para obtener más información.
 
 ## Lectura relacionada:
 
 En nuestra documentación para desarrolladores:
 
 * [Arquitectura profesional > Entorno de integración](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#cloud-arch-int)
-* [Arquitectura de inicio > Entorno de ensayo](https://devdocs.magento.com/cloud/architecture/starter-architecture.html#cloud-arch-stage)
+* [Arquitectura inicial > Entorno de ensayo](https://devdocs.magento.com/cloud/architecture/starter-architecture.html#cloud-arch-stage)

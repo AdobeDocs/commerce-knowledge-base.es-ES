@@ -19,7 +19,7 @@ Este artículo trata sobre la solución del problema de &quot;la aplicación de 
 
 El siguiente mensaje aparece en la comprobación de disponibilidad:
 
-![Screen_Shot_2019-08-29_at_1.39.12_PM.png](assets/Screen_Shot_2019-08-29_at_1.39.12_PM.png)
+![Captura de pantalla_2019-08-29_at_1.39.12_PM.png](assets/Screen_Shot_2019-08-29_at_1.39.12_PM.png)
 
 ## Productos y versiones afectados
 
@@ -29,4 +29,4 @@ El siguiente mensaje aparece en la comprobación de disponibilidad:
 
 ## Solución
 
-Para resolver este problema, compruebe si hay alguna `<magento_root>/update` que contiene archivos y subdirectorios. De lo contrario, consulte [Configuración del actualizador](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) en nuestra documentación para desarrolladores.
+Para resolver este problema, vea si hay un directorio `<magento_root>/update` que contenga archivos y subdirectorios. De lo contrario, consulta [Configurar el actualizador](https://devdocs.magento.com/guides/v2.3/comp-mgr/updater/update-updater.html) en nuestra documentación para desarrolladores.

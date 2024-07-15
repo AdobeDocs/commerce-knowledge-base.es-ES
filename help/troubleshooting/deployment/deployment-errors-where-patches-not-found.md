@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Errores de implementación en los que no se encontraron parches
 
-Este artículo proporciona una solución al problema que se produce al actualizar la instancia cuando la implementación falla y ve un error en los registros de implementación: *No se encontraron los siguientes parches: MDVA-XXXXX, ACSD-XXXXX. Compruebe la disponibilidad de estos parches con el comando &quot;status&quot; para la versión actual del Magento*.
+Este artículo proporciona una solución al problema que se produce al actualizar la instancia cuando falla la implementación y ve un error en los registros de implementación: *No se encontraron los siguientes parches: MDVA-XXXXX, ACSD-XXXXX. Compruebe la disponibilidad del comando &quot;status&quot; de estas revisiones para la versión actual del Magento*.
 
 ## Productos y versiones afectados
 
@@ -20,7 +20,7 @@ Este artículo proporciona una solución al problema que se produce al actualiza
 
 ## Problema
 
-Se ha producido un error al actualizar Adobe Commerce: *No se encontraron los siguientes parches*.
+Se produjo un error al actualizar Adobe Commerce: *No se encontraron las siguientes revisiones*.
 
 ## Causa
 
@@ -28,7 +28,7 @@ Los parches aplicados anteriormente a sus versiones anteriores no son aplicables
 
 ## Solución
 
-1. Compruebe su `.magento.env.yaml` en la sección QUALITY_PATCH, por ejemplo,.
+1. Compruebe su archivo de `.magento.env.yaml` en la sección QUALITY_PATCH, por ejemplo:
 
    ```yaml
    QUALITY_PATCHES:
@@ -36,10 +36,10 @@ Los parches aplicados anteriormente a sus versiones anteriores no son aplicables
     - ACSD-XXXXX
    ```
 
-1. Buscar los ID de parche en [Notas de la versión de Parches de calidad](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) para comprobar si se pueden aplicar todas y cada una de ellas a la nueva versión de Adobe Commerce a la que está actualizando.
-1. Si el parche no se aplica a la nueva versión de Adobe Commerce a la que desea actualizar, elimine el ID del parche de `.magento.env.yaml` archivo.
+1. Busque los identificadores de los parches en las [Notas de la versión de parches de calidad](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) para comprobar si se pueden aplicar a la nueva versión de Adobe Commerce a la que está actualizando.
+1. Si el parche no se aplica a la nueva versión de Adobe Commerce a la que desea actualizar, quite el identificador del parche del archivo `.magento.env.yaml`.
 1. Una vez que haya revisado todos los ID de parche indicados por el error, inserte los cambios y vuelva a implementar.
 
 ## Lectura relacionada
 
-* [Aplicar parches](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment) en la Guía de Commerce sobre infraestructura en la nube.
+* [Aplicar parches](/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment) en la Guía de infraestructura de Commerce en la nube.

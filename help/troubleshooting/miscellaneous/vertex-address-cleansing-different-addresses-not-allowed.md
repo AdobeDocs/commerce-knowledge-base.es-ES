@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Limpieza de direcciones de vértice: no se permiten direcciones diferentes
 
-Este artículo habla sobre la solución del problema de cuando el usuario intenta introducir una **distinto** dirección de facturación y envío, con la validación de dirección de Vértice habilitada, la tienda no permitirá que el usuario la introduzca.
+Este artículo habla sobre la solución del problema en el cual cuando el usuario intenta ingresar una dirección de facturación y envío **diferente**, con la validación de direcciones de Vértice habilitada, la tienda no permitirá que el usuario la ingrese.
 
 ## Productos y versiones afectados
 
@@ -24,14 +24,14 @@ Este artículo habla sobre la solución del problema de cuando el usuario intent
 <u>Pasos a seguir</u>:
 
 1. Vaya a Administración > **Tiendas** > **Configuración** > **Ventas** > **Limpieza de direcciones**.
-1. Seleccionar *Habilitado* desde el **Usar limpieza de direcciones de vértice** desplegable y **Guardar configuración**.
+1. Seleccione *Habilitado* de la lista desplegable **Usar limpieza de direcciones de vértice** y **Guardar configuración**.
 1. Vaya al front-end como invitado y añada un producto al carro de compras.
-1. Haga clic en el icono Carro y **Continuar con el cierre**.
+1. Haga clic en el icono Carro de compras y **Continuar con la compra**.
 1. Rellene los campos de dirección.
-1. Seleccione lo que desee **Método de envío** y haga clic en **Siguiente**.
-1. Haga clic en **Siguiente** botón de nuevo.
-1. Desmarcar **Mi dirección de facturación y envío** **son iguales** e introduzca una nueva dirección de facturación (diferente a Dirección).
-1. Haga clic en **Actualizar** y luego haga clic en **Actualizar dirección**.
+1. Seleccione el **método de envío** deseado y haga clic en **Siguiente**.
+1. Vuelve a hacer clic en el botón **Siguiente**.
+1. Anule la selección de **Mis direcciones de facturación y envío** **son iguales** e introduzca una nueva dirección de facturación (diferente a Dirección).
+1. Haga clic en el botón **Actualizar** y luego haga clic en **Actualizar dirección**.
 
 <u>Resultados esperados</u>:
 

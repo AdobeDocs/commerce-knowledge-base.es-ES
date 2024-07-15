@@ -22,7 +22,7 @@ Este artículo proporciona un parche para el problema conocido de que no se apli
 
 ## Problema
 
-<u>Requisitos previos</u>: se crea un cupón de descuento y existen automáticamente reglas de aprobación que impiden que se procesen las OC.
+<u>Requisitos previos</u>: se crea un cupón de descuento y existen reglas de aprobación que impiden que las OC se procesen automáticamente.
 
 <u>Pasos a seguir:</u>
 
@@ -49,8 +49,8 @@ El parche se adjunta a este artículo. Para descargarlo, desplácese hacia abajo
 
 [B2B-709-composer.patch](assets/B2B-709-composer.patch.zip)
 
-El parche también está disponible para su descarga en ambos, `.git` y `.composer` , formatos en [Descargas de Adobe Commerce](https://magento.com/tech-resources/download) página, debajo de **Parches** en la navegación de la columna izquierda. Busque el parche XXX.
+El parche también está disponible para su descarga en los formatos `.git` y `.composer` en la página [Descargas de Adobe Commerce](https://magento.com/tech-resources/download), en **Parches** en la navegación de la columna izquierda. Busque el parche XXX.
 
 ## Cómo aplicar el parche
 
-Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de asistencia para obtener instrucciones.
+Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de soporte técnico para obtener instrucciones detalladas.
