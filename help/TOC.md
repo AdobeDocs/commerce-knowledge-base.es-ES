@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: c75a1ecbf5d89ede71eb3f873c75a5e7d8720a2b
+source-git-commit: 202f5edcef114a1d16177b05328803aca81c11e2
 workflow-type: tm+mt
-source-wordcount: '11069'
+source-wordcount: '11064'
 ht-degree: 0%
 
 ---
@@ -1031,7 +1031,6 @@ ht-degree: 0%
       * [El sitio de la nube es lento](/help/troubleshooting/miscellaneous/cloud-site-is-slow.md)
       * [Error al purgar la caché de Fastly en la nube (la solicitud de purga no se procesó correctamente)](/help/troubleshooting/miscellaneous/error-purging-fastly-cache-on-cloud-the-purge-request-was-not-processed-successfully.md)
       * [Información de caducidad del certificado SSL personalizado](/help/troubleshooting/miscellaneous/custom-ssl-certificate-expiration-information.md)
-      * [Solucionador de problemas de Redis en Adobe Commerce](/help/troubleshooting/miscellaneous/redis-troubleshooter.md)
       * [PWA Studio: Errores de validación al ejecutar el modo de desarrollador](/help/troubleshooting/miscellaneous/pwa-studio-validation-errors-when-running-developer-mode.md)
       * [Desactivar los correos electrónicos de Amazon por hora al usar Adobe Commerce](/help/troubleshooting/miscellaneous/turn-off-hourly-amazon-emails-when-using-magento.md)
       * [La caché no validada provoca una degradación del tiempo de respuesta](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md)
