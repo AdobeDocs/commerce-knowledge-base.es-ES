@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para el problema local de 
 feature: Install, Upgrade, B2B
 role: Developer
 exl-id: 4a557c13-7ec2-4cfe-b86e-bb0d1a441658
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '169'
 ht-degree: 0%
@@ -30,13 +30,13 @@ Este artículo proporciona una solución para el problema local de Adobe Commerc
 
 1. Instale Adobe Commerce 2.4.6-p1.
 
-   ```terminal
+   ```bash
    m2install.sh -s composer --ee -v 2.4.6-p1
    ```
 
 1. Intente instalar [!DNL B2B] versión 1.4.0.
 
-   ```terminal
+   ```bash
    composer require magento/extension-b2b:1.4.0
    ```
 
@@ -48,7 +48,7 @@ Este artículo proporciona una solución para el problema local de Adobe Commerc
 
 La instalación falla con el siguiente error:
 
-```terminal
+```bash
 Your requirements could not be resolved to an installable set of packages.
 
   Problem 1
@@ -65,13 +65,13 @@ Instale o actualice correctamente [!DNL B2B] versión 1.4.0 en Adobe Commerce 2.
 
 1. Desde el directorio de instalación de Adobe Commerce, actualice `composer.json` con las dependencias requeridas:
 
-   ```terminal
+   ```bash
    composer require magento/module-re-captcha-company=1.0.3-beta1@beta magento/security-package-b2b=1.0.4-beta1@beta
    ```
 
    **Salida de comando:**
 
-   ```terminal
+   ```bash
    Running composer update magento/module-re-captcha-company magento/security-package-b2b
    Loading composer repositories with package information
    Updating dependencies
@@ -94,13 +94,13 @@ Instale o actualice correctamente [!DNL B2B] versión 1.4.0 en Adobe Commerce 2.
 
 1. Actualice `composer.json` para agregar [!DNL B2B] versión 1.4.0.
 
-   ```terminal
+   ```bash
    composer require magento/extension-b2b=1.4.0
    ```
 
    **Salida de comando:**
 
-   ```terminal
+   ```bash
    ./composer.json has been updated
    Running composer update magento/extension-b2b
    Loading composer repositories with package information

@@ -4,7 +4,7 @@ description: Este artículo proporciona soluciones para los errores de configura
 exl-id: 51fb3c95-2e25-4d86-a6cf-e08e90d097ca
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -44,7 +44,7 @@ Para aumentar el límite de memoria PHP:
 
 Las configuraciones con un número elevado de vistas de tienda, productos, atributos u opciones pueden generar formularios que superen el límite preestablecido de PHP. Si el número de valores enviados supera el límite de `max-input-vars` establecido en `php.ini` (el valor predeterminado es 1000), los datos restantes no se transfieren y los valores de la base de datos no se actualizan. Cuando esto sucede, aparece una advertencia en el registro de PHP:
 
-```terminal
+```bash
 PHP message: PHP Warning: Unknown: Input variables exceeded 1000. To increase the limit change max_input_vars in php.ini.
 ```
 
@@ -58,7 +58,7 @@ Ver [Durante la instalación, error de nivel máximo de anidamiento de función 
 
 El texto de error suele ser:
 
-```terminal
+```bash
 Parse error: syntax error, unexpected 'data' (T_STRING)
 ```
 
