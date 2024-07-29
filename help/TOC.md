@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 202f5edcef114a1d16177b05328803aca81c11e2
+source-git-commit: d3b832d2f8a0ef35e8a8e8899ccdaffeec8029ff
 workflow-type: tm+mt
-source-wordcount: '11064'
+source-wordcount: '11066'
 ht-degree: 0%
 
 ---
@@ -1180,7 +1180,7 @@ ht-degree: 0%
       * [MySQL y Elasticsearch muestran resultados diferentes](/help/troubleshooting/elasticsearch/mysql-and-elasticsearch-show-different-results.md)
       * [El Elasticsearch se muestra como motor de búsqueda a pesar de la instalación de OpenSearch](/help/troubleshooting/elasticsearch/search-engine-shown-elasticsearch-despite-open-search.md)
 * Guía del Centro de ayuda {#help-center-guide}
-   * [Guía del usuario del Centro de ayuda de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
+   * [Guía del usuario de soporte técnico de Experience League para Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md)
    * [Actualización de directiva de ciclo vital de ticket de soporte de Adobe Commerce](/help/help-center-guide/help-center/magento-support-ticket-lifecycle-policy-update.md)
 * Cómo... {#how-to}
    * [Información general sobre procedimientos](/help/how-to/overview.md)
