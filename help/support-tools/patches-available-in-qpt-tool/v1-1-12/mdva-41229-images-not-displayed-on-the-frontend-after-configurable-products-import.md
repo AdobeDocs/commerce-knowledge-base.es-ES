@@ -4,7 +4,7 @@ description: El parche MDVA-41229 resuelve el problema de que las imágenes disp
 exl-id: 69d7374f-9f8b-4ec4-8a7f-135ee06135a3
 feature: Data Import/Export, Configuration, Products
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 143a694fd573aeb2a52f47d194359e98f74f8033
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 2%
@@ -37,12 +37,15 @@ Las imágenes disponibles en el servidor no se muestran en el front-end después
 
 1. Instale un Adobe Commerce limpio.
 1. Para agregar un atributo personalizado, ve a **Tiendas** > **Atributos** > **Producto** > **Agregar nuevo atributo** con la siguiente configuración:
+
    * Propiedades:
       * Propiedades de atributo:
+
          * Etiqueta predeterminada: Establecer tamaño
          * Tipo de entrada de catálogo para el propietario de la tienda: muestra de texto
          * Valores necesarios: no
          * Actualizar imagen de vista previa del producto: sí
+
       * Administrar muestra (valores de su atributo):
 
         | Es predeterminado | Muestra de administrador | Descripción del administrador | Muestra de vista de tienda predeterminada | Descripción de vista de tienda predeterminada |
@@ -52,17 +55,24 @@ Las imágenes disponibles en el servidor no se muestran en el front-end después
         | no | 30 | 30 | 30 | 30 |
         | no | 60 | 60 | 60 | 60 |
         | no | 68 | 68 | 68 | 68 |
+
       * Propiedades de atributo avanzadas:
+
          * Código de atributo: set_size
          * Ámbito: Global
          * Valor único: No
          * Validación de entrada para el propietario de la tienda: Ninguno
          * Agregar a opciones de columna: No
          * Uso en las opciones de filtro: no
+
    * Administrar etiquetas:
+
       * Administrar títulos (tamaño, color, etc.)
+
          * Vista de tienda predeterminada: Establecer tamaño
+
    * Propiedades de tienda:
+
       * Usar en la búsqueda: sí
       * Peso de búsqueda: 1
       * Visible en la búsqueda avanzada: no
@@ -73,12 +83,17 @@ Las imágenes disponibles en el servidor no se muestran en el front-end después
       * Visible en las páginas del catálogo en la tienda: Sí
       * Se utiliza en la lista de productos: Sí
       * Se utiliza para ordenar en la lista de productos: No
+
 1. Agregue este atributo al conjunto de atributos predeterminado dentro del grupo Detalles del producto (**Almacenes** > **Atributos** > **Conjunto de atributos**).
 1. Descargue las imágenes configuradas en la carpeta var dentro del directorio raíz de Adobe Commerce.
 1. Vaya a **Sistema** > **Transferencia de datos** > e importe el archivo con las siguientes opciones:
+
    * Configuración de importación:
+
       * Tipo de entidad: productos
+
    * Comportamiento de importación:
+
       * Comportamiento de importación: añadir/actualizar
       * Estrategia de validación: Detener si hay error
       * Recuento de errores permitidos: 1
@@ -86,9 +101,12 @@ Las imágenes disponibles en el servidor no se muestran en el front-end después
       * Separador de varios valores: `,`
       * Constante de valor de atributo: EMPTYVALUE
       * Recinto de campos: sin marcar
+
    * Archivo para importar:
+
       * Seleccionar archivo para importar
       * Directorio de archivos de imágenes: déjelo vacío
+
 1. Vaya a la tienda en `/product-set.html` página y cambie entre diferentes tamaños de conjunto. Para Set Size 24, no habrá galería.
 
 <u>Resultados esperados</u>:
