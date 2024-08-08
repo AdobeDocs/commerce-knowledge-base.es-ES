@@ -4,9 +4,9 @@ description: Los problemas de informes avanzados en Adobe Commerce se pueden res
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 84b4ca4c4144381f0b404d2eae6684e7b21755df
+source-git-commit: b3bfc41a67eb9ef0bbb52d1c1c3940b1aa49cf44
 workflow-type: tm+mt
-source-wordcount: '983'
+source-wordcount: '984'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,7 @@ b. NO - Continúe con [Paso 4](#step-4).
 
 +++**¿Se han habilitado los informes avanzados?**
 
-Comprueba **Administración** > **Tiendas** > **Configuración** > **Configuración** > **General** > **Avanzado**. Para ver los pasos detallados, consulte [Informes avanzados: habilitar los informes avanzados](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting).
+Compruebe **Administración** > **Tiendas** > **Configuración** > **Configuración** > **General** > **Informes avanzados**. Para ver los pasos detallados, consulte [Informes avanzados: habilitar los informes avanzados](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting).
 
 a. SÍ - Continúe con [Paso 5](#step-5).\
 b. NO - [Habilitar informes avanzados](https://docs.magento.com/user-guide/reports/advanced-reporting.html#step-1-enable-advanced-reporting), guardar y esperar 24 horas a que se sincronicen Adobe Commerce y los informes avanzados. Compruebe si los datos ahora se cargan. Si es así, ha resuelto el problema. Si no continúa con [Paso 5](#step-5).
