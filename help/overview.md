@@ -4,9 +4,9 @@ description: Todo lo que necesita saber para solucionar los problemas de su tien
 exl-id: feacf38f-2803-4170-a64f-5d7c4567432d
 feature: Support
 role: Admin
-source-git-commit: 738a5455267647d294d222d5bb6149254dcb93dd
+source-git-commit: cfbe281941fbdc3e6fe7ee36385dc6732b46da26
 workflow-type: tm+mt
-source-wordcount: '1394'
+source-wordcount: '1395'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 La información de esta base de conocimiento se ha diseñado como complemento de [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs), [Adobe Commerce Merchant Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) y otras publicaciones de Adobe Commerce. Abarca la resolución de problemas y las prácticas recomendadas, contiene anuncios, responde a preguntas frecuentes y destaca escenarios específicos que no se han mencionado (por algún motivo) en la documentación oficial.
 
-## ¿Qué hay en la base de conocimientos?
+## ¿Qué hay en esta base de conocimiento?
 
 | CATEGORÍA | DESCRIPCIÓN |
 | --- | --- |
