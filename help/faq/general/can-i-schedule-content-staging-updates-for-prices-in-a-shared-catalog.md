@@ -3,16 +3,16 @@ title: ¿Puedo programar actualizaciones de Ensayo de contenido para precios en 
 description: Adobe Commerce no ofrece la funcionalidad de programar una actualización de precios ([Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) para uno o varios productos en un catálogo compartido.
 exl-id: 5482326f-54c2-4efc-8e5e-6d075ee5be55
 feature: Catalog Management, Customer Service
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: c3120f7df24e105b082df6544ab82241d6b6851f
 workflow-type: tm+mt
-source-wordcount: '242'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # ¿Puedo programar actualizaciones de Ensayo de contenido para precios en un catálogo compartido?
 
-Adobe Commerce no ofrece la funcionalidad de programar una actualización de precios ([Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) para uno o varios productos de un catálogo compartido.
+Adobe Commerce no ofrece la funcionalidad de programar una actualización de precios ([Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html)) para uno o más productos de un catálogo compartido.
 
 Eso significa que no puedes programar una actualización de precios directamente desde el menú **Establecer precios y estructura** del panel de administración de Commerce (no hay ningún botón **Programar nueva actualización** en este menú).
 
