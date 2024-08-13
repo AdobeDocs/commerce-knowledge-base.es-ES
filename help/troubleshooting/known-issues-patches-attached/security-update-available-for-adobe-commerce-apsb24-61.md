@@ -4,21 +4,21 @@ promoted: true
 description: Aplique un parche aislado para remediar  [!DNL CVE-2024-39397] solo para instancias de Adobe Commerce 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10 y versiones anteriores que ejecuten [!DNL Apache].
 feature: Compliance, Security
 role: Developer
-source-git-commit: 2038e766d65c81172391091a0cdff4abb04e84d5
+source-git-commit: 76ff7669a0a57925a176e08031e0789ced0a7f0e
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
 # Actualización de seguridad disponible para Adobe Commerce - [!DNL APSB24-61]
 
-El 13 de agosto de 2024, Adobe lanzó una actualización de seguridad para Adobe Commerce, Magento Open Source y el complemento Webhooks de Adobe Commerce.
+El 13 de agosto de 2024, Adobe lanzó una actualización de seguridad programada regularmente para Adobe Commerce, Magento Open Source y el complemento Webhooks de Adobe Commerce.
 Esta actualización resuelve [[!DNL critical, important] y  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) vulnerabilidades. Una explotación exitosa podría llevar a la ejecución de código arbitrario, a la lectura arbitraria del sistema de archivos, a la omisión de características de seguridad y a la escalación de privilegios. El boletín es [Boletín de seguridad del Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
 
 >[!NOTE]
 >
->**[!DNL CVE-2024-39397]solo es aplicable cuando se utiliza el servidor web [!DNL Apache].** Para garantizar que la corrección de esta vulnerabilidad se pueda aplicar lo antes posible, Adobe también ha lanzado un parche aislado que resuelve [!DNL CVE-2024-39397].
+>**[!DNL CVE-2024-39397], que aparece en el boletín de seguridad anterior, sólo es aplicable cuando se utiliza el servidor web [!DNL Apache].** Para garantizar que la corrección de esta vulnerabilidad se pueda aplicar lo antes posible, Adobe también ha lanzado un parche aislado que resuelve [!DNL CVE-2024-39397].
 
 **Aplique las actualizaciones de seguridad más recientes lo antes posible. Si no lo hace, será vulnerable a estos problemas de seguridad y el Adobe tendrá medios limitados para ayudar a remediar.**
 
