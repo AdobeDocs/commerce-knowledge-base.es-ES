@@ -3,7 +3,7 @@ title: Restablecer el entorno en Adobe Commerce en la infraestructura en la nube
 description: Este artículo muestra diferentes escenarios de reversión de un entorno en Adobe Commerce en una infraestructura en la nube.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: f2aeb0262ddcb3d7e78028d08b9323db243fc96b
+source-git-commit: 4439ee25e929a1bdb2216cc10fa0d4506c4f3aed
 workflow-type: tm+mt
 source-wordcount: '1083'
 ht-degree: 0%
@@ -158,6 +158,6 @@ Si al ejecutar el comando `setup:uninstall` se produce un error y no se puede co
 1. Conéctese a MySQL DB: `mysql -h database.internal` (para entornos Pro, consulte: [Configurar el servicio MySQL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html)).
 1. Soltar la base de datos `main`: `drop database main;`
 1. Crear una base de datos `main` vacía: `create database main;`
-1. Eliminar los siguientes archivos de configuración: `config.php`, `config.php`, `.bak,`, `env.php`, `env.php.bak`
+1. Eliminar los siguientes archivos de configuración: `config.php`, `config.php.bak`, `env.php`, `env.php.bak`
 
 Después de restablecer la base de datos, [inserte [!DNL git] el entorno para volver a implementar el déclencheur](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli.html) e instale Adobe Commerce en una base de datos recién creada. O [ejecute el comando de reimplementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html#environment-commands).
