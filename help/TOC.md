@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: abfd1e3a042f2756c27471b81004a3dcea0914ac
+source-git-commit: ac71666c082f59c8f40df57c31ae15a4ef595a18
 workflow-type: tm+mt
-source-wordcount: '11090'
+source-wordcount: '11100'
 ht-degree: 0%
 
 ---
@@ -272,7 +272,7 @@ ht-degree: 0%
       * v1.1.3 {#v1-1-3}
          * [Información general: Herramienta Parches de calidad (QPT) v1.1.3](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/overview.md)
          * [MDVA-31590: No se pueden actualizar atributos por lotes mediante colas asíncronas de MySQL](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-31590-unable-to-update-attributes-in-bulk-using-mysql-async-queues.md)
-         * [MDVA-33606: Los usuarios reciben un error al guardar la página de CMS asignada a la jerarquía](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-33606-users-get-error-when-saving-cms-page-assigned-to-hierarchy.md)
+         * [MDVA-33606: Los usuarios reciben un error al guardar la página de CMS asignada a una jerarquía](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-33606-users-get-error-when-saving-cms-page-assigned-to-hierarchy.md)
          * [MDVA-36309: La búsqueda de productos por atributos es lenta en las cuadrículas de administración](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-36309-product-search-by-attributes-is-slow-in-the-admin-grids.md)
          * [MDVA-37234: al agregar un elemento al carro de compras varias veces, se crea un elemento de línea duplicado](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-37234-adding-item-to-cart-multiple-times-creates-duplicate-item.md)
          * [MDVA-40262: Las consultas de GraphQL no se muestran en términos de búsqueda populares en administración](/help/support-tools/patches-available-in-qpt-tool/v1-1-3/mdva-40262-graphql-queries-dont-show-in-popular-search-terms-in-admin.md)
@@ -749,12 +749,12 @@ ht-degree: 0%
          * [ACSD-55305: congelación emergente durante la edición por parte del usuario de la compañía en [!UICONTROL My Account]](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-55305-freeze-issue-in-company-user-edit-popup.md)
          * [ACSD-54972: La dirección URL de la categoría canónica no se actualiza](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54972-canonical-category-url-doesnt-update.md)
          * [ACSD-53636: el precio normal no se muestra en la página [!UICONTROL Product Listing]](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-53636-regular-price-is-not-displayed-on-product-listing-page.md)
-         * [ACSD-53925: no se puede guardar el bloque CMS con [!UICONTROL Product Carousel]](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-53925-cant-save-cms-block-with-product-carousel-catalog-product-price-dimensions-set-to-website.md)
+         * [ACSD-53925: no se puede guardar el bloque de CMS con [!UICONTROL Product Carousel]](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-53925-cant-save-cms-block-with-product-carousel-catalog-product-price-dimensions-set-to-website.md)
          * [ACSD-54885: excepción durante la desprotección de varias direcciones cuando el administrador inicia sesión como cliente](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54885-exception-during-multiple-address-checkout.md)
          * [ACSD-53309: aplicación de impuestos incompleta para opciones personalizables y etiqueta &#39;[!UICONTROL Regular Price]&#39;](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-53309-incomplete-tax-application-for-customizable-options.md)
          * [ACSD-53790: se pueden crear varios RMA para un solo producto mediante la API de REST](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-53790-multiple-rmas-for-single-product-can-be-created-via-rest-api.md)
          * [ACSD-54739: el estado de [!UICONTROL Product Stock] no se aplicó a [!UICONTROL Related Product Rules]](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54739-product-stock-status-not-applied-for-related-product-rules.md)
-         * [ACSD-54983: el UID de usuario de la empresa con GraphQL no está disponible con usuarios inactivos](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
+         * [ACSD-54983: El UID del usuario de la empresa con GraphQL no está disponible con el usuario inactivo](/help/support-tools/patches-available-in-qpt-tool/v1-1-43/acsd-54983-company-user-uid-with-graphql-not-available-with-inactive-user.md)
       * v1.1.44 {#v1-1-44}
          * [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.44](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/overview.md)
          * [ACSD-55231: error de SKU no encontrado al utilizar la funcionalidad de pedido rápido](/help/support-tools/patches-available-in-qpt-tool/v1-1-44/acsd-55231-sku-not-found-in-catalog.md)
@@ -801,6 +801,8 @@ ht-degree: 0%
          * [ACSD-58008: Si edita la fecha de finalización como vacía, la actualización de la programación desaparece](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-58008-editing-the-end-date-as-empty-causes-the-schedule-update-to-disappear.md)
          * [ACSD-57854: la respuesta de GraphQL contiene categorías deshabilitadas que no deben enumerarse en las agregaciones de categorías](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57854-graphql-response-contains-disabled-categories-that-should-not-be-listed-in-the-category-aggregations.md)
          * [ACSD-57565: El panel de pedidos muestra información de pedidos incorrecta](/help/support-tools/patches-available-in-qpt-tool/v1-1-48/acsd-57565-the-order-dashboard-displays-incorrect-order-information.md)
+      * v1.1.49 {#v1-1-49}
+         * [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.49](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/overview.md)
       * [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
 * Anuncios {#announcements}
    * [Resumen de anuncios](/help/announcements/overview.md)
@@ -823,6 +825,7 @@ ht-degree: 0%
       * [Programación de versiones 2024](/help/announcements/adobe-commerce-announcements/2024-release-schedule.md)
       * [Adobe Commerce admite la migración del proceso de admisión a Experience League](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
    * Noticias del Centro de ayuda {#news}
+      * [Retirada del Centro de ayuda de Adobe Commerce](/help/announcements/help-center-news/decommissioning-of-adobe-commerce-help-center.md)
       * [La Base de conocimiento de asistencia de Adobe Commerce comienza a aceptar contribuciones](/help/announcements/help-center-news/github-repo-for-external-contributions.md)
 * Solución de problemas {#troubleshooting}
    * [Resumen de resolución de problemas](/help/troubleshooting/overview.md)
@@ -1265,7 +1268,7 @@ ht-degree: 0%
    * [Actualice MariaDB 10.4 a 10.5 para Adobe Commerce en la nube](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * PREGUNTAS FRECUENTES {#faq}
    * [Preguntas frecuentes sobre](/help/faq/overview.md)
-   * [Firewall de aplicaciones web (WAF) con tecnología Fastly: preguntas frecuentes](/help/faq/general/web-application-firewall-waf-powered-by-fastly-the-faq.md)
+   * [Cortafuegos de aplicaciones web (WAF) con tecnología Fastly: preguntas frecuentes](/help/faq/general/web-application-firewall-waf-powered-by-fastly-the-faq.md)
    * [Amortización de las integraciones de pagos de Core Adobe Commerce](/help/faq/general/depreciation-of-core-magento-payment-integrations.md)
    * [¿Puedo instalar aplicaciones de terceros en mi instancia de la nube?](/help/faq/general/can-i-install-third-party-applications-on-my-cloud-instance.md)
    * [Vínculo Magento.com e inicios de sesión en la cuenta de accounts.magento.cloud](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
