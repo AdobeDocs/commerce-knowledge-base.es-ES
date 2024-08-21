@@ -3,9 +3,9 @@ title: Guía del usuario de soporte técnico de Experience League para Adobe Com
 description: Obtenga información sobre cómo enviar un vale de soporte al Soporte de Experience League, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 38e67144f337c8359a5602e49d8a0ee91cd20b53
+source-git-commit: b7b272c2e1cb677829afa64e2c77c0faa207313d
 workflow-type: tm+mt
-source-wordcount: '2117'
+source-wordcount: '2116'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ Para enviar un nuevo caso de asistencia técnica mediante la página de inicio d
 
 1. Para comenzar el proceso de admisión de asistencia, asegúrese de haber seleccionado la organización adecuada en la lista desplegable (si está disponible), ya que puede tener varias organizaciones con nombres similares, cada una con sus propios derechos.
 
-   ![imagen](https://git.corp.adobe.com/storage/user/38345/files/230d6ecd-bce2-4170-b377-3989fa8be615)
+   ![select_proper_org](assets/select_appropriate_org.png)
 
 1. Haga clic en **[!UICONTROL Open Ticket]** en el menú de la izquierda o haga clic en **[!UICONTROL Get Started]** en la tarjeta *[!UICONTROL Open a support ticket]*.
 
