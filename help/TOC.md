@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: ac71666c082f59c8f40df57c31ae15a4ef595a18
+source-git-commit: 741b84c9a2a7308ab4fb5b233c99c7d06ec2729a
 workflow-type: tm+mt
-source-wordcount: '11100'
+source-wordcount: '11109'
 ht-degree: 0%
 
 ---
@@ -1119,6 +1119,7 @@ ht-degree: 0%
       * [Error de implementación: no hay comandos definidos en el error de área de nombres &quot;cache&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
       * [La implementación falla con las claves de acceso correctas en env:COMPOSER_AUTH o auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Problemas conocidos {#known-issues-patches-attached}
+      * [Directrices para proteger el almacén y girar las claves de cifrado: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
       * [Actualización de seguridad disponible para Adobe Commerce - [!DNL APSB24-61]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-61.md)
       * [Solución de problemas de rotación de clave de cifrado: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/troubleshooting-encryption-key-rotation-cve-2024-34102.md)
       * [Actualización de seguridad disponible para Adobe Commerce - [!DNL APSB24-40] Revisada para incluir revisión aislada para  [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb24-40-revised-to-include-isolated-patch-for-cve-2024-34102.md)
