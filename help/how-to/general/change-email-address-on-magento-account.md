@@ -3,16 +3,20 @@ title: Cómo cambiar la dirección de correo electrónico en la cuenta de magent
 description: Este artículo explica cómo cambiar la dirección de correo electrónico de la cuenta de [Magento.com](https://account.magento.com) cuando el campo aparece atenuado.
 exl-id: cd527203-345c-4318-8ca8-0063109b5f79
 feature: Communications
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 123027ee291b44ad4b234e561b9c3f4156af7c90
 workflow-type: tm+mt
-source-wordcount: '337'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
 
 # ¿Cómo cambiar la dirección de correo electrónico en la cuenta de magento.com cuando el campo está atenuado?
 
-Este artículo explica cómo cambiar la dirección de correo electrónico de la cuenta de [Magento.com](https://account.magento.com) cuando el campo aparece atenuado.
+En este artículo se explica cómo cambiar la dirección de correo electrónico de la cuenta de [Magento.com](https://account.magento.com) cuando el campo aparece atenuado en circunstancias como las siguientes:
+
+* Usted o el usuario original han abandonado la empresa.
+* Su empresa ha migrado a un nuevo dominio de correo electrónico.
+* Va a cambiar a una lista de distribución o a una dirección de correo electrónico global.
 
 ## Productos y versiones afectados
 
@@ -30,7 +34,7 @@ Cambiando la dirección de correo electrónico de un usuario que tiene su propia
 
 <u>Solución</u>
 
-1. Envíe un correo electrónico a Grp-magento-HelpCenterLoginIssues@adobe.com que indique lo siguiente:
+1. [Envíe una solicitud de asistencia](https://experienceleague.adobe.com/home#support) a https://experienceleague.adobe.com/home#support indicando lo siguiente:
 
    * Dirección de correo electrónico existente que actualizar
    * Nueva dirección de correo electrónico
@@ -59,3 +63,4 @@ Sin embargo, si no tienes acceso a los correos electrónicos enviados a [correo 
 ## Lectura relacionada
 
 [Restablecer contraseña olvidada](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) en la Guía del usuario del Creative Cloud.
+[Actualice el perfil de su cuenta](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html) en la Guía del usuario del Creative Cloud.
