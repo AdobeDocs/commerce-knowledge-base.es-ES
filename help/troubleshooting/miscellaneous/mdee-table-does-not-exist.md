@@ -3,7 +3,7 @@ title: No existen datos corregidos que no se actualizaron en  [!DNL Commerce Dat
 description: Este artículo proporciona una solución para solucionar los problemas de sincronización de datos causados por el uso de un id. de vista incorrecto en la suscripción  [!DNL Commerce Data Exporter mview] iOS.
 feature: Data Import/Export, Saas, Logs
 role: Developer
-source-git-commit: cf87b5f1280a2d1d23c7ace37616feb337b5142f
+source-git-commit: 3581e39e7054cf765403fd963e22a051457c1097
 workflow-type: tm+mt
 source-wordcount: '249'
 ht-degree: 0%
@@ -48,4 +48,4 @@ En el ejemplo siguiente se muestra el código que especifica las tablas rastread
 
 ## Lectura relacionada
 
-[[!DNL SaaS] Notas de la versión de la extensión de exportación de datos](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) en la Guía de exportación de datos de Adobe Commerce para [!DNL SaaS] servicios.
+[[!DNL SaaS] Notas de la versión de Data Export Extension](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes) en la Guía de exportación de datos de Adobe Commerce para [!DNL SaaS] servicios
