@@ -3,9 +3,9 @@ title: "ACSD-56979: imágenes de producto eliminadas tras la actualización de e
 description: Aplique el parche ACSD-56979 para corregir el problema de Adobe Commerce en el que las imágenes de producto se eliminan después de eliminar una actualización de ensayo
 feature: Products
 role: Admin, Developer
-source-git-commit: e97850bcaa98b1ccc1522fb6ee0046cd38bf1c93
+source-git-commit: 8e916feab8be9d92d047fae8861a479070d448e8
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ El parche ACSD-56979 corrige el problema por el que las imágenes de producto se
 
 **Compatible con Adobe Commerce y versiones de Magento Open Source:**
 
-* Adobe Commerce (todos los métodos de implementación) >=2.4.3 &lt;2.4.7
+* Adobe Commerce (todos los métodos de implementación) 2.4.3 - 2.4.6-p7
 
 >[!NOTE]
 >
