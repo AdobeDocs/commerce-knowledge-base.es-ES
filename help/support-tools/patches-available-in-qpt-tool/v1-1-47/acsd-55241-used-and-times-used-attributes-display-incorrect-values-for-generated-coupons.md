@@ -4,7 +4,7 @@ description: Aplique el parche ACSD-55241 para solucionar el problema de Adobe C
 feature: Price Rules
 role: Admin, Developer
 exl-id: cfe0f8af-423a-4e12-a332-053392cbabed
-source-git-commit: 5d0b4743fe49d22c099102490f93dc4065ab4413
+source-git-commit: f830486ab3b00fca92dda897bbf0bfbae41543c1
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -37,10 +37,10 @@ Los atributos **Usados** y **Veces usados** muestran valores incorrectos para lo
 
 1. Cree **[!UICONTROL Cart Price Rules]** a partir de **[!UICONTROL Admin]** > **[!UICONTROL Marketing]** > **[!UICONTROL Promotion]** y agregue cualquier condición que coincida al realizar un pedido (Ejemplo: subtotal mayor que *5$*)
 
-* Aplicar cualquier descuento.
-* Seleccione **[!UICONTROL Auto Coupon]**.
-* Generará algunos Códigos de cupón a partir de **Administrar Códigos de cupón**.
-* Reindexe y limpie la caché.
+   * Aplicar cualquier descuento.
+   * Seleccione **[!UICONTROL Auto Coupon]**.
+   * Generará algunos Códigos de cupón a partir de **Administrar Códigos de cupón**.
+   * Reindexe y limpie la caché.
 
 1. Cree un **[!UICONTROL customer account]** e inicie sesión en el front-end.
 1. Agregue un producto con más de *2* cantidades en el carro y aplique un cupón.
