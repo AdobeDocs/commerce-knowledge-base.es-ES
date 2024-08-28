@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 575227bda74b12a7ae4c75a7e6b45cb80aa79e19
+source-git-commit: 1c3eadc58ce70ac8f70078e4d88705386477f6ae
 workflow-type: tm+mt
-source-wordcount: '11162'
+source-wordcount: '11172'
 ht-degree: 0%
 
 ---
@@ -808,6 +808,7 @@ ht-degree: 0%
          * [ACSD-56979: imágenes de producto eliminadas después de actualizar el ensayo](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-56979-product-images-removed-after-staging-update-deleted.md)
       * v1.1.50 {#v1-1-50}
          * [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.50](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/overview.md)
+         * [ACSD-46938: Problemas de rendimiento con déclencheur de BD durante la instalación:actualizar](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
       * [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
 * Anuncios {#announcements}
    * [Resumen de anuncios](/help/announcements/overview.md)
