@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 4d6785ce0c0624f62105a5f1541344c989439c40
+source-git-commit: eb7f8bbb53cf96033c67ae077268351078fa786c
 workflow-type: tm+mt
-source-wordcount: '11180'
+source-wordcount: '11200'
 ht-degree: 0%
 
 ---
@@ -809,7 +809,9 @@ ht-degree: 0%
          * [ACSD-58054: generación de tokens de API para clientes inactivos](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
       * v1.1.50 {#v1-1-50}
          * [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.50](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/overview.md)
+         * [ACSD-59378: nivel de tienda [!DNL URL] reescribe incorrectamente actualizado durante la importación](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
          * [ACSD-46938: Problemas de rendimiento con déclencheur de BD durante la instalación:actualizar](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
+         * [ACSD-60441: La actualización de clientes a través de V1/customers [!DNL REST] extremo de API genera un error](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
       * [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
 * Anuncios {#announcements}
    * [Resumen de anuncios](/help/announcements/overview.md)
