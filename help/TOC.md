@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 951816a272836b7d6673af9d576b6b89d741de44
+source-git-commit: 159ec056ea1f57935d35ab07fc70f24e53901146
 workflow-type: tm+mt
-source-wordcount: '11225'
+source-wordcount: '11238'
 ht-degree: 0%
 
 ---
@@ -806,6 +806,7 @@ ht-degree: 0%
          * [ACSD-57643: los productos con opciones personalizadas se añaden incorrectamente](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57643-products-with-custom-options-are-incorrectly-added.md)
          * [ACSD-57588: Error en el procesamiento del ID de región al realizar envíos a varias direcciones](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57588-region-id-error-when-shipping-to-multiple-addresses.md)
          * [ACSD-56979: imágenes de producto eliminadas después de actualizar el ensayo](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-56979-product-images-removed-after-staging-update-deleted.md)
+         * [ACSD-57846: los productos de GraphQL buscan con el filtro cero precios no devuelven resultados](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57846-graphql-products-search-with-filter-for-zero-prices-not-returning-results.md)
          * [ACSD-58054: generación de tokens de API para clientes inactivos](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
       * v1.1.50 {#v1-1-50}
          * [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.50](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/overview.md)
