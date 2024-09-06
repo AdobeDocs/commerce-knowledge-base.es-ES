@@ -1,5 +1,5 @@
 ---
-source-git-commit: 1fe71f13dbfc433886db900c359b7de2c6d0e7f3
+source-git-commit: eadb0294b716cdd24bb378364bc01b61e48d0521
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 6%
@@ -9,7 +9,8 @@ ht-degree: 6%
 
 Agradecemos las contribuciones de nuestra comunidad, así como de los empleados de Adobe ajenos a los equipos de documentación.
 
-## Código de conducta de código abierto de Adobe
+
+## Adobe Abrir código de conducta de Source
 
 Este proyecto ha adoptado el [Código de conducta de código abierto de Adobe](code-of-conduct.md) o el [Código de conducta de la Fundación .NET](https://dotnetfoundation.org/code-of-conduct). Para obtener más información, consulte el artículo [Colaboración](contributing.md).
 
@@ -21,7 +22,7 @@ La forma en que contribuya depende de quién sea y del tipo de cambios con los q
 
 ### Cambios menores
 
-Si está aportando actualizaciones menores porque quiere hacerlo, visite el artículo y haga clic en **Editar** en el artículo que va al origen de GitHub del artículo. A continuación, utilice la interfaz de usuario de GitHub para realizar las actualizaciones. Consulte la información general [Guía del colaborador de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html) para obtener más información.
+Si está aportando actualizaciones menores porque quiere hacerlo, visite el artículo y haga clic en el vínculo **Editar** del artículo que va al origen de GitHub correspondiente. A continuación, utilice la interfaz de usuario de GitHub para realizar las actualizaciones. Para obtener más información, consulte la [guía para colaboradores de Adobe Docs](https://experienceleague.adobe.com/docs/contributor/contributor-guide/introduction.html).
 
 Las correcciones o aclaraciones menores que envíe para la documentación y los ejemplos de código en este repositorio están sujetos a las condiciones de uso del Adobe.
 
@@ -35,7 +36,7 @@ If you submit a pull request with significant changes to documentation and code 
 
 ### Cambios importantes de empleados de Adobe
 
-Si es redactor técnico, administrador de programa o desarrollador del equipo de producto para una solución de Adobe Experience Cloud y su trabajo consiste en colaborar en artículos técnicos o en crearlos, debe utilizar el repositorio privado que hay en `https://git.corp.adobe.com/AdobeDocs`.
+Si es redactor técnico, administrador de programa o desarrollador del equipo de producto para una solución de Adobe Experience Cloud y debe contribuir o crear artículos técnicos, debe utilizar el repositorio privado en `https://git.corp.adobe.com/AdobeDocs`.
 
 <!--Employees from other parts of the Adobe world should use the public repo for minor updates.-->
 
@@ -49,12 +50,12 @@ Consulte la [Guía del colaborador de Adobe Docs](https://experienceleague.adobe
 
 Todos los artículos de este repositorio utilizan GitHub Flavored Markdown. Si no está familiarizado con el uso de markdown, consulte:
 
-* [Fundamentos de marcado](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
+* [Conceptos básicos de Markdown](https://help.github.com/articles/getting-started-with-writing-and-formatting-on-github/)
 * [Hoja de trucos de markdown imprimible](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
 
 ## Etiquetas
 
 En el repositorio público, las etiquetas automatizadas se asignan para extraer solicitudes que nos ayudan a administrar el flujo de trabajo de las solicitudes de extracción y para saber qué sucede con ellas:
 
-* **Cambio enviado al autor**: se ha notificado al autor de la solicitud de extracción pendiente.
+* **Cambio enviado al autor**: se ha notificado al autor la solicitud de extracción pendiente.
 * **listo para combinar**: listo para que el equipo de revisión de solicitudes de extracción lo revise.
