@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para el problema de Adobe Com
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: ab39a21ca325cdad30debf89a1cff660bf5925e5
+source-git-commit: fe276c444c235b096ea6d61b02d8362314b5c154
 workflow-type: tm+mt
-source-wordcount: '682'
+source-wordcount: '713'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,10 @@ Este artículo proporciona soluciones para el problema de Adobe Commerce en el q
 ## Problema
 
 Los datos del catálogo no están sincronizados correctamente o se ha añadido un nuevo producto, pero no aparece en los resultados de búsqueda.
+
+>[!NOTE]
+>
+>Los nombres de tabla `catalog_data_exporter_products` y `catalog_data_exporter_product_attributes` ahora se llaman `cde_products_feed` y `cde_product_attributes_feed` a partir de [!DNL Live Search] versión 4.2.1. Para los comerciantes de versiones anteriores a la 4.2.1, busque los datos en los nombres de tabla antiguos, `catalog_data_exporter_products` y `catalog_data_exporter_product_attributes`.
 
 <u>Pasos a seguir</u>
 
@@ -59,20 +63,20 @@ Si los datos del producto no están sincronizados correctamente para un SKU espe
 1. Utilice la siguiente consulta SQL y compruebe que dispone de los datos esperados en la columna `feed_data`. Además, anote la marca de tiempo `modified_at`.
 
    ```sql
-   select * from catalog_data_exporter_products where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
+   select * from cde_products_feed where sku = '<your_sku>' and store_view_code = '<your_ store_view_code>';
    ```
 
 1. Si no ve los datos correctos, intente reindexar con el siguiente comando y vuelva a ejecutar la consulta SQL en el paso 1 para comprobar los datos:
 
    ```bash
-   bin/magento indexer:reindex catalog_data_exporter_products
+   bin/magento indexer:reindex cde_products_feed
    ```
 
 1. Si sigue sin ver los datos correctos, [cree un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Comprobar la marca de tiempo de la última exportación del producto
 
-1. Si ve los datos correctos en `catalog_data_exporter_products`, utilice la siguiente consulta SQL para comprobar la marca de tiempo de la última exportación. Debe ser posterior a la marca de tiempo `modified_at`:
+1. Si ve los datos correctos en `cde_products_feed`, utilice la siguiente consulta SQL para comprobar la marca de tiempo de la última exportación. Debe ser posterior a la marca de tiempo `modified_at`:
 
    ```sql
    select * from scopes_website_data_exporter;
@@ -93,20 +97,20 @@ Si los datos de atributos del producto no están sincronizados correctamente par
 1. Utilice la siguiente consulta SQL y compruebe que dispone de los datos esperados en la columna `feed_data`. Además, anote la marca de tiempo `modified_at`.
 
    ```sql
-   select * from catalog_data_exporter_product_attributes where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
+   select * from cde_product_attributes_feed where json_extract(feed_data, '$.attributeCode') = '<your_attribute_code>' and store_view_code = '<your_ store_view_code>';
    ```
 
 1. Si no ve los datos correctos, utilice el siguiente comando para reindexar y, a continuación, vuelva a ejecutar la consulta SQL en el paso 1 para comprobar los datos.
 
    ```bash
-   bin/magento indexer:reindex catalog_data_exporter_product_attributes
+   bin/magento indexer:reindex cde_product_attributes_feed
    ```
 
 1. Si sigue sin ver los datos correctos, [cree un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ### Comprobar la marca de tiempo de la última exportación de atributos del producto
 
-Si ve los datos correctos en `catalog_data_exporter_product_attributes`:
+Si ve los datos correctos en `cde_product_attributes_feed`:
 
 1. Utilice la siguiente consulta SQL para comprobar la marca de tiempo de la última exportación. Debe ser posterior a la marca de tiempo `modified_at`.
 
