@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 87b0024615d3aa02df40a6d6de56594e225d32b6
+source-git-commit: a4dfe41e3623e62e12cbefdc2889620b4015c6fd
 workflow-type: tm+mt
-source-wordcount: '11278'
+source-wordcount: '11313'
 ht-degree: 0%
 
 ---
@@ -811,6 +811,7 @@ ht-degree: 0%
          * [ACSD-58739: la reindexación parcial genera un error](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58739-partial-reindexing-throws-an-error.md)
          * [ACSD-57846: los productos de GraphQL buscan con el filtro cero precios no devuelven resultados](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57846-graphql-products-search-with-filter-for-zero-prices-not-returning-results.md)
          * [ACSD-58054: generación de tokens de API para clientes inactivos](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
+         * [ACSD-58375: La clave de API de YouTube configurada incorrectamente provoca un error al añadir vídeo en el nivel de vista de tienda](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58375-wrong-youtube-api-key-configuration-causes-an-error-when-adding-a-youtube-video-at-the-store-view-level.md)
       * v1.1.50 {#v1-1-50}
          * [Información general:  [!DNL Quality Patches Tool] (QPT) v1.1.50](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/overview.md)
          * [ACSD-59036: Se produce una excepción al cargar precios de productos](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59036-exception-occurs-when-loading-product-prices.md)
@@ -819,6 +820,8 @@ ht-degree: 0%
          * [ACSD-46938: Problemas de rendimiento con déclencheur de BD durante la instalación:actualizar](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
          * [ACSD-59229: asignación incorrecta de datos del grupo de clientes debido a un valor de X-Magento-Vary obsoleto](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          * [ACSD-60441: La actualización de clientes a través de V1/customers [!DNL REST] extremo de API genera un error](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
+         * [ACSD-59280: error ReflectionUnionType::getName() en instalaciones 2.4.4-pX](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59280-fix-for-reflection-union-type-error.md)
+         * [ACSD-60303: problema de colocación de orden de administrador resuelto con la minificación de HTML habilitada](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60303-admin-order-placement-fix.md)
       * [Comprobar parche para el problema de Adobe Commerce con la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md)
 * Anuncios {#announcements}
    * [Resumen de anuncios](/help/announcements/overview.md)
