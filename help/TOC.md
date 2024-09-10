@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 3ed9838bfb117888b3e4cfef052d39d7ada35b4b
+source-git-commit: 7bfbf1853dddc10199dcb97135535b9e8ee79293
 workflow-type: tm+mt
-source-wordcount: '11346'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -811,6 +811,7 @@ ht-degree: 0%
          * [ACSD-58739: la reindexación parcial genera un error](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58739-partial-reindexing-throws-an-error.md)
          * [ACSD-57846: los productos de GraphQL buscan con el filtro cero precios no devuelven resultados](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57846-graphql-products-search-with-filter-for-zero-prices-not-returning-results.md)
          * [ACSD-58054: generación de tokens de API para clientes inactivos](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58054-generate-tokens-for-inactive-customers-via-api.md)
+         * [ACSD-57045: las reescrituras de URL provocan bucles de página infinitos después de que [!UICONTROL Website Root] se desmarque de [!UICONTROL Hierarchy]](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-57045-url-rewrites-cause-infinite-page-looping-after-website-root-unchecked-hierarchy.md)
          * [ACSD-58446: La eliminación de un equipo con usuarios o equipos secundarios a través de GraphQL da un mensaje de error no informativo](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/ascd-58446-deleting-a-team-with-child-users-or-teams-via-graphql-gives-an-uninformative-error-message.md)
          * [ACSD-58375: La clave de API de YouTube configurada incorrectamente provoca un error al añadir vídeo en el nivel de vista de tienda](/help/support-tools/patches-available-in-qpt-tool/v1-1-49/acsd-58375-wrong-youtube-api-key-configuration-causes-an-error-when-adding-a-youtube-video-at-the-store-view-level.md)
       * v1.1.50 {#v1-1-50}
