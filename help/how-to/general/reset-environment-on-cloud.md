@@ -3,9 +3,9 @@ title: Restablecer el entorno en Adobe Commerce en la infraestructura en la nube
 description: Este artículo muestra diferentes escenarios de reversión de un entorno en Adobe Commerce en una infraestructura en la nube.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: 4439ee25e929a1bdb2216cc10fa0d4506c4f3aed
+source-git-commit: 598459365cad811966ed529356cb9ab876f49a38
 workflow-type: tm+mt
-source-wordcount: '1083'
+source-wordcount: '1093'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,9 @@ Con una implementación o actualización planificada, el [!UICONTROL Rollback] m
 
 <u>El día de los cambios</u>:
 
-1. Coloque el sitio web en [!UICONTROL Maintenance Mode].<br>
+1. Coloque el sitio web en [!UICONTROL Maintenance Mode].
 Obtenga más información sobre [Habilitar o deshabilitar [!UICONTROL Maintenance Mode]](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/maintenance-mode.html) en nuestra guía del usuario y [[!UICONTROL Maintenance Mode] opciones para la actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/troubleshooting/maintenance-mode-options.html) en nuestra guía de actualización.
+1. Deshabilitar trabajos cron. Obtenga más información sobre cómo deshabilitar los trabajos de cron en nuestra [guía de propiedades de cron](<https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property#disable-cron-jobs>).
 1. Tome un(a) [[!UICONTROL Database Dump]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/create-database-dump-on-cloud.html) local.
 
 <u>Si se requiere [!UICONTROL Rollback]</u>:
@@ -123,7 +124,7 @@ Con [!DNL git] restablecido, revertimos el código al estado deseado en el pasad
 1. Clone el entorno en el entorno de desarrollo local. Puede copiar el comando en la consola de Cloud:    ![copy_git_clone.png](assets/copy_git_clone.png)
 1. Acceda al historial de confirmaciones. Use `--reverse` para mostrar el historial en orden inverso para mayor comodidad: `git log --reverse`
 1. Seleccione el hash de compromiso en el que ha sido bueno. Para restablecer el código a su estado auténtico (Vainilla), busque la primera confirmación que creó su rama (entorno).
-   ![Seleccionar un hash de confirmación en la consola de Git](assets/select_commit_hash.png)
+   ![texto alternativo](image.png)
 1. Aplicar restablecimiento [!DNL git] duro: `git reset --h <commit_hash>`
 1. Insertar cambios en el servidor: `git push --force <origin> <branch>`
 
