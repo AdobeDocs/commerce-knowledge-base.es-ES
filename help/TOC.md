@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: ed15e986088286c075953049dbadf329edccca51
+source-git-commit: 65af60f53789fdaac7aa2d1ea3ebddd82f2126d5
 workflow-type: tm+mt
-source-wordcount: '11408'
+source-wordcount: '11420'
 ht-degree: 0%
 
 ---
@@ -820,6 +820,7 @@ ht-degree: 0%
          * [ACSD-45049: la configuración de atributos del cliente [!UICONTROL Is required] no funciona según el ámbito del sitio web en el administrador](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-45049-customer-attribute-is-required-setting-doesnt-work.md)
          * [ACSD-59378: nivel de tienda [!DNL URL] reescribe incorrectamente actualizado durante la importación](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59378-store-level-url-rewrites-incorrectly-updated-during-import.md)
          * [ACSD-46938: Problemas de rendimiento con déclencheur de BD durante la instalación:actualizar](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-46938-fix-for-db-triggers-performance-issue-during-setup-upgrade.md)
+         * [ACSD-54887: el carro de compras del cliente se borra después de que la sesión del cliente haya caducado](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-54887-customer-shopping-cart-gets-cleared-after-session-expiry.md)
          * [ACSD-58141: PHPSESSID se regenera en solicitudes de POST para clientes que han iniciado sesión si la caché de L2 Redis está habilitada](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-58141-phpsessid-regenerates-on-post-requests-for-logged-in-customers-with-l2-redis-cache-enabled.md)
          * [ACSD-59229: asignación incorrecta de datos del grupo de clientes debido a un valor de X-Magento-Vary obsoleto](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-59229-customer-group-segmentation-fix.md)
          * [ACSD-60441: La actualización de clientes a través de V1/customers [!DNL REST] extremo de API genera un error](/help/support-tools/patches-available-in-qpt-tool/v1-1-50/acsd-60441-updating-customers-via-v1-customers-rest-api.md)
