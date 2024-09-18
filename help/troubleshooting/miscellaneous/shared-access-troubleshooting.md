@@ -4,9 +4,9 @@ description: "**Problema:** Desea proporcionar acceso compartido a su compañero
 exl-id: 9e03c031-2359-42a6-9de4-943451a16456
 feature: Cache
 role: Developer
-source-git-commit: e77322c04c7245538c10dfb397094eee6cfe6be9
+source-git-commit: ff863a9c8ebf3759c7ecf0549f79cc3a5efe4b46
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ ht-degree: 0%
 1. Haga clic en la cuenta **[!UICONTROL Shared Access]** con la que tiene problemas y examine los recursos a los que se le ha concedido acceso.
 1. Si falta el recurso específico, póngase en contacto con el propietario de la cuenta (titular de la cuenta principal).
 
-Si sigue teniendo problemas, póngase en contacto con el equipo de cuenta de Adobe o envíe un correo electrónico a grp-Magento-HelpCenterLoginIssues@adobe.com. Especifique su nombre y el correo electrónico asociado a su cuenta.
+Si sigue teniendo problemas, póngase en contacto con el equipo de cuenta de Adobe. Especifique su nombre y el correo electrónico asociado a su cuenta.
 
 ## Usé el acceso compartido y hice clic en [!UICONTROL Support], pero cuando abrí un nuevo ticket, no se muestra la lista desplegable [!UICONTROL Organization]
 
@@ -51,7 +51,7 @@ Si sigue teniendo problemas, póngase en contacto con el equipo de cuenta de Ado
 1. Cambie a **[!UICONTROL My Account]**.
 1. Si solo lista un(a) **[!UICONTROL Shared Name]**, esa será la *organización predeterminada* en la que se abrirán sus tickets.
 
-Si sigue teniendo problemas, póngase en contacto con el equipo de su cuenta de Adobe o envíe un correo electrónico a grp-Magento-HelpCenterLoginIssues@adobe.com. Especifique su nombre y el correo electrónico asociado a su cuenta.
+Si sigue teniendo problemas, póngase en contacto con el equipo de cuenta de Adobe. Especifique su nombre y el correo electrónico asociado a su cuenta.
 
 ## He utilizado el acceso compartido, pero sigo viendo mis tickets en lugar de los compartidos
 

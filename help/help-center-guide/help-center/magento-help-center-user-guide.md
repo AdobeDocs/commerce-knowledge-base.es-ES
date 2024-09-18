@@ -3,9 +3,9 @@ title: Guía del usuario de soporte técnico de Experience League para Adobe Com
 description: Obtenga información sobre cómo enviar un vale de soporte al Soporte de Experience League, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 7c6cc2fc3cd76fc4c156d7cdb15bfbc3a24f39cb
+source-git-commit: ab51577ea212470e9fa5a93dce3748de9c5c00a6
 workflow-type: tm+mt
-source-wordcount: '2500'
+source-wordcount: '2560'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ En esta guía, aprenderá a enviar un ticket de asistencia a [Soporte técnico p
 >[!NOTE]
 >
 >La asistencia de Adobe Commerce ha migrado del Centro de ayuda de Adobe Commerce al Experience League. Utilice el flujo de formulario de caso de Experience League descrito [aquí](#what-is-experience-support) para enviar casos de soporte.
+
+>[!NOTE]
+>
+>En este momento, para ver los casos que ha enviado anteriormente en el Centro de ayuda de Adobe Commerce, debe ir a https://support.magento.com/hc/en-us/requests, ya que estos casos no se han migrado al nuevo sistema de tickets de asistencia. El Centro de ayuda es ahora de solo lectura; para seguir recibiendo soporte técnico para el problema original, tendrá que enviar un ticket de seguimiento a [Soporte técnico para Experience League](https://experienceleague.adobe.com/home#support).
 
 >[!NOTE]
 >
