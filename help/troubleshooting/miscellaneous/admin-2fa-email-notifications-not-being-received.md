@@ -4,9 +4,9 @@ description: Este artículo proporciona información sobre la resolución de pro
 exl-id: 7ab6b2b4-6aca-4323-a45b-2b4e52955160
 feature: Admin Workspace, Communications
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 435a545adcf2a1d6b023abaec55c4b73e942ee1a
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,12 @@ Si no ha configurado correctamente el correo electrónico del remitente o si el 
    ```
 
    * Si no devuelve ningún resultado, significa que la dirección del remitente no se ha configurado.
+Dado que no tiene acceso al administrador, deberá insertar la configuración en la base de datos. Conecte la dirección de correo electrónico adecuada y ejecute la instrucción MySQL:
+
+   ```
+   insert into core_config_data (scope,scope_id,path,value) values ('default',0,'trans_email/ident_general/email', your-email@here.com)
+   ```
+
    * Si devuelve un resultado, continúe con **Paso 2**.
 
 1. Si el correo electrónico ha aparecido en su carpeta de correo no deseado, haga clic en el vínculo del mensaje. Si el vínculo ha caducado, intente iniciar sesión de nuevo para repetir el proceso.
