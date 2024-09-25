@@ -3,9 +3,10 @@ title: Retirada del Centro de ayuda de Adobe Commerce
 description: Todo lo que necesita saber sobre la retirada del sitio del Centro de ayuda de Adobe Commerce.
 feature: Support
 role: Admin
-source-git-commit: 243319f2e9cad48b6259698928e3c97239400fc0
+exl-id: 1dd74f62-9a05-4bd6-aefb-3c9083122d9e
+source-git-commit: 631bd27880bfebd63d2897915ea981587a770466
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '262'
 ht-degree: 0%
 
 ---
@@ -17,13 +18,19 @@ El 29 de julio de 2024, el Centro de ayuda de Adobe Commerce pasó a estar en es
 
 >[!NOTE]
 >
->La asistencia de Adobe Commerce ha migrado del Centro de ayuda de Adobe Commerce a Adobe Experience League.<br>**Use el flujo de formulario de caso de Experience League descrito [aquí](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) para enviar casos de soporte técnico.**
+>**Use el flujo de formulario de caso de Experience League descrito [aquí](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) para enviar casos de soporte técnico.**
+
+## Visualización de casos históricos en el Centro de ayuda de Adobe Commerce
+
+El Adobe ha ampliado el periodo de visibilidad de los casos históricos en el Centro de ayuda de Adobe Commerce al 1 de mayo de 2025.
+
+**A partir del 1 de mayo de 2025, el Centro de ayuda de Adobe Commerce dejará de ser accesible y los usuarios no podrán ver los casos de soporte técnico históricos creados dentro del sistema.**
 
 ## ¿Cuándo se retirará del mercado el sitio del Centro de ayuda de Adobe Commerce?
 
-**El 3 de septiembre de 2024, el Centro de ayuda de Adobe Commerce dejará de ser accesible** y ya no podrá ver los casos de soporte histórico creados en ese sistema.
-**<u>Guarde los casos de soporte técnico o la información que desee conservar guardándolos en el PDF de en el explorador antes del 3 de septiembre de 2024.</u>**
-Si desea revisar los casos de asistencia históricos creados en el Centro de ayuda de Adobe Commerce después del 3 de septiembre de 2024, deberá abrir un caso de asistencia en Adobe Experience League y solicitar esa información al equipo de asistencia.
+**<u>Guarde los casos de soporte técnico o la información que desee conservar guardándolos en el PDF del explorador antes del 1 de mayo de 2025.</u>**
+
+Si desea revisar los casos de asistencia históricos creados en el Centro de ayuda de Adobe Commerce después del 1 de mayo de 2025, deberá abrir un caso de asistencia en Adobe Experience League y solicitar esa información al equipo de asistencia.
 
 >[!NOTE]
 >
