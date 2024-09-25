@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo solucionar los distintos problemas
 exl-id: 35e18a11-bda9-47eb-924a-1095f4f01017
 feature: Compliance, Security
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 525352027bfa4a8728bdbbfe61af3dca5dbb18f9
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Obtenga información sobre cómo solucionar los distintos problemas con la herra
 
 La herramienta de análisis de seguridad requiere que pruebe que es el propietario del sitio antes de que se pueda agregar el dominio a la herramienta de análisis de seguridad. Para ello, agregue un código de confirmación al sitio mediante un comentario del HTML o la etiqueta `<meta>`. El comentario del HTML debe colocarse dentro de la etiqueta `<body>`, p. ej., en la sección de pie de página. La etiqueta `<meta>` debe colocarse dentro de la sección `<head>` de la página.
 
-Un problema habitual que afrontan los comerciantes se produce cuando Security Scan Tool no puede confirmar la propiedad del sitio del comerciante.
+Un problema habitual que enfrentan los comerciantes se produce cuando Security Scan Tool no puede confirmar la propiedad del sitio del comerciante.
 
 Si recibe un error y no puede enviar su sitio para el análisis, consulte el [mensaje de error al agregar sitios al análisis de seguridad](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md) artículo de solución de problemas en nuestra base de conocimiento de asistencia.
 
@@ -76,7 +76,7 @@ Recibirá una notificación con respecto al error &quot;Sospechoso de BotNet&quo
 
 1. Compruebe las cuentas SSH recién creadas, los cambios en el sistema de archivos, etc.
 1. Realice una revisión de seguridad.
-1. Compruebe la versión y actualización de Adobe Commerce, especialmente si aún se está ejecutando el Magento 1, que ya no es compatible.
+1. Compruebe la versión y actualización de Adobe Commerce, especialmente si sigue ejecutando el Magento 1, que ya no es compatible.
 1. Si el problema continúa, [envíe un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) y proporcione la dirección URL de la tienda.
 
 ## Problema: Error de inyección de compromiso
@@ -100,8 +100,12 @@ No. El análisis de seguridad realiza todas las solicitudes una por una como un 
 
 ### ¿Durante cuánto tiempo mantiene Adobe Commerce los informes de análisis de seguridad?
 
-Puede generar los 10 informes anteriores desde su extremo. Si se requieren informes más antiguos, póngase en contacto con el soporte de Adobe Commerce. Se pueden obtener hasta un año de informes anteriores de análisis de seguridad.
+Puede generar los 10 informes anteriores desde su extremo. Si se requieren informes más antiguos, póngase en contacto con el soporte de Adobe Commerce.
 
 ### ¿Qué información se necesita al enviar un ticket de asistencia?
 
 Asegúrese de proporcionar el nombre de dominio.
+
+### ¿Qué sucede si elimino mi almacén del análisis de la herramienta de exploración?
+
+Si elimina el envío del almacén, se eliminarán todos los datos relacionados, incluidos los informes de análisis. Esta operación no se puede deshacer. El envío del dominio de tienda después de su eliminación crea un NUEVO envío.
