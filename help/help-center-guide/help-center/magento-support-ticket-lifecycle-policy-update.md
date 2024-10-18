@@ -2,76 +2,52 @@
 title: Actualización de directiva de ciclo vital de ticket de soporte de Adobe Commerce
 description: Este artículo proporciona información sobre la actualización de la directiva de ciclo vital del vale de soporte de Adobe Commerce.
 exl-id: c3fbcb4a-107f-48b3-afed-b9a0c5d0425c
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+source-git-commit: 5d291a221509c35c8bc34fd0957534c24342c59c
 workflow-type: tm+mt
-source-wordcount: '349'
-ht-degree: 1%
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
 # Actualización de directiva de ciclo vital de ticket de soporte de Adobe Commerce
 
-Este artículo proporciona información sobre la actualización de la directiva de ciclo vital del vale de soporte de Adobe Commerce.
+Esta documentación describe las mejoras realizadas en el ciclo de vida del caso de Soporte DX de Adobe con la intención de aumentar la comunicación y proporcionar resoluciones a los clientes lo antes posible para ayudar a garantizar el éxito del cliente. Esto también se puede encontrar en [Información general sobre planes de éxito de Adobe: ciclo de vida del caso de soporte](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon).
+A continuación se muestran los plazos y las notificaciones de varios escenarios encontrados durante el proceso de asistencia:
 
-La siguiente tabla ilustra los escenarios actualizados. Puede encontrar detalles para cada escenario en la sección siguiente.
+## Recordatorios de seguimiento de caso
 
-<table>
- <tbody>
- <tr>
- <td class="wysiwyg-text-align-center"> </td>
- <td class="wysiwyg-text-align-center"><strong>Estado del ticket</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Días para "Resolver"</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Días para "Cerrado"</strong></td>
- <td class="wysiwyg-text-align-center"><strong>Tiempo de notificación</strong></td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>El ingeniero proporciona la solución</strong></td>
- <td class="wysiwyg-text-align-center">"Esperando su respuesta"</td>
- <td class="wysiwyg-text-align-center">3</td>
- <td class="wysiwyg-text-align-center">6</td>
- <td class="wysiwyg-text-align-center">Días 3 y 6</td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>Esperando información del cliente</strong></td>
- <td class="wysiwyg-text-align-center">"Esperando su respuesta"</td>
- <td class="wysiwyg-text-align-center">N/D</td>
- <td class="wysiwyg-text-align-center">6</td>
- <td class="wysiwyg-text-align-center">Días 1, 3 y 6</td>
- </tr>
- <tr>
- <td class="wysiwyg-text-align-left"><strong>El cliente establece en "Resuelto" o solicita al ingeniero que establezca en "Resuelto"</strong></td>
- <td class="wysiwyg-text-align-center">"Resuelto"</td>
- <td class="wysiwyg-text-align-center">Inmediato</td>
- <td class="wysiwyg-text-align-center">1</td>
- <td class="wysiwyg-text-align-center">Día 1</td>
- </tr>
- </tbody>
- </table>
+| Notificación | Estado del caso | Intervalo de notificación | Días para el estado de cierre del caso |
+|--- |--- |--- |--- |
+| **1st** | Respuesta Pendiente O Resolución Proporcionada | 24 horas / 1 día | 5 días |
+| **2º** | Respuesta Pendiente O Resolución Proporcionada | 72 horas / 3 días | 3 días |
+| **3º** | Respuesta Pendiente O Resolución Proporcionada | 120 horas / 5 días | 1 día |
+| **4º** | La respuesta pendiente o la resolución proporcionada han cambiado a &quot;Cerrado automáticamente&quot; | 144 horas / 6 días | cerrado |
 
 ## Escenarios en detalle
 
-### Cuando un ingeniero proporciona una solución
-
-1. Una vez que se proporciona una solución a un cliente, el ingeniero establece el estado del ticket en &quot;Esperando su respuesta&quot;.
-1. Si no hay respuesta del cliente durante 3 días después de cambiar el estado a &quot;Esperando su respuesta&quot;, el ticket se mueve a &quot;Resuelto&quot; y se notifica al cliente.
-1. Si no hay respuesta del cliente durante 6 días después de cambiar el estado a &quot;Esperando su respuesta&quot;, el ticket se cierra y se notifica al cliente.
-
 ### Cuando se requiera información adicional de un cliente
 
-1. Si se requiere una actualización del cliente, el ingeniero establece el ticket en &quot;Esperando su respuesta&quot;.
-1. Las notificaciones se envían al cliente el día 1 y 3 solicitando el seguimiento del cliente.
-1. Si no hay respuesta del cliente durante 6 días después de cambiar el estado a &quot;Esperando su respuesta&quot;, el ticket se cierra y se notifica al cliente.
+En esta situación, cuando se necesita información adicional de un cliente, se realizan los siguientes pasos:
 
-### Ticket establecido como &quot;Resuelto&quot; por un cliente
+* El ingeniero envía una actualización solicitando información y el estado del caso se establece en &quot;Pendiente de respuesta&quot;.
+* Los días 1, 3 y 5 después de que el estado se defina en &quot;Respuesta pendiente&quot;, se envían notificaciones de seguimiento al cliente solicitando la información adicional.
+* Si no hay respuesta del cliente durante 6 días después de que el estado se haya establecido en &quot;Respuesta pendiente&quot;, el caso se establece en cerrado y se envía una notificación de cierre.
 
-Cuando un cliente establece un ticket como &quot;Resuelto&quot;, se cierra en un día y se notifica al cliente.
+Los clientes pueden reabrir un caso cerrado en un plazo de 14 días para continuar la comunicación. Más allá de 14 días, se puede abrir un nuevo caso de soporte para continuar la comunicación relacionada con un caso cerrado anteriormente.
 
-### El cliente ordena al servicio de asistencia que cierre el ticket
+### Cuando un ingeniero proporciona una solución
 
-Cuando un cliente indica al Soporte de Adobe Commerce que cierre el ticket, se cierra en un día y se notifica al cliente.
+En esta situación, cuando un ingeniero ofrece una solución, se siguen los siguientes pasos:
+
+* El ingeniero envía una actualización con una solución propuesta y el estado del caso se establece en &quot;Resolución proporcionada&quot;.
+* Los días 1, 3 y 5 después de que el estado se establezca en &quot;Resolución proporcionada&quot;, se envían notificaciones de seguimiento al cliente solicitando confirmación de la solución proporcionada.
+* Si no hay respuesta del cliente durante 6 días después de que el estado se haya establecido en &quot;Resolución proporcionada&quot;, el caso se establece en cerrado y se envía una notificación de cierre.
+
+Los clientes pueden reabrir un caso cerrado en un plazo de 14 días para continuar la comunicación. Más allá de 14 días, se puede abrir un nuevo caso de soporte para continuar la comunicación relacionada con un caso cerrado anteriormente.
 
 ## Lectura relacionada
 
-* [Enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket)
-* [El vínculo &quot;Enviar un ticket&quot; no se muestra en la página de inicio del Centro de ayuda de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#no-submit-link)
-* [Formulario de envío de tickets: el comerciante no se muestra en la lista desplegable Organización](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed)
+* [Enviar un ticket de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
+* [ El vínculo &quot;Enviar un ticket&quot; no se muestra en la página de inicio del Centro de ayuda de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
+* [Formulario de envío de tickets: el comerciante no se muestra en la lista desplegable Organización](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
+* [Resumen de planes de éxito de Adobe: ciclo de vida del caso de soporte](https://experienceleague.adobe.com/en/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)
