@@ -4,7 +4,7 @@ description: Los problemas de informes avanzados en Adobe Commerce se pueden res
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: dfe9b9cf4751e28bd151fce36df168e48fb914ed
+source-git-commit: ae6dde9ecc01a0e1c561d1e91dbd2f7bc3504fe0
 workflow-type: tm+mt
 source-wordcount: '995'
 ht-degree: 0%
@@ -94,7 +94,7 @@ b. NO: si la consulta no devuelve nada, realice los siguientes pasos: 1. [Deshab
 
 Compruebe que se ejecutó el trabajo `analytics_collect_data` al ejecutar esta consulta: `SELECT * FROM cron_schedule WHERE job_code LIKE 'analytics_collect_data' \G`
 
-a. SÍ: si hay registros y la columna **status** indica _falta_, use el parche en este artículo de KB [Actualizar informes avanzados para que se ejecute en su propio grupo cron](/help/troubleshooting/known-issues-patches-attached/update-advanced-reporting-to-run-on-its-own-cron-group.md).\
+a. SÍ: si hay registros y la columna **status** indica _falta_, use el parche en este artículo de KB Actualizar informes avanzados para ejecutarse en su propio grupo cron.\
 b. SÍ: si hay registros y la columna **status** indica _success_, continúe con el [paso 9](#step-9).\
 c. SÍ: si hay registros y la columna **status** indica _error_, continúe con el [Paso 8.](#step-8)\
 d. NO: si no hay registros, continúe con [Paso 8](#step-8).
@@ -138,9 +138,9 @@ b. NO - Continúe con [Paso 10](#step-10).
 
 +++**¿Hay un mensaje de error generado por el trabajo cron?**
 
-Ejemplo: en la tabla `core_config_data` se ve el error *El archivo &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0&quot; no se puede eliminar*. Advertencia!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=en): No existe ese archivo o directorio*
+Ejemplo: en la tabla `core_config_data` se ve el error *El archivo &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 no se puede eliminar*. Advertencia!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=en): No existe ese archivo o directorio*
 
-a. SÍ - Usar el parche ACSD-50165 en [El archivo no se puede eliminar. Advertencia: no existe el error de archivo o directorio del administrador ](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md). Espere 24 horas a que el trabajo se ejecute de nuevo y vuelva a intentarlo.\
+a. SÍ - Usar el parche ACSD-50165 en [No se puede eliminar el archivo. Advertencia: no existe el error de archivo o directorio del administrador ](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md). Espere 24 horas a que el trabajo se ejecute de nuevo y vuelva a intentarlo.\
 b. NO - Continúe con [Paso 11](#step-11).
 
 +++
@@ -151,7 +151,7 @@ b. NO - Continúe con [Paso 11](#step-11).
 
 Ejemplo: `report.ERROR: Cron Job analytics_collect_data has an error: substr_count() expects parameter 1 to be string, null given. Statistics: {"sum":0,"count":1,"realmem":0,"emalloc":0,"realmem_start":224919552,"emalloc_start":216398384} [] []`
 
-a. SÍ: usa el parche MDVA-19391 en [errores comunes de trabajos cron de informes avanzados en Adobe Commerce](/help/troubleshooting/known-issues-patches-attached/advanced-reporting-cron-job-errors-magento-commerce.md), espera 24 horas para que el trabajo se ejecute de nuevo e inténtalo de nuevo.\
+a. SÍ: utilice el parche MDVA-19391 en errores comunes de trabajos cron de informes avanzados en Adobe Commerce, espere 24 horas para que el trabajo se ejecute de nuevo e inténtelo de nuevo.\
 b. NO - [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
