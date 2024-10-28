@@ -4,9 +4,9 @@ description: Este artículo contiene recomendaciones sobre cómo evitar un probl
 exl-id: 1488e2db-4a5d-4963-b48e-b84f760582d1
 feature: Products, Storefront
 role: Admin
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: d51fd4d7b064b8eea6cd3771af279b74a8bdec48
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '339'
 ht-degree: 0%
 
 ---
@@ -45,9 +45,6 @@ Puede ver la corrección en GitHub (tenga en cuenta que la corrección no se som
 <li><a href="/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md">Problema conocido del recuento de productos de acción masiva en Adobe Commerce 2.3.5</a></li>
 <li>
 <p title="Problema con el método de pago por país en Adobe Commerce en la infraestructura en la nube y Adobe Commerce local 2.3.5 y 2.3.5-p1"><a href="/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md">Problema con el método de pago por país en Adobe Commerce en la infraestructura en la nube y Adobe Commerce local 2.3.5 y 2.3.5-p1</a></p>
-</li>
-<li>
-<p title="Adobe Commerce solicita a los clientes que inicien sesión, pero proporciona un vínculo no válido"><a href="/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md">Adobe Commerce solicita a los clientes que inicien sesión, pero proporciona un vínculo no válido</a></p>
 </li>
 <li>
 <p title="Parche para el problema de cierre de compra de Amazon Pay en Adobe Commerce 2.3.5-p1"><a href="/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md">Parche para el problema de cierre de compra de Amazon Pay en Adobe Commerce 2.3.5-p1</a></p>

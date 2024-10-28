@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución para el problema conocido 
 exl-id: a0cca226-4d95-40b3-bd37-f13d28591366
 feature: Checkout, Orders, Storefront
 role: Admin
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: d51fd4d7b064b8eea6cd3771af279b74a8bdec48
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '302'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,6 @@ Artículos sobre problemas conocidos de Adobe Commerce 2.3.5 en nuestra base de 
 
 * [Problema con el método de pago por país en Adobe Commerce en la infraestructura en la nube y Adobe Commerce local 2.3.5 y 2.3.5-p1](/help/troubleshooting/known-issues-patches-attached/magento-2-3-5-2-3-5-p1-patch-country-payment-issue.md)
 
-* [Adobe Commerce solicita a los clientes que inicien sesión, pero proporciona un vínculo no válido](/help/troubleshooting/known-issues-patches-attached/magento-prompts-customers-log-in-invalid-link.md)
 
 * [Problema conocido del recuento de productos de acción masiva en Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
 
