@@ -3,9 +3,9 @@ title: Guía del usuario de soporte técnico de Experience League para Adobe Com
 description: Obtenga información sobre cómo enviar un vale de soporte al Soporte de Experience League, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 8ee52f47d9e230ecd633ead3429d864f9df7c33e
+source-git-commit: 529bfc97ab05b839fca6d76f2d2f2f3dc040c9b9
 workflow-type: tm+mt
-source-wordcount: '2583'
+source-wordcount: '2649'
 ht-degree: 0%
 
 ---
@@ -90,8 +90,9 @@ Para enviar un nuevo caso de asistencia técnica mediante la página de inicio d
 
 >[!INFO]
 >
->1. Para enviar un caso, debe tener derecho a recibir asistencia para el producto correspondiente (por ejemplo, Adobe Commerce, Adobe Commerce Intelligence, Experience Platform, etc.). Si no tiene derecho a asistencia, aparecerá una barra en la parte superior de la página que le informará de que no es un usuario con derecho a asistencia en la organización.
+>1. Para enviar un caso, debe tener derecho a recibir asistencia para el producto correspondiente (por ejemplo, Adobe Commerce, informes de Adobe Commerce, servicios de pago de Adobe Commerce, Experience Platform, etc.). Si no tiene derecho a asistencia, aparecerá una barra en la parte superior de la página que le informará de que no es un usuario con derecho a asistencia en la organización. Para enviar un caso por problemas relacionados con Commerce, primero debe seleccionar el nombre de organización apropiado que termine en *[!DNL Commerce]*.
 >1. Si pertenece a varias organizaciones o existen varias con nombres de aspecto similar (cada una representará a cualquiera de los demás productos de Adobe a los que la organización está suscrita), primero debe seleccionar la organización adecuada en el menú desplegable.
+>1. Si no ve Adobe Commerce en el menú desplegable [!UICONTROL Select a product], primero debe obtener [Acceso compartido](#shared-access) del propietario de la cuenta de Commerce. Una vez que se le haya dado acceso compartido, tendrá que [sincronizar su cuenta](#switch-accounts) para finalizar el proceso antes de poder enviar un caso.
 
 >[!NOTE]
 >
