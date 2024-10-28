@@ -3,9 +3,9 @@ title: Guía del usuario de soporte técnico de Experience League para Adobe Com
 description: Obtenga información sobre cómo enviar un vale de soporte al Soporte de Experience League, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: d8f832869916c04cacc0cefeeb9b45bd3c1f3b80
+source-git-commit: 8ee52f47d9e230ecd633ead3429d864f9df7c33e
 workflow-type: tm+mt
-source-wordcount: '2625'
+source-wordcount: '2583'
 ht-degree: 0%
 
 ---
@@ -84,9 +84,6 @@ Para iniciar sesión en Soporte de Adobe Experience League, siga estos pasos:
 
 Una vez que haya iniciado sesión correctamente como propietario de la cuenta o usuario de acceso compartido, puede enviar un caso de asistencia técnica mediante la página de inicio de Adobe Experience League, la página de la cuenta de Adobe Commerce y la página de la cuenta de Adobe Commerce Cloud.
 
-* Si es el propietario de la cuenta o un usuario que regresa con acceso compartido, siga los pasos a continuación.
-* Si usted es un usuario de acceso compartido y el propietario de la cuenta acaba de [proporcionarle acceso compartido](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#provide-shared-access), primero debe cambiar de cuenta antes de continuar con los pasos a continuación. Consulte [Acceder a la cuenta compartida (cuentas de cambio)](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#switch-accounts) para obtener más información.
-
 #### Página de inicio de Adobe Experience League {#experience-league-start-page}
 
 Para enviar un nuevo caso de asistencia técnica mediante la página de inicio de Adobe Experience League, siga estos pasos:
@@ -106,7 +103,7 @@ Para enviar un nuevo caso de asistencia técnica mediante la página de inicio d
 
    ![página de soporte técnico abierta](assets/click_support.png)
 
-1. Para comenzar el proceso de admisión de asistencia, asegúrese de haber seleccionado la organización adecuada en la lista desplegable Organización (si está visible).
+1. Para comenzar el proceso de admisión de asistencia, asegúrese de haber seleccionado la organización adecuada en la lista desplegable Organización (si está visible). Para enviar un caso para Adobe Commerce, seleccione el nombre de la organización que termina en *[!DNL Commerce]*.
 
    ![select_proper_org](assets/select_appropriate_org.png)
 
