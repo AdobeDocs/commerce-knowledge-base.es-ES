@@ -1,19 +1,19 @@
 ---
 title: Actualización de seguridad disponible para Adobe Commerce - [!DNL APSB24-73]
 promoted: true
-description: Aplique un parche aislado para corregir  [!DNL critical, important, and moderate vulnerabilities] para Adobe Commerce 2.4.7-p3, 2.4.6-p8, 2.4.5-p10, 2.4.4-p11 y las instancias de versiones anteriores que solo ejecuten [!DNL B2B] módulo.
+description: Aplique un parche aislado para corregir  [!DNL critical, important, and moderate vulnerabilities] para Adobe Commerce 2.4.7-p2, 2.4.6-p7, 2.4.5-p9, 2.4.4-p10 y las instancias de versiones anteriores que solo ejecuten [!DNL B2B] module.
 feature: Compliance, Security
 role: Developer
-source-git-commit: 181316dc0bd42feae0a857ff52edd80dbfd492ad
+source-git-commit: 694cb7519733e950b55006866e585097bc2429f4
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '362'
 ht-degree: 0%
 
 ---
 
 # Actualización de seguridad disponible para Adobe Commerce - [!DNL APSB24-73]
 
-El 8 de octubre de 2024, el Adobe publicó una actualización de seguridad programada regularmente para Adobe Commerce, Magento Open Source y [!DNL Adobe Commerce Webhooks Plugin].
+El 8 de octubre de 2024, Adobe publicó una actualización de seguridad programada regularmente para Adobe Commerce y [!DNL Adobe Commerce Webhooks Plugin].
 Esta actualización resuelve [[!DNL critical, important] y  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) vulnerabilidades. Una explotación exitosa podría llevar a la ejecución de código arbitrario, a la lectura arbitraria del sistema de archivos, a la omisión de características de seguridad y a la escalación de privilegios. El boletín es [Boletín de seguridad del Adobe ([!DNL APSB24-73])](https://helpx.adobe.com/security/products/magento/apsb24-73.html).
 
 >[!NOTE]
@@ -28,14 +28,22 @@ Esta actualización resuelve [[!DNL critical, important] y  [!DNL moderate]](htt
 
 ## Productos y versiones afectados
 
-Adobe Commerce en la nube, Adobe Commerce local y Magento Open Source:
+Adobe Commerce en la nube y Adobe Commerce local:
 
-* 2.4.7-p3 y anteriores
-* 2.4.6-p8 y anteriores
-* 2.4.5-p10 y anteriores
-* 2.4.4-p11 y anteriores
+* 2.4.7-p2 y anteriores
+* 2.4.6-p7 y anteriores
+* 2.4.5-p9 y anteriores
+* 2.4.4-p10 y anteriores
 
-## Solución para Adobe Commerce en la nube, software local de Adobe Commerce y Magento Open Source
+B2B:
+
+* 1.4.2-p2 y anteriores
+* 1.3.5-p7 y anteriores
+* 1.3.4-p9 y anteriores
+* 1.3.3-p10 y anteriores
+
+
+## Solución para el software local de Adobe Commerce en la nube y Adobe Commerce
 
 Para ayudar a resolver la vulnerabilidad de los productos y las versiones afectados, debe aplicar el parche aislado [!DNL CVE-2024-45115].
 
@@ -43,7 +51,7 @@ Para ayudar a resolver la vulnerabilidad de los productos y las versiones afecta
 
 Utilice el siguiente parche aislado adjunto:
 
-[vuln-25610-composer-patch.zip](assets/vuln-25610-composer-patch.zip)
+[vuln-26510-composer-patch.zip](assets/vuln-26510-composer-patch.zip)
 
 ## Cómo aplicar el parche aislado
 
