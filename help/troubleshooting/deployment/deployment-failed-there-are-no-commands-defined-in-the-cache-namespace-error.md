@@ -1,17 +1,18 @@
 ---
-title: "'Error de implementación al vaciar la caché: no hay comandos definidos en el error de área de nombres 'cache'"
+title: "Error de implementación al vaciar la caché: error 'No hay comandos definidos en el área de nombres 'cache''"
 description: Este artículo proporciona una solución para el problema cuando la implementación falla con el siguiente error **No hay comandos definidos en el área de nombres de caché**.
 feature: Deploy
 role: Developer
 exl-id: ee2bddba-36f7-4aae-87a1-5dbeb80e654e
-source-git-commit: e13be3ef9daa17b9463c8251933f68f6a35fedd2
+source-git-commit: 7efa7b5363c7f77d76c02051c7e0e6a0f38ca87d
 workflow-type: tm+mt
 source-wordcount: '415'
 ht-degree: 0%
 
 ---
 
-# Error de implementación al vaciar la caché: &quot;No hay comandos definidos en el error de área de nombres &#39;cache&#39;&quot;
+
+# Error de implementación al vaciar la caché: Error &quot;No hay comandos definidos en el área de nombres &quot;caché&quot;&quot;
 
 >[!WARNING]
 >
@@ -30,11 +31,11 @@ Este artículo proporciona una solución para el problema cuando la implementaci
 
 Adobe Commerce en la infraestructura en la nube 2.4.x
 
-## Problema  
+## Problema
 
 <u>Pasos a seguir</u>:
 
-Intento de implementación. 
+Intento de implementación.
 
 <u>Resultados esperados</u>:
 
@@ -66,16 +67,16 @@ Para resolver este problema, identifique las filas no válidas que quedan en esa
    The store that was requested wasn't found. Verify the store and try again.
    ```
 
-1. Ejecute esta consulta MySql para comprobar que no se encuentra el almacén, lo que se indica mediante el mensaje de error del paso 2. 
+1. Ejecute esta consulta MySql para comprobar que no se encuentra el almacén, lo que se indica mediante el mensaje de error del paso 2.
 
    ```sql
    select distinct scope_id from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
-1. Ejecute la siguiente instrucción MySql para eliminar las filas no válidas: 
+1. Ejecute la siguiente instrucción MySql para eliminar las filas no válidas:
 
    ```sql
-   delete from core_config_data where scope='stores' and scope_id not in (select store_id from store); 
+   delete from core_config_data where scope='stores' and scope_id not in (select store_id from store);
    ```
 
 1. Vuelva a ejecutar este comando:
