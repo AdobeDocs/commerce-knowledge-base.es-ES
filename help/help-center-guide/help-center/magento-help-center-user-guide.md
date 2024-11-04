@@ -3,9 +3,9 @@ title: Guía del usuario de soporte técnico de Experience League para Adobe Com
 description: Obtenga información sobre cómo enviar un vale de soporte al Soporte de Experience League, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 8438978de04746c8a66816fe4f03d5f0d2d11521
+source-git-commit: 7a70f2c54396f82424e442aca7413c02ebecddb9
 workflow-type: tm+mt
-source-wordcount: '2649'
+source-wordcount: '2770'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,8 @@ Para enviar un nuevo caso de asistencia técnica mediante la página de inicio d
 
 >[!INFO]
 >
+>1. Para enviar un caso, debe tener derecho a recibir asistencia para el producto correspondiente (por ejemplo, Adobe Commerce, Adobe Commerce Intelligence, Experience Platform, etc.). Si no tiene derecho a asistencia, aparecerá una barra en la parte superior de la página que le informará de que no es un usuario con derecho a asistencia en la organización.
+>1. Si pertenece a varias organizaciones o hay varias con nombres de aspecto similar (cada una representará cualquiera de los demás productos de Adobe a los que la organización tiene suscripciones), primero deberá seleccionar la organización adecuada en la lista desplegable que termina en &quot;(Commerce)&quot;.
 >1. Para enviar un caso, debe tener derecho a recibir asistencia para el producto correspondiente (por ejemplo, Adobe Commerce, informes de Adobe Commerce, servicios de pago de Adobe Commerce, Experience Platform, etc.). Si no tiene derecho a asistencia, aparecerá una barra en la parte superior de la página que le informará de que no es un usuario con derecho a asistencia en la organización. Para enviar un caso por problemas relacionados con Commerce, primero debe seleccionar el nombre de organización apropiado que termine en *[!DNL (Commerce)]*.
 >1. Si pertenece a varias organizaciones o existen varias con nombres de aspecto similar (cada una representará a cualquiera de los demás productos de Adobe a los que la organización está suscrita), primero debe seleccionar la organización adecuada en el menú desplegable.
 >1. Si no ve Adobe Commerce en el menú desplegable [!UICONTROL Select a product], primero debe obtener [Acceso compartido](#shared-access) del propietario de la cuenta de Commerce. Una vez que se le haya dado acceso compartido, tendrá que [sincronizar su cuenta](#switch-accounts) para finalizar el proceso antes de poder enviar un caso.
@@ -98,7 +100,7 @@ Para enviar un nuevo caso de asistencia técnica mediante la página de inicio d
 >
 >Asegúrese de haber seleccionado la organización correcta antes de enviar el caso y de que la organización seleccionada tiene los derechos adecuados para el producto para el que solicita asistencia. Por ejemplo, si su problema está relacionado con Adobe Commerce, pero ha seleccionado Experience Platform como producto y el caso se ha enviado correctamente, esto puede provocar un enrutamiento incorrecto del caso y retrasos en los tiempos de respuesta.
 >
->Además, si se ha seleccionado una organización incorrecta, su equipo no podrá ver el caso en [!UICONTROL My Cases] para la organización correcta o adecuada. El equipo de asistencia no tiene la capacidad de cambiar la organización asociada con el caso en el futuro.
+>Además, si se seleccionó la organización incorrecta en el momento en que se envió el caso, su equipo no podrá ver el caso en [!UICONTROL My Cases] para la organización correcta o adecuada. El equipo de Soporte de Adobe Commerce no tiene la capacidad de cambiar la organización asociada con el caso; para solucionar esto, debe cerrar el caso existente y enviar un nuevo caso con los detalles apropiados proporcionados/seleccionados.
 
 1. Haz clic en **Asistencia** en el encabezado. Se abrirá la página de inicio de Asistencia.
 
