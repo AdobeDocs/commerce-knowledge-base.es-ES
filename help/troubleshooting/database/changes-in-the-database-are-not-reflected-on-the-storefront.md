@@ -1,19 +1,19 @@
 ---
 title: Los cambios en la base de datos no se reflejan en la tienda
-description: Este artículo proporciona soluciones para evitar retrasos o interrupciones en la aplicación de las actualizaciones de entidades. Esto incluye cómo evitar que las tablas de registro de cambios se sobredimensionen y cómo configurar déclencheur de tabla MySQL.
+description: Este artículo proporciona soluciones para evitar retrasos o interrupciones en la aplicación de las actualizaciones de entidades. Esto incluye cómo evitar que las tablas de registro de cambios se sobredimensionen y cómo configurar  [!DNL MySQL] déclencheur de tabla.
 exl-id: ac52c808-299f-4d08-902f-f87db1fa7ca6
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '538'
 ht-degree: 0%
 
 ---
 
 # Los cambios en la base de datos no se reflejan en la tienda
 
-Este artículo proporciona soluciones para evitar retrasos o interrupciones en la aplicación de las actualizaciones de entidades. Esto incluye cómo evitar que las tablas de registro de cambios se sobredimensionen y cómo configurar déclencheur de tabla MySQL.
+Este artículo proporciona soluciones para evitar retrasos o interrupciones en la aplicación de las actualizaciones de entidades. Esto incluye cómo evitar que las tablas del registro de cambios se sobredimensionen y cómo configurar [!DNL MySQL] déclencheur de tabla.
 
 Productos y versiones afectados:
 
@@ -32,9 +32,9 @@ Si los indexadores están [configurados para actualizarse según la programació
 
 Las tablas de registro de cambios crecen de ese modo si el trabajo cron de `indexer_update_all_views` no se completa correctamente varias veces.
 
-Las tablas de registro de cambios son las tablas de base de datos en las que se realiza un seguimiento de los cambios en las entidades. Un registro se almacena en una tabla de registro de cambios mientras no se aplique el cambio, que realiza el trabajo cron de `indexer_update_all_views`. Hay varias tablas de registro de cambios en una base de datos de Adobe Commerce, con nombres según el siguiente patrón: INDEXER\_TABLE\_NAME + ‘\_cl’, por ejemplo `catalog_category_product_cl`, `catalog_product_category_cl`. Puede encontrar más detalles sobre cómo se realiza el seguimiento de los cambios en la base de datos en el artículo [Resumen de la indexación > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) de nuestra documentación para desarrolladores.
+Las tablas de registro de cambios son las tablas de base de datos en las que se realiza un seguimiento de los cambios en las entidades. Un registro se almacena en una tabla de registro de cambios mientras no se aplique el cambio, que realiza el trabajo cron de `indexer_update_all_views`. Hay varias tablas de registro de cambios en una base de datos de Adobe Commerce, y se les asigna un nombre según el siguiente patrón: INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, por ejemplo `catalog_category_product_cl`, `catalog_product_category_cl`. Puede encontrar más detalles sobre cómo se realiza el seguimiento de los cambios en la base de datos en el artículo [Resumen de la indexación > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) de nuestra documentación para desarrolladores.
 
-### Déclencheur de base de datos MySQL no configurados
+### [!DNL MySQL] déclencheur de base de datos no configurados
 
 Sospecharía que no se han configurado déclencheur de base de datos, si después de agregar o cambiar una entidad (producto, categoría, regla de destino, etc.) - no se agregan registros a la tabla de registro de cambios correspondiente.
 
@@ -60,9 +60,9 @@ O puede comprobar su estado en los registros buscando las `indexer_update_all_vi
 * `<install_directory>/var/log/cron.log`: para las versiones 2.3.1+ y 2.2.8+
 * `<install_directory>/var/log/system.log` - para versiones anteriores
 
-### Restablecer déclencheur de tabla MySQL
+### Volver a establecer [!DNL MySQL] déclencheur de tabla
 
-Para configurar las déclencheur de tabla MySQL que faltan, debe volver a establecer el modo del indexador:
+Para configurar los déclencheur de tabla [!DNL MySQL] que faltan, debe volver a establecer el modo de indizador:
 
 1. Cambie a &quot;Al guardar&quot;.
 1. Cambie a &quot;Según lo programado&quot;.
@@ -83,5 +83,6 @@ php bin/magento indexer:set-mode {realtime|schedule} [indexerName]
 
 ## Lectura relacionada
 
-<ul><li title="Las tablas MySQL son demasiado grandes"><a href="/help/troubleshooting/database/mysql-tables-are-too-large.md">Las tablas MySQL son demasiado grandes</a> en nuestra base de conocimiento de soporte.</li>
-<li title="Las tablas MySQL son demasiado grandes"><a href="https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview">Resumen del indizador &gt; Mview</a> en nuestra documentación para desarrolladores.</li></ul>
+* [[!DNL MySQL] las tablas son demasiado grandes](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/mysql-tables-are-too-large) en nuestra base de conocimiento de soporte
+* [Indexación: [!DNL Mview]](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) en nuestra documentación para desarrolladores
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

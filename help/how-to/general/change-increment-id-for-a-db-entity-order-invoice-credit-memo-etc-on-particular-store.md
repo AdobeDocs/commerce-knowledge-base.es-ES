@@ -1,18 +1,18 @@
 ---
-title: Cambiar el ID de incremento de una entidad de BD (pedido, factura, nota de abono, etc.) en una tienda particular
-description: Este artículo explica cómo cambiar el ID de incremento de una entidad de la base de datos de Adobe Commerce (BD) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce particular utilizando la instrucción SQL ALTER TABLE.
+title: Cambiar el ID de incremento de una entidad de la base de datos (pedido, factura, nota de abono, etc.) en un almacén concreto
+description: En este artículo se explica cómo cambiar el ID de incremento de una entidad de la base de datos de Adobe Commerce (base de datos) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce concreto mediante la instrucción SQL ALTER TABLE.
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '468'
 ht-degree: 0%
 
 ---
 
-# Cambiar el ID de incremento de una entidad de BD (pedido, factura, nota de abono, etc.) en una tienda particular
+# Cambiar el ID de incremento de una entidad de la base de datos (pedido, factura, nota de abono, etc.) en un almacén concreto
 
-Este artículo explica cómo cambiar el ID de incremento de una entidad de la base de datos de Adobe Commerce (BD) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce determinado mediante la instrucción SQL `ALTER TABLE`.
+Este artículo explica cómo cambiar el id. de incremento de una entidad de la base de datos de Adobe Commerce (BD) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce concreto mediante la instrucción SQL `ALTER TABLE`.
 
 ## Versiones afectadas
 
@@ -86,5 +86,6 @@ Antes de ejecutar la consulta `ALTER TABLE` en el entorno de producción de Adob
 
 ## Documentación relacionada
 
-* [Crear volcado de base de datos en la nube](/help/how-to/general/create-database-dump-on-cloud.md) en nuestra base de conocimiento de soporte.
-* [SSH a su entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) en nuestra documentación para desarrolladores.
+* [Crear volcado de base de datos en la nube](/help/how-to/general/create-database-dump-on-cloud.md) en nuestra base de conocimiento de soporte
+* [SSH para su entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) en nuestra documentación para desarrolladores
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

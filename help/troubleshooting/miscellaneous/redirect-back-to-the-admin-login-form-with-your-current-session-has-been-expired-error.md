@@ -1,19 +1,19 @@
 ---
-title: Vuelva al formulario de inicio de sesión de administrador de Commerce con el error "La sesión actual ha caducado".
-description: '''Este artículo ofrece posibles soluciones para el problema de inicio de sesión del administrador de Commerce, que le redirige al formulario de inicio de sesión con el siguiente mensaje de error: *"La sesión actual ha caducado"*. Las soluciones incluyen comprobar los problemas de configuración de tiempo del servidor y cambiar la configuración de almacenamiento de la sesión".'
+title: '''Redirigir de nuevo al formulario de inicio de sesión de [!UICONTROL Commerce Admin] con el error "Su sesión actual ha caducado"'
+description: '''Este artículo ofrece posibles soluciones para el problema de inicio de sesión de [!UICONTROL Commerce Admin], en el cual se le redirigirá al formulario de inicio de sesión con el siguiente mensaje de error: *"La sesión actual ha caducado"*. Las soluciones incluyen comprobar los problemas de configuración de tiempo del servidor y cambiar la configuración de almacenamiento de la sesión".'
 exl-id: 29df2ed2-ff4a-4f1a-bdb7-1160416cda00
 feature: Admin Workspace
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 3f205b1d755bda7056f47bf1e1d036feb47ebadd
 workflow-type: tm+mt
-source-wordcount: '385'
+source-wordcount: '382'
 ht-degree: 0%
 
 ---
 
-# Vuelva al formulario de inicio de sesión de administrador de Commerce con el error &quot;La sesión actual ha caducado&quot;.
+# Volver a redirigir al formulario de inicio de sesión de [!UICONTROL Commerce Admin] con el error &quot;Su sesión actual ha caducado&quot;
 
-Este artículo ofrece las posibles soluciones para el problema de inicio de sesión del administrador de Commerce, en el que se le redirige de nuevo al formulario de inicio de sesión con el siguiente mensaje de error: *&quot;Su sesión actual ha caducado&quot;*. Las soluciones incluyen comprobar los problemas de configuración de tiempo del servidor y cambiar la configuración de almacenamiento de la sesión.
+Este artículo ofrece las posibles soluciones para el problema de inicio de sesión de [!UICONTROL Commerce Admin], en el que se le redirige de nuevo al formulario de inicio de sesión con el siguiente mensaje de error: *&quot;Su sesión actual ha caducado&quot;*. Las soluciones incluyen comprobar los problemas de configuración de tiempo del servidor y cambiar la configuración de almacenamiento de la sesión.
 
 ## Ediciones y versiones afectadas:
 
@@ -23,12 +23,12 @@ Todas las versiones y ediciones de Adobe Commerce
 
 <u>Pasos a seguir</u>:
 
-1. Vaya a la página de administración de Commerce.
-1. Introduzca sus credenciales de y haga clic en Iniciar sesión.
+1. Vaya a la página **[!UICONTROL Commerce Admin]**.
+1. Escriba sus credenciales y haga clic en **Iniciar sesión**.
 
 <u>Resultado esperado</u>:
 
-Ha iniciado sesión en el administrador de Commerce.
+Ha iniciado sesión en [!UICONTROL Commerce Admin].
 
 <u>Resultado real</u>:
 
@@ -70,6 +70,8 @@ Ejecute el comando `bin/magento app:config:import` para importar los datos de co
 ## Lectura relacionada
 
 * [Importar datos de archivos de configuración](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-config-mgmt-import.html) en nuestra documentación para desarrolladores
-* [Configurar Redis](https://devdocs.magento.com/guides/v2.3/config-guide/redis/config-redis.html) en nuestra documentación para desarrolladores
-* [Vuelva a redirigir al formulario de inicio de sesión de administrador de Commerce con el error &quot;Su cuenta está temporalmente deshabilitada&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) en nuestra base de conocimiento de soporte
-* [Vuelva al formulario de inicio de sesión sin errores al intentar iniciar sesión en el administrador de Commerce](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md) en nuestra base de conocimiento de asistencia
+* [Configurar [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) en nuestra documentación para desarrolladores
+* [Vuelva a redirigir al formulario de inicio de sesión de [!UICONTROL Commerce Admin] con el error &quot;Su cuenta está temporalmente deshabilitada&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) en nuestra base de conocimiento de soporte
+* [Vuelva al formulario de inicio de sesión sin errores al intentar iniciar sesión en [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) en nuestra base de conocimiento de asistencia
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+

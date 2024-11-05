@@ -1,19 +1,19 @@
 ---
-title: El espacio en disco de MySQL es bajo en Adobe Commerce en la infraestructura en la nube
-description: Este artículo proporciona soluciones para cuando está experimentando un espacio muy bajo o ningún espacio para MySQL en Adobe Commerce en la infraestructura en la nube. Los síntomas pueden incluir interrupciones del sitio, clientes que no pueden añadir productos al carro de compras, que no pueden conectarse a la base de datos, que no pueden acceder a la base de datos de forma remota, que no pueden SSH en el nodo. Los síntomas también incluyen errores de Galera, sincronización del entorno, PHP, base de datos e implementación, como se indica a continuación. Haga clic en [Solución](https://support.magento.com/hc/en-us/articles/360058472572#solution) para saltar directamente a la sección de la solución.
+title: '[!DNL MySQL] espacio en disco es bajo en Adobe Commerce en la infraestructura en la nube'
+description: Este artículo proporciona soluciones para situaciones en las que experimentas poco espacio o ningún espacio para  [!DNL MySQL] en Adobe Commerce en la infraestructura en la nube. Los síntomas pueden incluir interrupciones del sitio, clientes que no pueden añadir productos al carro de compras, que no pueden conectarse a la base de datos, que no pueden acceder a la base de datos de forma remota, que no pueden SSH en el nodo. Los síntomas también incluyen errores de Galera, sincronización del entorno, PHP, base de datos e implementación, como se indica a continuación. Haga clic en [Solución](https://support.magento.com/hc/en-us/articles/360058472572#solution) para saltar directamente a la sección de la solución.
 exl-id: 788c709e-59f5-4062-ab25-5ce6508f29f9
 feature: Catalog Management, Categories, Cloud, Paas, Services
 role: Developer
-source-git-commit: 667fcacd5b6cbf56a5fd919d0683ad6a0f979fca
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1154'
 ht-degree: 0%
 
 ---
 
-# El espacio en disco de MySQL es bajo en Adobe Commerce en la infraestructura en la nube
+# [!DNL MySQL] espacio en disco es bajo en Adobe Commerce en la infraestructura de la nube
 
-Este artículo proporciona soluciones para cuando está experimentando un espacio muy bajo o ningún espacio para MySQL en Adobe Commerce en la infraestructura en la nube. Los síntomas pueden incluir interrupciones del sitio, clientes que no pueden añadir productos al carro de compras, que no pueden conectarse a la base de datos, que no pueden acceder a la base de datos de forma remota, que no pueden SSH en el nodo. Los síntomas también incluyen errores de Galera, sincronización del entorno, PHP, base de datos e implementación, como se indica a continuación. Haga clic en [Solución](https://support.magento.com/hc/en-us/articles/360058472572#solution) para saltar directamente a la sección de la solución.
+Este artículo proporciona soluciones para situaciones en las que experimenta muy poco espacio o ningún espacio para [!DNL MySQL] en Adobe Commerce en la infraestructura en la nube. Los síntomas pueden incluir interrupciones del sitio, clientes que no pueden añadir productos al carro de compras, que no pueden conectarse a la base de datos, que no pueden acceder a la base de datos de forma remota, que no pueden SSH en el nodo. Los síntomas también incluyen errores de Galera, sincronización del entorno, PHP, base de datos e implementación, como se indica a continuación. Haga clic en [Solución](https://support.magento.com/hc/en-us/articles/360058472572#solution) para saltar directamente a la sección de la solución.
 
 ## Productos y versiones afectados
 
@@ -37,18 +37,18 @@ Errores de sincronización de entorno:
 
 Errores de PHP:
 
-* *php: PDO::\_\_builds(): El servidor MySQL ha desaparecido.*
+* *php: PDO::\_\_builds(): el servidor [!DNL MySQL] ha desaparecido.*
 * *errores php: PDO::\_\_builds(): Error al leer el paquete de saludo. PID=NNNN.*
-* *ERROR 2013 (HY000): Se perdió la conexión con el servidor MySQL al &#39;leer el paquete de comunicación inicial&#39;, error del sistema: 0 &quot;Error interno/comprobación (no error del sistema)&quot;.*
+* *ERROR 2013 (HY000): Se perdió la conexión con el servidor [!DNL MySQL] al &#39;leer el paquete de comunicación inicial&#39;, error del sistema: 0 &quot;Error interno/comprobación (no error del sistema)&quot;.*
 
 Errores de base de datos:
 
 * *Error\_code: 1114*
 * *InnoDB: error (espacio en disco insuficiente) al escribir el nodo de Word en la tabla de índice auxiliar de FTS.*
-* *SQLSTATE\[HY000\]: Error general: 2006 El servidor MySQL ha desaparecido*
+* *SQLSTATE\[HY000\]: Error general: el servidor [!DNL MySQL] de 2006 ha desaparecido*
 * *\[ERROR\] SQL esclavo: Error &#39;La tabla `<table\_name>` está llena&#39; en la consulta.*
 * *El mysql.service de la unidad entró en estado de error.*
-* *error: &#39;No se puede conectar al servidor MySQL local a través del socket &#39;/var/run/mysqld/mysqld.sock&#39; (111 &quot;Conexión rechazada&quot;)&#39;*
+* *error: &#39;No se puede conectar al servidor local [!DNL MySQL] a través del socket &#39;/var/run/mysqld/mysqld.sock&#39; (111 &quot;Conexión rechazada&quot;)&#39;*
 * *1205 Se superó el tiempo de espera de bloqueo; intente reiniciar la transacción. La consulta era: INSERT INTO \`cron\_schedule\` (\`job\_code\`, \`status\`, \`created\_at\`, \`scheduled\_at\`) VALUES (?, ?, `YYYY-02-07 HH:MM:SS`, `YYYY-MM-DD HH:MM:SS`)*
 
 Errores de implementación:
@@ -58,17 +58,17 @@ Errores de implementación:
 * *Actualizando esquema.. SQLSTATE\[HY000\]: Error general: 1114 La tabla `<table\_name>` está llena*
 * *SQLSTATE\[HY000\]: Error general: 3 Error al escribir el archivo ./`<environment name>`/\#*
 * *W: `<filename>` (código de error: 28 &quot;No queda espacio en el dispositivo&quot;)* *Errores de indexación (junto con archivos temporales .ibd huérfanos en /tmp):*
-* El indizador de reglas de catálogo *genera una excepción. Las tablas temporales no se limpian después y luego llenan el disco en el nodo maestro MySQL actual*
+* El indizador de reglas de catálogo *genera una excepción. Las tablas temporales no se limpian después y luego llenan el disco en el nodo maestro [!DNL MySQL] actual*
 
 <u>Pasos a seguir</u>:
 
-Una de las formas en que puede comprobar si el `/data/mysql` (o donde quiera que esté configurado el almacenamiento de datos MySQL) está lleno es ejecutando el siguiente comando en la CLI:
+Una de las formas en que puede comprobar si el `/data/mysql` (o donde esté configurado el almacenamiento de datos [!DNL MySQL]) está lleno es ejecutando el siguiente comando en la CLI:
 
 ```bash
 df -h
 ```
 
-Menos del 10% de la memoria libre en el disco MySQL es un indicador principal de una interrupción.
+Menos del 10% de la memoria libre en el disco [!DNL MySQL] es un indicador principal de una interrupción.
 
 ## Causa
 
@@ -76,7 +76,7 @@ Es posible que el montaje de `/data/mysql` se llene debido a una serie de proble
 
 ## Solución
 
-Hay un paso inmediato que podría tomar para volver a poner MySQL en marcha (o evitar que se atasque): libere algo de espacio vaciando las tablas grandes.
+Hay un paso inmediato que podría tomar para volver a encauzar [!DNL MySQL] (o evitar que se atasque): libere espacio vaciando las tablas grandes.
 
 Sin embargo, una solución a largo plazo sería asignar más espacio y seguir las [prácticas recomendadas de la base de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html), incluida la habilitación de la funcionalidad [Archivo de pedidos/facturas/envíos](https://docs.magento.com/user-guide/sales/order-archive.html).
 
@@ -128,7 +128,7 @@ Compruebe el archivo `ibtmp1` grande en `/data/mysql` de cada nodo: este archivo
 
 Compruebe si hay tablas grandes y considere si alguna de ellas se puede vaciar. Haga esto en el nodo principal (origen).
 
-Por ejemplo, las tablas con informes suelen vaciarse. Para obtener más información sobre cómo buscar tablas grandes, consulte el artículo [Buscar tablas MySQL grandes](/help/how-to/general/find-large-mysql-tables.md).
+Por ejemplo, las tablas con informes suelen vaciarse. Para obtener más información sobre cómo buscar tablas grandes, consulte el artículo [Buscar tablas grandes [!DNL MySQL] 2}.](/help/how-to/general/find-large-mysql-tables.md)
 
 Si no hay tablas de informes enormes, considere la posibilidad de vaciar `_index` tablas, solo para volver a encarrilar la aplicación de Adobe Commerce. `index_price` tablas serían los mejores candidatos. Por ejemplo, `catalog_category_product_index_storeX` tablas, donde X puede tener valores desde &quot;1&quot; hasta el número máximo de tiendas. Tenga en cuenta que deberá reindexar para restaurar los datos de estas tablas y, en el caso de catálogos grandes, este reindexado puede llevar mucho tiempo.
 
@@ -136,15 +136,19 @@ Una vez vaciados, espere a que finalice la sincronización de wsrep. Ahora puede
 
 ### Comprobar configuración de registro binario
 
-Compruebe la configuración del registro binario del servidor MySQL: `log_bin` y `log_bin_index`. Si la configuración está habilitada, los archivos de registro pueden llegar a ser enormes. [Crear un ticket de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando purgar archivos de registro binarios grandes. Además, solicite comprobar que el registro binario se está configurando correctamente para que los registros se purguen periódicamente y no ocupen demasiado espacio.
+Compruebe la configuración del registro binario del servidor [!DNL MySQL]: `log_bin` y `log_bin_index`. Si la configuración está habilitada, los archivos de registro pueden llegar a ser enormes. [Crear un ticket de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando purgar archivos de registro binarios grandes. Además, solicite comprobar que el registro binario se está configurando correctamente para que los registros se purguen periódicamente y no ocupen demasiado espacio.
 
-Si no tiene acceso a la configuración del servidor MySQL, solicite asistencia técnica para comprobarlo.
+Si no tiene acceso a la configuración del servidor [!DNL MySQL], solicite asistencia técnica para comprobarlo.
 
 ### Asignar/comprar más espacio
 
-Asigne más espacio en disco para MySQL si tiene algo sin usar. Consulte el artículo [Comprobar el límite de espacio en disco](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md) para saber cómo comprobar si tiene espacio libre en disco.
+Asigne más espacio en disco para [!DNL MySQL] si no utiliza alguno. Consulte el artículo [Comprobar el límite de espacio en disco](/help/how-to/general/check-disk-space-limit-for-magento-commerce-cloud.md) para saber cómo comprobar si tiene espacio libre en disco.
 
-* Para el plan de inicio, todos los entornos y los entornos de integración del plan Pro, puede asignar el espacio en disco si no lo ha utilizado. Para obtener más información, consulte [Asignar más espacio para MySQL](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md).
+* Para el plan de inicio, todos los entornos y los entornos de integración del plan Pro, puede asignar el espacio en disco si no lo ha utilizado. Para obtener más información, consulta [Asignar más espacio para [!DNL MySQL]](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md).
 * Para los entornos de ensayo y producción del plan Pro, [póngase en contacto con el servicio de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para asignar más espacio en disco si tiene espacio sin usar.
 
 Si ha alcanzado el límite de espacio y sigue experimentando problemas de poco espacio, considere la posibilidad de comprar más espacio en disco, póngase en contacto con el equipo de cuenta de Adobe para obtener más información.
+
+## Lectura relacionada
+
+[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para los errores que pueden p
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '727'
+source-wordcount: '741'
 ht-degree: 0%
 
 ---
@@ -162,3 +162,7 @@ Una de las razones del error podría ser que está intentando migrar desde una *
 ### Posible solución
 
 Se recomienda probar el proceso de migración desde una copia de la base de datos de Adobe Commerce 1 para solucionar los problemas de migración. Después de corregir los problemas en la copia, inicie el proceso de migración de nuevo desde la base de datos de Adobe Commerce 1 activa. Esto ayudará a garantizar un proceso de migración sin problemas.
+
+## Lectura relacionada
+
+[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

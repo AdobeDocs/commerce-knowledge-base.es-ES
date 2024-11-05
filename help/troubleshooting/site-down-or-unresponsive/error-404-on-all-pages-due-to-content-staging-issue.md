@@ -1,19 +1,19 @@
 ---
 title: Error 404 en todas las páginas debido a un problema con el ensayo de contenido
-description: Este artículo proporciona una corrección para el problema de infraestructura de Adobe Commerce local y Adobe Commerce en la nube en el que se obtiene un error 404 al acceder a cualquier página de tienda o al administrador de Commerce.
+description: Este artículo proporciona una corrección para el problema de infraestructura de Adobe Commerce local y Adobe Commerce en la nube en el que se obtiene un error 404 al acceder a cualquier página de tienda o al [!UICONTROL Commerce Admin].
 exl-id: 62d8ba6e-8550-4e1e-8e8d-8f319c92778a
 feature: CMS, Catalog Management, Categories, Page Content, Staging
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
 
 # Error 404 en todas las páginas debido a un problema con el ensayo de contenido
 
-Este artículo proporciona una corrección para el problema de infraestructura de Adobe Commerce local y Adobe Commerce en la nube en el que se obtiene un error 404 al acceder a cualquier página de tienda o al administrador de Commerce.
+Este artículo proporciona una corrección para el problema de infraestructura de Adobe Commerce local y Adobe Commerce en la nube en el que se obtiene un error 404 al acceder a cualquier página de tienda o al [!UICONTROL Commerce Admin].
 
 ## Productos y versiones afectados
 
@@ -24,7 +24,7 @@ Este artículo proporciona una corrección para el problema de infraestructura d
 
 >[!NOTE]
 >
->Este artículo no se aplica a la situación en la que recibes un error 404 al intentar [previsualizar la actualización de ensayo](https://docs.magento.com/user-guide/cms/content-staging-scheduled-update.html#preview-the-scheduled-change). Si encuentra ese problema, abra un [ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+>Este artículo no se aplica a la situación en la que recibes un error 404 al intentar [previsualizar la actualización de ensayo](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change). Si encuentra ese problema, abra un [ticket de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
 El acceso a cualquier página de la tienda o al administrador provoca el error 404 (la página &quot;¡Uy!, nuestra página es incorrecta...&quot;) después de realizar operaciones con actualizaciones programadas para los recursos de contenido de la tienda mediante [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) (actualizaciones para los recursos de contenido de la tienda programados mediante el [módulo Magento\_Ensayo](https://developer.adobe.com/commerce/php/module-reference/)). Por ejemplo, es posible que haya eliminado un producto con una actualización programada o que haya eliminado la fecha de finalización de la actualización programada.
 
@@ -35,7 +35,7 @@ Un recurso de contenido de tienda incluye:
 * Regla de precio de catálogo
 * Regla de precio del carro
 * Página de CMS
-* Bloque CMS
+* Bloque de CMS
 * Widget
 
 Algunos escenarios se analizan en la sección Causa a continuación.
@@ -76,7 +76,7 @@ Si la consulta devuelve una tabla en la que el valor `update_exists` es &quot;1&
 
 ![actualizaciones_existen_1.png](assets/updates_exist_1.png)
 
-En este caso, puede consultar [Solucionador de problemas de caída del sitio](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md) para obtener ideas sobre la solución de problemas.
+En este caso, puede consultar [Solucionador de problemas de caída del sitio](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter) para obtener ideas sobre la solución de problemas.
 
 ## Solución
 
@@ -86,6 +86,10 @@ En este caso, puede consultar [Solucionador de problemas de caída del sitio](/h
    DELETE FROM flag WHERE flag_code = 'staging';
    ```
 
-1. Espere a que se ejecute el trabajo cron (se ejecuta en hasta cinco minutos si está configurado correctamente) o ejecútelo manualmente si no tiene cron configurado.
+1. Espere a que se ejecute el trabajo de [!DNL cron] (se ejecuta en cinco minutos si está configurado correctamente) o ejecútelo manualmente si no ha configurado [!DNL cron].
 
-El problema debe resolverse directamente después de corregir el vínculo no válido. Si el problema persiste, [envíe un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+El problema debe resolverse directamente después de corregir el vínculo no válido. Si el problema persiste, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+
+## Lectura relacionada
+
+[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

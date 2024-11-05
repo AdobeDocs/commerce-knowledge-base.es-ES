@@ -4,9 +4,9 @@ description: Este artículo es una herramienta para solucionar problemas de los 
 exl-id: f7b09023-7129-4fd0-9bb5-02a2228bc148
 feature: Observability, Services, Storage, Support
 role: Developer
-source-git-commit: 324cce66df1e4ab7ec4ef8fb6512c3acbabdf3ab
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '813'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Este artículo es una herramienta para solucionar problemas de los clientes de A
 
 Esto se puede indicar por una serie de síntomas, incluyendo que el montaje `/tmp` esté lleno, que el sitio esté caído o que no pueda insertarse SSH en un nodo. También puede estar experimentando errores como _No queda espacio en el dispositivo (28)_. Para obtener una lista de errores resultantes de que `/tmp` esté lleno, revise [/tmp mount full](/help/troubleshooting/miscellaneous/tmp-mount-full.md).
 
-¿O tiene un problema de `/data/mysql` debido a la falta de espacio? Esto también se puede indicar por diversos síntomas, como interrupción del sitio, clientes que no pueden agregar productos al carro de compras, error de conexión a la base de datos y errores de Galería como _SQLSTATE\[08S01\]: error de vínculo de comunicación: 1047 WSREP_. Para obtener una lista de errores resultantes de un espacio en disco MySQL bajo, consulte [Espacio en disco MySQL bajo en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md).
+¿O tiene un problema de `/data/mysql` debido a la falta de espacio? Esto también se puede indicar por diversos síntomas, como interrupción del sitio, clientes que no pueden agregar productos al carro de compras, error de conexión a la base de datos y errores de Galería como _SQLSTATE\[08S01\]: error de vínculo de comunicación: 1047 WSREP_. Para obtener una lista de errores resultantes de un espacio en disco de [!DNL MySQL] bajo, consulte [[!DNL MySQL] espacio en disco bajo en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md).
 
 Si no está seguro de tener un problema de espacio en disco y tiene una cuenta de New Relic, vaya a la [página Hosts de supervisión de infraestructura de New Relic](https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/). A partir de ahí, haga clic en la ficha **Almacenamiento**, cambie el menú desplegable de **Gráfico que muestra** de 5 a 20 resultados y busque en la tabla el uso de disco alto en el gráfico o tabla % de disco usado. Para ver los pasos más detallados, consulte [Supervisión de infraestructura de New Relic > Pestaña Almacenamiento]https://docs.newrelic.com/docs/infrastructure/infrastructure-ui-pages/infra-hosts-ui-page/#storage).
 
@@ -42,7 +42,7 @@ b. NO - Compruebe el espacio. Ejecute `df -h | grep mysql` y, a continuación, `
 Una vez que haya reducido el número de archivos, ejecute `df -h | grep mysql` y luego `df -h | grep tmp` en la CLI/terminal para comprobar el uso del espacio en disco en `/tmp` y `/data/mysql`. ¿Se utiliza más del 70% para `/tmp` o `/data/mysql`?
 
 a. SÍ - Continúe con [Paso 3](#step-3).
-b. NO - Las consultas pueden estar agotando el almacenamiento disponible. Esto puede bloquear el nodo, desactivando la consulta y eliminando los `tmp` archivos. Examine el resultado de `SHOW PROCESSLIST;` en la CLI de MySQL en busca de consultas que puedan ser la causa del problema. [Envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), solicitando más espacio.
+b. NO - Las consultas pueden estar agotando el almacenamiento disponible. Esto puede bloquear el nodo, desactivando la consulta y eliminando los `tmp` archivos. Examine el resultado de `SHOW PROCESSLIST;` en la CLI de [!DNL MySQL] en busca de consultas que puedan ser la causa del problema. [Envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), solicitando más espacio.
 
 +++
 
@@ -54,7 +54,7 @@ b. NO - Las consultas pueden estar agotando el almacenamiento disponible. Esto p
 
 >[!NOTE]
 >
->De forma predeterminada, el tmpdir de la base de datos escribe en `/tmp`. Para comprobar que la configuración de la base de datos sigue siendo la predeterminada, ejecute el siguiente comando en la CLI de MySQL: `SHOW VARIABLES LIKE "TMPDIR";` Si el tmpdir de la base de datos sigue escribiendo en `/tmp`, verá `/tmp` en la columna Valor.
+>De forma predeterminada, el tmpdir de la base de datos escribe en `/tmp`. Para comprobar que la configuración de la base de datos sigue siendo la predeterminada, ejecute el siguiente comando en la CLI [!DNL MySQL]: `SHOW VARIABLES LIKE "TMPDIR";` Si el tmpdir de la base de datos sigue escribiendo en `/tmp`, verá `/tmp` en la columna Valor.
 
 a. `/tmp` - Continúe con [Paso 4](#step-4). \
 b. `/data/mysql` - Continúe con [Paso 5](#step-5).
@@ -81,7 +81,7 @@ b. NO - [Envíe un ticket de asistencia](/help/help-center-guide/help-center/mag
 
 +++**Comprobar predeterminado**
 
-Es posible que la configuración de la base de datos ya no sea la predeterminada original. Busque la configuración tmpdir de la base de datos ejecutando en la CLI de MySQL: `SELECT @@DATADIR;`. Si se genera `/data/mysql/`, el tmpdir de la base de datos está escribiendo en `/data/mysql/`. Intente aumentar el espacio en este directorio siguiendo los pasos indicados en [El espacio en disco de MySQL es bajo en Adobe Commerce en nuestra infraestructura en la nube](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md). A continuación, ejecute `df -h | grep mysql` y, a continuación, `df -h | grep tmp` en la CLI/terminal para comprobar el uso del espacio en disco en `/data/mysql` y `/tmp`.\
+Es posible que la configuración de la base de datos ya no sea la predeterminada original. Busque la configuración tmpdir de la base de datos ejecutando en la CLI [!DNL MySQL]: `SELECT @@DATADIR;`. Si se genera `/data/mysql/`, el tmpdir de la base de datos está escribiendo en `/data/mysql/`. Intente aumentar el espacio en este directorio siguiendo los pasos indicados en [[!DNL MySQL] espacio en disco insuficiente en Adobe Commerce en nuestra infraestructura en la nube](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md). A continuación, ejecute `df -h | grep mysql` y, a continuación, `df -h | grep tmp` en la CLI/terminal para comprobar el uso del espacio en disco en `/data/mysql` y `/tmp`.\
   ¿Usado &lt; 70%?
 
 a. SÍ - Ha resuelto el problema. \
@@ -90,3 +90,7 @@ b. NO - [Envíe un ticket de asistencia](/help/help-center-guide/help-center/mag
 +++
 
 [Volver al paso 1](#step-1)
+
+## Lectura relacionada
+
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

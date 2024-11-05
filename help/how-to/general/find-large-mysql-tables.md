@@ -2,9 +2,9 @@
 title: Buscar tablas MySQL grandes
 description: '"Para identificar las tablas grandes, conéctese a la base de datos como se describe en el artículo [Conectarse a la base de datos](https://devdocs.magento.com/cloud/project/project-conf-files_services-mysql.html#connect-to-the-database) y ejecute el siguiente comando, donde "project_id" es su ID de proyecto en la nube:"'
 exl-id: dc5019bc-ab6c-4568-986f-0a294a0f3ac3
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '97'
+source-wordcount: '111'
 ht-degree: 0%
 
 ---
@@ -22,3 +22,7 @@ ORDER BY (DATA_LENGTH + INDEX_LENGTH) DESC;
 ```
 
 Esto mostraría la lista completa de tablas y su tamaño. Puede ir a través de la lista e identificar qué tablas requieren atención debido al gran tamaño.
+
+## Lectura relacionada
+
+[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

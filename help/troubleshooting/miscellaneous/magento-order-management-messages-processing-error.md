@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución para el problema que se pr
 exl-id: 83089465-f810-4a3b-bdb6-4720b44f0b49
 feature: System
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '208'
+source-wordcount: '217'
 ht-degree: 0%
 
 ---
@@ -61,10 +61,11 @@ Esto ocurre cuando el conector intenta procesar `magento.inventory.source_manage
 
 ## Solución
 
-Para resolver el problema, ejecute la siguiente instrucción SQL en la CLI que elimina todos los registros de la tabla `mcom_api_messages`:
+Para resolver el problema, ejecute la siguiente instrucción [!DNL SQL] en la CLI que elimina todos los registros de la tabla `mcom_api_messages`:
 
 `delete from mcom_api_messages;`
 
 ## Lectura relacionada
 
-Consulte el tutorial de configuración del conector OMS [OMS Docs](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/).
+* Tutorial de configuración del conector OMS [OMS Docs](https://omsdocs.magento.com/en/integration/connector/setup-tutorial/)
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

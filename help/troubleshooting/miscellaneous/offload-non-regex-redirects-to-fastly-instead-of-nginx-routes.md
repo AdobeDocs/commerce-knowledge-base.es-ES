@@ -1,65 +1,65 @@
 ---
-title: Descargar redirecciones no regex a Fastly en lugar de Nginx (rutas)
-description: En este tema se sugiere una solución a un problema típico de rendimiento de redirecciones que podría tener al descargar redirecciones no regex a Fastly en lugar de Nginx en Adobe Commerce en la infraestructura en la nube.
+title: 'Descargar redirecciones que no sean de [!DNL regex] a [!DNL Fastly] en lugar de [!DNL Nginx] (rutas)'
+description: Este tema sugiere una solución a un problema típico de rendimiento de redirecciones que podría tener cuando descargue redirecciones que no sean de [!DNL regex] a  [!DNL Fastly] en lugar de [!DNL Nginx] en Adobe Commerce en la infraestructura en la nube.
 exl-id: 8b22d25d-0865-4d21-b275-d344ba8748f2
 feature: Routes
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '712'
 ht-degree: 0%
 
 ---
 
-# Descargar redirecciones no regex a Fastly en lugar de Nginx (rutas)
+# Descargar redirecciones que no sean de [!DNL regex] a [!DNL Fastly] en lugar de [!DNL Nginx] (rutas)
 
-En este tema se sugiere una solución a un problema típico de rendimiento de redirecciones que podría tener al descargar redirecciones no regex a Fastly en lugar de Nginx en Adobe Commerce en la infraestructura en la nube.
+En este tema se sugiere una solución a un problema típico de rendimiento de redirecciones que podría tener al descargar redirecciones que no son de [!DNL regex] a [!DNL Fastly] en lugar de [!DNL Nginx] en Adobe Commerce en la infraestructura en la nube.
 
 ## Productos y versiones afectados
 
-* Adobe Commerce en la infraestructura en la nube (todas las versiones) `Master/Production/Staging` entornos que aprovechan Fastly
+* Adobe Commerce en la nube (todas las versiones) `Master/Production/Staging` entornos que aprovechan [!DNL Fastly]
 
 ## Problema
 
-En Adobe Commerce, en la infraestructura de la nube, no se pueden realizar grandes cantidades de redirecciones/reescrituras que no sean de regex en la capa Nginx y, como resultado, pueden causar problemas de rendimiento.
+En Adobe Commerce en la infraestructura de la nube, no se pueden realizar grandes cantidades de redirecciones/reescrituras que no sean de [!DNL regex] en la capa [!DNL Nginx] y, como resultado, pueden causar problemas de rendimiento.
 
 ## Causa
 
 El archivo `routes.yaml` del directorio `.magento/routes.yaml` define las rutas para su Adobe Commerce en la infraestructura de la nube.
 
-Si el tamaño del archivo de `routes.yaml` es de 32 KB o más, debería descargar las redirecciones/reescrituras que no sean de regex a Fastly.
+Si el tamaño del archivo de `routes.yaml` es de 32 KB o más, debería descargar las redirecciones y reescrituras que no sean de [!DNL regex] en [!DNL Fastly].
 
-Esta capa de Nginx no puede gestionar un gran número de redirecciones/reescrituras que no sean de regex, o se producirán problemas de rendimiento.
+Esta capa [!DNL Nginx] no puede administrar un gran número de redirecciones/reescrituras que no sean [!DNL regex], de lo contrario se producirán problemas de rendimiento.
 
 ## Solución
 
-La solución es descargar esas redirecciones no regex a Fastly en su lugar. Cree una ruta de error genérica para redirigir a Fastly.
+La solución consiste en descargar esas redirecciones que no sean de [!DNL regex] a [!DNL Fastly]. Cree una ruta de error genérica para redirigir a [!DNL Fastly].
 
-Los siguientes pasos detallarán cómo colocar redirecciones en Fastly en lugar de Nginx.
+Los siguientes pasos detallarán cómo colocar redirecciones en [!DNL Fastly] en lugar de [!DNL Nginx].
 
 1. Crear un diccionario de Edge.
 
-   Primero, puede usar [fragmentos de VCL en Adobe Commerce](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) para definir un diccionario de Edge. Esto contendrá las redirecciones.
+   Primero, puede usar [[!DNL VCL] fragmentos de código en Adobe Commerce](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) para definir un diccionario de Edge. Esto contendrá las redirecciones.
 
    Algunas advertencias a esto:
 
-   * Fastly no puede hacer regex en las entradas de diccionario. Es sólo una coincidencia exacta. Para obtener más información sobre estas limitaciones, consulte [Documentos de Fastly sobre las limitaciones de los diccionarios de Edge](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations).
-   * Fastly tiene un límite de 1000 entradas en un solo diccionario. Puede ampliar rápidamente este límite, pero eso conduce a la tercera advertencia.
-   * Cada vez que actualiza las entradas e implementa ese VCL actualizado en todos los nodos, hay un aumento geométrico del tiempo de carga con diccionarios en expansión; es decir, un diccionario de 2000 entradas en realidad se cargará de 3 a 4 veces más lento que un diccionario de 1000 entradas. Pero eso es solo un problema cuando se implementa el VCL (actualizar el diccionario o cambiar el código de función VCL).
+   * [!DNL Fastly] no puede [!DNL regex] en las entradas de diccionario. Es sólo una coincidencia exacta. Para obtener más información sobre estas limitaciones, consulte los documentos de [[!DNL Fastly] sobre las limitaciones de los diccionarios de Edge](https://docs.fastly.com/guides/edge-dictionaries/about-edge-dictionaries#limitations-and-considerations).
+   * [!DNL Fastly] tiene un límite de 1000 entradas en un solo diccionario. [!DNL Fastly] puede ampliar este límite, pero eso lleva a la tercera advertencia.
+   * Cada vez que actualiza las entradas e implementa ese(a) [!DNL VCL] actualizado(a) en todos los nodos, hay un aumento geométrico del tiempo de carga con diccionarios ampliados; es decir, un diccionario de 2000 entradas cargará de 3x-4x más lento que un diccionario de 1000 entradas. Pero eso es solo un problema cuando está implementando [!DNL VCL] (actualizando el diccionario o cambiando el código de función [!DNL VCL]).
 
-     No afecta al tiempo que se tarda rápidamente en procesar una solicitud; solo afecta al tiempo que tarda Fastly en expulsar una nueva configuración.
+     No influye en el tiempo que tarda [!DNL Fastly] en procesar una solicitud; solo influye en el tiempo que tarda [!DNL Fastly] en expulsar una nueva configuración.
 
      En términos generales, los cambios de configuración tardan unos segundos de media, no suelen superar los 5-10 segundos. Por lo tanto, un aumento del doble en los elementos de diccionario tarda más de 30 segundos en implementar la configuración. Un aumento de 4 veces tomaría cerca de 2 minutos. Esto nos lleva a la cuarta advertencia.
 
    * Hay un límite bastante estricto de 10 000 entradas en un diccionario de Edge.
 
-   Se recomienda consolidar en la lista de redirecciones. Puede utilizar varios diccionarios, pero tenga en cuenta que cualquier actualización que realice en su VCL tardará varios minutos en propagarse por Fastly.
+   Se recomienda consolidar en la lista de redirecciones. Puede usar varios diccionarios, pero tenga en cuenta que cualquier actualización que haga en su [!DNL VCL] tardará varios minutos en propagarse a lo largo de [!DNL Fastly].
 
-1. Compare la URL con los diccionarios.
+1. Comparar [!DNL URL] con los diccionarios.
 
-   Cuando se produce la búsqueda de URL, se realiza la comparación para aplicar el código de error personalizado si se encuentra una coincidencia.
+   Cuando se realice la búsqueda [!DNL URL], se realizará la comparación para aplicar el código de error personalizado si se encuentra una coincidencia.
 
-   Utilice otro fragmento de VCL para agregar algo similar a lo siguiente a `vcl_recv`:
+   Use otro fragmento de código [!DNL VCL] para agregar algo similar a lo siguiente a `vcl_recv`:
 
    ```
         declare local var.redir-path STRING;
@@ -70,7 +70,7 @@ Los siguientes pasos detallarán cómo colocar redirecciones en Fastly en lugar 
         }
    ```
 
-   Aquí, estamos comprobando si la URL existe en la entrada de la tabla. Si es así, se llama a un error interno de Fastly y se pasa a ese error la dirección URL de redireccionamiento de la tabla.
+   Aquí estamos comprobando si [!DNL URL] existe en la entrada de tabla. Si es así, llamaremos a un error [!DNL Fastly] interno y pasaremos a ese error el redireccionamiento [!DNL URL] desde la tabla.
 
 1. Administrar el redireccionamiento.
 
@@ -93,13 +93,14 @@ Los siguientes pasos detallarán cómo colocar redirecciones en Fastly en lugar 
 
 >[!WARNING]
 >
->Si desea probar todos estos pasos, se recomienda configurar un entorno de ensayo de Adobe Commerce. De este modo, puede ejecutar pruebas en el servicio Fastly para asegurarse de que todo se comporta como cabría esperar.
+>Si desea probar todos estos pasos, se recomienda configurar un entorno de ensayo de Adobe Commerce. De este modo, puede ejecutar pruebas en el servicio [!DNL Fastly] para asegurarse de que todo se comporta como cabría esperar.
 
-Si no desea ejecutar un entorno de ensayo de Adobe Commerce, pero desea ver el aspecto que tendrían estas redirecciones, puede configurar una cuenta de ensayo directamente en Fastly.
+Si no desea ejecutar un entorno de ensayo de Adobe Commerce, pero desea ver el aspecto que tendrían estas redirecciones, puede configurar una cuenta de ensayo directamente en [!DNL Fastly].
 
 ## Lectura relacionada
 
-* [Referencia de VCL de Fastly](https://docs.fastly.com/vcl/)
-* [Configure rutas](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) en nuestra documentación para desarrolladores.
-* [Configurado rápidamente](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en nuestra documentación para desarrolladores.
-* [Hoja de referencia de expresiones regulares VCL](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) en nuestra documentación para desarrolladores.
+* [[!DNL Fastly VCL] referencia](https://docs.fastly.com/vcl/)
+* [Configurar rutas](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) en nuestra documentación para desarrolladores
+* [Configurado [!DNL Fastly]](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en nuestra documentación para desarrolladores
+* [[!DNL VCL] hoja de referencia de expresiones regulares](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) en nuestra documentación para desarrolladores
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

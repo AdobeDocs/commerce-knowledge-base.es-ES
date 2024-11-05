@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución al problema de que haya va
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
 exl-id: 09d5c321-9c45-4041-b6f6-831efca0977e
-source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '444'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Por ejemplo, después de recibir una lista de registros con ID de entidad duplic
 SELECT * FROM $entityTable WHERE $column = <$entityID> ORDER BY created_in;
 ```
 
-Donde `$entityID = ID` de categoría/producto/regla de precio del carro/regla de precio del catálogo/página CMS.
+Donde `$entityID = ID` de categoría/producto/regla de precio del carro/regla de precio del catálogo/página de CMS.
 
 | Entidad | $entityTable | $column |
 |------------------|-----------------------------------|------------------|
@@ -67,5 +67,6 @@ Este es el comportamiento esperado y solo provocará problemas si hay discrepanc
 
 ## Lectura relacionada
 
-* [Los cambios en las categorías no se están guardando](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) en nuestra base de conocimiento de soporte.
-* [Duplicar entradas en la tabla de catálogos después de editar la fecha de finalización de una actualización de programación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) en nuestra base de conocimiento de soporte.
+* [Los cambios en las categorías no se están guardando](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.html) en nuestra base de conocimiento de soporte
+* [Duplicar entradas en la tabla de catálogos después de editar la fecha de finalización de una actualización de programación](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/known-issues-patches-attached/duplicate-entries-in-the-catalogrule-table-after-editing-the-end-date-of-a-schedule-update.html) en nuestra base de conocimiento de soporte
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

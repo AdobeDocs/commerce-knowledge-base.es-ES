@@ -4,9 +4,9 @@ description: Este artículo proporciona una corrección para cuando se actualiza
 exl-id: d951205c-add9-478c-9c7d-2ba975d53b14
 feature: Categories
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '735'
 ht-degree: 0%
 
 ---
@@ -88,4 +88,8 @@ Siga estos pasos:
 1. Busque los registros de categoría con el mismo `entity_id` y el mismo valor `created_in`.
 1. Seleccione el registro donde `row_id` = `entity_id` y copie el valor `updated_in`.
 1. Seleccione el registro donde `row_id` no es igual a `entity_id` y pegue el valor `updated_in` copiado como el valor `created_in`. Consulte la captura de pantalla siguiente como ilustración.    ![Copiando el valor created_in.png](assets/copy_created-in_value.png)
-1. Compruebe que el registro de actualización de categoría, cuyo valor `created_in` ha actualizado (en el paso 3), existe en la tabla `staging_update`. *Por ejemplo:* SI el valor `created_in` copiado es 1509281953, ENTONCES la entidad con `row_id` = 1509281953 debe existir en la tabla `staging_update`
+1. Compruebe que el registro de actualización de categoría, cuyo valor `created_in` ha actualizado (en el paso 3), existe en la tabla `staging_update`. *Por ejemplo:* SI el valor `created_in` copiado es 1509281953, ENTONCES la entidad con `row_id` = 1509281953 debe existir en la tabla `staging_update`.
+
+## Lectura relacionada
+
+[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

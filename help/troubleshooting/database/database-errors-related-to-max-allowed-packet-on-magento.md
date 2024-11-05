@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución para los errores de conexi
 exl-id: e8932b72-91a3-43ea-800e-a6c7a5a17656
 feature: Best Practices, Observability, Services
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '488'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Este artículo proporciona una solución para los errores de conexión a la base
 
 ## Problema
 
-Cuando un cliente MySQL o el servidor [mysqld](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html) recibe un paquete mayor de [max\_allowed\_packet](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet) bytes, emite un error de [ER\_NET\_PACKET\_TOO\_LARGE](https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html#error_er_net_packet_too_large) (que se puede ver en `exception.log`) y cierra la conexión. Con algunos clientes, también puede que se produzca un error de *pérdida de conexión con el servidor MySQL durante query* si el paquete de comunicación es demasiado grande.
+Cuando un cliente de [!DNL MySQL] o el servidor [mysqld](https://dev.mysql.com/doc/refman/8.0/en/mysqld.html) recibe un paquete con más de [max\_allowed\_packet](https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html#sysvar_max_allowed_packet) bytes, emite un error de [ER\_NET\_PACKET\_TOO\_LARGE](https://dev.mysql.com/doc/mysql-errors/8.0/en/server-error-reference.html#error_er_net_packet_too_large) (que se puede ver en `exception.log`) y cierra la conexión. Con algunos clientes, también puede sufrir un error de *pérdida de conexión con el servidor [!DNL MySQL] durante el error query* si el paquete de comunicación es demasiado grande.
 
 <u>Pasos a seguir</u>
 
@@ -29,7 +29,7 @@ Hay diversas tareas que pueden producir este problema. Esto puede incluir intent
 
 ## Causa
 
-El valor predeterminado de 16 MB para la configuración de MySQL `max_allowed_packets` no es lo suficientemente grande como para satisfacer sus necesidades.
+El valor predeterminado de 16 MB para la configuración de [!DNL MySQL] `max_allowed_packets` no es lo suficientemente grande como para satisfacer sus necesidades.
 
 ## Solución
 
@@ -45,7 +45,8 @@ El valor predeterminado de 16 MB para la configuración de MySQL `max_allowed_pa
 
 ## Lectura relacionada
 
-* [Guía de instalación > MySQL](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/mysql.html?itm_source=devdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=max%20allowed%2016%20MB) en nuestra documentación para desarrolladores.
-* [La carga de la base de datos pierde la conexión con MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md) en nuestra base de conocimiento de soporte.
+* [Descripción general de la instalación local](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) en nuestra documentación para desarrolladores.
+* [La carga de la base de datos pierde la conexión con [!DNL MySQL]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql) en nuestra base de conocimiento de soporte.
 * [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) en nuestra base de conocimiento de soporte.
 * [Prácticas recomendadas para resolver problemas de rendimiento de la base de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) en nuestra base de conocimiento de soporte.
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
