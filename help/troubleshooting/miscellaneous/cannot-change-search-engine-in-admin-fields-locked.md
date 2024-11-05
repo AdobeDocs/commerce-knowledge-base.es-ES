@@ -2,9 +2,9 @@
 title: No se puede cambiar el motor de búsqueda en app/etc/env.php
 description: Este artículo proporciona una solución al problema de que intenta cambiar el motor de búsqueda en el administrador de Commerce, pero los campos están bloqueados.
 exl-id: 61006ce7-34f9-4e4d-a197-f3d627dd277f
-source-git-commit: c903360ffb22f9cd4648f6fdb4a812cb61cd90c5
+source-git-commit: bc800397a3c0c3a86eb717db60e445e13b299688
 workflow-type: tm+mt
-source-wordcount: '238'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -42,4 +42,4 @@ La configuración del motor de búsqueda está bloqueada en el archivo `app/etc/
 
 ## Lectura relacionada
 
-* [Campos bloqueados en Commerce Admin](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) en la Guía de Commerce en la infraestructura de la nube.
+* [Campos bloqueados (atenuados) en el administrador de Commerce](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md) en la Guía de infraestructura de Commerce en la nube.

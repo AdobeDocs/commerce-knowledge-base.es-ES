@@ -1,19 +1,19 @@
 ---
-title: Campos bloqueados en el administrador de Commerce
+title: Campos bloqueados (atenuados) en la administración de Commerce
 description: Este artículo proporciona una solución para los casos en los que no se pueden modificar campos en el Administrador de Commerce.
 exl-id: 5fe0967a-4241-440b-bb0d-429fa5644bbc
 feature: Admin Workspace
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: bc800397a3c0c3a86eb717db60e445e13b299688
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '277'
 ht-degree: 0%
 
 ---
 
-# Campos bloqueados en el administrador de Commerce
+# Campos bloqueados (atenuados) en la administración de Commerce
 
-Este artículo proporciona una solución para los casos en los que no se pueden modificar campos en el Administrador de Commerce.
+Este artículo proporciona una solución para los casos en los que no se pueden modificar los campos bloqueados (atenuados) en el administrador de Commerce.
 
 ## Productos y versiones afectados
 
