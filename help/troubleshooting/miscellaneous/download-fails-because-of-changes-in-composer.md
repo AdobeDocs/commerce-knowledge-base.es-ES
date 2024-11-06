@@ -4,7 +4,7 @@ description: Este artículo proporciona una corrección para un error de descarg
 exl-id: 5abdab97-4b0c-466b-a68f-a2637d2826e5
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '184'
 ht-degree: 0%
@@ -52,5 +52,5 @@ Para solucionarlo:
    * Actualizar el Compositor a una versión posterior al 26 de noviembre de 2015: `composer self-update`.
 
 1. Elimine el directorio y los subdirectorios de Adobe Commerce.
-1. Vuelva a intentar la descarga utilizando `[composer create-project](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html)` o `[git clone](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/dev_install.html)`.
+1. Vuelva a intentar la descarga utilizando `[composer create-project](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer)` o `[git clone](https://developer.adobe.com/commerce/contributor/guides/install/clone-repository/)`.
 1. Después de descargar correctamente el software de Adobe Commerce, actualice el Compositor: `composer self-update`.

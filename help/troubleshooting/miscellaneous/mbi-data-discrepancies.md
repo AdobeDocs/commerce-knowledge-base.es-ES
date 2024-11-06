@@ -4,7 +4,7 @@ description: "¿Parecen inexactos los números de un determinado informe? ¿Ve v
 exl-id: 2ecea990-7292-46c1-b6eb-75f0404aaf0b
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '192'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 * [Lista de comprobación de diagnóstico de discrepancias de datos](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [Uso de exportaciones para detectar discrepancias en los datos](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-También le recomendamos que se asegure de que se han establecido los [métodos de replicación](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-replication-methods.html) y [reverificaciones](https://docs.magento.com/mbi/data-analyst/data-warehouse-mgr/cfg-data-rechecks.html) correctos para las tablas y columnas involucradas en la discrepancia. Tenga en cuenta que necesita permisos de administrador para acceder al método de replicación y volver a comprobar la información.
+También le recomendamos que se asegure de que se han establecido los [métodos de replicación](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) y [reverificaciones](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) correctos para las tablas y columnas involucradas en la discrepancia. Tenga en cuenta que necesita permisos de administrador para acceder al método de replicación y volver a comprobar la información.
 
 ## ¡Todavía necesito ayuda!
 

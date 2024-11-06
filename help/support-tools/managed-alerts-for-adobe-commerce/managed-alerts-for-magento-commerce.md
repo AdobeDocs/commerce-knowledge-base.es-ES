@@ -4,7 +4,7 @@ description: Si es cliente de Adobe Commerce en una infraestructura en la nube, 
 exl-id: 4d08eaad-a3ce-4f6c-9c32-58e44e1d6534
 feature: Observability, Support, Tools and External Services
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 # Alertas administradas para Adobe Commerce
 
 
-Hemos configurado paneles y alertas clave para ayudarle a comprender cuándo su sitio alcanza niveles críticos de almacenamiento y Apdex (la satisfacción de los usuarios con las aplicaciones y el tiempo de respuesta de los servicios). Esto puede ayudarle a tomar medidas antes de que note tiempos de respuesta lentos o una interrupción del servicio. Podrá solucionar los problemas de las alertas con los artículos que se enumeran a continuación. Antes de poder utilizar las alertas, primero configure los canales de notificación. Consulte [Configuración de canales de notificación de New Relic](https://devdocs.magento.com/cloud/project/new-relic.html#configure-notification-channels) en nuestra documentación para desarrolladores.
+Hemos configurado paneles y alertas clave para ayudarle a comprender cuándo su sitio alcanza niveles críticos de almacenamiento y Apdex (la satisfacción de los usuarios con las aplicaciones y el tiempo de respuesta de los servicios). Esto puede ayudarle a tomar medidas antes de que note tiempos de respuesta lentos o una interrupción del servicio. Podrá solucionar los problemas de las alertas con los artículos que se enumeran a continuación. Antes de poder utilizar las alertas, primero configure los canales de notificación. Consulte [Configuración de canales de notificación de New Relic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) en nuestra documentación para desarrolladores.
 
 >[!NOTE]
 >

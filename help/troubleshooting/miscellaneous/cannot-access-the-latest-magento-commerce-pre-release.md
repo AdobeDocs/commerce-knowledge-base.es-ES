@@ -4,7 +4,7 @@ description: Este artículo proporciona soluciones a problemas que se producen a
 exl-id: cbf54a15-b307-4bfc-90b7-cff98aeb4fce
 feature: Roles/Permissions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '615'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Estas son las causas más comunes de los problemas:
 
 Durante la versión preliminar, los paquetes de versiones están disponibles en dos ubicaciones:
 
-1. A través del Compositor en [magento.com](https://repo.magento.com/), usando el MageID principal de la cuenta. Para obtener más información sobre cómo usar Composer, consulta [Instalar Adobe Commerce con Composer](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) en nuestra documentación para desarrolladores.
+1. A través del Compositor en [magento.com](https://repo.magento.com/), usando el MageID principal de la cuenta. Para obtener más información sobre cómo usar Composer, consulta [Instalar Adobe Commerce con Composer](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) en nuestra documentación para desarrolladores.
 1. **Mi cuenta** > **Descargas** en [account.magento.com](https://account.magento.com/customer/account/login).
 
 >[!NOTE]

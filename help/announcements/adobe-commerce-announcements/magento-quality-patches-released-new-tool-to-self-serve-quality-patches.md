@@ -4,7 +4,7 @@ description: 'Adobe ha lanzado la herramienta Parches de calidad para una dispon
 exl-id: e6a79d16-84be-4a71-a41d-ef2b43ec98d9
 feature: Tools and External Services
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
@@ -29,5 +29,5 @@ Una vez instalada la herramienta, puede comprobar si hay parches disponibles, ap
 
 Consulte nuestra documentación para desarrolladores para obtener más información:
 
-* [Parches disponibles en la herramienta Parches de calidad](https://devdocs.magento.com/quality-patches/tool.html#patch-grid)
-* [Notas de la versión de la herramienta Parches de calidad](https://devdocs.magento.com/quality-patches/release-notes.html)
+* [Parches disponibles en la herramienta Parches de calidad](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
+* [Notas de la versión de la herramienta Parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)

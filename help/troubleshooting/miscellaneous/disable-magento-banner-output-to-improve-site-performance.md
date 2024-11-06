@@ -4,7 +4,7 @@ description: Este artículo proporciona una corrección para el bajo rendimiento
 exl-id: 90a8bd21-1f2c-4cfe-8213-17f877e20de8
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '426'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Para Adobe Commerce en la infraestructura en la nube 2.2.x:
 
 Si no ve la opción **Banners** en **Contenido** > *Elementos*, este no es el caso y no se pueden aplicar las recomendaciones de este artículo.
 
-Para Adobe Commerce en la infraestructura en la nube 2.3.x (la funcionalidad fue [renombrada en la versión 2.3.x](https://devdocs.magento.com/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html#banner-now-dynamic-block)):
+Para Adobe Commerce en la infraestructura en la nube 2.3.x (la funcionalidad fue [renombrada en la versión 2.3.x](https://commerce-docs.github.io/devdocs-archive/2.3/guides/v2.3/release-notes/ReleaseNotes2.3.0Commerce.html#banner-now-dynamic-block)):
 
 1. Inicie sesión en el administrador de Commerce.
 1. Vaya a **Contenido** > *Elementos >* **Bloques dinámicos**.
@@ -56,5 +56,5 @@ Cuando el módulo `Magento_Banner` está habilitado, Adobe Commerce envía solic
 >
 >Recomendamos encarecidamente probar primero los cambios en el [entorno de ensayo/integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) antes de aplicarlo a Producción. También recomendamos realizar una copia de seguridad reciente antes de realizar cualquier manipulación.
 
-1. Deshabilite la salida del módulo `Magento_Banner`, tal como se describe en [Deshabilitar la salida del módulo](https://devdocs.magento.com/guides/v2.3/config-guide/config/disable-module-output.html) en nuestra documentación para desarrolladores. El nombre de módulo que necesita usar es `Magento_Banner`.
-1. Implemente su código. Para Adobe Commerce en la infraestructura en la nube, realice la implementación tal como se describe en el artículo [Implementar su tienda](https://devdocs.magento.com/guides/v2.3/cloud/live/stage-prod-live.html) en nuestra documentación para desarrolladores.
+1. Deshabilite la salida del módulo `Magento_Banner`, tal como se describe en [Deshabilitar la salida del módulo](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/disable-module-output) en nuestra documentación para desarrolladores. El nombre de módulo que necesita usar es `Magento_Banner`.
+1. Implemente su código. Para Adobe Commerce en la infraestructura en la nube, realice la implementación tal como se describe en el artículo [Implementar su tienda](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) en nuestra documentación para desarrolladores.

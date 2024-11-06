@@ -4,7 +4,7 @@ description: Este artículo proporciona una corrección para el caso en el que e
 exl-id: 6f0b9f47-1901-4c43-88d8-fd992015d70f
 feature: Cloud, Marketing Tools, Paas
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -38,5 +38,5 @@ Si tiene habilitado el autoservicio, actualice ECE-Tools al menos a 2002.0.12 y 
 ## Lectura relacionada
 
 * [Cómo bloquear el tráfico malintencionado para Magento Commerce Cloud en el nivel Fastly](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) de nuestra base de conocimiento de soporte.
-* [Agregue robots de mapa del sitio y de motor de búsqueda](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) en nuestra documentación para desarrolladores.
+* [Agregue robots de mapa del sitio y de motor de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) en nuestra documentación para desarrolladores.
 * [Robots de motores de búsqueda](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) en nuestra guía del usuario.

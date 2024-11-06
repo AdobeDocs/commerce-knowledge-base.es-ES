@@ -4,7 +4,7 @@ description: "Este artículo proporciona una solución para los casos en los que
 exl-id: e7300f64-5749-4de8-b4d2-bc4789437282
 feature: Deploy
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -45,12 +45,12 @@ Su versión de MariaDB no es compatible con la versión de Adobe Commerce a la q
 Debe actualizar el servicio MariaDB a una versión compatible antes de actualizar la aplicación.
 
 
-Para la rama de integración en la arquitectura del plan Pro de Adobe Commerce en la infraestructura en la nube (y todas las ramas en la arquitectura de inicio), siga [Configurar servicio](https://devdocs.magento.com/cloud/project/services.html) en nuestra documentación para desarrolladores.
+Para la rama de integración en la arquitectura del plan Pro de Adobe Commerce en la infraestructura en la nube (y todas las ramas en la arquitectura de inicio), siga [Configurar servicio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/services-yaml) en nuestra documentación para desarrolladores.
 
 Para la arquitectura del plan Pro de ensayo y producción en Adobe Commerce en la infraestructura en la nube, [envíe un vale de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para solicitar que los servicios se actualicen antes de implementar la actualización de la versión de Adobe Commerce.
 
 
 ## Lectura relacionada
 
-* [Prácticas recomendadas para compilaciones e implementación](https://devdocs.magento.com/cloud/reference/discover-deploy.html#best-practices) en nuestra documentación para desarrolladores.
+* [Prácticas recomendadas para compilaciones e implementación](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/best-practices#best-practices) en nuestra documentación para desarrolladores.
 * [Actualización a Adobe Commerce 2.3.5: tablas compactas a dinámicas](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/commerce-235-upgrade-prerequisites-mariadb.html) en nuestra base de conocimientos de soporte.

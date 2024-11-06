@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para el problema cuando no
 exl-id: df19b597-f615-4b19-82c1-59cc179fa720
 feature: Marketing Tools, Shipping/Delivery, Storefront
 role: Admin
-source-git-commit: 1ce963142a261a17e2b42f79dd567c8484ec5b3e
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # No se puede guardar _shipping_ como clave de URL
 
-Este artículo proporciona una solución para el problema cuando no puede guardar el envío como una clave URL (_p. ej., /shipping_) para productos o páginas de CMS. Cuando intente guardar la clave URL, recibirá un error que indica que se trata de una URL duplicada.
+Este artículo proporciona una solución para el problema cuando no puede guardar el envío como una clave de URL (_p. ej., /shipping_) para productos o páginas de CMS. Cuando intente guardar la clave URL, recibirá un error que indica que se trata de una URL duplicada.
 
 ## Productos y versiones afectados
 
@@ -122,5 +122,5 @@ Además, evite utilizar estas palabras clave etiquetadas como *reserved* palabra
 
 ## Lectura relacionada
 
-* [Reescrituras de URL](https://docs.magento.com/user-guide/marketing/url-rewrite.html) en nuestra Guía del usuario de promociones y comercialización.
-* [Prácticas recomendadas de SEO](https://docs.magento.com/user-guide/marketing/seo-best-practices.html) en nuestra Guía del usuario de promociones y comercialización.
+* [Reescrituras de URL](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) en nuestra Guía del usuario de promociones y comercialización.
+* [Prácticas recomendadas de SEO](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) en nuestra Guía del usuario de promociones y comercialización.

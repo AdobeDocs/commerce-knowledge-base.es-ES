@@ -4,7 +4,7 @@ description: Este artículo proporciona soluciones para situaciones en las que e
 exl-id: 788c709e-59f5-4062-ab25-5ce6508f29f9
 feature: Catalog Management, Categories, Cloud, Paas, Services
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1154'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Es posible que el montaje de `/data/mysql` se llene debido a una serie de proble
 
 Hay un paso inmediato que podría tomar para volver a encauzar [!DNL MySQL] (o evitar que se atasque): libere espacio vaciando las tablas grandes.
 
-Sin embargo, una solución a largo plazo sería asignar más espacio y seguir las [prácticas recomendadas de la base de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html), incluida la habilitación de la funcionalidad [Archivo de pedidos/facturas/envíos](https://docs.magento.com/user-guide/sales/order-archive.html).
+Sin embargo, una solución a largo plazo sería asignar más espacio y seguir las [prácticas recomendadas de la base de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html), incluida la habilitación de la funcionalidad [Archivo de pedidos/facturas/envíos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 A continuación se ofrecen detalles sobre soluciones rápidas y a largo plazo.
 
@@ -124,7 +124,7 @@ Compruebe el archivo `ibtmp1` grande en `/data/mysql` de cada nodo: este archivo
 
 >[!WARNING]
 >
->Se recomienda encarecidamente crear una copia de seguridad de la base de datos antes de realizar cualquier manipulación y evitarlas durante períodos de carga alta del sitio. Consulte [Volcar la base de datos](https://devdocs.magento.com/cloud/project/project-webint-snap.html#db-dump) en nuestra documentación para desarrolladores.
+>Se recomienda encarecidamente crear una copia de seguridad de la base de datos antes de realizar cualquier manipulación y evitarlas durante períodos de carga alta del sitio. Consulte [Volcar la base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en nuestra documentación para desarrolladores.
 
 Compruebe si hay tablas grandes y considere si alguna de ellas se puede vaciar. Haga esto en el nodo principal (origen).
 
@@ -132,7 +132,7 @@ Por ejemplo, las tablas con informes suelen vaciarse. Para obtener más informac
 
 Si no hay tablas de informes enormes, considere la posibilidad de vaciar `_index` tablas, solo para volver a encarrilar la aplicación de Adobe Commerce. `index_price` tablas serían los mejores candidatos. Por ejemplo, `catalog_category_product_index_storeX` tablas, donde X puede tener valores desde &quot;1&quot; hasta el número máximo de tiendas. Tenga en cuenta que deberá reindexar para restaurar los datos de estas tablas y, en el caso de catálogos grandes, este reindexado puede llevar mucho tiempo.
 
-Una vez vaciados, espere a que finalice la sincronización de wsrep. Ahora puede crear copias de seguridad y realizar pasos más significativos para agregar más espacio, como asignar o comprar más espacio y habilitar la funcionalidad [Archivo de pedidos/facturas/envíos](https://docs.magento.com/user-guide/sales/order-archive.html).
+Una vez vaciados, espere a que finalice la sincronización de wsrep. Ahora puede crear copias de seguridad y realizar pasos más significativos para agregar más espacio, como asignar o comprar más espacio y habilitar la funcionalidad [Archivo de pedidos/facturas/envíos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ### Comprobar configuración de registro binario
 

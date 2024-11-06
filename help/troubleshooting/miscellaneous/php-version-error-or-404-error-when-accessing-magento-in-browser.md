@@ -4,7 +4,7 @@ description: Este artículo proporciona soluciones para los problemas en los que
 exl-id: 6cfdeaae-5e52-411c-9006-5af8a467873a
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -29,7 +29,7 @@ El siguiente mensaje se muestra cuando intenta acceder a la tienda de Adobe Comm
 
 Pruebe lo siguiente:
 
-* Actualice PHP a la versión 7.3. Para obtener más información, consulte [Requisitos de pila de tecnología Adobe Commerce 2.3](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html#php) en nuestra documentación para desarrolladores.
+* Actualice PHP a la versión 7.3. Para obtener más información, consulte [Requisitos de pila de tecnología Adobe Commerce 2.3](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) en nuestra documentación para desarrolladores.
 * Reinicie Apache, ya que es posible que no utilice la misma versión de PHP que en el sistema de archivos. Para reiniciar Apache, utilice los siguientes comandos:
    * Ubuntu: `service apache2 restart`
    * CentOS: `service httpd restart`
@@ -42,5 +42,5 @@ Se muestra un error 404 (no encontrado) al intentar acceder a la tienda de Adobe
 
 Pruebe lo siguiente:
 
-* Asegúrese de que las [reescrituras del servidor Apache](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/apache.html) estén habilitadas. Si las reescrituras del servidor Apache están configuradas incorrectamente, los archivos estáticos no se proporcionan desde la ubicación correcta.
+* Asegúrese de que las [reescrituras del servidor Apache](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/apache) estén habilitadas. Si las reescrituras del servidor Apache están configuradas incorrectamente, los archivos estáticos no se proporcionan desde la ubicación correcta.
 * Es posible que haya un problema con la dirección URL base que introdujo durante la instalación. La dirección URL base se especifica como el valor de `--base-url=` al instalar Adobe Commerce desde la línea de comandos o como el valor del campo **Su dirección de almacén** en la página Configuración web del instalador web. La dirección URL base *debe* comenzar con el esquema (como `http://` ) y finalizar con una barra diagonal (/). Vuelva a ejecutar el instalador con un valor válido e intente acceder a Adobe Commerce más tarde.

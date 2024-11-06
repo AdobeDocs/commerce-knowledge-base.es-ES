@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para los casos en los que 
 exl-id: 7e6bcebd-edff-437a-9103-2743443d2ed9
 feature: Cache, Categories, Deploy, Storefront
 role: Admin
-source-git-commit: c4d586ca3980acbe4f33c5f2616ef7f3051bc7d3
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '162'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Si esto sucede, puede utilizar el comando Magento para regenerar la caché de im
 
 Para ello, necesita la información SSH y la URL del almacén disponibles a través de [Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
 
-1. SSH para su proyecto que era una fuente para el [volcado de la base de datos](/help/how-to/general/create-database-dump-on-cloud.md), tal como se describe en [SSH para el entorno](https://devdocs.magento.com/guides/v2.3/cloud/env/environments-ssh.html#ssh) en nuestra documentación para desarrolladores.
+1. SSH para su proyecto que era una fuente para el [volcado de la base de datos](/help/how-to/general/create-database-dump-on-cloud.md), tal como se describe en [SSH para el entorno](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) en nuestra documentación para desarrolladores.
 1. Vuelva a generar la caché de imágenes ejecutando:
 
    ```bash

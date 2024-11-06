@@ -4,9 +4,9 @@ description: Este artículo proporciona un parche para el problema de seguridad 
 exl-id: fe147ad5-6019-46c1-b48c-6b957b6e1582
 feature: Admin Workspace
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -48,4 +48,4 @@ El Adobe también recomienda encarecidamente que los comerciantes implementen he
 * [5 Acciones inmediatas a Protect contra ataques por fuerza bruta](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
 * [Protect: su contraseña de instalación de Magento que adivina la nueva actualización](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
 * [Prácticas recomendadas de seguridad](https://magento.com/security/best-practices/security-best-practices)
-* Agregar y configurar la autenticación de doble factor en Adobe Commerce para [2.3.x](https://docs.magento.com/user-guide/v2.3/stores/security-two-factor-authentication.html) y [2.4.x](https://docs.magento.com/user-guide/stores/security-two-factor-authentication.html)
+* Agregar y configurar la autenticación de doble factor en Adobe Commerce para [2.4.x](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication)

@@ -4,7 +4,7 @@ description: 'Este artículo explica cómo identificar la causa de un mensaje de
 exl-id: aa414e04-bc6d-46bd-b98f-0446b97bda14
 feature: Admin Workspace, Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '303'
 ht-degree: 0%
@@ -60,4 +60,4 @@ Sin embargo, si el resultado muestra que los archivos aún están en la caché, 
 
 ## Lectura relacionada
 
-* [Administración de caché](https://docs.magento.com/user-guide/system/cache-management.html) en nuestra documentación para desarrolladores.
+* [Administración de caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) en nuestra documentación para desarrolladores.

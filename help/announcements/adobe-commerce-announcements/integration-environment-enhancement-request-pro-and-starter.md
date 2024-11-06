@@ -4,7 +4,7 @@ description: Si es cliente de Adobe Commerce en la infraestructura en la nube, p
 exl-id: c49b049b-efb8-412f-b27d-a89f8a758d85
 feature: Integration
 role: Admin
-source-git-commit: fb26b71316e04de31fa6a895b87230bed5c1ca6a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '645'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Si es cliente de Adobe Commerce en la infraestructura en la nube, planifica la a
 1. El comerciante necesita [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando una actualización a los entornos de integración mejorada, utilizando el motivo de contacto &quot;*Solicitar un cambio de configuración en la nube*&quot;.
 1. El equipo de ingeniería de clientes de Adobe confirma el número de entornos de integración e inicia el cambio.
 1. Se notificará al comerciante en el ticket cuando se complete la actualización.
-1. El comerciante vuelve a implementar los entornos de integración. Siga los pasos de [Combinar una rama](https://devdocs.magento.com/cloud/env/environments-start.html#merge) en nuestra documentación para desarrolladores. *Nota*: la implementación se produce automáticamente cuando se ejecuta: <pre>git push origin <branch-name></pre>
+1. El comerciante vuelve a implementar los entornos de integración. Siga los pasos de [Combinar una rama](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) en nuestra documentación para desarrolladores. *Nota*: la implementación se produce automáticamente cuando se ejecuta: <pre>git push origin <branch-name></pre>
 
 El aumento del rendimiento indica una actualización correcta a los entornos de integración mejorados.
 
@@ -43,7 +43,7 @@ El aumento del rendimiento indica una actualización correcta a los entornos de 
 1. El comerciante debe [enviar un vale de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando una actualización a los entornos de integración mejorada, por el motivo de contacto *&quot;Solicitar un cambio de configuración de nube&quot;* - **su entorno de ensayo es un entorno de integración con nombre**.
 1. El equipo de ingeniería de clientes de Adobe confirma el número de entornos de integración e inicia el cambio.
 1. Se notificará al comerciante en el ticket cuando se complete la actualización.
-1. El comerciante vuelve a implementar los entornos de integración. Siga los pasos de [Combinar una rama](https://devdocs.magento.com/cloud/env/environments-start.html#merge) en nuestra documentación para desarrolladores. *Nota*: la implementación se produce automáticamente cuando se ejecuta: <pre>git push origin <branch-name></pre>
+1. El comerciante vuelve a implementar los entornos de integración. Siga los pasos de [Combinar una rama](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches#merge-a-branch) en nuestra documentación para desarrolladores. *Nota*: la implementación se produce automáticamente cuando se ejecuta: <pre>git push origin <branch-name></pre>
 
 El aumento del rendimiento indica una actualización correcta a los entornos de integración mejorados.
 

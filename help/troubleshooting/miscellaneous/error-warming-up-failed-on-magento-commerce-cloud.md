@@ -4,7 +4,7 @@ description: "Este artículo proporciona una solución para los casos en los que
 exl-id: 20a88030-b1c9-4fdc-83c1-f344d44cd2e1
 feature: Cache, Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '188'
 ht-degree: 0%
@@ -47,5 +47,5 @@ Asegúrese de que no tiene habilitado el control de acceso: vaya a la rama o ent
 
 ## Lectura relacionada
 
-* [Guía del usuario de Adobe Commerce > Caché de página completa](https://docs.magento.com/user-guide/system/cache-full-page.html) en nuestra guía del usuario.
+* [Guía del usuario de Adobe Commerce > Caché de página completa](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) en nuestra guía del usuario.
 * [Calentamiento de la caché y sitio no disponible en Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) en nuestra base de conocimiento de soporte.

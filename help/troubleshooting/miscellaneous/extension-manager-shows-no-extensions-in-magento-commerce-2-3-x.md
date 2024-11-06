@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para las extensiones que f
 exl-id: bed8506d-39b9-449a-891b-466d214a0fe8
 feature: Extensions
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Este artículo proporciona una solución para las extensiones que faltan en el E
 
 Cuando compra extensiones a través del Commerce Marketplace, no puede instalarlas con el Extension Manager principal de Adobe Commerce. Al añadir las claves de acceso y sincronizar con Marketplace, el Extension Manager no muestra extensiones.
 
-La **solución** para el problema es usar la instalación de Adobe Commerce desde la línea de comandos como se muestra en [Instalación general de CLI](https://devdocs.magento.com/extensions/install/) en nuestra documentación para desarrolladores.
+La **solución** para el problema es usar la instalación de Adobe Commerce desde la línea de comandos como se muestra en [Instalación general de CLI](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) en nuestra documentación para desarrolladores.
 
 <u>Pasos a seguir</u>:
 
@@ -44,4 +44,4 @@ La extensión aparece en la sección Extension Manager del Administrador de Comm
 
 ## Solución
 
-Use la instalación de Adobe Commerce desde la línea de comandos como se muestra en [Instalación general de CLI](https://devdocs.magento.com/extensions/install/) en nuestra documentación para desarrolladores.
+Use la instalación de Adobe Commerce desde la línea de comandos como se muestra en [Instalación general de CLI](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) en nuestra documentación para desarrolladores.

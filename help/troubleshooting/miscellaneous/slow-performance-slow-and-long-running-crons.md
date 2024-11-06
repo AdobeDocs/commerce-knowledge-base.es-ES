@@ -4,7 +4,7 @@ description: Este artículo describe cómo resolver los problemas de rendimiento
 exl-id: a78ca3c3-85b4-40a1-a693-4703dd3ef4b5
 feature: Best Practices, Cache, Categories, Catalog Management
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >En cualquier versión de Adobe Commerce, ya que algunas extensiones solo funcionan con tablas planas, existe el riesgo de que se deshabiliten las tablas planas. Si sabe que tiene algunas extensiones que utilizan indexadores de catálogo plano, puede que tenga que tenerlo en cuenta al configurar esos valores en &quot; *No*&quot;.
 
-Este artículo describe cómo resolver los problemas de rendimiento del sitio y la ejecución lenta y los crones atascados causados por la habilitación de [tablas planas e indexadores](https://docs.magento.com/m2/ce/user_guide/catalog/catalog-flat.html).
+Este artículo describe cómo resolver los problemas de rendimiento del sitio y la ejecución lenta y los crones atascados causados por la habilitación de [tablas planas e indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/catalog-flat).
 
 PRODUCTOS Y VERSIONES AFECTADOS
 

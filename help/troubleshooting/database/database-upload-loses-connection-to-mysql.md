@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para cuando la carga de la
 exl-id: 6051cea1-8292-4a81-8908-eb516cb4a32b
 feature: Services
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '229'
 ht-degree: 0%
@@ -42,7 +42,7 @@ web@ddc35c264bd89a72042f1f3e5a:~$ nc database.internal 3306
 Database out of space
 ```
 
-Necesitará asignar más espacio para la base de datos en su `services.yaml` e implementarlo si tiene espacio sin utilizar. Para ver los pasos, consulte [Espacio en disco de servicio](https://devdocs.magento.com/cloud/project/manage-disk-space.html#service-disk-space).
+Necesitará asignar más espacio para la base de datos en su `services.yaml` e implementarlo si tiene espacio sin utilizar. Para ver los pasos, consulte [Espacio en disco de servicio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#service-disk-space).
 
 Nota: En el plan de arquitectura Pro, puede comprobar el espacio asignado en la partición ejecutando el siguiente comando: `df -h`
 
@@ -58,4 +58,4 @@ Filesystem                                         Size  Used Avail Use% Mounted
 
 ## Lectura relacionada
 
-[Administrar espacio en disco](https://devdocs.magento.com/cloud/project/manage-disk-space.html) en nuestra documentación para desarrolladores
+[Administrar espacio en disco](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space) en nuestra documentación para desarrolladores

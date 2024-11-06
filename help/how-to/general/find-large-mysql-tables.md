@@ -1,8 +1,8 @@
 ---
 title: Buscar tablas MySQL grandes
-description: '"Para identificar las tablas grandes, conéctese a la base de datos como se describe en el artículo [Conectarse a la base de datos](https://devdocs.magento.com/cloud/project/project-conf-files_services-mysql.html#connect-to-the-database) y ejecute el siguiente comando, donde "project_id" es su ID de proyecto en la nube:"'
+description: '"Para identificar las tablas grandes, conéctese a la base de datos como se describe en el artículo [Conectarse a la base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) y ejecute el siguiente comando, donde "project_id" es su ID de proyecto en la nube:"'
 exl-id: dc5019bc-ab6c-4568-986f-0a294a0f3ac3
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '111'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Buscar tablas MySQL grandes
 
-Para identificar las tablas grandes, conéctese a la base de datos como se describe en el artículo [Conectarse a la base de datos](https://devdocs.magento.com/cloud/project/project-conf-files_services-mysql.html#connect-to-the-database) y ejecute el siguiente comando, donde `project_id` es su Id. de proyecto en la nube:
+Para identificar las tablas grandes, conéctese a la base de datos como se describe en el artículo [Conectarse a la base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql#connect-to-the-database) y ejecute el siguiente comando, donde `project_id` es su Id. de proyecto en la nube:
 
 ```sql
 SELECT TABLE_NAME AS `Table`,

@@ -1,10 +1,10 @@
 ---
 title: Instale los parches más recientes para solucionar los problemas de Adobe Commerce Redis
-description: Este artículo proporciona información sobre los últimos parches relacionados con Redis disponibles en el paquete [Adobe Commerce on cloud Infrastructure Patches](https://devdocs.magento.com/cloud/project/project-patch.html).
+description: Este artículo proporciona información sobre los últimos parches relacionados con Redis disponibles en el paquete [Adobe Commerce on cloud Infrastructure Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches).
 exl-id: 0335bc11-f679-4629-b4e7-6a0e68c3ae44
 feature: Cache, Install, Services
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '183'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Instale los parches más recientes para solucionar los problemas de Adobe Commerce Redis
 
-Este artículo proporciona información sobre los parches más recientes relacionados con Redis disponibles en el paquete [Adobe Commerce on cloud Infrastructure Patches](https://devdocs.magento.com/cloud/project/project-patch.html).
+Este artículo proporciona información sobre los parches más recientes relacionados con Redis disponibles en el paquete [Adobe Commerce on cloud Infrastructure Patches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches).
 
 ## Productos y versiones afectados
 
@@ -25,7 +25,7 @@ El consumo adicional de CPU y memoria por parte de Redis podría disminuir el re
 
 ## Solución
 
-Aplique los parches más recientes proporcionados por Adobe Commerce en el paquete de parches de la infraestructura en la nube. Para obtener instrucciones detalladas, consulte [Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
+Aplique los parches más recientes proporcionados por Adobe Commerce en el paquete de parches de la infraestructura en la nube. Para obtener instrucciones detalladas, consulte [Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
 
 Los últimos parches Redis del paquete de parches de Adobe Commerce en la infraestructura en la nube contribuyen a lo siguiente:
 

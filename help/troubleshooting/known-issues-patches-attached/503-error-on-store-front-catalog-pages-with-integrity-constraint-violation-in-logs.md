@@ -4,7 +4,7 @@ description: Este artículo proporciona un parche para el problema conocido de A
 exl-id: ad363744-756a-48b9-ae11-58642e0ca6a4
 feature: Catalog Management, Logs
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Este artículo proporciona un parche como solución alternativa, pero el problema se solucionó de forma permanente en Adobe Commerce en la versión 2.3.3 de la infraestructura en la nube y se recomienda actualizar a la versión 2.3.3. Siga los pasos de [Actualizar la versión de Adobe Commerce](https://devdocs.magento.com/cloud/project/project-upgrade.html) en nuestra documentación para desarrolladores.
+>Este artículo proporciona un parche como solución alternativa, pero el problema se solucionó de forma permanente en Adobe Commerce en la versión 2.3.3 de la infraestructura en la nube y se recomienda actualizar a la versión 2.3.3. Siga los pasos de [Actualizar la versión de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) en nuestra documentación para desarrolladores.
 
 Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.0 relacionado con las páginas del catálogo de tienda que no son accesibles, con un mensaje de error similar al siguiente en el registro: *Infracción de restricción de integridad: 1062 Entrada duplicada &#39;%entry%&#39; para la clave &#39;PRIMARY&#39;, la consulta era: INSERT INTO \`search\_tmp\_%number%*.
 
@@ -78,6 +78,6 @@ Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor pro
 
 * [Ubicación de los archivos de registro para Adobe Commerce en la infraestructura de la nube con la arquitectura del plan inicial](/help/how-to/general/log-locations-directories-for-starter-plan.md) en nuestra base de conocimiento de asistencia.
 * [Ubicación de los archivos de registro para Adobe Commerce en la infraestructura en la nube con arquitectura de plan Pro](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md) en nuestra base de conocimiento de asistencia.
-* [Ubicación de los archivos de registro para Adobe Commerce](https://devdocs.magento.com/guides/v2.3/cloud/trouble/environments-logs.html) en nuestra documentación para desarrolladores.
+* [Ubicación de los archivos de registro para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations) en nuestra documentación para desarrolladores.
 
 ## Archivos adjuntos

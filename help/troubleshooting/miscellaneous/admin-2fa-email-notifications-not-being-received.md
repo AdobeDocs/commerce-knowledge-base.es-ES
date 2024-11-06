@@ -4,7 +4,7 @@ description: Este artículo proporciona información sobre la resolución de pro
 exl-id: 7ab6b2b4-6aca-4323-a45b-2b4e52955160
 feature: Admin Workspace, Communications
 role: Developer
-source-git-commit: 435a545adcf2a1d6b023abaec55c4b73e942ee1a
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 0%
@@ -58,4 +58,4 @@ Busque el correo electrónico en la carpeta de correo no deseado. Si el correo e
 
 ## Lectura relacionada
 
-* [SendGrid](https://devdocs.magento.com/cloud/project/sendgrid.html) en nuestra documentación para desarrolladores.
+* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) en nuestra documentación para desarrolladores.

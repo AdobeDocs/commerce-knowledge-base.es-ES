@@ -2,7 +2,7 @@
 title: No se puede acceder a la última versión de Beta
 description: Este artículo proporciona soluciones a problemas que se producen al intentar utilizar las últimas versiones de código de Beta para Adobe Commerce. El código Beta solo está disponible para socios de Adobe oficiales que hayan seguido el proceso descrito en [Programa Adobe Commerce Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program).
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '587'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Estas son las causas más comunes de los problemas:
 
 ### Ubicación del código de acceso anticipado
 
-Durante los períodos de acceso a la versión beta, los paquetes de la versión solo están disponibles a través de Composer en [repo.magento.com](https://repo.magento.com/). Los paquetes de versiones no están disponibles en los portales de GitHub y Adobe Commerce durante este periodo y los publicaremos en estas ubicaciones en la fecha de GA. Para obtener más información sobre cómo usar Composer, haga clic [aquí](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html).
+Durante los períodos de acceso a la versión beta, los paquetes de la versión solo están disponibles a través de Composer en [repo.magento.com](https://repo.magento.com/). Los paquetes de versiones no están disponibles en los portales de GitHub y Adobe Commerce durante este periodo y los publicaremos en estas ubicaciones en la fecha de GA. Para obtener más información sobre cómo usar Composer, haga clic [aquí](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer).
 
 ### ID de imagen que debe utilizar
 

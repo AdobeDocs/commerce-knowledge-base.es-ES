@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para los problemas de func
 exl-id: 517f6993-f09e-4a94-8c57-175ecf9a98a8
 feature: Extensions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
@@ -30,6 +30,6 @@ Al deshabilitar una salida de módulo en **Almacenes** > **Configuración** > **
 
 ## Solución
 
-Si necesita deshabilitar la funcionalidad del módulo, deshabilite el módulo tal como se describe en [Habilitar o deshabilitar módulos](https://devdocs.magento.com/guides/v2.1/install-gde/install/cli/install-cli-subcommands-enable.html) en nuestra documentación para desarrolladores.
+Si necesita deshabilitar la funcionalidad del módulo, deshabilite el módulo tal como se describe en [Habilitar o deshabilitar módulos](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules) en nuestra documentación para desarrolladores.
 
 La funcionalidad de deshabilitación de la salida del módulo se eliminó a partir de la versión 2.2.0.

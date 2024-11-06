@@ -2,7 +2,7 @@
 title: Adobe Commerce [!DNL crons] deshabilitado sin intervención
 description: Utilice este artículo para solucionar el problema en el cual  [!DNL crons] se deshabilitan sin intervención.
 exl-id: 5172d2ae-53ad-4db6-ae00-7b27c96911e9
-source-git-commit: 9cd7cabc37c0f290c41f790b0fb06177c3156d48
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '122'
 ht-degree: 0%
@@ -39,7 +39,7 @@ Problema con la configuración de [!DNL OPcache].
 
 ## Solución
 
-Actualice [!DNL ECE Tools] a la última versión [2002.1.13](https://devdocs.magento.com/cloud/release-notes/ece-release-notes.html#v2002113).
+Actualice [!DNL ECE Tools] a la última versión [2002.1.13](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113).
 
 ## Lectura relacionada
 

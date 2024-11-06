@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para cuando experimenta un
 exl-id: 1b89da58-c872-481b-b2a0-aa48db8223db
 feature: Admin Workspace, Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
@@ -43,9 +43,9 @@ El Asistente para configuración web se ha deshabilitado para todas las instanci
 
 Esta función está desactivada en Adobe Commerce en la infraestructura en la nube.
 
-Consulte [Instalar, administrar y actualizar extensiones](https://devdocs.magento.com/cloud/howtos/install-components.html) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce en nuestra infraestructura en la nube.
-Consulte [Instalación rápida](https://devdocs.magento.com/guides/v2.3/install-gde/composer.html) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce local.
+Consulte [Instalar, administrar y actualizar extensiones](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce en nuestra infraestructura en la nube.
+Consulte [Instalación rápida](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce local.
 
 ## Lectura relacionada
 
-* Consulte [Instalar una extensión](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension) en nuestra documentación para desarrolladores.
+* Consulte [Instalar una extensión](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) en nuestra documentación para desarrolladores.

@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para los casos en los que 
 exl-id: bafe2dd9-8a16-4249-b814-7e421e25e828
 feature: Cloud, Observability, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '121'
 ht-degree: 0%
@@ -33,4 +33,4 @@ Póngase en contacto con el propietario de la cuenta de New Relic y solicite que
 
 ## Lectura relacionada
 
-[Administrar [!DNL New Relic] cuenta](https://devdocs.magento.com/cloud/project/new-relic.html#manage-new-relic-account) en nuestra documentación para desarrolladores.
+[Administrar [!DNL New Relic] cuenta](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) en nuestra documentación para desarrolladores.

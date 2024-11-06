@@ -4,7 +4,7 @@ description: Este artículo sugiere soluciones para la situación en la que se q
 exl-id: 1b2c25d3-ca1b-4409-8d6b-378aa0952f94
 feature: Storage, Observability
 role: Developer
-source-git-commit: 9ee4145d5516a37fab1c092d539000627f242a93
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '352'
 ht-degree: 0%
@@ -45,7 +45,7 @@ Opciones de solución:
 * Limpie el directorio `var`.
 * Configure un trabajo cron para rastrear el tamaño del directorio `var` y limpiarlo.
 * Asigne más espacio en disco, si no lo ha utilizado. (Consulte la sección siguiente para obtener información sobre cómo comprobar cuál es su límite de espacio).
-   * Para el plan inicial, todos los entornos y los entornos de integración del plan Pro, puede asignar el espacio en disco si no lo utiliza, como se describe en [Administrar espacio en disco: Asignación de espacio en disco](https://devdocs.magento.com/guides/v2.3/cloud/project/manage-disk-space.html#application-disk-space).
+   * Para el plan inicial, todos los entornos y los entornos de integración del plan Pro, puede asignar el espacio en disco si no lo utiliza, como se describe en [Administrar espacio en disco: Asignación de espacio en disco](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space).
    * Para los entornos de ensayo y producción de planificación profesional, póngase en contacto con el servicio de asistencia para asignar más espacio en disco si tiene algún espacio sin utilizar.
 * Si ha alcanzado el límite de espacio y sigue experimentando problemas de poco espacio, considere la posibilidad de comprar más espacio en disco, póngase en contacto con el equipo de cuenta de Adobe para obtener más información.
 

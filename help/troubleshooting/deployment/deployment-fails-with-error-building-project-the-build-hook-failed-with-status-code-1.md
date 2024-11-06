@@ -4,7 +4,7 @@ description: 'Este artículo habla sobre las causas y las soluciones del problem
 exl-id: add1cdac-dbcb-4c55-8bc2-c1f27e24aadb
 feature: Build, Deploy
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '750'
 ht-degree: 0%
@@ -78,11 +78,11 @@ Para obtener más información sobre cómo aumentar el espacio en disco si utili
        php ./vendor/bin/ece-tools deploy
    ```
 
-   Use el artículo [Actualizar a ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) para referencia.
+   Use el artículo [Actualizar a ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) para referencia.
 
 1. Asegúrese de que el paquete ECE-tools esté presente en el archivo `composer.lock` ejecutando el siguiente comando:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; composer.lock</code></pre>    Si se especifican, la respuesta tendría el siguiente aspecto:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
 
-Consulte el artículo [Actualizar a ece-tools](https://devdocs.magento.com/guides/v2.3/cloud/project/ece-tools-upgrade-project.html) para obtener una referencia.
+Consulte el artículo [Actualizar a ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) para obtener una referencia.
 
 ### ¿El parche está causando el problema?
 

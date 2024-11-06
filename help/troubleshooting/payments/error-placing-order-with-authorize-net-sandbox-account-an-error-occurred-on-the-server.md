@@ -4,7 +4,7 @@ description: Este artículo proporciona una corrección para el mensaje de error
 exl-id: 764a550a-3373-483c-843d-d8c848dcee35
 feature: Compliance, Console, Customer Service, Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
@@ -13,13 +13,13 @@ ht-degree: 0%
 
 # Error al realizar el pedido con la cuenta de espacio aislado de Authorize.net (se produjo un error en el servidor)
 
-Este artículo proporciona una corrección para el mensaje de error &quot;*Se produjo un error en el servidor*&quot; al realizar un pedido con Authorize.Net Direct Post.
+Este artículo proporciona una corrección para el mensaje de error &quot;*Se produjo un error en el servidor*&quot; al realizar un pedido mediante la publicación directa de Authorize.Net.
 
 >[!WARNING]
 >
 >**Aviso de obsolescencia**
 >
->Debido a la Directiva de servicios de pago [PSD 2](https://docs.magento.com/user-guide/v2.3/stores/compliance-payment-services-directive.html) y a la continua evolución de muchas API, Authorize.Net corre el riesgo de quedar obsoleto y dejar de ser compatible con la seguridad en el futuro. Por este motivo, ahora está en desuso y le recomendamos que lo deshabilite en la configuración de Adobe Commerce y que realice la transición a la [extensión de Commerce Marketplace](https://marketplace.magento.com/extensions.html) correspondiente.
+>Debido a la Directiva de servicios de pago [PSD 2](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) y a la continua evolución de muchas API, Authorize.Net corre el riesgo de quedar obsoleto y dejar de ser compatible con la seguridad en el futuro. Por este motivo, ahora está en desuso y le recomendamos que lo deshabilite en la configuración de Adobe Commerce y que realice la transición a la [extensión de Commerce Marketplace](https://marketplace.magento.com/extensions.html) correspondiente.
 >
 >**Esta integración se ha eliminado de la versión 2.4.0 de Adobe Commerce y ha quedado obsoleta de las versiones actuales de 2.3.**
 >
@@ -27,7 +27,7 @@ Este artículo proporciona una corrección para el mensaje de error &quot;*Se pr
 
 ## Problema
 
-Realizar un pedido con la cuenta de zona protegida [Authorize.Net Direct Post](https://docs.magento.com/user-guide/v2.3/payment/authorize-net-direct-post.html) provoca un mensaje de error:
+Realizar un pedido con la cuenta de espacio aislado [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) provoca un mensaje de error:
 
 >>
 &quot;Se ha producido un error en el servidor. Intente realizar el pedido de nuevo&quot;

@@ -4,7 +4,7 @@ description: Este artículo proporciona soluciones para la resolución de errore
 exl-id: 3f001cc9-b19a-4dee-bff0-fc8ba89e2646
 feature: Cache, Categories
 role: Admin
-source-git-commit: 9c5e993b69a98865a1142110625252da848eae04
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '414'
 ht-degree: 0%
@@ -63,4 +63,4 @@ Dado que se accede al administrador a través de Varnish, no puede iniciar sesi�
 $ bin/magento cache:enable
 ```
 
-Para obtener más información acerca del uso de la línea de comandos, vea [Introducción a la configuración de la línea de comandos](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands.html).
+Para obtener más información acerca del uso de la línea de comandos, vea [Introducción a la configuración de la línea de comandos](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli).

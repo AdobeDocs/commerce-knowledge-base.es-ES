@@ -4,7 +4,7 @@ description: La herramienta de compatibilidad de actualización 1.1.0 es una her
 exl-id: 312abc5a-1d6a-4f32-9929-a94f4962eddd
 feature: Upgrade
 role: Admin
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '647'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Clientes de Adobe Commerce.
 
 ## Instalación de la herramienta de compatibilidad de actualización 1.1.0
 
-Para ver los pasos de instalación, consulte Adobe Commerce: [Actualizar herramienta de compatibilidad > Instalar](https://devdocs.magento.com/upgrade-compatibility-tool/install.html) en nuestra documentación para desarrolladores. Para conocer los requisitos previos para usar la herramienta, consulte Adobe Commerce: [Actualizar la herramienta de compatibilidad](https://devdocs.magento.com/upgrade-compatibility-tool/prerequisites.html) en nuestra documentación para desarrolladores.
+Para ver los pasos de instalación, consulte Adobe Commerce: [Actualizar herramienta de compatibilidad > Instalar](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/use-upgrade-compatibility-tool/run) en nuestra documentación para desarrolladores. Para conocer los requisitos previos para usar la herramienta, consulte Adobe Commerce: [Actualizar la herramienta de compatibilidad](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/prerequisites) en nuestra documentación para desarrolladores.
 
 ## ¿Cuál es el número que hay junto a cada número?
 
@@ -47,7 +47,7 @@ Los mensajes de error de la herramienta de compatibilidad de actualización se c
 * Código de error: identificador asignado por Adobe Commerce al mensaje de error.
 * Descripción del error: Descripción que resume la causa del error.
 * Error: acción sugerida: si corresponde, proporciona instrucciones para solucionar y resolver el error.
-* Los códigos se enumeran y describen en la [página de referencia de mensaje de error](https://devdocs.magento.com/upgrade-compatibility-tool/errors.html).
+* Los códigos se enumeran y describen en la [página de referencia de mensaje de error](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/reporting/error-messages).
 
 ## ¿Dónde puedo compartir comentarios sobre la herramienta?
 
@@ -56,4 +56,4 @@ Puedes contactar con el equipo de UCT en nuestro canal de Slack [#upgrade-compat
 ## Lectura relacionada
 
 * Blog de Adobe Commerce: [Presentación de la herramienta de compatibilidad de actualización (Alpha)](https://magento.com/blog/magento-news/introducing-upgrade-compatibility-tool)
-* Adobe Commerce: [Actualizar la herramienta de compatibilidad](https://devdocs.magento.com/upgrade-compatibility-tool/introduction.html) en nuestra documentación para desarrolladores.
+* Adobe Commerce: [Actualizar la herramienta de compatibilidad](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/upgrade-compatibility-tool/overview) en nuestra documentación para desarrolladores.

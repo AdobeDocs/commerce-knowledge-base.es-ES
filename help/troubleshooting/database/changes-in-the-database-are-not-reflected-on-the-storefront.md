@@ -4,7 +4,7 @@ description: Este artículo proporciona soluciones para evitar retrasos o interr
 exl-id: ac52c808-299f-4d08-902f-f87db1fa7ca6
 feature: Catalog Management, Categories, Services, Storefront
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '538'
 ht-degree: 0%
@@ -26,13 +26,13 @@ Los cambios que realice en la base de datos no se reflejan en la tienda o hay un
 
 ## Causa
 
-Si los indexadores están [configurados para actualizarse según la programación](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers), el problema podría deberse a una o más tablas con registros de cambios demasiado grandes o a que no se han configurado déclencheur MySQL.
+Si los indexadores están [configurados para actualizarse según la programación](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers), el problema podría deberse a una o más tablas con registros de cambios demasiado grandes o a que no se han configurado déclencheur MySQL.
 
 ### Tablas de registro de cambios sobredimensionadas
 
 Las tablas de registro de cambios crecen de ese modo si el trabajo cron de `indexer_update_all_views` no se completa correctamente varias veces.
 
-Las tablas de registro de cambios son las tablas de base de datos en las que se realiza un seguimiento de los cambios en las entidades. Un registro se almacena en una tabla de registro de cambios mientras no se aplique el cambio, que realiza el trabajo cron de `indexer_update_all_views`. Hay varias tablas de registro de cambios en una base de datos de Adobe Commerce, y se les asigna un nombre según el siguiente patrón: INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, por ejemplo `catalog_category_product_cl`, `catalog_product_category_cl`. Puede encontrar más detalles sobre cómo se realiza el seguimiento de los cambios en la base de datos en el artículo [Resumen de la indexación > Mview](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/indexing.html#m2devgde-mview) de nuestra documentación para desarrolladores.
+Las tablas de registro de cambios son las tablas de base de datos en las que se realiza un seguimiento de los cambios en las entidades. Un registro se almacena en una tabla de registro de cambios mientras no se aplique el cambio, que realiza el trabajo cron de `indexer_update_all_views`. Hay varias tablas de registro de cambios en una base de datos de Adobe Commerce, y se les asigna un nombre según el siguiente patrón: INDEXER\_TABLE\_NAME + &#39;\_cl&#39;, por ejemplo `catalog_category_product_cl`, `catalog_product_category_cl`. Puede encontrar más detalles sobre cómo se realiza el seguimiento de los cambios en la base de datos en el artículo [Resumen de la indexación > Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) de nuestra documentación para desarrolladores.
 
 ### [!DNL MySQL] déclencheur de base de datos no configurados
 

@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para permitir a los comerc
 exl-id: eed83713-2d6a-4360-bfa1-bebd4d604f2f
 feature: Orders, Shipping/Delivery, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
@@ -36,7 +36,7 @@ El identificador de parche es AC-3023 y está disponible en la versión 1.1.21 d
 Consulte los siguientes vínculos sobre cómo usar [!DNL Quality Patches Tool] e instalar parches según los métodos de implementación:
 
 * Magento Open Source y local de Adobe Commerce: [Herramientas de parches de calidad > Uso](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html) en Adobe Experience League.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
+* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
 
 **La revisión es aplicable a las siguientes versiones de Adobe Commerce (todos los métodos de implementación):**
 

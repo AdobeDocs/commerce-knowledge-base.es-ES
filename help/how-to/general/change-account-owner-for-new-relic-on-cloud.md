@@ -3,7 +3,7 @@ title: Cambiar propietario de cuenta para New Relic en la nube
 description: Para su proyecto de infraestructura de Adobe Commerce en la nube, puede cambiar el propietario de la cuenta de New Relic en la página de la interfaz de usuario de New Relic. Para ver los pasos detallados, consulte [Cambiar el propietario de la cuenta](https://docs.newrelic.com/docs/accounts/accounts/roles-permissions/change-account-owner) en la documentación de New Relic.
 exl-id: fbb778d5-7e5d-4cd9-849a-4071ca9e4bea
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '196'
 ht-degree: 0%
@@ -20,4 +20,4 @@ Si alguien necesita ser agregado como usuario, pero ningún propietario o admini
 
 ## Lectura relacionada
 
-* [Servicios de New Relic](https://devdocs.magento.com/guides/v2.3/cloud/project/new-relic.html) en nuestra documentación para desarrolladores.
+* [Servicios de New Relic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) en nuestra documentación para desarrolladores.

@@ -4,7 +4,7 @@ description: Este artículo proporciona una corrección cuando el estado del pro
 exl-id: ac02f961-f9e2-4620-839f-b8dbd0befb15
 feature: Products
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -30,7 +30,7 @@ El problema podría aparecer debido a las restricciones ACL establecidas para lo
 
 ## Solución para un estado de producto incorrecto
 
-Establezca una preferencia de ID dinámico para `Magento\Framework\Authorization\PolicyInterface`, tal como se describe en el tema [ObjectManager>Actualizaciones programáticas del producto](https://devdocs.magento.com/guides/v2.3/extension-dev-guide/object-manager.html#programmatic-product-updates) de nuestra documentación para desarrolladores.
+Establezca una preferencia de ID dinámico para `Magento\Framework\Authorization\PolicyInterface`, tal como se describe en el tema [ObjectManager>Actualizaciones programáticas del producto](https://developer.adobe.com/commerce/php/development/components/object-manager/) de nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 

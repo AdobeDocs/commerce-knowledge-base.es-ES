@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución al problema cuando, despu�
 exl-id: 7f7bf782-4b35-4067-aa94-417097079f1f
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '212'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Tiene un archivo .csv válido que contiene productos agrupados.
 
 <u>Pasos a seguir</u>:
 
-1. Importe el archivo con la [funcionalidad de importación](https://docs.magento.com/m2/ee/user_guide/system/data-import.html).
+1. Importe el archivo con la [funcionalidad de importación](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/import/data-import).
 1. Abra la página del producto del paquete.
 
 <u>Resultados esperados</u>:
@@ -46,7 +46,7 @@ La posición de opciones no se ha declarado explícitamente.
 
 ## Solución
 
-1. Declare una posición explícitamente para cada opción en el parámetro `position` de la columna `bundle_values` del archivo .csv. Para obtener instrucciones detalladas, consulte [Editar los datos del producto](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html#method-2-edit-the-product-data) en nuestra guía del usuario.
+1. Declare una posición explícitamente para cada opción en el parámetro `position` de la columna `bundle_values` del archivo .csv. Para obtener instrucciones detalladas, consulte [Editar los datos del producto](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products#method-2-edit-the-product-data) en nuestra guía del usuario.
 1. Repita la operación de importación.
 
-Para obtener información general sobre la importación, consulte [Importación del producto del paquete](https://docs.magento.com/m2/ee/user_guide/system/data-transfer-bundle-products.html) en nuestra guía del usuario.
+Para obtener información general sobre la importación, consulte [Importación del producto del paquete](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/examples/data-transfer-bundle-products) en nuestra guía del usuario.

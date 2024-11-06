@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para los casos en los que 
 exl-id: e45dc88a-2da0-4524-bd61-6634cfebb169
 feature: Admin Workspace, Marketing Tools
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -44,7 +44,7 @@ La regla se establece en inactiva.
 
 ## Causa
 
-Este problema está relacionado con la nueva funcionalidad introducida recientemente que ha afectado al tamaño máximo de sesión. Consulte [Administración de sesiones](https://docs.magento.com/user-guide/stores/security-session-management.html) en nuestra documentación para desarrolladores.
+Este problema está relacionado con la nueva funcionalidad introducida recientemente que ha afectado al tamaño máximo de sesión. Consulte [Administración de sesiones](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management) en nuestra documentación para desarrolladores.
 
 ## Solución
 
@@ -52,4 +52,4 @@ Aumente el valor &quot;Tamaño máximo de sesión&quot; en (**Almacenes** > **Co
 
 ## Lectura relacionada
 
-* [Menú de mercadotecnia](https://docs.magento.com/user-guide/marketing/marketing-menu.html) en nuestra guía del usuario.
+* [Menú de mercadotecnia](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/marketing-menu) en nuestra guía del usuario.

@@ -3,7 +3,7 @@ title: Restablecer el entorno en Adobe Commerce en la infraestructura en la nube
 description: Este artículo muestra diferentes escenarios de reversión de un entorno en Adobe Commerce en una infraestructura en la nube.
 exl-id: e6b27838-ca1e-415f-a098-2aa2576e3f20
 feature: Best Practices, Build, Cloud, Console
-source-git-commit: 598459365cad811966ed529356cb9ab876f49a38
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1093'
 ht-degree: 0%
@@ -55,13 +55,13 @@ Cuando compara esto con la importación de un(a) [!UICONTROL Database Dump] loca
 
 ## Escenario 2: restaurar una instantánea
 
-Lea: [Restaure una instantánea de Adobe Commerce en la infraestructura en la nube](https://devdocs.magento.com/cloud/project/project-webint-snap.html#restore-snapshot) en nuestra documentación para desarrolladores.
+Lea: [Restaure una instantánea de Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-snapshot) en nuestra documentación para desarrolladores.
 
 >[!NOTE]
 >
 >La creación de una instantánea debe ser nuestro primer paso después de acceder a Adobe Commerce en la cuenta de infraestructura de la nube y antes de aplicar cambios importantes. Es una práctica recomendada y muy recomendable.
 
-Lectura: [Crear una instantánea](https://devdocs.magento.com/cloud/project/project-webint-snap.html#create-snapshot) en nuestra documentación para desarrolladores.
+Lectura: [Crear una instantánea](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#create-snapshot) en nuestra documentación para desarrolladores.
 
 ## Escenario 3: sin instantánea, compilación estable (conexión SSH disponible)
 

@@ -3,7 +3,7 @@ title: Certificados SSL (TLS) para Adobe Commerce en infraestructura en la nube
 description: Este artículo proporciona respuestas rápidas a preguntas sobre cómo obtener certificados SSL (TLS) para su sitio de Adobe Commerce en nuestra infraestructura de nube.
 exl-id: 5a682d07-e4d7-4e81-a2ad-3232f2d8d9c1
 feature: Cloud, Console
-source-git-commit: 43c3e5f95c4b54e235140cd5b3978d3887af5ee1
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1079'
 ht-degree: 0%
@@ -67,7 +67,7 @@ El dominio mostrado en el certificado es solo el primer dominio agregado al cert
 
 ## ¿Puedo utilizar certificados TLS comodín?
 
-Los certificados TLS comodín solo se pueden usar con el certificado personalizado y no con los certificados de Adobe Commerce Let&#39;s Encrypt. Como parte de la optimización de TLS, el Adobe va a dejar de ofrecer compatibilidad con certificados TLS comodín. Estamos identificando y poniéndonos en contacto con comerciantes que utilizan un certificado comodín con los certificados Let&#39;s Encrypt de Adobe y que están configurados en la consola [!DNL Fastly] para Adobe Commerce. Pedimos que estos certificados comodín se sustituyan por dominios exactos para garantizar la cobertura TLS. Para reemplazar un certificado TLS comodín, visite la [sección de dominio](https://devdocs.magento.com/cloud/cdn/configure-fastly-customize-cache.html#manage-domains) del complemento [!DNL Fastly]. Desde aquí, se pueden añadir los dominios exactos y se puede eliminar el comodín. Tenga en cuenta que DNS tendrá que señalar a [!DNL Fastly] para que estos nuevos dominios se enruten a través de la CDN. Una vez que se agreguen los dominios y se actualice el DNS, se proporcionará un certificado [Let&#39;s Encrypt](https://letsencrypt.org/) coincidente. Si no quita un dominio que señala a [!DNL Fastly] mediante un comodín, el Adobe eliminará el certificado compartido. Esto puede provocar una interrupción del sitio si no tiene configurado el FQDN de la dirección URL y el mismo FQDN de la dirección URL configurado en el DNS. Por lo tanto, debe confirmar que las direcciones URL configuradas también tienen una coincidencia uno a uno en su DNS que señala a [!DNL Fastly].
+Los certificados TLS comodín solo se pueden usar con el certificado personalizado y no con los certificados de Adobe Commerce Let&#39;s Encrypt. Como parte de la optimización de TLS, el Adobe va a dejar de ofrecer compatibilidad con certificados TLS comodín. Estamos identificando y poniéndonos en contacto con comerciantes que utilizan un certificado comodín con los certificados Let&#39;s Encrypt de Adobe y que están configurados en la consola [!DNL Fastly] para Adobe Commerce. Pedimos que estos certificados comodín se sustituyan por dominios exactos para garantizar la cobertura TLS. Para reemplazar un certificado TLS comodín, visite la [sección de dominio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) del complemento [!DNL Fastly]. Desde aquí, se pueden añadir los dominios exactos y se puede eliminar el comodín. Tenga en cuenta que DNS tendrá que señalar a [!DNL Fastly] para que estos nuevos dominios se enruten a través de la CDN. Una vez que se agreguen los dominios y se actualice el DNS, se proporcionará un certificado [Let&#39;s Encrypt](https://letsencrypt.org/) coincidente. Si no quita un dominio que señala a [!DNL Fastly] mediante un comodín, el Adobe eliminará el certificado compartido. Esto puede provocar una interrupción del sitio si no tiene configurado el FQDN de la dirección URL y el mismo FQDN de la dirección URL configurado en el DNS. Por lo tanto, debe confirmar que las direcciones URL configuradas también tienen una coincidencia uno a uno en su DNS que señala a [!DNL Fastly].
 
 ## ¿Qué debo hacer si mi dominio ya no apunta a Adobe Commerce?
 
@@ -75,4 +75,4 @@ Si su dominio ya no apunta a Adobe Commerce, elimínelo del sistema [!DNL Fastly
 
 ## Lectura relacionada
 
-[Proporcionar certificados SSL/TLS](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates) en nuestra documentación para desarrolladores
+[Proporcionar certificados SSL/TLS](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates) en nuestra documentación para desarrolladores

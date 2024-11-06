@@ -4,7 +4,7 @@ description: Este artículo proporciona una corrección del problema conocido al
 exl-id: 97479615-bf3f-4544-a9c1-8f19ba74318e
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -57,8 +57,8 @@ Unable to apply data patch Magento\Wishlist\Setup\Patch\Data\CleanUpData for mod
 
 En nuestra documentación para desarrolladores:
 
-* [Guía de infraestructura de Adobe Commerce en la nube](https://devdocs.magento.com/cloud/bk-cloud.html)
-* [Adobe Commerce en infraestructura en la nube - Actualizar la versión de Adobe Commerce](https://devdocs.magento.com/cloud/project/project-upgrade.html)
-* [Magento Open Source y aplicación locales de Adobe Commerce: actualice la aplicación y los módulos de Adobe Commerce](https://devdocs.magento.com/guides/v2.3/comp-mgr/bk-compman-upgrade-guide.html)
-* [Página de configuración de elementos de lista de deseos](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/layouts/product-layouts.html#wishlist-item-configure-page)
-* [Módulos que proporcionan informes avanzados](https://devdocs.magento.com/guides/v2.3/advanced-reporting/modules.html)
+* [Guía de infraestructura de Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/overview)
+* [Adobe Commerce en infraestructura en la nube - Actualizar la versión de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version)
+* [Magento Open Source y aplicación locales de Adobe Commerce: actualice la aplicación y los módulos de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/overview)
+* [Página de configuración de elementos de lista de deseos](https://developer.adobe.com/commerce/frontend-core/guide/layouts/product-layouts/#wishlist-item-configure-page)
+* [Módulos que proporcionan informes avanzados](https://developer.adobe.com/commerce/php/development/advanced-reporting/modules/)

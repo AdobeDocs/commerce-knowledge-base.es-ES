@@ -4,7 +4,7 @@ description: Este artículo proporciona recomendaciones sobre cómo resolver el 
 exl-id: ba268945-2a10-4af5-8089-cde21f0687bd
 feature: GraphQL
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
@@ -42,9 +42,9 @@ Se mostrará un informe de compatibilidad. Si tiene incompatibilidades, debe act
 Consulte la siguiente documentación para obtener instrucciones sobre cómo actualizar:
 
 * Para actualizaciones de PWA Studio, busque la sección &quot;Actualización desde una versión anterior&quot; de [Notas de la versión de PWA](https://github.com/magento/pwa-studio/releases/) para la versión a la que necesita actualizar.
-* [Actualice Adobe Commerce en la versión de infraestructura en la nube](https://devdocs.magento.com/cloud/project/project-upgrade.html) en nuestra documentación para desarrolladores.
-* [Actualice Adobe Commerce local (instalado usando &quot;composer create-project&quot; o archivo)](https://devdocs.magento.com/guides/v2.3/comp-mgr/cli/cli-upgrade.html) en nuestra documentación para desarrolladores.
-* [Actualice Adobe Commerce local (instalado mediante la clonación del repositorio de Adobe Commerce)](https://devdocs.magento.com/guides/v2.3/install-gde/install/cli/dev_update-magento.html) en nuestra documentación para desarrolladores.
+* [Actualice Adobe Commerce en la versión de infraestructura en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) en nuestra documentación para desarrolladores.
+* [Actualice Adobe Commerce local (instalado usando &quot;composer create-project&quot; o archivo)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) en nuestra documentación para desarrolladores.
+* [Actualice Adobe Commerce local (instalado mediante la clonación del repositorio de Adobe Commerce)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/developer/git-installs) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 

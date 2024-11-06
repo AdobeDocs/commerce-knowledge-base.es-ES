@@ -3,7 +3,7 @@ title: Cómo añadir un nuevo país a Adobe Commerce
 description: En este artículo se explica cómo agregar un país que no esté presente en Adobe Commerce ni en la biblioteca de configuración regional de Zend. Esto requiere cambios en el código y la base de datos que constituyen personalizaciones del cliente según los términos del acuerdo aplicables. Tenga en cuenta que los materiales de ejemplo incluidos en este artículo se proporcionan "TAL CUAL" sin garantía de ningún tipo. Ni el Adobe ni ninguna otra entidad afiliada están obligados a mantener, corregir, actualizar, cambiar, modificar o apoyar estos materiales. Aquí describiremos los principios básicos de lo que se debe hacer para lograr esto.
 exl-id: af499add-4966-4a3a-972a-62a34c169a1b
 feature: Build, Cache
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1105'
 ht-degree: 0%
@@ -22,10 +22,10 @@ Debe estar familiarizado con el desarrollo de módulos de Adobe Commerce para cr
 
 Consulte los siguientes temas en la documentación para desarrolladores antes de intentar crear un módulo nuevo:
 
-* [Guía para desarrolladores de PHP](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/bk-extension-dev-guide.html)
-* [Resumen del módulo](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html)
-* [Crear nuevo módulo](https://devdocs.magento.com/videos/fundamentals/create-a-new-module/)
-* [Archivos de configuración de módulo](https://devdocs.magento.com/guides/v2.4/config-guide/config/config-files.html)
+* [Guía para desarrolladores de PHP](https://developer.adobe.com/commerce/php/development/)
+* [Resumen del módulo](https://developer.adobe.com/commerce/php/architecture/modules/overview/)
+* [Crear nuevo módulo](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/create-module)
+* [Archivos de configuración de módulo](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/module-files)
 
 ## Información necesaria
 
@@ -35,7 +35,7 @@ Un nuevo país debe tener un nombre único, ID de país, ISO2 y códigos ISO3 en
 
 En este ejemplo, vamos a crear un nuevo módulo llamado \`ExtraCountries\` con la siguiente estructura de directorio:
 
-(Para obtener más información sobre la estructura del módulo, consulte [Información general del módulo](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html) en nuestra documentación para desarrolladores).
+(Para obtener más información sobre la estructura del módulo, consulte [Información general del módulo](https://developer.adobe.com/commerce/php/architecture/modules/overview/) en nuestra documentación para desarrolladores).
 
 <pre><ExtraCountries>
  |
@@ -97,7 +97,7 @@ En este archivo XML se define una nueva configuración de módulo. Las siguiente
 </config>
 ```
 
-Para obtener más información sobre los archivos de configuración del módulo, consulte [PHP Developer Guide > Define Configurations files](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/required-configuration-files.html) en nuestra documentación para desarrolladores.
+Para obtener más información sobre los archivos de configuración del módulo, consulte [PHP Developer Guide > Define Configurations files](https://developer.adobe.com/commerce/php/development/build/required-configuration-files/) en nuestra documentación para desarrolladores.
 
 Tenga en cuenta que estos cambios son opcionales y solo afectarán a la pertenencia predeterminada del nuevo país a las listas &quot;Permitir países&quot;, &quot;Código postal es opcional para&quot; y &quot;Países de la Unión Europea&quot;. Si se omite este archivo de la estructura del módulo, se agregará un nuevo país, pero tendrá que configurarse manualmente en la página de configuración de **Administración** > **Tiendas** > *Configuración* > **Configuración** > **General** > **Opciones de país**.
 
@@ -123,7 +123,7 @@ Ejemplo de `di.xml`
 
 En el archivo de registro del módulo debemos especificar la dependencia para el módulo &quot;Adobe Commerce Directory&quot; asegurándonos de que el módulo &quot;Extra Country&quot; se registre y ejecute después del módulo Directory.
 
-Consulte [Administración de dependencias de módulo](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_depend.html#managing-module-dependencies) en nuestra documentación para desarrolladores para obtener más información sobre las dependencias de módulo.
+Consulte [Administración de dependencias de módulo](https://developer.adobe.com/commerce/php/architecture/modules/dependencies/#managing-module-dependencies) en nuestra documentación para desarrolladores para obtener más información sobre las dependencias de módulo.
 
 Ejemplo de `module.xml`
 
@@ -185,7 +185,7 @@ class TranslatedListsPlugin
 
 Este parche de datos se ejecutará durante el proceso de instalación/actualización de Adobe Commerce y añadirá un nuevo registro de país a la base de datos.
 
-Consulte [Desarrollar parches de esquema y datos](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/declarative-schema/data-patches.html) en nuestra documentación para desarrolladores para obtener más información sobre los parches de datos.
+Consulte [Desarrollar parches de esquema y datos](https://developer.adobe.com/commerce/php/development/components/declarative-schema/patches/) en nuestra documentación para desarrolladores para obtener más información sobre los parches de datos.
 
 En el ejemplo siguiente, puede ver que la matriz `$data` del método `apply()` contiene códigos de Id. de país, ISO2 e ISO3 para el nuevo país, y que estos datos se están insertando en la base de datos.
 
@@ -266,7 +266,7 @@ class AddDataForAbstractCountry implements DataPatchInterface, PatchVersionInter
 
 ### ExtraCountries/registration.php
 
-Este es un ejemplo del archivo registration.php. Para obtener más información sobre el registro de módulos, consulta [Guía para desarrolladores de PHP > Registrar tu componente](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/component-registration.html) en nuestra documentación para desarrolladores.
+Este es un ejemplo del archivo registration.php. Para obtener más información sobre el registro de módulos, consulta [Guía para desarrolladores de PHP > Registrar tu componente](https://developer.adobe.com/commerce/php/development/build/component-registration/) en nuestra documentación para desarrolladores.
 
 ```php
 <?php
@@ -279,7 +279,7 @@ ComponentRegistrar::register(ComponentRegistrar::MODULE, 'VendorName_ExtraCountr
 
 Este es un ejemplo del archivo composer.json.
 
-Para obtener más información sobre composer.json, consulte [Guía para desarrolladores de PHP > El archivo composer.json](https://devdocs.magento.com/guides/v2.4/extension-dev-guide/build/composer-integration.html) en nuestra documentación para desarrolladores.
+Para obtener más información sobre composer.json, consulte [Guía para desarrolladores de PHP > El archivo composer.json](https://developer.adobe.com/commerce/php/development/build/composer-integration/) en nuestra documentación para desarrolladores.
 
 ```json
 {
@@ -310,7 +310,7 @@ Para obtener más información sobre composer.json, consulte [Guía para desarro
 
 ## Instalación del módulo
 
-Para saber cómo instalar el módulo, consulte [Ubicaciones del módulo](https://devdocs.magento.com/guides/v2.4/architecture/archi_perspectives/components/modules/mod_intro.html#module-locations) en nuestra documentación para desarrolladores.
+Para saber cómo instalar el módulo, consulte [Ubicaciones del módulo](https://developer.adobe.com/commerce/php/architecture/modules/overview/#module-locations) en nuestra documentación para desarrolladores.
 
 Una vez que el directorio del módulo se coloque en una ubicación correcta, ejecute `bin/magento setup:upgrade` para aplicar los parches de datos y registrar el complemento de traducción.
 

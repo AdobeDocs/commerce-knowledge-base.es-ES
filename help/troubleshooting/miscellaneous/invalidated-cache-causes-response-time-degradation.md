@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución sobre cómo evitar la inva
 exl-id: 7cb6a39f-923b-4acc-965d-23cf7b52c25a
 feature: Cache, Catalog Management, Categories
 role: Developer
-source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -67,4 +67,4 @@ Normalmente, la caché se invalida debido a lo siguiente:
 ## Recomendación
 
 1. Evite vaciar la caché de la CLI de Commerce.
-1. Configure los indexadores a **Actualizar mediante programación** en lugar de **Actualizar en el modo de guardado** porque este último déclencheur la reindexación completa. Como referencia, consulte [Administrar los indexadores > Configurar indexadores](https://devdocs.magento.com/guides/v2.3/config-guide/cli/config-cli-subcommands-index.html#configure-indexers) en nuestra documentación para desarrolladores.
+1. Configure los indexadores a **Actualizar mediante programación** en lugar de **Actualizar en el modo de guardado** porque este último déclencheur la reindexación completa. Como referencia, consulte [Administrar los indexadores > Configurar indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) en nuestra documentación para desarrolladores.

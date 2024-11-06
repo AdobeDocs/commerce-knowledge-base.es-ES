@@ -4,7 +4,7 @@ description: Este artículo habla sobre las soluciones para el error de falta de
 exl-id: c0ed8228-9357-4a3b-a102-1119386ea52a
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
@@ -40,7 +40,7 @@ también puede mostrarse en la línea de comandos.
 
 ## Solución {#solution}
 
-Le recomendamos que [asigne 2 GB de memoria a PHP](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) en nuestra documentación para desarrolladores para garantizar que la instalación o actualización se realice correctamente.
+Le recomendamos que [asigne 2 GB de memoria a PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) en nuestra documentación para desarrolladores para garantizar que la instalación o actualización se realice correctamente.
 
 Si ya lo ha hecho, cree un archivo de intercambio en su equipo. Un equipo Linux usa *espacio de intercambio* si necesita más recursos de memoria y la RAM está llena. El espacio de intercambio se utiliza para páginas inactivas en la memoria.
 

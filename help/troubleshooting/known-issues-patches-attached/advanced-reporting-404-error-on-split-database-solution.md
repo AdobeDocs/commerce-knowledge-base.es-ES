@@ -1,10 +1,10 @@
 ---
 title: Error de Advanced Reporting 404 en la solución de base de datos dividida
-description: Este artículo proporciona un parche para los usuarios de Adobe Commerce 2.3.x con la [solución de base de datos dividida](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) que experimentan un error 404 al intentar utilizar la creación de informes avanzada.
+description: Este artículo proporciona un parche para los usuarios de Adobe Commerce 2.3.x con la [solución de base de datos dividida](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) que experimentan un error 404 al intentar utilizar la creación de informes avanzada.
 exl-id: b81d4ada-5f38-4882-bc5b-ab4ccd63fc5f
 feature: Commerce Intelligence
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '171'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Error de Advanced Reporting 404 en la solución de base de datos dividida
 
-Este artículo proporciona un parche para los usuarios de Adobe Commerce 2.3.x con la [solución de base de datos dividida](https://devdocs.magento.com/guides/v2.3/config-guide/multi-master/multi-master.html) que experimentan un error 404 al intentar usar el sistema de informes avanzado.
+Este artículo proporciona un parche para los usuarios de Adobe Commerce 2.3.x con la [solución de base de datos dividida](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master) que experimentan un error 404 al intentar usar el sistema de informes avanzado.
 
 ## Productos y versiones afectados
 

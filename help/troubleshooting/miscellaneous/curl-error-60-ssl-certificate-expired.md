@@ -4,7 +4,7 @@ description: '"Este artículo muestra cómo comprobar cuándo se implementó una
 exl-id: 74f1db7e-ee2b-4e27-8fcc-fe462a9e72c3
 feature: Configuration
 role: Developer
-source-git-commit: 6f631ca35b663c386bca9efe6e56db266502c0b1
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '246'
 ht-degree: 0%
@@ -55,7 +55,7 @@ Vaya a, por ejemplo: `https://demo.magento.cloud/#/projects/<project>/environmen
 En nuestra documentación para desarrolladores:
 
 * [API de Cloud Manager: SSLCertificates](https://developer.adobe.com/experience-cloud/cloud-manager/reference/api/#tag/SSLCertificates)
-* [Configurar rápidamente: aprovisionar certificados SSL/TLS](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#provision-ssltls-certificates)
+* [Configurar rápidamente: aprovisionar certificados SSL/TLS](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates)
 
 En nuestra base de conocimiento de soporte:
 

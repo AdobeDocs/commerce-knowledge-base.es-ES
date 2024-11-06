@@ -3,7 +3,7 @@ title: La variable de incremento auto_increment de la base de datos está config
 description: Este es el comportamiento esperado para las soluciones de arquitectura de planificación de Adobe Commerce en la infraestructura en la nube Pro debido a la arquitectura de 3 nodos y no se puede modificar.
 exl-id: ea478cbc-2dc2-41c9-8ea7-7e2f308e5948
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -31,5 +31,5 @@ Por ejemplo, si el nodo principal seleccionado es el nodo 1 donde `auto_incremen
 
 Consulte en nuestra documentación para desarrolladores:
 
-* [Nube para Adobe Commerce > Arquitectura Pro > Copia de seguridad y recuperación ante desastres](https://devdocs.magento.com/cloud/architecture/pro-architecture.html#backup-and-disaster-recovery)
-* [Nube para Adobe Commerce > Instalar requisitos previos: base de datos](https://devdocs.magento.com/cloud/before/before-workspace-magento-prereqs.html#database)
+* [Nube para Adobe Commerce > Arquitectura Pro > Copia de seguridad y recuperación ante desastres](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Nube para Adobe Commerce > Instalar requisitos previos: base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview)

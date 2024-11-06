@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para el problema en el que
 exl-id: e5f7f8c6-2dd3-44e3-8d19-f1f38d06dd6c
 feature: Compliance, Security
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '281'
 ht-degree: 0%
@@ -23,7 +23,7 @@ Este artículo proporciona una solución para el problema en el que la Herramien
 
 <u>Pasos a seguir</u>:
 
-1. Configure la Herramienta de análisis de seguridad para comprobar su sitio web, tal como se describe en [Análisis de seguridad](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) en nuestra guía del usuario.
+1. Configure la Herramienta de análisis de seguridad para comprobar su sitio web, tal como se describe en [Análisis de seguridad](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) en nuestra guía del usuario.
 1. En la columna Acciones, seleccione **Ejecutar análisis**.
 
 <u>Resultados esperados</u>:
@@ -47,5 +47,5 @@ Intente abrir el sitio web.
 
 ## Lectura relacionada
 
-* [Publique e inicie](https://devdocs.magento.com/guides/v2.3/cloud/live/live.html?_ga=2.73579601.273749082.1559572284-888339099.1547722854#security-scan) en nuestra documentación para desarrolladores.
-* [Examen de seguridad](https://docs.magento.com/m2/ee/user_guide/magento/security-scan.html) en nuestra guía del usuario.
+* [Publique e inicie](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview) en nuestra documentación para desarrolladores.
+* [Examen de seguridad](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) en nuestra guía del usuario.

@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para el error que se produ
 exl-id: bdc4a355-4f2b-49a7-9c5d-63c950f7ca30
 feature: Deploy, Observability
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '137'
 ht-degree: 0%
@@ -45,4 +45,4 @@ Elimine JSON de la sección **Runtime** > **Extensions** en `.magento.app.yaml` 
 
 ## Lectura relacionada
 
-[Aplicación PHP](https://devdocs.magento.com/cloud/project/magento-app-php-application.html) en nuestra documentación para desarrolladores.
+[Aplicación PHP](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings) en nuestra documentación para desarrolladores.

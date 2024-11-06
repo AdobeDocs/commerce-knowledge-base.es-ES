@@ -1,7 +1,7 @@
 ---
 title: '...'
 labels: troubleshooting,...
-source-git-commit: 44795e84359a907de2105ffc775926612c726492
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '340'
 ht-degree: 0%
@@ -67,7 +67,7 @@ Si hay una solución temporal, especifíquela como una sección independiente de
 
 ## Lectura relacionada
 
-* [Tema del artículo](https://docs.magento.com/user-guide/) en nuestra guía del usuario.
-* [Tema de artículo](https://devdocs.magento.com) en nuestra documentación para desarrolladores. También puede decir que para diferenciar entre instrucciones en devdocs para usuarios en la nube y locales: &quot;[Tema del artículo](https://devdocs.magento.com) en nuestra documentación para desarrolladores para Adobe Commerce sobre infraestructura en la nube&quot;. frente a &quot;[tema del artículo](https://devdocs.magento.com) en nuestra documentación para desarrolladores para Adobe Commerce local&quot;.
+* [Tema del artículo](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) en nuestra guía del usuario.
+* [Tema de artículo](https://developer.adobe.com/commerce/docs/) en nuestra documentación para desarrolladores. También puede decir que para diferenciar entre instrucciones en devdocs para usuarios en la nube y locales: &quot;[Tema del artículo](https://developer.adobe.com/commerce/docs/) en nuestra documentación para desarrolladores para Adobe Commerce sobre infraestructura en la nube&quot;. frente a &quot;[tema del artículo](https://developer.adobe.com/commerce/docs/) en nuestra documentación para desarrolladores para Adobe Commerce local&quot;.
 * [Tema de artículo](https://support.magento.com/hc/en-us) en nuestra base de conocimiento de soporte.
 * Cualquier recurso relacionado (blogs, foros, StackOverflow, etc.)

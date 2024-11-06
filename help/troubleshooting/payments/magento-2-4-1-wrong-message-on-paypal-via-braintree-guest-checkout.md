@@ -4,7 +4,7 @@ description: Este artículo describe un problema conocido de Adobe Commerce 2.4.
 exl-id: 758f5c57-997e-4aca-b299-9934c94fa121
 feature: Checkout, Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '373'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Se muestra un error inespecífico cuando el pago de los invitados está desactiv
 <u>Requisitos previos</u>:
 
 1. En el Administrador de Commerce, en **Tiendas** > **Configuración** > **Ventas** > **Cierre de compra**, establezca **Permitir cierre de compra de invitados** = *No*.
-1. Habilite PayPal a través del Braintree como se describe en [Braintree](https://docs.magento.com/user-guide/payment/braintree.html?) en nuestra guía de usuario.
+1. Habilite PayPal a través del Braintree como se describe en [Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?) en nuestra guía de usuario.
 
 <u>Pasos a seguir</u>:
 
@@ -55,10 +55,10 @@ Se redirige al cliente a la página Carro de compras y se muestra el siguiente m
 
 ## Solución
 
-La solución a este problema es que el cliente puede iniciar sesión en una tienda (los usuarios que iniciaron sesión no usan el pago de invitados). donde la comprobación de invitado está deshabilitada. Este problema se solucionó en la versión 2.4.2 de Adobe Commerce.
+La solución a este problema es que el cliente puede iniciar sesión en una tienda (los usuarios que iniciaron sesión no usan el cierre de compra de invitados) en la que el cierre de compra de invitados esté deshabilitado. Este problema se solucionó en la versión 2.4.2 de Adobe Commerce.
 
 ## Lectura relacionada
 
 * [Práctica recomendada para la cantidad de productos que hay en el carro de compras en Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) en nuestra base de conocimiento de soporte.
-* [Tutorial de procesamiento de pedidos: Paso 1. Agregue elementos al carro de compras ](https://devdocs.magento.com/guides/v2.4/rest/tutorials/orders/order-add-items.html) en nuestra documentación para desarrolladores
-* [Tutorial de cierre de compra de GraphQL: Paso 1. Agregue productos al carro ](https://devdocs.magento.com/guides/v2.4/graphql/tutorials/checkout/checkout-add-product-to-cart.html) en nuestra documentación para desarrolladores
+* [Tutorial de procesamiento de pedidos: Paso 1. Agregue elementos al carro de compras ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) en nuestra documentación para desarrolladores
+* [Tutorial de cierre de compra de GraphQL: Paso 1. Agregue productos al carro ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-add-product-to-cart.html) en nuestra documentación para desarrolladores

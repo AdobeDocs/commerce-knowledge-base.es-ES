@@ -2,7 +2,7 @@
 title: Los índices de seguimiento de ElasticSuite causan problemas con Elasticsearch
 description: Este artículo habla sobre el problema de los problemas de memoria Elasticsearch causados por los índices de seguimiento producidos por el complemento ElasticSuite.
 exl-id: 67bfd06a-c801-4306-8510-a84a6fe5351a
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '461'
 ht-degree: 0%
@@ -68,5 +68,5 @@ Cree un trabajo cron para eliminar los índices de seguimiento. Este comando eli
 
 Si desea eliminar índices en una frecuencia de tiempo establecida, cree un trabajo cron consultando los siguientes artículos en nuestra documentación para desarrolladores:
 
-* [Configurar un trabajo cron personalizado y un grupo cron (tutorial)](https://devdocs.magento.com/guides/v2.3/config-guide/cron/custom-cron-tut.html)
-* [Configurar trabajos cron](https://devdocs.magento.com/guides/v2.3/cloud/configure/setup-cron-jobs.html)
+* [Configurar un trabajo cron personalizado y un grupo cron (tutorial)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [Configurar trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)

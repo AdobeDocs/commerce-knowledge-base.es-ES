@@ -4,7 +4,7 @@ description: Este artículo explica por qué se pueden retrasar los datos de inf
 exl-id: 2f3249d1-be12-45bc-aa73-bef9766509ae
 feature: Orders, Payments
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '377'
 ht-degree: 0%
@@ -29,7 +29,7 @@ Después de facturar (capturar) un pedido o emitir una nota de abono para un ped
 
 Requisitos previos: Se realiza un pedido utilizando la funcionalidad Servicios de pago.
 
-1. Se ha [facturado](https://docs.magento.com/user-guide/sales/invoice-create.html) un pedido (o [cancelado](https://docs.magento.com/user-guide/sales/order-update.html#cancel-a-pending-order) o [reembolsado mediante nota de crédito](https://docs.magento.com/user-guide/sales/credit-memos.html)) en el [administrador](https://docs.magento.com/user-guide/stores/admin.html).
+1. Se ha [facturado](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/invoices#create-an-invoice) un pedido (o [cancelado](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order) o [reembolsado mediante nota de crédito](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/credit-memos/credit-memos)) en el [administrador](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin).
 1. Acceda al informe Estado de Pago del Pedido para ver información sobre dicho pedido.
 1. El estado se muestra como `AUTHORIZED`, que es el estado del pedido antes de la facturación u otra acción de pedido.
 
@@ -37,7 +37,7 @@ Requisitos previos: Se realiza un pedido utilizando la funcionalidad Servicios d
 
 >[!NOTE]
 >
->Este es solo un caso de uso común. Puede haber otros casos de uso cuando se produce una [acción de pedido](https://docs.magento.com/user-guide/sales/order-actions.html) y los datos no están disponibles inmediatamente en el informe aplicable.
+>Este es solo un caso de uso común. Puede haber otros casos de uso cuando se produce una [acción de pedido](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/orders#actions) y los datos no están disponibles inmediatamente en el informe aplicable.
 
 <u>Resultado esperado</u>:
 Los datos del informe se rellenan inmediatamente después de que se produzca una acción en un pedido.

@@ -3,7 +3,7 @@ title: Cómo aplicar un parche del compositor proporcionado por el Adobe
 description: Este artículo explica cómo aplicar un parche del compositor para Adobe Commerce local, Adobe Commerce en la infraestructura en la nube y Magento Open Source.
 exl-id: a9301ad8-1d4b-49f5-b679-758624928219
 feature: Cache
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Este artículo explica cómo aplicar un parche del compositor para Adobe Commerc
    git push origin
    ```
 
-Para obtener información adicional sobre cómo aplicar parches a proyectos en la nube, consulte [Aplicar parches](https://devdocs.magento.com/cloud/project/project-patch.html) en nuestra documentación para desarrolladores.
+Para obtener información adicional sobre cómo aplicar parches a proyectos en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
 
 ### Cómo aplicar un parche del compositor para Adobe Commerce local y de Magento Open Source {#commerce}
 

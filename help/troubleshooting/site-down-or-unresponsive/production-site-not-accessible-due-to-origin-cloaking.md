@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para los casos en los que 
 exl-id: 4412d744-3066-4f78-bc45-8149614ce455
 feature: Products
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '216'
 ht-degree: 0%
@@ -47,7 +47,7 @@ El encubrimiento de origen es una función de seguridad que permite a Adobe Comm
 ## Solución
 
 * Si el sitio de la nube está activo, cambie a https://mydomain.com/.
-* Si tiene un sitio activo (que no está en la nube), usando el dominio https://mydomain.com/, configure un subdominio `mcprod.mydomain.com` y actualice la **URL base** a *https://mcprod.mydomain.com* en su lugar, entonces [señale el DNS a Fastly](https://devdocs.magento.com/cloud/cdn/configure-fastly.html#update-dns-configuration-with-development-settings).
+* Si tiene un sitio activo (que no está en la nube), usando el dominio https://mydomain.com/, configure un subdominio `mcprod.mydomain.com` y actualice la **URL base** a *https://mcprod.mydomain.com* en su lugar, entonces [señale el DNS a Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
 
 ## Lectura relacionada
 

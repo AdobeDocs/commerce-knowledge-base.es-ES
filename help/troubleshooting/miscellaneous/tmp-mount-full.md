@@ -4,7 +4,7 @@ description: Este artículo proporciona una solución para cuando el montaje /tm
 exl-id: e72d0f99-0060-474b-bb1c-2851896e1e43
 feature: Storage
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
@@ -120,7 +120,7 @@ Busque `/tmp` archivos de `.sql` o `.sql.gz` y límpielos. Es posible que se hay
 
 Para evitar problemas con `/tmp`, siga estas recomendaciones:
 
-* No utilice MySQL para la búsqueda. El Elasticsearch para la búsqueda generalmente elimina la necesidad de la mayoría de las creaciones de tablas temporales pesadas. Consulte [Configuración de Adobe Commerce para usar Elasticsearch](https://devdocs.magento.com/guides/v2.2/config-guide/elasticsearch/configure-magento.html) en nuestra documentación para desarrolladores.
+* No utilice MySQL para la búsqueda. El Elasticsearch para la búsqueda generalmente elimina la necesidad de la mayoría de las creaciones de tablas temporales pesadas. Consulte [Configuración de Adobe Commerce para usar Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) en nuestra documentación para desarrolladores.
 * Evite ejecutar la consulta `SELECT` en columnas sin índices, ya que esto consume una gran cantidad de espacio temporal en disco. También puede añadir los índices.
 * Cree un cron para limpiar `/tmp` ejecutando el siguiente comando en la CLI:
 

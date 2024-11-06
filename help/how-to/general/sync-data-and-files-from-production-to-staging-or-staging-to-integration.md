@@ -3,7 +3,7 @@ title: Sincronizar datos y archivos de producción con ensayo o ensayo con integ
 description: En este artículo se explica cómo sincronizar el entorno de producción con el ensayo en Adobe Commerce en la infraestructura en la nube; esto no es posible.
 exl-id: e3d001d1-1b2a-41b5-9b4a-00e53dc9d001
 feature: Integration, Build
-source-git-commit: ef294ddc9c4a12b06ce7738cb4702253dd892f3b
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '282'
 ht-degree: 0%
@@ -20,7 +20,7 @@ En este artículo se explica cómo sincronizar el entorno de producción con el 
 
 ## Para sincronizar datos de un entorno a otro
 
-Para sincronizar los datos, debe volcar manualmente la base de datos desde el entorno de origen. Para transferir datos a otro entorno, debe cargar el volcado de origen en el entorno de destino e importarlo. Para obtener más información, consulte [Importar código Adobe Commerce en un proyecto de Cloud > Importar base de datos de Adobe Commerce](https://devdocs.magento.com/cloud/setup/first-time-setup-import-import.html) en nuestra documentación para desarrolladores.
+Para sincronizar los datos, debe volcar manualmente la base de datos desde el entorno de origen. Para transferir datos a otro entorno, debe cargar el volcado de origen en el entorno de destino e importarlo. Para obtener más información, consulte [Importar código Adobe Commerce en un proyecto de Cloud > Importar base de datos de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production) en nuestra documentación para desarrolladores.
 
 Para la arquitectura de plan Pro de Adobe Commerce en la infraestructura en la nube, también puede sincronizar desde Ensayo y producción a su rama maestra de integración. Esta sincronización solo extrae y inserta código, no datos. Para sincronizar datos, deberá volcar los datos de la base de datos y enviarlos a la base de datos de otro entorno.
 
@@ -30,7 +30,7 @@ Para la arquitectura de plan Pro de Adobe Commerce en la infraestructura en la n
 
 ## Para sincronizar archivos de un entorno a otro
 
-Para sincronizar archivos de un entorno a otro, use el comando `rsync`. Para obtener más información, consulte [Implementar código y migrar datos y archivos estáticos > Migrar archivos mediante rsync](https://devdocs.magento.com/cloud/live/stage-prod-migrate.html#migrate-files-using-rsync) en nuestra documentación para desarrolladores.
+Para sincronizar archivos de un entorno a otro, use el comando `rsync`. Para obtener más información, consulte [Implementar código y migrar datos y archivos estáticos > Migrar archivos mediante rsync](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production#migrate-files-using-rsync) en nuestra documentación para desarrolladores.
 
 >[!NOTE]
 >

@@ -4,9 +4,9 @@ description: Este artículo habla sobre las soluciones para los problemas de la 
 exl-id: dee939cf-b9b2-4750-965c-5b8908a4498d
 feature: Variables
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ La comprobación falla porque está utilizando una versión de PHP no compatible
 
 ### Solución
 
-Para resolver este problema, use una de las versiones compatibles que se enumeran en nuestra documentación para desarrolladores [Requisitos del sistema 2.3.x](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html) y [Requisitos del sistema 2.2.x](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements.html).
+Para resolver este problema, use una de las versiones compatibles que se enumeran en nuestra documentación para desarrolladores [Requisitos del sistema 2.3.x](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) y [Requisitos del sistema 2.2.x](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements).
 
 ## La comprobación de disponibilidad de PHP no muestra
 
@@ -43,7 +43,7 @@ La comprobación de disponibilidad de PHP no muestra la versión de PHP como se 
 
 ### Solución
 
-Esto es un síntoma de una configuración incorrecta del trabajo cron. Para obtener más información, consulte [Configurar trabajos cron](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron) en nuestra documentación para desarrolladores.
+Esto es un síntoma de una configuración incorrecta del trabajo cron. Para obtener más información, consulte [Configurar trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration) en nuestra documentación para desarrolladores.
 
 ## Versión de PHP incorrecta
 
@@ -62,8 +62,7 @@ Para resolver el problema, intente lo siguiente:
 * Reinicie su servidor web o php-fm.
 * Compruebe la variable de entorno `$PATH` para ver varias rutas a PHP.
 * Utilice el comando `which php` para localizar el primer ejecutable PHP en su ruta; si no es correcto, elimínelo o cree un enlace simbólico a la versión PHP correcta.
-* Use una página [`phpinfo.php`](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/optional.html#install-optional-phpinfo) para recopilar más información.
+* Use una página [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software) para recopilar más información.
 * Asegúrese de que está ejecutando una versión compatible de PHP de acuerdo con los requisitos de nuestro sistema, en nuestra documentación para desarrolladores:
-   * [Requisitos del sistema de Adobe Commerce 2.3.x](https://devdocs.magento.com/guides/v2.3/install-gde/system-requirements.html)
-   * [Requisitos del sistema de Adobe Commerce 2.2.x](https://devdocs.magento.com/guides/v2.2/install-gde/system-requirements.html)
-* Establezca la misma configuración de PHP tanto para la línea de comandos de PHP como para el complemento del servidor web de PHP, tal como se describe en [Opciones de configuración de PHP](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-centos-ubuntu.html) en nuestra documentación para desarrolladores.
+   * [Requisitos del sistema de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
+* Establezca la misma configuración de PHP tanto para la línea de comandos de PHP como para el complemento del servidor web de PHP, tal como se describe en [Opciones de configuración de PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements#php-settings) en nuestra documentación para desarrolladores.

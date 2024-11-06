@@ -4,7 +4,7 @@ description: Este artículo proporciona recomendaciones sobre cómo mejorar el r
 exl-id: 144df36b-6305-4e57-b813-46bbb0ddedda
 feature: Cache, Categories, Cloud, Paas
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1064'
 ht-degree: 0%
@@ -65,7 +65,7 @@ Si la página de índice tiene una tasa de visitas baja, puede corregirla reduci
 
 Para comprobar la tasa de aciertos de caché general:
 
-1. [Obtenga credenciales de Fastly](http://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#cloud-fastly-creds) para su Adobe Commerce en el entorno de infraestructura en la nube.
+1. [Obtenga credenciales de Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration) para su Adobe Commerce en el entorno de infraestructura en la nube.
 1. Ejecute el siguiente comando cURL de Linux/macOS para comprobar la tasa de visitas del sitio durante los últimos 30 minutos, reemplazando y con los valores de las credenciales de Fastly:
 
    `curl -H "Fastly-Key: " https://api.fastly.com/stats/service//field/hit_ratio?by=minute | json_pp`
@@ -82,8 +82,8 @@ Una tasa de visitas inferior al 0,85 o al 85 % puede indicar un problema de conf
 
 1. Mediante las estadísticas de tasa de visitas por hora y por día, identifique cuándo comenzó a disminuir la tasa de visitas. Si la tasa de visitas disminuyó repentinamente aproximadamente al mismo tiempo que implementó un cambio en el sitio, considere revertir el cambio hasta que se reduzca la carga del sitio.
 1. Compruebe la configuración en el administrador de Commerce, en **Tiendas** > **Configuración** > Avanzada > **Sistema** > **Caché de página completa**. Asegúrese de que el valor **TTL para contenido público** no esté configurado demasiado bajo.
-1. Asegúrese de [cargar los fragmentos de VCL](https://devdocs.magento.com/guides/v2.3/cloud/cdn/configure-fastly.html#upload-vcl-snippets).
-1. Si utiliza fragmentos de VCL personalizados, devíselos para un uso correcto de las acciones &quot;pass&quot; o &quot;pipe&quot;: deben utilizarse con cuidado y, como mínimo, con una condición de algún tipo. Para obtener más sugerencias, consulte [Fragmentos personalizados de VCL de Fastly](https://devdocs.magento.com/guides/v2.3/cloud/cdn/cloud-vcl-custom-snippets.html) en nuestra documentación para desarrolladores.
+1. Asegúrese de [cargar los fragmentos de VCL](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#upload-vcl-snippets).
+1. Si utiliza fragmentos de VCL personalizados, devíselos para un uso correcto de las acciones &quot;pass&quot; o &quot;pipe&quot;: deben utilizarse con cuidado y, como mínimo, con una condición de algún tipo. Para obtener más sugerencias, consulte [Fragmentos personalizados de VCL de Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets) en nuestra documentación para desarrolladores.
 
 ### Paso 3: Identificar los sitios web que causan la alta carga del servidor
 

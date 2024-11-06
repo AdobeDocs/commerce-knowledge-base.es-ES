@@ -3,7 +3,7 @@ title: Preguntas frecuentes sobre el fin de la asistencia del software Adobe Com
 description: Las siguientes preguntas frecuentes están pensadas para ayudar a los comerciantes, desarrolladores y socios a comprender las implicaciones de la fecha de fin de soporte (EOS) publicada por Adobe Commerce para las versiones afectadas de Adobe Commerce.
 exl-id: ec147307-46eb-4a3a-8572-a014b091c58a
 feature: Best Practices, Compliance, Console
-source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Las siguientes preguntas frecuentes están pensadas para ayudar a los comerciant
 
 ### ¿Dónde puedo encontrar las fechas de soporte de software para todas las versiones de Adobe Commerce?
 
-Puede encontrar la directiva de ciclo de vida del software de Adobe Commerce y las fechas de compatibilidad con el software en la [Directiva de ciclo de vida del software de Adobe Commerce](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). También publicamos fechas de fin de soporte (EOS) en nuestra [página de documentación para desarrolladores](https://devdocs.magento.com/release/released-versions.html).
+Puede encontrar la directiva de ciclo de vida del software de Adobe Commerce y las fechas de compatibilidad con el software en la [Directiva de ciclo de vida del software de Adobe Commerce](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/Adobe-Commerce-Software-Lifecycle-Policy.pdf). También publicamos fechas de fin de soporte (EOS) en nuestra [página de documentación para desarrolladores](https://experienceleague.adobe.com/en/docs/commerce-operations/release/versions).
 
 ### ¿Qué significa cuando el Adobe deja de ser compatible con una versión del software de Adobe Commerce?
 
@@ -70,7 +70,7 @@ Su plataforma de comercio es un sistema comercial importante para su empresa y m
 
 La migración a la versión más reciente del software de Adobe Commerce puede tardar cierto tiempo y recursos en ejecutarse correctamente. Una práctica recomendada es planificar con la mayor antelación posible a la fecha de finalización de la asistencia para garantizar que dispone del tiempo y los recursos adecuados para lograr sus objetivos estratégicos dentro del calendario y el presupuesto. Para ayudarle con la próxima actualización, Adobe ha publicado la [Guía de actualización 2.4](https://experienceleague.adobe.com/docs/commerce-operations/assets/adobe-commerce-2-4-upgrade-guide.pdf) que incluye las prácticas recomendadas y los pasos técnicos que debe seguir, así como las herramientas y los recursos que debe utilizar al realizar la actualización.
 
-Otra consideración importante es reservar recursos para desarrolladores y socios lo antes posible. El tiempo y los recursos del socio se suelen reservar mucho antes de la fecha de finalización de la asistencia, lo que da como resultado una cantidad significativamente menor de recursos para ayudar con los proyectos de migración. Se recomienda que tenga un plan móvil de tres años que analice anualmente como mínimo y que se asegure de que el próximo año esté planificado y presupuestado. Utilice [el calendario de versiones del Adobe](https://devdocs.magento.com/release/) para realizar un seguimiento de las fechas de las versiones.
+Otra consideración importante es reservar recursos para desarrolladores y socios lo antes posible. El tiempo y los recursos del socio se suelen reservar mucho antes de la fecha de finalización de la asistencia, lo que da como resultado una cantidad significativamente menor de recursos para ayudar con los proyectos de migración. Se recomienda que tenga un plan móvil de tres años que analice anualmente como mínimo y que se asegure de que el próximo año esté planificado y presupuestado. Utilice [el calendario de versiones del Adobe](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) para realizar un seguimiento de las fechas de las versiones.
 
 ### ¿Puedo utilizar un proveedor de servicios de terceros para la asistencia de software cuando la asistencia de Adobe Commerce cese?
 

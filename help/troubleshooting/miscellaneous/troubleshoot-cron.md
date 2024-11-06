@@ -4,9 +4,9 @@ description: Este artículo ofrece soluciones de solución de problemas para pro
 exl-id: e69a4fb3-731b-449e-a815-c33cd2faa567
 feature: Configuration
 role: Developer
-source-git-commit: b6a79bcff3d757d40e7070182d8853a37960a782
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '455'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Este artículo ofrece soluciones de solución de problemas para problemas con cr
 ## Los siguientes son síntomas de problemas crónicos:
 
 * Su actualización o actualización nunca se ejecuta; permanece en un estado `pending`.
-* Se muestra un mensaje de error acerca de la configuración [PHP](https://glossary.magento.com/php) `$HTTP_RAW_POST_DATA` aunque esté configurada correctamente.
+* Se muestra un mensaje de error acerca de la configuración de PHP `$HTTP_RAW_POST_DATA` aunque esté configurada correctamente.
 * La comprobación de disponibilidad de CRON falla. Los posibles errores incluyen rutas no grabables y cron no configurado. A continuación se muestra un ejemplo:
 
   ![upgr-tshoot-no-cron2.png](assets/upgr-tshoot-no-cron2.png)
@@ -48,7 +48,7 @@ En esta sección se explica cómo ver si cron se está ejecutando actualmente y 
 
 Para verificar si su crontab está configurado, haga los siguientes pasos:
 
-1. Inicie sesión en el servidor de Magento como propietario del sistema de archivos de [Magento](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/file-sys-perms-over.html) o cambie a él.
+1. Inicie sesión en el servidor de Magento como propietario del sistema de archivos de [Magento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) o cambie a él.
 1. Compruebe si existe el siguiente archivo:    `bash    ls -al <magento_root>/var/.setup_cronjob_status`. Si el archivo existe, cron se ha ejecutado correctamente en el pasado. Si el archivo *no existe*, o bien aún no ha instalado Magento o no se está ejecutando cron. En cualquier caso, continúe con el siguiente paso.
 1. Obtenga más información sobre CRON. Como usuario con privilegios de `root`, escriba el siguiente comando:    `bash    crontab -u <Magento file system owner name> -l`. Por ejemplo, en CentOS `bash    crontab -u magento_user -l`.  Si no se ha configurado ningún crontab para el usuario, se muestra el siguiente mensaje:    `terminal    no crontab for magento_user`. Su crontab le dice lo siguiente:
 
@@ -62,17 +62,17 @@ Consulte una de las siguientes secciones para ver una solución al problema.
 
 ### No se ha configurado la solución para crontab {#solution-crontab-not-set-up}
 
-Para comprobar que los trabajos de cron están correctamente configurados, consulte [Configurar trabajos de cron](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron).
+Para comprobar que los trabajos de cron están correctamente configurados, consulte [Configurar trabajos de cron](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration).
 
 ### Solución para cron que se ejecuta desde un binario PHP incorrecto {#solution-cron-running-from-incorrect-php-binary}
 
 Si su trabajo cron utiliza un binario de PHP diferente del plug-in del servidor web, los errores de configuración de PHP podrían mostrarse. Para resolver el problema, establezca una configuración PHP idéntica para la línea de comandos de PHP y el complemento del servidor web de PHP.
 
-Para obtener más información sobre la configuración de PHP, consulte [Configuración de PHP requerida](https://devdocs.magento.com/guides/v2.3/install-gde/prereq/php-settings.html) en nuestra documentación para desarrolladores.
+Para obtener más información sobre la configuración de PHP, consulte [Configuración de PHP requerida](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) en nuestra documentación para desarrolladores.
 
 ### Solución para cron que se ejecuta con errores {#solution-cron-running-with-errors}
 
-Intente ejecutar cada comando manualmente porque el comando puede mostrar mensajes de error útiles. Consulte [Configurar trabajos cron](https://devdocs.magento.com/guides/v2.3/install-gde/install/post-install-config.html#post-install-cron).
+Intente ejecutar cada comando manualmente porque el comando puede mostrar mensajes de error útiles. Consulte [Configurar trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration).
 
 >[!NOTE]
 >

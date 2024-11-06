@@ -4,7 +4,7 @@ description: "Este artículo explica cómo resolver el error de implementación 
 exl-id: 2f72d80a-05b2-4908-8fa8-61d06885ed07
 feature: Cloud, Deploy, Paas, Variables
 role: Developer
-source-git-commit: 9ca95444aa785191e4c8bf1603773f3430414797
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '608'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Si se revocó su licencia anteriormente debido a problemas de pago y ha resuelto
 
 ### 2. Agregue el valor keys en la variable env:COMPOSER\_AUTH y compruebe si las mismas claves están especificadas en auth.json
 
-Consulte las instrucciones y la información relacionada en [Prepare su sistema existente](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#auth-json) y [Agregue claves de autenticación](https://devdocs.magento.com/cloud/setup/first-time-setup-import-prepare.html#add-authentication-keys) en nuestra documentación para desarrolladores.
+Consulte las instrucciones y la información relacionada en [Prepare su sistema existente](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) y [Agregue claves de autenticación](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/overview) en nuestra documentación para desarrolladores.
 
 ### 3. Actualice o elimine auth.json
 

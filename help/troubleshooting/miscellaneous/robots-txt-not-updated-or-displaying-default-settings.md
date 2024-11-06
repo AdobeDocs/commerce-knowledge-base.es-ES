@@ -4,7 +4,7 @@ description: El artículo proporciona una solución para cuando ha configurado `
 exl-id: 629b1247-9282-49f9-ada3-a804ddbaa0f5
 feature: Configuration
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '180'
 ht-degree: 0%
@@ -42,8 +42,8 @@ La indexación por motores de búsqueda está desactivada.
 
 ## Solución
 
-Habilite la indexación por motores de búsqueda. Consulte [Configurar la indexación mediante el motor de búsqueda](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html#configure-indexing-by-search-engine) en nuestra documentación para desarrolladores.
+Habilite la indexación por motores de búsqueda. Consulte [Configurar la indexación mediante el motor de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap#configure-indexing-by-search-engine) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 
-* [Agregue robots de mapa del sitio y de motor de búsqueda](https://devdocs.magento.com/cloud/trouble/robots-sitemap.html) en nuestra documentación para desarrolladores.
+* [Agregue robots de mapa del sitio y de motor de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) en nuestra documentación para desarrolladores.

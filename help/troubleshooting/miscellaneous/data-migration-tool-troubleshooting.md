@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para los errores que pueden p
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '740'
 ht-degree: 0%
 
 ---
@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Causa
 
-No se pudo encontrar una clase del código base de Adobe Commerce 1 en el código base de Adobe Commerce 2 durante el [paso de migración EAV](https://devdocs.magento.com/guides/v2.3/migration/migration-tool-internal-spec.html#eav) en nuestra documentación para desarrolladores. En la mayoría de los casos, la clase que falta pertenece a una [extensión](https://glossary.magento.com/extension).
+No se pudo encontrar una clase del código base de Adobe Commerce 1 en el código base de Adobe Commerce 2 durante el [paso de migración EAV](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) en nuestra documentación para desarrolladores. En la mayoría de los casos, la clase que falta pertenece a una [extensión](https://experienceleague.adobe.com/en/docs/commerce-operations/operational-playbook/glossary#extension).
 
 ### Posibles soluciones
 
@@ -125,7 +125,7 @@ Request path: towel.html Store ID: 2 Target path: catalog/product/view/id/12
 
 Habilite la opción `auto_resolve_urlrewrite_duplicates` en el archivo `config.xml`.
 
-Esta configuración agrega una cadena hash a los registros en conflicto de [reescrituras de URL](https://glossary.magento.com/url) y muestra el resultado de la resolución en la interfaz de línea de comandos.
+Esta configuración agrega una cadena hash a los registros en conflicto de las reescrituras de URL y muestra el resultado de la resolución en la interfaz de línea de comandos.
 
 ## Discrepancia de entidades {#mismatch-of-entities}
 
@@ -155,7 +155,7 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### Causa
 
-Este error se produce durante la [migración incremental](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-delta.html) (en nuestra documentación para desarrolladores) de cambios en los datos. Significa que no se encontraron tablas deltalog (con prefijo `m2_cl_*`) en la base de datos de Adobe Commerce 1. La herramienta instala estas tablas durante la [migración de datos](https://devdocs.magento.com/guides/v2.3/migration/migration-migrate-data.html) (en nuestra documentación para desarrolladores), así como los déclencheur de la base de datos que realizan un seguimiento de los cambios y rellenan las tablas de cuadros de diálogo.
+Este error se produce durante la [migración incremental](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/delta) (en nuestra documentación para desarrolladores) de cambios en los datos. Significa que no se encontraron tablas deltalog (con prefijo `m2_cl_*`) en la base de datos de Adobe Commerce 1. La herramienta instala estas tablas durante la [migración de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/data) (en nuestra documentación para desarrolladores), así como los déclencheur de la base de datos que realizan un seguimiento de los cambios y rellenan las tablas de cuadros de diálogo.
 
 Una de las razones del error podría ser que está intentando migrar desde una *copia* de su tienda Adobe Commerce 1 activa, no desde la propia tienda Live. Cuando se realiza una copia desde un almacén de Adobe Commerce 1 activo que nunca se ha migrado, la copia no contiene los déclencheur ni las tablas de deltalog adicionales necesarias para completar una migración de delta, por lo que la migración falla. La herramienta de migración de datos NO realiza comparaciones entre las bases de datos de AC1 y AC2 para migrar las diferencias. En su lugar, la herramienta utiliza los déclencheur y las tablas de deltalog instalados durante la primera migración para realizar migraciones delta posteriores. En tal caso, la copia de la base de datos de Adobe Commerce 1 activa no contendrá los déclencheur ni las tablas de cuadros de diálogo de deltalog que la herramienta de migración de datos utiliza para realizar una migración.
 

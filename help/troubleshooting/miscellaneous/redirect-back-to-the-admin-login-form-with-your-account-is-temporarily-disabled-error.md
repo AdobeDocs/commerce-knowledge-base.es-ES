@@ -4,7 +4,7 @@ description: '''Este artículo proporciona las posibles soluciones para el probl
 exl-id: 1c7ffa1c-1fb1-4f69-9534-77d1e119318a
 feature: Admin Workspace, Customer Service
 role: Developer
-source-git-commit: f87263cde5aa001f78abc368c949ce150feecb91
+source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
 source-wordcount: '240'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Se le redirigirá de nuevo al formulario de inicio de sesión y se mostrará el 
 ## Solución
 
 1. Cree una copia de seguridad de base de datos.
-1. Use una herramienta de base de datos como [[!DNL phpMyAdmin]](https://devdocs.magento.com/guides/v2.2/install-gde/prereq/optional.html#install-optional-phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos. En la tabla de la base de datos `admin_user`, para el registro de usuario administrador, compruebe si `is_active` está establecido en &quot;`1`&quot; y `lock_expires` es `NULL`. Restablezca estos valores si es necesario.
+1. Use una herramienta de base de datos como [[!DNL phpMyAdmin]](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos. En la tabla de la base de datos `admin_user`, para el registro de usuario administrador, compruebe si `is_active` está establecido en &quot;`1`&quot; y `lock_expires` es `NULL`. Restablezca estos valores si es necesario.
 
 ## Lectura relacionada
 
