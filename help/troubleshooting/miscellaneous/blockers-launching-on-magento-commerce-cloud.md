@@ -4,9 +4,9 @@ description: Este artículo proporciona una corrección para los bloqueadores qu
 exl-id: 3b2c331f-5d90-4051-ada1-4934538fce79
 feature: Cache, Cloud, Marketing Tools, Observability, Paas
 role: Developer
-source-git-commit: 3dd44b72bc9f02fe808b70355c4331fc28aa3606
+source-git-commit: d728d44c4e1be3172ebf595122f3cc215207ac17
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '646'
 ht-degree: 0%
 
 ---
@@ -55,7 +55,6 @@ Problema: Sin un certificado SSL válido y en funcionamiento, no puede probar m�
 
 Recomendación **:** Solicite su certificado SSL compartido para los nombres de dominio de ensayo o activo.
 
-Lea acerca de los certificados SSL en este artículo de [Preguntas frecuentes rápidas](/help/announcements/adobe-commerce-announcements/magento-ssl-tls-certificate-requirements-and-clean-up.md) de nuestra base de conocimiento de soporte.
 
 ## 3. Configurar y probar redirecciones 301
 
