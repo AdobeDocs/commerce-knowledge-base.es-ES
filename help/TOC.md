@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 692e665558205301f3b7915ce7eb9f3cf0288aff
+source-git-commit: bfbac61b95e895bcea90b6aa2f1190a30de7ba15
 workflow-type: tm+mt
-source-wordcount: '9579'
+source-wordcount: '9559'
 ht-degree: 0%
 
 ---
@@ -965,9 +965,6 @@ ht-degree: 0%
       * [Paquetes degradados después de actualizar de 2.4.4 a 2.4.4-p1](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
       * [El CAPTCHA de Adobe Commerce 2.3.6 y 2.4.1 en el cierre de compra no funciona](/help/troubleshooting/known-issues-patches-attached/magento-commerce-2-3-6-2-4-1-captcha-in-checkout-not-working.md)
       * [Solicitar correo electrónico enviado desde la dirección de correo electrónico del servidor](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
-      * [Problemas de rendimiento causados por un exceso de solicitudes de Ajax](/help/troubleshooting/known-issues-patches-attached/performance-issues-caused-by-excessive-ajax-requests.md)
-      * [Al eliminar la actualización de ensayo se elimina la entidad relacionada](/help/troubleshooting/known-issues-patches-attached/removing-staging-update-deletes-related-entity.md)
-      * [Google Analytics no está realizando el seguimiento de los datos de conversión](/help/troubleshooting/known-issues-patches-attached/google-analytics-is-not-tracking-conversion-data.md)
       * [Revisión deshabilitada del botón Crear cuenta de Adobe Commerce 2.4.1 y 2.3.6](/help/troubleshooting/known-issues-patches-attached/2-4-1-and-2-3-6-create-an-account-button-disabled-hotfix.md)
       * [Error de Adobe Commerce 2.4.6 al realizar la solicitud desde el panel de administración](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [[!UICONTROL salesRule] problemas de etiquetas al actualizar desde versiones &lt; 2.4.5](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)

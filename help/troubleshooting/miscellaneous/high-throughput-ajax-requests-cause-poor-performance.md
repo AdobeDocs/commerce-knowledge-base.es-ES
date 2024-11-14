@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución para los problemas de rend
 exl-id: 68dfca8a-826c-4476-acaf-a139052b5dcc
 feature: Cache
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 3bcdbd0536ec71cb80ffa3afbcd53c4ae385d2e3
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ AJAX Las solicitudes de alto rendimiento de los informes incluyen aquellas relac
 
 Hay tres soluciones:
 
-* [Actualice a la versión 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version). Si esto no es posible actualmente, [instale el parche que corrige el problema](/help/troubleshooting/known-issues-patches-attached/performance-issues-caused-by-excessive-ajax-requests.md).
+* [Actualice a la versión 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
 * Asegúrese de que las solicitudes sean más ligeras (almacene en caché las solicitudes o cambie al contenido privado de los clientes).
 * Reduzca el número de solicitudes.
 
