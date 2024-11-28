@@ -3,9 +3,9 @@ title: Guía del usuario de soporte técnico de Experience League para Adobe Com
 description: Obtenga información sobre cómo enviar un vale de soporte al Soporte de Experience League, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 7a70f2c54396f82424e442aca7413c02ebecddb9
+source-git-commit: 7fbedaaf0d4edccc688be24951a7d30a9e774be8
 workflow-type: tm+mt
-source-wordcount: '2770'
+source-wordcount: '2782'
 ht-degree: 0%
 
 ---
@@ -186,7 +186,7 @@ Sus casos de soporte son los que usted:
 
 #### Ver sus casos
 
-Puede ver los casos que ha enviado personalmente al hacer clic en **[!UICONTROL My Cases]** en el menú de la izquierda.
+Puede ver los casos que ha enviado personalmente al hacer clic en **[!UICONTROL My Cases]** en el menú de la izquierda. Asegúrese de haber seleccionado la organización correcta que termina en &quot;(Commerce)&quot;.
 
 ![casos de compatibilidad de vista](assets/view_support_cases.png)
 
