@@ -4,7 +4,7 @@ description: El parche MDVA-41631 corrige el problema en el que los usuarios obt
 exl-id: 94b0b918-c1f9-4f5d-8fcd-8b92a9ca8c59
 feature: Orders
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
 source-wordcount: '423'
 ht-degree: 0%
@@ -37,8 +37,8 @@ Los usuarios obtienen un error al recuperar la información del pedido sin el va
 
 1. Vaya a **Tienda** > **Configuración** > **Clientes** > **Configuración del cliente** > **Opciones de nombre y dirección** > **Mostrar teléfono** y establezca el número de teléfono como opcional.
 1. Realice un pedido utilizando la API de GraphQL como cliente registrado.
-   * No configure el número de teléfono al configurar las direcciones de facturación y envío. Siga las instrucciones que se dan en [Tutorial de cierre de compra de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/checkout-customer.html) en nuestra documentación para desarrolladores.
-1. Recupere el pedido mediante la consulta de GraphQL [customerOrders](https://developer.adobe.com/commerce/webapi/graphql/queries/customer-orders.html).
+   * No configure el número de teléfono al configurar las direcciones de facturación y envío. Siga las instrucciones que se dan en [Tutorial de cierre de compra de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/) en nuestra documentación para desarrolladores.
+1. Recupere el pedido mediante la consulta de GraphQL [customerOrders](https://developer.adobe.com/commerce/webapi/graphql/schema/customer/queries/orders/).
 
 <pre>
 <code class="language-graphql">
