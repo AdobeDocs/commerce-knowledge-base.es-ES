@@ -1,19 +1,19 @@
 ---
 title: El archivo .csv de productos exportados no aparece
-description: Este artículo proporciona una corrección del problema que se produce cuando se intenta exportar productos a un archivo .csv en el Administrador de Commerce, pero el archivo no aparece.
+description: Este artículo proporciona una corrección del problema que se produce cuando se intenta exportar el tipo de entidad deseado a un archivo .csv en el Administrador de Commerce, pero el archivo no aparece.
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: d55702ab97f3770d0ec71322f6c24448f0169ad4
+source-git-commit: b6f1222918b027eaecda42b767e6f83b2cf0f5d0
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
 
 # El archivo .csv de productos exportados no aparece
 
-Este artículo proporciona una corrección del problema que se produce cuando se intenta exportar productos a un archivo .csv en el Administrador de Commerce, pero el archivo no aparece.
+Este artículo proporciona una solución al problema de que la exportación del tipo de entidad deseado a un archivo .csv en el administrador de Commerce hace que el archivo no aparezca.
 
 ## Productos y versiones afectados
 
@@ -30,7 +30,7 @@ Requisitos previos: la opción **Agregar clave secreta a las direcciones URL** e
    ![magento_export_products_2.3.4.png](assets/magento_export_products_2.3.4.png)
 
 1. Seleccionar
-   * **Tipo de entidad**: *Productos*
+   * **Tipo de entidad**: La entidad que desea exportar
    * **Formato de archivo de exportación**: *CSV*
    * **Chasis de campo**: dejar sin marcar.
 1. Haga clic en **Continuar**.
@@ -38,11 +38,11 @@ Requisitos previos: la opción **Agregar clave secreta a las direcciones URL** e
 
 <u>Resultado esperado</u>
 
-El archivo .csv con los productos exportados se muestra en la cuadrícula en un par de minutos.
+El archivo .csv que contiene el tipo de entidad deseado exportado se muestra en la cuadrícula en un par de minutos.
 
 <u>Resultado real</u>
 
-El archivo .csv con los productos exportados no se mostrará en la cuadrícula en 10 minutos o más.
+El archivo .csv que contiene el tipo de entidad deseado exportado no se muestra en la cuadrícula en 10 minutos o más.
 
 ## Causa
 
