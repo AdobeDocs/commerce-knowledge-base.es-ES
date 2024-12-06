@@ -4,7 +4,7 @@ description: Este artículo explica por qué una tarjeta de crédito de prueba f
 exl-id: 65fd08e0-eefc-47f3-8964-bef3610e6182
 feature: Orders, Payments
 role: Developer
-source-git-commit: 35d4f2130d0ec71f71f5f20aa8a7c76207e7a35a
+source-git-commit: 16fc1b45e7df32ef05dac6a245d6604bbbbef13a
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
@@ -36,6 +36,6 @@ Este error se muestra cuando PayPal marca un número de tarjeta de crédito de p
 
 Utilice otra tarjeta de crédito de prueba. Para generar tarjetas de crédito simuladas, puede utilizar para realizar pruebas:
 
-1. Vaya a la página del PayPal Developer Portal [Generador de tarjetas de crédito](https://developer.paypal.com/developer/creditCardGenerator/).
+1. Vaya a la página del PayPal Developer Portal [Generador de tarjetas de crédito](https://developer.paypal.com/api/rest/sandbox/card-testing/#link-creditcardgenerator).
 1. Inicie sesión en el panel de PayPal Developer Portal.
 1. Generar una tarjeta de crédito de prueba.
