@@ -4,9 +4,9 @@ description: Las implementaciones atascadas y las implementaciones fallidas en A
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: 6177863da268f43cc30119cef6f718a04c46b3e6
+source-git-commit: 7f4f24c596eac96dc8fef40589a827eb9aa0c468
 workflow-type: tm+mt
-source-wordcount: '933'
+source-wordcount: '958'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ b. NO - Mantenimiento o cortes globales. Consulte la duración estimada y las ac
 
 +++**¿Hay implementaciones en otros entornos que bloquean la implementación en el entorno existente?**
 
-Para obtener una lista de las actividades en curso, ejecute el siguiente comando mediante la CLI de Magento en la nube (si solo se le ha agregado a un proyecto en la nube):
+Para obtener una lista de las actividades en curso, ejecute el siguiente comando usando la CLI de Magento en la nube (si solo se le ha agregado a un proyecto en la nube). **Nota**: Compruebe que se encuentra en la versión más reciente de la CLI de Magento en la nube. Para ver los pasos, consulte [Actualizar la CLI](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview#update-the-cli) en la guía de Commerce en infraestructura de nube.
 
 ```bash
 magento-cloud --state=in_progress
@@ -199,7 +199,7 @@ b. NO - Continúe con [Paso 18](#step-18).
 
 ## Paso 18: Compruebe si hay algún fallo en el gancho posterior {#step-18}
 
-+++**Error/bloqueo del gancho de Post?**
++++**Error/bloqueo del gancho de publicación?**
 
 a. SÍ - Base de datos: [Espacio libre en disco](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#allocate-disk-space), tablas dañadas o incompletas.\
 b. NO - Continúe con [Paso 19](#step-19).
