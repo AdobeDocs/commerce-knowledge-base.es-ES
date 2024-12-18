@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 80b0dc119058ec7533124919d5917cdd219552fe
+source-git-commit: ace01511b6a3f3b406b25d563d892351a5f6cf7d
 workflow-type: tm+mt
-source-wordcount: '9469'
+source-wordcount: '9409'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
       * [Alertas administradas para Adobe Commerce: Alerta de disco crítico](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-disk-critical-alert.md)
       * [Alertas administradas en Adobe Commerce: alerta de advertencia de memoria Redis](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-redis-memory-warning-alert.md)
       * [Alertas administradas para Adobe Commerce: Alerta de advertencia de memoria](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-memory-warning-alert.md)
-      * [Alertas administradas en Adobe Commerce: alerta crítica de la CPU](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
+      * [Alertas administradas en Adobe Commerce: Alerta crítica de CPU](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-cpu-critical-alert.md)
       * [Alertas administradas en Adobe Commerce: Alerta de memoria crítica](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-memory-critical-alert.md)
       * [Alertas administradas para Adobe Commerce: Alerta crítica de Apdex](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-critical-alert.md)
       * [Alertas administradas en Adobe Commerce: alertas de MariaDB](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-on-magento-commerce-mariadb-alerts.md)
@@ -947,15 +947,9 @@ ht-degree: 0%
       * [La búsqueda avanzada no muestra los resultados más relevantes](/help/troubleshooting/known-issues-patches-attached/advanced-search-not-showing-the-most-relevant-results.md)
       * [Error al filtrar pedidos en administración](/help/troubleshooting/known-issues-patches-attached/error-when-filtering-orders-in-admin.md)
       * [Los usuarios no pueden añadir un producto al carro de compras si no se ha seleccionado nada en Permitir países](/help/troubleshooting/known-issues-patches-attached/user-not-able-to-add-product-to-cart-if-allow-countries-is-not-selected.md)
-      * [Pedidos no mostrados en la cuadrícula Pedidos del administrador](/help/troubleshooting/known-issues-patches-attached/orders-not-displayed-in-the-orders-grid-in-the-admin.md)
-      * [No se puede validar el número de IVA: Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/known-issues-patches-attached/unable-to-validate-vat-number-magento-commerce-cloud.md)
-      * [Las páginas de cierre de compra no se cargan cuando el bloqueador de anuncios está habilitado](/help/troubleshooting/known-issues-patches-attached/checkout-pages-not-loading-when-ad-blocker-is-enabled.md)
       * [Ubicación de URL de administrador de Adobe Commerce revelada](/help/troubleshooting/known-issues-patches-attached/magento-admin-url-location-disclosed.md)
-      * [Varios trabajos cron programados para el mismo período de tiempo](/help/troubleshooting/known-issues-patches-attached/multiple-cron-jobs-scheduled-for-the-same-time-period.md)
-      * [Las muestras de productos configurables no se muestran tachadas cuando no hay existencias](/help/troubleshooting/known-issues-patches-attached/configurable-product-swatches-not-displayed-as-crossed-out-when-out-of-stock.md)
       * [El administrador no puede crear un pedido/repedido cuando el pago del Braintree está activado](/help/troubleshooting/known-issues-patches-attached/admin-cant-create-order-reorder-when-braintree-payment-enabled.md)
       * [Paquetes degradados después de actualizar de 2.4.4 a 2.4.4-p1](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
-      * [El CAPTCHA de Adobe Commerce 2.3.6 y 2.4.1 en el cierre de compra no funciona](/help/troubleshooting/known-issues-patches-attached/magento-commerce-2-3-6-2-4-1-captcha-in-checkout-not-working.md)
       * [Solicitar correo electrónico enviado desde la dirección de correo electrónico del servidor](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
       * [Error de Adobe Commerce 2.4.6 al realizar la solicitud desde el panel de administración](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
       * [[!UICONTROL salesRule] problemas de etiquetas al actualizar desde versiones &lt; 2.4.5](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
