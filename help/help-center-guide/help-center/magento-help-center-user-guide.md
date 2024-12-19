@@ -3,9 +3,9 @@ title: Guía del usuario de soporte técnico de Experience League para Adobe Com
 description: Obtenga información sobre cómo enviar un vale de soporte al Soporte de Experience League, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 9abd435c2b360ca667b7c5a4431fdbf4b3c86831
+source-git-commit: 16511a9bcc0e229297916f5c48ee8b606e10edbe
 workflow-type: tm+mt
-source-wordcount: '2934'
+source-wordcount: '2935'
 ht-degree: 0%
 
 ---
@@ -339,13 +339,15 @@ Después de proporcionar acceso compartido a un nuevo usuario, la información r
 
 <u>Causa</u>
 
-Si tiene o ha tenido un proyecto de Adobe Commerce Cloud y ha agregado un usuario al proyecto, se le habría concedido automáticamente acceso compartido en el ID de IMAGEN del propietario del proyecto. Normalmente, esto se indica en la columna **[!UICONTROL Share Name]**, que muestra *Acceso compartido en la nube desde MAG[XYZ]*.
+Si tiene o ha tenido un proyecto de Adobe Commerce Cloud y ha agregado un usuario al proyecto, es posible que se le haya concedido automáticamente acceso compartido en el ID de MAGE del propietario del proyecto. Normalmente, esto se indica en la columna **[!UICONTROL Share Name]**, que muestra *Acceso compartido en la nube desde MAG[XYZ]*.
 
-Si falta el vínculo del DELETE, significa que el acceso compartido se concedió automáticamente mediante el Commerce Cloud.
+>[!NOTE]
+>
+>Si falta el vínculo del DELETE, significa que el acceso compartido se concedió automáticamente mediante el Commerce Cloud.
 
 <u>Solución</u>
 
-No se puede eliminar la lista de usuarios de acceso compartido con el nombre compartido de *Acceso compartido de nube de MAG[XYZ]* si el acceso compartido no se agregó o proporcionó en esta página. Se conservan con fines informativos o de auditoría.
+No se puede eliminar la lista de usuarios de acceso compartido con el nombre compartido de *Acceso compartido de nube de MAG[XYZ]* si el acceso compartido no se agregó o asignó [en esta página](https://account.magento.com/grantor/manage/). Se conservan con fines informativos o de auditoría.
 
 Sin embargo, una vez que haya revocado los permisos a esos usuarios de acceso compartido, ya no tendrán ese acceso.
 
