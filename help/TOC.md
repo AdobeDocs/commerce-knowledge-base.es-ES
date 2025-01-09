@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: ace01511b6a3f3b406b25d563d892351a5f6cf7d
+source-git-commit: c46d29aa11b9cbbcccbf1765b4ae972e14ac80ac
 workflow-type: tm+mt
-source-wordcount: '9409'
+source-wordcount: '9397'
 ht-degree: 0%
 
 ---
@@ -1021,7 +1021,6 @@ ht-degree: 0%
    * [Cómo solicitar la actualización temporal de Adobe Commerce en la infraestructura en la nube](/help/how-to/general/how-to-request-temporary-magento-upsize.md)
    * [Vea el nivel de vCPU del entorno en su clúster en Adobe Commerce](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)
    * [Adobe Commerce en la infraestructura de la nube: Compruebe la configuración de CPU del host.](/help/how-to/general/magento-commerce-cloud-check-hosts-cpu-configuration.md)
-   * [Cambiar el propietario de la cuenta (acceso a las credenciales mediante tokens de API) para Fastly en la nube](/help/how-to/general/change-account-owner-access-credentials-via-api-tokens-for-fastly-on-cloud.md)
    * [Adobe Commerce en la nube: cambiar las claves de autenticación y volver a implementar](/help/how-to/general/redeploy-with-another-key.md)
    * [Cómo crear un volcado &quot;borrado&quot; cuando lo solicita el agente de soporte](/help/how-to/general/create-dump-for-support.md)
    * [MBI: Creación y edición de columnas calculadas avanzadas](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
