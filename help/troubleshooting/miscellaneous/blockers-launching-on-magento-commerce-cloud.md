@@ -4,7 +4,7 @@ description: Este artículo proporciona una corrección para los bloqueadores qu
 exl-id: 3b2c331f-5d90-4051-ada1-4934538fce79
 feature: Cache, Cloud, Marketing Tools, Observability, Paas
 role: Developer
-source-git-commit: d728d44c4e1be3172ebf595122f3cc215207ac17
+source-git-commit: df966df6a85057b26d53a870d038269ebdcc2b32
 workflow-type: tm+mt
 source-wordcount: '646'
 ht-degree: 0%
@@ -78,7 +78,7 @@ Problema: Los recursos estáticos se proporcionan lentamente, por lo que el siti
 
 Recomendación: Para identificar las posibles causas de un rendimiento deficiente, considere la posibilidad de usar [Adobe Commerce Performance Toolkit](https://github.com/magento/magento2/tree/2.3/setup/performance-toolkit) para las pruebas de rendimiento. También puede tener en cuenta estas herramientas de terceros:
 
-* [Sitio](https://www.joedog.org/siege-home/): utilidad de pruebas de carga y pruebas de referencia HTTP; admite autenticación básica, cookies, protocolos HTTP, HTTPS y FTP.
+* [Sitio](https://www.joedog.org/siege-home): utilidad de pruebas de carga y pruebas de referencia HTTP; admite autenticación básica, cookies, protocolos HTTP, HTTPS y FTP.
 * [Jmeter](https://jmeter.apache.org/): Una herramienta de medición de rendimiento y prueba de carga de buena reputación. Ayuda a medir el rendimiento para el tráfico pico, por ejemplo, para las ventas flash.
 * [New Relic](https://support.newrelic.com/): localiza procesos y áreas del sitio que producen un rendimiento lento con tiempo de seguimiento empleado por acción, como la transmisión de datos, consultas, redis, etc.
 * [WebPageTest](https://www.webpagetest.org/) (gratuito) y [PKingdom](https://www.pingdom.com/) (de pago): análisis en tiempo real del tiempo de carga de las páginas del sitio con diferentes ubicaciones de origen.
