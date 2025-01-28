@@ -4,7 +4,7 @@ description: Los problemas de informes avanzados en Adobe Commerce se pueden res
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 3b402728be7a80b62f21319d2cf91a92f1ad4a0c
+source-git-commit: aed14781c6a7b43d0a719ac89c2965d5044d8c22
 workflow-type: tm+mt
 source-wordcount: '1007'
 ht-degree: 0%
@@ -138,7 +138,7 @@ b. NO - Continúe con [Paso 10](#step-10).
 
 +++**¿Hay un mensaje de error generado por el trabajo cron?**
 
-Ejemplo: en la tabla `core_config_data` se ve el error *El archivo &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 no se puede eliminar*. Advertencia!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=en): No existe ese archivo o directorio*
+Ejemplo: en la tabla `cron_schedule` se ve el error *El archivo &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 no se puede eliminar*. Advertencia!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=en): No existe ese archivo o directorio*
 
 a. SÍ - Usar el parche ACSD-50165 en [No se puede eliminar el archivo. Advertencia: no existe el error de archivo o directorio del administrador ](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md). Espere 24 horas a que el trabajo se ejecute de nuevo y vuelva a intentarlo.\
 b. NO - Continúe con [Paso 11](#step-11).
