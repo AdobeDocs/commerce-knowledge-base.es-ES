@@ -1,22 +1,33 @@
 ---
-title: 'SOAP ''[!DNL FedEx]: migración de la integración del método de envío de la API de RESTful a la API de'''
+title: 'SOAP [!DNL FedEx]: migración de la integración del método de envío de la API de a RESTful'
 promoted: true
 description: SOAP Aplique un parche para lidiar con la migración de la integración del método de envío  [!DNL FedEx] de la API de RESTful a la API de Adobe Commerce 2.4.4-p4 - 2.4.6-pX.
 feature: Shipping/Delivery
 role: Developer
 exl-id: 7e11a171-6924-41d0-a5c7-7b794d0da84c
-source-git-commit: 7c468583883789a6bc6e41d1a787a356ea3205c4
+source-git-commit: 7a54e992e365238ec7c764225a31cd3b6b8ad019
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 # SOAP [!DNL FedEx]: migración de la integración del método de envío de la API de a RESTful
 
+>[!WARNING]
+>
+>Utilice el parche ACSD-61622 de la versión [!DNL Quality Patches Tool] (QPT) 1.1.57 en lugar del parche proporcionado anteriormente. El nuevo parche es compatible con las versiones de Adobe Commerce (todos los métodos de implementación) 2.4.6-p1 - 2.4.6-p8. Podría volverse aplicable a otras versiones con las nuevas versiones de [!DNL Quality Patches Tool].
+>
+>Para obtener más información, consulte el [artículo del parche ACSD-61622](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/patches-available-in-qpt/v1-1-57/acsd-61622-fedex-account-specific-rates-missing-from-response) en nuestra guía de herramientas de Adobe Commerce.
+
+>[!WARNING]
+>
+>Antes de instalar el nuevo parche, debe desinstalar el parche anterior que se proporciona en este artículo. Para obtener instrucciones sobre cómo desinstalar parches, consulte [Revertir un parche personalizado](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches#revert-a-custom-patch) en nuestra guía del usuario.
+
+
 SOAP Este artículo proporciona un parche para resolver los problemas con la migración de la integración del método de envío [!DNL FedEx] de la API de RESTful a la API de Adobe Commerce 2.4.4-p4 - 2.4.6-pX.
 
-El seguimiento de [!DNL FedEx Web Services], la validación de direcciones y la validación de códigos postales de lenguajes de definición de servicios web (WSDLS) se retirarán el 15 de mayo de 2024. SOAP La base de datos [!DNL FedEx Web Services] se encuentra en la contención de desarrollo y se ha reemplazado con [!DNL FedEx] API RESTFUL. Para obtener más información, consulte [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
+El seguimiento de [!DNL FedEx Web Services], la validación de direcciones y los lenguajes de definición de servicios web (WSDLS) de validar códigos postales se retiraron el 15 de mayo de 2024. SOAP La base de datos [!DNL FedEx Web Services] se encuentra en la contención de desarrollo y se ha reemplazado con [!DNL FedEx] API RESTFUL. Para obtener más información, consulte [[!DNL FedEx Web Services]](https://www.fedex.com/en-us/developer/web-services.html).
 
 Este cambio afecta a nuestra implementación actual de la integración de métodos de envío [!DNL FedEx] en Adobe Commerce SOAP y requiere que corrijamos nuestra implementación actual y migremos de las API de obsoletas a las últimas [!DNL FedEx] API de RESTFUL.
 
