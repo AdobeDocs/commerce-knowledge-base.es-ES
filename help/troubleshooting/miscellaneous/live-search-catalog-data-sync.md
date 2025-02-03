@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para el problema de Adobe Com
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 96e5bfc677949fb5f925040b95f951ca518fa71a
 workflow-type: tm+mt
-source-wordcount: '717'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,9 @@ Este artículo proporciona soluciones para el problema de Adobe Commerce en el q
 
 ## Problema
 
-Los datos del catálogo no están sincronizados correctamente o se ha añadido un nuevo producto, pero no aparece en los resultados de búsqueda.
+Los datos del catálogo no están sincronizados correctamente o se ha añadido un nuevo producto, pero no aparece en los resultados de búsqueda. También puede recibir el siguiente error en `var/log/exception.log`:
+
+`Magento_LiveSearch: An error occurred in search backend. {"result":{"errors":[{"message":"Exception while fetching data (/productSearch) : No index was found for this request"}]}}`
 
 >[!NOTE]
 >
@@ -134,6 +136,22 @@ Si ve los datos correctos en `cde_product_attributes_feed`:
 bin/magento saas:resync --feed products
 bin/magento saas:resync --feed productattributes
 ```
+
+Ejecute los siguientes comandos para volver a sincronizar las fuentes:
+
+```
+bin/magento saas:resync --feed productattributes --cleaup-feed
+bin/magento saas:resync --feed products --cleanup-feed
+bin/magento saas:resync --feed scopesCustomerGroup --cleanup-feed
+bin/magento saas:resync --feed scopesWebsite --cleanup-feed
+bin/magento saas:resync --feed prices --cleanup-feed
+bin/magento saas:resync --feed productOverrides --cleanup-feed
+bin/magento saas:resync --feed variants --cleanup-feed
+bin/magento saas:resync --feed categories --cleanup-feed
+bin/magento saas:resync --feed categoryPermissions --cleanup-feed
+```
+
+[Envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/home?support-tab=home#support) para solicitar que se reindexe el índice de Live Search. En la descripción del problema, incluya el ID de espacio de datos/entorno que se encuentra en el panel de administración en **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]**.
 
 ## Lectura relacionada
 
