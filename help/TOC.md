@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: b14ce46b2e68b76f349c3d2791897c7519088f24
+source-git-commit: 9de7cb6d2c9e529031999cad9ae6f3c8de5520c7
 workflow-type: tm+mt
-source-wordcount: '9387'
+source-wordcount: '9382'
 ht-degree: 0%
 
 ---
@@ -958,7 +958,6 @@ ht-degree: 0%
       * [Volviendo a  [!DNL Elasticsearch7]  cuando el motor de búsqueda se estableció en  [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [problemas del Elasticsearch tras la actualización a Adobe Commerce cloud Infrastructure 2.3.1+](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
       * [Los índices de seguimiento de ElasticSuite causan problemas con Elasticsearch](/help/troubleshooting/elasticsearch/elasticsuite-tracking-indices-causes-problems-with-elasticsearch.md)
-      * [Elasticsearch en el solucionador de problemas de Adobe Commerce](/help/troubleshooting/elasticsearch/elasticsearch-in-magento-troubleshooter.md)
       * [Asegúrese de que el Elasticsearch está instalado correctamente](/help/troubleshooting/elasticsearch/ensure-elasticsearch-is-installed-properly.md)
       * [El Elasticsearch 5 está configurado, pero la página de búsqueda no se carga con el error &quot;Los datos de campo están desactivados...&quot;](/help/troubleshooting/elasticsearch/elasticsearch-5-is-configured-but-search-page-does-not-load-with-fielddata-is-disabled-error.md)
       * [El estado del índice del Elasticsearch es &#39;amarillo&#39; o &#39;rojo&#39;](/help/troubleshooting/elasticsearch/elasticsearch-index-status-is-yellow-or-red.md)
