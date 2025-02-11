@@ -4,7 +4,7 @@ description: Este artículo proporciona información general sobre la herramient
 exl-id: 43393708-3939-449f-a764-b2ac6326165f
 feature: Tools and External Services
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: ce9c69e12d64b4b4a8e6129783d9b15e95eff867
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
@@ -60,3 +60,4 @@ Consulte [Cloud for Adobe Commerce > Aplicar parches](https://experienceleague.a
 
 * [Notas de la versión de la herramienta Parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes) en nuestra documentación para desarrolladores.
 * [Cómo aplicar parches de compositor proporcionados por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de soporte.
+
