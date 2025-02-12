@@ -5,9 +5,9 @@ description: Aplique un parche aislado para corregir  [!DNL critical, important,
 feature: Compliance, Security
 role: Developer
 exl-id: 567e6ad2-704e-461f-a54d-75f6bd96e996
-source-git-commit: f0c4bfae30d462d160e8096f0c4cee703f6f24e5
+source-git-commit: f4a7a6ac538cf1199aea32875215709fcd165a08
 workflow-type: tm+mt
-source-wordcount: '474'
+source-wordcount: '477'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Adobe Commerce en infraestructura en la nube, Adobe Commerce local y Magento Ope
 * 2.4.5-p10 y anteriores
 * 2.4.4-p11 y anteriores
 
-## Solución para el software local de Adobe Commerce en la nube y Adobe Commerce
+## ## Solución para software de Adobe Commerce en la nube, Adobe Commerce local y Magento Open Source
 
 Para ayudar a resolver la vulnerabilidad de los productos y las versiones afectados, debe aplicar el parche aislado [!DNL CVE-2025-24434], según la versión de Adobe Commerce/Magento Open Source.
 
