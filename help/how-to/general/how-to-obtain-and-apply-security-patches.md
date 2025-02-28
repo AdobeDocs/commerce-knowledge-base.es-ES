@@ -2,9 +2,9 @@
 title: Cómo obtener y aplicar [!UICONTROL security patch]
 description: Este artículo proporciona instrucciones sobre cómo obtener y aplicar un [!UICONTROL security patch] que se ha liberado, pero las instrucciones no están disponibles.
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
-source-git-commit: b15a1d008b6cc2bdce797768e6ee7029a747e6da
+source-git-commit: 06bc239cb5b1a894d2a60236a9b32b2b0c4eba80
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -32,10 +32,11 @@ Si se menciona un archivo de parche o una revisión física en las Notas de la v
 
 **Advertencias:**
 
-Si tiene una versión anterior de Adobe Commerce y ha adquirido Soporte ampliado, su versión debe ser una de las siguientes para poder aplicar los parches de seguridad:
+Si su versión de Adobe Commerce es anterior (2.4.4), automáticamente habrá recibido Soporte ampliado. Su versión debe ser una de las siguientes versiones no compatibles para poder aplicar los parches de seguridad más recientes disponibles:
 
-* 2.4.2-p2
-* 2.4.3-p3
+2.4.4 - 2.4.4-p11
+
+Las versiones no compatibles (2.3.x, 2.4.0 - 2.4.3) no son compatibles y primero debe actualizar a una versión compatible para aprovechar las últimas correcciones de seguridad.
 
 Si no tiene soporte ampliado, puede solicitar al soporte técnico que comparta los parches con usted, pero no podrán resolver ningún problema o error que pueda encontrar al aplicarlos.
 

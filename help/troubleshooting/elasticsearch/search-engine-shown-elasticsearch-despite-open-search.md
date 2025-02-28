@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Elasticsearch] se muestra como motor de búsqueda a pesar de la  [!DNL OpenSearch] instalación'
+title: '[!DNL Elasticsearch] se muestra como el motor de búsqueda a pesar de la instalación de  [!DNL OpenSearch] '
 description: Este artículo proporciona una solución para el problema en el cual [!DNL Elasticsearch] aún se muestra como motor de búsqueda para Adobe Commerce en la nube incluso después de instalar o actualizar a [!DNL OpenSearch].
 exl-id: cdd8a35d-da6f-46d3-b732-65626487c9bb
 feature: Install
-source-git-commit: 1f053f76ae56edc06bfe82e55210244c8ec4b8eb
+source-git-commit: b3f68e43ce3c4fdea001db1d8ba2774900db7dba
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Este artículo proporciona una solución para el problema en el cual [!DNL Elast
 
 ## Versiones afectadas
 
-Adobe Commerce en la nube 2.4.3-p2 - 2.4.5-p6
+Adobe Commerce en la nube 2.4.4: 2.4.5-p11
 
 >[!NOTE]
 >
@@ -33,9 +33,9 @@ Adobe Commerce en la nube 2.4.3-p2 - 2.4.5-p6
 
 ## Causa
 
-Adobe Commerce está codificado para especificar [!DNL Elasticsearch7] como motor de búsqueda.
+[!DNL Elasticsearch7] está codificado en Adobe Commerce para ser el motor de búsqueda usado en estas versiones.
 
-Esto no debe confundirse con la versión instalada del servicio. La aplicación solo reconoce a [!DNL Elasticsearch7] como motor de búsqueda, pero no a [!DNL OpenSearch], aunque usa el servicio [!DNL OpenSearch] subyacente como motor en el servidor.
+Esto no debe confundirse con la versión instalada del servicio. Aunque no hay un módulo [!DNL Opensearch] incluido en el código, Adobe Commerce puede usar el servicio [!DNL Opensearch] subyacente.
 
 ## Solución
 
