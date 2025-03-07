@@ -4,9 +4,9 @@ description: Las implementaciones atascadas y las implementaciones fallidas en A
 exl-id: 5141e079-be61-44c2-8bff-c4b13cb7e07c
 feature: Build, Deploy, Support
 role: Developer
-source-git-commit: aedf869e96ce6bcbf538805dd6d14d31db8c2e02
+source-git-commit: 4704446d043e3175b5af27c068908e58bfb7a9ff
 workflow-type: tm+mt
-source-wordcount: '958'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Las implementaciones atascadas y las implementaciones fallidas en Adobe Commerce
 
 +++**¿Adobe Commerce está en servicio de infraestructura en la nube?**
 
-Implementación atascada: ¿Adobe Commerce está funcionando en el servicio de infraestructura en la nube? Comprueba [Adobe Commerce Cloud](https://status.adobe.com/products/3350/).
+Implementación atascada: ¿Adobe Commerce está funcionando en el servicio de infraestructura en la nube? Compruebe [Adobe Commerce Cloud](https://status.adobe.com/products/3350/).
 
 a. SÍ - Continúe con [Paso 2](#step-2).\
 b. NO - Mantenimiento o cortes globales. Consulte la duración estimada y las actualizaciones.
@@ -30,7 +30,7 @@ b. NO - Mantenimiento o cortes globales. Consulte la duración estimada y las ac
 
 +++**¿Hay implementaciones en otros entornos que bloquean la implementación en el entorno existente?**
 
-Para obtener una lista de las actividades en curso, ejecute el siguiente comando usando la CLI de Magento en la nube (si solo se le ha agregado a un proyecto en la nube). **Nota**: Compruebe que se encuentra en la versión más reciente de la CLI de Magento en la nube. Para ver los pasos, consulte [Actualizar la CLI](/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview) en la guía de Commerce en infraestructura de nube.
+Para obtener una lista de las actividades en curso, ejecute el siguiente comando usando la CLI de Magento en la nube (si solo se le ha agregado a un proyecto en la nube). **Nota**: Compruebe que se encuentra en la versión más reciente de la CLI de Magento en la nube. Para ver los pasos, consulte [Actualizar la CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) en la guía de Commerce en infraestructura de nube.
 
 ```bash
 magento-cloud --state=in_progress
@@ -42,7 +42,7 @@ Para obtener una lista de las actividades en curso, ejecute el siguiente comando
 magento-cloud -p <project-id or project-url> --state=in_progress
 ```
 
-Para encontrar información sobre una actividad de implementación existente (consulte [Comprobación del registro de implementación si la interfaz de usuario de la nube tiene el error &quot;Recorte de registro&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.html)
+Para encontrar información sobre una actividad de implementación existente (consulte [Comprobación del registro de implementación si la interfaz de usuario de la nube tiene el error &quot;Recorte de registro&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
 para obtener más información) puede ejecutar este comando para obtener un registro en ejecución de esa actividad:
 
 ```bash
@@ -79,7 +79,7 @@ b. NO - [Enviar un ticket de asistencia](/help/help-center-guide/help-center/mag
 +++**Usando Bitbucket?**
 
 a. SÍ: comprobar [status.bitbucket.com](https://bitbucket.status.atlassian.com/).\
-b. NO - Comprobar errores de registro de implementación en [Generar e implementar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html). Continúe con [Paso 6](#step-6).
+b. NO - Comprobar errores de registro de implementación en [Generar e implementar registros](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations). Continúe con [Paso 6](#step-6).
 
 +++
 
@@ -124,7 +124,7 @@ b. NO - Continúe con [Paso 11](#step-11).
 +++**¿Almacenamiento disponible está bien?**
 
 a. SÍ - Continúe con [Paso 11](#step-11).\
-b. NO - Revisar [Administrar espacio en disco](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html).
+b. NO - Revisar [Administrar espacio en disco](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space).
 
 +++
 
@@ -146,11 +146,11 @@ b. NO - Continúe con [Paso 8](#step-8).
 
 +++
 
-## Paso 13: Error al comprobar la actualización del Elasticsearch {#step-13}
+## Paso 13: Error al comprobar la actualización de Elasticsearch {#step-13}
 
-+++¿Se está actualizando o implementando el Elasticsearch **?**
++++¿Se está actualizando o implementando **Elasticsearch?**
 
-a. SÍ: pasos de actualización erróneos del Elasticsearch. Consulte [Compatibilidad de software de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html). Si la actualización del Elasticsearch aún no funciona, [envíe un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). **Nota**: en Adobe Commerce en la infraestructura en la nube, tenga en cuenta que las actualizaciones de servicios no se pueden insertar en el entorno de producción sin un aviso de 48 horas laborables a nuestro equipo de infraestructura. Esto es necesario, ya que tenemos que asegurarnos de tener un ingeniero de asistencia técnica de infraestructura disponible para actualizar la configuración dentro del periodo de tiempo deseado con un tiempo de inactividad mínimo en el entorno de producción. Así que 48 horas antes de que tus cambios deban estar en producción, [envía un ticket de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) detallando tu actualización de servicio requerida e indicando la hora en que quieres que comience el proceso de actualización.\
+a. SÍ: pasos de actualización erróneos de Elasticsearch. Consulte [Compatibilidad de software de Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/setup-upgrade.html). Si la actualización de Elasticsearch sigue sin funcionar, [envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). **Nota**: en Adobe Commerce en la infraestructura en la nube, tenga en cuenta que las actualizaciones de servicios no se pueden insertar en el entorno de producción sin un aviso de 48 horas laborables a nuestro equipo de infraestructura. Esto es necesario, ya que tenemos que asegurarnos de tener un ingeniero de asistencia técnica de infraestructura disponible para actualizar la configuración dentro del periodo de tiempo deseado con un tiempo de inactividad mínimo en el entorno de producción. Así que 48 horas antes de que tus cambios deban estar en producción, [envía un ticket de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) detallando tu actualización de servicio requerida e indicando la hora en que quieres que comience el proceso de actualización.\
 b. NO - Continúe con [Paso 14](#step-14).
 
 +++
@@ -164,7 +164,7 @@ b. NO - Continúe con [Paso 15](#step-15).
 
 +++
 
-## Paso 15: Error de versión del Elasticsearch {#step-15}
+## Paso 15: Error de versión de Elasticsearch {#step-15}
 
 +++**¿Error sobre las versiones de Elasticsearch?**
 
@@ -210,7 +210,7 @@ b. NO - Continúe con [Paso 19](#step-19).
 
 +++**Usar extensiones de terceros?**
 
-a. SÍ: intente [deshabilitar las extensiones de terceros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html) y ejecutar la implementación (para ver si son la causa del problema), especialmente si hay nombres de extensión en algún error.\
+a. SÍ: intente [deshabilitar las extensiones de terceros](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions) y ejecutar la implementación (para ver si son la causa del problema), especialmente si hay nombres de extensión en algún error.\
 b. NO - Continúe con [Paso 20](#step-20).
 
 +++
@@ -226,7 +226,7 @@ b. NO - [Enviar un ticket de asistencia](/help/help-center-guide/help-center/mag
 
 +++
 
-## Paso 21: Versión de Elasticsearch de downgrade {#step-21}
+## Paso 21: Versión anterior de Elasticsearch {#step-21}
 
 +++**Desactualizando versiones de Elasticsearch?**
 
