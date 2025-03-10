@@ -1,12 +1,12 @@
 ---
 title: Solución de problemas de rendimiento con New Relic en Adobe Commerce
-description: '''Este artículo proporciona pasos de solución de problemas para resolver los problemas de rendimiento de Adobe Commerce en la infraestructura en la nube mediante New Relic. También proporciona recursos para obtener más información. Esta es una lista de problemas. Haga clic para ver los pasos de solución de problemas en nuestra base de conocimiento de asistencia'':'
+description: 'Este artículo proporciona pasos de solución de problemas para resolver los problemas de rendimiento de Adobe Commerce en la infraestructura en la nube mediante New Relic. También proporciona recursos para obtener más información. Esta es una lista de problemas. Haga clic para ver los pasos de solución de problemas en nuestra base de conocimiento de asistencia:'
 exl-id: 0a22beb7-18b0-47eb-a6b8-63b7322b392c
 feature: Observability
 role: Developer
-source-git-commit: 324cce66df1e4ab7ec4ef8fb6512c3acbabdf3ab
+source-git-commit: 27fed162416c619a08d757279a3405f1fa72e976
 workflow-type: tm+mt
-source-wordcount: '900'
+source-wordcount: '901'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 Este artículo proporciona pasos de solución de problemas para resolver los problemas de rendimiento de Adobe Commerce en la infraestructura en la nube mediante New Relic. También proporciona recursos para obtener más información. Los siguientes problemas cubiertos en la siguiente tabla con recursos recomendados son:
 
 * Puntuación Apdex baja
-* Uso elevado de CPU
+* Alto uso de CPU
 * Operaciones de E/S alta
 * Interrupción
 
@@ -60,18 +60,18 @@ Este artículo proporciona pasos de solución de problemas para resolver los pro
 </ol>
 </td>
 <td>
-<p>Para obtener más información sobre la puntuación de New Relic Apdex, consulte <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">Documentación de New Relic &gt; APM Apdex &gt; Medir la satisfacción del usuario</a>. También puede consultar <a href="/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce-apdex-warning-alert.md">Alertas administradas para Adobe Commerce: Apdex warning alert</a> en nuestra base de conocimiento de asistencia.</p>
+<p>Para obtener más información sobre la puntuación de New Relic Apdex, consulte <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">Documentación de New Relic &gt; APM Apdex &gt; Medir la satisfacción del usuario</a>. También puede consultar <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Alertas administradas para Adobe Commerce: Apdex warning alert</a> en nuestra base de conocimiento de asistencia.</p>
 </td>
 </tr>
 <tr>
 <td>
 <p>Alto uso de CPU:</p>
-<p>Un uso alto de la CPU puede indicar que hay un servicio especialmente ocupado, como MySQL, Redis, etc.</p>
+<p>Un uso elevado de CPU puede indicar que hay un servicio especialmente ocupado, como MySQL, Redis, etc.</p>
 </td>
 <td>
 <ol>
 <li>Inicie sesión en <a href="https://login.newrelic.com/login">New Relic</a> &gt; Infraestructura &gt; Procesos.</li>
-<li>Revise los gráficos de CPU para ver si hay algún proceso atascado o de alto consumo que esté usando más del 100% del tiempo de CPU y compárelo con el recuento de procesadores de la instancia. Preste atención a los picos en la utilización de los recursos. No se recomienda matar un proceso a menos que sea un cron atascado.</li>
+<li>Revise los gráficos de CPU para ver si hay algún proceso atascado o de alto consumo que esté usando más del 100 % del tiempo de CPU y compárelo con el recuento de procesadores de la instancia. Preste atención a los picos en la utilización de los recursos. No se recomienda matar un proceso a menos que sea un cron atascado.</li>
 </ol>
 </td>
 <td>
@@ -121,7 +121,7 @@ Este artículo proporciona pasos de solución de problemas para resolver los pro
 <li>Ordenar por Más tiempo.</li>
 <li>Revise las consultas TOP.
 
-Nota: <code>ACTUALIZACIÓN</code> o <code>INSERT</code>Las consultas son las consultas que consumen más CPU.</li>
+Nota: <code>ACTUALIZACIÓN</code> o <code>INSERT</code>Las consultas son las consultas que más consumen CPU.</li>
 <li>Cambie a Rendimiento desde Ordenar por selector y busque los procesos que han causado que el rendimiento de la base de datos se despliegue.</li>
 <li>Si necesita investigar más a fondo, considere examinar los servicios de terceros.</li>
 </ol>
