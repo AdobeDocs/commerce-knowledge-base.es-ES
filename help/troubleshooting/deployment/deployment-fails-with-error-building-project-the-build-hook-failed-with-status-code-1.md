@@ -4,9 +4,9 @@ description: 'Este artículo habla sobre las causas y las soluciones del problem
 exl-id: add1cdac-dbcb-4c55-8bc2-c1f27e24aadb
 feature: Build, Deploy
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 6a880a57c6cafb34fa51706f7bab1e23310bcef7
 workflow-type: tm+mt
-source-wordcount: '750'
+source-wordcount: '745'
 ht-degree: 0%
 
 ---
@@ -80,7 +80,17 @@ Para obtener más información sobre cómo aumentar el espacio en disco si utili
 
    Use el artículo [Actualizar a ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) para referencia.
 
-1. Asegúrese de que el paquete ECE-tools esté presente en el archivo `composer.lock` ejecutando el siguiente comando:    <pre><code class="language-bash">grep &#39;<code class="language-yaml">&quot;name&quot;: &quot;magento/ece-tools&quot;</code>&#39; composer.lock</code></pre>    Si se especifican, la respuesta tendría el siguiente aspecto:    ```bash    "name": "magento/ece-tools",    "version": "2002.0.20",    ```
+1. Asegúrese de que el paquete ECE-tools esté presente en el archivo `composer.lock` ejecutando el siguiente comando:
+
+   ```bash
+   grep '"name": "magento/ece-tools"' composer.lock
+   ```
+
+   Si se especifican, la respuesta tendría el siguiente aspecto:
+
+   ```bash
+   "name": "magento/ece-tools", "version": "2002.0.20",
+   ```
 
 Consulte el artículo [Actualizar a ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) para obtener una referencia.
 
