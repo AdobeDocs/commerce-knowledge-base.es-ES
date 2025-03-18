@@ -3,9 +3,9 @@ title: Certificados SSL (TLS) para Adobe Commerce en infraestructura en la nube
 description: Este artículo proporciona respuestas rápidas a preguntas sobre cómo obtener certificados SSL (TLS) para su sitio de Adobe Commerce en nuestra infraestructura de nube.
 exl-id: 5a682d07-e4d7-4e81-a2ad-3232f2d8d9c1
 feature: Cloud, Console
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 7694e6cb739d73a28c902e95d324b1317f4daaf6
 workflow-type: tm+mt
-source-wordcount: '1079'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 Este artículo proporciona respuestas rápidas a preguntas sobre cómo obtener certificados SSL (TLS) para su sitio de Adobe Commerce en nuestra infraestructura de nube.
 
-## ¿Qué certificado SSL/TLS proporciona el Adobe?
+## ¿Qué certificado SSL/TLS proporciona Adobe?
 
-El Adobe proporciona un certificado [Let&#39;s Encrypt SSL/TLS](https://letsencrypt.org/) validado para el dominio para servir tráfico HTTPS seguro desde [!DNL Fastly]. Adobe proporciona un certificado para cada Adobe Commerce en la infraestructura en la nube, arquitectura de plan Pro, ensayo y Adobe Commerce en la infraestructura en la nube, el entorno de arquitectura de plan inicial para proteger todos los dominios de ese entorno.
+Adobe proporciona un certificado [Let&#39;s Encrypt SSL/TLS](https://letsencrypt.org/) validado para el dominio para servir tráfico HTTPS seguro desde [!DNL Fastly]. Adobe proporciona un certificado para cada Adobe Commerce en la infraestructura en la nube, arquitectura de plan Pro, ensayo y Adobe Commerce en la infraestructura en la nube, el entorno de arquitectura de plan inicial para proteger todos los dominios de ese entorno.
 
 ## ¿Qué cubre un certificado?
 
@@ -43,7 +43,7 @@ Si su sitio ya está activo o puede señalar las direcciones URL que se utilizar
 
 ## ¿Puedo utilizar mi propio certificado SSL/TLS?
 
-Puede proporcionar su propio certificado SSL/TLS en lugar de usar el [certificado Let&#39;s Encrypt](https://letsencrypt.org/) proporcionado por el Adobe.
+Puede proporcionar su propio certificado SSL/TLS en lugar de usar el [certificado Let&#39;s Encrypt](https://letsencrypt.org/) proporcionado por Adobe.
 
 Sin embargo, este proceso requiere un trabajo adicional de configuración y mantenimiento. En primer lugar, deberá generar una Solicitud de firma de certificado (CSR) para el nombre de dominio del sitio web (o nombre común) y proporcionárselo a su proveedor SSL para proporcionar un certificado SSL.
 
@@ -54,8 +54,8 @@ Una vez que tenga el certificado SSL, envíe un [vale de soporte de Adobe Commer
 
 >[!WARNING]
 >
->Es importante que no cargue los archivos de certificado directamente en el ticket. De lo contrario, los certificados se considerarán comprometidos y el Adobe deberá solicitar un nuevo certificado.
->Los archivos deben cargarse mediante SFTP al servidor. No utilice ningún otro método, como enviar los archivos al repositorio (lo cual solo debe hacerse para archivos inmutables que no contengan datos confidenciales).
+>Es importante que no cargue los archivos de certificado directamente en el ticket. De lo contrario, los certificados se considerarán comprometidos y Adobe deberá solicitar un nuevo certificado.
+>Los archivos deben cargarse mediante SFTP al servidor en una carpeta de su elección, por ejemplo: `var/ssl`, `/tmp/ssl`, etc. : no utilice ningún otro método como confirmar los archivos en el repositorio (lo que solo debe hacerse para archivos inmutables que no contengan datos confidenciales).
 
 ## El nombre del certificado
 
@@ -67,7 +67,7 @@ El dominio mostrado en el certificado es solo el primer dominio agregado al cert
 
 ## ¿Puedo utilizar certificados TLS comodín?
 
-Los certificados TLS comodín solo se pueden usar con el certificado personalizado y no con los certificados de Adobe Commerce Let&#39;s Encrypt. Como parte de la optimización de TLS, el Adobe va a dejar de ofrecer compatibilidad con certificados TLS comodín. Estamos identificando y poniéndonos en contacto con comerciantes que utilizan un certificado comodín con los certificados Let&#39;s Encrypt de Adobe y que están configurados en la consola [!DNL Fastly] para Adobe Commerce. Pedimos que estos certificados comodín se sustituyan por dominios exactos para garantizar la cobertura TLS. Para reemplazar un certificado TLS comodín, visite la [sección de dominio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) del complemento [!DNL Fastly]. Desde aquí, se pueden añadir los dominios exactos y se puede eliminar el comodín. Tenga en cuenta que DNS tendrá que señalar a [!DNL Fastly] para que estos nuevos dominios se enruten a través de la CDN. Una vez que se agreguen los dominios y se actualice el DNS, se proporcionará un certificado [Let&#39;s Encrypt](https://letsencrypt.org/) coincidente. Si no quita un dominio que señala a [!DNL Fastly] mediante un comodín, el Adobe eliminará el certificado compartido. Esto puede provocar una interrupción del sitio si no tiene configurado el FQDN de la dirección URL y el mismo FQDN de la dirección URL configurado en el DNS. Por lo tanto, debe confirmar que las direcciones URL configuradas también tienen una coincidencia uno a uno en su DNS que señala a [!DNL Fastly].
+Los certificados TLS comodín solo se pueden usar con el certificado personalizado y no con los certificados de Adobe Commerce Let&#39;s Encrypt. Como parte de la optimización de TLS, Adobe va a dejar de ofrecer soporte para los certificados TLS comodín. Estamos identificando y poniéndonos en contacto con comerciantes que utilizan un certificado comodín con los certificados Let&#39;s Encrypt de Adobe y que están configurados en la consola [!DNL Fastly] para Adobe Commerce. Pedimos que estos certificados comodín se sustituyan por dominios exactos para garantizar la cobertura TLS. Para reemplazar un certificado TLS comodín, visite la [sección de dominio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) del complemento [!DNL Fastly]. Desde aquí, se pueden añadir los dominios exactos y se puede eliminar el comodín. Tenga en cuenta que DNS tendrá que señalar a [!DNL Fastly] para que estos nuevos dominios se enruten a través de la CDN. Una vez que se agreguen los dominios y se actualice el DNS, se proporcionará un certificado [Let&#39;s Encrypt](https://letsencrypt.org/) coincidente. Si no quita un dominio que señala a [!DNL Fastly] mediante un comodín, Adobe eliminará el certificado compartido. Esto puede provocar una interrupción del sitio si no tiene configurado el FQDN de la dirección URL y el mismo FQDN de la dirección URL configurado en el DNS. Por lo tanto, debe confirmar que las direcciones URL configuradas también tienen una coincidencia uno a uno en su DNS que señala a [!DNL Fastly].
 
 ## ¿Qué debo hacer si mi dominio ya no apunta a Adobe Commerce?
 
