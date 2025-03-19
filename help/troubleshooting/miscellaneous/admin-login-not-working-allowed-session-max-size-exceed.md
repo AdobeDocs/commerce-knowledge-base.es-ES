@@ -1,17 +1,18 @@
 ---
-title: El inicio de sesión '[!DNL Admin] no funciona - se ha excedido el tamaño máximo permitido de sesión'
-description: Resuelva el problema cuando intente iniciar sesión en su  [!DNL Admin] panel y el formulario se actualizará y no podrá hacerlo.
+title: El inicio de sesión de [!UICONTROL Admin] no funciona - se excedió el tamaño máximo permitido de sesión
+description: Solucione el problema cuando intente iniciar sesión en el panel [!UICONTROL Admin], el formulario se actualizará y no podrá hacerlo.
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: 8718148f6d9a40c9a71484a7fbc818a626e825e1
+source-git-commit: fe4a48581bdfe24da5082b69fb26a8032bd77334
 workflow-type: tm+mt
-source-wordcount: '318'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
 
-# El inicio de sesión de [!DNL Admin] no funciona - se excedió el tamaño máximo permitido de sesión
+# El inicio de sesión de [!UICONTROL Admin] no funciona - se excedió el tamaño máximo permitido de sesión
 
-Este artículo proporciona una corrección para los casos en los que intenta iniciar sesión en el panel [!DNL Admin], pero el formulario se actualiza y no puede iniciar sesión. Esto se debe a que se ha excedido el tamaño de la sesión [!DNL Admin].
+Este artículo proporciona una corrección para los casos en los que intenta iniciar sesión en el panel [!UICONTROL Admin], pero el formulario se actualiza y no puede iniciar sesión, o bien está realizando algunas acciones en el panel [!UICONTROL Admin] y cerró la sesión automáticamente.
+Esto se debe a que [!UICONTROL Admin] [!UICONTROL Session Size] se ha excedido.
 
 ## Versiones afectadas
 
@@ -20,7 +21,10 @@ Este artículo proporciona una corrección para los casos en los que intenta ini
 
 ## Problema
 
-No se puede iniciar sesión en [!DNL Admin] porque el formulario se sigue cargando.
+Experimenta uno de los siguientes síntomas en el [!UICONTROL Admin]:
+
+1. No se puede iniciar sesión en [!UICONTROL Admin] porque el formulario se sigue cargando.
+1. Se cerrará la sesión automáticamente al intentar realizar una acción.
 
 ## Causa
 
@@ -41,7 +45,7 @@ Si ve estos errores, la solución sería:
 
 <u>Adobe Commerce en la infraestructura en la nube</u>:
 
-(Solo se puede obtener acceso a esta configuración en [!DNL Admin] cuando el modo de implementación/operación es predeterminado para el desarrollador. Sin embargo, solo se permite el modo de implementación de producción en el entorno de nube).
+(Solo se puede obtener acceso a esta configuración en [!UICONTROL Admin] cuando el modo de implementación/operación es *predeterminado* o *desarrollador*. Sin embargo, solo se permite el modo de implementación de producción en el entorno de la nube).
 
 Para aumentar este valor, ejecute este comando en el terminal (SSH):
 
@@ -53,6 +57,6 @@ Puede establecer un valor superior a *500000* según el tamaño máximo existent
 
 ## Lectura relacionada
 
-* [Tamaño de sesión](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) en la Guía de sistemas de administración.
-* [Modo de operación](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) en la Guía de configuración.
-* [Conexiones seguras](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) en la Guía de infraestructura de Commerce en la nube.
+* [Tamaño de sesión](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) en la Guía de sistemas de administración
+* [Modo de operación](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) en la Guía de configuración
+* [Conexiones seguras](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) en la Guía de infraestructura de Commerce en la nube
