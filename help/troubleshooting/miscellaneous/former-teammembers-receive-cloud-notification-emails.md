@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución para Adobe Commerce en los
 exl-id: b2535f66-8aec-4ddf-9a69-60879a0a1939
 feature: Cloud, Communications, Paas
 role: Developer
-source-git-commit: 0017d43e221ef3023630f714c34aa65b368e214f
+source-git-commit: bd199fac6d8f33491b9fa0f508b2bb52d56b46a5
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '279'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,7 @@ ht-degree: 0%
 # Los antiguos integrantes del equipo reciben correos electrónicos de notificación de Adobe Commerce Cloud
 
 Este artículo proporciona una solución para eliminar usuarios de la lista de destinatarios de correos electrónicos de notificación que son:
+
 * Miembros anteriores del equipo que ya no están asociados con el proyecto.
 * Integrantes del equipo actual que no deberían recibir las notificaciones.
 
@@ -22,6 +23,10 @@ Este artículo proporciona una solución para eliminar usuarios de la lista de d
 Se ha enviado a su equipo un aviso de una interrupción detectada o de un problema importante relacionado con el proyecto o el entorno de la nube. Esto incluye a los miembros que ya no pueden estar asociados con su proyecto, como desarrolladores externos/de agencias o integradores de sistemas. Desea que estos usuarios dejen de recibir notificaciones.
 
 ## Solución
+
+>[!NOTE]
+>
+>Si es un desarrollador externo/de la agencia o un integrador de sistemas y ya no está asociado con el proyecto, debe ponerse en contacto con el Propietario del proyecto o el Administrador del proyecto de ese proyecto para obtener ayuda.
 
 Existen dos maneras de detener las notificaciones eliminando al usuario(s) de su proyecto:
 
@@ -32,5 +37,5 @@ Si ya se ha hecho esto y aún así las notificaciones por correo electrónico si
 
 ## Lectura relacionada
 
-* [Ver el rol de proyecto de un usuario](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#view-a-user’s-project-role) en la guía de infraestructura de Commerce en la nube.
+* [Ver el rol de proyecto de un usuario](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#view-a-user&#39;s-project-role) en la guía de infraestructura de Commerce en la nube.
 * [Cómo incluir un miembro del equipo en las notificaciones de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-include-a-team-member-in-support-notifications.html) en la base de conocimientos de Commerce.
