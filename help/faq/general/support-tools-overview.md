@@ -2,9 +2,9 @@
 title: Generalidades de las herramientas de asistencia de Adobe Commerce
 description: Adobe Commerce ofrece una variedad de herramientas de soporte que le ayudan y le permiten mejorar la experiencia de la tienda de comercio electrónico.
 exl-id: 5364ff2b-07ea-4b42-8756-adec85f4efca
-source-git-commit: f2e4dbeeade5006e253beba9ff808e6571647ef4
+source-git-commit: 6ccebaec7f0a228b646737a2f48fe6d087ea2861
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Para obtener más información sobre cómo usar [!DNL Observation for Adobe Comm
 
 Las alertas administradas para Adobe Commerce en la infraestructura de la nube generan alertas [!DNL New Relic] listas para su uso que incluyen instrucciones sobre los pasos siguientes para solucionar problemas.
 
-Hemos configurado paneles y alertas clave para ayudarle a comprender cuándo su sitio alcanza niveles críticos de almacenamiento y Apdex (la satisfacción de los usuarios con las aplicaciones y el tiempo de respuesta de los servicios). Esto puede ayudarle a tomar medidas antes de que note tiempos de respuesta lentos o una interrupción del servicio. Podrá solucionar los problemas de las alertas con los artículos proporcionados en nuestra base de conocimiento de asistencia. Haga clic en [Alertas administradas para Adobe Commerce](/help/support-tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce.md) para obtener más información sobre las alertas administradas.
+Hemos configurado paneles y alertas clave para ayudarle a comprender cuándo su sitio alcanza niveles críticos de almacenamiento y Apdex (la satisfacción de los usuarios con las aplicaciones y el tiempo de respuesta de los servicios). Esto puede ayudarle a tomar medidas antes de que note tiempos de respuesta lentos o una interrupción del servicio. Podrá solucionar los problemas de las alertas con los artículos proporcionados en nuestra base de conocimiento de asistencia. Haga clic en [Alertas administradas para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/managed-alerts-for-adobe-commerce/managed-alerts-for-magento-commerce) para obtener más información sobre las alertas administradas.
 
 
 ## [!DNL Site-Wide Analysis Tool]: obtenga recomendaciones de rendimiento basadas en el análisis del sitio {#site-wide-analysis-tool}
@@ -41,6 +41,6 @@ Para obtener más información sobre [!DNL Site-Wide Analysis Tool], consulte la
 
 ## [!DNL Quality Patches Tool] - obtener todos los parches disponibles para su versión de Adobe Commerce {#quality-patches-tool}
 
-El [!DNL Quality Patches Tool] (QPT) ofrece parches individuales desarrollados por el Adobe y la comunidad de Magento Open Source. Permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce o Magento Open Source.
+[!DNL Quality Patches Tool] (QPT) ofrece parches individuales desarrollados por Adobe y la comunidad de Magento Open Source. Permite aplicar, revertir y ver información general sobre todos los parches individuales que están disponibles para la versión instalada de Adobe Commerce o Magento Open Source.
 
 QPT muestra sólo los parches disponibles para su versión instalada, con categorización y fácil aplicación/eliminación. Para obtener más información, consulte [Comprobar parche para un problema de Adobe Commerce con [!DNL Quality Patches Tool]](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
