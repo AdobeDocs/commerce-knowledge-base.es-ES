@@ -2,9 +2,9 @@
 title: Restaurar una instantánea de base de datos desde Ensayo o Producción
 description: Este artículo muestra cómo restaurar una instantánea de la base de datos desde Ensayo o Producción en Adobe Commerce en la infraestructura en la nube.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: c8cd2bf97681527a32a403a413c5fa823d07abed
 workflow-type: tm+mt
-source-wordcount: '354'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
@@ -120,6 +120,12 @@ Estos son los pasos:
 
    ```sql
    drop database <cluster ID_stg>;
+   ```
+
+1. Después de borrar la base de datos, vuelva a crearla:
+
+   ```mysql
+   create database [database_name];
    ```
 
 1. Escriba el siguiente comando para importar [!DNL snapshot]:
