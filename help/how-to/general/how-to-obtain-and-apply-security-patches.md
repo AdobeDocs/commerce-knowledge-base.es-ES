@@ -2,14 +2,17 @@
 title: Cómo obtener y aplicar [!UICONTROL security patch]
 description: Este artículo proporciona instrucciones sobre cómo obtener y aplicar un [!UICONTROL security patch] que se ha liberado, pero las instrucciones no están disponibles.
 exl-id: 55f2be73-2ccc-4750-a7bd-3058fc2d5107
-source-git-commit: 06bc239cb5b1a894d2a60236a9b32b2b0c4eba80
+source-git-commit: 43c8308c6539c53f60fb6457047898a2edd46532
 workflow-type: tm+mt
-source-wordcount: '369'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
 
 # Cómo obtener y aplicar un [!UICONTROL security patch]
+
+>[!NOTE]
+>Si tiene una instalación On-Premise y no utiliza sistemas de control de versiones como [!DNL CVS] o [!DNL GitHub] para administrar su código, es posible que su host web pueda ayudarle a aplicar la revisión. No dude en ponerse en contacto con ellos para obtener apoyo
 
 Este artículo proporciona instrucciones sobre cómo obtener y aplicar un [!UICONTROL security patch] que se ha liberado, pero las instrucciones no están disponibles.
 
@@ -17,18 +20,17 @@ Este artículo proporciona instrucciones sobre cómo obtener y aplicar un [!UICO
 
 Adobe Commerce On-Premise y Cloud: todas las versiones
 
+
 ## Causa
 
-La mayoría de [!UICONTROL Security Patches] se han publicado sin que se aplique ningún archivo físico o revisión.
+La mayoría de [!UICONTROL Security Patches] se han publicado sin aplicar ninguna revisión aislada y necesitarán actualizar a la versión [!UICONTROL Security Patch].
 
 ## Solución
 
 
 ### Caso I:
 
-Si se menciona un archivo de parche o una revisión física en las Notas de la versión:
-
-* Descargue el archivo desde la sección de descarga de [https://account.magento.com](https://account.magento.com/downloads/view/). (En primer lugar, el propietario de la cuenta o el titular de la licencia deben otorgar privilegios de descarga a los usuarios con acceso compartido)
+* Si se menciona un archivo o revisión aislado en las [Notas de la versión](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite), descargue el archivo desde la sección de descarga de [https://account.magento.com](https://account.magento.com/downloads/view/). En primer lugar, el propietario de la cuenta o el titular de la licencia deben otorgar privilegios de descarga a los usuarios con acceso compartido.
 
 **Advertencias:**
 
@@ -42,7 +44,9 @@ Si no tiene soporte ampliado, puede solicitar al soporte técnico que comparta l
 
 ### Caso II:
 
-Si no se menciona un archivo de parche o una revisión física en las Notas de la versión:
+Los parches aislados solo se proporcionan en casos excepcionales y no es la forma preferida de implementar correcciones de seguridad.
+
+Si no se menciona un archivo o revisión aislado en las Notas de la versión:
 
 * **Nube:**
 
@@ -51,8 +55,8 @@ Si no se menciona un archivo de parche o una revisión física en las Notas de l
 
 * **Nube o local:**
 
-* Si no hay un archivo de revisión físico disponible, [actualice la versión de Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X a la última versión de revisión 2.4.X-pY.
-* Si no hay un archivo de revisión físico disponible, [actualice la versión On-Premise de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X a la última versión de revisión 2.4.X-pY.
+* Si no hay disponible un archivo de revisión aislado, [actualice la versión de Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) 2.4.X a la última versión de revisión 2.4.X-pY.
+* Si no hay disponible un archivo o revisión aislado, [actualice la versión On-Premise de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade) 2.4.X a la última versión de revisión 2.4.X-pY.
 
 ## Lectura relacionada
 
