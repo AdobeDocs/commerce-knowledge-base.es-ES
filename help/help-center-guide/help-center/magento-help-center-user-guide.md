@@ -3,9 +3,9 @@ title: Guía del usuario de asistencia de Experience League para Adobe Commerce
 description: Obtenga información sobre cómo enviar un vale de soporte al Soporte de Experience League, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: c9468428b9d230121fb1da354d138439a04d070d
+source-git-commit: 46c19ec1185aa176beff9e5039a324a1f11b9aa1
 workflow-type: tm+mt
-source-wordcount: '2942'
+source-wordcount: '2966'
 ht-degree: 0%
 
 ---
@@ -321,6 +321,10 @@ Consulte la sección [Compartir una cuenta de Commerce](https://experienceleague
 >El usuario debe tener una cuenta existente para que se le pueda otorgar acceso compartido. Consulta [Crear una cuenta de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account) para obtener más detalles.
 
 Después de proporcionar acceso compartido a un nuevo usuario, la información relacionada estará disponible en **Acceso compartido** > **Administrar permisos** de la página de la cuenta de Adobe Commerce.
+
+>[!NOTE]
+>
+>El acceso compartido no concede automáticamente acceso a la consola de Commerce Cloud. Debe [agregar al usuario por separado al proyecto en la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
 
 ![permisos de administración compartida de cuentas de magento](assets/magento_account_shared_manage_permissions.png)
 
