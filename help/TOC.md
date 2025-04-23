@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: dc9a64e1576f93d952b4ff4c24c3845f819e08bd
+source-git-commit: 41948c702d5c4e37847ab18ca2a93798e70a8e98
 workflow-type: tm+mt
-source-wordcount: '9304'
+source-wordcount: '9315'
 ht-degree: 0%
 
 ---
@@ -116,16 +116,16 @@ ht-degree: 0%
          * [MDVA-42657: No se pueden seleccionar categorías en las condiciones de segmentos del cliente](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-42657-unable-to-select-categories-in-customer-segment-conditions.md)
          * [MDVA-42806: Se envía un nuevo correo electrónico de registro de empresa cada vez que se actualiza la empresa existente](/help/support-tools/patches-available-in-qpt-tool/v1-1-9/mdva-42806-new-company-registration-email-is-sent-each-time-an-existing-company-is-updated-via-reset-api.md)
       * v1-1-10 {#v1-1-10}
-         * [Descripción general: Quality Patches Tool (QPT) v1.1.10](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/overview.md)
-         * [MDVA-38728: Cambiar la visibilidad del producto crea URL reescritura para el sitio web principal](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-38728-changing-product-visibility-creates-url-rewrite-for-the-main-website.md)
+         * [Información general: Herramienta Parches de calidad (QPT) v1.1.10](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/overview.md)
+         * [MDVA-38728: Cambiar la visibilidad del producto crea una reescritura de URL para el sitio web principal](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-38728-changing-product-visibility-creates-url-rewrite-for-the-main-website.md)
          * [MDVA-39181: Las reglas de producto relacionadas muestran productos de la categoría sin definir en la regla](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-39181-related-product-rules-show-products-from-category-not-defined-in-rule.md)
          * [MDVA-40175: Los botones de opción no se muestran al reordenar](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-40175-radio-buttons-not-displayed-when-reorder-by-admin.md)
          * [MDVA-40816: Los datos de inventario no se muestran en la cuadrícula del producto](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-40816-inventory-info-doesnt-show-on-product-grid.md)
          * [MDVA-41305: Error en la consulta de GraphQL addProductsToWishlist para productos configurables](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-41305-error-on-graphql-query-addproductstowishlist.md)
          * [MDVA-42584: El estado de stock del producto configurable no se actualiza automáticamente](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-42584-stock-status-of-configurable-product-not-updated-automatically.md)
          * [MDVA-42768: GraphQL muestra un precio incorrecto cuando los productos secundarios están agotados](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-42768-graphql-shows-wrong-price-when-child-products-are-out-of-stock.md)
-         * [MDVA-43091: No se puede pedir el producto incluido del administrador](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-43091-unable-to-order-bundled-product-from-admin.md)
-         * [MDVA-43201: Error cuando se utiliza el campo DOB con configuración regional PT](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-43201-error-when-using-dob-field-with-locale-pt.md)
+         * [MDVA-43091: No se puede solicitar el producto empaquetado al administrador](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-43091-unable-to-order-bundled-product-from-admin.md)
+         * [MDVA-43201: Error al utilizar el campo DOB con la configuración regional PT](/help/support-tools/patches-available-in-qpt-tool/v1-1-10/mdva-43201-error-when-using-dob-field-with-locale-pt.md)
       * v1.1.11 {#v1-1-11}
          * [Información general: Herramienta Parches de calidad (QPT) v1.1.11](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/overview.md)
          * [MDVA-40830: crédito de tienda aplicado varias veces durante el pedido](/help/support-tools/patches-available-in-qpt-tool/v1-1-11/mdva-40830-store-credit-applied-multiple-times.md)
@@ -238,15 +238,15 @@ ht-degree: 0%
          * [ACSD-46988: La solicitud de API de divisa de GraphQL devuelve valores nulos](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-46988-graphql-currency-api-request-returns-null-values.md)
          * [ACSD-47076: Los vídeos de Vimeo no se pueden reproducir en la tienda](/help/support-tools/patches-available-in-qpt-tool/v1-1-21/acsd-47076-venmo-videos-cannot-be-played-on-the-storefront.md)
       * v1.1.22 {#v1-1-22}
-         * [Descripción general: Quality Patches Tool (QPT) v1.1.22](/help/support-tools/patches-available-in-qpt-tool/v1-1-22/overview.md)
-         * [ACSD-47106: Nuevo atributo personalizado en compañía creación no Página guardado](/help/support-tools/patches-available-in-qpt-tool/v1-1-22/acsd-47106-new-custom-attribute-on-company-creation-page-not-saved.md)
+         * [Información general: Herramienta Parches de calidad (QPT) v1.1.22](/help/support-tools/patches-available-in-qpt-tool/v1-1-22/overview.md)
+         * [ACSD-47106: No se ha guardado el nuevo atributo personalizado de la página de creación de la empresa](/help/support-tools/patches-available-in-qpt-tool/v1-1-22/acsd-47106-new-custom-attribute-on-company-creation-page-not-saved.md)
          * [ACSD-47444: error [!UICONTROL Trying to access array offset on value of type bool] al acceder a determinadas rutas de categoría no existentes para productos conocidos en PHP 7.4](/help/support-tools/patches-available-in-qpt-tool/v1-1-22/acsd-47444-trying-access-array-offset-value-type-bool-error.md)
          * [ACSD-47332: Cron falla con un error notificado solo cuando se ejecuta entre 00:00 y 00:59 UTC](/help/support-tools/patches-available-in-qpt-tool/v1-1-22/acsd-47332-cron-fails-with-error-reported-between-00-59.md)
       * v1.1.23 {#v1-1-23}
          * [Información general: Herramienta Parches de calidad (QPT) v1.1.23](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/overview.md)
-         * [ACSD-46519: product_count en [!UICONTROL categoryList] [!DNL GraphQL] consulta devuelve 0 para anclaje categorías](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-46519-product-count-categorylist-graphql-query-returns-zero-anchor-categories.md)
+         * [ACSD-46519: product_count en [!UICONTROL categoryList] [!DNL GraphQL] consulta devuelve 0 para categorías de anclaje](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-46519-product-count-categorylist-graphql-query-returns-zero-anchor-categories.md)
          * [ACSD-47027: consulta lenta en B2B [!UICONTROL CompanyRole] [!DNL GraphQL update]](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47027-slow-query-b2b-companyrole-graphql-update.md)
-         * [ACSD-47666: Search en Roles de usuario no funciona](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47666-search-in-user-roles-not-working.md)
+         * [ACSD-47666: la búsqueda en funciones de usuario no funciona](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47666-search-in-user-roles-not-working.md)
          * [ACSD-47232: El cupón no se aplica cuando se marca la opción Igual que la dirección de facturación](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47232-coupon-is-not-applied-when-same-as-billing-address-is-checked.md)
          * [ACSD-47179: la eliminación masiva de críticas de productos no funciona cuando se inicia sesión como función de usuario limitada](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47179-mass-delete-product-review-doesnt-work-when-logged-in-as-limited-user.md)
          * [ACSD-47107: La regla de precios de catálogo se aplica a las opciones personalizadas](/help/support-tools/patches-available-in-qpt-tool/v1-1-23/acsd-47107-catalog-price-rule-is-applied-to-custom-options.md)
@@ -660,17 +660,17 @@ ht-degree: 0%
       * [Problema conocido de Adobe Commerce 2.4.0: Amazon pay, sin métodos de pago](/help/troubleshooting/payments/magento-2-4-0-known-issue-amazon-pay-no-payment-methods.md)
       * [Problema conocido de Adobe Commerce 2.3.7-p1: total de pedido obsoleto para PayPal](/help/troubleshooting/payments/paypal-price-known-issue-commerce-237p1.md)
       * [Parche para el problema de cierre de compra de Amazon Pay en Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
-      * [Adobe Systems Commerce 2.4.0: Error de cierre de compra al seleccionar pagos locales](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
-      * [PayPal actividad de cardado activo Payflow Pro](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
+      * [Adobe Commerce 2.4.0: error de cierre de compra al seleccionar pagos locales](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
+      * [Actividad de tarjeta activa de PayPal Payflow Pro](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
       * [Solución de problemas de PayPal en Adobe Commerce](/help/troubleshooting/payments/paypal-troubleshooting-on-magento.md)
       * [Adobe Commerce 2.4.0, 2.4.1: Habilitar factura parcial Venmo de Braintree](/help/troubleshooting/payments/magento-2-4-0-2-4-1-enable-braintree-venmo-partial-invoice-issue.md)
       * [Pagos fallidos con tarjeta de crédito en un entorno de zona protegida](/help/troubleshooting/payments/payservices-cc-sandbox-failure.md)
       * [Adobe Commerce 2.4.2 B2B: el descuento sigue siendo el cambio del método de pago](/help/troubleshooting/payments/magento-2-4-2-b2b-discount-remains-pay-method-change.md)
       * [Adobe Commerce 2.4.2: el pago Venmo de Braintree no funciona](/help/troubleshooting/payments/magento-2-4-2-braintree-venmo-payment-does-not-work.md)
-      * [Los métodos de pago no se muestran al finalizar la compra con varias direcciones](/help/troubleshooting/payments/payment-methods-not-displayed-on-checkout-with-multiple-addresses.md)
-      * [Los clientes de la UE no pueden completar los pagos](/help/troubleshooting/payments/eu-customers-cannot-complete-payments.md)
-      * [PayPal puerta de enlace rechazada solicitud - duplicado problema de factura](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md)
-      * [Problema conocido de Adobe Systems Commerce 2.4.0: páginas en blanco de Klarna On-site Messaging](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
+      * [Los métodos de pago no se muestran en el cierre de compra con varias direcciones](/help/troubleshooting/payments/payment-methods-not-displayed-on-checkout-with-multiple-addresses.md)
+      * [Los clientes de la UE no pueden completar pagos](/help/troubleshooting/payments/eu-customers-cannot-complete-payments.md)
+      * [Solicitud rechazada de puerta de enlace de PayPal: emisión de factura duplicada](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md)
+      * [Problema conocido de Adobe Commerce 2.4.0: Páginas en blanco de mensajería en el sitio de Klarna](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
       * [Solucionar problemas de instalación de Payment Services](/help/troubleshooting/payments/payservices-install.md)
    * Tienda {#storefront}
       * [Problema conocido de Adobe Commerce 2.4.0: error de visualización de pedidos](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
@@ -780,7 +780,7 @@ ht-degree: 0%
       * [Rendimiento lento debido a páginas no almacenables en caché](/help/troubleshooting/miscellaneous/slow-performance-due-to-non-cacheable-pages.md)
       * [Las imágenes en caché no se cargan después de la actualización de 2.2.X a 2.3.X](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
       * [Error de tiempo de espera de puerta de enlace 504 al guardar una categoría con productos de más de 1k](/help/troubleshooting/miscellaneous/504-gateway-time-out-error-when-saving-a-category-with-1k-products.md)
-      * [Error mensaje al agregar sitios a Análisis de seguridad](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
+      * [Mensaje de error al añadir sitios al análisis de seguridad](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
       * [Solución de problemas de acceso compartido](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
       * [Lento rendimiento, crons lentos y de larga duración](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
       * [Error al validar las credenciales de Fastly](/help/troubleshooting/miscellaneous/error-when-validating-fastly-credentials.md)
@@ -788,9 +788,9 @@ ht-degree: 0%
       * [Los clientes nuevos no se muestran en la cuadrícula del cliente después de la importación de CSV](/help/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import.md)
       * [El informe Herramienta de exploración de seguridad está en blanco](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
       * [Adobe Commerce 2.4.2-p1: nota de factura con un valor incorrecto](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
-      * [No se puede acceder a la última versión preliminar de Adobe Systems Commerce](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
+      * [No se puede acceder a la última versión preliminar de Adobe Commerce](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
       * [Contraseñas de administrador guardadas como texto sin formato en el registro de acciones](/help/troubleshooting/miscellaneous/admin-passwords-saved-as-plain-text-to-actions-log.md)
-      * [Index está bloqueado por otro proceso](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
+      * [El índice está bloqueado por otro proceso](/help/troubleshooting/miscellaneous/index-is-locked-by-another-process.md)
       * [Diagnóstico de una discrepancia de datos](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
       * [Administrador 2No se reciben notificaciones por correo electrónico de FA](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
       * [Vuelva al formulario de inicio de sesión de administrador de Commerce con el error &quot;La sesión actual ha caducado&quot;.](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
@@ -899,8 +899,8 @@ ht-degree: 0%
       * [La CLI de la nube de Magento no muestra un entorno activo](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
       * [[!DNL SendGrid] limitación de archivos para Adobe Commerce Cloud](/help/troubleshooting/miscellaneous/sendgrid-file-limitation.md)
       * [Rendimiento deficiente en entornos de integración](/help/troubleshooting/miscellaneous/poor-performance-in-integration-environments.md)
-   * Despliegue {#deployment}
-      * [Error en la implementación: versiones de Elasticsearch y Adobe Systems Commerce son incompatibles](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
+   * Implementación {#deployment}
+      * [Error de implementación: versiones de Elasticsearch y Adobe Commerce incompatibles](/help/troubleshooting/deployment/deployment-fails-elasticsearch-and-magento-versions-incompatible.md)
       * [Error de implementación: no se puede aplicar el parche de MDVA-43395](/help/troubleshooting/deployment/deployment-failed-unable-to-apply-mdva-43395-patch.md)
       * [Errores de implementación al habilitar el módulo de Baler alfa inicial](/help/troubleshooting/deployment/deployment-errors-from-enabling-early-alpha-baler-javascript-bundling-build.md)
       * [Error &quot;La versión actual de RDBMS no es compatible&quot; en la implementación](/help/troubleshooting/deployment/current-version-of-rdbms-is-not-supported.md)
@@ -943,6 +943,7 @@ ht-degree: 0%
       * [[!UICONTROL salesRule] problemas de etiquetas al actualizar desde versiones &lt; 2.4.5](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
       * [[!DNL JQuery UI] vulnerabilidad de seguridad [!DNL CVE-2022-31160] corregido para las versiones 2.4.4, 2.4.5 y 2.4.6](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
       * [[!DNL FedEx]: migración de la integración del método de envío de SOAP a la API RESTful](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
+      * [Se superaría el número máximo de cookies por error en Adobe Commerce](/help/troubleshooting/known-issues-patches-attached/maximum-number-of-cookies-would-be-exceeded-error.md)
    * Elasticsearch {#elasticsearch}
       * [Volviendo a  [!DNL Elasticsearch7]  cuando el motor de búsqueda se estableció en  [!DNL Opensearch]](/help/troubleshooting/elasticsearch/falling-back-to-elasticsearch7-when-search-engine-set-to-opensearch.md)
       * [Problemas de Elasticsearch después de la actualización a la infraestructura de nube Adobe Commerce 2.3.1+](/help/troubleshooting/elasticsearch/elasticsearch-issues-after-magento-commerce-cloud-2-3-1-upgrade.md)
