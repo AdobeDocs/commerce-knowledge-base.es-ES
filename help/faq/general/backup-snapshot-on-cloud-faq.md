@@ -1,11 +1,11 @@
 ---
-title: "Copia de seguridad (instantánea) en la nube: preguntas frecuentes"
+title: 'Copia de seguridad (instantánea) en la nube: preguntas frecuentes'
 description: Este artículo cubre los aspectos básicos del backup de sus entornos con instantáneas en Adobe Commerce en la infraestructura en la nube.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 0958a8923e27c1341f4b536812b26205685b2b81
+source-git-commit: cfaa7043eed9cc5369f5317b10609d97a91d5861
 workflow-type: tm+mt
-source-wordcount: '550'
+source-wordcount: '560'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ Este artículo cubre la realización de copias de seguridad de sus entornos con 
 ### Entornos de ensayo y producción
 
 * Las instantáneas manuales no están disponibles para los entornos de ensayo y producción en el plan Pro.
-* Las instantáneas automáticas se crean **independientemente del estado activo** del sitio (instantáneas también creadas para sitios que aún no se han iniciado). Las copias de seguridad automáticas no son de acceso público porque se almacenan en un sistema independiente. Puedes [enviar un ticket de soporte de Adobe Commerce](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar una copia de seguridad especial o para restaurar desde una copia de seguridad específica, proporcionando la fecha, la hora y la zona horaria del ticket. Además, tenga en cuenta que la asistencia técnica no realiza la reversión ni la restauración de la base de datos por usted: recuperan la instantánea, pero debe restaurar la base de datos usted mismo.
+* Las instantáneas automáticas se crean **independientemente del estado activo** del sitio (las instantáneas también se crean para sitios que aún no se han iniciado). Las copias de seguridad automáticas no son de acceso público porque se almacenan en un sistema independiente.
+Puedes [enviar un ticket de soporte de Adobe Commerce](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) para solicitar una copia de seguridad especial o para restaurar desde una copia de seguridad específica, proporcionando la fecha, la hora y la zona horaria del ticket. La compatibilidad no genera instantáneas manuales bajo demanda.
+Además, tenga en cuenta que la asistencia técnica no realiza la reversión ni la restauración de la base de datos por usted: recuperan la instantánea, pero debe restaurar la base de datos usted mismo.
 * Las copias de seguridad se crean con las **instantáneas cifradas del Almacén de bloques elásticos de Amazon Web Service (AWS EBS)**.
 * Las instantáneas de entorno incluyen el sistema completo (el sistema de archivos y la base de datos).
 * El tiempo de retención de instantáneas automáticas **es diferente** y sigue [la programación](/docs/commerce-cloud-service/user-guide/architecture/pro-architecture.html?lang=en#backup-and-disaster-recovery).
