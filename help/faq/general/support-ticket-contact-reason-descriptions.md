@@ -2,9 +2,9 @@
 title: Ticket de asistencia Descripciones de motivos de problemas
 description: Este artículo enumera las opciones del campo ticket de asistencia **Motivo del problema** y proporciona descripciones detalladas de cada una de ellas.
 exl-id: 678505fe-8c8d-4963-8dee-eec0a61a2daf
-source-git-commit: e1f13098e3e0894b1d3acf9ad38fb49f6a5a54f6
+source-git-commit: f502c913964103b88bcb00f942f70439394148f5
 workflow-type: tm+mt
-source-wordcount: '218'
+source-wordcount: '235'
 ht-degree: 0%
 
 ---
@@ -53,3 +53,7 @@ Este artículo enumera las opciones del campo del vale de soporte **Motivo del p
   </tr>  
 </tbody>
 </table>
+
+## Lectura relacionada
+
+* [Envíe un caso de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case) en la Guía del usuario de asistencia de Experience League para Adobe Commerce.

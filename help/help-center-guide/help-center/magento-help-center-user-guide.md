@@ -3,7 +3,7 @@ title: Guía del usuario de asistencia de Experience League para Adobe Commerce
 description: Obtenga información sobre cómo enviar un vale de soporte al Soporte de Experience League, proporcionar acceso compartido a las cuentas de y navegar por la Base de conocimiento de Adobe Commerce.
 exl-id: 9eb4814f-c9c4-4dd0-b68a-87d712898aa5
 feature: Support, Roles/Permissions, Tools and External Services, Admin Workspace, Iaas, Marketing Tools
-source-git-commit: 46c19ec1185aa176beff9e5039a324a1f11b9aa1
+source-git-commit: 145fc1dfc197cde39d55ceac4d02ecee6c641459
 workflow-type: tm+mt
 source-wordcount: '2966'
 ht-degree: 0%
@@ -185,7 +185,7 @@ Para enviar un nuevo ticket de asistencia técnica utilizando la página de cuen
 
 1. La página de asistencia de Adobe Experience League se carga automáticamente.
 1. Seleccione **[!UICONTROL Open Ticket]** en el menú de la izquierda.
-1. Rellene los campos.
+1. Rellene [los campos](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions).
 1. Haga clic en **Enviar**.
 
 #### *Compruebe su dirección de correo electrónico* error en la página de cuenta de Adobe Commerce {#verify-email-address-error}
@@ -279,8 +279,7 @@ Para enviar un nuevo ticket de asistencia técnica mediante Cloud Console, siga 
 1. Seleccione **[!UICONTROL Support]** en el menú de usuario.
 1. Se carga la página **[!UICONTROL My Tickets]**.
 1. Haga clic en **[!UICONTROL Submit a ticket]** en la esquina superior derecha.
-1. Rellene los campos.
-1. Haga clic en **Enviar**.
+1. Rellene [los campos](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/support-ticket-contact-reason-descriptions).
 1. Haga clic en **[!UICONTROL Submit]**.
 
 ### Línea directa de Adobe Commerce P1 {#P1-hotline}
