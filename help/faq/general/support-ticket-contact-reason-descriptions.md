@@ -2,7 +2,7 @@
 title: Ticket de asistencia Descripciones de motivos de problemas
 description: Este artículo enumera las opciones del campo ticket de asistencia **Motivo del problema** y proporciona descripciones detalladas de cada una de ellas.
 exl-id: 678505fe-8c8d-4963-8dee-eec0a61a2daf
-source-git-commit: d3523be967f16a3e65025917fa6ac65097214100
+source-git-commit: e1f13098e3e0894b1d3acf9ad38fb49f6a5a54f6
 workflow-type: tm+mt
 source-wordcount: '218'
 ht-degree: 0%
@@ -49,7 +49,7 @@ Este artículo enumera las opciones del campo del vale de soporte **Motivo del p
   </tr>
   <tr>
     <td>Incidente de infraestructura</td>
-    <td>Necesita ayuda con su Adobe Commerce en la infraestructura en la nube, como implementaciones atascadas, acceso de [!DNL New Relic], acceso SSH/sFTP, actualizaciones de servicios ([!DNL OpenSearch], [!DNL MariaDB]/[!DNL MySQL], [!DNL Redis], [!DNL RabbitMQ], pero sin incluir PHP), certificados SSL, etc. **(no se aplica a [!DNL Live Search])**</td>
+    <td>Necesita ayuda con su Adobe Commerce en la infraestructura en la nube, como implementaciones atascadas, acceso de [!DNL New Relic], acceso SSH/sFTP, actualizaciones de servicios ([!DNL OpenSearch], [!DNL MariaDB]/[!DNL MySQL], [!DNL Redis], [!DNL RabbitMQ], pero sin incluir PHP), certificados SSL, etc.<strong> (no se aplica a [!DNL Live Search])</strong>.</td>
   </tr>  
 </tbody>
 </table>
