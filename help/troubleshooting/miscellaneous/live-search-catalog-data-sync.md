@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para el problema de Adobe Com
 exl-id: cd2e602f-b2c7-4ecf-874f-ec5f99ae1900
 feature: Catalog Management, Search
 role: Developer
-source-git-commit: b0d4b2e541c42095d6d09b91ba6f390064c89af6
+source-git-commit: fec99ebd6b03f2dc1b70c0ea388935dc5e60ad57
 workflow-type: tm+mt
-source-wordcount: '765'
+source-wordcount: '797'
 ht-degree: 0%
 
 ---
@@ -136,14 +136,7 @@ Si ve los datos correctos en `cde_product_attributes_feed`:
 
 ### Sincronizar después del cambio de configuración de API
 
-(Problema conocido) Si ha cambiado la configuración de la API, lo que provoca un cambio en el ID del espacio de datos y descubre que los cambios del catálogo ya no se sincronizan, ejecute los siguientes comandos:
-
-```bash
-bin/magento saas:resync --feed products
-bin/magento saas:resync --feed productattributes
-```
-
-Ejecute los siguientes comandos para volver a sincronizar las fuentes:
+(Problema conocido) Si ha cambiado la configuración de la API, lo que provoca un cambio en el ID del espacio de datos y descubre que los cambios del catálogo ya no se sincronizan, ejecute los siguientes comandos para volver a sincronizar las fuentes:
 
 ```
 bin/magento saas:resync --feed productattributes --cleanup-feed
@@ -158,6 +151,9 @@ bin/magento saas:resync --feed categoryPermissions --cleanup-feed
 ```
 
 [Envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/home?support-tab=home#support) para solicitar que se reindexe el índice de Live Search. En la descripción del problema, incluya el ID de espacio de datos/entorno que se encuentra en el panel de administración en **[!UICONTROL System]** > **[!UICONTROL Services]** > **[!UICONTROL Commerce Services Connector]**.
+
+>[!IMPORTANT]
+>Utilice únicamente la opción `--cleanup-feed` si ha actualizado la configuración de la API o si ejecuta el comando `saas:resync` con la opción [—dry-run](https://experienceleague.adobe.com/en/docs/commerce/saas-data-export/data-export-cli-commands#--dry-run). El uso de la opción `--cleanup-feed` en otros casos provoca la pérdida de datos y problemas de sincronización de datos.
 
 ## Lectura relacionada
 
