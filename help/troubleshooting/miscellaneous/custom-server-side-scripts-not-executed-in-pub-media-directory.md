@@ -1,6 +1,6 @@
 ---
 title: Los scripts personalizados del lado del servidor no se ejecutan en el directorio de medios pub
-description: Este artículo proporciona una corrección para los casos en los que los scripts personalizados del lado del servidor no se ejecutan si se colocan en la etiqueta `.directorio /pub/media/` de la aplicación de Adobe Commerce en la infraestructura de la nube. Se trata de una limitación de seguridad esperada, ya que el `.El directorio /pub/media/` puede escribirse. Para que los scripts sean ejecutables, colóquelos en directorios no grabables, como `./app/code/` o `./pub/`.
+description: Este artículo proporciona una corrección para los casos en los que los scripts personalizados del lado del servidor no se ejecutan si se colocan en la etiqueta &grave;.directorio /pub/media/&grave; de la aplicación de Adobe Commerce en la infraestructura de la nube. Se trata de una limitación de seguridad esperada, ya que el &grave;.El directorio /pub/media/&grave; puede escribirse. Para que los scripts sean ejecutables, colóquelos en directorios no grabables, como &grave;./app/code/&grave; o &grave;./pub/&grave;.
 exl-id: fcad8a5d-47d6-4729-93a4-2410d7710d69
 feature: Media
 role: Developer

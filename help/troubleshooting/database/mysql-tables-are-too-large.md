@@ -28,7 +28,7 @@ El tamaño de las tablas [!DNL MySQL] no afecta directamente al rendimiento del 
 
 Tenga en cuenta las siguientes opciones para evitar una disminución del rendimiento:
 
-* Cree un trabajo CRON que limpie las tablas grandes. Consulte [Buscar tablas grandes [!DNL MySQL] 2} en nuestra base de conocimientos de soporte técnico para obtener recomendaciones sobre cómo identificar tablas grandes.](/help/how-to/general/find-large-mysql-tables.md)
+* Cree un trabajo CRON que limpie las tablas grandes. Consulte [Buscar tablas grandes [!DNL MySQL] 2&rbrace; en nuestra base de conocimientos de soporte técnico para obtener recomendaciones sobre cómo identificar tablas grandes.](/help/how-to/general/find-large-mysql-tables.md)
 * Para tablas de más de 1 GB, utilice un motor [!DNL MySQL] optimizado para la escritura de registros. Por ejemplo, el motor de archivado.
 * Actualice la funcionalidad para evitar almacenar registros en la base de datos.
 

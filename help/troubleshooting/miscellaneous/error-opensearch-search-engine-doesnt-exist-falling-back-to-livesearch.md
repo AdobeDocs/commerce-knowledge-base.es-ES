@@ -1,6 +1,6 @@
 ---
 title: Error [!DNL opensearch] el motor de búsqueda no existe. Volviendo a  [!DNL livesearch].
-description: Este artículo proporciona una solución al problema donde se ve el error "Error- [!DNL opensearch] el motor de búsqueda no existe. Volver a  [!DNL livesearch].`, en Adobe Commerce en la infraestructura en la nube.
+description: Este artículo proporciona una solución al problema donde se ve el error "Error- [!DNL opensearch] el motor de búsqueda no existe. Volver a  [!DNL livesearch].&grave;, en Adobe Commerce en la infraestructura en la nube.
 feature: Deploy, Search
 role: Developer
 exl-id: a6cc981d-b8f0-402d-8771-60d2f21f09f8

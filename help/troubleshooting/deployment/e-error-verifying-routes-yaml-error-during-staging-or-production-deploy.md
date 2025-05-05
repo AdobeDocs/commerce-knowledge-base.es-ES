@@ -36,9 +36,9 @@ La implementación se bloquea y se muestra el siguiente mensaje de error en el r
 <pre>Implementar aplicaciones Comprobando configuración E: Error al verificar routes.yaml.
 Los siguientes dominios están configurados para el clúster, pero no tienen rutas definidas en el archivo routes.yaml:
 
-- store1.example.com
-- store2.example.com
-- test-store.example.com
+&#x200B;- store1.example.com
+&#x200B;- store2.example.com
+&#x200B;- test-store.example.com
 
 Con su configuración actual de routes.yaml,
   no se proporcionarían estos dominios.

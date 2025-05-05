@@ -65,7 +65,7 @@ Para restaurar una instantánea existente (en el entorno admitido: integración,
 
 La copia de seguridad de la base de datos forma parte de una instantánea de Cloud:
 
->>
+&#x200B;>>
 Una instantánea es una copia de seguridad completa de un entorno que incluye todos los datos persistentes de todos los servicios en ejecución (por ejemplo, **su base de datos MySQL**, Redis, etc.) y cualquier archivo almacenado en los volúmenes montados.
 
 >[!NOTE]

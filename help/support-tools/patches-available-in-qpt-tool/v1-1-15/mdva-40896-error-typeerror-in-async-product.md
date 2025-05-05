@@ -1,6 +1,6 @@
 ---
 title: "MDVA-40896: 'Error: TypeError: Argumento 3' error en producto asíncrono"
-description: '"El parche de MDVA-40896 corrige el problema donde el error "Error: TypeError: Argument 3 pasado a Magento\Framework\Webapi\ServiceInputProcessor::process() debe ser de la matriz de tipo, el error string given" se muestra en la API asíncrona de productos. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15. El ID del parche es MDVA-40896. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.4."'
+description: '"El parche de MDVA-40896 corrige el problema donde el error "Error: TypeError: Argument 3 pasado a MagentoFrameworkWebapiServiceInputProcessor::process() debe ser de la matriz de tipo, el error string given" se muestra en la API asíncrona de productos. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) 1.1.15. El ID del parche es MDVA-40896. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.4."'
 exl-id: d9b73e7a-c228-492c-9fdf-c57cceafb330
 feature: Products
 role: Admin

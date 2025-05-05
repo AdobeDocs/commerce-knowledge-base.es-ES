@@ -1,6 +1,6 @@
 ---
 title: "ACSD-50367: La exportación de direcciones de clientes no funciona con atributos de selección múltiple"
-description: Aplique el parche ACSD-50367 para solucionar el problema de Adobe Commerce en el que la exportación de direcciones de clientes no funciona cuando se crea un atributo **`Customer Address`** de selección múltiple sin valores.
+description: Aplique el parche ACSD-50367 para solucionar el problema de Adobe Commerce en el que la exportación de direcciones de clientes no funciona cuando se crea un atributo **&grave;Customer Address&grave;** de selección múltiple sin valores.
 exl-id: 688831d4-b49e-48fa-b4db-1328cda09a2b
 feature: Admin Workspace, Attributes, Data Import/Export, Shipping/Delivery
 role: Admin

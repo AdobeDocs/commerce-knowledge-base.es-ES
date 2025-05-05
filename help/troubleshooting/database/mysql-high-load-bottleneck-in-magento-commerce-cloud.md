@@ -76,7 +76,7 @@ A continuación se muestran las preguntas comunes que puede hacerse al considera
   **En clústeres no sobrecargados** - **Las conexiones esclavas ralentizarán el rendimiento en un 10-15%**, una de las razones por las que no es predeterminado.
 
   *Pero en los clústeres sobrecargados, hay un aumento de rendimiento porque estos 10-15% se reducen reduciendo la carga por el tráfico.*
-* ¿Debo habilitar esta configuración para mi tienda? *Si tiene una carga alta o espera una carga alta en la base de datos MySQL o en Redis, definitivamente necesita habilitar Slave Connections. Para un cliente normal con tráfico promedio,**no**es una configuración óptima para habilitarlo.*
+* ¿Debo habilitar esta configuración para mi tienda? *Si tiene una carga alta o espera una carga alta en la base de datos MySQL o en Redis, definitivamente necesita habilitar Slave Connections. Para un cliente normal con tráfico promedio,**no**&#x200B;es una configuración óptima para habilitarlo.*
 
 ## Lectura relacionada
 

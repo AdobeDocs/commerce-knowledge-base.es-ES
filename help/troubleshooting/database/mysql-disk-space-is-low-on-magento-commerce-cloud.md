@@ -128,7 +128,7 @@ Compruebe el archivo `ibtmp1` grande en `/data/mysql` de cada nodo: este archivo
 
 Compruebe si hay tablas grandes y considere si alguna de ellas se puede vaciar. Haga esto en el nodo principal (origen).
 
-Por ejemplo, las tablas con informes suelen vaciarse. Para obtener más información sobre cómo buscar tablas grandes, consulte el artículo [Buscar tablas grandes [!DNL MySQL] 2}.](/help/how-to/general/find-large-mysql-tables.md)
+Por ejemplo, las tablas con informes suelen vaciarse. Para obtener más información sobre cómo buscar tablas grandes, consulte el artículo [Buscar tablas grandes [!DNL MySQL] 2&rbrace;.](/help/how-to/general/find-large-mysql-tables.md)
 
 Si no hay tablas de informes enormes, considere la posibilidad de vaciar `_index` tablas, solo para volver a encarrilar la aplicación de Adobe Commerce. `index_price` tablas serían los mejores candidatos. Por ejemplo, `catalog_category_product_index_storeX` tablas, donde X puede tener valores desde &quot;1&quot; hasta el número máximo de tiendas. Tenga en cuenta que deberá reindexar para restaurar los datos de estas tablas y, en el caso de catálogos grandes, este reindexado puede llevar mucho tiempo.
 

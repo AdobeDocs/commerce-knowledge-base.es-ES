@@ -36,7 +36,7 @@ Estas páginas son:
 
 Almacenable en caché e inalmacenable en caché son términos utilizados para indicar si una página debe almacenarse en caché o no. De forma predeterminada, todas las páginas se pueden almacenar en caché. Sin embargo, si algún bloque de un diseño se designa como no almacenable en caché, toda la página no se puede almacenar en caché.
 
-La captura de pantalla siguiente muestra un bloque con una configuración `cacheable="false"` ** ** que crea una página que no se puede almacenar en caché.
+La captura de pantalla siguiente muestra un bloque con una configuración `cacheable="false"` **&#x200B; ** que crea una página que no se puede almacenar en caché.
 
 ![no almacenable en caché_kb.png](assets/non_cacheable_kb.png)
 

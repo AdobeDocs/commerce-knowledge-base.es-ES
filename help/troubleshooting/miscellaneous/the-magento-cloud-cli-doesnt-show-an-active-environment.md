@@ -50,6 +50,6 @@ Your environments are:
 |          Integration 2 | Integration 2    | Active       | Development    |
 ```
 
-2. Especifique el ID del entorno con el comando:
+&#x200B;2. Especifique el ID del entorno con el comando:
 
 `magento-cloud ssh -e integration`

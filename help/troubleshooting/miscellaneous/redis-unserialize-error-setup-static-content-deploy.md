@@ -1,6 +1,6 @@
 ---
-title: Error de eliminación de serialización de redis `setup:static-content:deploy`
-description: Este artículo proporciona una corrección para el error Redis unserialize al ejecutar `magento setup:static-content:deploy`.
+title: Error de eliminación de serialización de redis &grave;setup:static-content:deploy&grave;
+description: Este artículo proporciona una corrección para el error Redis unserialize al ejecutar &grave;magento setup:static-content:deploy&grave;.
 exl-id: 4bc88933-3bf9-4742-b864-b82d3c1b07a9
 feature: Cache, Deploy, Page Content, SCD, Services, Variables
 role: Developer

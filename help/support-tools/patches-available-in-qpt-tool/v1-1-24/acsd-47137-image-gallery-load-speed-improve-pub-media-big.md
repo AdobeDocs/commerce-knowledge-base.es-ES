@@ -1,5 +1,5 @@
 ---
-title: "ACSD-47137: mejorar la velocidad de carga de la galería de imágenes `pub/media` folder big"
+title: "ACSD-47137: mejorar la velocidad de carga de la galería de imágenes &grave;pub/media&grave; folder big"
 description: Aplique el parche ACSD-47137 para mejorar la velocidad de carga de la galería de imágenes cuando la carpeta "pub/media" sea muy grande.
 exl-id: 43268909-6845-4d1d-b6b8-4ae0ce40fd5e
 feature: Cache, Catalog Management, Categories, Media

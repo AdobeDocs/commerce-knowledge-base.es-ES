@@ -1,6 +1,6 @@
 ---
 title: "ACSD-50813: el administrador no puede añadir productos agrupados que contengan una barra oblicua"
-description: Aplique el parche ACSD-50813 para solucionar el problema de rendimiento de Adobe Commerce en el que el administrador no puede añadir productos agrupados que contengan una barra diagonal (`/`) en el SKU con la funcionalidad *Añadir productos por SKU* al pedido del administrador.
+description: Aplique el parche ACSD-50813 para solucionar el problema de rendimiento de Adobe Commerce en el que el administrador no puede añadir productos agrupados que contengan una barra diagonal (&grave;/&grave;) en el SKU con la funcionalidad *Añadir productos por SKU* al pedido del administrador.
 exl-id: 80dfe877-9dfd-44a9-9bf0-37e929642fc0
 source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
 workflow-type: tm+mt

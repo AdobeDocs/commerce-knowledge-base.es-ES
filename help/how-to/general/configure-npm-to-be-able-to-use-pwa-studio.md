@@ -40,7 +40,7 @@ Para establecer la versión de NPM necesaria, especifíquela en el archivo de co
    >
    >Si desea ejecutar Node.JS en la aplicación y no solo en la compilación, agregue los siguientes comandos para cambiar el vínculo de compilación:
    > 
-   ```
+   > ```
    > echo 'unset NPM_CONFIG_PREFIX' >> .environment
    > echo 'export NO_UPDATE_NOTIFIER=1' >> .environment
    > echo 'export NVM_DIR="$MAGENTO_CLOUD_DIR/.nvm"' >> .environment

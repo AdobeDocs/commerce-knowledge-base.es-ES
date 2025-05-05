@@ -1,6 +1,6 @@
 ---
 title: robots.txt no se ha actualizado para mostrar la configuración predeterminada
-description: El artículo proporciona una solución para cuando ha configurado `robots.txt` correctamente, por ejemplo, según [Prácticas recomendadas para robots.txt de Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048754931), pero `robots.txt` no se actualiza o muestra la configuración predeterminada.
+description: El artículo proporciona una solución para cuando ha configurado &grave;robots.txt&grave; correctamente, por ejemplo, según [Prácticas recomendadas para robots.txt de Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048754931), pero &grave;robots.txt&grave; no se actualiza o muestra la configuración predeterminada.
 exl-id: 629b1247-9282-49f9-ada3-a804ddbaa0f5
 feature: Configuration
 role: Developer

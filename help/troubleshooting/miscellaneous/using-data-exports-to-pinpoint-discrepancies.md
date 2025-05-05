@@ -69,7 +69,7 @@ Vaya a la página Conexiones y observe el estado del origen de datos que contien
 
 ## La base de datos de origen tiene MENOS filas que Magento BI {#lessrows}
 
-Si la base de datos de origen tiene menos filas que el BI de Magento, es posible que las filas se eliminen de la base de datos de origen y el BI de Magento no recoja estas eliminaciones. ** [Eliminar datos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) puede provocar discrepancias, tiempos de actualización más largos y una serie de dolores de cabeza logísticos** , por lo que recomendamos encarecidamente que no elimine datos a menos que sea realmente necesario.
+Si la base de datos de origen tiene menos filas que el BI de Magento, es posible que las filas se eliminen de la base de datos de origen y el BI de Magento no recoja estas eliminaciones. **&#x200B; [Eliminar datos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) puede provocar discrepancias, tiempos de actualización más largos y una serie de dolores de cabeza logísticos** , por lo que recomendamos encarecidamente que no elimine datos a menos que sea realmente necesario.
 
 Sin embargo, si se eliminan filas de la tabla, observe la frecuencia de comprobación de la clave principal. Volver a comprobar la clave principal significa que se comprobará si la tabla contiene filas eliminadas.
 

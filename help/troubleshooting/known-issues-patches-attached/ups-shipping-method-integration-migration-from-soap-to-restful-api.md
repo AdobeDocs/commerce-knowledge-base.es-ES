@@ -16,7 +16,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Si cargó cualquiera de los tres parches de este artículo antes del **6 de junio de 2024**: Si tiene este problema debido a que no se están utilizando las mediciones de [!DNL Metric System/SI] (kilogramos y centímetros), debe volver a aplicar uno de estos parches nuevos y actualizados que ahora se publican en este artículo para su versión de Adobe Commerce/Magento Open Source 2.4.4+/2.4.5+/2.4.6+ una vez más, ya que, de lo contrario, no podrá seleccionar las mediciones de [!DNL Metric System/SI] kilogramos de **5} y** centímetros **} métodos de envío en **[!DNL Admin configuration]**.**[!DNL UPS] Estos nuevos parches son compatibles con los parches lanzados anteriormente. Este problema se solucionará de forma permanente en el ámbito de la próxima versión 2.4.7-p1 de Adobe Commerce, programada para el **11 de junio de 2024**.
+>Si cargó cualquiera de los tres parches de este artículo antes del **6 de junio de 2024**: Si tiene este problema debido a que no se están utilizando las mediciones de [!DNL Metric System/SI] (kilogramos y centímetros), debe volver a aplicar uno de estos parches nuevos y actualizados que ahora se publican en este artículo para su versión de Adobe Commerce/Magento Open Source 2.4.4+/2.4.5+/2.4.6+ una vez más, ya que, de lo contrario, no podrá seleccionar las mediciones de [!DNL Metric System/SI] kilogramos de **5&rbrace; y** centímetros **&rbrace; métodos de envío en &#x200B;** [!DNL Admin configuration]&#x200B;**.**&#x200B;[!DNL UPS] Estos nuevos parches son compatibles con los parches lanzados anteriormente. Este problema se solucionará de forma permanente en el ámbito de la próxima versión 2.4.7-p1 de Adobe Commerce, programada para el **11 de junio de 2024**.
 
 >[!NOTE]
 >

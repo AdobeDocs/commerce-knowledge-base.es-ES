@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Revisión del paquete de compatibilidad con Adobe Commerce 2.4.7-p4 [!DNL HIPAA] 1.2.0
 
-Este artículo proporciona una revisión para agregar compatibilidad para el nuevo paquete 1.2.0 **de**[!DNL HIPAA] con Adobe Commerce en la infraestructura en la nube 2.4.7-p4.
+Este artículo proporciona una revisión para agregar compatibilidad para el nuevo paquete 1.2.0 **de**&#x200B;[!DNL HIPAA] con Adobe Commerce en la infraestructura en la nube 2.4.7-p4.
 
 Este problema se solucionará en la versión 2.4.7-p5 de.
 

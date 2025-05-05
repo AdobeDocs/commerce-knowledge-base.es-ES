@@ -29,7 +29,7 @@ Este artículo proporciona una corrección para el mensaje de error &quot;*Se pr
 
 Realizar un pedido con la cuenta de espacio aislado [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) provoca un mensaje de error:
 
->>
+&#x200B;>>
 &quot;Se ha producido un error en el servidor. Intente realizar el pedido de nuevo&quot;
 
 ## Causa 1: el modo de prueba está habilitado

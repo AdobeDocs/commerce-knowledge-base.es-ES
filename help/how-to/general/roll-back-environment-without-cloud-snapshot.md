@@ -131,7 +131,7 @@ En este caso, primero debe restaurar el estado de trabajo de la aplicación de A
 
 [3. Desinstale el software de Adobe Commerce.](/help/how-to/general/reset-environment-on-cloud.md#setup-uninstall)
 
-4&amp;period; Forzar reimplementación.
+4&period; Forzar reimplementación.
 
 Después de realizar estos pasos, obtendrá los mismos resultados que en el escenario 1.
 

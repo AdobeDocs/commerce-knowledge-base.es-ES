@@ -25,9 +25,9 @@ El *14 de junio de 2024* [!DNL Google Maps], versión *3.53* llegó al final de 
 
 Para obtener más información, consulte [[!DNL Google Maps Platform: Maps JavaScript API]](https://developers.google.com/maps/documentation/javascript/versions#documentation-for-the-api-versions).
 
-Adobe Commerce no era compatible con ninguna versión de [!DNL  Google Maps] reciente de la versión 3.54 o posterior.
+Adobe Commerce no era compatible con ninguna versión de [!DNL &#x200B; Google Maps] reciente de la versión 3.54 o posterior.
 
-La incompatibilidad se debe a la heredada `prototype.js script`, que se cargó a través de `lib/web/legacy-build.min.js` e invalida la función Array.from nativa, lo que provoca un conflicto directo con la API [!DNL  Google Maps].
+La incompatibilidad se debe a la heredada `prototype.js script`, que se cargó a través de `lib/web/legacy-build.min.js` e invalida la función Array.from nativa, lo que provoca un conflicto directo con la API [!DNL &#x200B; Google Maps].
 
 Consulte [[!DNL Google Maps: JS Best Practices]](https://developers.google.com/maps/documentation/javascript/best-practices).
 
