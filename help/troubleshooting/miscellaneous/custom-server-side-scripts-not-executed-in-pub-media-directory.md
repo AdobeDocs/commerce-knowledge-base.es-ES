@@ -35,4 +35,4 @@ Almacene los scripts del lado del servidor en directorios no grabables, como `./
 
 ## Documentación relacionada
 
-* [Cloud for Adobe Commerce > Estructura del proyecto > Directorios editables](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) en nuestra documentación para desarrolladores.
+* [Cloud for Adobe Commerce > Estructura del proyecto > Directorios editables](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) en nuestra documentación para desarrolladores.

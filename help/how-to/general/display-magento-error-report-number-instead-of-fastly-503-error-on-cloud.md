@@ -20,7 +20,7 @@ De manera predeterminada, oculta rápidamente todos los errores de Adobe Commerc
 
 Una vez que vea el error de Adobe Commerce auténtico y el número del informe de errores, puede obtener detalles en el archivo del informe de errores siguiendo estos pasos:
 
-1. SSH al entorno afectado. Consulte [SSH a un entorno](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) en nuestra documentación para desarrolladores.
+1. SSH al entorno afectado. Consulte [SSH a un entorno](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/secure-connections) en nuestra documentación para desarrolladores.
 1. Busque el archivo `./var/report/{error_number}`.
 
 ## Añadir el dominio de aplicación y la dirección IP al archivo de hosts: pasos detallados

@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >En cualquier versión de Adobe Commerce, ya que algunas extensiones solo funcionan con tablas planas, existe el riesgo de que se deshabiliten las tablas planas. Si sabe que tiene algunas extensiones que utilizan indexadores de catálogo plano, puede que tenga que tenerlo en cuenta al configurar esos valores en &quot; *No*&quot;.
 
-Este artículo describe cómo resolver los problemas de rendimiento del sitio y la ejecución lenta y los crones atascados causados por la habilitación de [tablas planas e indexadores](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/catalog-flat).
+Este artículo describe cómo resolver los problemas de rendimiento del sitio y la ejecución lenta y los crones atascados causados por la habilitación de [tablas planas e indexadores](https://experienceleague.adobe.com/es/docs/commerce-admin/catalog/catalog/catalog-flat).
 
 PRODUCTOS Y VERSIONES AFECTADOS
 

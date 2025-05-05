@@ -64,4 +64,4 @@ Si tiene acceso a la cuenta de Marketplace asociada con la clave antigua, realic
 
 ## Lectura relacionada
 
-* [Obtenga sus claves de autenticación](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) en nuestra documentación para desarrolladores.
+* [Obtenga sus claves de autenticación](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) en nuestra documentación para desarrolladores.

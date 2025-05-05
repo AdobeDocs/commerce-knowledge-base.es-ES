@@ -27,7 +27,7 @@ Durante la instalación, aparece un mensaje similar al siguiente:
 
 Borre todos los directorios y archivos del subdirectorio `var` de Adobe Commerce e instale de nuevo el software de Adobe Commerce.
 
-Como [propietario del sistema de archivos de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) o como usuario con privilegios de `root`, introduzca los siguientes comandos:
+Como [propietario del sistema de archivos de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) o como usuario con privilegios de `root`, introduzca los siguientes comandos:
 
 ```bash
 $ cd <your Magento install directory>/var

@@ -60,4 +60,4 @@ Sin embargo, si el resultado muestra que los archivos aún están en la caché, 
 
 ## Lectura relacionada
 
-* [Administración de caché](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) en nuestra documentación para desarrolladores.
+* [Administración de caché](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/cache-management) en nuestra documentación para desarrolladores.

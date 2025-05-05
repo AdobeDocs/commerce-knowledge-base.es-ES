@@ -45,4 +45,4 @@ Ejecute manualmente el trabajo cron o el consumidor para propagar la nueva infor
 
 ## Lectura relacionada
 
-* [Administrar colas de mensajes](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) en nuestra documentación para desarrolladores.
+* [Administrar colas de mensajes](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues) en nuestra documentación para desarrolladores.

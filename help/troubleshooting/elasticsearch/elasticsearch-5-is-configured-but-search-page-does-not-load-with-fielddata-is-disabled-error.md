@@ -56,7 +56,7 @@ El resultado contendrá una lista de atributos utilizados para la navegación po
 Para solucionar el problema, debe establecer `is_filterable` (es decir, utilizado en la navegación por capas) y `filterable_in_search` (es decir, utilizado en la navegación por capas de los resultados de búsqueda) en &quot;0&quot; (no utilizado). Para ello, siga los siguientes pasos:
 
 1. Cree una copia de seguridad de base de datos.
-1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
+1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
 
    ```sql
    UPDATE catalog_eav_attribute AS cea

@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Este problema se corrigió en [[!DNL Live Search] [2.0.4]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html). Para instalar la versión más reciente, consulte [Actualizando [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html#update) en la guía del usuario.
+>Este problema se corrigió en [[!DNL Live Search] [2.0.4]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/release-notes.html?lang=es). Para instalar la versión más reciente, consulte [Actualizando [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html?lang=es#update) en la guía del usuario.
 
 Este artículo proporciona información sobre el problema conocido en el que la página de lista de productos (PLP) muestra el error *No podemos encontrar productos que coincidan con la selección* mientras que la ventana emergente de búsqueda devuelve algunos elementos.
 
@@ -49,4 +49,4 @@ No hay ninguna solución para este problema en este momento. Nuestro equipo [!DN
 
 ## Lectura relacionada
 
-[Instalar [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/install) en nuestra guía de usuario.
+[Instalar [!DNL Live Search]](https://experienceleague.adobe.com/es/docs/commerce-merchant-services/live-search/install) en nuestra guía de usuario.

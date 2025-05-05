@@ -47,9 +47,9 @@ El encubrimiento de origen es una función de seguridad que permite a Adobe Comm
 ## Solución
 
 * Si el sitio de la nube está activo, cambie a https://mydomain.com/.
-* Si tiene un sitio activo (que no está en la nube), usando el dominio https://mydomain.com/, configure un subdominio `mcprod.mydomain.com` y actualice la **URL base** a *https://mcprod.mydomain.com* en su lugar, entonces [señale el DNS a Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
+* Si tiene un sitio activo (que no está en la nube), usando el dominio https://mydomain.com/, configure un subdominio `mcprod.mydomain.com` y actualice la **URL base** a *https://mcprod.mydomain.com* en su lugar, entonces [señale el DNS a Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#update-dns-configuration-with-development-settings).
 
 ## Lectura relacionada
 
 * [Preguntas frecuentes sobre la habilitación del encubrimiento de origen rápido](/help/faq/general/fastly-origin-cloaking-enablement-faq.md) en nuestra base de conocimiento de soporte
-* [Lista de comprobación para configurar un nuevo dominio](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain) en nuestra base de conocimiento de soporte
+* [Lista de comprobación para configurar un nuevo dominio](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain) en nuestra base de conocimiento de soporte

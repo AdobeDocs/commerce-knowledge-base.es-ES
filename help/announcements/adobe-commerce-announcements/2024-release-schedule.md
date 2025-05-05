@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Programación de la versión de Adobe Commerce 2024
 
-En [2023, actualizamos nuestra estrategia de lanzamiento](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support) para expandir la ventana de soporte, proporcionar más actualizaciones de seguridad y acelerar la adopción de innovaciones. De cara a 2024, continuamos nuestros esfuerzos por proporcionar un mejor soporte para las necesidades críticas de los clientes y hemos publicado nuestro [calendario de versiones](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) para proporcionar a nuestros clientes tiempo para planificar y presupuestar los recursos para el año que viene. Para ayudar a resumir los cambios, analizamos la estrategia de 2023 y 2024 para determinar qué sigue igual y qué está cambiando.
+En [2023, actualizamos nuestra estrategia de lanzamiento](https://business.adobe.com/blog/the-latest/adobe-announces-expanded-support) para expandir la ventana de soporte, proporcionar más actualizaciones de seguridad y acelerar la adopción de innovaciones. De cara a 2024, continuamos nuestros esfuerzos por proporcionar un mejor soporte para las necesidades críticas de los clientes y hemos publicado nuestro [calendario de versiones](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=es) para proporcionar a nuestros clientes tiempo para planificar y presupuestar los recursos para el año que viene. Para ayudar a resumir los cambios, analizamos la estrategia de 2023 y 2024 para determinar qué sigue igual y qué está cambiando.
 
 ## Lo que permanece igual
 
@@ -27,6 +27,6 @@ En [2023, actualizamos nuestra estrategia de lanzamiento](https://business.adobe
 * Para 2024, vamos a aumentar a cinco versiones de parches solo de seguridad, para todas las versiones de Adobe Commerce admitidas actualmente a fin de mantener su empresa segura y compatible.
 * Eliminaremos nuestro periodo de dos semanas previo al lanzamiento para proporcionar acceso antes a la versión más reciente de la plataforma a través de versiones beta con hasta seis meses de anticipación.
 
-Al incorporar estos cambios de estrategia, nuestro calendario de versiones de 2024 incluye cinco versiones que se pueden revisar en nuestra [Programación de versiones](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) en Adobe Experience League.
+Al incorporar estos cambios de estrategia, nuestro calendario de versiones de 2024 incluye cinco versiones que se pueden revisar en nuestra [Programación de versiones](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=es) en Adobe Experience League.
 
 Esperamos que utilice esta programación en sus ciclos de planificación anuales para preparar y asignar mejor los recursos en torno a estas ventanas de lanzamiento. Para obtener más recursos de planificación de la actualización, visita nuestra [Descripción general del proceso de actualización](/docs/commerce-operations/upgrade-guide/overview.html) en nuestra Guía de actualización.

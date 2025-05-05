@@ -35,8 +35,8 @@ Una vez más, es importante tener en cuenta que el uso de software específicame
 ## Pasos de solución
 
 1. Compruebe sus registros de Adobe Commerce para ver si se está produciendo algo más que un ataque DDoS. Para obtener más información, consulte los siguientes artículos en nuestra documentación para desarrolladores:
-   * [Adobe Commerce y ubicaciones de registros de Magento Open Source](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/enable-logging)
-   * [Adobe Commerce en la nube registra ubicaciones](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations)
+   * [Adobe Commerce y ubicaciones de registros de Magento Open Source](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/enable-logging)
+   * [Adobe Commerce en la nube registra ubicaciones](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/test/log-locations)
 1. Empiece a usar la CLI para comprobar todas las conexiones a Internet actuales mediante el comando `netstat`: `netstat -na`. Muestra todas las conexiones establecidas activas con el servidor. En este caso, es posible que pueda observar demasiadas conexiones procedentes de la misma dirección IP.
 1. Para reducir aún más los resultados de las conexiones establecidas a sólo las que se conectan en el puerto 80 (el puerto http del sitio web), de modo que pueda ordenar y reconocer demasiadas conexiones desde una dirección IP o grupo de direcciones IP, utilice este comando: `netstat -an | grep :80 | sort`. Puede repetir el mismo comando para https en el puerto 443: `netstat -an | grep :443 | sort`. Otra opción es extender el comando original a los puertos 80 y 443: `netstat -an | egrep ":80|:443" | sort`.
 1. Para ver si hay varios `SYNC_REC` activos en el servidor, use el comando:     `netstat -n -p|grep SYN_REC | wc -l`     Esto suele ser inferior a 5, pero podría ser mucho mayor para un ataque DDoS, aunque para algunos servidores un número mayor podría ser una condición normal.
@@ -53,6 +53,6 @@ Si encuentra que está bajo ataque DDoS, los pasos que puede seguir dependen de 
 
 ## Lecturas relacionadas en nuestra documentación para desarrolladores:
 
-* [Protección DDoS](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#ddos-protection)
-* [Uso de comandos CLI](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli)
-* [CLI de nube para Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)
+* [Protección DDoS](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/fastly#ddos-protection)
+* [Uso de comandos CLI](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/deployment/examples/example-using-cli)
+* [CLI de nube para Commerce](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-overview)

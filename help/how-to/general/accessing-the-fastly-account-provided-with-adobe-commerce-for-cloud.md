@@ -16,9 +16,9 @@ Este artículo explica cómo iniciar sesión en la cuenta de Fastly proporcionad
 
 ## Cómo ver sus credenciales de Fastly
 
-Consulte la sección [Obtener credenciales de Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#cloud-fastly-creds) en nuestra documentación para desarrolladores.
+Consulte la sección [Obtener credenciales de Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#cloud-fastly-creds) en nuestra documentación para desarrolladores.
 
 ## Cómo probar las credenciales de Fastly
 
-Consulte la sección [Probar las credenciales de Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) en nuestra documentación para desarrolladores.
+Consulte la sección [Probar las credenciales de Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) en nuestra documentación para desarrolladores.
 

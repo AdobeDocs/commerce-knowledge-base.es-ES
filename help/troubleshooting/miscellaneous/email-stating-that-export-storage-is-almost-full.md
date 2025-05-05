@@ -41,8 +41,8 @@ Las ubicaciones típicas donde es probable que se rellene el almacenamiento de a
 
 `du -shc` */ruta/a/carpeta*
 
-Si el uso del disco multimedia constituye una gran proporción del espacio total en el disco, quizá quiera habilitar [Optimización de imagen profunda rápida](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization) y, a continuación, eliminar manualmente los archivos de la carpeta *pub/media/catalog/product/cache* en el servidor.
+Si el uso del disco multimedia constituye una gran proporción del espacio total en el disco, quizá quiera habilitar [Optimización de imagen profunda rápida](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization#deep-image-optimization) y, a continuación, eliminar manualmente los archivos de la carpeta *pub/media/catalog/product/cache* en el servidor.
 
 ## Lectura relacionada
 
-[Compruebe los clústeres dedicados](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) en nuestra base de conocimiento de soporte.
+[Compruebe los clústeres dedicados](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) en nuestra base de conocimiento de soporte.

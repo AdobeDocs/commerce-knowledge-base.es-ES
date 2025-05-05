@@ -50,5 +50,5 @@ Se ha cambiado el nombre del atributo de estado del producto en el archivo CSV. 
 
 ## Lectura relacionada
 
-* [Trabajando con archivos CSV](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-csv) en nuestra guía del usuario.
-* [Referencia de atributos de exportación de productos](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-attributes-product) en nuestra guía del usuario.
+* [Trabajando con archivos CSV](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-csv) en nuestra guía del usuario.
+* [Referencia de atributos de exportación de productos](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/data-transfer/data-attributes-product) en nuestra guía del usuario.

@@ -14,7 +14,7 @@ ht-degree: 0%
 # Actualización de seguridad disponible para Adobe Commerce - [!DNL APSB24-61]
 
 El 13 de agosto de 2024, Adobe lanzó una actualización de seguridad programada regularmente para Adobe Commerce, Magento Open Source y el complemento Webhooks de Adobe Commerce.
-Esta actualización resuelve [[!DNL critical, important] y  [!DNL moderate]](https://helpx.adobe.com/security/severity-ratings.html) vulnerabilidades. Una explotación exitosa podría llevar a la ejecución de código arbitrario, a la lectura arbitraria del sistema de archivos, a la omisión de características de seguridad y a la escalación de privilegios. El boletín es [Boletín de seguridad del Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/security/products/magento/apsb24-61.html).
+Esta actualización resuelve [[!DNL critical, important] y  [!DNL moderate]](https://helpx.adobe.com/es/security/severity-ratings.html) vulnerabilidades. Una explotación exitosa podría llevar a la ejecución de código arbitrario, a la lectura arbitraria del sistema de archivos, a la omisión de características de seguridad y a la escalación de privilegios. El boletín es [Boletín de seguridad del Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/es/security/products/magento/apsb24-61.html).
 
 >[!NOTE]
 >
@@ -47,7 +47,7 @@ Utilice el siguiente parche aislado adjunto:
 
 ## Cómo aplicar el parche aislado
 
-Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por el Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) en nuestra base de conocimiento de asistencia para obtener instrucciones.
+Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por el Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=es) en nuestra base de conocimiento de asistencia para obtener instrucciones.
 
 ## Solo para comerciantes de Adobe Commerce en la nube: cómo saber si se han aplicado los parches aislados
 
@@ -55,7 +55,7 @@ Teniendo en cuenta que no es posible comprobar fácilmente si se ha aplicado un 
 
 <u>Para ello, siga los siguientes pasos y use el archivo `VULN-27015-2.4.7_COMPOSER.patch` como ejemplo</u>:
 
-1. [Instalar la herramienta Parches de calidad](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Instalar la herramienta Parches de calidad](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=es).
 1. Ejecute el comando:<br>
    ![cve-2024-34102-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. Debería ver una salida similar a esta, donde VULN-27015 devuelve el estado *Aplicado*:
@@ -74,4 +74,4 @@ Teniendo en cuenta que no es posible comprobar fácilmente si se ha aplicado un 
 
 Actualizaciones de seguridad disponibles para Adobe Commerce:
 
-* [Boletín de seguridad de Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/security/products/magento/apsb24-61.html)
+* [Boletín de seguridad de Adobe ([!DNL APSB24-61])](https://helpx.adobe.com/es/security/products/magento/apsb24-61.html)

@@ -36,7 +36,7 @@ Este artículo explica cómo aplicar un parche del compositor para Adobe Commerc
    git push origin
    ```
 
-Para obtener información adicional sobre cómo aplicar parches a proyectos en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
+Para obtener información adicional sobre cómo aplicar parches a proyectos en la nube, consulte [Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
 
 ### Cómo aplicar un parche del compositor para Adobe Commerce local y de Magento Open Source {#commerce}
 

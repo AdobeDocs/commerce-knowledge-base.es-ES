@@ -60,7 +60,7 @@ Para descargarlo, haga clic en el siguiente vínculo:
 
 ## Cómo aplicar el parche
 
-Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por el Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) en nuestra base de conocimiento de asistencia para obtener instrucciones.
+Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por el Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=es) en nuestra base de conocimiento de asistencia para obtener instrucciones.
 
 ## Solo para comerciantes de Adobe Commerce en la nube: cómo saber si se han aplicado los parches
 
@@ -68,7 +68,7 @@ Teniendo en cuenta que no es posible comprobar fácilmente si el problema se ha 
 
 <u>Para ello, siga los siguientes pasos y use el archivo de muestra `VULN-27015-2.4.7_COMPOSER.patch` **como ejemplo</u>**:
 
-1. [Instalar [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Instalar [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=es).
 1. Ejecute el comando:<br>
    ![ac-13283-tell-if-patch-applied-code](assets/cve-2024-34102-tell-if-patch-applied-code.png)
 1. Debería ver una salida similar a esta, donde VULN-27015 devuelve el estado *Aplicado*:

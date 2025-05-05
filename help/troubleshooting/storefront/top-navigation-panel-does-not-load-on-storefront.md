@@ -51,7 +51,7 @@ Los posibles motivos del problema son los siguientes:
 
 Para resolver los problemas, debe realizar una configuración adicional de Barnish y reiniciar Varnish.
 
-1. Como usuario con privilegios de `root`, abra el archivo de configuración de Desvanecer en un editor de texto. Consulte [Modificar la configuración del sistema Varnish](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) en nuestra documentación para desarrolladores para obtener información sobre dónde se puede ubicar este archivo para diferentes sistemas operativos.
+1. Como usuario con privilegios de `root`, abra el archivo de configuración de Desvanecer en un editor de texto. Consulte [Modificar la configuración del sistema Varnish](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cache/config-varnish-server) en nuestra documentación para desarrolladores para obtener información sobre dónde se puede ubicar este archivo para diferentes sistemas operativos.
 1. En `DAEMON_OPTS variable`, agregue `-p feature=+esi_ignore_https`, `-p  feature=+esi_ignore_other_elements`, `-p  feature=+esi_disable_xml_check`. Este aspecto sería el siguiente:
 
    ```bash
@@ -64,5 +64,5 @@ Para resolver los problemas, debe realizar una configuración adicional de Barni
 
 ## Lectura relacionada
 
-* [Configure Varnish y su servidor web](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/config-varnish-server) en nuestra documentación para desarrolladores.
+* [Configure Varnish y su servidor web](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cache/config-varnish-server) en nuestra documentación para desarrolladores.
 * [Documentación de barniz](https://varnish-cache.org/docs/5.1/reference/index.html)

@@ -58,4 +58,4 @@ Busque el correo electrónico en la carpeta de correo no deseado. Si el correo e
 
 ## Lectura relacionada
 
-* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) en nuestra documentación para desarrolladores.
+* [SendGrid](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/project/sendgrid) en nuestra documentación para desarrolladores.

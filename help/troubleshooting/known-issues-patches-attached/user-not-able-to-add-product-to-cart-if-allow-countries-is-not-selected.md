@@ -65,4 +65,4 @@ Consulte [Cómo aplicar un parche del compositor proporcionado por Adobe Commerc
 
 ## Vínculos útiles
 
-[Aplique parches personalizados a Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
+[Aplique parches personalizados a Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.

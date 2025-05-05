@@ -80,6 +80,6 @@ Después de aplicar la revisión con la corrección, ya no es necesaria la soluc
 
 ## Adobe Commerce en la infraestructura en la nube 2.2.0: utilice ECE-Tools v2002.0.8 o posterior {#h_64593789291526919876198}
 
-El paquete de script de implementación [ECE-Tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) con las versiones 2002.0.3 - 2002.0.7 [aplica](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html) la solución automáticamente, estableciendo `disable_locking` en `1`. Esto deshabilita el mecanismo de bloqueo de sesión para Adobe Commerce 2.2.0, en el que no se produce el problema original.
+El paquete de script de implementación [ECE-Tools](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package) con las versiones 2002.0.3 - 2002.0.7 [aplica](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=es) la solución automáticamente, estableciendo `disable_locking` en `1`. Esto deshabilita el mecanismo de bloqueo de sesión para Adobe Commerce 2.2.0, en el que no se produce el problema original.
 
 Si está ejecutando Adobe Commerce en la infraestructura en la nube 2.2.0, actualice ECE-Tools a v2002.0.8 o posterior. También puede considerar actualizar su Adobe Commerce en la infraestructura en la nube a la versión 2.2.2 o posterior.

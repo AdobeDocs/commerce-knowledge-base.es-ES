@@ -53,7 +53,7 @@ Compruebe si los archivos especificados arriba tienen la configuración `cacheab
 
 >[!NOTE]
 >
->Para Adobe Commerce en la infraestructura en la nube 2.4.1 y versiones posteriores, puede usar la [Herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access) para comprobar automáticamente si la caché de toda la página no está configurada correctamente.
+>Para Adobe Commerce en la infraestructura en la nube 2.4.1 y versiones posteriores, puede usar la [Herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/site-wide-analysis-tool/access) para comprobar automáticamente si la caché de toda la página no está configurada correctamente.
 
 ### Lectura relacionada
 

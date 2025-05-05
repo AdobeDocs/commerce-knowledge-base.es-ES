@@ -33,4 +33,4 @@ Al instalar o actualizar por primera vez, todos los productos se asignan al orig
 
 Si tiene más de un sitio web, debe añadir estos sitios web como Sales Channel a la acción predeterminada u otras acciones personalizadas.
 
-Consulte la sección [Stock de la guía de usuario/wiki](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage) en nuestra guía de usuario para obtener más información sobre cómo hacerlo.
+Consulte la sección [Stock de la guía de usuario/wiki](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/stocks/stocks-manage) en nuestra guía de usuario para obtener más información sobre cómo hacerlo.

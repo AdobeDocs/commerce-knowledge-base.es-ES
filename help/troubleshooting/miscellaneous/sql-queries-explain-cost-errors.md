@@ -19,7 +19,7 @@ Esto puede deberse a varias razones. A continuación se indican los mensajes que
 
 ## No se puede ejecutar la consulta. El valor de costo EXPLAIN de \[xxx\] es demasiado alto para ejecutar esta consulta.
 
-Si ve este mensaje, significa que la consulta se consideró demasiado costosa para ejecutarse. Tenemos dos recomendaciones para esta situación: una es eliminar cualquier cláusula ORDER BY de la consulta, ya que son operaciones costosas. El segundo es seguir las sugerencias de nuestro [artículo de optimización](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html) para modificar su consulta.
+Si ve este mensaje, significa que la consulta se consideró demasiado costosa para ejecutarse. Tenemos dos recomendaciones para esta situación: una es eliminar cualquier cláusula ORDER BY de la consulta, ya que son operaciones costosas. El segundo es seguir las sugerencias de nuestro [artículo de optimización](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/optimizing-your-sql-queries.html?lang=es) para modificar su consulta.
 
 ## No se puede ejecutar la consulta. Esta consulta devuelve \[xxx\] filas, lo que supera el límite de 10 000
 

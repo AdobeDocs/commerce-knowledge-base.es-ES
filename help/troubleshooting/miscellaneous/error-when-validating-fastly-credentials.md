@@ -26,7 +26,7 @@ El usuario recibe un error al validar las credenciales de Fastly.
 
 ## Solución
 
-1. Asegúrese de que tiene el ID de servicio de Fastly y el token de API correctos e intente validar de nuevo. Para obtener instrucciones detalladas, consulte [Probar las credenciales de Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) en nuestra documentación para desarrolladores.
+1. Asegúrese de que tiene el ID de servicio de Fastly y el token de API correctos e intente validar de nuevo. Para obtener instrucciones detalladas, consulte [Probar las credenciales de Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials) en nuestra documentación para desarrolladores.
 1. Si la verificación de las credenciales falla, ejecute el siguiente comando curl para confirmar el estado del servicio:
 
    ```curl
@@ -45,6 +45,6 @@ El usuario recibe un error al validar las credenciales de Fastly.
 
 ## Lecturas relacionadas en nuestra documentación para desarrolladores:
 
-* [Cloud for Adobe Commerce > Fastly > Cuenta de servicio y credenciales de Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
+* [Cloud for Adobe Commerce > Fastly > Cuenta de servicio y credenciales de Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/fastly#fastly-service-account-and-credentials)
 
-* [Cloud for Adobe Commerce > Configurar rápidamente > Probar las credenciales de Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)
+* [Cloud for Adobe Commerce > Configurar rápidamente > Probar las credenciales de Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#test-the-fastly-credentials)

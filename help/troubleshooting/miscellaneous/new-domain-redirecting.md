@@ -29,15 +29,15 @@ Sucede cuando las variables no se actualizan después de agregar un nuevo domini
 
 ## Solución
 
-1. Si el dominio se está redireccionando dentro del mismo entorno, asegúrese de haber configurado las [variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html#modify-variables).
+1. Si el dominio se está redireccionando dentro del mismo entorno, asegúrese de haber configurado las [variables](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=es#modify-variables).
 1. Si el dominio se está redireccionando a otro entorno, compruebe si ha configurado el servicio [!DNL Fastly] correcto ejecutando el siguiente comando: `bin/magento fastly:conf:get -s`
 
 >[!NOTE]
 >
->Puede encontrar las credenciales de la API [!DNL Fastly] iniciando sesión en cada entorno (Ensayo/Producción) y comprobando el archivo `/mnt/shared/fastly_tokens.txt`. Para obtener más información, consulte [configure [!DNL Fastly] services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en la Guía de infraestructura en la nube de Commerce.
+>Puede encontrar las credenciales de la API [!DNL Fastly] iniciando sesión en cada entorno (Ensayo/Producción) y comprobando el archivo `/mnt/shared/fastly_tokens.txt`. Para obtener más información, consulte [configure [!DNL Fastly] services](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=es) en la Guía de infraestructura en la nube de Commerce.
 
 Si las dos configuraciones anteriores son correctas, envíe un ticket de asistencia.
 
 ## Lectura relacionada
 
-* [Lista de comprobación para configurar un nuevo dominio](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html) en nuestra base de conocimiento de soporte.
+* [Lista de comprobación para configurar un nuevo dominio](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/checklist-for-setting-up-a-new-domain.html?lang=es) en nuestra base de conocimiento de soporte.

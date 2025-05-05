@@ -31,9 +31,9 @@ Esto puede ocurrir debido a la carga de las imágenes de la caché.
 
 Si esto sucede, puede utilizar el comando Magento para regenerar la caché de imágenes y mostrar correctamente las imágenes.
 
-Para ello, necesita la información SSH y la URL del almacén disponibles a través de [Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
+Para ello, necesita la información SSH y la URL del almacén disponibles a través de [Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=es).
 
-1. SSH para su proyecto que era una fuente para el [volcado de la base de datos](/help/how-to/general/create-database-dump-on-cloud.md), tal como se describe en [SSH para el entorno](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) en nuestra documentación para desarrolladores.
+1. SSH para su proyecto que era una fuente para el [volcado de la base de datos](/help/how-to/general/create-database-dump-on-cloud.md), tal como se describe en [SSH para el entorno](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/secure-connections) en nuestra documentación para desarrolladores.
 1. Vuelva a generar la caché de imágenes ejecutando:
 
    ```bash

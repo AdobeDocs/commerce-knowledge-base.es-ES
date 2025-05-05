@@ -36,6 +36,6 @@ Para almacenar en déclencheur manualmente el trabajo [`CleanExpiredTokens.php`]
 
 ## Lectura relacionada
 
-* [Servicios > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html) en la guía de referencia de configuración de Commerce
+* [Servicios > [!DNL OAuth]](https://experienceleague.adobe.com/docs/commerce-admin/config/services/oauth.html?lang=es) en la guía de referencia de configuración de Commerce
 * [Guía de autenticación](https://developer.adobe.com/developer-console/docs/guides/authentication/) en la guía de Adobe Developer
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

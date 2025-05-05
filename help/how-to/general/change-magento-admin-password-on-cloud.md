@@ -16,13 +16,13 @@ ht-degree: 0%
 
 ![login_panel_s.png](assets/login_panel_s.png)
 
-Lea los pasos de la sección [Restablecer la contraseña del inicio de sesión de administrador](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html#admin-sign-in) en nuestra guía del usuario.
+Lea los pasos de la sección [Restablecer la contraseña del inicio de sesión de administrador](https://experienceleague.adobe.com/docs/commerce-admin/start/admin/admin-signin.html?lang=es#admin-sign-in) en nuestra guía del usuario.
 
 A continuación se muestran las notas de uso críticas.
 
 ### Habilitar correos electrónicos salientes
 
-Antes de usar el formulario **Olvidé tu contraseña**, [habilita los correos electrónicos salientes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html) con la [consola de Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html).
+Antes de usar el formulario **Olvidé tu contraseña**, [habilita los correos electrónicos salientes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/outgoing-emails.html?lang=es) con la [consola de Cloud](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=es).
 
 ### Comprueba la carpeta Correo electrónico no deseado
 
@@ -32,5 +32,5 @@ Si no encuentra el mensaje con el vínculo Restablecer contraseña, compruebe la
 
 Si no puede restaurar o restablecer la contraseña del usuario existente, puede crear un nuevo usuario Administrador y establecer una contraseña para este usuario. Para ello, siga los siguientes pasos:
 
-1. Use [SSH para iniciar sesión en el entorno remoto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+1. Use [SSH para iniciar sesión en el entorno remoto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=es).
 1. Ejecute el siguiente comando: `bin/magento admin:user:create   --admin-user=%user_name% --admin-password=%your_password% --admin-email=%your_email% --admin-firstname=%admin_user_first_name% --admin-lastname=%admin_user_last_name%`

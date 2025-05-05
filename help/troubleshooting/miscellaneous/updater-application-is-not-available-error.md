@@ -29,4 +29,4 @@ El siguiente mensaje aparece en la comprobación de disponibilidad:
 
 ## Solución
 
-Para resolver este problema, vea si hay un directorio `<magento_root>/update` que contenga archivos y subdirectorios. De lo contrario, consulta [Configurar el actualizador](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error) en nuestra documentación para desarrolladores.
+Para resolver este problema, vea si hay un directorio `<magento_root>/update` que contenga archivos y subdirectorios. De lo contrario, consulta [Configurar el actualizador](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/updater-application-is-not-available-error) en nuestra documentación para desarrolladores.

@@ -1,6 +1,6 @@
 ---
 title: Uso de las exportaciones de datos para detectar discrepancias
-description: Este artículo proporciona soluciones para la resolución de discrepancias en los datos de BI de Magento. Las exportaciones de datos son una herramienta útil para comparar los datos de BI de Magento con los datos de origen a fin de detectar discrepancias de datos en los informes, especialmente si la [lista de comprobación de diagnóstico de discrepancias de datos](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) no le ayudó a identificar el problema. Este artículo le guiará por un ejemplo en la vida real de cómo se pueden identificar las discrepancias de datos mediante las exportaciones de datos.
+description: Este artículo proporciona soluciones para la resolución de discrepancias en los datos de BI de Magento. Las exportaciones de datos son una herramienta útil para comparar los datos de BI de Magento con los datos de origen a fin de detectar discrepancias de datos en los informes, especialmente si la [lista de comprobación de diagnóstico de discrepancias de datos](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) no le ayudó a identificar el problema. Este artículo le guiará por un ejemplo en la vida real de cómo se pueden identificar las discrepancias de datos mediante las exportaciones de datos.
 exl-id: b42d585c-ad8c-4685-9ad4-a13686566f18
 feature: Commerce Intelligence, Data Import/Export
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Uso de las exportaciones de datos para detectar discrepancias
 
-Este artículo proporciona soluciones para la resolución de discrepancias en los datos de BI de Magento. Las exportaciones de datos son una herramienta útil para comparar los datos de BI de Magento con los datos de origen con el fin de detectar discrepancias de datos en los informes, especialmente si la [lista de comprobación de diagnóstico de discrepancias de datos](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) no le ayudó a identificar el problema. Este artículo le guiará por un ejemplo en la vida real de cómo se pueden identificar las discrepancias de datos mediante las exportaciones de datos.
+Este artículo proporciona soluciones para la resolución de discrepancias en los datos de BI de Magento. Las exportaciones de datos son una herramienta útil para comparar los datos de BI de Magento con los datos de origen con el fin de detectar discrepancias de datos en los informes, especialmente si la [lista de comprobación de diagnóstico de discrepancias de datos](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy) no le ayudó a identificar el problema. Este artículo le guiará por un ejemplo en la vida real de cómo se pueden identificar las discrepancias de datos mediante las exportaciones de datos.
 
 Veamos este análisis, por ejemplo:
 
@@ -51,7 +51,7 @@ Ahora que todos los datos están en un solo lugar, podemos buscar el origen de l
 
 Si ambos sistemas tienen el mismo recuento de filas y la métrica **Ingresos** no coincide con los datos de origen, el **pedido\_total** debe estar desactivado en algún lugar. Es posible que el campo **order\_total** se haya actualizado en la base de datos de origen y que el BI del Magento no esté recogiendo estos cambios.
 
-Para confirmarlo, compruebe de nuevo si la columna **order\_total** se está comprobando o no. Vaya al Administrador de Datas Warehouse y haga clic en la tabla **`orders`**. Verá la [frecuencia de repetición de comprobación](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html) en la lista &#39;¿Cambios?&#39; columna. El campo **pedido\_total** debe configurarse para que vuelva a comprobarse con la frecuencia con la que se espera que cambie; si no lo es, continúe y configúrelo en la frecuencia de comprobación que desee.
+Para confirmarlo, compruebe de nuevo si la columna **order\_total** se está comprobando o no. Vaya al Administrador de Datas Warehouse y haga clic en la tabla **`orders`**. Verá la [frecuencia de repetición de comprobación](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks.html?lang=es) en la lista &#39;¿Cambios?&#39; columna. El campo **pedido\_total** debe configurarse para que vuelva a comprobarse con la frecuencia con la que se espera que cambie; si no lo es, continúe y configúrelo en la frecuencia de comprobación que desee.
 
 ### ![](assets/Export_Discrepancies_4.gif)
 
@@ -69,7 +69,7 @@ Vaya a la página Conexiones y observe el estado del origen de datos que contien
 
 ## La base de datos de origen tiene MENOS filas que Magento BI {#lessrows}
 
-Si la base de datos de origen tiene menos filas que el BI de Magento, es posible que las filas se eliminen de la base de datos de origen y el BI de Magento no recoja estas eliminaciones. **&#x200B; [Eliminar datos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html) puede provocar discrepancias, tiempos de actualización más largos y una serie de dolores de cabeza logísticos** , por lo que recomendamos encarecidamente que no elimine datos a menos que sea realmente necesario.
+Si la base de datos de origen tiene menos filas que el BI de Magento, es posible que las filas se eliminen de la base de datos de origen y el BI de Magento no recoja estas eliminaciones. **&#x200B; [Eliminar datos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/best-practices/data/opt-db-analysis.html?lang=es) puede provocar discrepancias, tiempos de actualización más largos y una serie de dolores de cabeza logísticos** , por lo que recomendamos encarecidamente que no elimine datos a menos que sea realmente necesario.
 
 Sin embargo, si se eliminan filas de la tabla, observe la frecuencia de comprobación de la clave principal. Volver a comprobar la clave principal significa que se comprobará si la tabla contiene filas eliminadas.
 
@@ -89,7 +89,7 @@ Si no es capaz de identificar el origen del problema, necesitará realizar un bu
 
 ## Lectura relacionada
 
-* [Lista de comprobación de diagnóstico de discrepancias de datos](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
-* [Políticas de servicio de Adobe Commerce Intelligence](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [Lista de comprobación de diagnóstico de discrepancias de datos](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy)
+* [Políticas de servicio de Adobe Commerce Intelligence](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/mbi-service-policies)
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
 

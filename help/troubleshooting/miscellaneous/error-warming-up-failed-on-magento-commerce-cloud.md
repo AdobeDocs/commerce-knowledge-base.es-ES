@@ -47,5 +47,5 @@ Asegúrese de que no tiene habilitado el control de acceso: vaya a la rama o ent
 
 ## Lectura relacionada
 
-* [Guía del usuario de Adobe Commerce > Caché de página completa](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management#full-page-caching) en nuestra guía del usuario.
+* [Guía del usuario de Adobe Commerce > Caché de página completa](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/cache-management#full-page-caching) en nuestra guía del usuario.
 * [Calentamiento de la caché y sitio no disponible en Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md) en nuestra base de conocimiento de soporte.

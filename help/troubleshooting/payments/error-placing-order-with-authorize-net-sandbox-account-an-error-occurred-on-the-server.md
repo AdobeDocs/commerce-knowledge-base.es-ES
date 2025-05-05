@@ -19,7 +19,7 @@ Este artículo proporciona una corrección para el mensaje de error &quot;*Se pr
 >
 >**Aviso de obsolescencia**
 >
->Debido a la Directiva de servicios de pago [PSD 2](https://experienceleague.adobe.com/en/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) y a la continua evolución de muchas API, Authorize.Net corre el riesgo de quedar obsoleto y dejar de ser compatible con la seguridad en el futuro. Por este motivo, ahora está en desuso y le recomendamos que lo deshabilite en la configuración de Adobe Commerce y que realice la transición a la [extensión de Commerce Marketplace](https://marketplace.magento.com/extensions.html) correspondiente.
+>Debido a la Directiva de servicios de pago [PSD 2](https://experienceleague.adobe.com/es/docs/commerce-admin/start/compliance/payments/compliance-payment-services-directive) y a la continua evolución de muchas API, Authorize.Net corre el riesgo de quedar obsoleto y dejar de ser compatible con la seguridad en el futuro. Por este motivo, ahora está en desuso y le recomendamos que lo deshabilite en la configuración de Adobe Commerce y que realice la transición a la [extensión de Commerce Marketplace](https://marketplace.magento.com/extensions.html) correspondiente.
 >
 >**Esta integración se ha eliminado de la versión 2.4.0 de Adobe Commerce y ha quedado obsoleta de las versiones actuales de 2.3.**
 >
@@ -27,7 +27,7 @@ Este artículo proporciona una corrección para el mensaje de error &quot;*Se pr
 
 ## Problema
 
-Realizar un pedido con la cuenta de espacio aislado [Authorize.Net Direct Post](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) provoca un mensaje de error:
+Realizar un pedido con la cuenta de espacio aislado [Authorize.Net Direct Post](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server) provoca un mensaje de error:
 
 &#x200B;>>
 &quot;Se ha producido un error en el servidor. Intente realizar el pedido de nuevo&quot;

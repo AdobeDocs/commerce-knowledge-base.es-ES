@@ -29,5 +29,5 @@ Una vez instalada la herramienta, puede comprobar si hay parches disponibles, ap
 
 Consulte nuestra documentación para desarrolladores para obtener más información:
 
-* [Parches disponibles en la herramienta Parches de calidad](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html)
-* [Notas de la versión de la herramienta Parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [Parches disponibles en la herramienta Parches de calidad](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es)
+* [Notas de la versión de la herramienta Parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/release-notes)

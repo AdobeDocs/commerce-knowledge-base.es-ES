@@ -20,4 +20,4 @@ Si alguien necesita ser agregado como usuario, pero ningún propietario o admini
 
 ## Lectura relacionada
 
-* [Servicios de New Relic](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) en nuestra documentación para desarrolladores.
+* [Servicios de New Relic](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) en nuestra documentación para desarrolladores.

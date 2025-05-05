@@ -18,7 +18,7 @@ ht-degree: 0%
 * [Lista de comprobación de diagnóstico de discrepancias de datos](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
 * [Uso de exportaciones para detectar discrepancias en los datos](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
-También le recomendamos que se asegure de que se han establecido los [métodos de replicación](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) y [reverificaciones](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) correctos para las tablas y columnas involucradas en la discrepancia. Tenga en cuenta que necesita permisos de administrador para acceder al método de replicación y volver a comprobar la información.
+También le recomendamos que se asegure de que se han establecido los [métodos de replicación](https://experienceleague.adobe.com/es/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) y [reverificaciones](https://experienceleague.adobe.com/es/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) correctos para las tablas y columnas involucradas en la discrepancia. Tenga en cuenta que necesita permisos de administrador para acceder al método de replicación y volver a comprobar la información.
 
 ## ¡Todavía necesito ayuda!
 
@@ -32,4 +32,4 @@ Si el informe sigue siendo inexacto, no se preocupe: nuestro equipo de asistenci
 ## Lectura relacionada
 
 * [Columnas calculadas](/help/how-to/general/mbi-creating-and-editing-advanced-calculated-columns.md)
-* [Cambios estructurales en la base de datos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html)
+* [Cambios estructurales en la base de datos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/analyze/connecting/data-migration-services.html?lang=es)

@@ -48,4 +48,4 @@ El Adobe también recomienda encarecidamente que los comerciantes implementen he
 * [5 Acciones inmediatas a Protect contra ataques por fuerza bruta](https://magento.com/security/best-practices/5-immediate-actions-protect-against-brute-force-attacks)
 * [Protect: su contraseña de instalación de Magento que adivina la nueva actualización](https://magento.com/security/best-practices/protect-your-magento-installation-password-guessing-new-update)
 * [Prácticas recomendadas de seguridad](https://magento.com/security/best-practices/security-best-practices)
-* Agregar y configurar la autenticación de doble factor en Adobe Commerce para [2.4.x](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication)
+* Agregar y configurar la autenticación de doble factor en Adobe Commerce para [2.4.x](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/2fa/security-two-factor-authentication)

@@ -32,10 +32,10 @@ No hay ninguna opción en Page Builder para añadir Product Recommendations. Pro
 1. Compruebe si ha instalado el módulo por separado ejecutando el comando: `composer show magento/module-page-builder-product-recommendations`
 1. Si devuelve el siguiente mensaje: *No se encontró el paquete magento/module-page-builder-product-recommendations*, tendrá que instalarlo ejecutando el comando: `composer require magento/module-page-builder-product-recommendations`
 
-Al habilitar Product Recommendations en Page Builder, podrá [agregar una unidad de recomendación](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) a cualquier contenido creado en Page Builder.
+Al habilitar Product Recommendations en Page Builder, podrá [agregar una unidad de recomendación](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=es) a cualquier contenido creado en Page Builder.
 
 ## Lectura relacionada
 
-* [Agregar contenido: Recommendations del producto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) en nuestra guía del usuario.
-* [Instale y configure Product Recommendations](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) en nuestra documentación para desarrolladores.
-* [Guía del usuario de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home)
+* [Agregar contenido: Recommendations del producto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html?lang=es) en nuestra guía del usuario.
+* [Instale y configure Product Recommendations](https://experienceleague.adobe.com/es/docs/commerce-merchant-services/product-recommendations/getting-started/install-configure) en nuestra documentación para desarrolladores.
+* [Guía del usuario de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/user-guides/home)

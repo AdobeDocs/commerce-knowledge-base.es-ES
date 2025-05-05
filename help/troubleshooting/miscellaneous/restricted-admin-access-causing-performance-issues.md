@@ -1,6 +1,6 @@
 ---
 title: Acceso de administrador restringido que causa problemas de rendimiento
-description: Este artículo proporciona soluciones para los casos en los que el rendimiento se ve afectado negativamente por el uso de [Funciones de administrador con ámbito de función restringido por sitio web](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources) en nuestra guía del usuario.
+description: Este artículo proporciona soluciones para los casos en los que el rendimiento se ve afectado negativamente por el uso de [Funciones de administrador con ámbito de función restringido por sitio web](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources) en nuestra guía del usuario.
 exl-id: da168d6b-9cda-41e2-aa3c-f3f0dccc803d
 feature: Admin Workspace, Cache
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Acceso de administrador restringido que causa problemas de rendimiento
 
-Este artículo proporciona soluciones para los casos en que el rendimiento se vea afectado negativamente por el uso de [roles de administrador con un ámbito de rol restringido por el sitio web](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources) en nuestra guía del usuario.
+Este artículo proporciona soluciones para los casos en que el rendimiento se vea afectado negativamente por el uso de [roles de administrador con un ámbito de rol restringido por el sitio web](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/user-accounts/permissions-user-roles#step-2assign-resources) en nuestra guía del usuario.
 
 ## Productos y versiones afectados
 
@@ -30,10 +30,10 @@ El problema se corrige en Adobe Commerce 2.2.10 y 2.3.3.
 
 A continuación se indican las opciones para evitar el problema:
 
-* Actualice la versión de la aplicación de Adobe Commerce a 2.2.10 o 2.3.3. (para obtener instrucciones, consulte [Actualizar Adobe Commerce en la versión de infraestructura en la nube](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) en nuestra documentación para desarrolladores).
+* Actualice la versión de la aplicación de Adobe Commerce a 2.2.10 o 2.3.3. (para obtener instrucciones, consulte [Actualizar Adobe Commerce en la versión de infraestructura en la nube](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version) en nuestra documentación para desarrolladores).
 * Evite restringir el ámbito de la función de usuario administrador por sitio web, si es posible.
 * [Envíe un ticket de soporte al Magento](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para solicitar un parche, si está disponible.
 
 ## Lectura relacionada
 
-* [Funciones de usuario](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/user-accounts/permissions-user-roles) en nuestra guía de usuario.
+* [Funciones de usuario](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/user-accounts/permissions-user-roles) en nuestra guía de usuario.

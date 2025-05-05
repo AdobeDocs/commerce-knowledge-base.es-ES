@@ -34,5 +34,5 @@ Tenga en cuenta las siguientes opciones para evitar una disminución del rendimi
 
 ## Lectura relacionada
 
-* [Tablas de registro de cambios sobredimensionadas que causan retrasos en las actualizaciones de entidades](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront) en nuestra base de conocimiento de soporte
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [Tablas de registro de cambios sobredimensionadas que causan retrasos en las actualizaciones de entidades](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront) en nuestra base de conocimiento de soporte
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

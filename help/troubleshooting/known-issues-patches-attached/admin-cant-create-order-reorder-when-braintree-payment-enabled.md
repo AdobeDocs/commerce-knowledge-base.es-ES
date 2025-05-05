@@ -58,7 +58,7 @@ El parche se adjunta a este artículo. Para descargarlo, haga clic en el siguien
 
 >[!NOTE]
 >
->Además, para Adobe Commerce en comerciantes de infraestructura en la nube: Adobe ha incluido la corrección en los parches de la nube para Commerce versión 1.0.18. Consulte [Parches de nube para las notas de la versión de Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) en nuestra documentación para desarrolladores para obtener instrucciones sobre cómo aplicar el paquete más reciente.
+>Además, para Adobe Commerce en comerciantes de infraestructura en la nube: Adobe ha incluido la corrección en los parches de la nube para Commerce versión 1.0.18. Consulte [Parches de nube para las notas de la versión de Commerce](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches) en nuestra documentación para desarrolladores para obtener instrucciones sobre cómo aplicar el paquete más reciente.
 
 ### Versiones de Adobe Commerce compatibles:
 

@@ -59,7 +59,7 @@ Además, tenga en cuenta que la asistencia técnica no realiza la reversión ni 
 
 ## Restaurar una instantánea de entorno
 
-Para restaurar una instantánea existente (en el entorno admitido: integración, ensayo, producción en el plan inicial o integración en el plan Pro), siga los pasos de [Administración de copias de seguridad: restaure una copia de seguridad manual](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) en nuestra Guía de infraestructura de Commerce en la nube.
+Para restaurar una instantánea existente (en el entorno admitido: integración, ensayo, producción en el plan inicial o integración en el plan Pro), siga los pasos de [Administración de copias de seguridad: restaure una copia de seguridad manual](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) en nuestra Guía de infraestructura de Commerce en la nube.
 
 ## Copia de seguridad de base de datos
 

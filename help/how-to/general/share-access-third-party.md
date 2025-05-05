@@ -28,7 +28,7 @@ Según los estándares de seguridad interna, puede elegir que la solución de pr
 * Proporcione acceso a su proveedor de terceros al entorno de la nube. Artículos relacionados:
 
    * [Guía del usuario del Centro de ayuda de Adobe Commerce > ACCESO COMPARTIDO: OTORGUE PRIVILEGIOS PARA QUE OTROS USUARIOS TENGAN ACCESO A SU CUENTA](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) en nuestra base de conocimiento de asistencia.
-   * [Compartir tu cuenta de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) en nuestra guía de usuario.
+   * [Compartir tu cuenta de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/commerce-account/commerce-account-share) en nuestra guía de usuario.
 
 * Cree un volcado de la base de datos (o dé acceso al proveedor de terceros para hacerlo). Se puede realizar utilizando la CLI o en el administrador de Commerce. Este volcado de la base de datos ofuscará los datos del cliente, por lo que solo obtendrán el código y los SKU del producto, etc., sin datos de propietario/cliente. Como referencia, usa [Compartir tu cuenta de Commerce] (/help/how-to/general/create-database-dump-on-cloud.md) en nuestra base de conocimiento de asistencia.
 * Una vez finalizada la prueba, asegúrese de revocar el acceso compartido a su entorno de nube, tal como se describe en [Guía del usuario del Centro de ayuda de Adobe Commerce > Revocar (eliminar el acceso compartido)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) en nuestra base de conocimiento de asistencia.

@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-Consulte el artículo [Configurar el servicio MySQL](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) como referencia.
+Consulte el artículo [Configurar el servicio MySQL](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/mysql) como referencia.
 
 Una vez que cambie el archivo `.magento/services.yaml`, debe confirmar e insertar los cambios para que se apliquen. La notificación push almacenará en déclencheur el proceso de implementación.
 

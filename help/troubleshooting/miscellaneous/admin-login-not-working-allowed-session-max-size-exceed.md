@@ -57,6 +57,6 @@ Puede establecer un valor superior a *500000* según el tamaño máximo existent
 
 ## Lectura relacionada
 
-* [Tamaño de sesión](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) en la Guía de sistemas de administración
-* [Modo de operación](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) en la Guía de configuración
-* [Conexiones seguras](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) en la Guía de infraestructura de Commerce en la nube
+* [Tamaño de sesión](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-session-management#admin-sessions) en la Guía de sistemas de administración
+* [Modo de operación](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/set-mode) en la Guía de configuración
+* [Conexiones seguras](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/secure-connections) en la Guía de infraestructura de Commerce en la nube

@@ -27,7 +27,7 @@ Se muestra un error inespecífico cuando el pago de los invitados está desactiv
 <u>Requisitos previos</u>:
 
 1. En el Administrador de Commerce, en **Tiendas** > **Configuración** > **Ventas** > **Cierre de compra**, establezca **Permitir cierre de compra de invitados** = *No*.
-1. Habilite PayPal a través del Braintree como se describe en [Braintree](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/braintree?) en nuestra guía de usuario.
+1. Habilite PayPal a través del Braintree como se describe en [Braintree](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/payments/braintree?) en nuestra guía de usuario.
 
 <u>Pasos a seguir</u>:
 

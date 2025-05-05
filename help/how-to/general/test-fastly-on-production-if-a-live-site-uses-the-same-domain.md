@@ -48,11 +48,11 @@ El uso del subdominio le permite realizar un &quot;inicio suave&quot; de su tien
 
 En nuestra base de conocimiento de soporte:
 
-* [Configurar rápidamente la configuración de DNS en los entornos de ensayo y producción](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
-* [Configurar Fastly para el plan de inicio en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html)
-* [Bloqueadores potenciales para iniciarse en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
+* [Configurar rápidamente la configuración de DNS en los entornos de ensayo y producción](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=es)
+* [Configurar Fastly para el plan de inicio en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html?lang=es)
+* [Bloqueadores potenciales para iniciarse en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=es)
 
 En nuestra documentación para desarrolladores:
 
-* [Información general rápida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Activar lista de comprobación: configuraciones de DNS para Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
+* [Información general rápida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=es)
+* [Activar lista de comprobación: configuraciones de DNS para Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=es)

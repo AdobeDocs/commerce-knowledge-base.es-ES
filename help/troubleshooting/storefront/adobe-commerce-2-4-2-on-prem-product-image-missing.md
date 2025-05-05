@@ -33,7 +33,7 @@ Adobe Commerce instalado con Nginx.
 <u>Pasos a seguir</u>:
 
 1. Configure Adobe Commerce para que use AWS `s3` como almacenamiento de medios.
-1. Configure Nginx usando el archivo de configuración `nginx.conf.sample` proporcionado en el directorio de instalación de Adobe Commerce y un host virtual Nginx. Consulte [Configurar Nginx](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx) en nuestra documentación para desarrolladores.
+1. Configure Nginx usando el archivo de configuración `nginx.conf.sample` proporcionado en el directorio de instalación de Adobe Commerce y un host virtual Nginx. Consulte [Configurar Nginx](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/web-server/nginx) en nuestra documentación para desarrolladores.
 1. Cree un producto sencillo con una imagen de producto.
 1. Nginx tiene una configuración sin comentarios para el cambio de tamaño de la imagen en `nginx.conf.sample` similar a esta:
 

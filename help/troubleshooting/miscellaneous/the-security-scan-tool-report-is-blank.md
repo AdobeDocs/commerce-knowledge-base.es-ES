@@ -23,7 +23,7 @@ Este artículo proporciona una solución para el problema en el que la Herramien
 
 <u>Pasos a seguir</u>:
 
-1. Configure la Herramienta de análisis de seguridad para comprobar su sitio web, tal como se describe en [Análisis de seguridad](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) en nuestra guía del usuario.
+1. Configure la Herramienta de análisis de seguridad para comprobar su sitio web, tal como se describe en [Análisis de seguridad](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-scan) en nuestra guía del usuario.
 1. En la columna Acciones, seleccione **Ejecutar análisis**.
 
 <u>Resultados esperados</u>:
@@ -47,5 +47,5 @@ Intente abrir el sitio web.
 
 ## Lectura relacionada
 
-* [Publique e inicie](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/overview) en nuestra documentación para desarrolladores.
-* [Examen de seguridad](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) en nuestra guía del usuario.
+* [Publique e inicie](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/launch/overview) en nuestra documentación para desarrolladores.
+* [Examen de seguridad](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-scan) en nuestra guía del usuario.

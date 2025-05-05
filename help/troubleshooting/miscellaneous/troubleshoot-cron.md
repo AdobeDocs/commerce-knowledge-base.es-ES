@@ -48,7 +48,7 @@ En esta sección se explica cómo ver si cron se está ejecutando actualmente y 
 
 Para verificar si su crontab está configurado, haga los siguientes pasos:
 
-1. Inicie sesión en el servidor de Magento como propietario del sistema de archivos de [Magento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) o cambie a él.
+1. Inicie sesión en el servidor de Magento como propietario del sistema de archivos de [Magento](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) o cambie a él.
 1. Compruebe si existe el siguiente archivo:    `bash    ls -al <magento_root>/var/.setup_cronjob_status`. Si el archivo existe, cron se ha ejecutado correctamente en el pasado. Si el archivo *no existe*, o bien aún no ha instalado Magento o no se está ejecutando cron. En cualquier caso, continúe con el siguiente paso.
 1. Obtenga más información sobre CRON. Como usuario con privilegios de `root`, escriba el siguiente comando:    `bash    crontab -u <Magento file system owner name> -l`. Por ejemplo, en CentOS `bash    crontab -u magento_user -l`.  Si no se ha configurado ningún crontab para el usuario, se muestra el siguiente mensaje:    `terminal    no crontab for magento_user`. Su crontab le dice lo siguiente:
 
@@ -62,17 +62,17 @@ Consulte una de las siguientes secciones para ver una solución al problema.
 
 ### No se ha configurado la solución para crontab {#solution-crontab-not-set-up}
 
-Para comprobar que los trabajos de cron están correctamente configurados, consulte [Configurar trabajos de cron](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration).
+Para comprobar que los trabajos de cron están correctamente configurados, consulte [Configurar trabajos de cron](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/next-steps/configuration).
 
 ### Solución para cron que se ejecuta desde un binario PHP incorrecto {#solution-cron-running-from-incorrect-php-binary}
 
 Si su trabajo cron utiliza un binario de PHP diferente del plug-in del servidor web, los errores de configuración de PHP podrían mostrarse. Para resolver el problema, establezca una configuración PHP idéntica para la línea de comandos de PHP y el complemento del servidor web de PHP.
 
-Para obtener más información sobre la configuración de PHP, consulte [Configuración de PHP requerida](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) en nuestra documentación para desarrolladores.
+Para obtener más información sobre la configuración de PHP, consulte [Configuración de PHP requerida](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/php-settings) en nuestra documentación para desarrolladores.
 
 ### Solución para cron que se ejecuta con errores {#solution-cron-running-with-errors}
 
-Intente ejecutar cada comando manualmente porque el comando puede mostrar mensajes de error útiles. Consulte [Configurar trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/next-steps/configuration).
+Intente ejecutar cada comando manualmente porque el comando puede mostrar mensajes de error útiles. Consulte [Configurar trabajos cron](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/next-steps/configuration).
 
 >[!NOTE]
 >

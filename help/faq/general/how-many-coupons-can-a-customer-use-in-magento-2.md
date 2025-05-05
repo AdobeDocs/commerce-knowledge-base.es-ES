@@ -16,8 +16,8 @@ Para las versiones de Adobe Commerce anteriores a la 2.4.7, puede configurar var
 
 Para usar más de un código de cupón simultáneamente en el carro de compras, considere la posibilidad de usar una extensión correspondiente en [Commerce Marketplace](https://marketplace.magento.com/).
 
-Sin embargo, desde la versión 2.4.7 de Adobe Commerce, se le permite configurar y utilizar **más de un código de cupón en el carro de compras simultáneamente**. Para habilitarlo, consulte [Configuración de cupones múltiples](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/sales#multicoupon-settings).
+Sin embargo, desde la versión 2.4.7 de Adobe Commerce, se le permite configurar y utilizar **más de un código de cupón en el carro de compras simultáneamente**. Para habilitarlo, consulte [Configuración de cupones múltiples](https://experienceleague.adobe.com/es/docs/commerce-admin/config/sales/sales#multicoupon-settings).
 
 ## Más información
 
-[Códigos de cupón](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html) en nuestra guía de usuario.
+[Códigos de cupón](https://experienceleague.adobe.com/docs/commerce-admin/marketing/promotions/cart-rules/price-rules-cart-coupon.html?lang=es) en nuestra guía de usuario.

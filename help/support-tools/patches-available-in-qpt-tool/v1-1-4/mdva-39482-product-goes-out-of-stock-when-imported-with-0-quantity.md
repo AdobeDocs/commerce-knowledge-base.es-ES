@@ -1,6 +1,6 @@
 ---
 title: "MDVA-39482: El producto se queda sin existencias si se importa con una cantidad '0' con los pedidos pendientes habilitados"
-description: El MDVA-39482 corrige el problema en el que el producto se queda sin existencias si se importa con una cantidad "0" cuando MSI y los pedidos no satisfechos están activados y el umbral de falta de existencias se establece en un valor negativo. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4. El ID del parche es MDVA-39482. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+description: El MDVA-39482 corrige el problema en el que el producto se queda sin existencias si se importa con una cantidad "0" cuando MSI y los pedidos no satisfechos están activados y el umbral de falta de existencias se establece en un valor negativo. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4. El ID del parche es MDVA-39482. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 exl-id: 2caf461c-993d-48b3-bc47-3fa1d014deaf
 feature: Data Import/Export, Orders, Products
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-39482: El producto se queda sin existencias si se importa con una cantidad &quot;0&quot; con los pedidos pendientes habilitados
 
-El MDVA-39482 corrige el problema en el que el producto se queda sin existencias si se importa con una cantidad &quot;0&quot; cuando MSI y los pedidos no satisfechos están activados y el umbral de falta de existencias se establece en un valor negativo. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4. El ID del parche es MDVA-39482. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+El MDVA-39482 corrige el problema en el que el producto se queda sin existencias si se importa con una cantidad &quot;0&quot; cuando MSI y los pedidos no satisfechos están activados y el umbral de falta de existencias se establece en un valor negativo. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.4. El ID del parche es MDVA-39482. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 
 ## Productos y versiones afectados
 
@@ -27,7 +27,7 @@ Adobe Commerce (todos los métodos de implementación) 2.3.6 - 2.3.7-p2, 2.4.1 -
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -64,8 +64,8 @@ El MB01 de 24 está **agotado** en Storefront.
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
+* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores.
+* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 

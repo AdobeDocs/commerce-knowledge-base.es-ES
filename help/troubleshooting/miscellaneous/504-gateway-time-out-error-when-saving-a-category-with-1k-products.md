@@ -64,4 +64,4 @@ Ahora puede agregar productos a categorías o mover categorías con un gran núm
 
 ## Lectura relacionada
 
-[Redirecciones automáticas de productos](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic) en nuestra guía del usuario.
+[Redirecciones automáticas de productos](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/seo/url-rewrites/url-redirect-product-automatic) en nuestra guía del usuario.

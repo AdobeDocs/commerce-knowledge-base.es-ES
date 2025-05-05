@@ -29,7 +29,7 @@ Adobe Commerce 2.4.5, cuyo lanzamiento está programado para agosto de 2022, con
 ## Parche
 
 El ID de parche es AC-3022 disponible en la versión 1.1.16 de la herramienta de parches de calidad.
-Consulte el artículo [Herramienta de parches de calidad (QPT) > Uso](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores para obtener información sobre cómo usar QPT e instalar parches.
+Consulte el artículo [Herramienta de parches de calidad (QPT) > Uso](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores para obtener información sobre cómo usar QPT e instalar parches.
 
 El parche se aplica a las siguientes versiones de Adobe Commerce:
 
@@ -38,5 +38,5 @@ El parche se aplica a las siguientes versiones de Adobe Commerce:
 
 ## Lectura relacionada
 
-* [Transportistas de envío > DHL](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl) en nuestra guía de usuario
-* [Métodos de envío](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/delivery-methods) en nuestra guía de usuario
+* [Transportistas de envío > DHL](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/delivery/shipping-carriers/dhl) en nuestra guía de usuario
+* [Métodos de envío](https://experienceleague.adobe.com/es/docs/commerce-admin/config/sales/delivery-methods) en nuestra guía de usuario

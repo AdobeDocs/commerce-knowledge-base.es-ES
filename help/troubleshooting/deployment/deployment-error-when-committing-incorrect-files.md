@@ -21,7 +21,7 @@ Adobe Commerce en la infraestructura en la nube (todas las versiones)
 
 ## Problema
 
-Se están obteniendo errores de implementación al confirmar en el repositorio de archivos/carpetas. Por ejemplo, el siguiente error se debe a un intento de conexión a la base de datos cuando no está disponible actualmente durante la [fase de compilación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html#build-phase):
+Se están obteniendo errores de implementación al confirmar en el repositorio de archivos/carpetas. Por ejemplo, el siguiente error se debe a un intento de conexión a la base de datos cuando no está disponible actualmente durante la [fase de compilación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=es#build-phase):
 
 ```SQL
 SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i  
@@ -42,7 +42,7 @@ SQLSTATE[HY000] [2002] php_network_getaddresses: getaddrinfo for database.i
 
 ## Causa
 
-Ciertos archivos o carpetas no deben enviarse al repositorio, ya que podrían interrumpir el [flujo de trabajo de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html).
+Ciertos archivos o carpetas no deben enviarse al repositorio, ya que podrían interrumpir el [flujo de trabajo de implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/deploy/process.html?lang=es).
 
 ## Solución
 

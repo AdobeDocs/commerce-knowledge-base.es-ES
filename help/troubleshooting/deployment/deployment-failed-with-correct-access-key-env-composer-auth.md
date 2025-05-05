@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # La implementación falla con las claves de acceso correctas en env:COMPOSER_AUTH o auth.json
 
-Este artículo proporciona una solución para el problema que se produce cuando la implementación falla con un error como el que se muestra a continuación, en el [registro de implementación](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
+Este artículo proporciona una solución para el problema que se produce cuando la implementación falla con un error como el que se muestra a continuación, en el [registro de implementación](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log):
 
 ```
 W:   [Composer\Downloader\TransportException]
@@ -40,7 +40,7 @@ Se ha implementado correctamente.
 >
 >Este es un error de ejemplo. Podría recibir un error que indique un archivo diferente (según la versión de Adobe Commerce que implemente).
 
-No se ha implementado correctamente. Verá un error como *No se pudo descargar el archivo &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; (HTTP/1.1 404 no encontrado)* en el [registro de implementación](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+No se ha implementado correctamente. Verá un error como *No se pudo descargar el archivo &quot;https://repo.magento.com/archives/magento/module-customer-balance/magento-module-customer-balance-100.4.0.0.zip&quot; (HTTP/1.1 404 no encontrado)* en el [registro de implementación](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 ### Causa
 
@@ -53,7 +53,7 @@ Es posible que las claves de acceso de compositor especificadas que se encuentra
 
 Actualice la variable `env:COMPOSER_AUTH` en el nivel de proyecto y asegúrese de que está configurada con claves que tienen acceso al código.
 
-Para ver los pasos, consulte [Niveles variables](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) en la Guía de Commerce en infraestructura de nube.
+Para ver los pasos, consulte [Niveles variables](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/env/variable-levels) en la Guía de Commerce en infraestructura de nube.
 
 ## Lectura relacionada
 

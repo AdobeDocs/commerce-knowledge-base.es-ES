@@ -33,7 +33,7 @@ Debe copiar la clave de cifrado del entorno de origen y agregarla al entorno de 
 
 Para copiar la clave de cifrado:
 
-1. SSH al proyecto que era la fuente del volcado de la base de datos, tal como se describe en [SSH al entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) en nuestra documentación para desarrolladores.
+1. SSH al proyecto que era la fuente del volcado de la base de datos, tal como se describe en [SSH al entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=es) en nuestra documentación para desarrolladores.
 1. Abra `app/etc/env.php` en un editor de texto.
 1. Copie el valor de `key` para `crypt`.
 
@@ -44,7 +44,7 @@ return array ('crypt' =>      array ('key' => '<your encryption key>', ),);
 Para establecer el valor clave del proyecto de destino:
 
 1. Abra [Cloud Console](https://console.adobecommerce.com) y busque el proyecto.
-1. Establezca el valor de la variable [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html) (en nuestra documentación para desarrolladores), tal como se describe en [Configure su proyecto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html) en nuestra documentación para desarrolladores. Esto almacenará en déclencheur el proceso de implementación y `CRYPT_KEY` se anulará en el archivo `app/etc/env.php` en cada implementación.
+1. Establezca el valor de la variable [CRYPT\_KEY](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es) (en nuestra documentación para desarrolladores), tal como se describe en [Configure su proyecto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=es) en nuestra documentación para desarrolladores. Esto almacenará en déclencheur el proceso de implementación y `CRYPT_KEY` se anulará en el archivo `app/etc/env.php` en cada implementación.
 
 Opcionalmente, puede anular manualmente la clave de cifrado en el archivo `app/etc/env.php`:
 

@@ -74,7 +74,7 @@ Utilice los siguientes parches adjuntos, según la versión de Adobe Commerce/Ma
 
 ## Cómo aplicar el parche
 
-Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por el Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html) en nuestra base de conocimiento de asistencia para obtener instrucciones.
+Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por el Adobe](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento.html?lang=es) en nuestra base de conocimiento de asistencia para obtener instrucciones.
 
 ## Cómo saber si se han aplicado los parches
 
@@ -82,7 +82,7 @@ Teniendo en cuenta que no es posible comprobar fácilmente si el problema se ha 
 
 <u>Para ello, siga los siguientes pasos</u>:
 
-1. [Instalar [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html).
+1. [Instalar [!DNL Quality Patches Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/usage.html?lang=es).
 1. Ejecute el comando:
 
    ```bash

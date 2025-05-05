@@ -36,7 +36,7 @@ Los archivos BAK son un producto del proceso de implementación. Si cambia manua
 
 Para restaurar los archivos de configuración:
 
-1. Inicie sesión en el repositorio remoto usando [SSH](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
+1. Inicie sesión en el repositorio remoto usando [SSH](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 1. Enumerar los archivos de copia de seguridad disponibles.
 
    ```

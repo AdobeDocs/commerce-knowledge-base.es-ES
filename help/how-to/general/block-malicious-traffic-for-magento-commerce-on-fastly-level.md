@@ -24,7 +24,7 @@ En este artículo asumimos que ya tiene las IP maliciosas y/o sus agentes de pa�
 
 Si el sitio web está sobrecargado por DDoS, es posible que no pueda iniciar sesión en el administrador de Commerce (y realizar todos los pasos descritos más adelante en este artículo).
 
-Para obtener acceso al administrador, ponga su sitio web en modo de mantenimiento como se describe en [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) y coloque en la lista blanca su dirección IP. Desactive el modo de mantenimiento una vez finalizado este proceso.
+Para obtener acceso al administrador, ponga su sitio web en modo de mantenimiento como se describe en [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) y coloque en la lista blanca su dirección IP. Desactive el modo de mantenimiento una vez finalizado este proceso.
 
 ## Bloquear tráfico por dirección IP
 
@@ -74,7 +74,7 @@ Hay dos consideraciones importantes al usar `robots.txt`:
 * Los robots pueden ignorar su `robots.txt`. Especialmente los robots de malware, que analizan la web en busca de vulnerabilidades de seguridad, y los recolectores de direcciones de correo electrónico utilizados por los remitentes de spam no prestarán atención.
 * El archivo `robots.txt` es un archivo disponible públicamente. Cualquiera puede ver qué secciones de su servidor no quiere que utilicen los robots.
 
-La información básica y la configuración predeterminada de Adobe Commerce `robots.txt` se encuentran en el artículo [Robots de motores de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) de nuestra documentación para desarrolladores.
+La información básica y la configuración predeterminada de Adobe Commerce `robots.txt` se encuentran en el artículo [Robots de motores de búsqueda](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) de nuestra documentación para desarrolladores.
 
 Para obtener información general y recomendaciones acerca de `robots.txt`, vea:
 
@@ -86,4 +86,4 @@ Póngase en contacto con su desarrollador o con su experto en SEO para determina
 ## Lectura relacionada
 
 * [Términos de licencia específicos del producto para Adobe Commerce en la nube](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
-* [VCL personalizado para bloquear solicitudes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) en la Guía de Commerce en la nube
+* [VCL personalizado para bloquear solicitudes](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) en la Guía de Commerce en la nube

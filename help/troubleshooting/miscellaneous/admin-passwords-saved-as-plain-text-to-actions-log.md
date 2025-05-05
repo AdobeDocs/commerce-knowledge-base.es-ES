@@ -45,5 +45,5 @@ Después de instalar la actualización de seguridad, la contraseña se cifra y n
 ## Más información {#Adminpasswordsaresavedasplaintexttoactionslog('magento_logging_event_changes'table)-Moreinformation}
 
 * [Página de actualización de seguridad de Adobe Commerce 2.0.16 y 2.1.9](https://magento.com/security/patches/magento-2016-and-219-security-update) en nuestro centro de seguridad
-* [Actualice la aplicación y los componentes de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html) en nuestra documentación para desarrolladores
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [Actualice la aplicación y los componentes de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/overview.html?lang=es) en nuestra documentación para desarrolladores
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

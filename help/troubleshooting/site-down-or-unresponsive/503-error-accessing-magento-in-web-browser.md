@@ -23,7 +23,7 @@ Adobe Commerce 2.3.x
 
 <u>Pasos a seguir</u>
 
-(Requisitos previos: asegúrese de que la tienda no esté en [modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show)).
+(Requisitos previos: asegúrese de que la tienda no esté en [modo de mantenimiento](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/set-mode#config-mode-show)).
 
 Vaya al administrador de Commerce o a la tienda en un navegador web.
 

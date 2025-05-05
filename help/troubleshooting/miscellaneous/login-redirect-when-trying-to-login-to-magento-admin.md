@@ -52,7 +52,7 @@ Intente utilizar un explorador diferente y aumente la duración de la sesión de
 Para aumentar la duración de la sesión de administración, siga estos pasos:
 
 1. Cree una copia de seguridad de base de datos.
-1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
+1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
 
    ```sql
    UPDATE core_config_data SET value = 7200 WHERE path = 'admin/security/session_lifetime';
@@ -69,7 +69,7 @@ Para aumentar la duración de la sesión de administración, siga estos pasos:
 Para comprobar los valores de configuración de las cookies y borrarlos, siga estos pasos:
 
 1. Cree una copia de seguridad de base de datos.
-1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
+1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
 
    ```sql
    SELECT * FROM core_config_data WHERE (path = "web/cookie/cookie_domain" OR path = "web/cookie/cookie_path");

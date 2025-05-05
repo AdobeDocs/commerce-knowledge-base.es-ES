@@ -1,6 +1,6 @@
 ---
 title: Elimine archivos de forma segura cuando el disco se quede sin espacio en Adobe Commerce en la infraestructura en la nube
-description: Este artículo proporciona una solución para cuando se queda sin espacio en disco y necesita quitar archivos de forma segura. Antes de considerar esta acción, revise [Administrar espacio en disco](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#no-space-left) en nuestra documentación para desarrolladores. Si los pasos de ese artículo no son adecuados para usted o no resuelven el problema, revise los pasos de este artículo.
+description: Este artículo proporciona una solución para cuando se queda sin espacio en disco y necesita quitar archivos de forma segura. Antes de considerar esta acción, revise [Administrar espacio en disco](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#no-space-left) en nuestra documentación para desarrolladores. Si los pasos de ese artículo no son adecuados para usted o no resuelven el problema, revise los pasos de este artículo.
 exl-id: 6b0a5c1a-8db4-49d7-a785-b4e0bbaea0df
 feature: Cloud, Paas
 role: Developer
@@ -59,4 +59,4 @@ En nuestra base de conocimiento de soporte:
 
 En nuestra documentación para desarrolladores:
 
-* [Administrar espacio en disco](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space)
+* [Administrar espacio en disco](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space)

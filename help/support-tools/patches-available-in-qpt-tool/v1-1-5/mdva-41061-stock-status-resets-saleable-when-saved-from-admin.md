@@ -1,6 +1,6 @@
 ---
 title: "MDVA-41061: El estado de las existencias se restablece como vendible cuando el producto se guarda desde el administrador"
-description: El parche MDVA-41061 corrige el problema en el que el estado de las existencias se restablece como comercializable cuando el producto se guarda desde el administrador. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.5. El ID del parche es MDVA-41061. La última versión del parche está disponible en QPT 1.1.15 con ID de parche MDVA-41061-V3. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.4.
+description: El parche MDVA-41061 corrige el problema en el que el estado de las existencias se restablece como comercializable cuando el producto se guarda desde el administrador. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.5. El ID del parche es MDVA-41061. La última versión del parche está disponible en QPT 1.1.15 con ID de parche MDVA-41061-V3. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.4.
 exl-id: fd71d3e5-685f-4987-b7e7-bfd86810d865
 feature: Admin Workspace, Orders, Products
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-41061: El estado de las existencias se restablece como vendible cuando el producto se guarda desde el administrador
 
-El parche MDVA-41061 corrige el problema en el que el estado de las existencias se restablece como comercializable cuando el producto se guarda desde el administrador. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.5. El ID del parche es MDVA-41061. La última versión del parche está disponible en QPT 1.1.15 con ID de parche MDVA-41061-V3. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.4.
+El parche MDVA-41061 corrige el problema en el que el estado de las existencias se restablece como comercializable cuando el producto se guarda desde el administrador. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.5. El ID del parche es MDVA-41061. La última versión del parche está disponible en QPT 1.1.15 con ID de parche MDVA-41061-V3. Tenga en cuenta que el problema se corrige en Adobe Commerce 2.4.4.
 
 ## Productos y versiones afectados
 
@@ -27,7 +27,7 @@ Adobe Commerce (todos los métodos de implementación) 2.4.2 - 2.4.2-p2, 2.4.3 -
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -59,8 +59,8 @@ Módulos de inventario instalados.
 
 Para aplicar parches individuales, utilice los siguientes vínculos según el método de implementación:
 
-* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
+* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores.
+* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 
@@ -69,4 +69,4 @@ Para obtener más información sobre la herramienta Parches de calidad, consulte
 * [Lanzamiento de la herramienta Parches de calidad: una nueva herramienta para autodistribuir parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
 * [Compruebe si el parche está disponible para su problema de Adobe Commerce mediante la herramienta Parches de calidad](/help/support-tools/patches-available-in-qpt-tool/check-patch-for-magento-issue-with-magento-quality-patches.md) en nuestra base de conocimiento de soporte.
 
-Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en nuestra documentación para desarrolladores.
+Para obtener información sobre otros parches disponibles en QPT, consulte [Parches disponibles en QPT](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en nuestra documentación para desarrolladores.

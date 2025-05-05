@@ -24,7 +24,7 @@ Este artículo describe un problema conocido de Adobe Commerce 2.4.1 en el que l
 
 Requisitos previos:
 
-Habilitar **Limpieza de direcciones de vértice**. Para ver los pasos, consulte [Configuración de la limpieza de direcciones de tienda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html) en nuestra guía del usuario.
+Habilitar **Limpieza de direcciones de vértice**. Para ver los pasos, consulte [Configuración de la limpieza de direcciones de tienda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html?lang=es) en nuestra guía del usuario.
 
 <u>Pasos a seguir:</u>
 

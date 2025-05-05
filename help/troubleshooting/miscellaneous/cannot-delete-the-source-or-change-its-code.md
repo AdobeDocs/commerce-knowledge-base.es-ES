@@ -37,6 +37,6 @@ El código es vital para conectar el origen a los pedidos. Se trata de un ID ún
 
 Puede eliminar un origen de un producto transfiriendo el inventario o soltando el producto de todos los envíos en una ubicación.
 
-Si necesita quitar un origen de los cálculos de [SSA](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/basics/selection-reservations) y el procesamiento de pedidos de Adobe Commerce Inventory, puede deshabilitar el origen. Los orígenes desactivados conservan todos los datos, los productos asignados y las cantidades de inventario, y se pueden volver a activar en cualquier momento para comenzar a enviar de nuevo.
+Si necesita quitar un origen de los cálculos de [SSA](https://experienceleague.adobe.com/es/docs/commerce-admin/inventory/basics/selection-reservations) y el procesamiento de pedidos de Adobe Commerce Inventory, puede deshabilitar el origen. Los orígenes desactivados conservan todos los datos, los productos asignados y las cantidades de inventario, y se pueden volver a activar en cualquier momento para comenzar a enviar de nuevo.
 
 Consulte la [Guía de creación de fuentes](https://github.com/magento/inventory/wiki/Create-Sources#disable-sources) para obtener más información sobre cómo deshabilitar un origen.

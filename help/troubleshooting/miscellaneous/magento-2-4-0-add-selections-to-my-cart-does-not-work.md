@@ -41,7 +41,7 @@ El botón **Agregar selecciones a mi carro** ubicado en la parte superior de la 
 
 ## Lectura relacionada
 
-* Administración de un carro de compras por parte de [MerchDocs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) en nuestra guía del usuario.
+* Administración de un carro de compras por parte de [MerchDocs](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) en nuestra guía del usuario.
 * [Problema conocido de Adobe Commerce 2.4.0: los datos de mensajes sin procesar se muestran en la tienda](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md) de nuestra base de conocimiento de soporte.
 * [Problema conocido de Adobe Commerce 2.4.0: las tasas de impuestos de exportación no funcionan](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) en nuestra base de conocimiento de soporte.
 * [Problema conocido de Adobe Commerce 2.4.0: los métodos de pago del Braintree no aparecen en el cierre de compra de varias direcciones](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) en nuestra base de conocimiento de soporte técnico.

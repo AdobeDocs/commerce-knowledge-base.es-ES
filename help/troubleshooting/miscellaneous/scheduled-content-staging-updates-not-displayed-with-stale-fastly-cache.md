@@ -17,7 +17,7 @@ Este artículo proporciona una corrección para los casos en los que las tiendas
 
 ## Problema
 
-Actualizaciones programadas para un recurso de contenido de tienda (página, producto, bloque, etc.) no se muestran en la tienda inmediatamente después de la hora de inicio de la actualización. Esto sucede cuando se han programado actualizaciones utilizando la funcionalidad [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html).
+Actualizaciones programadas para un recurso de contenido de tienda (página, producto, bloque, etc.) no se muestran en la tienda inmediatamente después de la hora de inicio de la actualización. Esto sucede cuando se han programado actualizaciones utilizando la funcionalidad [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=es).
 
 ## Causa
 
@@ -45,6 +45,6 @@ Si la entrega de contenido obsoleto incluso para la primera solicitud es inacept
 
 ## Documentación relacionada
 
-* [Configure las opciones de depuración](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en la Guía de infraestructura de Commerce en la nube.
-* [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) en la documentación de contenido y diseño.
+* [Configure las opciones de depuración](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=es) en la Guía de infraestructura de Commerce en la nube.
+* [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=es) en la documentación de contenido y diseño.
 * [Proporcionar contenido obsoleto](https://docs.fastly.com/guides/performance-tuning/serving-stale-content) en la documentación de Fastly.

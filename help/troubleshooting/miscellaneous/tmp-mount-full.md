@@ -120,7 +120,7 @@ Busque `/tmp` archivos de `.sql` o `.sql.gz` y límpielos. Es posible que se hay
 
 Para evitar problemas con `/tmp`, siga estas recomendaciones:
 
-* No utilice MySQL para la búsqueda. El Elasticsearch para la búsqueda generalmente elimina la necesidad de la mayoría de las creaciones de tablas temporales pesadas. Consulte [Configuración de Adobe Commerce para usar Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) en nuestra documentación para desarrolladores.
+* No utilice MySQL para la búsqueda. El Elasticsearch para la búsqueda generalmente elimina la necesidad de la mayoría de las creaciones de tablas temporales pesadas. Consulte [Configuración de Adobe Commerce para usar Elasticsearch](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/search/configure-search-engine) en nuestra documentación para desarrolladores.
 * Evite ejecutar la consulta `SELECT` en columnas sin índices, ya que esto consume una gran cantidad de espacio temporal en disco. También puede añadir los índices.
 * Cree un cron para limpiar `/tmp` ejecutando el siguiente comando en la CLI:
 

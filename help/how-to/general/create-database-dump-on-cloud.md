@@ -18,7 +18,7 @@ Solo necesita utilizar una variante (opción) para volcar la base de datos. Esta
 
 ## Requisito previo: SSH para su entorno
 
-Para volcar la base de datos en Adobe Commerce en la infraestructura en la nube con cualquier variante de la que se habla en este artículo, primero debe [SSH en su entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
+Para volcar la base de datos en Adobe Commerce en la infraestructura en la nube con cualquier variante de la que se habla en este artículo, primero debe [SSH en su entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=es).
 
 >[!WARNING]
 >
@@ -26,7 +26,7 @@ Para volcar la base de datos en Adobe Commerce en la infraestructura en la nube 
 
 ## Opción 1: db-dump (**ece-tools; recomendado**)
 
-Puede volcar la base de datos con el comando [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html):
+Puede volcar la base de datos con el comando [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=es):
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +34,7 @@ vendor/bin/ece-tools db-dump
 
 Esta es la opción recomendada y más segura.
 
-Consulte [Volcar la base de datos (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) en nuestra Guía de infraestructura de Commerce en la nube.
+Consulte [Volcar la base de datos (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html?lang=es) en nuestra Guía de infraestructura de Commerce en la nube.
 
 ## Opción 2: mysqldump
 
@@ -61,4 +61,4 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 **Documentación relacionada:**
 
 * [mysqldump: un programa de copia de seguridad de la base de datos](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) en la documentación oficial de MySQL.
-* [Variables específicas de la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) (consulte `MAGENTO_CLOUD_RELATIONSHIPS`) en nuestra Guía de infraestructura de Commerce en la nube.
+* [Variables específicas de la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=es) (consulte `MAGENTO_CLOUD_RELATIONSHIPS`) en nuestra Guía de infraestructura de Commerce en la nube.

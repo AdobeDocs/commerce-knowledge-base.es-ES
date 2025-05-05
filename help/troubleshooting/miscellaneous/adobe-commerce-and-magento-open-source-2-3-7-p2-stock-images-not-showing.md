@@ -50,4 +50,4 @@ Elimine las imágenes de Adobe Stock cargadas de las carpetas `pub/media` y `pub
 
 ## Lectura relacionada
 
-* [Almacenamiento de medios](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/wysiwyg/storage/media-storage) en nuestra guía del usuario.
+* [Almacenamiento de medios](https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/wysiwyg/storage/media-storage) en nuestra guía del usuario.

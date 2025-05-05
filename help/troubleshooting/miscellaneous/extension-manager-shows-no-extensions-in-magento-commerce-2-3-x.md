@@ -23,7 +23,7 @@ Este artículo proporciona una solución para las extensiones que faltan en el E
 
 Cuando compra extensiones a través del Commerce Marketplace, no puede instalarlas con el Extension Manager principal de Adobe Commerce. Al añadir las claves de acceso y sincronizar con Marketplace, el Extension Manager no muestra extensiones.
 
-La **solución** para el problema es usar la instalación de Adobe Commerce desde la línea de comandos como se muestra en [Instalación general de CLI](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) en nuestra documentación para desarrolladores.
+La **solución** para el problema es usar la instalación de Adobe Commerce desde la línea de comandos como se muestra en [Instalación general de CLI](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/extensions) en nuestra documentación para desarrolladores.
 
 <u>Pasos a seguir</u>:
 
@@ -44,4 +44,4 @@ La extensión aparece en la sección Extension Manager del Administrador de Comm
 
 ## Solución
 
-Use la instalación de Adobe Commerce desde la línea de comandos como se muestra en [Instalación general de CLI](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions) en nuestra documentación para desarrolladores.
+Use la instalación de Adobe Commerce desde la línea de comandos como se muestra en [Instalación general de CLI](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/extensions) en nuestra documentación para desarrolladores.

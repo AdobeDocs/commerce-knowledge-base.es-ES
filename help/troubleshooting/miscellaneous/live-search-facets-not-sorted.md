@@ -22,7 +22,7 @@ Todas las facetas de tienda de Adobe Commerce se ordenan alfabéticamente con op
 
 ## Solución
 
-Sin embargo, en algunos casos extremos, es posible que las facetas no se ordenen alfabéticamente según lo configurado en el [[!DNL Live Search] espacio de trabajo de facetas](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace).
+Sin embargo, en algunos casos extremos, es posible que las facetas no se ordenen alfabéticamente según lo configurado en el [[!DNL Live Search] espacio de trabajo de facetas](https://experienceleague.adobe.com/es/docs/commerce-merchant-services/live-search/live-search-admin/facets/faceting-workspace).
 
 Como solución alternativa, puede ordenar los atributos de producto en la sección de atributos [!UICONTROL Admin].
 

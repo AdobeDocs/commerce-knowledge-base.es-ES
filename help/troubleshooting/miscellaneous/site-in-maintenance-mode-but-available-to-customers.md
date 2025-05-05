@@ -45,4 +45,4 @@ Las páginas se siguen almacenando en caché, por lo que la página de mantenimi
 
 ## Lectura relacionada
 
-[Habilite o deshabilite el modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) en nuestra documentación para desarrolladores.
+[Habilite o deshabilite el modo de mantenimiento](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) en nuestra documentación para desarrolladores.

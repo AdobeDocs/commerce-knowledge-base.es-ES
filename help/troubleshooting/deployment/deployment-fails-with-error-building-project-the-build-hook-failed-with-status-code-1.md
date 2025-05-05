@@ -78,7 +78,7 @@ Para obtener más información sobre cómo aumentar el espacio en disco si utili
        php ./vendor/bin/ece-tools deploy
    ```
 
-   Use el artículo [Actualizar a ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) para referencia.
+   Use el artículo [Actualizar a ece-tools](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) para referencia.
 
 1. Asegúrese de que el paquete ECE-tools esté presente en el archivo `composer.lock` ejecutando el siguiente comando:
 
@@ -92,7 +92,7 @@ Para obtener más información sobre cómo aumentar el espacio en disco si utili
    "name": "magento/ece-tools", "version": "2002.0.20",
    ```
 
-Consulte el artículo [Actualizar a ece-tools](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) para obtener una referencia.
+Consulte el artículo [Actualizar a ece-tools](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/install-package) para obtener una referencia.
 
 ### ¿El parche está causando el problema?
 

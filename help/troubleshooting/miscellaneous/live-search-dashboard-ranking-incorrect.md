@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # El panel [!DNL Live Search] y la clasificación de resultados de búsqueda son incorrectos
 
-Si nota que los datos mostrados en el panel [!DNL Live Search] son incorrectos, o si la [clasificación de los resultados de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) no es la esperada, vea lo siguiente por posibles motivos:
+Si nota que los datos mostrados en el panel [!DNL Live Search] son incorrectos, o si la [clasificación de los resultados de búsqueda](https://experienceleague.adobe.com/es/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) no es la esperada, vea lo siguiente por posibles motivos:
 
 * Falta el campo `topLevelSku` del contexto de producto en `productView` eventos. Esto provoca conversiones vacías y otras métricas inesperadas.
 

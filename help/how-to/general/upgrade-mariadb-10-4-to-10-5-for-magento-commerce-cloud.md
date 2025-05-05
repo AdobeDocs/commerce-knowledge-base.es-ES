@@ -30,16 +30,16 @@ Adopte los nuevos parches solo de seguridad (2.4.4-p9 o 2.4.5-p8) que se lanzar�
 
 ### Pasos de actualización para implementaciones en la nube
 
-1. Crear una copia de seguridad de [DB mediante los comandos de copia de seguridad ECE-Tools DB](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots). Esta copia de seguridad debe realizarse antes de los pasos 2 y 3 en caso de que algo salga mal al actualizar tablas/filas.
-1. [Comprobar y convertir todas las tablas compactas en tablas dinámicas](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade). Este paso es necesario para evitar una posible pérdida de datos durante la actualización de la base de datos.
-1. Compruebe si hay tablas MYISAM. Debe [convertir todas las tablas MyISAM a InnoD](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud).
-1. Después de preparar las tablas y filas de la base de datos (los dos pasos anteriores), cree una copia de seguridad de [DB con los comandos ECE-Tools DB backup](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
+1. Crear una copia de seguridad de [DB mediante los comandos de copia de seguridad ECE-Tools DB](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots). Esta copia de seguridad debe realizarse antes de los pasos 2 y 3 en caso de que algo salga mal al actualizar tablas/filas.
+1. [Comprobar y convertir todas las tablas compactas en tablas dinámicas](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade). Este paso es necesario para evitar una posible pérdida de datos durante la actualización de la base de datos.
+1. Compruebe si hay tablas MYISAM. Debe [convertir todas las tablas MyISAM a InnoD](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud).
+1. Después de preparar las tablas y filas de la base de datos (los dos pasos anteriores), cree una copia de seguridad de [DB con los comandos ECE-Tools DB backup](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
 1. [Abra un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para programar la actualización de MariaDB 10.4 a 10.5. En el ticket, indique la fecha y la hora en que desea actualizar la base de datos. El equipo de asistencia necesita un aviso de 48 horas, y el equipo de desarrollo del comerciante debe estar disponible. Una vez que se acuerden la hora y la fecha de la actualización, haga lo siguiente:
    1. Ponga su sitio en modo de mantenimiento y detenga cualquier actividad de base de datos, por ejemplo, crons.
-   1. Crear una copia de seguridad de [DB mediante los comandos de copia de seguridad ECE-Tools DB](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
+   1. Crear una copia de seguridad de [DB mediante los comandos de copia de seguridad ECE-Tools DB](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
    1. Informe al servicio de asistencia de que ha completado la copia de seguridad mediante su vale de soporte. Para obtener los pasos para ver y rastrear tus tickets, consulta la [Guía del usuario del Centro de ayuda de Adobe Commerce: Rastrea tus tickets](/help/help-center-guide/help-center/magento-help-center-user-guide.md#track-tickets) en nuestra base de conocimiento de asistencia.
    1. El equipo de asistencia de Adobe Commerce comienza el proceso de actualización de MariaDB. Si se han realizado todos los pasos anteriores y la base de datos tiene un tamaño promedio, el proceso tarda aproximadamente una hora. Los BD más grandes tardan más. Una vez completada la actualización, se le informará a través de su ticket.
-1. Desactive el modo de mantenimiento. Consulte [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) en nuestra documentación para desarrolladores.
+1. Desactive el modo de mantenimiento. Consulte [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) en nuestra documentación para desarrolladores.
 
 >[!NOTE]
 >
@@ -47,6 +47,6 @@ Adopte los nuevos parches solo de seguridad (2.4.4-p9 o 2.4.5-p8) que se lanzar�
 
 ## Lectura relacionada
 
-* [Guía de prácticas recomendadas de actualización de la base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites) para implementaciones locales.
-* [Actualice MariaDB 10.0 a 10.2 para Adobe Commerce en la nube](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10-0-to-10-2-for-magento-commerce-cloud) en nuestra base de conocimiento de soporte.
-* [Política del ciclo vital de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) en nuestra documentación para desarrolladores.
+* [Guía de prácticas recomendadas de actualización de la base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/prepare/prerequisites) para implementaciones locales.
+* [Actualice MariaDB 10.0 a 10.2 para Adobe Commerce en la nube](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/upgrade-mariadb-10-0-to-10-2-for-magento-commerce-cloud) en nuestra base de conocimiento de soporte.
+* [Política del ciclo vital de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/lifecycle-policy) en nuestra documentación para desarrolladores.

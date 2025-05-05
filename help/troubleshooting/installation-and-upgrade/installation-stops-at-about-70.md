@@ -32,7 +32,7 @@ Configure todas las siguientes opciones según corresponda.
 
 ### Todos los servidores web y Barnish {#all-web-servers-and-varnish}
 
-1. Busque su `php.ini` usando un archivo de [`phpinfo.php`](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software).
+1. Busque su `php.ini` usando un archivo de [`phpinfo.php`](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/optional-software).
 1. Como usuario con privilegios de `root`, abra `php.ini` en un editor de texto.
 1. Busque la configuración `max_execution_time`.
 1. Cambie su valor a `18000`

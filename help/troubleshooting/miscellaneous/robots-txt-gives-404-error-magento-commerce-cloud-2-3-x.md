@@ -33,10 +33,10 @@ La solución es deshabilitar la regla Nginx que redirige las solicitudes de `/ro
 
 Si no tiene habilitado el autoservicio (o no está seguro de si lo tiene habilitado), [envíe un vale de soporte técnico para Magento](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando la eliminación de la regla de redireccionamiento Nginx de `/robots.txt` solicitudes a `/media/robots.txt`.
 
-Si tiene habilitado el autoservicio, actualice ECE-Tools al menos a 2002.0.12 y elimine la regla de redireccionamiento Nginx en su archivo `.magento.app.yaml`. Para obtener más información, consulte [Agregar robots de mapa del sitio y motores de búsqueda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html) en nuestra documentación para desarrolladores.
+Si tiene habilitado el autoservicio, actualice ECE-Tools al menos a 2002.0.12 y elimine la regla de redireccionamiento Nginx en su archivo `.magento.app.yaml`. Para obtener más información, consulte [Agregar robots de mapa del sitio y motores de búsqueda](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap.html?lang=es) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 
 * [Cómo bloquear el tráfico malintencionado para Magento Commerce Cloud en el nivel Fastly](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md) de nuestra base de conocimiento de soporte.
-* [Agregue robots de mapa del sitio y de motor de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) en nuestra documentación para desarrolladores.
-* [Robots de motores de búsqueda](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html#search-engine-robots) en nuestra guía del usuario.
+* [Agregue robots de mapa del sitio y de motor de búsqueda](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/robots-sitemap) en nuestra documentación para desarrolladores.
+* [Robots de motores de búsqueda](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/seo-overview.html?lang=es#search-engine-robots) en nuestra guía del usuario.

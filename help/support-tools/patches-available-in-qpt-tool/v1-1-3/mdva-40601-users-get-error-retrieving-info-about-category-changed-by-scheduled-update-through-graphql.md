@@ -1,6 +1,6 @@
 ---
 title: "MDVA-40601: No se pueden recuperar datos sobre la categoría modificada por la actualización programada a través de GraphQL"
-description: El parche de calidad MDVA-40601 Adobe Commerce corrige el problema en el que los usuarios reciben un error al obtener información sobre la categoría modificada por la actualización programada a través de GraphQL. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3. El ID del parche es MDVA-40601. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+description: El parche de calidad MDVA-40601 Adobe Commerce corrige el problema en el que los usuarios reciben un error al obtener información sobre la categoría modificada por la actualización programada a través de GraphQL. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3. El ID del parche es MDVA-40601. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 exl-id: b1ea93e7-8d4a-4bdd-8267-cc60de25bd39
 feature: Categories, GraphQL
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-40601: no se pueden recuperar datos sobre la categoría modificada por la actualización programada a través de GraphQL
 
-El parche de calidad MDVA-40601 Adobe Commerce corrige el problema en el que los usuarios reciben un error al obtener información sobre la categoría modificada por la actualización programada a través de GraphQL. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3. El ID del parche es MDVA-40601. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+El parche de calidad MDVA-40601 Adobe Commerce corrige el problema en el que los usuarios reciben un error al obtener información sobre la categoría modificada por la actualización programada a través de GraphQL. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3. El ID del parche es MDVA-40601. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 
 ## Productos y versiones afectados
 
@@ -27,7 +27,7 @@ Adobe Commerce (todos los métodos de implementación) 2.3.1 - 2.4.2-p2
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -124,8 +124,8 @@ Se obtiene el siguiente error:
 
 Para aplicar parches individuales, utilice los siguientes vínculos en función del tipo de implementación:
 
-&#x200B;* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores.
-&#x200B;* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
+&#x200B;* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores.
+&#x200B;* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 

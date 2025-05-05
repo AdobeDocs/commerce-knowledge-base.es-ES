@@ -60,7 +60,7 @@ Este artículo proporciona pasos de solución de problemas para resolver los pro
 </ol>
 </td>
 <td>
-<p>Para obtener más información sobre la puntuación de New Relic Apdex, consulte <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">Documentación de New Relic &gt; APM Apdex &gt; Medir la satisfacción del usuario</a>. También puede consultar <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Alertas administradas para Adobe Commerce: Apdex warning alert</a> en nuestra base de conocimiento de asistencia.</p>
+<p>Para obtener más información sobre la puntuación de New Relic Apdex, consulte <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">Documentación de New Relic &gt; APM Apdex &gt; Medir la satisfacción del usuario</a>. También puede consultar <a href="https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Alertas administradas para Adobe Commerce: Apdex warning alert</a> en nuestra base de conocimiento de asistencia.</p>
 </td>
 </tr>
 <tr>

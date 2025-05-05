@@ -119,8 +119,8 @@ bin/magento cache:clean
 
 Una vez instalado el paquete, configure Google reCAPTCHA (recomendado) o CAPTCHA como se describe en los siguientes documentos:
 
-* [Google reCAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) en nuestra guía del usuario.
-* [CAPTCHA](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/captcha/security-captcha) en nuestra guía de usuario.
+* [Google reCAPTCHA](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/captcha/security-google-recaptcha) en nuestra guía del usuario.
+* [CAPTCHA](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/captcha/security-captcha) en nuestra guía de usuario.
 
 La nueva opción del formulario de cierre de compra es:
 

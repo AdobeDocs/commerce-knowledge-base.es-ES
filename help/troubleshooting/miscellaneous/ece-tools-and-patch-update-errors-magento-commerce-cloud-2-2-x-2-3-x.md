@@ -82,4 +82,4 @@ Cambie la sección adicional para que coincida con la proporcionada a continuaci
 
 ## Lectura relacionada
 
-* [Actualizaciones y parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/best-practices) en nuestra documentación para desarrolladores.
+* [Actualizaciones y parches](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/best-practices) en nuestra documentación para desarrolladores.

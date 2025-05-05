@@ -57,4 +57,4 @@ Adobe Commerce local: aplique ACSD-50165 con [Herramientas de parches de calidad
 ## Lectura relacionada
 
 * [[!DNL Quality Patches Tool] > Notas de la versión](/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) en la guía de herramientas de Commerce.
-* [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html) en la guía de herramientas de Commerce.
+* [[!DNL Quality Patches Tool]: busque parches](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es) en la guía de herramientas de Commerce.

@@ -56,7 +56,7 @@ Si `max(value_id)` es menor que `max int(11) [ 4294967296 ]` y `[ AUTO_INCREMENT
 
 >[!WARNING]
 >
->Realice una copia de seguridad de la base de datos antes de modificar las tablas. Además, ponga el sitio en [modo de mantenimiento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode). Además, también se recomienda ejecutar el comando optimizado [!DNL MySQL] en las tablas de base de datos (solo en las tablas en las que se han realizado cambios) después de realizar los cambios.
+>Realice una copia de seguridad de la base de datos antes de modificar las tablas. Además, ponga el sitio en [modo de mantenimiento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=es#maintenance-mode). Además, también se recomienda ejecutar el comando optimizado [!DNL MySQL] en las tablas de base de datos (solo en las tablas en las que se han realizado cambios) después de realizar los cambios.
 
 >[!NOTE]
 >
@@ -111,8 +111,8 @@ Para ello:
 
 ## Lectura relacionada
 
-* [Directrices generales [!DNL MySQL] 2&rbrace; en la Guía de instalación de Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html)
-* [La carga de la base de datos pierde la conexión con [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html) en nuestra base de conocimiento de soporte
-* [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) en nuestra base de conocimiento de soporte
-* [Problemas más comunes de las bases de datos en Adobe Commerce sobre la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) en nuestra base de conocimiento de asistencia
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [Directrices generales [!DNL MySQL] 2&rbrace; en la Guía de instalación de Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=es)
+* [La carga de la base de datos pierde la conexión con [!DNL MySQL]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/database/database-upload-loses-connection-to-mysql.html?lang=es) en nuestra base de conocimiento de soporte
+* [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=es) en nuestra base de conocimiento de soporte
+* [Problemas más comunes de las bases de datos en Adobe Commerce sobre la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=es) en nuestra base de conocimiento de asistencia
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

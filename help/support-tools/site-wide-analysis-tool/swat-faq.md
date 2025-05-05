@@ -21,7 +21,7 @@ Este artículo proporciona una descripción del informe [!DNL Site-Wide Analysis
 
 >[!NOTE]
 >
->En Adobe Commerce en la infraestructura en la nube v2.4.1 y superior, [!DNL Site-Wide Analysis Tool] está disponible a través del Panel de administración de Commerce. Por lo tanto, los informes de [!DNL Site-Wide Analysis Tool] los puede ejecutar directamente el cliente. Para obtener información de acceso, consulte la [[!DNL Site-Wide Analysis Tool] guía](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html).
+>En Adobe Commerce en la infraestructura en la nube v2.4.1 y superior, [!DNL Site-Wide Analysis Tool] está disponible a través del Panel de administración de Commerce. Por lo tanto, los informes de [!DNL Site-Wide Analysis Tool] los puede ejecutar directamente el cliente. Para obtener información de acceso, consulte la [[!DNL Site-Wide Analysis Tool] guía](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/access.html?lang=es).
 
 ## ¿Qué es [!DNL Site-Wide Analysis Tool]?
 

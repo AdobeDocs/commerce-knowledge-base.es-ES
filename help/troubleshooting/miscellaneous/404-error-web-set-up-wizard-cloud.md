@@ -43,9 +43,9 @@ El Asistente para configuración web se ha deshabilitado para todas las instanci
 
 Esta función está desactivada en Adobe Commerce en la infraestructura en la nube.
 
-Consulte [Instalar, administrar y actualizar extensiones](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce en nuestra infraestructura en la nube.
-Consulte [Instalación rápida](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce local.
+Consulte [Instalar, administrar y actualizar extensiones](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/extensions) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce en nuestra infraestructura en la nube.
+Consulte [Instalación rápida](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/composer) en nuestra documentación para desarrolladores para obtener información sobre cómo realizar actualizaciones o instalar módulos externos para Adobe Commerce local.
 
 ## Lectura relacionada
 
-* Consulte [Instalar una extensión](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) en nuestra documentación para desarrolladores.
+* Consulte [Instalar una extensión](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension) en nuestra documentación para desarrolladores.

@@ -54,4 +54,4 @@ Los cambios entrarán en vigor después de que Git inserte el archivo YAML actua
 
 ## Documentación relacionada
 
-* [Configuración de la aplicación: enlaces](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html) en nuestra Guía de infraestructura de Adobe Commerce en la nube.
+* [Configuración de la aplicación: enlaces](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/hooks-property.html?lang=es) en nuestra Guía de infraestructura de Adobe Commerce en la nube.

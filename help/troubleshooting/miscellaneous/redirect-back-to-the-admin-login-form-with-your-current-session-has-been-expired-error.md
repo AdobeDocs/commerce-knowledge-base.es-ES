@@ -51,7 +51,7 @@ Compruebe el registro de sesión creado en la tabla `admin_user_session`. Si los
 
 ### Cambio del almacenamiento de sesión
 
-Intente cambiar el almacenamiento de la sesión. Use la información del artículo [Cómo localizar los archivos de sesión](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) en nuestra documentación para desarrolladores para saber dónde se almacena su sesión y cámbiela editando el archivo `app/etc/env.php`.
+Intente cambiar el almacenamiento de la sesión. Use la información del artículo [Cómo localizar los archivos de sesión](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/storage/session-storage/sessions) en nuestra documentación para desarrolladores para saber dónde se almacena su sesión y cámbiela editando el archivo `app/etc/env.php`.
 
 Por ejemplo, para iniciar el almacenamiento de la sesión en el sistema de archivos, cambie la sección `'session'` de la siguiente manera:
 
@@ -69,9 +69,9 @@ Ejecute el comando `bin/magento app:config:import` para importar los datos de co
 
 ## Lectura relacionada
 
-* [Importar datos de archivos de configuración](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) en nuestra documentación para desarrolladores
-* [Configurar [!DNL Redis]](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis) en nuestra documentación para desarrolladores
-* [Vuelva a redirigir al formulario de inicio de sesión de [!UICONTROL Commerce Admin] con el error &quot;Su cuenta está temporalmente deshabilitada&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) en nuestra base de conocimiento de soporte
-* [Vuelva al formulario de inicio de sesión sin errores al intentar iniciar sesión en [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) en nuestra base de conocimiento de asistencia
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [Importar datos de archivos de configuración](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/configuration-management/import-configuration) en nuestra documentación para desarrolladores
+* [Configurar [!DNL Redis]](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cache/redis/config-redis) en nuestra documentación para desarrolladores
+* [Vuelva a redirigir al formulario de inicio de sesión de [!UICONTROL Commerce Admin] con el error &quot;Su cuenta está temporalmente deshabilitada&quot;](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error) en nuestra base de conocimiento de soporte
+* [Vuelva al formulario de inicio de sesión sin errores al intentar iniciar sesión en [!UICONTROL Commerce Admin]](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin) en nuestra base de conocimiento de asistencia
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
 

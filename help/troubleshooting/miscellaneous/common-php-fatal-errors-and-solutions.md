@@ -27,7 +27,7 @@ Por ejemplo:
 
 `max_execution_time = 120`
 
-Consulte el artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
+Consulte el artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Ejemplo
 
@@ -35,7 +35,7 @@ Consulte el artículo [Personalizar la configuración de php.ini](https://experi
 
 ## Solución
 
-Personalizar la configuración de `php.ini`. Consulte este artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
+Personalizar la configuración de `php.ini`. Consulte este artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Ejemplo
 
@@ -65,9 +65,9 @@ Compruebe el directorio `<root>/tmp` porque probablemente esté lleno. Si está 
 
 En nuestra documentación para desarrolladores:
 
-* [Errores de configuración de PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [Configuración de PHP requerida](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)
-* [Verificación de Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
-* [Configurar Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
-* [Error de límite de memoria PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Errores de configuración de PHP](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Configuración de PHP requerida](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/php-settings)
+* [Verificación de Redis](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
+* [Configurar Redis](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* [Error de límite de memoria PHP](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/overview)
 * [Soluciones a problemas comunes - Límite de memoria](https://developer.adobe.com/commerce/testing/guide/unit/command-line/#solutions-to-common-problems)

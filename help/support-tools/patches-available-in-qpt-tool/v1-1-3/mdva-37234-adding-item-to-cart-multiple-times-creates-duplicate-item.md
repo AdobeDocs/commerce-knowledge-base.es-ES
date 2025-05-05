@@ -1,6 +1,6 @@
 ---
 title: "MDVA-37234: al agregar un elemento al carro de compras varias veces, se crea un elemento de línea duplicado"
-description: El parche de MDVA-37234 soluciona el problema de que, al añadir un artículo al carro de compras varias veces (solicitud paralela) para la misma SKU, se crea un elemento de línea duplicado para la misma ID de carro de compras. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3. El ID del parche es MDVA-37234. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+description: El parche de MDVA-37234 soluciona el problema de que, al añadir un artículo al carro de compras varias veces (solicitud paralela) para la misma SKU, se crea un elemento de línea duplicado para la misma ID de carro de compras. Este parche está disponible cuando está instalada la [Quality Patches Tool (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3. El ID del parche es MDVA-37234. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 exl-id: 8f0dc249-10b2-4f2c-abca-1f5b7aea204d
 feature: Orders, Shopping Cart
 role: Admin
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # MDVA-37234: al agregar un elemento al carro de compras varias veces, se crea un elemento de línea duplicado
 
-El parche de MDVA-37234 soluciona el problema de que, al añadir un artículo al carro de compras varias veces (solicitud paralela) para la misma SKU, se crea un elemento de línea duplicado para la misma ID de carro de compras. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3. El ID del parche es MDVA-37234. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
+El parche de MDVA-37234 soluciona el problema de que, al añadir un artículo al carro de compras varias veces (solicitud paralela) para la misma SKU, se crea un elemento de línea duplicado para la misma ID de carro de compras. Este parche está disponible cuando está instalada la [Herramienta de parches de calidad (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/patches/overview) 1.1.3. El ID del parche es MDVA-37234. Tenga en cuenta que el problema está programado para solucionarse en Adobe Commerce 2.4.4.
 
 ## Productos y versiones afectados
 
@@ -27,7 +27,7 @@ Adobe Commerce (todos los métodos de implementación) 2.3.5 - 2.3.7-p1 y 2.4.1 
 
 >[!NOTE]
 >
->El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
+>El parche podría ser aplicable a otras versiones con las nuevas versiones de la herramienta Parches de Calidad. Para comprobar si el parche es compatible con su versión de Adobe Commerce, actualice el paquete `magento/quality-patches` a la última versión y compruebe la compatibilidad en la página [[!DNL Quality Patches Tool]: buscar parches ](https://experienceleague.adobe.com/tools/commerce-quality-patches/index.html?lang=es). Utilice el ID de parche como palabra clave de búsqueda para localizar el parche.
 
 ## Problema
 
@@ -86,8 +86,8 @@ En el carro de compras se crean dos líneas independientes para el mismo product
 
 Para aplicar parches individuales, utilice los siguientes vínculos en función del tipo de implementación:
 
-* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores.
-* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
+* Adobe Commerce o Magento Open Source local: [Guía de actualización de software > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/usage) en nuestra documentación para desarrolladores.
+* Adobe Commerce en la infraestructura en la nube: [Actualizaciones y parches > Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 

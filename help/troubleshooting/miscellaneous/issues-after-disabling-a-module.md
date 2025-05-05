@@ -30,6 +30,6 @@ Al deshabilitar una salida de módulo en **Almacenes** > **Configuración** > **
 
 ## Solución
 
-Si necesita deshabilitar la funcionalidad del módulo, deshabilite el módulo tal como se describe en [Habilitar o deshabilitar módulos](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/manage-modules) en nuestra documentación para desarrolladores.
+Si necesita deshabilitar la funcionalidad del módulo, deshabilite el módulo tal como se describe en [Habilitar o deshabilitar módulos](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/manage-modules) en nuestra documentación para desarrolladores.
 
 La funcionalidad de deshabilitación de la salida del módulo se eliminó a partir de la versión 2.2.0.

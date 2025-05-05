@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Autor en Markdown
 
-Por lo general, utilizamos la [Guía de estilo de sintaxis de Adobe Experience League Markdown](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), pero existen algunas diferencias y excepciones. Además, en determinados casos se requieren determinadas etiquetas de HTML.
+Por lo general, utilizamos la [Guía de estilo de sintaxis de Adobe Experience League Markdown](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=es), pero existen algunas diferencias y excepciones. Además, en determinados casos se requieren determinadas etiquetas de HTML.
 
 Los siguientes son ejemplos del formato Markdown que se utiliza más comúnmente en nuestro repositorio.
 

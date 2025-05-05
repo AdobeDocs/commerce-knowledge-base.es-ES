@@ -30,7 +30,7 @@ Mientras desarrolla Adobe Commerce (todas las implementaciones) y componentes de
 
 Si necesita restablecer la temática de la tienda, pero no puede acceder al panel de administración, puede hacerlo en la base de datos haciendo lo siguiente:
 
-1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL: `UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
+1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL: `UPDATE core_config_data SET value=NULL WHERE path='design/theme/theme_id'`
 1. Borre los siguientes directorios:
    * `pub/static/frontend`
    * `var/view_preprocessing`

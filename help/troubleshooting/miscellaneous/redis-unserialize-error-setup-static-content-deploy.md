@@ -99,5 +99,5 @@ También puede ejecutar el comando `setup:static-content:deploy` seguido del arg
 
 En nuestra documentación para desarrolladores:
 
-* [Configurar Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html)
-* [Actualización de línea de comandos](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html)
+* [Configurar Redis](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cache/redis/config-redis.html?lang=es)
+* [Actualización de línea de comandos](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=es)

@@ -35,10 +35,10 @@ Por ejemplo, se recomienda evitar una importación atascada de la base de datos 
 ## Solución
 
 1. Compruebe los registros de aplicación, implementación o MySQL para ver si hay errores de interbloqueo:
-   * [Ubicaciones de registro de Magento Open Source y Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html)
-   * [Adobe Commerce en la nube registra ubicaciones](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+   * [Ubicaciones de registro de Magento Open Source y Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/enable-logging.html?lang=es)
+   * [Adobe Commerce en la nube registra ubicaciones](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=es)
 1. Compruebe la lista de procesos MySQL para ejecutar procesos con el comando `mysql -e 'show full processlist';`
-1. Si está en Adobe Commerce en una infraestructura en la nube, compruebe que el esclavo MySQL esté habilitado. Consulte este artículo: [Implementar variables (MYSQL\_USE\_SLAVE\_CONNECTION)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#mysql_use_slave_connection).
+1. Si está en Adobe Commerce en una infraestructura en la nube, compruebe que el esclavo MySQL esté habilitado. Consulte este artículo: [Implementar variables (MYSQL\_USE\_SLAVE\_CONNECTION)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#mysql_use_slave_connection).
 1. En función de los errores involucrados, la solución puede presentarse por sí misma, o puede que necesite incluir su información de registro útil si necesita abrir un [ticket de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 ## Lectura relacionada

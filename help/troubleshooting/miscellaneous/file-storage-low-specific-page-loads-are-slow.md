@@ -33,8 +33,8 @@ Las imágenes no están optimizadas para equilibrar el rendimiento con la calida
 
 Antes de cargar las imágenes, optimícelas y comprímalas para equilibrar el rendimiento con la calidad de visualización. Esto ayuda a aumentar el espacio y reducir los tiempos de carga de la página. Los archivos PNG ofrecen tamaños más pequeños para las imágenes con grandes áreas de color sólido. Los JPEG dan tamaños más pequeños para todo lo demás. Utilice la compresión más alta (sin una degradación apreciable). Esto suele ser del 60-80%.
 
-Use [Optimización rápida de imágenes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html) para producir imágenes con un almacenamiento más eficiente.
+Use [Optimización rápida de imágenes](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly-image-optimization.html?lang=es) para producir imágenes con un almacenamiento más eficiente.
 
 ## Lectura relacionada
 
-Para obtener más información sobre cómo administrar el espacio en disco (si está en Adobe Commerce en una infraestructura en la nube), consulte [Administrar espacio en disco en Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html) en la Guía de Commerce en infraestructura en la nube.
+Para obtener más información sobre cómo administrar el espacio en disco (si está en Adobe Commerce en una infraestructura en la nube), consulte [Administrar espacio en disco en Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=es) en la Guía de Commerce en infraestructura en la nube.

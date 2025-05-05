@@ -122,5 +122,5 @@ Además, evite utilizar estas palabras clave etiquetadas como *reserved* palabra
 
 ## Lectura relacionada
 
-* [Reescrituras de URL](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) en nuestra Guía del usuario de promociones y comercialización.
-* [Prácticas recomendadas de SEO](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview) en nuestra Guía del usuario de promociones y comercialización.
+* [Reescrituras de URL](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite) en nuestra Guía del usuario de promociones y comercialización.
+* [Prácticas recomendadas de SEO](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/seo/seo-overview) en nuestra Guía del usuario de promociones y comercialización.

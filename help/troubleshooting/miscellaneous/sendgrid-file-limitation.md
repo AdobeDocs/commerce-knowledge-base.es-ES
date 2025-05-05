@@ -52,9 +52,9 @@ Ensayo2:
 ## Solución
 
 * No utilice accesorios superiores a 6 Mb o 10 Mb.
-* Considere el uso de un servidor SMTP remoto en la instancia de Adobe Commerce. Para ver los pasos, consulte [Configurar comunicaciones por correo electrónico](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html) en nuestra Guía de sistemas de administración.
+* Considere el uso de un servidor SMTP remoto en la instancia de Adobe Commerce. Para ver los pasos, consulte [Configurar comunicaciones por correo electrónico](https://experienceleague.adobe.com/docs/commerce-admin/systems/communications/email-communications.html?lang=es) en nuestra Guía de sistemas de administración.
 * Vuelva a configurar el servidor para que los archivos se puedan guardar en el módulo y, a continuación, adjunte el vínculo a los archivos de los correos electrónicos.
 
 ## Lectura relacionada
 
-* [[!DNL SendGrid] servicio de correo electrónico](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html) en nuestra Guía de infraestructura de Commerce en la nube.
+* [[!DNL SendGrid] servicio de correo electrónico](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/sendgrid.html?lang=es) en nuestra Guía de infraestructura de Commerce en la nube.

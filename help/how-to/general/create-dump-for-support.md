@@ -27,7 +27,7 @@ Cree un volcado &quot;borrado&quot; desde Admin:
 
 A continuación, puede proporcionar al Soporte técnico el vínculo de descarga directa a los archivos de volcado (la dirección de almacenamiento y el nombre de archivo tal y como se muestra).
 
-Si tiene problemas al crear volcados desde el administrador, considere la posibilidad de utilizar comandos CLI como se describe en [Ejecute las utilidades de asistencia](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/run-support-utilities) en nuestra documentación para desarrolladores.
+Si tiene problemas al crear volcados desde el administrador, considere la posibilidad de utilizar comandos CLI como se describe en [Ejecute las utilidades de asistencia](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/run-support-utilities) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 

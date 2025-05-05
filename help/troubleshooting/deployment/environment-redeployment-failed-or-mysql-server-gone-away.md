@@ -30,13 +30,13 @@ La causa más probable de los problemas es que el espacio asignado a la base de 
 
 ### Compruebe si hay suficiente espacio para MySQL
 
-Para todos los entornos de arquitectura de plan inicial y [entorno de integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) de Adobe Commerce Adobe Commerce en la infraestructura en la nube con arquitectura de plan Pro, [SSH al entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) y ejecute el comando:
+Para todos los entornos de arquitectura de plan inicial y [entorno de integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) de Adobe Commerce Adobe Commerce en la infraestructura en la nube con arquitectura de plan Pro, [SSH al entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=es) y ejecute el comando:
 
 ```bash
 magento-cloud db:size
 ```
 
-Para el entorno de ensayo o producción de la arquitectura Pro, [SSH al entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) y ejecute `df -h`   `| grep mysql`, comando. El resultado será similar al siguiente:
+Para el entorno de ensayo o producción de la arquitectura Pro, [SSH al entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=es) y ejecute `df -h`   `| grep mysql`, comando. El resultado será similar al siguiente:
 
 ```bash
 sxpe7gigd5ok2@i-00baa9e24f31dba41:~$ df -h | grep mysql
@@ -55,7 +55,7 @@ mysql:
     disk: 2048
 ```
 
-Consulte el artículo [Configurar el servicio MySQL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html) como referencia.
+Consulte el artículo [Configurar el servicio MySQL](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/mysql.html?lang=es) como referencia.
 
 Para realizar estos cambios en el entorno de ensayo o producción de la arquitectura Pro, debe crear un [ticket de asistencia](https://support.magento.com). Pero, por lo general, no tendrá que lidiar con esto en Ensayo/Producción de la arquitectura Pro, ya que Adobe Commerce monitoriza estos parámetros por usted y le alerta y/o toma acciones según el contrato.
 

@@ -16,7 +16,7 @@ Este artículo proporciona soluciones para volver a autorizar una integración c
 
 ## Integraciones de bases de datos y SaaS
 
-Para obtener listas de integraciones de bases de datos y SaaS, consulte [Conexión de datos externos mediante una integración](https://experienceleague.adobe.com/en/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) en nuestra documentación para desarrolladores. (Al abrir la página, utilice la tabla de contenido de la izquierda para navegar).
+Para obtener listas de integraciones de bases de datos y SaaS, consulte [Conexión de datos externos mediante una integración](https://experienceleague.adobe.com/es/docs/commerce-business-intelligence/mbi/analyze/saas/integrations) en nuestra documentación para desarrolladores. (Al abrir la página, utilice la tabla de contenido de la izquierda para navegar).
 
 ## ¿Tiene problemas de conexión?
 

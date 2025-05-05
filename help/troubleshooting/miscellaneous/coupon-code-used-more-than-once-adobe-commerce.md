@@ -62,8 +62,8 @@ Agregar el consumidor `sales.rule.update.coupon.usage` al archivo `app/etc/env.p
 ...
 ```
 
-Para ver los pasos detallados, consulte [Administrar colas de mensajes > Configuración](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) en nuestra documentación para desarrolladores.
+Para ver los pasos detallados, consulte [Administrar colas de mensajes > Configuración](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/message-queues/manage-message-queues#configuration) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 
-[Resumen de colas de mensajes](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) en nuestra documentación para desarrolladores.
+[Resumen de colas de mensajes](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/message-queues/message-queue-framework) en nuestra documentación para desarrolladores.

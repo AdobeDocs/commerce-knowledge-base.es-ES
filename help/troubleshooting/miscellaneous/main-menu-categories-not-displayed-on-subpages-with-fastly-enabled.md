@@ -1,6 +1,6 @@
 ---
 title: El menú principal (Categorías) no se muestra en las subpáginas que tengan activada la opción Rápidamente
-description: Este artículo proporciona una corrección para el caso de que el menú principal (o el [menú Navegación superior de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) en nuestra guía del usuario) no se muestre en la tienda para subpáginas (por ejemplo, *blog/página*) cuando Fastly o Varnish están habilitados.
+description: Este artículo proporciona una corrección para el caso de que el menú principal (o el [menú Navegación superior de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=es) en nuestra guía del usuario) no se muestre en la tienda para subpáginas (por ejemplo, *blog/página*) cuando Fastly o Varnish están habilitados.
 exl-id: 7c54791d-8aa6-4f01-a28b-a7aecdb8ff74
 feature: Categories, Marketing Tools
 role: Developer

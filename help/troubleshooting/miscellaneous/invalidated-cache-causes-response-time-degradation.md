@@ -67,4 +67,4 @@ Normalmente, la caché se invalida debido a lo siguiente:
 ## Recomendación
 
 1. Evite vaciar la caché de la CLI de Commerce.
-1. Configure los indexadores a **Actualizar mediante programación** en lugar de **Actualizar en el modo de guardado** porque este último déclencheur la reindexación completa. Como referencia, consulte [Administrar los indexadores > Configurar indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) en nuestra documentación para desarrolladores.
+1. Configure los indexadores a **Actualizar mediante programación** en lugar de **Actualizar en el modo de guardado** porque este último déclencheur la reindexación completa. Como referencia, consulte [Administrar los indexadores > Configurar indexadores](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) en nuestra documentación para desarrolladores.

@@ -29,12 +29,12 @@ La organización de jerarquía correcta para sus ramas es:
 
 Para reorganizar las ramas de la nube:
 
-1. Debe tener el rol [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html).
+1. Debe tener el rol [[!DNL Super User]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=es).
 1. Instale la nube de Magento [!DNL CLI] (si aún no lo ha hecho).
 1. Ejecute el siguiente comando para las ramas que deben moverse:
    `magento-cloud environment:info -e <branch to move> parent <target parent>`
 
-Nota: Puede especificar la rama principal al crear una nueva rama. Para ver los pasos, consulte [Introducción a la creación de ramas](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) en nuestra documentación para desarrolladores.
+Nota: Puede especificar la rama principal al crear una nueva rama. Para ver los pasos, consulte [Introducción a la creación de ramas](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/cli-branches) en nuestra documentación para desarrolladores.
 
 Puede crear una nueva rama de entorno usando el comando de entorno de la nube de Magento `branch <environment-name> <parent-environment-ID>`.
 
@@ -42,4 +42,4 @@ Puede llevar algún tiempo adicional crear y activar una nueva rama de entorno.
 
 ## Lectura relacionada
 
-[Administre ramas con [!DNL CLI]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) en nuestra documentación para desarrolladores.
+[Administre ramas con [!DNL CLI]](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/cli-branches) en nuestra documentación para desarrolladores.

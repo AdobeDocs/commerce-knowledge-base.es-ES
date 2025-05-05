@@ -80,7 +80,7 @@ Para resolver la implementación bloqueada, actualice el archivo `routes.yaml` p
 
 1. СConfirme y envíe los cambios para volver a implementar el proyecto.
 
-Para obtener instrucciones detalladas sobre cómo actualizar la configuración de la ruta, consulta [Cloud for Adobe Commerce > Configure routes](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) en nuestra documentación para desarrolladores.
+Para obtener instrucciones detalladas sobre cómo actualizar la configuración de la ruta, consulta [Cloud for Adobe Commerce > Configure routes](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml) en nuestra documentación para desarrolladores.
 
 >[!NOTE]
 >

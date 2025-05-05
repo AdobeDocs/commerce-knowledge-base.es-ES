@@ -14,11 +14,11 @@ ht-degree: 0%
 # Retirada del Centro de ayuda de Adobe Commerce
 
 En nuestro recorrido por estar mejor conectados con la familia de soluciones de Adobe, Adobe Commerce ha migrado nuestro proceso de admisión de asistencia de Adobe Commerce Help Center a Adobe Experience League.
-El 29 de julio de 2024, el Centro de ayuda de Adobe Commerce pasó a estar en estado de solo lectura y todos los nuevos casos de soporte se envían ahora a través de [Adobe Experience League](https://experienceleague.adobe.com/).
+El 29 de julio de 2024, el Centro de ayuda de Adobe Commerce pasó a estar en estado de solo lectura y todos los nuevos casos de soporte se envían ahora a través de [Adobe Experience League](https://experienceleague.adobe.com/es).
 
 >[!NOTE]
 >
->**Use el flujo de formulario de caso de Experience League descrito [aquí](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) para enviar casos de soporte técnico.**
+>**Use el flujo de formulario de caso de Experience League descrito [aquí](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide?lang=en#what-is-experience-support) para enviar casos de soporte técnico.**
 
 ## Visualización de casos históricos en el Centro de ayuda de Adobe Commerce
 
@@ -34,4 +34,4 @@ Si desea revisar los casos de asistencia históricos creados en el Centro de ayu
 
 >[!NOTE]
 >
->La parte de Knowledge Base del Centro de ayuda de Adobe Commerce también ha migrado al [portal de Adobe Experience League](https://experienceleague.adobe.com/). Cuando cree un vale de soporte, se le sugerirán artículos de la Base de conocimiento relacionados, junto con otra documentación de Adobe Commerce relevante de Adobe Experience League.
+>La parte de Knowledge Base del Centro de ayuda de Adobe Commerce también ha migrado al [portal de Adobe Experience League](https://experienceleague.adobe.com/es). Cuando cree un vale de soporte, se le sugerirán artículos de la Base de conocimiento relacionados, junto con otra documentación de Adobe Commerce relevante de Adobe Experience League.

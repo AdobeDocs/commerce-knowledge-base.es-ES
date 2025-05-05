@@ -25,7 +25,7 @@ Utilice el siguiente parche adjunto:
 
 ## Cómo aplicar el parche
 
-1. Siga los pasos de [Realizar una actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html) en la guía de Commerce.
+1. Siga los pasos de [Realizar una actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=es) en la guía de Commerce.
 1. Aplicar el parche adjunto antes de la fase **[!UICONTROL Update metadata]**.
 (También puede aplicar el parche una vez que haya completado la fase **[!UICONTROL Update metadata]**, pero tendrá que ejecutar `bin/magento setup:upgrade` de nuevo).
-1. Continúe con el resto de los pasos de [Realizar una actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html).
+1. Continúe con el resto de los pasos de [Realizar una actualización](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/implementation/perform-upgrade.html?lang=es).

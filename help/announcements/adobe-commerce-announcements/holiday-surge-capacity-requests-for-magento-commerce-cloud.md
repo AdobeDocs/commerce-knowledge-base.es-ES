@@ -34,7 +34,7 @@ La siguiente información está disponible para cada solicitud de cambio de tama
 
 **Solicitando capacidad de sobretensión**
 
-Los comerciantes de Adobe Commerce en nuestra infraestructura en la nube que anticipen la necesidad de capacidad adicional durante la temporada de vacaciones deben [enviar un ticket de soporte de capacidad de Surge](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html) a través de nuestro [Centro de ayuda](/help/overview.md), indicando las fechas y las necesidades de capacidad esperadas dentro del ticket. Tenga en cuenta que el aumento de la capacidad requerirá el uso de la capacidad adicional con licencia.
+Los comerciantes de Adobe Commerce en nuestra infraestructura en la nube que anticipen la necesidad de capacidad adicional durante la temporada de vacaciones deben [enviar un ticket de soporte de capacidad de Surge](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-request-temporary-magento-upsize.html?lang=es) a través de nuestro [Centro de ayuda](/help/overview.md), indicando las fechas y las necesidades de capacidad esperadas dentro del ticket. Tenga en cuenta que el aumento de la capacidad requerirá el uso de la capacidad adicional con licencia.
 
 **Recomendamos enviar estos boletos al menos 48 horas hábiles antes de la fecha en que se necesita la capacidad; y además recomendamos que las solicitudes para el período Black Friday / Cyber Monday se realicen con la mayor anticipación posible, ya que la capacidad durante este período es limitada.**
 
@@ -47,7 +47,7 @@ Los comerciantes de Adobe Commerce en nuestra infraestructura en la nube que ant
 
 En nuestra base de conocimiento de soporte:
 
-* [Cálculo de asignación de CPU para Adobe Commerce en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html)
-* [Compruebe si se necesita convertir las instancias del host para Adobe Commerce en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html)
-* [Compruebe la configuración de CPU del host para Adobe Commerce en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html)
-* [Identificar y medir interrupciones para Adobe Commerce en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html)
+* [Cálculo de asignación de CPU para Adobe Commerce en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-cpu-allocation-calculation.html?lang=es)
+* [Compruebe si se necesita convertir las instancias del host para Adobe Commerce en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.html?lang=es)
+* [Compruebe la configuración de CPU del host para Adobe Commerce en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/magento-commerce-cloud-check-hosts-cpu-configuration.html?lang=es)
+* [Identificar y medir interrupciones para Adobe Commerce en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/how-to-identify-outages.html?lang=es)

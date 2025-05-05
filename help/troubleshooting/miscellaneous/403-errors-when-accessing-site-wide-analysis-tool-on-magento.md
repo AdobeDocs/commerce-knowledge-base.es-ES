@@ -79,4 +79,4 @@ Si todavía no puede acceder a la herramienta de análisis de todo el sitio, la 
 
 ## Lectura relacionada
 
-* [Guía de herramientas de análisis para todo el sitio](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html)
+* [Guía de herramientas de análisis para todo el sitio](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html?lang=es)

@@ -29,7 +29,7 @@ En este paso, definimos las direcciones URL seguras para la tienda. Si ya lo ha 
 1. Establece la configuración **Usar direcciones URL seguras en tienda** y **Usar direcciones URL seguras en administración** en **Sí**.    ![magento-admin_base-urls-secure-settings.png](assets/magento-admin_base-urls-secure-settings.png)
 1. Haga clic en **Guardar configuración** en la esquina superior derecha para aplicar los cambios.
 
-**Documentación relacionada en nuestra guía del usuario:**   [URL de la tienda](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/store-urls).
+**Documentación relacionada en nuestra guía del usuario:**   [URL de la tienda](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/site-store/store-urls).
 
 ### Paso 2: Habilitar Force TLS {#step-2-enable-force-tls}
 
