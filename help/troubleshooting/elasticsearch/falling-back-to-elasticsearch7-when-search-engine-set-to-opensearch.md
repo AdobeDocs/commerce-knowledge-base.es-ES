@@ -52,4 +52,4 @@ Actualice la variable `SEARCH_CONFIGURATION` en el archivo `.magento.env.yaml` y
 
 ## Lectura relacionada
 
-[Configure el servicio OpenSearch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) en la guía de Commerce en infraestructura de nube.
+[Configure el servicio OpenSearch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=es) en la guía de Commerce en infraestructura de nube.
