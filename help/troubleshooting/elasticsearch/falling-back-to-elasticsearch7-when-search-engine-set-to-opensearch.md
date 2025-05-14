@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución al problema cuando *Se vue
 feature: Search
 role: Developer
 exl-id: 965d2929-5cf0-4e0a-9eed-6a656daaa120
-source-git-commit: 6b8eecb3df0bb32344a5861a604a40402bb4d392
+source-git-commit: d17af0f8f92726aa5a6914fc9e1ff13268256d04
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '237'
 ht-degree: 0%
 
 ---
@@ -17,11 +17,13 @@ Este artículo proporciona una solución para el problema cuando se produce un e
 
 ## Versiones afectadas
 
-Adobe Commerce en infraestructura en la nube 2.4.4 - 2.4.5
+Adobe Commerce en la infraestructura en la nube
+2.4.4 - 2.4.4-p12
+2,4,5 - 2,4,5-p11
 
 >[!NOTE]
 >
->[!DNL OpenSearch] está disponible como motor de búsqueda a partir de Adobe Commerce 2.4.6.
+>[!DNL OpenSearch] está disponible como motor de búsqueda a partir de Adobe Commerce 2.4.6, 2.4.5-p12, 2.4.4-p13.
 
 ## Problema
 
@@ -50,4 +52,4 @@ Actualice la variable `SEARCH_CONFIGURATION` en el archivo `.magento.env.yaml` y
 
 ## Lectura relacionada
 
-[Configure el servicio OpenSearch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html?lang=es) en la guía de Commerce en infraestructura de nube.
+[Configure el servicio OpenSearch](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/service/opensearch.html) en la guía de Commerce en infraestructura de nube.
