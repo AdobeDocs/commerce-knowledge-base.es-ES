@@ -33,4 +33,4 @@ Los usuarios de [accounts.magento.cloud](https://accounts.magento.cloud/) pueden
 ## Lectura relacionada
 
 * [No se puede iniciar sesión en la asistencia de Adobe Commerce o en la cuenta de la nube](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
-* [El propietario de la cuenta MageID no puede iniciar sesión y enviar un ticket de asistencia](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25231)
+* [El propietario de la cuenta MageID no puede iniciar sesión y enviar un ticket de asistencia](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-25231)
