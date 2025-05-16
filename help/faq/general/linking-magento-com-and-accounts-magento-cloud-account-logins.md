@@ -3,9 +3,9 @@ title: Vínculo Magento.com e inicios de sesión en la cuenta de accounts.magent
 description: A partir del 1 de abril de 2020, Adobe Commerce requerirá que los usuarios que tengan una cuenta en [accounts.magento.cloud](https://accounts.magento.cloud/) vinculen esta cuenta con su cuenta de [Magento.com](https://account.magento.com/customer/account/login/). Esto hará que el inicio de sesión en la cuenta de [Magento.com](https://account.magento.com/customer/account/login/) sea el método de inicio de sesión principal para ambas cuentas y mejorará la seguridad de los usuarios.
 exl-id: 89afec50-bc21-46cd-8440-2bcf717ded69
 feature: Cloud
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 74b04ca74330037252334c288b15d8412d00d253
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '223'
 ht-degree: 0%
 
 ---
@@ -33,3 +33,4 @@ Los usuarios de [accounts.magento.cloud](https://accounts.magento.cloud/) pueden
 ## Lectura relacionada
 
 * [No se puede iniciar sesión en la asistencia de Adobe Commerce o en la cuenta de la nube](/help/troubleshooting/miscellaneous/unable-to-log-in-to-support-or-cloud-project.md)
+* [El propietario de la cuenta MageID no puede iniciar sesión y enviar un ticket de asistencia](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-25231)
