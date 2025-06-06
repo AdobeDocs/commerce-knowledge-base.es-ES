@@ -2,7 +2,7 @@
 title: Restaurar una instantánea de base de datos desde Ensayo o Producción
 description: Este artículo muestra cómo restaurar una instantánea de la base de datos desde Ensayo o Producción en Adobe Commerce en la infraestructura en la nube.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: 20aaeacc4f71725c005e7bec3b9d6ac3aa844170
+source-git-commit: 3d75b53dd290731380b2da33e3c0a1f746b9275b
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%
@@ -51,7 +51,7 @@ Estos son los pasos:
    cd /mnt/shared/<cluster ID/ | cd /mnt/shared/<cluster ID_stg>
    gunzip all-databases.sql.gz 
    head -n 17 all-databases.sql > <cluster ID_stg>.sql
-   sed -n '/^-- Current Database: `wyf2o4zlrljjs`/,/^-- Current Database: `/p' all-databases.sql >> <cluster ID_stg>.sql 
+   sed -n '/^-- Current Database: <cluster ID_stg>/,/^-- Current Database: `/p' all-databases.sql >> <cluster ID_stg>.sql 
    gzip <cluster ID_stg>.sql  
    zcat <cluster ID_stg>.sql.gz | \
    sed -e 's/DEFINER[ ]*=[ ]*[^*]*\*/\*/' | \
@@ -62,7 +62,7 @@ Estos son los pasos:
    ```
 
 1. Copie la base de datos [!DNL dump file] (por ejemplo: `<cluster ID>.sql.gz` para [!DNL Production] o `<cluster ID_stg>.sql.gz` para [!DNL Staging]) en el equipo local.
-1. Asegúrese de haber configurado [!DNL SSH tunnel] para que se conecte de forma remota a la base de datos: [[!DNL SSH] y [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) en nuestra documentación para desarrolladores.
+1. Asegúrese de haber configurado [!DNL SSH tunnel] para que se conecte de forma remota a la base de datos: [[!DNL SSH] y [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) en nuestra documentación para desarrolladores.
 1. Conéctese a la base de datos.
 
    ```sql
@@ -158,6 +158,6 @@ Estos son los pasos:
 
 En nuestra documentación para desarrolladores:
 
-* [Importar código: importe la base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots] y [!DNL backup] administración: [!DNL Dump] su base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Copia de seguridad (instantánea) en la nube: FAQ](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [Importar código: importe la base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots] y [!DNL backup] administración: [!DNL Dump] su base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Copia de seguridad (instantánea) en la nube: FAQ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
