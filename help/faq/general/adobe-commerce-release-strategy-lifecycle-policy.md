@@ -1,9 +1,9 @@
 ---
 title: Preguntas frecuentes sobre la estrategia de versión de Adobe Commerce de 2024 y 2023 y la política de ciclo de vida
-description: Para satisfacer las necesidades esenciales de los clientes de Adobe Commerce, estamos ampliando nuestra ventana de asistencia para Adobe Commerce 2.4.4 y versiones posteriores a **3 años a partir de la versión [!DNL GA] date**. La compatibilidad incluye **parches de seguridad y de calidad**. Consulte nuestro nuevo [calendario de versiones](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=es) para obtener más información sobre el calendario.
+description: Para satisfacer las necesidades esenciales de los clientes de Adobe Commerce, estamos ampliando nuestra ventana de asistencia para Adobe Commerce 2.4.4 y versiones posteriores a **3 años a partir de la versión [!DNL GA] date**. La compatibilidad incluye **parches de seguridad y de calidad**. Consulte nuestro nuevo [calendario de versiones](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) para obtener más información sobre el calendario.
 exl-id: f2bfd79c-9766-4a82-a65c-bf66b80bd34a
 feature: Compliance
-source-git-commit: 216e3c6c7f4db605b39ef365356bc18c76ea034e
+source-git-commit: 68587ca3e861ef326e006a7ab086d197f37ae9b3
 workflow-type: tm+mt
 source-wordcount: '1206'
 ht-degree: 0%
@@ -28,7 +28,7 @@ La [Política de ciclo de vida del software de Adobe Commerce](https://www.adobe
 
 ### ¿Cuándo llegarán los clientes de las versiones 2.4.4, 2.4.5, 2.4.6 y 2.4.7 al final de la asistencia técnica según esta nueva política?
 
-Los clientes de Adobe Commerce 2.4.4+ recibirán correcciones de seguridad y calidad durante 3 años a partir de la fecha de la versión [!DNL GA], como se muestra en la cronología a continuación. Consulte la página [Versiones publicadas](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html?lang=es) en [!DNL Experience League] para ver las fechas específicas de finalización de la compatibilidad.
+Los clientes de Adobe Commerce 2.4.4+ recibirán correcciones de seguridad y calidad durante 3 años a partir de la fecha de la versión [!DNL GA], como se muestra en la cronología a continuación. Consulte la página [Versiones publicadas](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) en [!DNL Experience League] para ver las fechas específicas de finalización de la compatibilidad.
 
 ![Gráfico 1](assets/MSKB-1978-1.jpg)
 
@@ -38,20 +38,20 @@ Para acelerar la innovación y reducir el costo total de propiedad, se lanzará 
 
 ### ¿Cómo beneficia a los clientes el nuevo programa de versiones?
 
-La entrega de nuevas funciones como servicios de [!DNL SaaS] maquetables proporciona a los clientes un acceso más rápido a las nuevas herramientas que pueden ayudar a aumentar sus ventas. La funcionalidad se puede adoptar en cualquier momento sin tener que actualizar la aplicación principal de Adobe Commerce. Además, estos servicios se pueden actualizar continuamente según el Adobe para ofrecer los últimos avances en funcionalidad y rendimiento. Disponer de un parche de aplicación principal al año ayuda a reducir los costes de actualización, facilita la planificación de las actualizaciones y proporciona más tiempo para personalizar y optimizar la experiencia comercial. Parches de seguridad ligeros adicionales que ayudan a los clientes a estar más seguros.
+La entrega de nuevas funciones como servicios de [!DNL SaaS] maquetables proporciona a los clientes un acceso más rápido a las nuevas herramientas que pueden ayudar a aumentar sus ventas. La funcionalidad se puede adoptar en cualquier momento sin tener que actualizar la aplicación principal de Adobe Commerce. Además, Adobe puede actualizar continuamente estos servicios para ofrecer los últimos avances en funcionalidad y rendimiento. Disponer de un parche de aplicación principal al año ayuda a reducir los costes de actualización, facilita la planificación de las actualizaciones y proporciona más tiempo para personalizar y optimizar la experiencia comercial. Parches de seguridad ligeros adicionales que ayudan a los clientes a estar más seguros.
 
 ### ¿Qué es el acceso previo al lanzamiento?
 
 En 2023, los clientes podrán acceder a las versiones de parches de Adobe Commerce aproximadamente dos semanas antes de la disponibilidad general.
 
-A partir de 2024, Adobe ya no proporciona acceso previo al lanzamiento a los parches. En su lugar, para 2.4.7 y versiones posteriores, los clientes pueden utilizar [versiones beta](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html?lang=es) para acceder al código de disponibilidad general previo con fines de prueba y desarrollo. El acceso previo al lanzamiento sigue estando programado para las siguientes versiones de 2023:
+A partir de 2024, Adobe ya no proporciona acceso previo al lanzamiento a los parches. En su lugar, para 2.4.7 y versiones posteriores, los clientes pueden utilizar [versiones beta](https://experienceleague.adobe.com/docs/commerce-operations/release/beta.html) para acceder al código de disponibilidad general previo con fines de prueba y desarrollo. El acceso previo al lanzamiento sigue estando programado para las siguientes versiones de 2023:
 
 * El acceso previo al lanzamiento del 8 de agosto de 2023 es el 25 de julio de 2023
 * El acceso previo al lanzamiento del 10 de octubre de 2023 es el 26 de septiembre de 2023
 
 ### ¿Dónde se publica la programación de versiones de Adobe Commerce?
 
-Consulte la [programación de versiones de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html?lang=es) del [!DNL Experience League] para obtener más detalles.
+Consulte la [programación de versiones de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) del [!DNL Experience League] para obtener más detalles.
 
 ### ¿Cuáles son los diferentes tipos de versiones incluidas en la programación?
 
@@ -62,11 +62,11 @@ Consulte la [programación de versiones de Adobe Commerce](https://experiencelea
 
 ### ¿Dónde van los clientes para conseguir parches de calidad?
 
-Los parches de calidad son una forma de distribuir correcciones para problemas de calidad individuales. Los clientes pueden ponerse en contacto con el Soporte de Adobe o usar [[!DNL Quality Patch Tool]](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/announcements/commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.html?lang=es) para buscar parches de calidad.
+Los parches de calidad son una forma de distribuir correcciones para problemas de calidad individuales. Los clientes pueden ponerse en contacto con el soporte técnico de Adobe o usar [[!DNL Quality Patch Tool]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) para buscar parches de calidad.
 
 ### ¿Qué recursos están disponibles para ayudar con la planificación, el presupuesto y las actualizaciones en general?
 
-Los recursos disponibles incluyen una guía de actualización 2.4 completa, la grabación del taller de actualización técnica y [!DNL Upgrade Compatibility Tool]. Encontrará una lista completa de recursos en [Experience League](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html?lang=es).
+Los recursos disponibles incluyen una guía de actualización 2.4 completa, la grabación del taller de actualización técnica y [!DNL Upgrade Compatibility Tool]. Encontrará una lista completa de recursos en [Experience League](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/resources/recommended-reading.html).
 
 ### Como cliente de Managed Services, ¿cómo puede ayudarme el departamento de ingeniería de clientes en la actualización a la versión 2.4.4+?
 
@@ -191,7 +191,7 @@ Estos planes incluyen parches de calidad y seguridad para la aplicación princip
 
 Con un soporte ampliado, nuestro equipo de ingeniería de clientes seguirá proporcionando los mismos parches de calidad y seguridad que siempre, sin degradaciones del ámbito. Sin embargo, los clientes deberán tomar medidas adicionales para seguir siendo compatibles con [!DNL PCI] si las tecnologías de terceros subyacentes, como [!DNL MariaDB], llegan al final de la compatibilidad.
 
-El Adobe de no proporciona soporte para tecnologías de terceros que han llegado al final de la asistencia. El Adobe recomienda que los clientes trabajen con su [[!DNL PCI] asesor](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/) para garantizar el cumplimiento. Consulte [Requisitos del sistema de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements) para obtener una lista completa de las tecnologías de terceros probadas y admitidas.
+Adobe no proporciona soporte para tecnologías de terceros que han llegado al final de la asistencia. Adobe recomienda que los clientes trabajen con su [[!DNL PCI] asesor](https://www.pcisecuritystandards.org/assessors_and_solutions/qualified_security_assessors/) para garantizar el cumplimiento. Consulte [Requisitos del sistema de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements) para obtener una lista completa de las tecnologías de terceros probadas y admitidas.
 
 <table style="height: 444px; width: 632.2px;">
 <tbody>
@@ -225,7 +225,7 @@ El Adobe de no proporciona soporte para tecnologías de terceros que han llegado
 </tbody>
 </table>
 
-* Los clientes de la nube <sup>1</sup> Adobe Commerce 2.4.4 y 2.4.5 no se verán afectados por la fecha de EOS de [!DNL PHP] 8.1 durante la ampliación de la compatibilidad, ya que el Adobe aplicará automáticamente correcciones de seguridad de duración de la compatibilidad [!DNL PHP] 8.1 en su infraestructura. Los clientes locales de Adobe Commerce 2.4.4 y 2.4.5 deberán ponerse en contacto con el servicio de asistencia de Adobe para solicitar un parche de seguridad de soporte de duración de [!DNL PHP] 8.1, si es necesario.
+* Los clientes de la nube <sup>1</sup> Adobe Commerce 2.4.4 y 2.4.5 no se verán afectados por la fecha de EOS de [!DNL PHP] 8.1 durante la ampliación de la compatibilidad, ya que Adobe aplicará automáticamente correcciones de seguridad de duración de la compatibilidad [!DNL PHP] 8.1 en su infraestructura. Los clientes locales de Adobe Commerce 2.4.4 y 2.4.5 deberán ponerse en contacto con el servicio de asistencia de Adobe para solicitar un parche de seguridad de soporte de duración de [!DNL PHP] 8.1, si es necesario.
 * La compatibilidad de <sup>2</sup> con [!DNL MariaDB] 10.6 para Adobe Commerce 2.4.4 y 2.4.5 está planificada para su publicación en el ámbito de los parches solo de seguridad de abril de 2025.
 * La compatibilidad de <sup>3</sup> con [!DNL Composer] 2.8 para Adobe Commerce 2.4.4 y 2.4.5 está planificada para su publicación en el ámbito de los parches solo de seguridad de abril de 2025.
 * La compatibilidad de <sup>4</sup> con [!DNL OpenSearch] 2 para Adobe Commerce 2.4.4 y 2.4.5 está planificada para su publicación en el ámbito de los parches de seguridad solo de abril de 2025.
