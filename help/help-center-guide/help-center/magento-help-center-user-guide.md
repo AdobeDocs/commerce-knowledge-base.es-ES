@@ -75,7 +75,7 @@ El inicio de sesión le permite enviar, actualizar y responder a preguntas de lo
 
 Para iniciar sesión en la asistencia de Adobe Experience League, siga estos pasos:
 
-1. Vaya a [experienceLeague.adobe.com](https://experienceleague.adobe.com/).
+1. Vaya a [experienceLeague.adobe.com](https://experienceleague.adobe.com/es).
 1. Inicie sesión con sus credenciales de inicio de sesión de Adobe.
 
 ![iniciar sesión en experience-league](assets/experience_league_sign_in.png)
