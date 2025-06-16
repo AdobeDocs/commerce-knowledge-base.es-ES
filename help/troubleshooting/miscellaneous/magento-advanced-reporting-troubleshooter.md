@@ -4,9 +4,9 @@ description: Los problemas de informes avanzados en Adobe Commerce se pueden res
 exl-id: 7ef9870c-b6b6-4144-a5a7-81aa20a1606c
 feature: Cache, Support
 role: Developer
-source-git-commit: 207fd4cd11f76a5076e98cda8b6776b2d68ef937
+source-git-commit: 842c329b5d8bacf72ac689412fde5a5d76d16e85
 workflow-type: tm+mt
-source-wordcount: '1017'
+source-wordcount: '1018'
 ht-degree: 0%
 
 ---
@@ -19,10 +19,10 @@ Los problemas de informes avanzados en Adobe Commerce se pueden resolver con est
 
 +++**¿Cumple su sitio web con los requisitos de informes avanzados?**
 
-Tiene una página de error 404 al usar Informes avanzados. ¿Cumple su sitio web con los [requisitos avanzados de informes](https://experienceleague.adobe.com/es/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements)?
+Tiene una página de error 404 al usar Informes avanzados. ¿Cumple su sitio web con los [requisitos avanzados de informes](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements)?
 
 a. SÍ - Continúe con [Paso 2](#step-2).\
-b. NO: complete los requisitos de informes avanzados para su sitio siguiendo los pasos de [Requisitos de informes avanzados](https://experienceleague.adobe.com/es/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements). A continuación, continúe con [Paso 2](#step-2).
+b. NO: complete los requisitos de informes avanzados para su sitio siguiendo los pasos de [Requisitos de informes avanzados](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#requirements). A continuación, continúe con [Paso 2](#step-2).
 
 +++
 
@@ -44,7 +44,7 @@ Si alguna vez se han utilizado varias monedas base, no puede utilizar el sistema
 
 +++**¿Está usando la solución de base de datos dividida?**
 
-¿Está usando [solución de base de datos dividida](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/storage/split-db/multi-master)?
+¿Está usando [solución de base de datos dividida](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/storage/split-db/multi-master)?
 
 a. SÍ: use el parche **MDVA-26831** en el error de Advanced Reporting 404 en la solución de base de datos dividida y borre la caché. Espere 24 horas para que el trabajo se vuelva a ejecutar e inténtelo de nuevo.\
 b. NO - Continúe con [Paso 4](#step-4).
@@ -55,10 +55,10 @@ b. NO - Continúe con [Paso 4](#step-4).
 
 +++**¿Se han habilitado los informes avanzados?**
 
-Compruebe **Administración** > **Tiendas** > **Configuración** > **Configuración** > **General** > **Informes avanzados**. Para ver los pasos detallados, consulte [Informes avanzados: habilitar los informes avanzados](https://experienceleague.adobe.com/es/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting).
+Compruebe **Administración** > **Tiendas** > **Configuración** > **Configuración** > **General** > **Informes avanzados**. Para ver los pasos detallados, consulte [Informes avanzados: habilitar los informes avanzados](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting).
 
 a. SÍ - Continúe con [Paso 5](#step-5).\
-b. NO - [Habilitar informes avanzados](https://experienceleague.adobe.com/es/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting), guardar y esperar 24 horas a que se sincronicen Adobe Commerce y los informes avanzados. Compruebe si los datos ahora se cargan. Si es así, ha resuelto el problema. Si no continúa con [Paso 5](#step-5).
+b. NO - [Habilitar informes avanzados](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting), guardar y esperar 24 horas a que se sincronicen Adobe Commerce y los informes avanzados. Compruebe si los datos ahora se cargan. Si es así, ha resuelto el problema. Si no continúa con [Paso 5](#step-5).
 
 +++
 
@@ -81,9 +81,9 @@ Compruebe el valor del contador en la tabla de indicadores ejecutando esta consu
 
 a. SÍ - Realice los siguientes pasos: 1. Ejecute la siguiente consulta:\
 ``DELETE from `flag` where `flag_code` = 'analytics_link_subscription_update_reverse_counter';``\
-2\. [Deshabilitar y habilitar el módulo de informes avanzados](https://experienceleague.adobe.com/es/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) en la configuración y [volver a autorizar el token](https://experienceleague.adobe.com/es/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
+2\. [Deshabilitar y habilitar el módulo de informes avanzados](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) en la configuración y [volver a autorizar el token](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 3\. Espere 24 horas para que Adobe Commerce y los informes avanzados se sincronicen. Si todavía no puedes ver los datos en los informes avanzados, [envía un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
-b. NO: si la consulta no devuelve nada, realice los siguientes pasos: 1. [Deshabilitar y habilitar el módulo de informes avanzados](https://experienceleague.adobe.com/es/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) en la configuración y [volver a autorizar el token](https://experienceleague.adobe.com/es/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
+b. NO: si la consulta no devuelve nada, realice los siguientes pasos: 1. [Deshabilitar y habilitar el módulo de informes avanzados](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#step-1-enable-advanced-reporting) en la configuración y [volver a autorizar el token](https://experienceleague.adobe.com/en/docs/commerce-admin/start/reporting/business-intelligence#advanced-reporting#verify-that-the-integration-is-active).\
 2\. Espere 24 horas para que Adobe Commerce y los informes avanzados se sincronicen. Si todavía no puedes ver los datos en los informes avanzados, [envía un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
 
 +++
@@ -145,7 +145,7 @@ b. NO - Continúe con [Paso 10](#step-10).
 
 Ejemplo: en la tabla `cron_schedule` se ve el error *El archivo &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 no se puede eliminar*. Advertencia!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=en): No existe ese archivo o directorio*
 
-a. SÍ - Usar el parche ACSD-50165 en [No se puede eliminar el archivo. Advertencia: no existe el error de archivo o directorio del administrador ](/help/troubleshooting/miscellaneous/file-cannot-be-deleated-no-file-or-directory.md). Espere 24 horas a que el trabajo se ejecute de nuevo y vuelva a intentarlo.\
+a. SÍ - Usar el parche ACSD-50165 en [No se puede eliminar el archivo. Advertencia: no existe el error de archivo o directorio del administrador ](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26887). Espere 24 horas a que el trabajo se ejecute de nuevo y vuelva a intentarlo.\
 b. NO - Continúe con [Paso 11](#step-11).
 
 +++
@@ -165,4 +165,4 @@ b. NO - [enviar un ticket de asistencia](/help/help-center-guide/help-center/mag
 
 ## Lectura relacionada
 
-[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
