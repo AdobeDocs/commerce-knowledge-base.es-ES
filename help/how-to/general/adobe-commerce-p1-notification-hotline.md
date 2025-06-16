@@ -3,7 +3,7 @@ title: Línea directa de notificaciones P1 de Adobe Commerce
 description: En este artículo se proporcionan los números de línea directa de notificaciones P1 de Adobe Commerce que se pueden utilizar cuando se intenta informar de un incidente P1, y se explica qué información se debe proporcionar.
 feature: Communications
 exl-id: 48c4fe93-676e-4c69-a96c-8fb3e6872973
-source-git-commit: 8c0c128f2469086c44dcea0e9edc87f934578a69
+source-git-commit: bbff778a020a05953b82b452cdede7c46f20c990
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
@@ -21,7 +21,7 @@ Según se define en [Términos y condiciones de los servicios de soporte de Adob
 ## Políticas telefónicas de la línea directa de notificación P1
 
 * La línea directa de notificaciones P1 está disponible para informar sobre problemas de nivel P1. (consulte la definición de incidente P1 en la sección anterior).
-* [Envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) antes de llamar a la línea directa de notificaciones P1 de Adobe Commerce.
+* [Envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) antes de llamar a la línea directa de notificaciones P1 de Adobe Commerce.
 * La investigación, la resolución de problemas y la comunicación se realizarán exclusivamente dentro del ticket de asistencia.
 * Añada toda la información adicional que pueda tener relacionada con el problema al ticket directamente, antes de llamar a.
 * Al llamar, asegúrese de tener el número de billete.
@@ -32,7 +32,7 @@ Según se define en [Términos y condiciones de los servicios de soporte de Adob
 Nota: Si llega al buzón de voz por cualquier motivo, deje su información: Nombre completo, Empresa, Número de teléfono y Número de entrada. Las líneas están monitorizadas y un ingeniero le devolverá la llamada lo antes posible.
 
 * US
-   * Llamada gratuita: (+1) 800 497 0335 (en el primer menú, presione 6 para la línea directa Adobe Commerce P1)
+   * Llamada gratuita: (+1) 800 497 0335 (en el primer menú, presione 3 para la línea directa Adobe Commerce P1)
 * EMEA
    * Reino Unido: (+44) 800 169 0454 (en el primer menú, presione 6 para la línea directa Adobe Commerce P1)
    * Dinamarca: (+45) 80206017 (en el primer menú, presione 6 para la línea directa Adobe Commerce P1)
