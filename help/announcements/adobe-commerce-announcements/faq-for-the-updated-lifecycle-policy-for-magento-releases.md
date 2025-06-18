@@ -1,12 +1,12 @@
 ---
 title: Preguntas más frecuentes sobre la directiva de ciclo vital actualizada para las versiones de Adobe Commerce
-description: '"Adobe Commerce proporciona correcciones de calidad para una versión menor durante un mínimo de 12 meses a partir de la fecha de disponibilidad general de la próxima versión menor del software. La manera en que proporcionamos correcciones de calidad durante este período está cambiando:'''
+description: 'Adobe Commerce proporciona correcciones de calidad para una versión menor durante un mínimo de 12 meses a partir de la fecha de disponibilidad general de la próxima versión menor del software. La forma en que proporcionamos correcciones de calidad durante este período está cambiando:'
 exl-id: 4aa601d0-ee1d-4f1f-a684-188772a58dd1
 feature: Compliance, Support
 role: Admin
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 2898089896cc2cdc88110a999564669341a52136
 workflow-type: tm+mt
-source-wordcount: '1176'
+source-wordcount: '1179'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 0%
 Adobe Commerce proporciona correcciones de calidad para una versión menor durante un mínimo de 12 meses a partir de la fecha de disponibilidad general de la próxima versión menor del software. La forma en que proporcionamos correcciones de calidad durante este período está cambiando:
 
 * **Directiva anterior:** Actualmente las correcciones de calidad a la línea anterior que se encuentra en la ventana EOS de 12 meses se entregan a través de nuestra versión trimestral de parches, por lo tanto, haciendo que los parches trimestrales sean una combinación de seguridad + calidad.
-* **Nueva directiva:** A partir de 2.4 como línea de versión secundaria más actual, las revisiones de la versión de la línea compatible anterior (2.3) pasarán a ser de solo seguridad. Seguiremos ofreciendo correcciones de calidad para la línea compatible anterior durante los 12 meses posteriores al lanzamiento de una versión menor (como 2.4) y las nuevas líneas de versión secundarias subsiguientes; pero estarán disponibles a través de la [Herramienta de parches de calidad (QPT)](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) y se centrarán únicamente en los problemas críticos.
+* **Nueva directiva:** A partir de 2.4 como línea de versión secundaria más actual, las revisiones de la versión de la línea compatible anterior (2.3) pasarán a ser de solo seguridad. Seguiremos ofreciendo correcciones de calidad para la línea compatible anterior durante los 12 meses posteriores al lanzamiento de una versión menor (como 2.4) y las nuevas líneas de versión secundarias subsiguientes; pero estarán disponibles a través de la [Herramienta de parches de calidad (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) y se centrarán únicamente en los problemas críticos.
 
 ## ¿Cuándo entra en vigor esta política?
 
@@ -34,11 +34,11 @@ Las versiones solo de seguridad contienen correcciones de seguridad únicamente 
 
 ## ¿Seguirá habiendo una versión de solo seguridad para la última línea (a partir de la publicación, 2.4)?
 
-Adobe también seguirá teniendo versiones de solo seguridad para la línea de versiones más reciente. El proceso para estos se describe en [Presentación de la nueva publicación de parches de solo seguridad](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287) publicación DevBlog.
+Adobe también seguirá teniendo versiones de solo seguridad para la línea de la última versión. El proceso para estos se describe en [Presentación de la nueva publicación de parches de solo seguridad](https://community.magento.com/t5/Magento-DevBlog/Introducing-the-New-Security-only-Patch-Release/ba-p/141287) publicación DevBlog.
 
 ## ¿Qué es la herramienta Parches de calidad?
 
-Consulte el artículo [Herramienta de parches de calidad lanzada: una nueva herramienta para aplicar parches de calidad de forma automática](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md) en nuestra base de conocimiento de asistencia.
+Consulte el artículo [Herramienta de parches de calidad lanzada: una nueva herramienta para aplicar parches de calidad de forma automática](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) en nuestra base de conocimiento de asistencia.
 
 ## ¿Quién debe considerar la posibilidad de utilizar esta nueva directiva?
 
@@ -50,7 +50,7 @@ En última instancia, todos los comerciantes deben priorizar la planificación p
 
 ## ¿Cómo obtendré correcciones de calidad en versiones menores compatibles que no sean la última línea?
 
-Las correcciones estarán disponibles a través de la [herramienta Parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md).
+Las correcciones estarán disponibles a través de la [herramienta Parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patche).
 
 ## ¿Cómo obtendré correcciones de calidad en la última línea?
 
@@ -62,7 +62,7 @@ Solo los problemas de calidad importantes que rompan los flujos principales se s
 
 ## ¿Alguna corrección de calidad formará parte de la versión trimestral en versiones menores compatibles que no sean la última línea?
 
-Sí, como parte de la línea de solo seguridad, lanzamos lo que el Adobe llama &quot;correcciones rápidas&quot; a esa línea; se trata de problemas muy críticos que afectan a la aplicación de Adobe Commerce.
+Sí, como parte de la línea de solo seguridad, lanzamos lo que Adobe llama &quot;correcciones rápidas&quot; a esa línea; se trata de problemas muy críticos que afectan a la aplicación de Adobe Commerce.
 
 ## ¿Se ofrecerán al mismo tiempo mejoras de seguridad y QPT?
 
@@ -72,7 +72,7 @@ La línea de solo seguridad seguirá el calendario de versiones trimestrales y s
 
 La línea anterior es solo de seguridad, lo que significa que el principal beneficio es mantenerse seguro. Solo los parches para problemas importantes que rompan los flujos principales estarán disponibles a través de QPT.
 
-Los problemas que no afecten a los flujos principales o que tengan soluciones alternativas solo se solucionarán en la línea más reciente. El Adobe anima a aquellos que desean correcciones críticas y no críticas a pasar a la línea más reciente.
+Los problemas que no afecten a los flujos principales o que tengan soluciones alternativas solo se solucionarán en la línea más reciente. Adobe anima a aquellos que desean correcciones críticas y no críticas a pasar a la línea más reciente.
 
 ## ¿Las actualizaciones serán más costosas o difíciles para los comerciantes si permanecen en la línea de solo seguridad hasta que llegue al final de la asistencia de seguridad?
 

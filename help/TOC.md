@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 2ed731574bb25c31d0fcb800fcf8f98b85ff0bc2
+source-git-commit: 51f693c29781029adc0f3d6214d7f784b873998b
 workflow-type: tm+mt
-source-wordcount: '3459'
+source-wordcount: '3449'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,6 @@ ht-degree: 0%
       * [Preguntas más frecuentes sobre la directiva de ciclo vital actualizada para las versiones de Adobe Commerce](/help/announcements/adobe-commerce-announcements/faq-for-the-updated-lifecycle-policy-for-magento-releases.md)
       * [Cambio a OpenSearch para Adobe Commerce en la nube 2.4.4](/help/announcements/adobe-commerce-announcements/switching-to-opensearch-for-adobe-commerce-on-cloud-2-4-4.md)
       * [Adobe Commerce Recommendations para vulnerabilidades de PHP](/help/announcements/adobe-commerce-announcements/magento-recommendations-for-php-vulnerabilities.md)
-      * [Lanzamiento de la herramienta Parches de calidad: nueva herramienta para autogestionar parches de calidad](/help/announcements/adobe-commerce-announcements/magento-quality-patches-released-new-tool-to-self-serve-quality-patches.md)
       * [El motor de búsqueda del catálogo MySQL se eliminará en Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
       * [Adobe admite el acceso a los datos de los clientes y la privacidad](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
       * [API de UPS obsoletas](/help/announcements/adobe-commerce-announcements/ups-apis-deprecated.md)
