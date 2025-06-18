@@ -4,9 +4,9 @@ description: Obtenga información sobre cómo solucionar los distintos problemas
 exl-id: 35e18a11-bda9-47eb-924a-1095f4f01017
 feature: Compliance, Security
 role: Developer
-source-git-commit: 525352027bfa4a8728bdbbfe61af3dca5dbb18f9
+source-git-commit: c6e338fb33477ab107fe4de382b485339b57275a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '909'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Obtenga información sobre cómo solucionar los distintos problemas con la herra
 
 ## Problema: No se puede enviar el sitio
 
-La herramienta de análisis de seguridad requiere que pruebe que es el propietario del sitio antes de que se pueda agregar el dominio a la herramienta de análisis de seguridad. Para ello, agregue un código de confirmación al sitio mediante un comentario del HTML o la etiqueta `<meta>`. El comentario del HTML debe colocarse dentro de la etiqueta `<body>`, p. ej., en la sección de pie de página. La etiqueta `<meta>` debe colocarse dentro de la sección `<head>` de la página.
+La herramienta de análisis de seguridad requiere que pruebe que es el propietario del sitio antes de que se pueda agregar el dominio a la herramienta de análisis de seguridad. Para ello, agregue un código de confirmación al sitio mediante un comentario de HTML o la etiqueta `<meta>`. El comentario de HTML debe colocarse dentro de la etiqueta `<body>`, p. ej., en la sección de pie de página. La etiqueta `<meta>` debe colocarse dentro de la sección `<head>` de la página.
 
 Un problema habitual que enfrentan los comerciantes se produce cuando Security Scan Tool no puede confirmar la propiedad del sitio del comerciante.
 
@@ -25,7 +25,7 @@ Si recibe un error y no puede enviar su sitio para el análisis, consulte el [me
 
 ## Problema: Informes vacíos generados por la herramienta de análisis de seguridad
 
-Obtendrá informes de análisis vacíos de la herramienta de análisis de seguridad o informes que contengan solo un error, como *La herramienta de seguridad no pudo llegar a la URL base* o *No se encontró la instalación del Magento en la URL proporcionada*.
+Obtendrá informes de análisis vacíos de la herramienta de análisis de seguridad o informes que contengan solo un error, como *La herramienta de seguridad no pudo llegar a la URL base* o *No se encontró la instalación de Magento en la URL proporcionada*.
 
 ### Solución
 
@@ -57,7 +57,7 @@ Los siguientes estados podrían aparecer en las comprobaciones:
 
 1. **Paso**: la herramienta de exploración de seguridad ha analizado los datos actualizados y aprobado los cambios.
 1. **Desconocido**: la herramienta de exploración de seguridad aún no tiene datos sobre su dominio. Espere al siguiente ciclo de sincronización.
-1. **Error**: si el estado muestra error, deberá corregir el problema (habilite 2FA, cambie la dirección URL de administración, etc.) y espere al siguiente ciclo de sincronización.
+1. **Error**: Si el estado muestra error, deberá corregir el problema (habilitar 2FA, cambiar la dirección URL de administración, etc.) y esperar al siguiente ciclo de sincronización.
 
 Si han transcurrido 24 horas desde que se realizaron los cambios en la instancia y no se reflejan en el informe de análisis de seguridad, puede [enviar un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket). Proporcione la dirección URL de la tienda al enviar el ticket.
 
@@ -76,7 +76,7 @@ Recibirá una notificación con respecto al error &quot;Sospechoso de BotNet&quo
 
 1. Compruebe las cuentas SSH recién creadas, los cambios en el sistema de archivos, etc.
 1. Realice una revisión de seguridad.
-1. Compruebe la versión y actualización de Adobe Commerce, especialmente si sigue ejecutando el Magento 1, que ya no es compatible.
+1. Compruebe la versión y actualización de Adobe Commerce, especialmente si aún ejecuta Magento 1, que ya no es compatible.
 1. Si el problema continúa, [envíe un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) y proporcione la dirección URL de la tienda.
 
 ## Problema: Error de inyección de compromiso
@@ -104,7 +104,7 @@ Puede generar los 10 informes anteriores desde su extremo. Si se requieren infor
 
 ### ¿Qué información se necesita al enviar un ticket de asistencia?
 
-Asegúrese de proporcionar el nombre de dominio.
+Proporcione el nombre de dominio exactamente como se envió para el [examen de seguridad](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID y el ID_de_proyecto de nube. Tenga en cuenta que el identificador de proyecto de Cloud no es necesario para Adobe Commerce local.
 
 ### ¿Qué sucede si elimino mi almacén del análisis de la herramienta de exploración?
 
