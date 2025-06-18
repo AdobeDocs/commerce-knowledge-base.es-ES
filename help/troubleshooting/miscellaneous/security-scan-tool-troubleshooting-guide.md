@@ -104,7 +104,7 @@ Puede generar los 10 informes anteriores desde su extremo. Si se requieren infor
 
 ### ¿Qué información se necesita al enviar un ticket de asistencia?
 
-Proporcione el nombre de dominio exactamente como se envió para el [examen de seguridad](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID y el ID_de_proyecto de nube. Tenga en cuenta que el identificador de proyecto de Cloud no es necesario para Adobe Commerce local.
+Proporcione el nombre de dominio exactamente como se envió para el [examen de seguridad](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID y el ID_de_proyecto de nube. Tenga en cuenta que el identificador de proyecto de Cloud no es necesario para Adobe Commerce local.
 
 ### ¿Qué sucede si elimino mi almacén del análisis de la herramienta de exploración?
 
