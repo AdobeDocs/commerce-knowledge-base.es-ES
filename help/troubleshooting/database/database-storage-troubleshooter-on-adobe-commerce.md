@@ -30,7 +30,7 @@ Si tiene alguno de los síntomas descritos anteriormente, compruebe el estado de
 
 ¿Es IUse% > 90%?
 
-a. SÍ: esto se debe a que tiene demasiados archivos. Revise los pasos para quitar archivos de forma segura en [Eliminar archivos de forma segura cuando no haya espacio en disco, Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26889). Continúe con [Paso 2](#step-2) después de completar estos pasos. Si desea solicitar más espacio, [envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
+a. SÍ: esto se debe a que tiene demasiados archivos. Revise los pasos para quitar archivos de forma segura en [Eliminar archivos de forma segura cuando no haya espacio en disco, Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26889). Continúe con [Paso 2](#step-2) después de completar estos pasos. Si desea solicitar más espacio, [envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).\
 b. NO - Compruebe el espacio. Ejecute `df -h | grep mysql` y, a continuación, `df -h | grep tmp` en CLI/Terminal para comprobar el uso del espacio en disco en los directorios `/tmp` y `/data/mysql`. Continúe con [Paso 3](#step-3).
 
 +++
@@ -93,4 +93,4 @@ b. NO - [Envíe un ticket de asistencia](/help/help-center-guide/help-center/mag
 
 ## Lectura relacionada
 
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

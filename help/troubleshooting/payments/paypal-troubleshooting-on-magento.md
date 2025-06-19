@@ -41,7 +41,7 @@ Si el método de pago de PayPal incluye API con acuerdos de facturación y trans
 
 Consulte los siguientes artículos:
 
-* [Solicitud rechazada de puerta de enlace de PayPal - problema de factura duplicada](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) en nuestra base de conocimiento de soporte.
+* [Solicitud rechazada de puerta de enlace de PayPal - problema de factura duplicada](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26838) en nuestra base de conocimiento de soporte.
 * [Cambiar el id. de incremento para la nueva entidad de almacén](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) en nuestra base de conocimiento de soporte.
 
 ## Póngase en contacto con el soporte técnico para recopilar registros de pago avanzados

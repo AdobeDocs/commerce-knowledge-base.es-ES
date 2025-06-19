@@ -42,4 +42,4 @@ La configuración del motor de búsqueda está bloqueada en el archivo `app/etc/
 
 ## Lectura relacionada
 
-* [Campos bloqueados (atenuados) en el administrador de Commerce](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26879) en la Guía de infraestructura de Commerce en la nube.
+* [Campos bloqueados (atenuados) en el administrador de Commerce](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26879) en la Guía de infraestructura de Commerce en la nube.
