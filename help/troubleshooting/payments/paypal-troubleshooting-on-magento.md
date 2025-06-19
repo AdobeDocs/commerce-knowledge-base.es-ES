@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para problemas con el procesa
 exl-id: f0772515-8456-4f08-84b4-aeef44516f2a
 feature: Orders, Payments
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Si el método de pago de PayPal incluye API con acuerdos de facturación y trans
 
 Consulte los siguientes artículos:
 
-* [Solicitud rechazada de puerta de enlace de PayPal - problema de factura duplicada](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md) en nuestra base de conocimiento de soporte.
+* [Solicitud rechazada de puerta de enlace de PayPal - problema de factura duplicada](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) en nuestra base de conocimiento de soporte.
 * [Cambiar el id. de incremento para la nueva entidad de almacén](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) en nuestra base de conocimiento de soporte.
 
 ## Póngase en contacto con el soporte técnico para recopilar registros de pago avanzados

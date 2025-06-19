@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 51f693c29781029adc0f3d6214d7f784b873998b
+source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
 workflow-type: tm+mt
-source-wordcount: '3449'
+source-wordcount: '3327'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,6 @@ ht-degree: 0%
       * [El servidor MySQL ha desaparecido&#x200B; error en Adobe Commerce en la nube](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
       * [El espacio en disco de MySQL es bajo en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md)
       * [Solucionador de problemas de almacenamiento de bases de datos en Adobe Commerce](/help/troubleshooting/database/database-storage-troubleshooter-on-adobe-commerce.md)
-      * [Las tablas MySQL son demasiado grandes](/help/troubleshooting/database/mysql-tables-are-too-large.md)
       * [Errores de base de datos relacionados con max_allowed_packet en Adobe Commerce](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
       * [Valor numérico de la base de datos Adobe Commerce fuera del intervalo, [!DNL INT] a [!DNL BIGINT]](/help/troubleshooting/database/int-biginit-schema-update-request.md)
       * [Leer los problemas de Réplicas en Adobe Commerce Cloud 2.4.6 con MariaDB 10.6](/help/troubleshooting/database/read-replicas-issues-synchronization-mariadb-10-6.md)
@@ -56,9 +55,7 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.0: Braintree no está en el cierre de compra de varias direcciones](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
       * [2.3.4 Revisión de problemas de PayPal](/help/troubleshooting/payments/2-3-4-paypal-issue-hotfix.md)
       * [Adobe Commerce 2.4.1: mensaje incorrecto en el cierre de compra de PayPal-Braintree para invitados](/help/troubleshooting/payments/magento-2-4-1-wrong-message-on-paypal-via-braintree-guest-checkout.md)
-      * [Cuenta de zona protegida de PayPal no verificada](/help/troubleshooting/payments/payservices-paypal-acct.md)
       * [Error al realizar el pedido con la cuenta de espacio aislado de Authorize.net (se produjo un error en el servidor)](/help/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server.md)
-      * [Datos del informe Servicios de pago aplazado](/help/troubleshooting/payments/payservices-report-info-delayed.md)
       * [Pago y envío se atasca cuando se utiliza el método de pago Authorize.net](/help/troubleshooting/payments/checkout-is-stuck-when-authorize-net-payment-method-is-used.md)
       * [Problema conocido de Adobe Commerce 2.4.1: aparece un error al cerrar la compra con PayPal Braintree](/help/troubleshooting/payments/magento-2-4-1-known-issue-error-popping-up-on-checkout-with-paypal-braintree.md)
       * [Página de terminal virtual de Adobe Commerce 2.4.0 Braintree dañada](/help/troubleshooting/payments/magento-2-4-0-known-issue-braintree-virtual-terminal-page-is-corrupted.md)
@@ -70,14 +67,11 @@ ht-degree: 0%
       * [Actividad de tarjeta activa de PayPal Payflow Pro](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
       * [Solución de problemas de PayPal en Adobe Commerce](/help/troubleshooting/payments/paypal-troubleshooting-on-magento.md)
       * [Adobe Commerce 2.4.0, 2.4.1: Habilitar factura parcial Venmo de Braintree](/help/troubleshooting/payments/magento-2-4-0-2-4-1-enable-braintree-venmo-partial-invoice-issue.md)
-      * [Pagos fallidos con tarjeta de crédito en un entorno de zona protegida](/help/troubleshooting/payments/payservices-cc-sandbox-failure.md)
       * [Adobe Commerce 2.4.2 B2B: el descuento sigue siendo el cambio del método de pago](/help/troubleshooting/payments/magento-2-4-2-b2b-discount-remains-pay-method-change.md)
       * [Adobe Commerce 2.4.2: el pago Venmo de Braintree no funciona](/help/troubleshooting/payments/magento-2-4-2-braintree-venmo-payment-does-not-work.md)
       * [Los métodos de pago no se muestran en el cierre de compra con varias direcciones](/help/troubleshooting/payments/payment-methods-not-displayed-on-checkout-with-multiple-addresses.md)
       * [Los clientes de la UE no pueden completar pagos](/help/troubleshooting/payments/eu-customers-cannot-complete-payments.md)
-      * [Solicitud rechazada de puerta de enlace de PayPal: emisión de factura duplicada](/help/troubleshooting/payments/paypal-gateway-rejected-request-duplicate-invoice-issue.md)
       * [Problema conocido de Adobe Commerce 2.4.0: Páginas en blanco de mensajería en el sitio de Klarna](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
-      * [Solucionar problemas de instalación de Payment Services](/help/troubleshooting/payments/payservices-install.md)
    * Tienda {#storefront}
       * [Problema conocido de Adobe Commerce 2.4.0: error de visualización de pedidos](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
       * [Adobe Commerce local 2.4.2: falta la imagen del producto](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
@@ -96,7 +90,6 @@ ht-degree: 0%
    * Instalación y actualización {#installation-and-upgrade}
       * [[!UICONTROL Recommendations] [!DNL JS] errores después de actualizar a la versión 2.4.5 de Adobe Commerce](/help/troubleshooting/installation-and-upgrade/recommendations-js-errors-after-upgrade-to-adobe-commerce-version-2-4-5.md)
       * [La instalación de [!DNL B2B] 1.4.0 falla en Adobe Commerce 2.4.6-p1 local](/help/troubleshooting/installation-and-upgrade/b2b-1-4-0-installation-fails-on-adobe-commerce-2-4-6-p1-on-premises.md)
-      * [Reduzca los &quot;oauth_tokens&quot; caducados antes de la actualización a la versión 2.4.6](/help/troubleshooting/installation-and-upgrade/reduce-expired-oauth-tokens-before-2-4-6-upgrade.md)
       * [No se puede instalar usando nginx](/help/troubleshooting/installation-and-upgrade/cannot-install-using-nginx.md)
       * [Error de lista de deseos durante la actualización a las versiones de Adobe Commerce 2.3.4-p1 o 2.3.5](/help/troubleshooting/installation-and-upgrade/wishlist-error-during-upgrade-to-magento-versions-2-3-4-p1-or-2-3-5.md)
       * [La instalación de Adobe Commerce 2.4.0 falla con la memoria caché de tiendas obsoletas](/help/troubleshooting/installation-and-upgrade/magento-2-4-0-known-issue-2-4-0-installation-fails-with-outdated-stores-cache.md)
@@ -111,7 +104,6 @@ ht-degree: 0%
       * [La instalación se detiene en un 70%](/help/troubleshooting/installation-and-upgrade/installation-stops-at-about-70.md)
       * [Adobe Commerce actualización 2.4.3, 2.3.7-p1 PHP Error fatal revisión](/help/troubleshooting/installation-and-upgrade/hotfix-unsupported-php8-command-in-adobe-commerce-2-4-3.md)
       * [Adobe Commerce 2.4.0: excepción durante la instalación de B2B 1.2.0](/help/troubleshooting/installation-and-upgrade/magento-2-4-0-known-issue-exception-during-b2b-1-2-0-install.md)
-      * [Solucionar errores de la herramienta de compatibilidad de actualización](/help/troubleshooting/installation-and-upgrade/uct-segmentation-fault-error.md)
       * [Error de falta de memoria durante la instalación o actualización](/help/troubleshooting/installation-and-upgrade/out-of-memory-error-during-install-or-upgrade.md)
       * [La actualización a B2B 1.5.2 falla con un error de sintaxis SQL debido a la falta de la función REGEXP_LIKE](/help/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function.md)
       * [Problema de rendimiento en la actualización del módulo Magento_Company después de la actualización B2B 1.5.2](/help/troubleshooting/installation-and-upgrade/magento-company-module-upgrade-performance-issue.md)
@@ -132,8 +124,6 @@ ht-degree: 0%
       * [Falta el archivo de configuración o está alterado](/help/troubleshooting/miscellaneous/missing-or-altered-config-file.md)
       * [Error 60 de cURL: certificado SSL caducado](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
       * [Solucionar problemas del módulo Recomendaciones de productos en Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
-      * [Elimine archivos de forma segura cuando el disco se quede sin espacio en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/miscellaneous/safely-delete-files-when-out-of-disk-space-adobe-commerce-on-our-cloud-architecture.md)
-      * [robots.txt no se ha actualizado para mostrar la configuración predeterminada](/help/troubleshooting/miscellaneous/robots-txt-not-updated-or-displaying-default-settings.md)
       * [Solucionar problemas del montaje completo de /tmp para Adobe Commerce](/help/troubleshooting/miscellaneous/tmp-mount-full.md)
       * [Módulo desconocido Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
       * [Problemas de comprobación de preparación de Cron](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
@@ -180,7 +170,6 @@ ht-degree: 0%
       * [Los cambios en las categorías no se guardan](/help/troubleshooting/miscellaneous/changes-to-categories-are-not-being-saved.md)
       * [Problema conocido de Adobe Commerce 2.4.0: Las tasas de impuestos de exportación no funcionan](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
       * [Error de procesamiento de Magento Order Management System (OMS) para Adobe Commerce](/help/troubleshooting/miscellaneous/magento-order-management-messages-processing-error.md)
-      * [Rendimiento lento debido a páginas no almacenables en caché](/help/troubleshooting/miscellaneous/slow-performance-due-to-non-cacheable-pages.md)
       * [Las imágenes en caché no se cargan después de la actualización de 2.2.X a 2.3.X](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
       * [Error de tiempo de espera de puerta de enlace 504 al guardar una categoría con productos de más de 1k](/help/troubleshooting/miscellaneous/504-gateway-time-out-error-when-saving-a-category-with-1k-products.md)
       * [Mensaje de error al añadir sitios al análisis de seguridad](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
@@ -217,11 +206,8 @@ ht-degree: 0%
       * [La exportación manual de pedidos a MOM falla. El botón Exportar pedido devuelve el error HTTP 404](/help/troubleshooting/miscellaneous/manual-order-export-to-mom-fails-the-export-order-button-returns-http-404-error.md)
       * [PWA Studio: el explorador no confía en el certificado SSL generado](/help/troubleshooting/miscellaneous/pwa-studio-browser-not-trust-generated-ssl-certificate.md)
       * [Solución de problemas de error 503 causado por la necesidad de cambiar la configuración predeterminada de Barniz](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
-      * [Redirigir al entorno principal al acceder al nuevo entorno de integración](/help/troubleshooting/miscellaneous/redirect-to-parent-environment-when-accessing-new-integration-environment.md)
-      * [robots.txt genera un error 404 de Adobe Commerce en la infraestructura en la nube 2.3.x](/help/troubleshooting/miscellaneous/robots-txt-gives-404-error-magento-commerce-cloud-2-3-x.md)
       * [Acceso de administrador restringido que causa problemas de rendimiento](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)
       * [Las tareas cron bloquean las tareas de otros grupos](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
-      * [Campos bloqueados (atenuados) en la administración de Commerce](/help/troubleshooting/miscellaneous/locked-fields-in-magento-admin.md)
       * [No se puede cambiar el motor de búsqueda mediante la administración de Commerce (no se puede acceder al menú del motor de búsqueda)](/help/troubleshooting/miscellaneous/cannot-change-search-engine-using-magento-admin-search-engine-menu-is-inaccessible.md)
       * [Error de nivel de anidamiento de función máxima de xdebug de instalación](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
       * [No se puede guardar el backend de Adobe Commerce de entidad](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
@@ -279,7 +265,6 @@ ht-degree: 0%
       * [Error al purgar la caché en el administrador de Commerce](/help/troubleshooting/miscellaneous/error-purging-cache-in-admin.md)
       * [Adobe Commerce 2.4.1: página vacía al guardar el formulario dotdigital de Page Builder](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
       * [nube de Adobe Commerce: el reíndice termina con el mensaje eliminado](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
-      * [Actualice a la versión 10.0 del esquema DHL para seguir ofreciendo el envío DHL](/help/troubleshooting/miscellaneous/upgrade-to-v10-dhl-schema-to-continue-using-dhl-as-a-carrier.md)
       * [Falta el archivo CSV de productos exportados en la columna de estado de Adobe Commerce](/help/troubleshooting/miscellaneous/adobe-commerce-status-column-missing-exported-products-csv-file.md)
       * [No se puede acceder a New Relic en la cuenta de nube de Adobe Commerce](/help/troubleshooting/miscellaneous/cannot-access-new-relic-for-adobe-commerce-cloud-account.md)
       * [Módulos que faltan en Adobe Commerce 2.4.4](/help/troubleshooting/miscellaneous/what-happened-modules-bundled-adobe-commerce.md)
@@ -308,7 +293,6 @@ ht-degree: 0%
       * [Errores de implementación al confirmar archivos incorrectos](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
       * [Errores de implementación en los que no se encontraron parches](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [Error de implementación al vaciar la caché: Error &quot;No hay comandos definidos en el área de nombres &quot;caché&quot;&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
-      * [La implementación falla con las claves de acceso correctas en env:COMPOSER_AUTH o auth.json](/help/troubleshooting/deployment/deployment-failed-with-correct-access-key-env-composer-auth.md)
    * Problemas conocidos {#known-issues-patches-attached}
       * [Revisión del paquete de compatibilidad con Adobe Commerce 2.4.7-p4 [!DNL HIPAA] 1.2.0](/help/troubleshooting/known-issues-patches-attached/hotfix-for-hipaa-package-1-2-0-compatibility-with-adobe-commerce-2-4-7-p4.md)
       * [Actualización de seguridad disponible para Adobe Commerce - [!DNL APSB25-08]](/help/troubleshooting/known-issues-patches-attached/security-update-available-for-adobe-commerce-apsb25-08.md)
