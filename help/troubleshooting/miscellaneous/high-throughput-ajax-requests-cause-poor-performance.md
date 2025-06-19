@@ -36,7 +36,7 @@ Las solicitudes de AJAX de alto rendimiento incluyen las relacionadas con el con
 
 Hay tres soluciones:
 
-* [Actualice a la versión 2.3.4](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
+* [Actualice a la versión 2.3.4](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version).
 * Asegúrese de que las solicitudes sean más ligeras (almacene en caché las solicitudes o cambie al contenido privado de los clientes).
 * Reduzca el número de solicitudes.
 
@@ -46,7 +46,7 @@ Si hay solicitudes de AJAX de terceros que se activan en cada página, intente a
 
 <u>Reducir el número de solicitudes</u>
 
-* Deshabilite el carro de compras persistente, ya que puede aumentar el número de `customer/section/load` solicitudes. Siga los pasos de [Rutas de carro de compras persistentes](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/paths/config-reference-general) en nuestra documentación para desarrolladores para ver si el carro de compras persistente está habilitado.
+* Deshabilite el carro de compras persistente, ya que puede aumentar el número de `customer/section/load` solicitudes. Siga los pasos de [Rutas de carro de compras persistentes](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/paths/config-reference-general) en nuestra documentación para desarrolladores para ver si el carro de compras persistente está habilitado.
 * Si necesita volver a cargar o invalidar contenido en `sections.xml`, siga los pasos de [Contenido privado: invalide el contenido privado](https://developer.adobe.com/commerce/php/development/cache/page/private-content/#invalidate-private-content) en nuestra documentación para desarrolladores. Asegúrese de que no está utilizando el método `customerData.reload()` directamente en las personalizaciones.
 * Compruebe otras solicitudes de POST AJAX en la misma página. Abra la herramienta para desarrolladores de Google Chrome en el explorador Chrome de Google. Haz clic en la pestaña **Red** y luego en la pestaña **XHR**, y allí estará la lista de todas las solicitudes de AJAX de la página en particular. A continuación, haga clic en cada solicitud y, en el campo Método de solicitud debe estar las solicitudes de GET. Nota: Google Chrome se utiliza como ejemplo y también es posible hacerlo en otros exploradores.
 * Compruebe la funcionalidad de Google Tag Manager (GTM), que es una solicitud específica de AJAX. El usuario puede eliminar esta AJAX y refactorizar su personalización con funcionalidad privada para reducir el número total de solicitudes al servidor.
