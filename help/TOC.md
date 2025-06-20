@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: dc2149f886d46826610f2f74b48ef9060a4ff376
+source-git-commit: 9defec16bbe62e13320d20fcbd0b5e65e946d9f7
 workflow-type: tm+mt
-source-wordcount: '3263'
+source-wordcount: '3257'
 ht-degree: 0%
 
 ---
@@ -253,7 +253,6 @@ ht-degree: 0%
       * [Nuevos entornos colocados en producción cuando se insertan desde Git](/help/troubleshooting/miscellaneous/when-pushed-from-git-environments-placed-under-production-on-magento-cloud.md)
       * [Error tras iniciar sesión en el administrador de Commerce](/help/troubleshooting/miscellaneous/error-after-logging-in-to-the-magento-admin.md)
       * [Se agota el tiempo de espera de Magento Order Management System (OMS) para Adobe Commerce](/help/troubleshooting/miscellaneous/mom-times-out-when-trying-to-connect-to-a-local-environment.md)
-      * [El envío directo recoge una dirección incorrecta](/help/troubleshooting/miscellaneous/drop-shipping-picks-up-wrong-address.md)
       * [Error al purgar la caché en el administrador de Commerce](/help/troubleshooting/miscellaneous/error-purging-cache-in-admin.md)
       * [Adobe Commerce 2.4.1: página vacía al guardar el formulario dotdigital de Page Builder](/help/troubleshooting/miscellaneous/magento-2-4-1-empty-page-when-dotdigital-page-builder-form-saved.md)
       * [nube de Adobe Commerce: el reíndice termina con el mensaje eliminado](/help/troubleshooting/miscellaneous/adobe-commerce-reindex-terminated.md)
