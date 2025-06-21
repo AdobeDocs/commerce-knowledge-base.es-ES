@@ -52,7 +52,7 @@ Documentación de la caché de Adobe Commerce en nuestra documentación para des
 
 Otros posibles motivos de los problemas de rendimiento y sus soluciones:
 
-* [Deshabilitar la salida del titular de Adobe Commerce para mejorar el rendimiento del sitio](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26909)
+* [Deshabilitar la salida del titular de Adobe Commerce para mejorar el rendimiento del sitio](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26909)
 * [Las tablas MySQL son demasiado grandes](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26945)
 * [Lento rendimiento, crons lentos y de larga duración](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
 * [Acceso de administrador restringido que causa problemas de rendimiento](/help/troubleshooting/miscellaneous/restricted-admin-access-causing-performance-issues.md)

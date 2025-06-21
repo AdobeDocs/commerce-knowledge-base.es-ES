@@ -159,4 +159,4 @@ Si descubre que el nuevo almacén o sitio web que ha creado no se muestra en el 
 ## Lectura relacionada
 
 * [Configurar varios sitios web o tiendas: agregar  [!DNL Domains]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/multiple-sites.html?lang=es#add-new-domains) nuevos en nuestra guía de usuario.
-* [No se puede acceder al sitio debido a la ocultación del origen](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26856)
+* [No se puede acceder al sitio debido a la ocultación del origen](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26856)
