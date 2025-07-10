@@ -30,7 +30,7 @@ b. NO - Mantenimiento o cortes globales. Consulte la duración estimada y las ac
 
 +++**¿Hay implementaciones en otros entornos que bloquean la implementación en el entorno existente?**
 
-Para obtener una lista de las actividades en curso, ejecute el siguiente comando usando la CLI de Magento en la nube (si solo se le ha agregado a un proyecto en la nube). **Nota**: Compruebe que se encuentra en la versión más reciente de la CLI de Magento en la nube. Para ver los pasos, consulte [Actualizar la CLI](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) en la guía de Commerce en infraestructura de nube.
+Para obtener una lista de las actividades en curso, ejecute el siguiente comando usando la CLI de Magento en la nube (si solo se le ha agregado a un proyecto en la nube). **Nota**: Compruebe que se encuentra en la versión más reciente de la CLI de Magento en la nube. Para ver los pasos, consulte [Actualizar la CLI](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/dev-tools/cloud-cli/cloud-cli-overview) en la guía de Commerce en infraestructura de nube.
 
 ```bash
 magento-cloud --state=in_progress
@@ -42,7 +42,7 @@ Para obtener una lista de las actividades en curso, ejecute el siguiente comando
 magento-cloud -p <project-id or project-url> --state=in_progress
 ```
 
-Para encontrar información sobre una actividad de implementación existente (consulte [Comprobación del registro de implementación si la interfaz de usuario de la nube tiene el error &quot;Recorte de registro&quot;](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
+Para encontrar información sobre una actividad de implementación existente (consulte [Comprobación del registro de implementación si la interfaz de usuario de la nube tiene el error &quot;Recorte de registro&quot;](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error)
 para obtener más información) puede ejecutar este comando para obtener un registro en ejecución de esa actividad:
 
 ```bash
@@ -79,7 +79,7 @@ b. NO - [Enviar un ticket de asistencia](/help/help-center-guide/help-center/mag
 +++**Usando Bitbucket?**
 
 a. SÍ: comprobar [status.bitbucket.com](https://bitbucket.status.atlassian.com/).\
-b. NO - Comprobar errores de registro de implementación en [Generar e implementar registros](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/test/log-locations). Continúe con [Paso 6](#step-6).
+b. NO - Comprobar errores de registro de implementación en [Generar e implementar registros](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/test/log-locations). Continúe con [Paso 6](#step-6).
 
 +++
 
@@ -123,11 +123,11 @@ b. NO - Continúe con [Paso 11](#step-11).
 
 +++**¿Almacenamiento disponible está bien?**
 
-* [Comprobar entorno de integración/inicio](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space?lang=en#check-integration-environment)
-* [Buscar entorno de ensayo/producción profesional](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space?lang=en#check-dedicated-clusters)
+* [Comprobar entorno de integración/inicio](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space?lang=en#check-integration-environment)
+* [Buscar entorno de ensayo/producción profesional](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space?lang=en#check-dedicated-clusters)
 
 a. SÍ - Continúe con [Paso 11](#step-11).\
-b. NO - Revisar [Administrar espacio en disco](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space).
+b. NO - Revisar [Administrar espacio en disco](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/storage/manage-disk-space).
 
 +++
 
@@ -139,7 +139,7 @@ a. SÍ
 
 * Para entornos de integración/inicio:
 
-   * [Aumente el valor del disco en .magento.app.yaml](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space) y vuelva a implementarlo. Si esto no funciona, [envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+   * [Aumente el valor del disco en .magento.app.yaml](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=es#application-disk-space) y vuelva a implementarlo. Si esto no funciona, [envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
    * También puede revisar la carpeta `var/log` y eliminar los archivos de registro de más de 1 MB. Ejecute este comando para comprobar el tamaño de los archivos:
 
      ```bash
@@ -176,7 +176,7 @@ b. NO - Continúe con [Paso 14](#step-14).
 
 +++**Sistema de archivos sin nodos o espacio?**
 
-a. SÍ: consulte [Administrar espacio en disco](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#application-disk-space).\
+a. SÍ: consulte [Administrar espacio en disco](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=es#application-disk-space).\
 b. NO - Continúe con [Paso 15](#step-15).
 
 +++
@@ -218,7 +218,7 @@ b. NO - Continúe con [Paso 18](#step-18).
 
 +++**Error/bloqueo del gancho de publicación?**
 
-a. SÍ - Base de datos: [Espacio libre en disco](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html#allocate-disk-space), tablas dañadas o incompletas.\
+a. SÍ - Base de datos: [Espacio libre en disco](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space.html?lang=es#allocate-disk-space), tablas dañadas o incompletas.\
 b. NO - Continúe con [Paso 19](#step-19).
 
 +++
@@ -227,7 +227,7 @@ b. NO - Continúe con [Paso 19](#step-19).
 
 +++**Usar extensiones de terceros?**
 
-a. SÍ: intente [deshabilitar las extensiones de terceros](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure-store/extensions) y ejecutar la implementación (para ver si son la causa del problema), especialmente si hay nombres de extensión en algún error.\
+a. SÍ: intente [deshabilitar las extensiones de terceros](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure-store/extensions) y ejecutar la implementación (para ver si son la causa del problema), especialmente si hay nombres de extensión en algún error.\
 b. NO - Continúe con [Paso 20](#step-20).
 
 +++
