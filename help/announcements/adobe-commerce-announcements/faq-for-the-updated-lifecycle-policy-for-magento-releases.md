@@ -18,7 +18,7 @@ ht-degree: 0%
 Adobe Commerce proporciona correcciones de calidad para una versión menor durante un mínimo de 12 meses a partir de la fecha de disponibilidad general de la próxima versión menor del software. La forma en que proporcionamos correcciones de calidad durante este período está cambiando:
 
 * **Directiva anterior:** Actualmente las correcciones de calidad a la línea anterior que se encuentra en la ventana EOS de 12 meses se entregan a través de nuestra versión trimestral de parches, por lo tanto, haciendo que los parches trimestrales sean una combinación de seguridad + calidad.
-* **Nueva directiva:** A partir de 2.4 como línea de versión secundaria más actual, las revisiones de la versión de la línea compatible anterior (2.3) pasarán a ser de solo seguridad. Seguiremos ofreciendo correcciones de calidad para la línea compatible anterior durante los 12 meses posteriores al lanzamiento de una versión menor (como 2.4) y las nuevas líneas de versión secundarias subsiguientes; pero estarán disponibles a través de la [Herramienta de parches de calidad (QPT)](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) y se centrarán únicamente en los problemas críticos.
+* **Nueva directiva:** A partir de 2.4 como línea de versión secundaria más actual, las revisiones de la versión de la línea compatible anterior (2.3) pasarán a ser de solo seguridad. Seguiremos ofreciendo correcciones de calidad para la línea compatible anterior durante los 12 meses posteriores al lanzamiento de una versión menor (como 2.4) y las nuevas líneas de versión secundarias subsiguientes; pero estarán disponibles a través de la [Herramienta de parches de calidad (QPT)](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) y se centrarán únicamente en los problemas críticos.
 
 ## ¿Cuándo entra en vigor esta política?
 
@@ -38,7 +38,7 @@ Adobe también seguirá teniendo versiones de solo seguridad para la línea de l
 
 ## ¿Qué es la herramienta Parches de calidad?
 
-Consulte el artículo [Herramienta de parches de calidad lanzada: una nueva herramienta para aplicar parches de calidad de forma automática](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) en nuestra base de conocimiento de asistencia.
+Consulte el artículo [Herramienta de parches de calidad lanzada: una nueva herramienta para aplicar parches de calidad de forma automática](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches) en nuestra base de conocimiento de asistencia.
 
 ## ¿Quién debe considerar la posibilidad de utilizar esta nueva directiva?
 
@@ -50,7 +50,7 @@ En última instancia, todos los comerciantes deben priorizar la planificación p
 
 ## ¿Cómo obtendré correcciones de calidad en versiones menores compatibles que no sean la última línea?
 
-Las correcciones estarán disponibles a través de la [herramienta Parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
+Las correcciones estarán disponibles a través de la [herramienta Parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/quality-patches-tool-to-self-serve-quality-patches).
 
 ## ¿Cómo obtendré correcciones de calidad en la última línea?
 
