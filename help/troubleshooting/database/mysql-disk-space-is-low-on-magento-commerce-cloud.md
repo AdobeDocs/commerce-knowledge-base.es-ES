@@ -1,19 +1,19 @@
 ---
-title: '[!DNL MySQL] espacio en disco es bajo en Adobe Commerce en la infraestructura en la nube'
+title: '[!DNL MySQL] espacio en disco es bajo en Adobe Commerce en la infraestructura de la nube'
 description: Este artículo proporciona soluciones para situaciones en las que experimentas poco espacio o ningún espacio para  [!DNL MySQL] en Adobe Commerce en la infraestructura en la nube. Los síntomas pueden incluir interrupciones del sitio, clientes que no pueden añadir productos al carro de compras, que no pueden conectarse a la base de datos, que no pueden acceder a la base de datos de forma remota, que no pueden SSH en el nodo. Los síntomas también incluyen errores de Galera, sincronización del entorno, PHP, base de datos e implementación, como se indica a continuación. Haga clic en [Solución](https://support.magento.com/hc/en-us/articles/360058472572#solution) para saltar directamente a la sección de la solución.
 exl-id: 788c709e-59f5-4062-ab25-5ce6508f29f9
 feature: Catalog Management, Categories, Cloud, Paas, Services
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 80343c834563e7550569d225979edfa6a997bcfc
 workflow-type: tm+mt
-source-wordcount: '1154'
+source-wordcount: '1319'
 ht-degree: 0%
 
 ---
 
 # [!DNL MySQL] espacio en disco es bajo en Adobe Commerce en la infraestructura de la nube
 
-Este artículo proporciona soluciones para situaciones en las que experimenta muy poco espacio o ningún espacio para [!DNL MySQL] en Adobe Commerce en la infraestructura en la nube. Los síntomas pueden incluir interrupciones del sitio, clientes que no pueden añadir productos al carro de compras, que no pueden conectarse a la base de datos, que no pueden acceder a la base de datos de forma remota, que no pueden SSH en el nodo. Los síntomas también incluyen errores de Galera, sincronización del entorno, PHP, base de datos e implementación, como se indica a continuación. Haga clic en [Solución](https://support.magento.com/hc/en-us/articles/360058472572#solution) para saltar directamente a la sección de la solución.
+Este artículo proporciona soluciones para situaciones en las que experimenta muy poco espacio o ningún espacio para [!DNL MySQL] en Adobe Commerce en la infraestructura en la nube. Los síntomas incluyen interrupciones del sitio, clientes que no pueden añadir productos al carro de compras, que no pueden conectarse a la base de datos, que no pueden acceder a la base de datos de forma remota, que no pueden SSH en el nodo. Los síntomas también incluyen errores de Galera, sincronización del entorno, PHP, base de datos e implementación, como se indica a continuación. Haga clic en [Solución](https://support.magento.com/hc/en-us/articles/360058472572#solution) para saltar directamente a la sección de la solución.
 
 ## Productos y versiones afectados
 
@@ -78,7 +78,7 @@ Es posible que el montaje de `/data/mysql` se llene debido a una serie de proble
 
 Hay un paso inmediato que podría tomar para volver a encauzar [!DNL MySQL] (o evitar que se atasque): libere espacio vaciando las tablas grandes.
 
-Sin embargo, una solución a largo plazo sería asignar más espacio y seguir las [prácticas recomendadas de la base de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=es), incluida la habilitación de la funcionalidad [Archivo de pedidos/facturas/envíos](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+Sin embargo, una solución a largo plazo sería asignar más espacio y seguir las [prácticas recomendadas de la base de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html), incluida la habilitación de la funcionalidad [Archivo de pedidos/facturas/envíos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 A continuación se ofrecen detalles sobre soluciones rápidas y a largo plazo.
 
@@ -124,21 +124,66 @@ Compruebe el archivo `ibtmp1` grande en `/data/mysql` de cada nodo: este archivo
 
 >[!WARNING]
 >
->Se recomienda encarecidamente crear una copia de seguridad de la base de datos antes de realizar cualquier manipulación y evitarlas durante períodos de carga alta del sitio. Consulte [Volcar la base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en nuestra documentación para desarrolladores.
+>Se recomienda encarecidamente crear una copia de seguridad de la base de datos antes de realizar cualquier manipulación y evitarlas durante períodos de carga alta del sitio. Consulte [Volcar la base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en nuestra documentación para desarrolladores.
 
 Compruebe si hay tablas grandes y considere si alguna de ellas se puede vaciar. Haga esto en el nodo principal (origen).
 
-Por ejemplo, las tablas con informes suelen vaciarse. Para obtener más información sobre cómo buscar tablas grandes, consulte el artículo [Buscar tablas grandes [!DNL MySQL] 2&rbrace;.](/help/how-to/general/find-large-mysql-tables.md)
+Por ejemplo, las tablas con informes suelen vaciarse. Para obtener más información sobre cómo buscar tablas grandes, consulte el artículo [Buscar tablas grandes [!DNL MySQL] 2}.](/help/how-to/general/find-large-mysql-tables.md)
 
 Si no hay tablas de informes enormes, considere la posibilidad de vaciar `_index` tablas, solo para volver a encarrilar la aplicación de Adobe Commerce. `index_price` tablas serían los mejores candidatos. Por ejemplo, `catalog_category_product_index_storeX` tablas, donde X puede tener valores desde &quot;1&quot; hasta el número máximo de tiendas. Tenga en cuenta que deberá reindexar para restaurar los datos de estas tablas y, en el caso de catálogos grandes, este reindexado puede llevar mucho tiempo.
 
-Una vez vaciados, espere a que finalice la sincronización de wsrep. Ahora puede crear copias de seguridad y realizar pasos más significativos para agregar más espacio, como asignar o comprar más espacio y habilitar la funcionalidad [Archivo de pedidos/facturas/envíos](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+Una vez vaciados, espere a que finalice la sincronización de wsrep. Ahora puede crear copias de seguridad y realizar pasos más significativos para agregar más espacio, como asignar o comprar más espacio y habilitar la funcionalidad [Archivo de pedidos/facturas/envíos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ### Comprobar configuración de registro binario
 
 Compruebe la configuración del registro binario del servidor [!DNL MySQL]: `log_bin` y `log_bin_index`. Si la configuración está habilitada, los archivos de registro pueden llegar a ser enormes. [Crear un ticket de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando purgar archivos de registro binarios grandes. Además, solicite comprobar que el registro binario se está configurando correctamente para que los registros se purguen periódicamente y no ocupen demasiado espacio.
 
 Si no tiene acceso a la configuración del servidor [!DNL MySQL], solicite asistencia técnica para comprobarlo.
+
+### Recuperar espacio en disco asignado no utilizado
+
+1. SSH en el nodo uno e inicie sesión en MySQL:
+
+   ```sh
+   mysql -h127.0.0.1 -p`php -r "echo (include('app/etc/env.php'))['db']['connection']['default']['password'];"` -u`whoami` `whoami`
+   ```
+
+   Para ver los pasos detallados, consulte [Conectar y ejecutar consultas en la base de datos de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/remote-db-connection-execute-queries).
+
+1. Compruebe si hay espacio sin utilizar:
+
+   ```sql
+   SELECT table_name, round((data_length+index_length)/1048576,2) AS size_MB, round((data_free)/1048576,2) AS Allocated_but_unused FROM information_schema.tables WHERE data_free > 1048576*10 ORDER BY data_free DESC;
+   ```
+
+
+   Ejemplo de salida:
+
+   | table_name | size_MB | Asignado_pero_no utilizado |
+   |----------------------|----------|--------------------------|
+   | vertex_taxrequest | 28145,20 | 14943,00 |
+
+
+   Compruebe la salida para ver si hay memoria que se haya asignado pero que no se haya utilizado. Esto ocurre cuando los datos se han eliminado de una tabla; sin embargo, la memoria aún está asignada a esa tabla.
+
+
+1. Coloque el sitio en modo de mantenimiento y detenga los trabajos cron para que no se produzcan interacciones en la base de datos. Para ver los pasos, consulte [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) y [Deshabilitar los trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
+1. Recupere ese espacio volviendo a crear la tabla utilizando el siguiente comando (por ejemplo, utilizando la tabla anterior con el espacio más utilizado):
+
+   ```sql
+   ALTER TABLE vertex_taxrequest Engine = "INNODB";
+   ```
+
+1. Ejecute la siguiente consulta para comprobar si hay espacio sin asignar para cada tabla que muestre un valor alto dentro de la columna **[!UICONTROL Allocated_but_unused]**.
+
+   ```sql
+   SELECT table_name, round((data_length+index_length)/1048576,2) as size_MB, round((data_free)/1048576,2) as Allocated_but_unused FROM information_schema.tables WHERE 1 AND data_free > 1048576*10 ORDER BY 
+   data_free DESC;
+   ```
+
+
+1. Ahora [Deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#enable-or-disable-maintenance-mode-1) y [Habilitar trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
+
 
 ### Asignar/comprar más espacio
 
@@ -151,4 +196,4 @@ Si ha alcanzado el límite de espacio y sigue experimentando problemas de poco e
 
 ## Lectura relacionada
 
-[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
