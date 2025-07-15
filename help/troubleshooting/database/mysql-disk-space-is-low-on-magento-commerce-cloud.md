@@ -78,7 +78,7 @@ Es posible que el montaje de `/data/mysql` se llene debido a una serie de proble
 
 Hay un paso inmediato que podría tomar para volver a encauzar [!DNL MySQL] (o evitar que se atasque): libere espacio vaciando las tablas grandes.
 
-Sin embargo, una solución a largo plazo sería asignar más espacio y seguir las [prácticas recomendadas de la base de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html), incluida la habilitación de la funcionalidad [Archivo de pedidos/facturas/envíos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+Sin embargo, una solución a largo plazo sería asignar más espacio y seguir las [prácticas recomendadas de la base de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=es), incluida la habilitación de la funcionalidad [Archivo de pedidos/facturas/envíos](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 A continuación se ofrecen detalles sobre soluciones rápidas y a largo plazo.
 
@@ -124,7 +124,7 @@ Compruebe el archivo `ibtmp1` grande en `/data/mysql` de cada nodo: este archivo
 
 >[!WARNING]
 >
->Se recomienda encarecidamente crear una copia de seguridad de la base de datos antes de realizar cualquier manipulación y evitarlas durante períodos de carga alta del sitio. Consulte [Volcar la base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en nuestra documentación para desarrolladores.
+>Se recomienda encarecidamente crear una copia de seguridad de la base de datos antes de realizar cualquier manipulación y evitarlas durante períodos de carga alta del sitio. Consulte [Volcar la base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots) en nuestra documentación para desarrolladores.
 
 Compruebe si hay tablas grandes y considere si alguna de ellas se puede vaciar. Haga esto en el nodo principal (origen).
 
@@ -132,7 +132,7 @@ Por ejemplo, las tablas con informes suelen vaciarse. Para obtener más informac
 
 Si no hay tablas de informes enormes, considere la posibilidad de vaciar `_index` tablas, solo para volver a encarrilar la aplicación de Adobe Commerce. `index_price` tablas serían los mejores candidatos. Por ejemplo, `catalog_category_product_index_storeX` tablas, donde X puede tener valores desde &quot;1&quot; hasta el número máximo de tiendas. Tenga en cuenta que deberá reindexar para restaurar los datos de estas tablas y, en el caso de catálogos grandes, este reindexado puede llevar mucho tiempo.
 
-Una vez vaciados, espere a que finalice la sincronización de wsrep. Ahora puede crear copias de seguridad y realizar pasos más significativos para agregar más espacio, como asignar o comprar más espacio y habilitar la funcionalidad [Archivo de pedidos/facturas/envíos](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
+Una vez vaciados, espere a que finalice la sincronización de wsrep. Ahora puede crear copias de seguridad y realizar pasos más significativos para agregar más espacio, como asignar o comprar más espacio y habilitar la funcionalidad [Archivo de pedidos/facturas/envíos](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/order-management/orders/order-archive).
 
 ### Comprobar configuración de registro binario
 
@@ -148,7 +148,7 @@ Si no tiene acceso a la configuración del servidor [!DNL MySQL], solicite asist
    mysql -h127.0.0.1 -p`php -r "echo (include('app/etc/env.php'))['db']['connection']['default']['password'];"` -u`whoami` `whoami`
    ```
 
-   Para ver los pasos detallados, consulte [Conectar y ejecutar consultas en la base de datos de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/backend-development/remote-db-connection-execute-queries).
+   Para ver los pasos detallados, consulte [Conectar y ejecutar consultas en la base de datos de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/backend-development/remote-db-connection-execute-queries).
 
 1. Compruebe si hay espacio sin utilizar:
 
@@ -167,7 +167,7 @@ Si no tiene acceso a la configuración del servidor [!DNL MySQL], solicite asist
    Compruebe la salida para ver si hay memoria que se haya asignado pero que no se haya utilizado. Esto ocurre cuando los datos se han eliminado de una tabla; sin embargo, la memoria aún está asignada a esa tabla.
 
 
-1. Coloque el sitio en modo de mantenimiento y detenga los trabajos cron para que no se produzcan interacciones en la base de datos. Para ver los pasos, consulte [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) y [Deshabilitar los trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
+1. Coloque el sitio en modo de mantenimiento y detenga los trabajos cron para que no se produzcan interacciones en la base de datos. Para ver los pasos, consulte [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) y [Deshabilitar los trabajos cron](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
 1. Recupere ese espacio volviendo a crear la tabla utilizando el siguiente comando (por ejemplo, utilizando la tabla anterior con el espacio más utilizado):
 
    ```sql
@@ -182,7 +182,7 @@ Si no tiene acceso a la configuración del servidor [!DNL MySQL], solicite asist
    ```
 
 
-1. Ahora [Deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#enable-or-disable-maintenance-mode-1) y [Habilitar trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
+1. Ahora [Deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/maintenance-mode#enable-or-disable-maintenance-mode-1) y [Habilitar trabajos cron](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/properties/crons-property#disable-cron-jobs).
 
 
 ### Asignar/comprar más espacio
@@ -196,4 +196,4 @@ Si ha alcanzado el límite de espacio y sigue experimentando problemas de poco e
 
 ## Lectura relacionada
 
-[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
