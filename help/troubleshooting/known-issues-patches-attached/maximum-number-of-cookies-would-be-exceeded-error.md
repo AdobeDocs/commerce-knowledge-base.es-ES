@@ -19,9 +19,9 @@ Este artículo proporciona parches para resolver el error que indica *Se superar
 
 Adobe Commerce (todos los métodos de implementación) 2.4.4 a 2.4.7, con uno de los siguientes parches aplicado:
 
-* Parche MDVA-12304 aplicado con el [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/release-notes)
-* [Actualización de seguridad disponible para Adobe Commerce - APSB25-08](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27149)
-* [Parches de nube para [!DNL Commerce] 1.1.4](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
+* Parche MDVA-12304 aplicado con el [[!DNL Quality Patches Tool (QPT)]](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/release-notes)
+* [Actualización de seguridad disponible para Adobe Commerce - APSB25-08](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27149)
+* [Parches de nube para [!DNL Commerce] 1.1.4](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/release-notes/cloud-patches)
 
 ## Problema
 
@@ -50,6 +50,6 @@ El problema ocurre porque el número máximo de cookies permitidas está estable
 
 ### Lectura relacionada
 
-* [Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/apply) en la guía de actualización de Adobe Commerce
-* [Prácticas recomendadas para distribuir parches de Adobe Commerce a escala](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale) en el manual de implementación de Adobe Commerce
-* [Notas de la versión de Commerce Cloud Tools Suite](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) en la Guía de Commerce en la nube.
+* [Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/patches/apply) en la guía de actualización de Adobe Commerce
+* [Prácticas recomendadas para distribuir parches de Adobe Commerce a escala](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/maintenance/patching-at-scale) en el manual de implementación de Adobe Commerce
+* [Notas de la versión de Commerce Cloud Tools Suite](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/release-notes/cloud-tools-suite) en la Guía de Commerce en la nube.
