@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 3ac35387a6ccf5b8ee721f1cc3777f20adb919f0
+source-git-commit: acc2baf6066204bb8a4babf18fce9d595b011394
 workflow-type: tm+mt
-source-wordcount: '3128'
+source-wordcount: '3081'
 ht-degree: 0%
 
 ---
@@ -286,11 +286,6 @@ ht-degree: 0%
       * [Error de implementación al vaciar la caché: Error &quot;No hay comandos definidos en el área de nombres &quot;caché&quot;&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * Problemas conocidos {#known-issues-patches-attached}
       * [Directrices para proteger el almacén y girar las claves de cifrado: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
-      * [Paquetes degradados después de actualizar de 2.4.4 a 2.4.4-p1](/help/troubleshooting/known-issues-patches-attached/packages-downgraded-after-upgrading-from-2-4-4-to-2-4-4-p1.md)
-      * [Solicitar correo electrónico enviado desde la dirección de correo electrónico del servidor](/help/troubleshooting/known-issues-patches-attached/order-email-sent-from-the-server-email-address.md)
-      * [Error de Adobe Commerce 2.4.6 al realizar la solicitud desde el panel de administración](/help/troubleshooting/known-issues-patches-attached/adobe-commerce-2-4-6-error-placing-order-from-admin-panel.md)
-      * [[!UICONTROL salesRule] problemas de etiquetas al actualizar desde versiones &lt; 2.4.5](/help/troubleshooting/known-issues-patches-attached/salesrule-label-issues-when-upgrade-from-versions-under-2-4-5.md)
-      * [[!DNL JQuery UI] vulnerabilidad de seguridad [!DNL CVE-2022-31160] corregido para las versiones 2.4.4, 2.4.5 y 2.4.6](/help/troubleshooting/known-issues-patches-attached/jquery-cve-2022-31160-fix-2-4-4-2-4-5-2-4-6.md)
       * [[!DNL FedEx]: migración de la integración del método de envío de SOAP a la API RESTful](/help/troubleshooting/known-issues-patches-attached/fedex-shipping-method-integration-migration-soap-restful-api.md)
       * [Se superaría el número máximo de cookies por error en Adobe Commerce](/help/troubleshooting/known-issues-patches-attached/maximum-number-of-cookies-would-be-exceeded-error.md)
       * [Mayor tiempo de ejecución para todos los extremos web asíncronos masivos posteriores al parche de seguridad APSB25-08](/help/troubleshooting/known-issues-patches-attached/increased-execution-time-for-bulk-asynchronous-web-endpoints-post-apsb25-08-security-patch.md)
