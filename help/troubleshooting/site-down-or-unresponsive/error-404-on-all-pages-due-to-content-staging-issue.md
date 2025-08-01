@@ -24,9 +24,9 @@ Este artículo proporciona una corrección para el problema de infraestructura d
 
 >[!NOTE]
 >
->Este artículo no se aplica a la situación en la que recibes un error 404 al intentar [previsualizar la actualización de ensayo](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change). Si encuentra ese problema, abra un [ticket de asistencia](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+>Este artículo no se aplica a la situación en la que recibes un error 404 al intentar [previsualizar la actualización de ensayo](https://experienceleague.adobe.com/es/docs/commerce-admin/content-design/guide-overview#preview-the-scheduled-change). Si encuentra ese problema, abra un [ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
-El acceso a cualquier página de la tienda o al administrador provoca el error 404 (la página &quot;¡Uy!, nuestra página es incorrecta...&quot;) después de realizar operaciones con actualizaciones programadas para los recursos de contenido de la tienda mediante [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) (actualizaciones para los recursos de contenido de la tienda programados mediante el [módulo Magento\_Staging](https://developer.adobe.com/commerce/php/module-reference/)). Por ejemplo, es posible que haya eliminado un producto con una actualización programada o que haya eliminado la fecha de finalización de la actualización programada.
+El acceso a cualquier página de la tienda o al administrador provoca el error 404 (la página &quot;¡Uy!, nuestra página es incorrecta...&quot;) después de realizar operaciones con actualizaciones programadas para los recursos de contenido de la tienda mediante [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=es) (actualizaciones para los recursos de contenido de la tienda programados mediante el [módulo Magento\_Staging](https://developer.adobe.com/commerce/php/module-reference/)). Por ejemplo, es posible que haya eliminado un producto con una actualización programada o que haya eliminado la fecha de finalización de la actualización programada.
 
 Un recurso de contenido de tienda incluye:
 
@@ -76,7 +76,7 @@ Si la consulta devuelve una tabla en la que el valor `update_exists` es &quot;1&
 
 ![actualizaciones_existen_1.png](assets/updates_exist_1.png)
 
-En este caso, puede consultar [Solucionador de problemas de caída del sitio](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27152) para obtener ideas sobre la solución de problemas.
+En este caso, puede consultar [Solucionador de problemas de caída del sitio](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27152) para obtener ideas sobre la solución de problemas.
 
 ## Solución
 
@@ -88,8 +88,8 @@ En este caso, puede consultar [Solucionador de problemas de caída del sitio](ht
 
 1. Espere a que se ejecute el trabajo de [!DNL cron] (se ejecuta en cinco minutos si está configurado correctamente) o ejecútelo manualmente si no ha configurado [!DNL cron].
 
-El problema debe resolverse directamente después de corregir el vínculo no válido. Si el problema persiste, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
+El problema debe resolverse directamente después de corregir el vínculo no válido. Si el problema persiste, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#support-case).
 
 ## Lectura relacionada
 
-[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
