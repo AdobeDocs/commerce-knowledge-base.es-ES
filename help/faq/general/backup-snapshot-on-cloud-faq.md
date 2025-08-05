@@ -3,7 +3,7 @@ title: 'Copia de seguridad (instantánea) en la nube: preguntas frecuentes'
 description: Este artículo cubre los aspectos básicos del backup de sus entornos con instantáneas en Adobe Commerce en la infraestructura en la nube.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 3df2d07bb5765fb0ddcb4417b7c4e4ae33ef2d42
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
 source-wordcount: '706'
 ht-degree: 0%
@@ -40,7 +40,7 @@ Puedes [enviar un ticket de soporte de Adobe Commerce](/help/help-center-guide/h
 Además, tenga en cuenta que la asistencia técnica no realiza la reversión ni la restauración de la base de datos por usted: recuperan la instantánea, pero debe restaurar la base de datos usted mismo.
 * Las copias de seguridad se crean con las **instantáneas cifradas del Almacén de bloques elásticos de Amazon Web Service (AWS EBS)**.
 * Las instantáneas de entorno incluyen el sistema completo (el sistema de archivos y la base de datos).
-* El tiempo de retención de instantáneas automáticas **es diferente** y sigue [la programación](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
+* El tiempo de retención de instantáneas automáticas **es diferente** y sigue [la programación](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
 
 >[!NOTE]
 >
@@ -50,15 +50,15 @@ Además, tenga en cuenta que la asistencia técnica no realiza la reversión ni 
 
 ### Entorno de integración (desarrollo)
 
-* [No se está haciendo una copia de seguridad de su entorno de integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md) **de forma automática**, pero puede crear instantáneas **manualmente**.
+* [No se está haciendo una copia de seguridad de su entorno de integración](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) **de forma automática**, pero puede crear instantáneas **manualmente**.
 * Puede crear instantáneas manuales para entornos de integración en tiendas que no estén activas.
 * Es posible que tenga **varias instantáneas** que se hayan activado manualmente.
 * Se almacena una instantánea desencadenada manualmente durante **7 días**.
 
 **Artículos relacionados en nuestra documentación para desarrolladores:**
 
-* [Copia de seguridad y recuperación ante desastres](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Crear una instantánea](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
+* [Copia de seguridad y recuperación ante desastres](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Crear una instantánea](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
 
 ## Instantánea de entorno, plan de inicio
 
@@ -68,7 +68,7 @@ Además, tenga en cuenta que la asistencia técnica no realiza la reversión ni 
 
 ## Restaurar una instantánea de entorno
 
-Para restaurar una instantánea existente (en el entorno admitido: integración, ensayo, producción en el plan inicial o integración en el plan Pro), siga los pasos de [Administración de copias de seguridad: restaure una copia de seguridad manual](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) en nuestra Guía de infraestructura de Commerce en la nube.
+Para restaurar una instantánea existente (en el entorno admitido: integración, ensayo, producción en el plan inicial o integración en el plan Pro), siga los pasos de [Administración de copias de seguridad: restaure una copia de seguridad manual](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) en nuestra Guía de infraestructura de Commerce en la nube.
 
 ## Copia de seguridad de base de datos
 
@@ -78,8 +78,8 @@ Una instantánea es una copia de seguridad completa de un entorno que incluye to
 
 >[!NOTE]
 >
->Los volúmenes montados solo incluyen los [montajes grabables](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts), o hacen referencia a ellos, y no incluirán todo el directorio `/app`. En cuanto a los otros archivos, se crean o generan por [el proceso de compilación e implementación](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), y también tendrá que retirar los archivos restantes de su repositorio Git.
+>Los volúmenes montados solo incluyen los [montajes grabables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts), o hacen referencia a ellos, y no incluirán todo el directorio `/app`. En cuanto a los otros archivos, se crean o generan por [el proceso de compilación e implementación](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), y también tendrá que retirar los archivos restantes de su repositorio Git.
 
-[Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) en nuestra documentación para desarrolladores.
+[Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) en nuestra documentación para desarrolladores.
 
 Envíe solamente una [solicitud de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md) para una instantánea de base de datos de Pro Production y Staging si necesita la base de datos de un momento específico. Si solo necesita una copia de seguridad actual de su base de datos (en cualquier entorno), consulte el artículo de la base de conocimiento: [Generar volcados de base de datos en la nube](/help/how-to/general/create-database-dump-on-cloud.md).

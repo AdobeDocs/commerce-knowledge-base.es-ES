@@ -3,9 +3,9 @@ title: Asigna más espacio para MySQL en Adobe Commerce en la nube
 description: Este artículo contiene instrucciones sobre cómo asignar más espacio para MySQL en Adobe Commerce en la infraestructura en la nube.
 exl-id: 98501aa0-5ec7-4ea1-8856-13d171ad0be9
 feature: Cloud
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ## Asignación de espacio en el plan inicial y la integración del plan profesional
 
-Para todos los entornos de plan inicial y el plan Pro [entorno de integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md), puede asignar más espacio para MySQL en el archivo `.magento/services.yaml`, aumentando el parámetro `mysql: disk:`. Por ejemplo:
+Para todos los entornos de plan inicial y el plan Pro [entorno de integración](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242), puede asignar más espacio para MySQL en el archivo `.magento/services.yaml`, aumentando el parámetro `mysql: disk:`. Por ejemplo:
 
 ```yaml
 mysql:
@@ -23,7 +23,7 @@ mysql:
     disk: 2048
 ```
 
-Consulte el artículo [Configurar el servicio MySQL](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/mysql) como referencia.
+Consulte el artículo [Configurar el servicio MySQL](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) como referencia.
 
 Una vez que cambie el archivo `.magento/services.yaml`, debe confirmar e insertar los cambios para que se apliquen. La notificación push almacenará en déclencheur el proceso de implementación.
 

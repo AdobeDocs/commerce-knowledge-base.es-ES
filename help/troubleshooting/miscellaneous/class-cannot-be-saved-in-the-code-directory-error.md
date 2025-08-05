@@ -1,12 +1,12 @@
 ---
-title: '"Error "La clase no se puede guardar en el directorio de códigos"'
+title: Error "La clase no se puede guardar en el directorio de códigos"
 description: Este artículo describe cómo solucionar el problema en el que la forma en que especificó las dependencias impide que las clases se generen automáticamente sobre la marcha y se obtiene el mensaje de error *"Class cannot be saved in the generated/code directory"*.
 exl-id: e2c00d4d-31c3-4446-a317-a8ac92c707d5
 feature: Configuration
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
 workflow-type: tm+mt
-source-wordcount: '409'
+source-wordcount: '410'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Este artículo describe cómo solucionar el problema en el que la forma en que e
 1. En su entorno local, escriba una clase personalizada con una dependencia en la clase generada automáticamente.
 1. Ejecute el escenario en el que se activa la clase personalizada y vea que funciona correctamente.
 1. Confirme e inserte sus cambios en el entorno de integración. Esto almacenaría en déclencheur el proceso de implementación. La implementación es correcta.
-1. En el [entorno de integración](/help/announcements/adobe-commerce-announcements/integration-environment-enhancement-request-pro-and-starter.md), ejecute el escenario donde se activará la clase personalizada.
+1. En el [entorno de integración](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242), ejecute el escenario donde se activará la clase personalizada.
 
 <u>Resultado esperado</u>
 
