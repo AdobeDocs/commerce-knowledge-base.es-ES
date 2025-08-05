@@ -31,11 +31,11 @@ El motivo más común es un gran número de productos, tiendas o grupos de clien
 1. Reduzca el número de productos (así como los grupos de clientes y las tiendas, si corresponde).
 1. Limite el uso a uno o dos usuarios simultáneos.
 1. Deshabilite los trabajos cron y ejecute manualmente según sea necesario.
-1. Si no se ha hecho anteriormente, solicite una actualización a los entornos de integración mejorada . Tome nota de la restricción en el número de entornos a los que estaría limitado una vez que se haya realizado la actualización. Consulte el artículo [Solicitud de mejora del entorno de integración - Pro y Starter](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) en nuestra base de conocimiento de asistencia para obtener más información.
+1. Si no se ha hecho anteriormente, solicite una actualización a los entornos de integración mejorada . Tome nota de la restricción en el número de entornos a los que estaría limitado una vez que se haya realizado la actualización. Consulte el artículo [Solicitud de mejora del entorno de integración - Pro y Starter](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27242) en nuestra base de conocimiento de asistencia para obtener más información.
 
 ## Lectura relacionada:
 
 En nuestra documentación para desarrolladores:
 
-* [Arquitectura profesional > Entorno de integración](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Arquitectura inicial > Entorno de ensayo](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)
+* [Arquitectura profesional > Entorno de integración](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Arquitectura inicial > Entorno de ensayo](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)

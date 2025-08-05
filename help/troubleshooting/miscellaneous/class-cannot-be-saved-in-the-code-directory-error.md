@@ -26,7 +26,7 @@ Este artículo describe cómo solucionar el problema en el que la forma en que e
 1. En su entorno local, escriba una clase personalizada con una dependencia en la clase generada automáticamente.
 1. Ejecute el escenario en el que se activa la clase personalizada y vea que funciona correctamente.
 1. Confirme e inserte sus cambios en el entorno de integración. Esto almacenaría en déclencheur el proceso de implementación. La implementación es correcta.
-1. En el [entorno de integración](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242), ejecute el escenario donde se activará la clase personalizada.
+1. En el [entorno de integración](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27242), ejecute el escenario donde se activará la clase personalizada.
 
 <u>Resultado esperado</u>
 

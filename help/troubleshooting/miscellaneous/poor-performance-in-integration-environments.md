@@ -31,10 +31,10 @@ Según el tamaño del catálogo/datos o los requisitos de las integraciones/pers
 
 Para solucionar los problemas de rendimiento, asegúrese de seguir las prácticas recomendadas para obtener el mejor rendimiento en el entorno de integración. También es posible que deba solicitar una actualización de los entornos para mejorar la integración.
 
-En primer lugar, determine si su entorno se encuentra en la [configuración de integración mejorada](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242).
+En primer lugar, determine si su entorno se encuentra en la [configuración de integración mejorada](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27242).
 
-* [Arquitectura profesional](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Arquitectura inicial](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
+* [Arquitectura profesional](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Arquitectura inicial](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
 
 Compruebe el registro de implementación mediante uno de estos métodos.
 
@@ -59,10 +59,10 @@ opensearch (type: opensearch:2, size: L, disk: 1024)
 rabbitmq (type: rabbitmq:3.12, size: L, disk: 1024)
 ```
 
-Si no está en la configuración de la integración mejorada, puede [solicitar la mejora/actualización](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242).
+Si no está en la configuración de la integración mejorada, puede [solicitar la mejora/actualización](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27242).
 Si ya está en la configuración de integración mejorada o sigue teniendo problemas de rendimiento después de la actualización, asegúrese de seguir las prácticas recomendadas para obtener un rendimiento óptimo en el entorno de integración:
 
-* [Arquitectura profesional](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Arquitectura inicial](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
+* [Arquitectura profesional](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Arquitectura inicial](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#staging-environment)
 
-Si ha cumplido las recomendaciones anteriores, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para obtener ayuda adicional.
+Si ha cumplido las recomendaciones anteriores, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para obtener ayuda adicional.
