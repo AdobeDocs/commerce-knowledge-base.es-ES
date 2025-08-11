@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: acb00b0e25b85a558675993d63a80a59df7af5d7
+source-git-commit: 66ac9de94e9a4a1eccdb5aac1875ecf0a0637e90
 workflow-type: tm+mt
-source-wordcount: '2998'
+source-wordcount: '2993'
 ht-degree: 0%
 
 ---
@@ -103,7 +103,6 @@ ht-degree: 0%
       * [Error 503 al acceder a Adobe Commerce en el explorador web](/help/troubleshooting/site-down-or-unresponsive/503-error-accessing-magento-in-web-browser.md)
       * [El sitio no se puede cargar debido a que el modo de mantenimiento se ha dejado habilitado](/help/troubleshooting/site-down-or-unresponsive/site-fails-to-load-due-to-maintenance-mode-left-enabled.md)
       * [Diagrama de solución de problemas de localización](/help/troubleshooting/site-down-or-unresponsive/site-down-troubleshooting-diagram.md)
-      * [Solucionador de problemas de caída del sitio Adobe Commerce](/help/troubleshooting/site-down-or-unresponsive/magento-site-down-troubleshooter.md)
       * [La aplicación de un parche desactiva el sitio](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
       * [Error 404 en todas las páginas debido a un problema con el ensayo de contenido](/help/troubleshooting/site-down-or-unresponsive/error-404-on-all-pages-due-to-content-staging-issue.md)
       * [Revisiones revisadas para la pérdida de acceso a Google Maps en todas las versiones de Adobe Commerce](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
