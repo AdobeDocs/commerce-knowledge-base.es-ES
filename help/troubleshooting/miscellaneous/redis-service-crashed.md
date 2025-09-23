@@ -43,7 +43,7 @@ Las variables *REDIS\_PORT* y *REDIS\_HOST* se pueden recuperar de `app/etc/env.
 >
 >También puede recuperar la dirección de host y el número de puerto de Redis ejecutando este comando de CLI:
 >   
-```bash
+>   ```bash
 >   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
 >   ```
 
