@@ -4,9 +4,9 @@ description: El artículo recomienda cómo corregir Redis.
 exl-id: 5eb8fb70-0f41-433a-8d3f-c368781a2d1d
 feature: Services
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 649e01b29b59bf77e6396acbeb7a83bd9c67e1ef
 workflow-type: tm+mt
-source-wordcount: '206'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
@@ -38,6 +38,15 @@ redis-cli -p REDIS_PORT -h REDIS_HOST info | egrep --color "(role|used_memory_pe
 ```
 
 Las variables *REDIS\_PORT* y *REDIS\_HOST* se pueden recuperar de `app/etc/env.php`.
+
+>[!NOTE]
+>
+>También puede recuperar la dirección de host y el número de puerto de Redis ejecutando este comando de CLI:
+>   
+```bash
+>   echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp
+>   ```
+
 
 Si el resultado de ejecutar la consulta anterior muestra que el porcentaje de memoria libre es inferior al 40%, [envíe un ticket al servicio de soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando un aumento de la configuración de `maxmemory` en el servidor Redis. Si el valor de las claves desalojadas no es &quot;0&quot; o el tiempo de activación de Redis en días es igual a 0 (lo que indica que Redis se ha bloqueado hoy), también debe [enviar un ticket al servicio de asistencia de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) solicitando una investigación y una corrección para este problema.
 
