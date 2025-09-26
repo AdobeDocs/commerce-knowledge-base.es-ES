@@ -1,12 +1,12 @@
 ---
-title: '"Adobe Commerce 2.4.0: "Añadir selecciones a mi carro de compras" no funciona"'
+title: 'Adobe Commerce 2.4.0: "Añadir selecciones a mi carro de compras" no funciona'
 description: Este artículo proporciona una solución para un problema conocido relacionado con un botón roto en el administrador de Commerce al administrar el carro de compras de un cliente. Al intentar agregar los productos seleccionados al carro de compras de un cliente, el botón **Agregar selecciones al carro de compras** situado en la parte inferior de la sección no funciona. Este problema se produce en cualquier página del panel de administración que contenga dos botones **Agregar selecciones al carro de compras**. Habrá disponible una corrección permanente en Adobe Commerce 2.4.1.
 exl-id: b0830ec2-2aea-4afb-8d02-e9c8f54283be
 feature: Orders, Shopping Cart
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,6 @@ El botón **Agregar selecciones a mi carro** ubicado en la parte superior de la 
 
 ## Lectura relacionada
 
-* Administración de un carro de compras por parte de [MerchDocs](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) en nuestra guía del usuario.
-* [Problema conocido de Adobe Commerce 2.4.0: los datos de mensajes sin procesar se muestran en la tienda](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md) de nuestra base de conocimiento de soporte.
+* Administración de un carro de compras por parte de [MerchDocs](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/assist/shopping-assisted-cart-manage) en nuestra guía del usuario.
 * [Problema conocido de Adobe Commerce 2.4.0: las tasas de impuestos de exportación no funcionan](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md) en nuestra base de conocimiento de soporte.
-* [Problema conocido de Adobe Commerce 2.4.0: los métodos de pago del Braintree no aparecen en el cierre de compra de varias direcciones](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) en nuestra base de conocimiento de soporte técnico.
+* [Problema conocido de Adobe Commerce 2.4.0: los métodos de pago de Braintree no aparecen en el cierre de compra de varias direcciones](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md) en nuestra base de conocimiento de soporte técnico.

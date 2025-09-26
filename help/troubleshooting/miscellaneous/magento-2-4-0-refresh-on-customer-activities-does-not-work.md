@@ -1,12 +1,12 @@
 ---
-title: "Adobe Commerce 2.4.0: la actualización de las actividades del cliente no funciona"
+title: 'Adobe Commerce 2.4.0: la actualización de las actividades del cliente no funciona'
 description: Este artículo proporciona una solución para el problema conocido de Adobe Commerce 2.4.0 cuando un usuario administrador crea un pedido para un cliente y los botones de actualización del panel lateral Actividades del cliente no funcionan.
 exl-id: 50048e9f-6009-4db5-ae4a-c35a84cec265
 feature: Configuration
 role: Developer
-source-git-commit: a1046621259ea49eab74cd6ba3bba550e0c70283
+source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,6 @@ Una solución es que el usuario administrador puede actualizar **las actividades
 
 ## Lectura relacionada
 
-* [Problema conocido de Adobe Commerce 2.4.0: los métodos de pago del Braintree no aparecen en el cierre de compra de varias direcciones](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
-* [Problema conocido de Adobe Commerce 2.4.0: visualización de datos de mensaje sin procesar en la tienda](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
+* [Problema conocido de Adobe Commerce 2.4.0: los métodos de pago de Braintree no aparecen en el cierre de compra de varias direcciones](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
 * [Problema conocido de Adobe Commerce 2.4.0: Exportar tipos impositivos no funciona](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
 * [Problema conocido de Adobe Commerce 2.4.0: El botón &quot;Añadir selecciones a mi carro de compras&quot; no funciona](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)

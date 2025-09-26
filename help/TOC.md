@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 446b3f6d49a5534187bb8706d5cf6068d8f40fec
+source-git-commit: 2b12aeb9227944fc80da50d50fbc5668f4622269
 workflow-type: tm+mt
-source-wordcount: '2989'
+source-wordcount: '2898'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,6 @@ ht-degree: 0%
       * [Comprobación de consultas y procesos lentos en MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [Carga de base de datos pierde conexión con MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
       * [Los cambios en la base de datos no se reflejan en la tienda](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)
-      * [Interbloqueos en MySQL](/help/troubleshooting/database/deadlocks-in-mysql.md)
       * [Cuello de botella de carga alta MySQL en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md)
       * [El servidor MySQL ha desaparecido&#x200B; error en Adobe Commerce en la nube](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
       * [El espacio en disco de MySQL es bajo en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md)
@@ -56,8 +55,6 @@ ht-degree: 0%
       * [Página de terminal virtual de Adobe Commerce 2.4.0 Braintree dañada](/help/troubleshooting/payments/magento-2-4-0-known-issue-braintree-virtual-terminal-page-is-corrupted.md)
       * [El pago por ciberfuente desde el administrador y el front en diferentes dominios no se procesa](/help/troubleshooting/payments/cybersource-payment-from-admin-and-front-on-different-domains-not-processed.md)
       * [Problema conocido de Adobe Commerce 2.4.0: Amazon pay, sin métodos de pago](/help/troubleshooting/payments/magento-2-4-0-known-issue-amazon-pay-no-payment-methods.md)
-      * [Problema conocido de Adobe Commerce 2.3.7-p1: total de pedido obsoleto para PayPal](/help/troubleshooting/payments/paypal-price-known-issue-commerce-237p1.md)
-      * [Parche para el problema de cierre de compra de Amazon Pay en Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
       * [Adobe Commerce 2.4.0: error de cierre de compra al seleccionar pagos locales](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
       * [Actividad de tarjeta activa de PayPal Payflow Pro](/help/troubleshooting/payments/paypal-payflow-pro-active-carding-activity.md)
       * [Solución de problemas de PayPal en Adobe Commerce](/help/troubleshooting/payments/paypal-troubleshooting-on-magento.md)
@@ -65,18 +62,11 @@ ht-degree: 0%
       * [Adobe Commerce 2.4.2 B2B: el descuento sigue siendo el cambio del método de pago](/help/troubleshooting/payments/magento-2-4-2-b2b-discount-remains-pay-method-change.md)
       * [Adobe Commerce 2.4.2: el pago Venmo de Braintree no funciona](/help/troubleshooting/payments/magento-2-4-2-braintree-venmo-payment-does-not-work.md)
       * [Los métodos de pago no se muestran en el cierre de compra con varias direcciones](/help/troubleshooting/payments/payment-methods-not-displayed-on-checkout-with-multiple-addresses.md)
-      * [Los clientes de la UE no pueden completar pagos](/help/troubleshooting/payments/eu-customers-cannot-complete-payments.md)
       * [Problema conocido de Adobe Commerce 2.4.0: Páginas en blanco de mensajería en el sitio de Klarna](/help/troubleshooting/payments/magento-2-4-0-known-issue-klarna-on-site-messaging-blank-pages.md)
    * Tienda {#storefront}
-      * [Problema conocido de Adobe Commerce 2.4.0: error de visualización de pedidos](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
       * [Adobe Commerce local 2.4.2: falta la imagen del producto](/help/troubleshooting/storefront/adobe-commerce-2-4-2-on-prem-product-image-missing.md)
-      * [Después de la instalación, las imágenes y las hojas de estilo no se cargan; solo se muestra texto, sin gráficos](/help/troubleshooting/storefront/after-installing-images-and-stylesheets-do-not-load-only-text-displays-no-graphics.md)
       * [El producto no se muestra en la tienda](/help/troubleshooting/storefront/product-is-not-displayed-on-storefront.md)
-      * [Problema de Adobe Commerce 2.4.0: visualización de datos de mensajes sin procesar de tienda](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
-      * [Problema de crédito de tienda durante el cierre de compra en Adobe Commerce 2.3.5](/help/troubleshooting/storefront/store-credit-issue-during-checkout-in-magento-2-3-5.md)
       * [Almacenar imágenes que no se muestran después de la implementación](/help/troubleshooting/storefront/store-images-not-displayed-after-deployment.md)
-      * [Problema conocido en Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
-      * [Adobe Commerce 2.4.0: error 404 al eliminar los puntos de recompensa en el cierre de compra de envío múltiple](/help/troubleshooting/storefront/magento-2-4-0-404-error-removing-rewards-points-on-multi-shipping-checkout.md)
       * [Los clientes cierran la sesión o pierden contenido del carro de compras en la tienda Adobe Commerce](/help/troubleshooting/storefront/customers-get-logged-out-or-lose-cart-content-on-magento-storefront.md)
       * [No se puede guardar el contacto como clave de URL](/help/troubleshooting/storefront/unable-to-save-contact-as-a-url-key.md)
    * Instalación y actualización {#installation-and-upgrade}

@@ -1,12 +1,12 @@
 ---
-title: "Problema conocido de Adobe Commerce 2.3.5: pedidos de varios envíos de productos virtuales"
+title: 'Problema conocido de Adobe Commerce 2.3.5: pedidos de varios envíos de productos virtuales'
 description: En este artículo se explica un problema conocido de Adobe Commerce 2.3.5 por el que un pedido de envío múltiple que contiene un producto virtual no se procesa correctamente.
 exl-id: 34ce79a2-5157-492b-8ee4-bdc09aae0c40
 feature: Orders, Products, Shipping/Delivery
 role: Developer
-source-git-commit: b3d39e6b02728f05f046adf7be94ffacbca944d5
+source-git-commit: 60f68b9edabd13a69e84705b85d84fd10ee6e2be
 workflow-type: tm+mt
-source-wordcount: '202'
+source-wordcount: '183'
 ht-degree: 0%
 
 ---
@@ -44,9 +44,7 @@ Habrá una corrección disponible en Adobe Commerce 2.3.6, cuyo lanzamiento est�
 
 En nuestra base de conocimiento de soporte:
 
-* [Problema conocido en Adobe Commerce 2.3.5](/help/troubleshooting/storefront/product-comparison-known-issue-in-magento-2-3-5.md)
 * [Problema conocido del recuento de productos de acción masiva en Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
-* [Parche para el problema de cierre de compra de Amazon Pay en Adobe Commerce 2.3.5-p1](/help/troubleshooting/payments/patch-for-amazon-pay-checkout-issue-in-magento-2-3-5-p1.md)
 
 En nuestra documentación para desarrolladores:
 

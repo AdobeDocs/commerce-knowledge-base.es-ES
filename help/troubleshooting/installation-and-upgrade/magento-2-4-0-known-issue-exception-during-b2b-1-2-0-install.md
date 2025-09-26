@@ -1,12 +1,12 @@
 ---
-title: "Adobe Commerce 2.4.0: excepción durante la instalación de B2B 1.2.0"
+title: 'Adobe Commerce 2.4.0: excepción durante la instalación de B2B 1.2.0'
 description: Este artículo proporciona una corrección de un problema conocido de Adobe Commerce por una excepción producida durante setup:upgrade al instalar B2B 1.2.0.
 exl-id: 2c1dadd9-7754-4b4c-8d37-b75c13beae5c
 feature: B2B, Install, Upgrade
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 60f68b9edabd13a69e84705b85d84fd10ee6e2be
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '357'
 ht-degree: 0%
 
 ---
@@ -65,21 +65,18 @@ Para descargarlo, desplácese hacia abajo hasta el final del artículo y haga cl
 
 <u>Parche del compositor </u>
 
-Consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones sobre el parche del compositor.
+Consulte [Cómo aplicar un parche del compositor proporcionado por Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones sobre el parche del compositor.
 
 <u>parche de Git </u>
 
-* Consulte [Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en la documentación para desarrolladores para obtener instrucciones sobre los parches de Git para Adobe Commerce en la infraestructura en la nube.
-* Consulte [Aplicación de parches: parches personalizados](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) en la documentación para desarrolladores para obtener instrucciones sobre los parches de Git para Adobe Commerce.
+* Consulte [Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches) en la documentación para desarrolladores para obtener instrucciones sobre los parches de Git para Adobe Commerce en la infraestructura en la nube.
+* Consulte [Aplicación de parches: parches personalizados](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/patches/overview#custom-patches) en la documentación para desarrolladores para obtener instrucciones sobre los parches de Git para Adobe Commerce.
 
 ## Lectura relacionada
 
-* [Problema conocido de Adobe Commerce 2.4.0: visualización de datos de mensaje sin procesar en la tienda](/help/troubleshooting/storefront/magento-2-4-0-issue-storefront-raw-message-data-display.md)
 * [Problema conocido de Adobe Commerce 2.4.0: Exportar tipos impositivos no funciona](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
-* [Problema conocido de Adobe Commerce 2.4.0: los métodos de pago del Braintree no aparecen en el cierre de compra de varias direcciones](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
+* [Problema conocido de Adobe Commerce 2.4.0: los métodos de pago de Braintree no aparecen en el cierre de compra de varias direcciones](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
 * [Problema conocido de Adobe Commerce 2.4.0: mensaje de error al seleccionar el método de pago local que se muestra para algunos países durante el cierre de compra](/help/troubleshooting/payments/magento-2-4-0-checkout-error-selecting-local-payments.md)
-* [Problema conocido de Adobe Commerce 2.4.0: error 404 al eliminar puntos de recompensa en el cierre de compra de envío múltiple](/help/troubleshooting/storefront/magento-2-4-0-404-error-removing-rewards-points-on-multi-shipping-checkout.md)
-* [Problema conocido de Adobe Commerce 2.4.0: error de visualización de pedidos](/help/troubleshooting/storefront/magento-2-4-0-known-issue-orders-display-error.md)
 * [El administrador de Adobe Commerce 2.4.0 B2B no puede añadir un producto configurable al presupuesto](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
 * [Problema conocido de Adobe Commerce 2.4.0: la actualización en las actividades del cliente no funciona](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
 * [Problema conocido de Adobe Commerce 2.4.0: El botón &quot;Añadir selecciones a mi carro de compras&quot; no funciona](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)
