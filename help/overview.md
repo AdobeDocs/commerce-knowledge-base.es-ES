@@ -19,7 +19,7 @@ ht-degree: 3%
 
 ![Página principal de Knowledge Base](../help/assets/knowledge-base-home-page-cover.jpg){width="100%"}
 
-La información de esta base de conocimiento se ha diseñado como complemento de [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs), [Adobe Commerce Merchant Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) y otras publicaciones de Adobe Commerce. Abarca la resolución de problemas y las prácticas recomendadas, contiene anuncios, responde a preguntas frecuentes y destaca escenarios específicos que no se han mencionado (por algún motivo) en la documentación oficial.
+La información de esta base de conocimiento se ha diseñado como complemento de [Adobe Commerce Developer Documentation](https://developer.adobe.com/commerce/docs), [Adobe Commerce Merchant Guide](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html?lang=es) y otras publicaciones de Adobe Commerce. Abarca la resolución de problemas y las prácticas recomendadas, contiene anuncios, responde a preguntas frecuentes y destaca escenarios específicos que no se han mencionado (por algún motivo) en la documentación oficial.
 
 ## ¿Qué hay en esta base de conocimiento?
 
