@@ -92,7 +92,7 @@ Hay varios servicios que podrían estar guardando archivos en `/tmp`.
 
 #### Comprobar y liberar espacio en MySQL
 
-Siga las instrucciones de [MySQL disk space is low on Adobe Commerce on cloud Infrastructure > Compruebe y libere espacio de almacenamiento](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) en nuestra base de conocimiento de asistencia.
+Siga las instrucciones de [MySQL disk space is low on Adobe Commerce on cloud Infrastructure > Compruebe y libere espacio de almacenamiento](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27806#check-and-free-up-storage-space) en nuestra base de conocimiento de asistencia.
 
 #### Compruebe los volcados de pila de Elasticsearch
 
@@ -120,7 +120,7 @@ Busque `/tmp` archivos de `.sql` o `.sql.gz` y límpielos. Es posible que se hay
 
 Para evitar problemas con `/tmp`, siga estas recomendaciones:
 
-* No utilice MySQL para la búsqueda. Elasticsearch para la búsqueda generalmente elimina la necesidad de la mayoría de las creaciones de tablas temporales pesadas. Consulte [Configuración de Adobe Commerce para usar Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/search/configure-search-engine) en nuestra documentación para desarrolladores.
+* No utilice MySQL para la búsqueda. Elasticsearch para la búsqueda generalmente elimina la necesidad de la mayoría de las creaciones de tablas temporales pesadas. Consulte [Configuración de Adobe Commerce para usar Elasticsearch](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/search/configure-search-engine) en nuestra documentación para desarrolladores.
 * Evite ejecutar la consulta `SELECT` en columnas sin índices, ya que esto consume una gran cantidad de espacio temporal en disco. También puede añadir los índices.
 * Cree un cron para limpiar `/tmp` ejecutando el siguiente comando en la CLI:
 
@@ -130,4 +130,4 @@ Para evitar problemas con `/tmp`, siga estas recomendaciones:
 
 ## Lectura relacionada
 
-[El espacio en disco de MySQL es bajo en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27806) en nuestra base de conocimiento de soporte.
+[El espacio en disco de MySQL es bajo en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27806) en nuestra base de conocimiento de soporte.
