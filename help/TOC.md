@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: d1a9f509bdf4a4c75220145069810e55eddcc43e
+source-git-commit: 4ba5d701280fa41bea1102fa1ca46e1e3cc35256
 workflow-type: tm+mt
-source-wordcount: '2881'
+source-wordcount: '2860'
 ht-degree: 0%
 
 ---
@@ -33,10 +33,8 @@ ht-degree: 0%
    * Base de datos {#database}
       * [Comprobación de consultas y procesos lentos en MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [Carga de base de datos pierde conexión con MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-      * [Los cambios en la base de datos no se reflejan en la tienda](/help/troubleshooting/database/changes-in-the-database-are-not-reflected-on-the-storefront.md)
       * [Cuello de botella de carga alta MySQL en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/database/mysql-high-load-bottleneck-in-magento-commerce-cloud.md)
       * [El servidor MySQL ha desaparecido&#x200B; error en Adobe Commerce en la nube](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
-      * [El espacio en disco de MySQL es bajo en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/database/mysql-disk-space-is-low-on-magento-commerce-cloud.md)
       * [Solucionador de problemas de almacenamiento de bases de datos en Adobe Commerce](/help/troubleshooting/database/database-storage-troubleshooter-on-adobe-commerce.md)
       * [Errores de base de datos relacionados con max_allowed_packet en Adobe Commerce](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
       * [Valor numérico de la base de datos Adobe Commerce fuera del intervalo, [!DNL INT] a [!DNL BIGINT]](/help/troubleshooting/database/int-biginit-schema-update-request.md)
