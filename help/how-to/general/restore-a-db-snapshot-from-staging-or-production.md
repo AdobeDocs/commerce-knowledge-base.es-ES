@@ -28,7 +28,7 @@ Elija el más apropiado para su caso:
 
 >[!NOTE]
 >
-> Si va a importar una instantánea en un entorno de integración, tenga en cuenta el tamaño de la base de datos. Las bases de datos grandes pueden causar una degradación del rendimiento después de la importación. Se recomienda importar primero la instantánea en un entorno de ensayo o local para revisar y reducir su tamaño antes de transferirla a la integración. Además, considere la posibilidad de deshabilitar los trabajos cron en la rama de integración si surgen problemas de rendimiento después de la importación. Para obtener más información, consulte [Entorno de integración](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment) en la guía de Commerce en infraestructura de nube.
+> Si va a importar una instantánea en un entorno de integración, tenga en cuenta el tamaño de la base de datos. Las bases de datos grandes pueden causar una degradación del rendimiento después de la importación. Se recomienda importar primero la instantánea en un entorno de ensayo o local para revisar y reducir su tamaño antes de transferirla a la integración. Además, considere la posibilidad de deshabilitar los trabajos cron en la rama de integración si surgen problemas de rendimiento después de la importación. Para obtener más información, consulte [Entorno de integración](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment) en la guía de Commerce en infraestructura de nube.
 
 * [Método 1: transfiera la base de datos [!DNL dump] a su equipo local e impórtela](#meth2).
 * [Método 2: importe la base de datos [!DNL dump] directamente desde el servidor](#meth3).
@@ -83,7 +83,7 @@ Estos son los pasos:
    ```
 
 1. Copie la base de datos [!DNL dump file] (por ejemplo: `<cluster ID>.sql.gz` para [!DNL Production] o `<cluster ID_stg>.sql.gz` para [!DNL Staging]) en el equipo local.
-1. Asegúrese de haber configurado [!DNL SSH tunnel] para que se conecte de forma remota a la base de datos: [[!DNL SSH] y [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) en nuestra documentación para desarrolladores.
+1. Asegúrese de haber configurado [!DNL SSH tunnel] para que se conecte de forma remota a la base de datos: [[!DNL SSH] y [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) en nuestra documentación para desarrolladores.
 1. Conéctese a la base de datos.
 
    ```bash
@@ -179,6 +179,6 @@ Estos son los pasos:
 
 En nuestra documentación para desarrolladores:
 
-* [Importar código: importe la base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots] y [!DNL backup] administración: [!DNL Dump] su base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Copia de seguridad (instantánea) en la nube: FAQ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [Importar código: importe la base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots] y [!DNL backup] administración: [!DNL Dump] su base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Copia de seguridad (instantánea) en la nube: FAQ](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
