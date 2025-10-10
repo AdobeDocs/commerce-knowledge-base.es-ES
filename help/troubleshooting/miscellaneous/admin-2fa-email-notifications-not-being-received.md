@@ -60,7 +60,7 @@ Si el correo electrónico apareció en la carpeta de correo no deseado, es posib
 
 Si utiliza el servicio SendGrid administrado por Adobe:
 
-[Envíe un ticket de asistencia](https://experienceleague.adobe.com/home?support-tab=home#support) solicitando que su dominio de envío se autentique (a veces denominado *etiquetado en blanco*) con SendGrid.
+[Envíe un ticket de asistencia](https://experienceleague.adobe.com/home?lang=es&support-tab=home#support) solicitando que su dominio de envío se autentique (a veces denominado *etiquetado en blanco*) con SendGrid.
 Este proceso implica la adición de registros DNS (DKIM y SPF) para autorizar a SendGrid a enviar correos electrónicos en nombre de su dominio, lo que aumenta la probabilidad de que los correos electrónicos se envíen a la bandeja de entrada en lugar de a la carpeta de correo no deseado.
 
 Si utiliza su propia cuenta de SendGrid:
@@ -74,4 +74,4 @@ Usted es responsable de administrar la configuración de autenticación de domin
 
 ## Lectura relacionada
 
-* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) en nuestra documentación para desarrolladores.
+* [SendGrid](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/project/sendgrid) en nuestra documentación para desarrolladores.
