@@ -4,9 +4,9 @@ description: Este artículo proporciona información sobre la resolución de pro
 exl-id: 7ab6b2b4-6aca-4323-a45b-2b4e52955160
 feature: Admin Workspace, Communications
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 9eaea028886e74fc06c9516801919cd7f650f98c
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -54,8 +54,24 @@ Dado que no tiene acceso al administrador, deberá insertar la configuración en
 php -r "mail(<your email address>,<subject>,<content>,'To: <sender email>');"
 ```
 
-Busque el correo electrónico en la carpeta de correo no deseado. Si el correo electrónico aparecía allí, [envía un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#login) para solicitar que el dominio se marque como blanco en SendGrid.
+Busque el correo electrónico en la carpeta de correo no deseado.
+
+Si el correo electrónico apareció en la carpeta de correo no deseado, es posible que la autenticación de correo electrónico del dominio no esté completamente configurada para la entrega saliente mediante SendGrid.
+
+Si utiliza el servicio SendGrid administrado por Adobe:
+
+[Envíe un ticket de asistencia](https://experienceleague.adobe.com/home?support-tab=home#support) solicitando que su dominio de envío se autentique (a veces denominado *etiquetado en blanco*) con SendGrid.
+Este proceso implica la adición de registros DNS (DKIM y SPF) para autorizar a SendGrid a enviar correos electrónicos en nombre de su dominio, lo que aumenta la probabilidad de que los correos electrónicos se envíen a la bandeja de entrada en lugar de a la carpeta de correo no deseado.
+
+Si utiliza su propia cuenta de SendGrid:
+
+Usted es responsable de administrar la configuración de autenticación de dominio directamente dentro del panel de cuentas de SendGrid. Consulte [Cómo configurar la autenticación de dominio](https://www.twilio.com/docs/sendgrid/ui/account-and-settings/how-to-set-up-domain-authentication) en la documentación de SendGrid para obtener más información.
+
+>[!NOTE]
+>
+>Algunos clientes pueden optar por utilizar un servicio SendGrid aprovisionado por separado para tener un control total sobre la capacidad de entrega y el cumplimiento de los requisitos de correo electrónico (por ejemplo, los requisitos de HIPAA). Asegúrese de seguir los pasos correctos para la resolución de problemas en función del tipo de servicio SendGrid (administrado por Adobe en comparación con autoadministrado) que está utilizando.
+
 
 ## Lectura relacionada
 
-* [SendGrid](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/project/sendgrid) en nuestra documentación para desarrolladores.
+* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) en nuestra documentación para desarrolladores.
