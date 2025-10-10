@@ -17,7 +17,7 @@ Este artículo muestra cómo restaurar una base de datos [!DNL snapshot] desde [
 >[!NOTE]
 >
 >Estos métodos restaurarán la **instantánea completa**.
->>Si necesita restaurar la instantánea **parcialmente** (por ejemplo, restaurando únicamente las tablas de catálogo y dejando las tablas de pedidos intactas), debe consultar con su desarrollador o DBA.
+>&#x200B;>Si necesita restaurar la instantánea **parcialmente** (por ejemplo, restaurando únicamente las tablas de catálogo y dejando las tablas de pedidos intactas), debe consultar con su desarrollador o DBA.
 
 
 ## Productos y versiones afectados
