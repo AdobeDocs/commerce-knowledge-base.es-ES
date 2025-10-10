@@ -2,9 +2,9 @@
 title: Restaurar una instantánea de base de datos desde Ensayo o Producción
 description: Este artículo muestra cómo restaurar una instantánea de la base de datos desde Ensayo o Producción en Adobe Commerce en la infraestructura en la nube.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: 193b5118342f380cef925766c0f7956a6592800c
+source-git-commit: 62815213ce54f72d27812b9c2d7b3997f2e88897
 workflow-type: tm+mt
-source-wordcount: '397'
+source-wordcount: '475'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Este artículo muestra cómo restaurar una base de datos [!DNL snapshot] desde [
 >[!NOTE]
 >
 >Estos métodos restaurarán la **instantánea completa**.
->&#x200B;>Si necesita restaurar la instantánea **parcialmente** (por ejemplo, restaurando únicamente las tablas de catálogo y dejando las tablas de pedidos intactas), debe consultar con su desarrollador o DBA.
+>>Si necesita restaurar la instantánea **parcialmente** (por ejemplo, restaurando únicamente las tablas de catálogo y dejando las tablas de pedidos intactas), debe consultar con su desarrollador o DBA.
 
 
 ## Productos y versiones afectados
@@ -25,6 +25,10 @@ Este artículo muestra cómo restaurar una base de datos [!DNL snapshot] desde [
 * Adobe Commerce en la infraestructura en la nube, [todas las versiones compatibles](https://magento.com/sites/default/files/magento-software-lifecycle-policy.pdf)
 
 Elija el más apropiado para su caso:
+
+>[!NOTE]
+>
+> Si va a importar una instantánea en un entorno de integración, tenga en cuenta el tamaño de la base de datos. Las bases de datos grandes pueden causar una degradación del rendimiento después de la importación. Se recomienda importar primero la instantánea en un entorno de ensayo o local para revisar y reducir su tamaño antes de transferirla a la integración. Además, considere la posibilidad de deshabilitar los trabajos cron en la rama de integración si surgen problemas de rendimiento después de la importación. Para obtener más información, consulte [Entorno de integración](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#integration-environment) en la guía de Commerce en infraestructura de nube.
 
 * [Método 1: transfiera la base de datos [!DNL dump] a su equipo local e impórtela](#meth2).
 * [Método 2: importe la base de datos [!DNL dump] directamente desde el servidor](#meth3).
@@ -79,7 +83,7 @@ Estos son los pasos:
    ```
 
 1. Copie la base de datos [!DNL dump file] (por ejemplo: `<cluster ID>.sql.gz` para [!DNL Production] o `<cluster ID_stg>.sql.gz` para [!DNL Staging]) en el equipo local.
-1. Asegúrese de haber configurado [!DNL SSH tunnel] para que se conecte de forma remota a la base de datos: [[!DNL SSH] y [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) en nuestra documentación para desarrolladores.
+1. Asegúrese de haber configurado [!DNL SSH tunnel] para que se conecte de forma remota a la base de datos: [[!DNL SSH] y [!DNL sFTP]: [!DNL SSH tunneling]](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#env-start-tunn) en nuestra documentación para desarrolladores.
 1. Conéctese a la base de datos.
 
    ```bash
@@ -175,6 +179,6 @@ Estos son los pasos:
 
 En nuestra documentación para desarrolladores:
 
-* [Importar código: importe la base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots] y [!DNL backup] administración: [!DNL Dump] su base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Copia de seguridad (instantánea) en la nube: FAQ](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [Importar código: importe la base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
+* [[!DNL Snapshots] y [!DNL backup] administración: [!DNL Dump] su base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Copia de seguridad (instantánea) en la nube: FAQ](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
