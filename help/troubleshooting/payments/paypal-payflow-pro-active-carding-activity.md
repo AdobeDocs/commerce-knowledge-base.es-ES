@@ -133,7 +133,7 @@ Póngase en contacto con el servicio de asistencia al comerciante de PayPal Payf
 
 >[!NOTE]
 >
->Para obtener más información, consulta la sección &quot;El Adobe de PayPal de [ KB se ha puesto en contacto conmigo para informarme sobre mi integración con Payflow Pro. ¿Qué debo hacer?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
+>Para obtener más información, consulta la sección &quot;El Adobe de PayPal de [&#x200B; KB se ha puesto en contacto conmigo para informarme sobre mi integración con Payflow Pro. ¿Qué debo hacer?&quot;](https://www.paypal.com/us/smarthelp/article/ts2242).
 
 **Detalles de asistencia al comerciante de PayPal Payflow**
 

@@ -48,6 +48,6 @@ Los clientes pueden reabrir un caso cerrado en un plazo de 14 días para continu
 ## Lectura relacionada
 
 * [Enviar un ticket de asistencia](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket)
-* [ El vínculo &quot;Enviar un ticket&quot; no se muestra en la página de inicio del Centro de ayuda de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
+* [&#x200B; El vínculo &quot;Enviar un ticket&quot; no se muestra en la página de inicio del Centro de ayuda de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#no-submit-link)
 * [Formulario de envío de tickets: el comerciante no se muestra en la lista desplegable Organización](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#merchant-not-displayed)
 * [Información general sobre planes de éxito de Adobe: ciclo de vida del caso de soporte](https://experienceleague.adobe.com/es/docs/support-resources/data-sheets/overview#support-case-lifecycle---coming-soon)

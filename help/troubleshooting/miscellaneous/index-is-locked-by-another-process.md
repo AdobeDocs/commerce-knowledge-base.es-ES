@@ -77,7 +77,7 @@ En nuestra base de conocimiento de soporte:
 
 En nuestra guía del usuario:
 
-* [Administración de índices](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/index-management?itm_source=merchdocs&amp;itm_medium=search_page&amp;itm_campaign=federated_search&amp;itm_term=reindexing)
+* [Administración de índices](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/tools/index-management?itm_source=merchdocs&itm_medium=search_page&itm_campaign=federated_search&itm_term=reindexing)
 
 En nuestra documentación para desarrolladores:
 

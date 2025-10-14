@@ -49,7 +49,7 @@ Error 500: NOTICE: PHP message: PHP Fatal error: Uncaught Error: Call to a membe
 
 Para comerciantes locales de Adobe Commerce: aplique la revisión [hotfix,](https://magento.com/tech-resources/download#download2353) que está disponible en la sección Descargas del portal [magento.com](https://magento.com) en Mi cuenta.
 
-Para Adobe Commerce en comerciantes de infraestructura en la nube: Adobe ha incluido la corrección en los parches de nube para Commerce v1.0.2. Consulte [Parches de nube para las notas de la versión de Commerce](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&amp;itm_medium=quick_search&amp;itm_campaign=federated_search&amp;itm_term=cloud%20patche) en nuestra documentación para desarrolladores para obtener instrucciones sobre cómo aplicar el paquete más reciente.
+Para Adobe Commerce en comerciantes de infraestructura en la nube: Adobe ha incluido la corrección en los parches de nube para Commerce v1.0.2. Consulte [Parches de nube para las notas de la versión de Commerce](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/release-notes/cloud-patches?itm_source=devdocs&itm_medium=quick_search&itm_campaign=federated_search&itm_term=cloud%20patche) en nuestra documentación para desarrolladores para obtener instrucciones sobre cómo aplicar el paquete más reciente.
 
 ## Cómo aplicar el parche
 

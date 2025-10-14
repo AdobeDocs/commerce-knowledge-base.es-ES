@@ -60,5 +60,5 @@ La solución a este problema es que el cliente puede iniciar sesión en una tien
 ## Lectura relacionada
 
 * [Práctica recomendada para la cantidad de productos que hay en el carro de compras en Adobe Commerce](https://support.magento.com/hc/en-us/articles/360048550332) en nuestra base de conocimiento de soporte.
-* [Tutorial de procesamiento de pedidos: Paso 1. Agregue elementos al carro de compras ](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) en nuestra documentación para desarrolladores
-* [Tutorial de cierre de compra de GraphQL: Paso 1. Agregue productos al carro ](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) en nuestra documentación para desarrolladores
+* [Tutorial de procesamiento de pedidos: Paso 1. Agregue elementos al carro de compras &#x200B;](https://developer.adobe.com/commerce/webapi/rest/tutorials/orders/order-add-items/) en nuestra documentación para desarrolladores
+* [Tutorial de cierre de compra de GraphQL: Paso 1. Agregue productos al carro &#x200B;](https://developer.adobe.com/commerce/webapi/graphql/tutorials/checkout/add-product-to-cart/) en nuestra documentación para desarrolladores

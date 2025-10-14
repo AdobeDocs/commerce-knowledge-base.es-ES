@@ -145,7 +145,7 @@ b. NO - Continúe con [Paso 10](#step-10).
 
 Ejemplo: en la tabla `cron_schedule` se ve el error *El archivo &quot;/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0 no se puede eliminar*. Advertencia!unlink(/app/var/tmp/analytics/tmp/.nfsb3b6041dd44588a0000850c0?lang=en): No existe ese archivo o directorio*
 
-a. SÍ - Usar el parche ACSD-50165 en [No se puede eliminar el archivo. Advertencia: no existe el error de archivo o directorio del administrador ](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26887). Espere 24 horas a que el trabajo se ejecute de nuevo y vuelva a intentarlo.\
+a. SÍ - Usar el parche ACSD-50165 en [No se puede eliminar el archivo. Advertencia: no existe el error de archivo o directorio del administrador &#x200B;](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26887). Espere 24 horas a que el trabajo se ejecute de nuevo y vuelva a intentarlo.\
 b. NO - Continúe con [Paso 11](#step-11).
 
 +++
