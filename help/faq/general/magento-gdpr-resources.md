@@ -16,7 +16,7 @@ Este artículo enumera los recursos de documentación oficial que analizan cómo
 
 ## Adobe Commerce está listo para el RGPD
 
-La [página principal oficial](https://business.adobe.com/privacy/general-data-protection-regulation.html) para todos los recursos de RGPD de Adobe Commerce.
+La [página principal oficial](https://business.adobe.com/es/privacy/general-data-protection-regulation.html) para todos los recursos de RGPD de Adobe Commerce.
 
 ## Declaraciones oficiales de Adobe Commerce
 
