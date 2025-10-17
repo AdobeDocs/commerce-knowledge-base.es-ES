@@ -21,7 +21,7 @@ Según se define en [Términos y condiciones de los servicios de soporte de Adob
 ## Políticas telefónicas de la línea directa de notificación P1
 
 * La línea directa de notificaciones P1 está disponible para informar sobre problemas de nivel P1 (consulte la definición de incidentes P1 en la sección anterior).
-* [Envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) antes de llamar a la línea directa de notificaciones P1 de Adobe Commerce.
+* [Envíe un ticket de asistencia](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket) antes de llamar a la línea directa de notificaciones P1 de Adobe Commerce.
 * La investigación, la resolución de problemas y la comunicación se realizarán exclusivamente dentro del ticket de asistencia.
 * Añada toda la información adicional que pueda tener relacionada con el problema al ticket directamente, antes de llamar a.
 * Al llamar, asegúrese de tener el número de billete.
