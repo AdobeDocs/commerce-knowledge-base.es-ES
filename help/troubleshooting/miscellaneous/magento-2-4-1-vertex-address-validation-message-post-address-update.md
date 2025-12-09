@@ -4,9 +4,9 @@ description: Este artículo describe un problema conocido de Adobe Commerce 2.4.
 exl-id: c2abeb96-e837-4d16-92dd-82fea5661dd9
 feature: Shipping/Delivery
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: ce377064efabaf09d3856da7c6c5c742a9fdcc2f
 workflow-type: tm+mt
-source-wordcount: '517'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,6 @@ Este artículo describe un problema conocido de Adobe Commerce 2.4.1 en el que l
 
 ## Problema
 
-Requisitos previos:
-
-Habilitar **Limpieza de direcciones de vértice**. Para ver los pasos, consulte [Configuración de la limpieza de direcciones de tienda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/vertex-address-cleansing-different-addresses-not-allowed.html?lang=es) en nuestra guía del usuario.
 
 <u>Pasos a seguir:</u>
 
