@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 96ec7b44bd913c5976f0a8e3ce8355f7686622ad
+source-git-commit: dff3d2101da7264fe5e6af9ac5c9a6c1c8c97bc9
 workflow-type: tm+mt
-source-wordcount: '2736'
+source-wordcount: '2700'
 ht-degree: 0%
 
 ---
@@ -101,7 +101,6 @@ ht-degree: 0%
       * [El administrador de Adobe Commerce 2.4.0 B2B no puede añadir un producto configurable al presupuesto](/help/troubleshooting/miscellaneous/magento-2-4-0-b2b-admin-can-t-add-configurable-product-to-quote.md)
       * [Adobe Commerce 2.3.6: control de número ilimitado mostrado al guardar la dirección](/help/troubleshooting/miscellaneous/magento-2-3-6-endless-spinner-displayed-on-address-save.md)
       * [Solución de problemas de New Relic en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/miscellaneous/troubleshooting-new-relic-on-magento-commerce-cloud.md)
-      * [Error 404 no encontrado al acceder al Asistente para configuración web a través del Panel de administración](/help/troubleshooting/miscellaneous/404-error-web-set-up-wizard-cloud.md)
       * [Habilitar caché para evitar la degradación del rendimiento](/help/troubleshooting/miscellaneous/enable-magento-cache-to-avoid-performance-degradation.md)
       * [Guía de solución de problemas de Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
       * [Problemas de comprobación de preparación de permisos de archivos](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
@@ -116,7 +115,6 @@ ht-degree: 0%
       * [Calentamiento de la caché y sitio no disponible en Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
       * [Solución de errores UTF-8 para cargas de archivos CSV](/help/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.md)
       * [Solución de problemas de rendimiento con New Relic en Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)
-      * [Problema conocido del recuento de productos de acción masiva en Adobe Commerce 2.3.5](/help/troubleshooting/miscellaneous/bulk-action-product-count-known-issue-in-magento-2-3-5.md)
       * [Comprobación de ataques DDoS desde CLI](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md)
       * [Error de página en blanco o bucle de redirección al acceder a la tienda o al administrador de Commerce](/help/troubleshooting/miscellaneous/blank-page-or-redirect-loop-error-when-accessing-storefront-or-magento-admin.md)
       * [Mensaje de validación de dirección de vértice de Adobe Commerce 2.4.1: Actualización de dirección de publicación](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md)
@@ -127,7 +125,6 @@ ht-degree: 0%
       * [Estado de stock incorrecto tras la instalación de Inventory management](/help/troubleshooting/miscellaneous/stock-status-incorrect-after-magento-inventory-install.md)
       * [Problema conocido de Adobe Commerce 2.3.5: pedidos de varios envíos de productos virtuales](/help/troubleshooting/miscellaneous/magento-2-3-5-known-issue-virtual-product-multi-ship-orders.md)
       * [Uso de las exportaciones de datos para detectar discrepancias](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
-      * [Imágenes de archivo no mostradas, Adobe Commerce y Magento Open Source 2.3.7-p2](/help/troubleshooting/miscellaneous/adobe-commerce-and-magento-open-source-2-3-7-p2-stock-images-not-showing.md)
       * [Error al habilitar la optimización de imágenes en Adobe Commerce](/help/troubleshooting/miscellaneous/error-enabling-image-optimization-in-magento-commerce.md)
       * [Herramienta de migración de datos](/help/troubleshooting/miscellaneous/data-migration-tool-troubleshooting.md)
       * [Problemas de comprobación de disponibilidad de dependencias del componente](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
@@ -141,7 +138,6 @@ ht-degree: 0%
       * [Solución de problemas de acceso compartido](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
       * [Lento rendimiento, crons lentos y de larga duración](/help/troubleshooting/miscellaneous/slow-performance-slow-and-long-running-crons.md)
       * [Error al validar las credenciales de Fastly](/help/troubleshooting/miscellaneous/error-when-validating-fastly-credentials.md)
-      * [Problemas de copia de seguridad](/help/troubleshooting/miscellaneous/backup-issues.md)
       * [Los clientes nuevos no se muestran en la cuadrícula del cliente después de la importación de CSV](/help/troubleshooting/miscellaneous/new-customers-not-displayed-in-customer-grid-after-csv-import.md)
       * [El informe Herramienta de exploración de seguridad está en blanco](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
       * [Adobe Commerce 2.4.2-p1: nota de factura con un valor incorrecto](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
