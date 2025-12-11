@@ -4,9 +4,9 @@ description: Este artículo proporciona una corrección para el bajo rendimiento
 exl-id: 4f20a862-cf54-4196-8a88-101f0c80f8f1
 feature: Best Practices
 role: Developer
-source-git-commit: 72ee49a8667f575a58e0cf1b3d5c9df936cc628b
+source-git-commit: 0786763a1db386fbea7f809eba9bc7f202cdd27a
 workflow-type: tm+mt
-source-wordcount: '346'
+source-wordcount: '335'
 ht-degree: 0%
 
 ---
@@ -53,10 +53,10 @@ Se han realizado desde la administración acciones que pueden producir una reind
 
 ### Solución
 
-Ejecute la reindexación solo cuando sea necesario. Para ver los pasos, revise [Configurar indizadores](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) en nuestra documentación para desarrolladores. Una recomendación general y una práctica recomendada es permitir que el mecanismo de reindexación parcial se ocupe de la reindexación de datos sin que un comerciante tenga que realizar ninguna acción manual. Toda reindexación debe realizarse utilizando la funcionalidad nativa de Adobe Commerce (Mview). Mview realiza una reindexación parcial, que es la forma más eficaz de reindexar los datos. Para obtener más información sobre Mview, consulte [Resumen de la indexación: Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) en nuestra documentación para desarrolladores.
+Ejecute la reindexación solo cuando sea necesario. Para ver los pasos, revise [Configurar indizadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers#configure-indexers) en nuestra documentación para desarrolladores. Una recomendación general y una práctica recomendada es permitir que el mecanismo de reindexación parcial se ocupe de la reindexación de datos sin que un comerciante tenga que realizar ninguna acción manual. Toda reindexación debe realizarse utilizando la funcionalidad nativa de Adobe Commerce (Mview). Mview realiza una reindexación parcial, que es la forma más eficaz de reindexar los datos. Para obtener más información sobre Mview, consulte [Resumen de la indexación: Mview](https://developer.adobe.com/commerce/php/development/components/indexing/#mview) en nuestra documentación para desarrolladores.
 
 ## Lectura relacionada
 
 * [Información general sobre la indexación: cómo reindexar](https://developer.adobe.com/commerce/php/development/components/indexing/#how-to-reindex) en nuestra documentación para desarrolladores.
-* [La caché invalidada causa una degradación del tiempo de respuesta](/help/troubleshooting/miscellaneous/invalidated-cache-causes-response-time-degradation.md) en nuestra base de conocimiento de soporte.
+
 
