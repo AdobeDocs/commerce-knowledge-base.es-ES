@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 898424645c2ef0435c1a75604a47b7d5713670d8
+source-git-commit: de5dd9b057f2dbe79f9c931ef6d3473d809aedab
 workflow-type: tm+mt
-source-wordcount: '2669'
+source-wordcount: '2663'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,6 @@ ht-degree: 0%
       * [Comprobación de consultas y procesos lentos en MySQL](/help/troubleshooting/database/checking-slow-queries-and-processes-mysql.md)
       * [Carga de base de datos pierde conexión con MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
       * [El servidor MySQL ha desaparecido&#x200B; error en Adobe Commerce en la nube](/help/troubleshooting/database/mysql-server-has-gone-away-error-on-magento-commerce-cloud.md)
-      * [Solucionador de problemas de almacenamiento de bases de datos en Adobe Commerce](/help/troubleshooting/database/database-storage-troubleshooter-on-adobe-commerce.md)
       * [Errores de base de datos relacionados con max_allowed_packet en Adobe Commerce](/help/troubleshooting/database/database-errors-related-to-max-allowed-packet-on-magento.md)
       * [Valor numérico de la base de datos Adobe Commerce fuera del intervalo, [!DNL INT] a [!DNL BIGINT]](/help/troubleshooting/database/int-biginit-schema-update-request.md)
       * [Leer los problemas de Réplicas en Adobe Commerce Cloud 2.4.6 con MariaDB 10.6](/help/troubleshooting/database/read-replicas-issues-synchronization-mariadb-10-6.md)
