@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: de5dd9b057f2dbe79f9c931ef6d3473d809aedab
+source-git-commit: 9a2dadfbb5ca0a2c04d4e86454a1145b97924f61
 workflow-type: tm+mt
-source-wordcount: '2663'
+source-wordcount: '2656'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,6 @@ ht-degree: 0%
       * [Solución de problemas de error 503 causado por la necesidad de cambiar la configuración predeterminada de Barniz](/help/troubleshooting/miscellaneous/troubleshooting-503-errors.md)
       * [Las tareas cron bloquean las tareas de otros grupos](/help/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.md)
       * [Error de nivel de anidamiento de función máxima de xdebug de instalación](/help/troubleshooting/miscellaneous/installation-xdebug-maximum-function-nesting-level-error.md)
-      * [No se puede guardar el backend de Adobe Commerce de entidad](/help/troubleshooting/miscellaneous/unable-to-save-entity-backend.md)
       * [Error de versión de PHP o error 404 al acceder a Adobe Commerce en el explorador](/help/troubleshooting/miscellaneous/php-version-error-or-404-error-when-accessing-magento-in-browser.md)
       * [El orden de las opciones del paquete no se actualiza mediante la importación](/help/troubleshooting/miscellaneous/bundle-options-order-is-not-updated-by-import.md)
       * [Adobe Commerce 2.4.0: &quot;Añadir selecciones a mi carro de compras&quot; no funciona](/help/troubleshooting/miscellaneous/magento-2-4-0-add-selections-to-my-cart-does-not-work.md)
