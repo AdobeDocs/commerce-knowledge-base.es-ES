@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: f729183422f29ce4485f640e66e65a1eeb0c4525
+source-git-commit: f619f3de2f2032ef0a79d9a001817458f22394e6
 workflow-type: tm+mt
-source-wordcount: '2583'
+source-wordcount: '2576'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,6 @@ ht-degree: 0%
       * [Cambio a OpenSearch para Adobe Commerce en la nube 2.4.4](/help/announcements/adobe-commerce-announcements/switching-to-opensearch-for-adobe-commerce-on-cloud-2-4-4.md)
       * [Adobe Commerce Recommendations para vulnerabilidades de PHP](/help/announcements/adobe-commerce-announcements/magento-recommendations-for-php-vulnerabilities.md)
       * [El motor de búsqueda del catálogo MySQL se eliminará en Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
-      * [Adobe admite el acceso a los datos de los clientes y la privacidad](/help/announcements/adobe-commerce-announcements/adobe-support-customer-data-access-and-privacy.md)
       * [API de UPS obsoletas](/help/announcements/adobe-commerce-announcements/ups-apis-deprecated.md)
       * [Programación de versiones 2024](/help/announcements/adobe-commerce-announcements/2024-release-schedule.md)
       * [Adobe Commerce admite la migración del proceso de admisión a Experience League](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
