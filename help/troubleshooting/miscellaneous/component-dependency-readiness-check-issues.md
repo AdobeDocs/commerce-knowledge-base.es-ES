@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para los conflictos de depend
 exl-id: e0865226-2aaf-4bdd-8c28-28f32f38ce0c
 feature: Configuration
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
@@ -40,8 +40,6 @@ We found conflicting component dependencies.
 >
 >Es probable que el mensaje que vea sea diferente.
 
-Consulte [Dependencias de componentes en conflicto para obtener una solución](/help/troubleshooting/miscellaneous/conflicting-component-dependencies.md) en nuestra base de conocimiento de soporte.
-
 ## Problemas de permisos del sistema de archivos {#trouble-depend-permission}
 
 Si el propietario del sistema de archivos de Adobe Commerce no tiene permisos para escribir en directorios del sistema de archivos de Adobe Commerce, aparece un mensaje similar al siguiente:
@@ -51,7 +49,7 @@ file_put_contents(/var/www/html/magento2/var/composer_home/cache/repo/https---
 packagist.org/provider-doctrine$instantiator.json): failed to open stream: Permission denied
 ```
 
-Asegúrese de establecer permisos de sistema de archivos como se describe en el artículo [Información general sobre la propiedad y los permisos](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) en nuestra documentación para desarrolladores.
+Asegúrese de establecer permisos de sistema de archivos como se describe en el artículo [Información general sobre la propiedad y los permisos](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/file-system/overview) en nuestra documentación para desarrolladores.
 
 ## El estado de comprobación de dependencias del componente nunca cambia {#trouble-depend-state}
 

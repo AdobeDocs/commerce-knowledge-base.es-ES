@@ -4,9 +4,9 @@ description: Este artículo trata sobre un problema conocido en Commerce Admin a
 exl-id: 73f7231b-b496-4250-b9e2-29427c772d56
 feature: Admin Workspace, B2B, Catalog Management, Configuration, Products, Quotes
 role: Developer
-source-git-commit: 9cd9720a73b8ecde3baf6a7a5b5732ad1330feee
+source-git-commit: 05297c82b292b8ccc88018c58e991bd3a32d6ffa
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '507'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,4 @@ Este artículo trata sobre un problema conocido en Commerce Admin al administrar
 ## Recomendación
 
 Actualmente, no hay solución para este problema con la edición de presupuestos B2B, pero para la administración de pedidos y carros de compras, es posible seleccionar productos de la **lista de productos** en lugar de agregarlos por **SKU**. Habrá disponible un parche para resolver el problema para Adobe Commerce 2.4.1, cuyo lanzamiento está programado para el cuarto trimestre de 2020.
-
-## Lectura relacionada
-
-* [Problema conocido de Adobe Commerce 2.4.0: la actualización de las actividades del cliente no funciona](/help/troubleshooting/miscellaneous/magento-2-4-0-refresh-on-customer-activities-does-not-work.md)
-* [Problema conocido de Adobe Commerce 2.4.0: Las tasas de impuestos de exportación no funcionan](/help/troubleshooting/miscellaneous/magento-2-4-0-known-issue-export-tax-rates-does-not-work.md)
 
