@@ -47,5 +47,5 @@ El valor `default_socket_timeout` se ha establecido demasiado bajo. Esto se debe
 
 ## Lectura relacionada
 
-* [Prácticas recomendadas de bases de datos para Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
-* [Problemas más comunes de la base de datos en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
+* [Prácticas recomendadas de bases de datos para Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=es)
+* [Problemas más comunes de la base de datos en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=es)
