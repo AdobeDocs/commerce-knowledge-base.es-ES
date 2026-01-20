@@ -4,9 +4,9 @@ description: Este artículo habla sobre la solución del problema en el que reci
 exl-id: 14cb9a6d-6d25-4044-8f52-d65648c03431
 feature: Cloud, Paas, Services, Variables
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '267'
 ht-degree: 0%
 
 ---
@@ -47,6 +47,5 @@ El valor `default_socket_timeout` se ha establecido demasiado bajo. Esto se debe
 
 ## Lectura relacionada
 
-* [Carga de base de datos pierde conexión con MySQL](/help/troubleshooting/database/database-upload-loses-connection-to-mysql.md)
-* [Prácticas recomendadas de bases de datos para Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=es)
-* [Problemas más comunes de la base de datos en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=es)
+* [Prácticas recomendadas de bases de datos para Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html)
+* [Problemas más comunes de la base de datos en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html)
