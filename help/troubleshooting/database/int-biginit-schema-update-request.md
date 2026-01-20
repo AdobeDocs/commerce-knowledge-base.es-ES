@@ -17,7 +17,7 @@ ht-degree: 0%
 >
 >Antes de implementar la solución de este artículo (`INT` a `BIGINT` actualización de esquema), los comerciantes siempre deben comprobar que el campo que van a cambiar NO tiene ninguna relación de clave externa con otra tabla. Si el campo tiene relaciones de clave externa con otra tabla, habrá problemas porque el campo relacionado sigue siendo `INT`. Pueden utilizar la siguiente consulta para verificarlo. Esta consulta enumera las relaciones de clave externa disponibles en la base de datos para el campo de tabla dado:
 >
-```mysql
+>```mysql
 >SELECT 
 >     TABLE_NAME,COLUMN_NAME,CONSTRAINT_NAME,REFERENCED_TABLE_NAME,REFERENCED_COLUMN_NAME
 >FROM
@@ -111,7 +111,7 @@ Para ello:
 
 ## Lectura relacionada
 
-* [Directrices generales [!DNL MySQL] 2} en la Guía de instalación de Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html)
+* [Directrices generales [!DNL MySQL] 2&rbrace; en la Guía de instalación de Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html)
 * [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) en nuestra base de conocimiento de soporte
 * [Problemas más comunes de las bases de datos en Adobe Commerce sobre la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) en nuestra base de conocimiento de asistencia
 * [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
