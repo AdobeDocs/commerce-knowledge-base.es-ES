@@ -1,12 +1,12 @@
 ---
-title: "Problema conocido de Adobe Commerce 2.3.6, 2.4.0-p1, 2.4.1: inicio de sesión dotdigital"
+title: 'Problema conocido de Adobe Commerce 2.3.6, 2.4.0-p1, 2.4.1: inicio de sesión dotdigital'
 description: Este artículo describe un problema conocido de Adobe Commerce 2.3.6, 2.4.0-p1 y 2.4.1 en el que es imposible iniciar sesión en [dotdigital](https://dotdigital.com/) mediante el Panel de administración cuando la cuenta dotdigital está habilitada.
 exl-id: 427d895c-8c03-4ced-813a-eeaa67f1d1f0
 feature: Configuration
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 38b4d310cab9dccad142c244f6e07f8421a9894d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '206'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,3 @@ No se puede iniciar sesión en dotdigital.
 ## Solución
 
 Solución alternativa: utilice un explorador alternativo a Safari para esta situación concreta.
-
-## Lectura relacionada
-
-[Problema conocido de Adobe Commerce 2.4.1: la dirección de vértice no se valida con direcciones de envío/facturación diferentes](/help/troubleshooting/miscellaneous/magento-2-4-1-vertex-address-validation-message-post-address-update.md) en nuestra base de conocimiento de soporte.
