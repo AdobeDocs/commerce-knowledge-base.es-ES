@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: e73894751543dcd1197cc0d20cfac61c44b3ecaa
+source-git-commit: 27b0836380c3040b26076b9cb81b9328cb2c9ff2
 workflow-type: tm+mt
-source-wordcount: '2395'
+source-wordcount: '2396'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 0%
       * [Guía de solución de problemas de Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
       * [Problemas de comprobación de preparación de permisos de archivos](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
       * [Diagnóstico de discrepancias de ingresos de Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
-      * [He configurado las claves API para Sensei, pero solo veo un espacio de datos SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
+      * [He configurado las claves de API para la IA de Adobe, pero solo veo un espacio de datos de SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
       * [El menú principal (Categorías) no se muestra en las subpáginas que tengan activada la opción Rápidamente](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
       * [Almacenamiento de archivos bajo, cargas de página específicas lentas](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
       * [Rendimiento lento debido a la reindexación completa](/help/troubleshooting/miscellaneous/slow-performance-due-to-full-reindexing.md)
