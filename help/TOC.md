@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 6e47f604af3a498f4f9e10c0175875766ebd7e2a
+source-git-commit: 7f7e26f07e921577b1dd7686f5dace396888aa60
 workflow-type: tm+mt
-source-wordcount: '2360'
+source-wordcount: '2340'
 ht-degree: 0%
 
 ---
@@ -158,7 +158,6 @@ ht-degree: 0%
       * [PWA Studio: Webpack se bloquea antes de comenzar la compilación](/help/troubleshooting/miscellaneous/pwa-studio-webpack-hangs-before-beginning-compilation.md)
       * [Resolución de un error de desplazamiento no válido](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [Estado del producto incorrecto cuando se crea mediante programación](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
-      * [Problema de permiso de carpeta var/export en Adobe Commerce en la nube](/help/troubleshooting/miscellaneous/issue-in-the0email-folder-adobe-commerce.md)
       * [Las actualizaciones programadas de ensayo de contenido no se muestran con la caché de Fastly obsoleta](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
       * [Solucionar problemas de cron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [El archivo .csv de productos exportados no aparece](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
@@ -302,7 +301,6 @@ ht-degree: 0%
    * [Vínculo Magento.com e inicios de sesión en la cuenta de accounts.magento.cloud](/help/faq/general/linking-magento-com-and-accounts-magento-cloud-account-logins.md)
    * [Preguntas frecuentes sobre la activación de encubrimiento Fastly origin](/help/faq/general/fastly-origin-cloaking-enablement-faq.md)
    * [La variable de incremento auto_increment de la base de datos está configurada en &quot;3&quot; Adobe Commerce en nuestra arquitectura Cloud Pro](/help/faq/general/database-auto-increment-increment-variable-set-to-3-magento-cloud-pro.md)
-   * [Hoja de datos de monitorización para Adobe Commerce en la infraestructura de cloud pro](/help/faq/general/monitoring-whitepaper.md)
    * [Acceso a servicios de New Relic](/help/faq/general/access-new-relic-services.md)
    * [Accesibilidad al contenido web para Adobe Commerce](/help/faq/general/accessibility.md)
    * [¿Cuántos cupones puede utilizar un cliente en Adobe Commerce?](/help/faq/general/how-many-coupons-can-a-customer-use-in-magento-2.md)
