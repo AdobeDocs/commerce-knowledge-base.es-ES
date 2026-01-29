@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 7f7e26f07e921577b1dd7686f5dace396888aa60
+source-git-commit: 49dd77f7cb185d771f5f1db823692ede72748634
 workflow-type: tm+mt
-source-wordcount: '2340'
+source-wordcount: '2333'
 ht-degree: 0%
 
 ---
@@ -309,7 +309,6 @@ ht-degree: 0%
    * [Recursos de RGPD de Adobe Commerce](/help/faq/general/magento-gdpr-resources.md)
    * [Cambio de precio base que afecta al precio de catálogo compartido](/help/faq/general/base-price-change-affect-on-shared-catalog-price.md)
    * [Preguntas frecuentes sobre la autenticación de doble factor en el Panel de administración en Adobe Commerce](/help/faq/general/two-factor-authentication-in-admin-panel-on-magento-faq.md)
-   * [Generalidades de las herramientas de asistencia de Adobe Commerce](/help/faq/general/support-tools-overview.md)
    * [Copia de seguridad (instantánea) en la nube: preguntas frecuentes](/help/faq/general/backup-snapshot-on-cloud-faq.md)
    * [Preguntas frecuentes sobre la estrategia de versión de Adobe Commerce de 2024 y 2023 y la política de ciclo de vida](/help/faq/general/adobe-commerce-release-strategy-lifecycle-policy.md)
    * [¿Puedo programar actualizaciones de Ensayo de contenido para precios en un catálogo compartido?](/help/faq/general/can-i-schedule-content-staging-updates-for-prices-in-a-shared-catalog.md)
