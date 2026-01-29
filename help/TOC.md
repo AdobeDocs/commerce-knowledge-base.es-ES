@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 12e17359c84e3a71425fce1b378cb57ed7fca86d
+source-git-commit: 6e47f604af3a498f4f9e10c0175875766ebd7e2a
 workflow-type: tm+mt
-source-wordcount: '2367'
+source-wordcount: '2360'
 ht-degree: 0%
 
 ---
@@ -315,5 +315,4 @@ ht-degree: 0%
    * [Copia de seguridad (instantánea) en la nube: preguntas frecuentes](/help/faq/general/backup-snapshot-on-cloud-faq.md)
    * [Preguntas frecuentes sobre la estrategia de versión de Adobe Commerce de 2024 y 2023 y la política de ciclo de vida](/help/faq/general/adobe-commerce-release-strategy-lifecycle-policy.md)
    * [¿Puedo programar actualizaciones de Ensayo de contenido para precios en un catálogo compartido?](/help/faq/general/can-i-schedule-content-staging-updates-for-prices-in-a-shared-catalog.md)
-   * [Preguntas frecuentes sobre el fin de la asistencia del software Adobe Commerce](/help/faq/general/adobe-commerce-eos-policy-faq.md)
    * [¿Necesito Fastly para un sitio de Adobe Commerce sin encabezado?](/help/faq/general/do-i-need-fastly-for-a-headless-magento-site.md)
