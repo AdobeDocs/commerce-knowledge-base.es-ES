@@ -12,7 +12,7 @@ ht-degree: 0%
 
 # Guía del usuario de asistencia de Experience League para Adobe Commerce
 
-En esta guía, aprenderá a enviar un ticket de asistencia a [Soporte técnico de Experience League](https://experienceleague.adobe.com/home#support) y a proporcionar acceso compartido a las cuentas de Adobe Commerce.
+En esta guía, aprenderá a enviar un ticket de asistencia a [Soporte técnico de Experience League](https://experienceleague.adobe.com/home?lang=es#support) y a proporcionar acceso compartido a las cuentas de Adobe Commerce.
 
 >[!NOTE]
 >
@@ -20,7 +20,7 @@ En esta guía, aprenderá a enviar un ticket de asistencia a [Soporte técnico d
 
 >[!NOTE]
 >
->En este momento, para ver los casos que ha enviado anteriormente en el Centro de ayuda de Adobe Commerce, debe ir a https://support.magento.com/hc/en-us/requests, ya que estos casos no se han migrado al nuevo sistema de tickets de asistencia. El Centro de ayuda es ahora de solo lectura; para seguir recibiendo ayuda para el problema original, tendrás que enviar un ticket de seguimiento a [Soporte técnico de Experience League](https://experienceleague.adobe.com/home#support).
+>En este momento, para ver los casos que ha enviado anteriormente en el Centro de ayuda de Adobe Commerce, debe ir a https://support.magento.com/hc/en-us/requests, ya que estos casos no se han migrado al nuevo sistema de tickets de asistencia. El Centro de ayuda es ahora de solo lectura; para seguir recibiendo ayuda para el problema original, tendrás que enviar un ticket de seguimiento a [Soporte técnico de Experience League](https://experienceleague.adobe.com/home?lang=es#support).
 
 >[!NOTE]
 >
@@ -75,7 +75,7 @@ El inicio de sesión le permite enviar, actualizar y responder a preguntas de lo
 
 Para iniciar sesión en la asistencia de Adobe Experience League, siga estos pasos:
 
-1. Vaya a [experienceLeague.adobe.com](https://experienceleague.adobe.com/).
+1. Vaya a [experienceLeague.adobe.com](https://experienceleague.adobe.com/es).
 1. Inicie sesión con sus credenciales de inicio de sesión de Adobe.
 
 ![iniciar sesión en experience-league](assets/experience_league_sign_in.png)
@@ -146,7 +146,7 @@ Para enviar un nuevo caso de asistencia técnica mediante la página de inicio d
 >1. Vaya a accounts.magento.com e inicie sesión con el mismo perfil (corporativo, escolar o personal) que utilizará para administrar los casos de asistencia en Adobe Experience League.
 >1. Una vez que haya iniciado sesión correctamente en su perfil de accounts.magento.com, vuelva a experienceleague.adobe.com e inicie sesión.
 >1. Seleccione su organización en el menú desplegable de organización.
->1. Si su organización sigue sin aparecer, póngase en contacto con el administrador de Commerce para obtener derechos de delegado de asistencia. Para obtener más información, consulte el artículo de ayuda [Uso compartido de cuentas de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share).
+>1. Si su organización sigue sin aparecer, póngase en contacto con el administrador de Commerce para obtener derechos de delegado de asistencia. Para obtener más información, consulte el artículo de ayuda [Uso compartido de cuentas de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/commerce-account/commerce-account-share).
 
 >[!NOTE]
 >
@@ -174,11 +174,11 @@ Para enviar un nuevo caso de asistencia técnica mediante la página de inicio d
 >* Sus derechos de Commerce han caducado o están inactivos (por ejemplo, debido a un problema pendiente de facturación o licencia).
 >* Para instancias alojadas en Adobe Commerce en la infraestructura en la nube (PaaS), no se le ha agregado al proyecto en la nube.
 >
->Para proyectos de Adobe Commerce en la nube, póngase en contacto con el propietario de la cuenta y solicite que se le añada al proyecto de Cloud correspondiente. Para obtener más información, consulte [Administrar el acceso de los usuarios](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access) para Adobe Commerce en la infraestructura en la nube.
+>Para proyectos de Adobe Commerce en la nube, póngase en contacto con el propietario de la cuenta y solicite que se le añada al proyecto de Cloud correspondiente. Para obtener más información, consulte [Administrar el acceso de los usuarios](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/user-access) para Adobe Commerce en la infraestructura en la nube.
 >
 >Una vez que se le haya concedido el acceso compartido y se le haya añadido al proyecto en la nube:
 >
->1. Vaya a la página [Soporte técnico de Adobe](https://experienceleague.adobe.com/home?lang=en#support).
+>1. Vaya a la página [Soporte técnico de Adobe](https://experienceleague.adobe.com/home?lang=es#support).
 >1. En el menú desplegable de organización de la izquierda, seleccione la organización cuyo nombre termina con **(Commerce)**.
 >1. Envíe el ticket para el producto apropiado y no seleccione **Informes de Commerce** para problemas relacionados específicamente con los Informes avanzados.
 
@@ -197,14 +197,14 @@ Debe tener una cuenta en https://account.adobe.com y https://account.magento.com
 
 Para enviar un nuevo ticket de asistencia técnica utilizando la página de cuenta de Adobe Commerce, siga estos pasos:
 
-1. Inicie sesión en su cuenta de Adobe Commerce. Consulte [instrucciones detalladas](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=en#create-a-commerce-account) en nuestra guía de usuario.
+1. Inicie sesión en su cuenta de Adobe Commerce. Consulte [instrucciones detalladas](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-account-create.html?lang=es#create-a-commerce-account) en nuestra guía de usuario.
 1. Haga clic en la ficha **Asistencia**.
 
    ![pestaña magento_account_support](assets/magento_account_support_tab.png){width="800"}
 
 1. La página de asistencia de Adobe Experience League se carga automáticamente.
 1. Seleccione **[!UICONTROL Open Ticket]** en el menú de la izquierda.
-1. Rellene [los campos](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-support-ticket-contact-reason-descriptions).
+1. Rellene [los campos](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-support-ticket-contact-reason-descriptions).
 1. Haga clic en **Enviar**.
 
 #### *Compruebe su dirección de correo electrónico* error en la página de cuenta de Adobe Commerce {#verify-email-address-error}
@@ -234,7 +234,7 @@ Puede ver los casos de Commerce que ha enviado personalmente al hacer clic en **
 
 #### Consulte los casos históricos en el Centro de ayuda de Adobe Commerce
 
-Obtenga más información sobre cómo **ver sus casos históricos** en el Centro de ayuda de Adobe Commerce en [Retirada del Centro de ayuda de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) en nuestra Base de conocimiento de Adobe Commerce.
+Obtenga más información sobre cómo **ver sus casos históricos** en el Centro de ayuda de Adobe Commerce en [Retirada del Centro de ayuda de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/announcements/news/decommissioning-of-adobe-commerce-help-center) en nuestra Base de conocimiento de Adobe Commerce.
 
 #### Vea sus casos observados
 
@@ -277,7 +277,7 @@ Puede agregar observadores para admitir los casos enviados por los miembros de s
 
 >[!NOTE]
 >
->Para obtener más información sobre cómo agregar y quitar observadores para su caso, vea el vídeo [Agregar y quitar observadores, cerrar y volver a abrir vales](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
+>Para obtener más información sobre cómo agregar y quitar observadores para su caso, vea el vídeo [Agregar y quitar observadores, cerrar y volver a abrir vales](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
 
 ### Comentarios en su caso {#comments-in-your-case}
 
@@ -297,17 +297,17 @@ Para cerrar el caso, haga clic en **[!UICONTROL Close case]** en la parte inferi
 
 >[!NOTE]
 >
->Para obtener más información sobre cómo cerrar el caso, consulte el vídeo [Agregar y eliminar observadores, cerrar y volver a abrir tickets](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
+>Para obtener más información sobre cómo cerrar el caso, consulte el vídeo [Agregar y eliminar observadores, cerrar y volver a abrir tickets](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
 
 ### Vuelva a abrir el caso {#reopen-case}
 
 >[!NOTE]
 >
->**Solo puede reabrir un caso dentro de los 14 días posteriores a su cierre.** Si ya han pasado 14 días desde el cierre del caso, pero aun así desea solicitar ayuda en relación con un problema, debe abrir un nuevo caso.<br>Para obtener más información sobre cómo cerrar y reabrir casos, vea el vídeo [Agregar y quitar observadores, cerrar y reabrir tickets](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
+>**Solo puede reabrir un caso dentro de los 14 días posteriores a su cierre.** Si ya han pasado 14 días desde el cierre del caso, pero aun así desea solicitar ayuda en relación con un problema, debe abrir un nuevo caso.<br>Para obtener más información sobre cómo cerrar y reabrir casos, vea el vídeo [Agregar y quitar observadores, cerrar y reabrir tickets](https://experienceleague.adobe.com/es/docs/commerce-learn/tutorials/help-and-support/add-remove-watchers-close-reopen-support-ticket).
 
 >[!NOTE]
 >
->No puedes reabrir un caso respondiendo a una notificación por correo electrónico desde un ticket cerrado. Para reabrir el caso, asegúrate de que el propietario de la cuenta te haya dado [acceso compartido](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26164).
+>No puedes reabrir un caso respondiendo a una notificación por correo electrónico desde un ticket cerrado. Para reabrir el caso, asegúrate de que el propietario de la cuenta te haya dado [acceso compartido](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26164).
 
 ### Enviar ticket mediante la consola de Cloud {#cloud-console}
 
@@ -317,16 +317,16 @@ Para enviar un nuevo ticket de asistencia técnica mediante Cloud Console, siga 
 1. Seleccione **[!UICONTROL Support]** en el menú de usuario.
 1. Se carga la página **[!UICONTROL My Tickets]**.
 1. Haga clic en **[!UICONTROL Submit a ticket]** en la esquina superior derecha.
-1. Rellene [los campos](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-support-ticket-contact-reason-descriptions).
+1. Rellene [los campos](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-support-ticket-contact-reason-descriptions).
 1. Haga clic en **[!UICONTROL Submit]**.
 
 ### Línea directa de Adobe Commerce P1 {#P1-hotline}
 
-El artículo de la [línea directa P1 de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html) proporciona los números de la línea directa P1 para Adobe Commerce cuando se busca ayuda durante un incidente P1 y explica qué información se debe proporcionar.
+El artículo de la [línea directa P1 de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/adobe-commerce-p1-notification-hotline.html?lang=es) proporciona los números de la línea directa P1 para Adobe Commerce cuando se busca ayuda durante un incidente P1 y explica qué información se debe proporcionar.
 
 ### Modelo operativo de responsabilidad compartida de Adobe Commerce {#shared-responsibility-operational-model}
 
-Consulte el artículo sobre [Modelo operativo de responsabilidad compartida de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary),
+Consulte el artículo sobre [Modelo operativo de responsabilidad compartida de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/security-and-compliance/shared-responsibility#operational-responsibilities-summary),
 que tiene como objetivo aclarar las responsabilidades operativas de nuestra oferta de infraestructura Pro únicamente.
 
 ### Abra un ticket de seguimiento {#follow-up}
@@ -351,17 +351,17 @@ Los usuarios a los que se ha proporcionado acceso compartido no pueden transferi
 
 ### Proporcionar acceso compartido {#provide-shared-access}
 
-Consulte la sección [Compartir una cuenta de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) de la Guía de introducción de Adobe Commerce para ver los pasos detallados sobre cómo configurar una cuenta compartida.
+Consulte la sección [Compartir una cuenta de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/commerce-account/commerce-account-share) de la Guía de introducción de Adobe Commerce para ver los pasos detallados sobre cómo configurar una cuenta compartida.
 
 >[!NOTE]
 >
->El usuario debe tener una cuenta existente para que se le pueda otorgar acceso compartido. Consulta [Crear una cuenta de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account) para obtener más detalles.
+>El usuario debe tener una cuenta existente para que se le pueda otorgar acceso compartido. Consulta [Crear una cuenta de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/commerce-account/commerce-account-create#create-a-commerce-account) para obtener más detalles.
 
 Después de proporcionar acceso compartido a un nuevo usuario, la información relacionada estará disponible en **Acceso compartido** > **Administrar permisos** de la página de la cuenta de Adobe Commerce.
 
 >[!NOTE]
 >
->El acceso compartido no concede automáticamente acceso a la consola de Commerce Cloud. Debe [agregar al usuario por separado al proyecto en la nube](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
+>El acceso compartido no concede automáticamente acceso a la consola de Commerce Cloud. Debe [agregar al usuario por separado al proyecto en la nube](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/project/user-access#add-a-user-to-the-project).
 
 ![permisos de administración compartida de cuentas de magento](assets/magento_account_shared_manage_permissions.png)
 
@@ -409,14 +409,14 @@ Sin embargo, una vez que haya revocado los permisos a esos usuarios de acceso co
 
 ![grant-account-permissions-image](assets/help-center-user-guide-grant-account-permissions-image.png){width="800"}
 
-Para obtener más información, consulte la documentación de [Administrar el acceso de los usuarios](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-project-web-interface) en nuestra Guía de infraestructura en la nube de Commerce.
+Para obtener más información, consulte la documentación de [Administrar el acceso de los usuarios](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=es#manage-users-from-the-project-web-interface) en nuestra Guía de infraestructura en la nube de Commerce.
 
 ### Acceder a su cuenta compartida (cambiar de cuenta) {#switch-accounts}
 
 >[!NOTE]
 >
 >Este paso no es necesario para enviar tickets para Adobe Commerce.
->Para ver una demostración sobre cómo enviar un ticket de Adobe Commerce, [vea este vídeo](https://experienceleague.adobe.com/en/playlists/support-requests).
+>Para ver una demostración sobre cómo enviar un ticket de Adobe Commerce, [vea este vídeo](https://experienceleague.adobe.com/es/playlists/support-requests).
 
 Para utilizar el acceso compartido proporcionado, siga estos pasos:
 
