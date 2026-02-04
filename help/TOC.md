@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 038d6e68093742a0ef7d6bd76996f416559ba5c0
+source-git-commit: db498cd9d256e542c7b2db7ee383c296f782800b
 workflow-type: tm+mt
-source-wordcount: '2286'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 0%
       * [Guía de solución de problemas de Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
       * [Problemas de comprobación de preparación de permisos de archivos](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
       * [Diagnóstico de discrepancias de ingresos de Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
-      * [He configurado las claves de API para la IA de Adobe, pero solo veo un espacio de datos de SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
+      * [He configurado las claves API para Adobe AI, pero solo veo un espacio de datos SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
       * [El menú principal (Categorías) no se muestra en las subpáginas que tengan activada la opción Rápidamente](/help/troubleshooting/miscellaneous/main-menu-categories-not-displayed-on-subpages-with-fastly-enabled.md)
       * [Almacenamiento de archivos bajo, cargas de página específicas lentas](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
       * [Rendimiento lento debido a la reindexación completa](/help/troubleshooting/miscellaneous/slow-performance-due-to-full-reindexing.md)
@@ -189,7 +189,6 @@ ht-degree: 0%
       * [No se puede agregar el usuario al proyecto de nube de Adobe Commerce](/help/troubleshooting/miscellaneous/unable-add-user-adobe-commerce-cloud-project.md)
       * [Cron se detiene debido a que falta  [!DNL OpCache settings] o está mal configurado](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
       * [El inicio de sesión de [!DNL Admin] no funciona - se excedió el tamaño máximo permitido de sesión](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
-      * [Configuración de la conexión de Adobe Commerce Intelligence para proyectos existentes de Cloud Starter](/help/troubleshooting/miscellaneous/configure-mbi-connection-for-cloud-starter-projects.md)
       * [[!DNL Google Tag Manager] se ha roto mediante el widget de Live Search](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
       * [Las vulnerabilidades encontradas por los análisis de seguridad de terceros deben ir a  [!DNL HackerOne]](/help/troubleshooting/miscellaneous/third-party-test-reports-are-handled-by-hackerone.md)
       * [Obtención de miles de resultados de búsqueda después de actualizar de la versión 2.4.2 a la versión 2.4.5-p3](/help/troubleshooting/miscellaneous/getting-thousands-of-search-results-after-upgrading-to-2-4-5-p3.md)
