@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: db498cd9d256e542c7b2db7ee383c296f782800b
+source-git-commit: 538514ebb9a262af74aa1304ea7d70aefcf08dbe
 workflow-type: tm+mt
-source-wordcount: '2276'
+source-wordcount: '2269'
 ht-degree: 0%
 
 ---
@@ -131,7 +131,6 @@ ht-degree: 0%
       * [Diagnóstico de una discrepancia de datos](/help/troubleshooting/miscellaneous/diagnosing-a-data-discrepancy.md)
       * [Administrador 2No se reciben notificaciones por correo electrónico de FA](/help/troubleshooting/miscellaneous/admin-2fa-email-notifications-not-being-received.md)
       * [Vuelva al formulario de inicio de sesión de administrador de Commerce con el error &quot;La sesión actual ha caducado&quot;.](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md)
-      * [Redis anuda la instalación del error de deserialización:static-content:deploy](/help/troubleshooting/miscellaneous/redis-unserialize-error-setup-static-content-deploy.md)
       * [Sitio en modo de mantenimiento, pero disponible para los clientes](/help/troubleshooting/miscellaneous/site-in-maintenance-mode-but-available-to-customers.md)
       * [el desarrollo de git pull origin falla al actualizar el software de Adobe Commerce](/help/troubleshooting/miscellaneous/git-pull-origin-develop-fails-when-updating-the-magento-software.md)
       * [Bloqueadores que se inician en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.md)
@@ -156,7 +155,6 @@ ht-degree: 0%
       * [Resolución de un error de desplazamiento no válido](/help/troubleshooting/miscellaneous/resolve-an-illegal-offset-error.md)
       * [Estado del producto incorrecto cuando se crea mediante programación](/help/troubleshooting/miscellaneous/product-status-incorrect-when-created-programmatically.md)
       * [Las actualizaciones programadas de ensayo de contenido no se muestran con la caché de Fastly obsoleta](/help/troubleshooting/miscellaneous/scheduled-content-staging-updates-not-displayed-with-stale-fastly-cache.md)
-      * [Solucionar problemas de cron](/help/troubleshooting/miscellaneous/troubleshoot-cron.md)
       * [El archivo .csv de productos exportados no aparece](/help/troubleshooting/miscellaneous/exported-products-csv-file-does-not-appear.md)
       * [Comprobación del registro de implementación si la IU de Cloud tiene el error &quot;registro recortado&quot;](/help/troubleshooting/miscellaneous/checking-deployment-log-if-the-cloud-ui-shows-log-snipped-error.md)
       * [La descarga falla debido a cambios en el Compositor](/help/troubleshooting/miscellaneous/download-fails-because-of-changes-in-composer.md)
