@@ -1,10 +1,10 @@
 ---
-title: ejecutar problema "setup:static-content:deploy&grave; deployed_version.txt
+title: ejecutar problema "setup:static-content:deploy` deployed_version.txt
 description: Este artículo proporciona una corrección para el error "deployed_version.txt" no se puede escribir al ejecutar el comando "setup:static-content:deploy" manualmente.
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
 workflow-type: tm+mt
 source-wordcount: '193'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Este artículo proporciona una corrección para el error no se puede escribir en
 
 ## Problema
 
-Si sigue las recomendaciones de Adobe Commerce sobre la infraestructura en la nube para usar [Configuration Management](/help/how-to/general/magento-cloud-reduce-deployment-downtime-with-configuration-management.md) (y mueve la generación de recursos estáticos a la fase de compilación para reducir el tiempo de inactividad del sitio web durante la implementación), podría encontrar el siguiente error al ejecutar el comando `setup:static-content:deploy` manualmente:
+Si sigue las recomendaciones de Adobe Commerce sobre la infraestructura en la nube para utilizar la administración de la configuración (y mueve la generación de recursos estáticos a la fase de compilación para reducir el tiempo de inactividad del sitio web durante la implementación), puede encontrar el siguiente error al ejecutar el comando `setup:static-content:deploy` manualmente:
 
 ```
 {{cloud-project-id}}_stg@i:~$ php bin/magento setup:static-content:deploy
