@@ -1,5 +1,5 @@
 ---
-title: ejecutar problema "setup:static-content:deploy` deployed_version.txt
+title: ejecutar problema "setup:static-content:deploy&grave; deployed_version.txt
 description: Este artículo proporciona una corrección para el error "deployed_version.txt" no se puede escribir al ejecutar el comando "setup:static-content:deploy" manualmente.
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
