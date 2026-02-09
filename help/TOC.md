@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: ceea083458aef5f8d0fcabef66399046d0d2016b
+source-git-commit: 014b425a0db4b5824a1caf033318fe7fd74d9a92
 workflow-type: tm+mt
-source-wordcount: '2234'
+source-wordcount: '2226'
 ht-degree: 0%
 
 ---
@@ -217,7 +217,6 @@ ht-degree: 0%
    * [Lista de comprobación para configurar un(a) nuevo(a) [!DNL domain]](/help/how-to/general/checklist-for-setting-up-a-new-domain.md)
    * [Restaurar una instantánea de base de datos desde Ensayo o Producción](/help/how-to/general/restore-a-db-snapshot-from-staging-or-production.md)
    * [Adobe Commerce Intelligence Essentials: actualizar el método de pago o cancelar la suscripción](/help/how-to/general/mbi-essentials-update-payment-method-or-cancel-subscription.md)
-   * [Vídeo de formación de Adobe commerce Intelligence: SQL Report Builder](/help/how-to/general/mbi-training-video-sql-report-builder.md)
    * [Proporcionar descuento solo para la primera compra (sin cupones)](/help/how-to/general/provide-discount-for-first-purchase-only-no-coupons.md)
    * [Revertir entorno sin instantánea de nube](/help/how-to/general/roll-back-environment-without-cloud-snapshot.md)
    * [Cómo añadir un nuevo país a Adobe Commerce](/help/how-to/general/how-to-add-a-new-country-to-magento-2.md)
