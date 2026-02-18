@@ -1,6 +1,6 @@
 ---
 title: Probar rápidamente en producción si un sitio activo utiliza el mismo dominio
-description: Si tiene un sitio activo en funcionamiento en su dominio de producción (`example.com`) y necesita probar su nueva tienda en Adobe Commerce en el entorno de producción de la infraestructura de nube con Fastly CDN habilitado, recomendamos utilizar el subdominio (como `prod.example.com`), después de agregarlo anteriormente a Fastly, para cualquier actividad de prueba previa al lanzamiento. Este artículo analiza los detalles y proporciona vínculos útiles a los recursos de documentación de Adobe Commerce relacionados.
+description: Si tiene un sitio activo en funcionamiento en su dominio de producción (&grave;example.com&grave;) y necesita probar su nueva tienda en Adobe Commerce en el entorno de producción de la infraestructura de nube con Fastly CDN habilitado, recomendamos utilizar el subdominio (como &grave;prod.example.com&grave;), después de agregarlo anteriormente a Fastly, para cualquier actividad de prueba previa al lanzamiento. Este artículo analiza los detalles y proporciona vínculos útiles a los recursos de documentación de Adobe Commerce relacionados.
 exl-id: bc9d11c8-ce47-461d-b5b8-c03494bc4ceb
 feature: Cache
 source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d

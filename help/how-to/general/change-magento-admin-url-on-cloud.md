@@ -1,6 +1,6 @@
 ---
 title: Cambiar la URL de administración en Adobe Commerce en la infraestructura en la nube
-description: De forma predeterminada, la dirección URL [Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) se establece en *&lt;domain\_name&gt;/admin*. Este artículo muestra cómo cambiar la dirección URL.
+description: De forma predeterminada, la dirección URL [Commerce Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/start/admin/admin) se establece en *&lt;domain_name&gt;/admin*. Este artículo muestra cómo cambiar la dirección URL.
 exl-id: 6236370c-e0a2-45a6-a38f-12e219c540af
 feature: Admin Workspace, Cloud
 source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
