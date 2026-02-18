@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución para los errores de conexi
 exl-id: e8932b72-91a3-43ea-800e-a6c7a5a17656
 feature: Best Practices, Observability, Services
 role: Developer
-source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '477'
+source-wordcount: '478'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ El valor predeterminado de 16 MB para la configuración de [!DNL MySQL] `max_all
 ## Solución
 
 1. Identifique consultas en las que las filas individuales superen el límite actual de `max_allowed_packet`. Estas consultas deben reescribirse para reducir la cantidad de datos que se devuelven. Esto se puede hacer si se tiene un número menor de columnas en la instrucción `SELECT` o si se elige un tipo de datos más pequeño para varias columnas como parte del diseño de tabla. Si tiene una cuenta de New Relic, use la [página Errores de APM de New Relic](https://docs.newrelic.com/docs/apm/apm-ui-pages/error-analytics/errors-page-explore-events-behind-errors) y la [página Bases de datos de APM de New Relic](https://docs.newrelic.com/docs/apm/apm-ui-pages/monitoring/databases-page-view-operations-throughput-response-time), y [Registros de New Relic](https://docs.newrelic.com/docs/logs/log-management/get-started/get-started-log-management) para buscar las consultas relevantes.
-1. Para una corrección rápida, puede solicitar temporalmente que el tamaño de `max_allowed_packet` aumente cuando [envíe un ticket](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket), pero esto depende del equipo de ingeniería de clientes, ya que un valor demasiado grande puede provocar errores de replicación al causar congestión de red.
+1. Para una corrección rápida, puede solicitar temporalmente que el tamaño de `max_allowed_packet` aumente cuando [envíe un ticket](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket), pero esto depende del equipo de ingeniería de clientes, ya que un valor demasiado grande puede provocar errores de replicación al causar congestión de red.
 1. Como práctica recomendada, debe ejecutar el siguiente comando en la CLI para algunas de las tablas de base de datos grandes:
 
    ```
@@ -45,7 +45,7 @@ El valor predeterminado de 16 MB para la configuración de [!DNL MySQL] `max_all
 
 ## Lectura relacionada
 
-* [Descripción general de la instalación local](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/overview) en nuestra documentación para desarrolladores.
-* [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=es) en nuestra base de conocimiento de soporte.
-* [Prácticas recomendadas para resolver problemas de rendimiento de la base de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=es) en nuestra base de conocimiento de soporte.
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [Descripción general de la instalación local](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/overview) en nuestra documentación para desarrolladores.
+* [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) en nuestra base de conocimiento de soporte.
+* [Prácticas recomendadas para resolver problemas de rendimiento de la base de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html) en nuestra base de conocimiento de soporte.
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

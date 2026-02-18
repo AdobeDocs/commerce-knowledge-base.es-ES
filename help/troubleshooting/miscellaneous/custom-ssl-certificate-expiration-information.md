@@ -1,10 +1,10 @@
 ---
 title: Información de caducidad del certificado SSL personalizado
-description: Este artículo proporciona una solución para los casos en los que se actualizó un certificado SSL personalizado con un certificado SSL proporcionado por el Adobe.
+description: Este artículo proporciona una solución para los casos en los que se actualizó un certificado SSL personalizado con un certificado SSL proporcionado por Adobe.
 exl-id: cc968bae-f742-449b-b291-bc121ec45935
 feature: Support
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
 source-wordcount: '349'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Información de caducidad del certificado SSL personalizado
 
-Este artículo proporciona una solución para los casos en los que se actualizó un certificado SSL personalizado con un certificado SSL proporcionado por el Adobe.
+Este artículo proporciona una solución para los casos en los que se actualizó un certificado SSL personalizado con un certificado SSL proporcionado por Adobe.
 
 ## Productos y versiones afectados
 
@@ -41,11 +41,11 @@ Adobe Commerce actualiza cualquier certificado cuando quedan 30 días desde la c
 
 Cuando un comerciante decide utilizar su propio certificado SSL personalizado, debe actualizarse más de 30 días antes de la caducidad del certificado para garantizar que no se sustituya por un certificado SSL interno de Adobe Commerce.
 
-Si se encuentra en una situación en la que su SSL personalizado fue reemplazado por nuestro SSL interno y desea reemplazarlo con su certificado SSL personalizado actualizado, [envíe una solicitud de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) con la ubicación en la que subió sus nuevos archivos de certificado. Incluya la fecha de inicio del nuevo SSL. Una vez que tengamos esta información, podemos avanzar con la instalación del nuevo certificado SSL.
+Si se encuentra en una situación en la que su SSL personalizado fue reemplazado por nuestro SSL interno y desea reemplazarlo con su certificado SSL personalizado actualizado, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) con la ubicación en la que subió sus nuevos archivos de certificado. Incluya la fecha de inicio del nuevo SSL. Una vez que tengamos esta información, podemos avanzar con la instalación del nuevo certificado SSL.
 
 ## Lectura relacionada
 
-* [Certificados SSL (TLS) para el Magento Commerce Cloud: preguntas frecuentes](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) en nuestra base de conocimiento de soporte.
-* [Referencia de herramientas de la línea de comandos: certificado de la nube de Magento:add](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) en nuestra documentación para desarrolladores.
-* [Iniciar lista de comprobación](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/launch/checklist)en nuestra documentación para desarrolladores.
-* [Acceda a la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) en nuestra guía del usuario.
+* [Certificados SSL (TLS) para Magento Commerce Cloud: preguntas frecuentes](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) en nuestra base de conocimiento de asistencia.
+* [Referencia de herramientas de línea de comandos: certificado de Magento en la nube:add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) en nuestra documentación para desarrolladores.
+* [Iniciar lista de comprobación](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist)en nuestra documentación para desarrolladores.
+* [Acceda a la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) en nuestra guía del usuario.

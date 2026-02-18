@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución para los problemas relacio
 exl-id: e8d72ebe-453f-4d18-a25e-c76e685aa667
 feature: Deploy, Roles/Permissions
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '359'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Si se produce un error en una implementación después de realizar un cambio en 
 
 ### Cómo deshabilitar la clave de acceso
 
-Si no tiene acceso a la cuenta de [Commerce Marketplace](https://marketplace.magento.com/) asociada con la clave antigua, [póngase en contacto con el Soporte técnico de Adobe Commerce](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) para deshabilitar la clave.
+Si no tiene acceso a la cuenta de [Commerce Marketplace](https://marketplace.magento.com/) asociada con la clave antigua, [póngase en contacto con el servicio de asistencia de Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para deshabilitar la clave.
 
 Si tiene acceso a la cuenta de Marketplace asociada con la clave antigua, realice los siguientes pasos para deshabilitar la clave:
 
@@ -64,4 +64,4 @@ Si tiene acceso a la cuenta de Marketplace asociada con la clave antigua, realic
 
 ## Lectura relacionada
 
-* [Obtenga sus claves de autenticación](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) en nuestra documentación para desarrolladores.
+* [Obtenga sus claves de autenticación](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) en nuestra documentación para desarrolladores.

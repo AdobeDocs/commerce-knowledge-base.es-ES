@@ -1,17 +1,17 @@
 ---
 title: No se puede acceder a la última versión de Beta
-description: Este artículo proporciona soluciones a problemas que se producen al intentar utilizar las últimas versiones de código de Beta para Adobe Commerce. El código Beta solo está disponible para socios de Adobe oficiales que hayan seguido el proceso descrito en [Programa Adobe Commerce Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program).
+description: Este artículo proporciona soluciones a problemas que se producen al intentar utilizar las últimas versiones de código de Beta para Adobe Commerce. El código Beta solo está disponible para socios oficiales de Adobe que hayan seguido el proceso descrito en [Programa Adobe Commerce Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program).
 exl-id: a53c854e-38a8-4c8c-8586-9d99c576c835
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '588'
 ht-degree: 0%
 
 ---
 
 # No se puede acceder a la última versión de Beta
 
-Este artículo proporciona soluciones a problemas que se producen al intentar utilizar las últimas versiones de código de Beta para Adobe Commerce. El código Beta solo está disponible para los socios de Adobe oficiales que hayan seguido el proceso descrito en [Programa Adobe Commerce Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program).
+Este artículo proporciona soluciones a problemas que se producen al intentar utilizar las últimas versiones de código de Beta para Adobe Commerce. El código Beta solo está disponible para los socios oficiales de Adobe que hayan seguido el proceso descrito en [Programa Adobe Commerce Beta](https://github.com/magento/magento2/wiki/Magento-Beta-Program).
 
 ## Problema
 
@@ -33,7 +33,7 @@ Estas son las causas más comunes de los problemas:
 
 ### Ubicación del código de acceso anticipado
 
-Durante los períodos de acceso a la versión beta, los paquetes de la versión solo están disponibles a través de Composer en [repo.magento.com](https://repo.magento.com/). Los paquetes de versiones no están disponibles en los portales de GitHub y Adobe Commerce durante este periodo y los publicaremos en estas ubicaciones en la fecha de GA. Para obtener más información sobre cómo usar Composer, haga clic [aquí](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/composer).
+Durante los períodos de acceso a la versión beta, los paquetes de la versión solo están disponibles a través de Composer en [repo.magento.com](https://repo.magento.com/). Los paquetes de versiones no están disponibles en los portales de GitHub y Adobe Commerce durante este periodo y los publicaremos en estas ubicaciones en la fecha de GA. Para obtener más información sobre cómo usar Composer, haga clic [aquí](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/composer).
 
 ### ID de imagen que debe utilizar
 
@@ -47,7 +47,7 @@ Para averiguar si el MageID es principal, intente lo siguiente:
    * Si ve la información de licencia de Partner activa, su MageID es el principal. La licencia de Partner está activa si el valor END DATE es una fecha futura.
    * Si no ve la información de licencia de Partner activa, su MageID solo tiene acceso compartido. Para saber quién es el titular del identificador principal, vaya a **Compartido conmigo**. Observe el SHARENAME especificado allí. Haga clic en **Cambiar cuentas** y seleccione el valor que ha anotado en SHARENAME. En la página de bienvenida, verá el correo electrónico del titular del ID principal.
 1. Si por algún motivo no encuentra esta información en [magento.com](https://account.magento.com/customer/account/login), comuníquese con su administrador de socios.
-1. Si nada de lo anterior funciona, [comuníquese con la atención al cliente](/help/help-center-guide/help-center/magento-help-center-user-guide.md#merchant-not-displayed).
+1. Si nada de lo anterior funciona, [comuníquese con la atención al cliente](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide).
 
 #### El desarrollador no tiene acceso correcto a las claves
 

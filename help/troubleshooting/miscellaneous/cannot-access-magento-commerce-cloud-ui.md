@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para el problema en el que no
 exl-id: 948e4acd-abd6-4562-b9c0-771a977188ba
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 3d3d2da45d164efbbbaf8c878967caf83f845a59
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '278'
 ht-degree: 0%
 
 ---
@@ -23,12 +23,12 @@ Al intentar iniciar sesión en la interfaz de usuario de Adobe Commerce en la nu
 
 Si aparece un error 403 al acceder a la dirección URL por primera vez, asegúrese de que tiene una función en la rama maestra.
 
-1. СPóngase en contacto con el propietario de la licencia o con un superusuario del proyecto y asegúrese de que le hayan proporcionado acceso como **usuario de nivel de entorno**, tal y como se describe en [Proyectos en la nube > Administrar usuarios desde la consola en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=es#manage-users-from-the-cloud-console) en nuestra documentación para desarrolladores.
+1. СPóngase en contacto con el propietario de la licencia o con un superusuario del proyecto y asegúrese de que le hayan proporcionado acceso como **usuario de nivel de entorno**, tal y como se describe en [Proyectos en la nube > Administrar usuarios desde la consola en la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#manage-users-from-the-cloud-console) en nuestra documentación para desarrolladores.
 
    Si solo tiene una función aplicable en una rama específica, debe ir a la dirección URL de esa rama, por ejemplo,
    `https://console.adobecommerce.com/<owner-name>/<project-id>/<branch-name>`
 
    La próxima vez que acceda a la dirección URL principal, se seleccionará de forma predeterminada el último entorno que haya visitado.
 
-1. Si sigue sin poder iniciar sesión, сpóngase en contacto con el propietario de la licencia o con un superusuario del proyecto y asegúrese de que le hayan proporcionado acceso como **usuario de nivel de proyecto**, tal como se describe en [Proyectos en la nube > Agregar un usuario al proyecto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=es#add-a-user-to-the-project) en nuestra documentación para desarrolladores.
-1. Si el error persiste, [envíe un ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+1. Si sigue sin poder iniciar sesión, сpóngase en contacto con el propietario de la licencia o con un superusuario del proyecto y asegúrese de que le hayan proporcionado acceso como **usuario de nivel de proyecto**, tal como se describe en [Proyectos en la nube > Agregar un usuario al proyecto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html#add-a-user-to-the-project) en nuestra documentación para desarrolladores.
+1. Si el error persiste, [envíe un ticket de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).

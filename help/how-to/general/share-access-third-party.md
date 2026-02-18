@@ -3,9 +3,9 @@ title: Sugerencias de pruebas de terceros para Adobe Commerce en infraestructura
 description: Este artículo proporciona opciones para compartir el acceso con un tercero para pruebas o validación cuando tenga un problema con una extensión de Adobe Commerce en la infraestructura en la nube.
 exl-id: e2d80aa9-8b68-48ed-bec5-68e128611a1e
 feature: Best Practices, Cloud
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 9e218e3fadbf9941c94d309fcfb6f258d2f4faf2
 workflow-type: tm+mt
-source-wordcount: '452'
+source-wordcount: '454'
 ht-degree: 0%
 
 ---
@@ -27,11 +27,11 @@ Según los estándares de seguridad interna, puede elegir que la solución de pr
 
 * Proporcione acceso a su proveedor de terceros al entorno de la nube. Artículos relacionados:
 
-   * [Guía del usuario del Centro de ayuda de Adobe Commerce > ACCESO COMPARTIDO: OTORGUE PRIVILEGIOS PARA QUE OTROS USUARIOS TENGAN ACCESO A SU CUENTA](/help/help-center-guide/help-center/magento-help-center-user-guide.md#shared-access) en nuestra base de conocimiento de asistencia.
-   * [Compartir tu cuenta de Commerce](https://experienceleague.adobe.com/es/docs/commerce-admin/start/commerce-account/commerce-account-share) en nuestra guía de usuario.
+   * [Guía del usuario del Centro de ayuda de Adobe Commerce > ACCESO COMPARTIDO: OTORGUE PRIVILEGIOS PARA QUE OTROS USUARIOS TENGAN ACCESO A SU CUENTA](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guidee#shared-access) en nuestra base de conocimiento de asistencia.
+   * [Compartir tu cuenta de Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-share) en nuestra guía de usuario.
 
 * Cree un volcado de la base de datos (o dé acceso al proveedor de terceros para hacerlo). Se puede realizar utilizando la CLI o en el administrador de Commerce. Este volcado de la base de datos ofuscará los datos del cliente, por lo que solo obtendrán el código y los SKU del producto, etc., sin datos de propietario/cliente. Como referencia, usa [Compartir tu cuenta de Commerce] (/help/how-to/general/create-database-dump-on-cloud.md) en nuestra base de conocimiento de asistencia.
-* Una vez finalizada la prueba, asegúrese de revocar el acceso compartido a su entorno de nube, tal como se describe en [Guía del usuario del Centro de ayuda de Adobe Commerce > Revocar (eliminar el acceso compartido)](/help/help-center-guide/help-center/magento-help-center-user-guide.md#revoke-shared-access) en nuestra base de conocimiento de asistencia.
+* Una vez finalizada la prueba, asegúrese de revocar el acceso compartido a su entorno de nube, tal como se describe en [Guía del usuario del Centro de ayuda de Adobe Commerce > Revocar (eliminar el acceso compartido)](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#revoke-shared-access) en nuestra base de conocimiento de asistencia.
 
 ## Práctica recomendada de pruebas
 

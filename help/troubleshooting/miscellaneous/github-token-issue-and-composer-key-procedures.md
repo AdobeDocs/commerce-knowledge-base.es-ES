@@ -4,7 +4,7 @@ description: Este artículo proporciona soluciones para el problema de las imple
 exl-id: 202cb936-f9ba-49ea-bf0a-6e6994d2337a
 feature: Identity Management
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
 source-wordcount: '234'
 ht-degree: 0%
@@ -42,7 +42,7 @@ Para resolver el problema, actualice su versión de Composer a la 1.10.22:
 1. Esto añade el requisito para esa versión del paquete Composer. Compruebe el archivo de bloqueo: la versión `composer/composer` debe ser 1.0.22 o superior.
 1. Confirme `composer.json` y `composer.lock` y envíe una implementación.
 
-Si este método no funciona, [envíe un vale de soporte técnico](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+Si este método no funciona, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 
 ## Lectura relacionada
 

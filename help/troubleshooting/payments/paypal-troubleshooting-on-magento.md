@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para problemas con el procesa
 exl-id: f0772515-8456-4f08-84b4-aeef44516f2a
 feature: Orders, Payments
 role: Developer
-source-git-commit: 129e24366aedb132adb84e1f0196d2536422180f
+source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
 workflow-type: tm+mt
-source-wordcount: '482'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -41,14 +41,14 @@ Si el método de pago de PayPal incluye API con acuerdos de facturación y trans
 
 Consulte los siguientes artículos:
 
-* [Solicitud rechazada de puerta de enlace de PayPal - problema de factura duplicada](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26838) en nuestra base de conocimiento de soporte.
+* [Solicitud rechazada de puerta de enlace de PayPal - problema de factura duplicada](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) en nuestra base de conocimiento de soporte.
 * [Cambiar el id. de incremento para la nueva entidad de almacén](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md) en nuestra base de conocimiento de soporte.
 
 ## Póngase en contacto con el soporte técnico para recopilar registros de pago avanzados
 
 Para solucionar problemas de pago complicados, el Equipo de Soporte de Adobe Commerce puede pedirle que aplique un parche específico para habilitar el registro de pagos avanzado. En este caso, los pasos deben ser los siguientes:
 
-[Enviar un ticket de soporte](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket) con los siguientes detalles:
+[Enviar un ticket de soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) con los siguientes detalles:
 
 * Especifique el problema con tantos detalles como sea posible.
 * Enumere los pasos que ha intentado seguir con este artículo, base de conocimientos y otros recursos. Incluir todos los resultados.
@@ -57,5 +57,5 @@ Para solucionar problemas de pago complicados, el Equipo de Soporte de Adobe Com
 Si recibe el parche de Registro de pagos avanzados:
 
 * Aplique el parche.
-* Recopile registros y adjúntelos a su [ticket de asistencia](/help/help-center-guide/help-center/magento-help-center-user-guide.md#submit-ticket).
+* Recopile registros y adjúntelos a su [ticket de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket).
 * Espere a recibir más recomendaciones del equipo de soporte de Adobe Commerce.
