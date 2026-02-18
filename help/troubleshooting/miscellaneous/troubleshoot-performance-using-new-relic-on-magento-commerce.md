@@ -45,7 +45,7 @@ Este artículo proporciona pasos de solución de problemas para resolver los pro
 <li>Desplácese hacia abajo y haga clic en Mostrar todas las tablas de transacciones.</li>
 <li>Puede ordenar transacciones por <a href="https://docs.newrelic.com/docs/apm/applications-menu/monitoring/transactions-page-find-specific-performance-problems#table_view">varios parámetros</a> y saltar a los que causan sospechas.</li>
 <li>Revise las transacciones con una puntuación Apdex baja, una cantidad de tiempo medio inusualmente alta o un porcentaje de rechazo.</li>
-<li>Haga clic en cada transacción individual. Si no puede resolver el problema, <a href="https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket">envíe un vale de soporte técnico.</a>
+<li>Haga clic en cada transacción individual. Si no puede resolver el problema, <a href="https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket">envíe un vale de soporte técnico.</a>
 </li>
 <li>Si necesita investigar más a fondo, considere la posibilidad de comprobar las transacciones que no sean de web.</li>
 </ol>
@@ -60,7 +60,7 @@ Este artículo proporciona pasos de solución de problemas para resolver los pro
 </ol>
 </td>
 <td>
-<p>Para obtener más información sobre la puntuación de New Relic Apdex, consulte <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">Documentación de New Relic &gt; APM Apdex &gt; Medir la satisfacción del usuario</a>. También puede consultar <a href="https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Alertas administradas para Adobe Commerce: Apdex warning alert</a> en nuestra base de conocimiento de asistencia.</p>
+<p>Para obtener más información sobre la puntuación de New Relic Apdex, consulte <a href="https://docs.newrelic.com/docs/apm/new-relic-apm/apdex/apdex-measure-user-satisfaction">Documentación de New Relic &gt; APM Apdex &gt; Medir la satisfacción del usuario</a>. También puede consultar <a href="https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/support-tools/managed-alerts/managed-alerts-for-magento-commerce-apdex-warning-alert">Alertas administradas para Adobe Commerce: Apdex warning alert</a> en nuestra base de conocimiento de asistencia.</p>
 </td>
 </tr>
 <tr>

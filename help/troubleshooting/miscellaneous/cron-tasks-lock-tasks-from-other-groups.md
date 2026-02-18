@@ -36,7 +36,7 @@ Anteriormente, en nuestro entorno de nube, el servidor Jenkins se usaba para eje
 
 ## Solución
 
-1. Póngase en contacto con el [soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para habilitar [!DNL crons] administrado automáticamente.
+1. Póngase en contacto con el [soporte técnico de Adobe Commerce](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para habilitar [!DNL crons] administrado automáticamente.
 1. Edite el archivo `.magento.app.yaml` en el directorio raíz del código para Adobe Commerce en la rama [!DNL Git]. Añada lo siguiente:
 
    ```yaml
@@ -71,5 +71,5 @@ Para comprobar si el [!DNL cron] administrado automáticamente está habilitado,
 
 ## Lectura relacionada
 
-* [Configurar [!DNL cron] trabajos](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) en nuestra documentación para desarrolladores
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [Configurar [!DNL cron] trabajos](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) en nuestra documentación para desarrolladores
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

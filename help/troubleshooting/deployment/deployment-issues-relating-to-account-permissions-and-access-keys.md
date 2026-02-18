@@ -50,7 +50,7 @@ Si se produce un error en una implementación después de realizar un cambio en 
 
 ### Cómo deshabilitar la clave de acceso
 
-Si no tiene acceso a la cuenta de [Commerce Marketplace](https://marketplace.magento.com/) asociada con la clave antigua, [póngase en contacto con el servicio de asistencia de Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para deshabilitar la clave.
+Si no tiene acceso a la cuenta de [Commerce Marketplace](https://marketplace.magento.com/) asociada con la clave antigua, [póngase en contacto con el servicio de asistencia de Adobe Commerce](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para deshabilitar la clave.
 
 Si tiene acceso a la cuenta de Marketplace asociada con la clave antigua, realice los siguientes pasos para deshabilitar la clave:
 
@@ -64,4 +64,4 @@ Si tiene acceso a la cuenta de Marketplace asociada con la clave antigua, realic
 
 ## Lectura relacionada
 
-* [Obtenga sus claves de autenticación](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) en nuestra documentación para desarrolladores.
+* [Obtenga sus claves de autenticación](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/authentication-keys) en nuestra documentación para desarrolladores.

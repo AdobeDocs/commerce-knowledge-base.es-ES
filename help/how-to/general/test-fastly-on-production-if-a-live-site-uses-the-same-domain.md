@@ -34,13 +34,13 @@ Al planificar el proyecto de infraestructura en la nube de Adobe Commerce, puede
 
 Siga estos pasos para procesar el subdominio dentro del proyecto de infraestructura en la nube de Adobe Commerce:
 
-* [Envíe un ticket de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando agregar el subdominio a la configuración de Fastly service/Nginx (para la arquitectura de plan Pro de infraestructura en la nube de Adobe Commerce).
+* [Envíe un ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando agregar el subdominio a la configuración de Fastly service/Nginx (para la arquitectura de plan Pro de infraestructura en la nube de Adobe Commerce).
 * Configure los ajustes de DNS correspondientes de su lado.
 
 Después de realizar los pasos para la configuración del subdominio, también debe realizar estos pasos para validar el dominio de producción para el certificado SSL:
 
 * Cargue el registro TXT DNS para la validación SSL del dominio de producción.
-* [Envíe un ticket de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando validar el dominio de producción para el certificado SSL.
+* [Envíe un ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando validar el dominio de producción para el certificado SSL.
 
 El uso del subdominio le permite realizar un &quot;inicio suave&quot; de su tienda en el futuro, ya que dicho inicio solo requiere actualizar la configuración DNS correspondiente.
 
@@ -48,11 +48,11 @@ El uso del subdominio le permite realizar un &quot;inicio suave&quot; de su tien
 
 En nuestra base de conocimiento de soporte:
 
-* [Configurar rápidamente la configuración de DNS en los entornos de ensayo y producción](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html)
-* [Configurar Fastly para el plan de inicio en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html)
-* [Bloqueadores potenciales para iniciarse en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html)
+* [Configurar rápidamente la configuración de DNS en los entornos de ensayo y producción](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=es)
+* [Configurar Fastly para el plan de inicio en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/set-up-fastly-for-starter-plan-on-cloud.html?lang=es)
+* [Bloqueadores potenciales para iniciarse en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=es)
 
 En nuestra documentación para desarrolladores:
 
-* [Información general rápida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html)
-* [Activar lista de comprobación: configuraciones de DNS para Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html)
+* [Información general rápida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=es)
+* [Activar lista de comprobación: configuraciones de DNS para Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=es)

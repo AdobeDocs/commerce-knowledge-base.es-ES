@@ -59,7 +59,7 @@ Los siguientes estados podrían aparecer en las comprobaciones:
 1. **Desconocido**: la herramienta de exploración de seguridad aún no tiene datos sobre su dominio. Espere al siguiente ciclo de sincronización.
 1. **Error**: Si el estado muestra error, deberá corregir el problema (habilitar 2FA, cambiar la dirección URL de administración, etc.) y esperar al siguiente ciclo de sincronización.
 
-Si han transcurrido 24 horas desde que se realizaron los cambios en la instancia y no se reflejan en el informe de análisis de seguridad, puede [enviar un ticket de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Proporcione la dirección URL de la tienda al enviar el ticket.
+Si han transcurrido 24 horas desde que se realizaron los cambios en la instancia y no se reflejan en el informe de análisis de seguridad, puede [enviar un ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Proporcione la dirección URL de la tienda al enviar el ticket.
 
 ## Error de BotNet Suspect
 
@@ -77,7 +77,7 @@ Recibirá una notificación con respecto al error &quot;Sospechoso de BotNet&quo
 1. Compruebe las cuentas SSH recién creadas, los cambios en el sistema de archivos, etc.
 1. Realice una revisión de seguridad.
 1. Compruebe la versión y actualización de Adobe Commerce, especialmente si aún ejecuta Magento 1, que ya no es compatible.
-1. Si el problema continúa, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) y proporcione la dirección URL de la tienda.
+1. Si el problema continúa, [envíe un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) y proporcione la dirección URL de la tienda.
 
 ## Problema: Error de inyección de compromiso
 
@@ -90,7 +90,7 @@ Recibirá un error con respecto a un error de &quot;Inyección de compromiso&quo
 1. Revise los cambios de configuración del sistema, especialmente los valores de sección `HTML head` y `Miscellaneous HTML` personalizados en `footer`.
 1. Realice una revisión del código y la base de datos para detectar cambios y signos desconocidos de malware insertado.
 
-Si nada de lo anterior ayuda, [envía un ticket de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) y proporciona la URL de la tienda y el mensaje de error del informe.
+Si nada de lo anterior ayuda, [envía un ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) y proporciona la URL de la tienda y el mensaje de error del informe.
 
 ## Preguntas más frecuentes
 
@@ -104,7 +104,7 @@ Puede generar los 10 informes anteriores desde su extremo. Si se requieren infor
 
 ### ¿Qué información se necesita al enviar un ticket de asistencia?
 
-Proporcione el nombre de dominio exactamente como se envió para el [examen de seguridad](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID y el ID_de_proyecto de nube. Tenga en cuenta que el identificador de proyecto de Cloud no es necesario para Adobe Commerce local.
+Proporcione el nombre de dominio exactamente como se envió para el [examen de seguridad](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26357), MAGEID y el ID_de_proyecto de nube. Tenga en cuenta que el identificador de proyecto de Cloud no es necesario para Adobe Commerce local.
 
 ### ¿Qué sucede si elimino mi almacén del análisis de la herramienta de exploración?
 

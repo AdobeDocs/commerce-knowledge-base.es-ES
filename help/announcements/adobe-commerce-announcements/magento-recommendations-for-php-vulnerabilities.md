@@ -17,7 +17,7 @@ El 3 de setiembre, el Centro de Análisis e Intercambio de Información de Vario
 
 >[!WARNING]
 >
->En Adobe Commerce sobre la infraestructura en la nube, tenga en cuenta que las actualizaciones de servicios no se pueden insertar en el entorno de producción sin un aviso de 48 horas laborables a nuestro equipo de infraestructura. Esto es necesario, ya que tenemos que asegurarnos de tener un ingeniero de asistencia técnica de infraestructura disponible para actualizar la configuración dentro de un periodo de tiempo deseado con un tiempo de inactividad mínimo en el entorno de producción. Así que 48 horas antes de que sus cambios deban estar en producción [envíe un ticket de soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) detallando su actualización de servicio requerida e indicando la hora en que desea que comience el proceso de actualización.
+>En Adobe Commerce sobre la infraestructura en la nube, tenga en cuenta que las actualizaciones de servicios no se pueden insertar en el entorno de producción sin un aviso de 48 horas laborables a nuestro equipo de infraestructura. Esto es necesario, ya que tenemos que asegurarnos de tener un ingeniero de asistencia técnica de infraestructura disponible para actualizar la configuración dentro de un periodo de tiempo deseado con un tiempo de inactividad mínimo en el entorno de producción. Así que 48 horas antes de que sus cambios deban estar en producción [envíe un ticket de soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) detallando su actualización de servicio requerida e indicando la hora en que desea que comience el proceso de actualización.
 
 Siga leyendo para ver los impactos y los pasos de los sitios de Adobe Commerce:
 
@@ -28,7 +28,7 @@ Si utiliza Adobe Commerce en una infraestructura en la nube, trabaje con su equi
 Notas adicionales sobre la reimplementación del sitio en la nube para esta actualización:
 
 * Si su sitio sigue usando la versión 7.0 de PHP, primero deberá actualizar a una versión compatible de PHP antes de volver a implementarlo para aprovechar estas actualizaciones de seguridad.
-* Para 2.1.x/2.2.x, se puede encontrar más información sobre la actualización de PHP [aquí](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html).
+* Para 2.1.x/2.2.x, se puede encontrar más información sobre la actualización de PHP [aquí](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/commerce-version.html?lang=es).
 
 \* *Las versiones anteriores de este artículo y nuestros mensajes se publicaron el 19 de septiembre, pero nuestros equipos han finalizado su trabajo antes de lo previsto.*
 

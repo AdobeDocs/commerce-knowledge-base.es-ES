@@ -29,7 +29,7 @@ Los pasos descritos en este artículo también se aplican si necesita rotar (cic
 
 ## Solución
 
-1. Asegúrese de que tiene el ID de servicio [!DNL Fastly] y el token de API correctos e intente validarlos de nuevo. Para obtener instrucciones detalladas, consulte [Probar las [!DNL Fastly] credenciales](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials) en nuestra documentación para desarrolladores.
+1. Asegúrese de que tiene el ID de servicio [!DNL Fastly] y el token de API correctos e intente validarlos de nuevo. Para obtener instrucciones detalladas, consulte [Probar las [!DNL Fastly] credenciales](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials) en nuestra documentación para desarrolladores.
 1. Si la verificación de las credenciales falla, ejecute el siguiente comando curl para confirmar el estado del servicio:
 
    ```curl
@@ -38,7 +38,7 @@ Los pasos descritos en este artículo también se aplican si necesita rotar (cic
 
 1. Si el comando anterior devuelve un error similar a: `{"msg":"Token $TOKEN expired at 2021-09-28T02:03:37Z"}`, envíe un vale de soporte técnico para solicitar un nuevo token de API. Después de recibir el nuevo token, actualice la configuración en su entorno.
 
-   Para obtener información sobre cómo enviar un vale de soporte, consulte [Guía del usuario del Centro de ayuda de Adobe Commerce > TICKETS DE SOPORTE](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-tickets) en nuestra base de conocimiento de soporte técnico.
+   Para obtener información sobre cómo enviar un vale de soporte, consulte [Guía del usuario del Centro de ayuda de Adobe Commerce > TICKETS DE SOPORTE](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#support-tickets) en nuestra base de conocimiento de soporte técnico.
 
    >[!NOTE]
    >
@@ -50,6 +50,6 @@ Los pasos descritos en este artículo también se aplican si necesita rotar (cic
 
 ## Lecturas relacionadas en nuestra documentación para desarrolladores:
 
-* [Nube para Adobe Commerce > [!DNL Fastly] > [!DNL Fastly] cuenta de servicio y credenciales](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly?lang=en#fastly-service-account-and-credentials)
+* [Nube para Adobe Commerce > [!DNL Fastly] > [!DNL Fastly] cuenta de servicio y credenciales](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/fastly?lang=en#fastly-service-account-and-credentials)
 
-* [Cloud for Adobe Commerce > Configurar [!DNL Fastly] > Probar las [!DNL Fastly] credenciales](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials)
+* [Cloud for Adobe Commerce > Configurar [!DNL Fastly] > Probar las [!DNL Fastly] credenciales](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration?lang=en#test-the-fastly-credentials)
