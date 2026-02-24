@@ -2,10 +2,10 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 688cdb1d0e76850aa953c602a78820fe6208ae41
+source-git-commit: 4d86db1115489e83e58d82464abed8fbd82fea25
 workflow-type: tm+mt
-source-wordcount: '2112'
-ht-degree: 0%
+source-wordcount: '2096'
+ht-degree: 1%
 
 ---
 
@@ -220,9 +220,7 @@ ht-degree: 0%
    * [Identificar y medir las interrupciones de Adobe Commerce en la infraestructura en la nube](/help/how-to/general/how-to-identify-outages.md)
    * [Cambiar propietario de cuenta para New Relic en la nube](/help/how-to/general/change-account-owner-for-new-relic-on-cloud.md)
    * [Cambiar la URL de administración en Adobe Commerce en la infraestructura en la nube](/help/how-to/general/change-magento-admin-url-on-cloud.md)
-   * [Configuración de NPM para poder utilizar PWA Studio](/help/how-to/general/configure-npm-to-be-able-to-use-pwa-studio.md)
    * [Reorganizar ramas en la nube en Adobe Commerce](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
-   * [Cómo encontrar la documentación del producto de Adobe Commerce](/help/how-to/general/how-to-find-magento-product-documentation.md)
    * [Redirigir HTTP a HTTPS para todas las páginas en Adobe Commerce en la infraestructura en la nube (Forzar TLS)](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [Asigna más espacio para MySQL en Adobe Commerce en la nube](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [Cambiar el ID de incremento de una entidad de la base de datos (pedido, factura, nota de abono, etc.) en un almacén concreto](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
