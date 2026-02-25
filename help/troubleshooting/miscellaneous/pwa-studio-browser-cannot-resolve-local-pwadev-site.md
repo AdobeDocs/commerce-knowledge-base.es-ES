@@ -1,10 +1,10 @@
 ---
-title: "PWA Studio: el explorador no puede resolver el sitio .local.pwadev"
-description: Este artículo proporciona una solución para los casos en los que otro programa o proceso ha editado su [archivo host] (https://en.wikipedia.org/wiki/Hosts_(file) y ha eliminado la entrada del dominio del proyecto.
+title: 'PWA Studio: el explorador no puede resolver el sitio .local.pwadev'
+description: Este artículo proporciona una solución para los casos en los que otro programa o proceso ha editado su [archivo host](https://en.wikipedia.org/wiki/Hosts_(file\) y ha eliminado la entrada del dominio del proyecto.
 exl-id: a1606016-906a-433f-9e40-9faa5f9bd790
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1d0d51209bdc02360c6f8527701cdf0da811659d
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: el explorador no puede resolver el sitio .local.pwadev
 
-Este artículo proporciona una solución para los casos en los que otro programa o proceso haya editado su [archivo host] (https://en.wikipedia.org/wiki/Hosts_(file\) y quitado la entrada del dominio del proyecto.
+Este artículo proporciona una solución para los casos en los que otro programa o proceso haya editado su [archivo host]&#x200B;(https://en.wikipedia.org/wiki/Hosts_(file\) y quitado la entrada del dominio del proyecto.
 
 ## Productos y versiones afectados
 
@@ -31,7 +31,7 @@ Esta entrada indica a cualquier explorador del equipo del desarrollador que mire
 
 ## Solución
 
-Puede [editar manualmente su archivo host](https://support.rackspace.com/how-to/modify-your-hosts-file/) para volver a agregar la entrada, pero debe examinar el otro software instalado para ver qué ha sobrescrito el cambio anterior.
+Puede [editar manualmente su archivo host](https://docs.rackspace.com/docs/modify-your-hosts-file) para volver a agregar la entrada, pero debe examinar el otro software instalado para ver qué ha sobrescrito el cambio anterior.
 
 ## Lectura relacionada en nuestra base de conocimiento de soporte
 
