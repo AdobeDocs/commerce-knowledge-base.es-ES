@@ -59,6 +59,6 @@ Para comprobar quién es un superusuario en el proyecto, consulte [Ver la funci�
 
 ## Lectura recomendada
 
-* [Solucionador de problemas de implementación de Adobe Commerce](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640).
+* [Solucionador de problemas de implementación de Adobe Commerce](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-29640).
 * No se pudo acceder a [Adobe Commerce en el repositorio en la nube: error 403 prohibido o 404 no encontrado al implementar](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
 * [La implementación falla con &quot;Error al generar el proyecto: Error en el vínculo de compilación con el código de estado 1&quot;](/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
