@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: bb56e1f5ae48d9a8c370b1d19588551d76779b66
+source-git-commit: caefdec695d553b2681e8677b200e687ea824d55
 workflow-type: tm+mt
-source-wordcount: '2079'
+source-wordcount: '2071'
 ht-degree: 1%
 
 ---
@@ -217,7 +217,6 @@ ht-degree: 1%
    * [Restablecer manualmente los trabajos cron de Adobe Commerce atascados en la infraestructura en la nube](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [Probar rápidamente en producción si un sitio activo utiliza el mismo dominio](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [Identificar y medir las interrupciones de Adobe Commerce en la infraestructura en la nube](/help/how-to/general/how-to-identify-outages.md)
-   * [Cambiar propietario de cuenta para New Relic en la nube](/help/how-to/general/change-account-owner-for-new-relic-on-cloud.md)
    * [Cambiar la URL de administración en Adobe Commerce en la infraestructura en la nube](/help/how-to/general/change-magento-admin-url-on-cloud.md)
    * [Reorganizar ramas en la nube en Adobe Commerce](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
    * [Redirigir HTTP a HTTPS para todas las páginas en Adobe Commerce en la infraestructura en la nube (Forzar TLS)](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
