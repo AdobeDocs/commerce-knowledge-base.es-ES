@@ -1,10 +1,10 @@
 ---
-title: "PWA Studio: Webpack se bloquea antes de comenzar la compilación"
-description: Este artículo habla sobre una solución sugerida para cuando un javascript [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) se cuelga durante mucho tiempo antes de comenzar la compilación en Progressive Web App Studio (PWA Studio).
+title: 'PWA Studio: Webpack se bloquea antes de comenzar la compilación'
+description: Este artículo trata sobre una solución sugerida para cuando un javascript [Webpack](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack) se cuelga durante mucho tiempo antes de comenzar la compilación en Progressive Web App Studio (PWA Studio).
 exl-id: 692eeafa-9289-4d66-9f2f-1e0fe36e681d
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 032fe4d32921c63570672b9c68e8c03e00bd1077
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: Webpack se bloquea antes de comenzar la compilación
 
-Este artículo trata sobre una solución sugerida para cuando un javascript [Webpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack) se cuelga durante mucho tiempo antes de comenzar la compilación en Progressive Web App Studio (PWA Studio).
+Este artículo trata sobre una solución sugerida para cuando un javascript [Webpack](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack) se cuelga durante mucho tiempo antes de comenzar la compilación en Progressive Web App Studio (PWA Studio).
 
 ## Productos y versiones afectados
 
@@ -37,7 +37,7 @@ proyecto, el webpack puede colgarse durante mucho tiempo antes de comenzar la co
 
 <u>Pasos a seguir</u>:
 
-<u>Requisitos previos</u>: configura una tienda de PWA Studio, como Venia, con una instancia local de Adobe Commerce y ejecuta una
+<u>Requisitos previos</u>: configura una tienda PWA Studio, como Venia, con una instancia local de Adobe Commerce y ejecuta una
 
 ```yaml
 build
@@ -93,7 +93,7 @@ Puede instalar versiones superiores de OpenSSL con [Homebrew](https://brew.sh/) 
 ## Lectura relacionada
 
 * [Webpack de JavaScript: Conceptos](https://webpack.js.org/concepts/)
-* [Configuración de la tienda Venia](https://magento.github.io/pwa-studio/venia-pwa-concept/setup/)
-* [Paquete de PWA](https://magento.github.io/pwa-studio/pwa-buildpack/)
-* [Interfaz de línea de comandos buildpack](https://magento.github.io/pwa-studio/pwa-buildpack/reference/buildpack-cli/)
-* [Herramientas y bibliotecas: buildpack](https://magento.github.io/pwa-studio/technologies/tools-libraries/#webpack)
+* [Configuración de la tienda Venia](https://developer.adobe.com/commerce/pwa-studio/guides/packages/venia/)
+* [PWA Buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/packages/buildpack/)
+* [Interfaz de línea de comandos buildpack](https://developer.adobe.com/commerce/pwa-studio/api/buildpack/cli/)
+* [Herramientas y bibliotecas: buildpack](https://developer.adobe.com/commerce/pwa-studio/guides/project/tools-libraries/#webpack)

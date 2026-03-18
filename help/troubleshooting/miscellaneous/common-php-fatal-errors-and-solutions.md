@@ -4,7 +4,7 @@ description: Este artículo enumera algunos ejemplos rápidos comunes de errores
 exl-id: 3e42d38f-97bc-4d38-8e36-23b1453f81d9
 feature: Support
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 8be0c125bb0417e34e016656337506da88796630
 workflow-type: tm+mt
 source-wordcount: '291'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Por ejemplo:
 
 `max_execution_time = 120`
 
-Consulte el artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
+Consulte el artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Ejemplo
 
@@ -35,7 +35,7 @@ Consulte el artículo [Personalizar la configuración de php.ini](https://experi
 
 ## Solución
 
-Personalizar la configuración de `php.ini`. Consulte este artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
+Personalizar la configuración de `php.ini`. Consulte este artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Ejemplo
 
@@ -55,7 +55,7 @@ El entorno MySQL se ha quedado sin espacio en disco. Proporcione más espacio en
 
 ## Ejemplo
 
-*&#39;Error grave de PHP: TypeError no detectado: Valor devuelto del Magento&#39;*
+*&#39;Error grave de PHP: TypeError no capturado: Valor devuelto de Magento&#39;*
 
 ## Solución
 
@@ -65,9 +65,9 @@ Compruebe el directorio `<root>/tmp` porque probablemente esté lleno. Si está 
 
 En nuestra documentación para desarrolladores:
 
-* [Errores de configuración de PHP](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [Configuración de PHP requerida](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/php-settings)
-* [Verificación de Redis](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
-* [Configurar Redis](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
-* [Error de límite de memoria PHP](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [Soluciones a problemas comunes - Límite de memoria](https://developer.adobe.com/commerce/testing/guide/unit/command-line/#solutions-to-common-problems)
+* [Errores de configuración de PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Configuración de PHP requerida](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)
+* [Verificación de Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
+* [Configurar Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* [Error de límite de memoria PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Soluciones a problemas comunes - Límite de memoria](https://developer.adobe.com/commerce/testing/guide/unit/command-line#solutions-to-common-problems)

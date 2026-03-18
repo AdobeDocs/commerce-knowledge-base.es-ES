@@ -1,10 +1,10 @@
 ---
-title: "PWA Studio: Errores de validación al ejecutar el modo de desarrollador"
-description: En este tema se describe una solución para los casos en los que se producen errores de validación al ejecutar el modo de desarrollador en Progressive Web App (PWA) Studio for Adobe Commerce como resultado de no haber creado anteriormente el concepto de venia (Venia es una tienda PWA). archivo de entorno. Este archivo contendrá las variables para su entorno de desarrollo local.
+title: 'PWA Studio: Errores de validación al ejecutar el modo de desarrollador'
+description: En este tema se describe una solución para los casos en los que se producen errores de validación al ejecutar el modo de desarrollador en Progressive Web App (PWA) Studio for Adobe Commerce como resultado de no haber creado anteriormente el archivo de entorno venia-concept (Venia es una tienda PWA). Este archivo contendrá las variables para su entorno de desarrollo local.
 exl-id: 97d042ef-88e6-4eda-a834-2cff4de276e2
 feature: Configuration
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 9d32a5971341ed8dc46e0932c10eaac4d17ec299
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PWA Studio: Errores de validación al ejecutar el modo de desarrollador
 
-En este tema se describe una solución para los casos en los que se producen errores de validación al ejecutar el modo de desarrollador en Progressive Web App (PWA) Studio for Adobe Commerce como resultado de no haber creado anteriormente el concepto de venia (Venia es una tienda PWA). archivo de entorno. Este archivo contendrá las variables para su entorno de desarrollo local.
+En este tema se describe una solución para los casos en los que se producen errores de validación al ejecutar el modo de desarrollador en Progressive Web App (PWA) Studio for Adobe Commerce como resultado de no haber creado anteriormente el archivo de entorno venia-concept (Venia es una tienda PWA). Este archivo contendrá las variables para su entorno de desarrollo local.
 
 ## Productos y versiones afectados
 
@@ -53,5 +53,5 @@ en el directorio raíz para generar el archivo que contendrá las variables para
 
 ## Lectura relacionada
 
-* [PWA Studio para la documentación de Adobe Commerce](https://magento.github.io/pwa-studio/)
-* [Tienda Venia (Concepto)](https://magento.github.io/pwa-studio/venia-pwa-concept/)
+* [Documentación de PWA Studio para Adobe Commerce](https://developer.adobe.com/commerce/pwa-studio/)
+* [Tienda Venia (Concepto)](https://developer.adobe.com/commerce/pwa-studio/guides/packages/venia/)
