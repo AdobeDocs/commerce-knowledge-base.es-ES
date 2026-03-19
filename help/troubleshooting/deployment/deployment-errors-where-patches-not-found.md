@@ -36,10 +36,10 @@ Los parches aplicados anteriormente a sus versiones anteriores no son aplicables
     - ACSD-XXXXX
    ```
 
-1. Busque los identificadores de los parches en las [Notas de la versión de parches de calidad](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) para comprobar si se pueden aplicar a la nueva versión de Adobe Commerce a la que está actualizando.
+1. Busque los identificadores de los parches en las [Notas de la versión de parches de calidad](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=es) para comprobar si se pueden aplicar a la nueva versión de Adobe Commerce a la que está actualizando.
 1. Si el parche no se aplica a la nueva versión de Adobe Commerce a la que desea actualizar, quite el identificador del parche del archivo `.magento.env.yaml`.
 1. Una vez que haya revisado todos los ID de parche indicados por el error, inserte los cambios y vuelva a implementar.
 
 ## Lectura relacionada
 
-* [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment) en la Guía de infraestructura de Commerce en la nube.
+* [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es#apply-a-patch-in-a-local-environment) en la Guía de infraestructura de Commerce en la nube.

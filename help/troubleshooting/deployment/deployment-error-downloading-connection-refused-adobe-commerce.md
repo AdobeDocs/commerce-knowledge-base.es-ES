@@ -55,10 +55,10 @@ Pida a un superusuario del proyecto que ejecute este comando:
 magento-cloud project:clear-build-cache -p <project ID>
 ```
 
-Para comprobar quién es un superusuario en el proyecto, consulte [Ver la función de proyecto de un usuario](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=en#view-a-user’s-project-role) en la Guía de infraestructura de Commerce en la nube.
+Para comprobar quién es un superusuario en el proyecto, consulte [Ver la función de proyecto de un usuario](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/user-access.html?lang=es#view-a-user’s-project-role) en la Guía de infraestructura de Commerce en la nube.
 
 ## Lectura recomendada
 
-* [Solucionador de problemas de implementación de Adobe Commerce](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-29640).
-* No se pudo acceder a [Adobe Commerce en el repositorio en la nube: error 403 prohibido o 404 no encontrado al implementar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html).
-* [La implementación falla con &quot;Error al generar el proyecto: Error en el vínculo de compilación con el código de estado 1&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html).
+* [Solucionador de problemas de implementación de Adobe Commerce](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-29640).
+* No se pudo acceder a [Adobe Commerce en el repositorio en la nube: error 403 prohibido o 404 no encontrado al implementar](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/magento-commerce-cloud-repo-could-not-be-accessed-403-forbidden-or-404-not-found-error-when-deploying.html?lang=es).
+* [La implementación falla con &quot;Error al generar el proyecto: Error en el vínculo de compilación con el código de estado 1&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/deployment/deployment-fails-with-error-building-project-the-build-hook-failed-with-status-code-1.html?lang=es).

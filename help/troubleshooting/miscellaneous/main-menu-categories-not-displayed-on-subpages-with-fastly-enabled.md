@@ -1,6 +1,6 @@
 ---
 title: El menú principal (Categorías) no se muestra en las subpáginas que tengan activada la opción Rápidamente
-description: Este artículo proporciona una corrección para el caso de que el menú principal (o el [menú Navegación superior de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) en nuestra guía del usuario) no se muestre en la tienda para subpáginas (por ejemplo, *blog/página*) cuando Fastly o Varnish están habilitados.
+description: Este artículo proporciona una corrección para el caso de que el menú principal (o el [menú Navegación superior de categoría](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=es) en nuestra guía del usuario) no se muestre en la tienda para subpáginas (por ejemplo, *blog/página*) cuando Fastly o Varnish están habilitados.
 exl-id: 7c54791d-8aa6-4f01-a28b-a7aecdb8ff74
 feature: Categories, Marketing Tools
 role: Developer
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # El menú principal (Categorías) no se muestra en las subpáginas que tengan activada la opción Rápidamente
 
-Este artículo proporciona una corrección cuando el menú principal (o el [menú de navegación superior por categorías](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) de nuestra guía del usuario) no se muestra en la tienda para subpáginas (por ejemplo, *blog/página*) cuando Fastly o Varnish están habilitados.
+Este artículo proporciona una corrección cuando el menú principal (o el [menú de navegación superior por categorías](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=es) de nuestra guía del usuario) no se muestra en la tienda para subpáginas (por ejemplo, *blog/página*) cuando Fastly o Varnish están habilitados.
 
 **Causa:** el carácter (barra) `/` no permitido en el parámetro *URL Key* de la página (configuración de optimización del motor de búsqueda). El carácter generalmente se agrega cuando se especifica por error *Ruta de URL* (con ubicación de página completa) en lugar de *Clave de URL*: por ejemplo, *blog/página\_name* en lugar de solo *página\_name*.
 
@@ -27,7 +27,7 @@ Este artículo proporciona una corrección cuando el menú principal (o el [men�
 
 ## Problema
 
-El menú principal (también conocido como [menú de navegación superior por categorías](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) en nuestra guía del usuario) no se muestra en la tienda para las subpáginas cuando está habilitado Fastly u otros servicios basados en Varnish.
+El menú principal (también conocido como [menú de navegación superior por categorías](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html?lang=es) en nuestra guía del usuario) no se muestra en la tienda para las subpáginas cuando está habilitado Fastly u otros servicios basados en Varnish.
 
 ## Causa
 
@@ -57,10 +57,10 @@ Para fines de SEO en páginas de productos, use las reescrituras de URL (**Marke
 
 El parámetro *URL Key* para SEO:
 
-* [Optimización del motor de búsqueda](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html)
-* [Agregando una nueva página](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-add.html)
+* [Optimización del motor de búsqueda](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-search-engine-optimization.html?lang=es)
+* [Agregando una nueva página](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-add.html?lang=es)
 
 Jerarquía de páginas:
 
-* [Información general](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html)
-* [Agregando un nodo](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html#add-a-hierarchy-node)
+* [Información general](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=es)
+* [Agregando un nodo](https://experienceleague.adobe.com/docs/commerce-admin/content-design/elements/pages/page-hierarchy.html?lang=es#add-a-hierarchy-node)
