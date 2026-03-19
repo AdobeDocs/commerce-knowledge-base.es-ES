@@ -1,17 +1,17 @@
 ---
-title: Leer problemas de réplicas en Adobe Commerce Cloud 2.4.6 con MariaDB 10.6
-description: En este artículo se explica cómo solucionar los problemas de las réplicas leídas en Adobe Commerce Cloud 2.4.6 con MariaDB 10.6.
+title: Leer los problemas de Réplicas en Adobe Commerce Cloud 2.4.6 con MariaDB 10.6
+description: Este artículo explica cómo solucionar problemas de Leer réplicas en Adobe Commerce Cloud 2.4.6 con MariaDB 10.6.
 feature: Configuration
 role: Developer,Admin
 exl-id: b7af1cc3-93ff-40c5-8959-076cedddb56d
-source-git-commit: f12e25ac5dd607cc614dd99c90c5e104b2cee6a8
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '196'
+source-wordcount: '199'
 ht-degree: 0%
 
 ---
 
-# Leer problemas de réplicas en Adobe Commerce Cloud 2.4.6 con MariaDB 10.6
+# Leer los problemas de Réplicas en Adobe Commerce Cloud 2.4.6 con MariaDB 10.6
 
 Este artículo proporciona soluciones para comportamientos inesperados al utilizar Leer réplicas en Adobe Commerce Cloud 2.4.6 con MariaDB 10.6+.
 
@@ -30,7 +30,7 @@ La configuración `slave_parallel_mode` de la base de datos se cambió de forma 
 
 ## Solución
 
-1. Compruebe que el parámetro `slave_parallel_mode` esté establecido en *conservative* (si el valor no se muestra como *conservative*, necesitará [elevar un ticket de soporte](/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket)). Para comprobarlo, ejecute el siguiente comando:
+1. Compruebe que el parámetro `slave_parallel_mode` esté establecido en *conservative* (si el valor no se muestra como [conservative](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket), necesitará *elevar un ticket de soporte*). Para comprobarlo, ejecute el siguiente comando:
 
    ```
     MariaDB [main]> show variables like 'slave_parallel_mode';
@@ -54,10 +54,10 @@ La configuración `slave_parallel_mode` de la base de datos se cambió de forma 
 
 
 
-Para obtener información sobre cómo actualizar la configuración de la base de datos, consulte [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html?lang=es#database_configuration) en el tema Implementar variables en la Guía de infraestructura de Commerce en la nube.
+Para obtener información sobre cómo actualizar la configuración de la base de datos, consulte [DATABASE_CONFIGURATION](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-deploy.html#database_configuration) en el tema Implementar variables en la Guía de infraestructura de Commerce en la nube.
 
 
 ## Lectura relacionada
 
-* [Configure variables de entorno para la implementación](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) en la Guía de infraestructura de Commerce en la nube.
-* [Prácticas recomendadas para la configuración de bases de datos](/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) en el libro de estrategias de implementación.
+* [Configure variables de entorno para la implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) en la Guía de infraestructura de Commerce en la nube.
+* [Prácticas recomendadas para la configuración de bases de datos](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html) en el libro de estrategias de implementación.

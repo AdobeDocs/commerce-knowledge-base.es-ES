@@ -1,12 +1,12 @@
 ---
-title: 'Descargar redirecciones que no sean de [!DNL regex] a [!DNL Fastly] en lugar de [!DNL Nginx] (rutas)'
+title: Descargar redirecciones que no sean de [!DNL regex] a  [!DNL Fastly] en lugar de [!DNL Nginx] (rutas)
 description: Este tema sugiere una solución a un problema típico de rendimiento de redirecciones que podría tener cuando descargue redirecciones que no sean de [!DNL regex] a  [!DNL Fastly] en lugar de [!DNL Nginx] en Adobe Commerce en la infraestructura en la nube.
 exl-id: 8b22d25d-0865-4d21-b275-d344ba8748f2
 feature: Routes
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '712'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,7 @@ Los siguientes pasos detallarán cómo colocar redirecciones en [!DNL Fastly] en
 
 1. Crear un diccionario de Edge.
 
-   Primero, puede usar [[!DNL VCL] fragmentos de código en Adobe Commerce](/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) para definir un diccionario de Edge. Esto contendrá las redirecciones.
+   Primero, puede usar [[!DNL VCL] fragmentos de código en Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/custom-vcl-snippets/fastly-vcl-custom-snippets.html) para definir un diccionario de Edge. Esto contendrá las redirecciones.
 
    Algunas advertencias a esto:
 
@@ -100,7 +100,7 @@ Si no desea ejecutar un entorno de ensayo de Adobe Commerce, pero desea ver el a
 ## Lectura relacionada
 
 * [[!DNL Fastly VCL] referencia](https://docs.fastly.com/vcl/)
-* [Configurar rutas](/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) en nuestra documentación para desarrolladores
-* [Configurado [!DNL Fastly]](/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en nuestra documentación para desarrolladores
+* [Configurar rutas](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/routes/routes-yaml.html) en nuestra documentación para desarrolladores
+* [Configurado [!DNL Fastly]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en nuestra documentación para desarrolladores
 * [[!DNL VCL] hoja de referencia de expresiones regulares](https://docs.fastly.com/en/guides/vcl-regular-expression-cheat-sheet) en nuestra documentación para desarrolladores
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

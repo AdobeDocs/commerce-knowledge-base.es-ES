@@ -4,9 +4,9 @@ description: Este artículo proporciona una corrección del problema que se prod
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
 workflow-type: tm+mt
-source-wordcount: '591'
+source-wordcount: '596'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Para agregar el proceso como un trabajo cron de forma opcional, debe agregar la 
 
 #### Agregar proceso como trabajo cron (opcional)
 
-1. Asegúrese de que su cron esté configurado. Consulte [Configurar trabajos cron](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) para obtener más información.
+1. Asegúrese de que su cron esté configurado. Consulte [Configurar trabajos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) para obtener más información.
 1. Ejecute el siguiente comando para devolver una lista de consumidores de cola de mensajes:     `./bin/magento queue:consumers:list`
 1. Agregue lo siguiente al archivo `.magento.env.yaml` en el directorio raíz de la aplicación e incluya a los consumidores que desee agregar. Por ejemplo, este es el consumidor necesario para el procesamiento de exportación:
 
@@ -87,16 +87,16 @@ Para agregar el proceso como un trabajo cron de forma opcional, debe agregar la 
                    - exportProcessor
    ```
 
-   A continuación, inserte este archivo actualizado y vuelva a implementar su entorno. También haga referencia a [Agregar trabajos cron personalizados a su proyecto](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#add-custom-cron-jobs-to-your-project) en nuestra documentación para desarrolladores.
+   A continuación, inserte este archivo actualizado y vuelva a implementar su entorno. También haga referencia a [Agregar trabajos cron personalizados a su proyecto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#add-custom-cron-jobs-to-your-project) en nuestra documentación para desarrolladores.
 
 >[!NOTE]
 >
->Si no encuentra el archivo `.magento.env.yaml` para su entorno y cree que se eliminó, debe crear un nuevo `.magento.env.yaml`. Podría estar vacío inicialmente, puede agregar información allí según sea necesario. Consulte los siguientes artículos: [Configurar variables de entorno para la implementación](/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) y [Variables de entorno](/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) en nuestra documentación para desarrolladores.
+>Si no encuentra el archivo `.magento.env.yaml` para su entorno y cree que se eliminó, debe crear un nuevo `.magento.env.yaml`. Podría estar vacío inicialmente, puede agregar información allí según sea necesario. Consulte los siguientes artículos: [Configurar variables de entorno para la implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) y [Variables de entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) en nuestra documentación para desarrolladores.
 
 >[!TIP]
 >
->[Los archivos YAML](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=es) distinguen entre mayúsculas y minúsculas y no permiten tabulaciones. Tenga cuidado de utilizar una sangría uniforme en todo el archivo .magento.env.yaml o es posible que la configuración no funcione según lo esperado. Los ejemplos de la documentación y del archivo de muestra utilizan sangría de dos espacios. Utilice el comando validate de ece-tools para comprobar la configuración.
+>[Los archivos YAML](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) distinguen entre mayúsculas y minúsculas y no permiten tabulaciones. Tenga cuidado de utilizar una sangría uniforme en todo el archivo .magento.env.yaml o es posible que la configuración no funcione según lo esperado. Los ejemplos de la documentación y del archivo de muestra utilizan sangría de dos espacios. Utilice el comando validate de ece-tools para comprobar la configuración.
 
 >[!NOTE]
 >
->En proyectos Pro de Adobe Commerce en la infraestructura en la nube, la función [auto-crons](/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) debe estar habilitada en tu Adobe Commerce en la infraestructura en la nube para que puedas agregar trabajos cron personalizados a entornos de Ensayo y Producción usando `.magento.app.yaml`. Si esta característica no está habilitada, [cree un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para que se agregue el trabajo por usted.
+>En proyectos Pro de Adobe Commerce en la infraestructura en la nube, la función [auto-crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) debe estar habilitada en tu Adobe Commerce en la infraestructura en la nube para que puedas agregar trabajos cron personalizados a entornos de Ensayo y Producción usando `.magento.app.yaml`. Si esta característica no está habilitada, [cree un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para que se agregue el trabajo por usted.
