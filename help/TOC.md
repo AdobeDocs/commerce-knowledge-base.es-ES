@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: fb8a1b5815663b62c5416829b5471adb9c0980c5
+source-git-commit: e7dcfc91da247d881f4aae4725a5c130102799ee
 workflow-type: tm+mt
-source-wordcount: '1928'
+source-wordcount: '1905'
 ht-degree: 1%
 
 ---
@@ -18,7 +18,6 @@ ht-degree: 1%
    * [Resumen de anuncios](/help/announcements/overview.md)
    * Anuncios de Adobe Commerce {#commerce-announcements}
       * [Solicitudes de capacidad de Holiday Surge para Adobe Commerce en nuestra infraestructura en la nube](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
-      * [Preguntas más frecuentes sobre la directiva de ciclo vital actualizada para las versiones de Adobe Commerce](/help/announcements/adobe-commerce-announcements/faq-for-the-updated-lifecycle-policy-for-magento-releases.md)
       * [Cambio a OpenSearch para Adobe Commerce en la nube 2.4.4](/help/announcements/adobe-commerce-announcements/switching-to-opensearch-for-adobe-commerce-on-cloud-2-4-4.md)
       * [Adobe Commerce Recommendations para vulnerabilidades de PHP](/help/announcements/adobe-commerce-announcements/magento-recommendations-for-php-vulnerabilities.md)
       * [El motor de búsqueda del catálogo MySQL se eliminará en Adobe Commerce 2.4.0](/help/announcements/adobe-commerce-announcements/mysql-catalog-search-engine-will-be-removed-in-magento-2-4-0.md)
@@ -228,7 +227,6 @@ ht-degree: 1%
    * [Cómo crear un volcado &quot;borrado&quot; cuando lo solicita el agente de soporte](/help/how-to/general/create-dump-for-support.md)
    * [Certificados SSL (TLS) para Adobe Commerce en infraestructura en la nube](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md)
    * [No se puede acceder a la última versión de Beta](/help/how-to/general/cannot-access-the-latest-beta-version.md)
-   * [Cómo iniciar sesión en la cuenta de Fastly proporcionada con Adobe Commerce en la infraestructura en la nube](/help/how-to/general/accessing-the-fastly-account-provided-with-adobe-commerce-for-cloud.md)
    * [Mostrar el número de informe de errores de Adobe Commerce en lugar del error Fastly 503](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
    * [Restablecer un tema a los valores predeterminados](/help/how-to/general/reset-a-theme-to-defaults.md)
    * [Cómo aplicar un parche del compositor proporcionado por Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)
