@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 8f1f6cbdc5aabb0c05a51287d463f051f4233b16
+source-git-commit: fb8a1b5815663b62c5416829b5471adb9c0980c5
 workflow-type: tm+mt
-source-wordcount: '1941'
+source-wordcount: '1928'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,6 @@ ht-degree: 1%
       * [Adobe Commerce 2.4.0: Braintree no está en el cierre de compra de varias direcciones](/help/troubleshooting/payments/magento-2-4-0-braintree-not-in-multiple-addresses-checkout.md)
       * [2.3.4 Revisión de problemas de PayPal](/help/troubleshooting/payments/2-3-4-paypal-issue-hotfix.md)
       * [Adobe Commerce 2.4.1: mensaje incorrecto en el cierre de compra de PayPal-Braintree para invitados](/help/troubleshooting/payments/magento-2-4-1-wrong-message-on-paypal-via-braintree-guest-checkout.md)
-      * [Error al realizar el pedido con la cuenta de espacio aislado de Authorize.net (se produjo un error en el servidor)](/help/troubleshooting/payments/error-placing-order-with-authorize-net-sandbox-account-an-error-occurred-on-the-server.md)
       * [Pago y envío se atasca cuando se utiliza el método de pago Authorize.net](/help/troubleshooting/payments/checkout-is-stuck-when-authorize-net-payment-method-is-used.md)
       * [Problema conocido de Adobe Commerce 2.4.1: aparece un error al cerrar la compra con PayPal Braintree](/help/troubleshooting/payments/magento-2-4-1-known-issue-error-popping-up-on-checkout-with-paypal-braintree.md)
       * [Página de terminal virtual de Adobe Commerce 2.4.0 Braintree dañada](/help/troubleshooting/payments/magento-2-4-0-known-issue-braintree-virtual-terminal-page-is-corrupted.md)
