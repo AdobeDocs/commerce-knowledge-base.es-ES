@@ -51,6 +51,6 @@ El parche también es compatible (pero es posible que no resuelva el problema) c
 
 ## Cómo aplicar el parche
 
-Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de soporte.
+Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de soporte.
 
 ## Archivos adjuntos
