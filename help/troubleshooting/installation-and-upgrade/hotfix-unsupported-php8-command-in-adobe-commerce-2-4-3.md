@@ -1,10 +1,10 @@
 ---
 title: Adobe Commerce actualización 2.4.3, 2.3.7-p1 PHP Error fatal revisión
-description: "Este artículo proporciona una corrección para los casos en los que los comerciantes intentan actualizar a Adobe Commerce (todos los métodos de implementación) o al Magento Open Source 2.4.3 o 2.3.7-p1 y ven el siguiente error:"
+description: 'Este artículo proporciona una corrección para los casos en los que los comerciantes intentan actualizar a Adobe Commerce (todos los métodos de implementación) o Magento Open Source 2.4.3 o 2.3.7-p1 y ven el siguiente error:'
 exl-id: 1c472214-8387-403e-b2d2-d3f3c9e1da6a
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
 workflow-type: tm+mt
 source-wordcount: '305'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Adobe Commerce actualización 2.4.3, 2.3.7-p1 PHP Error fatal revisión
 
-Este artículo proporciona una corrección para los casos en los que los comerciantes intentan actualizar a Adobe Commerce (todos los métodos de implementación) o al Magento Open Source 2.4.3 o 2.3.7-p1 y ven el siguiente error:
+Este artículo proporciona una corrección para los casos en los que los comerciantes intentan actualizar a Adobe Commerce (todos los métodos de implementación) o Magento Open Source 2.4.3 o 2.3.7-p1 y ven el siguiente error:
 
 *Error grave de PHP: Error no detectado: Llamada a la función indefinida Magento\Framework\Filesystem\Directory\str_contains() en &lt;...>/magento/vendor/magento/framework/Filesystem/Directory/DenyListPathValidator.php:74*
 
@@ -42,7 +42,7 @@ Error grave de PHP.
 
 ## Solución
 
-Como solución alternativa, ejecute el siguiente comando en CLI/Terminal: `composer require symfony/polyfill-php80` desde la carpeta raíz del Magento o instale una revisión del compositor.
+Como solución alternativa, ejecute el siguiente comando en CLI/Terminal: `composer require symfony/polyfill-php80` desde la carpeta raíz de Magento o instale una revisión de compositor.
 
 Para solucionar el problema de la versión 2.4.3, Adobe Commerce (todos los métodos de implementación) y los comerciantes de Magento Open Source deben aplicar el parche:
 
@@ -54,8 +54,8 @@ Para solucionar el problema con 2.3.7-p1, Adobe Commerce (todos los métodos de 
 
 ## Cómo aplicar el parche
 
-Consulte [Cómo aplicar un parche del compositor proporcionado por el Magento](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) para obtener instrucciones.
+Consulte [Cómo aplicar un parche del compositor proporcionado por Magento](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) para obtener instrucciones.
 
 ## Lectura relacionada
 
-[Comando PHP 8 no compatible en el Magento 2.4.3 EE #33680](https://github.com/magento/magento2/issues/33680) de GitHub
+[Comando PHP 8 no compatible en Magento 2.4.3 EE #33680](https://github.com/magento/magento2/issues/33680)

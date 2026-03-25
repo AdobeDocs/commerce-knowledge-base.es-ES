@@ -4,9 +4,9 @@ description: Este artículo trata sobre el problema en el que un parche que acab
 exl-id: dc765bcd-0761-4efd-a345-46a908d61272
 feature: Cache
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '261'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Para las versiones de Magento Open Source 1.X,
 
 * Ejecute el siguiente comando SSH: `h SUPEE_patch --revert `
 
-### Adobe Commerce local, Magento Open Source, todas las versiones de 2.x
+### Adobe Commerce local, Magento Open Source, todas las versiones de la versión 2.x
 
 Para las versiones locales de Adobe Commerce y Magento Open Source 2.x,
 
@@ -65,4 +65,4 @@ Para Adobe Commerce en la infraestructura en la nube, todas las versiones,
 
 ## Lectura relacionada
 
-* [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de soporte.
+* [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de soporte.

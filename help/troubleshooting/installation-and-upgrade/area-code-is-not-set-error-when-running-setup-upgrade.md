@@ -1,12 +1,12 @@
 ---
-title: "Error 'No se ha establecido el código de área' al ejecutar el programa de instalación:actualización"
+title: Error "El código de área no está establecido" al ejecutar el programa de instalación:actualización
 description: Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.3 relacionado con el error *El código de área no está configurado* al ejecutar el comando setup:upgrade.
 exl-id: ace92331-6022-49fa-a776-d06d841b3b32
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 4617b915a62093e00da428a753d913a39d30f3a0
+source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Al ejecutar el
 bin/magento setup:upgrade
 ```
 
-, recibe el siguiente mensaje de error: *&quot;Module &#39;Magento\_AdvancedSalesRule&#39;: Instalando datos...Código de área no establecido: El código de área debe establecerse antes de iniciar una sesión&quot;* y se interrumpe la ejecución del comando. El problema aparece porque se solicita la configuración de área antes de que se establezca. El parche permite detectar el error y no interrumpir el proceso de actualización.
+recibe el siguiente mensaje de error: *&quot;Module &#39;Magento\_AdvancedSalesRule&#39;: Instalando datos...Código de área no establecido: El código de área debe establecerse antes de iniciar una sesión&quot;* y se interrumpe la ejecución del comando. El problema aparece porque se solicita la configuración de área antes de que se establezca. El parche permite detectar el error y no interrumpir el proceso de actualización.
 
 ## Parche
 
@@ -51,6 +51,6 @@ El parche también es compatible (pero es posible que no resuelva el problema) c
 
 ## Cómo aplicar el parche
 
-Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor proporcionado por el Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md) en nuestra base de conocimiento de soporte.
+Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de soporte.
 
 ## Archivos adjuntos

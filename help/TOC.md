@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: e7dcfc91da247d881f4aae4725a5c130102799ee
+source-git-commit: 651620add857a2cf33c59fd0cd7972cb7c1e0cc3
 workflow-type: tm+mt
-source-wordcount: '1905'
+source-wordcount: '1896'
 ht-degree: 1%
 
 ---
@@ -229,7 +229,6 @@ ht-degree: 1%
    * [No se puede acceder a la última versión de Beta](/help/how-to/general/cannot-access-the-latest-beta-version.md)
    * [Mostrar el número de informe de errores de Adobe Commerce en lugar del error Fastly 503](/help/how-to/general/display-magento-error-report-number-instead-of-fastly-503-error-on-cloud.md)
    * [Restablecer un tema a los valores predeterminados](/help/how-to/general/reset-a-theme-to-defaults.md)
-   * [Cómo aplicar un parche del compositor proporcionado por Adobe](/help/how-to/general/how-to-apply-a-composer-patch-provided-by-magento.md)
    * [Compruebe los registros para solucionar errores 500 y 503 en Adobe Commerce](/help/how-to/general/check-logs-to-troubleshoot-500-and-503-errors-on-magento.md)
    * [Crear volcado de base de datos en Adobe Commerce en la infraestructura en la nube](/help/how-to/general/create-database-dump-on-cloud.md)
    * [Sugerencias de pruebas de terceros para Adobe Commerce en infraestructuras en la nube](/help/how-to/general/share-access-third-party.md)
