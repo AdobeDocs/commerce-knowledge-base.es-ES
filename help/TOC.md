@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 651620add857a2cf33c59fd0cd7972cb7c1e0cc3
+source-git-commit: 1502ee72f4421f8fdec5c0e780f1f56423a2cce8
 workflow-type: tm+mt
-source-wordcount: '1896'
+source-wordcount: '1880'
 ht-degree: 1%
 
 ---
@@ -215,10 +215,8 @@ ht-degree: 1%
    * [Cambiar el ID de incremento de una entidad de la base de datos (pedido, factura, nota de abono, etc.) en un almacén concreto](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
    * [Restablecer el entorno en Adobe Commerce en la infraestructura en la nube](/help/how-to/general/reset-environment-on-cloud.md)
    * [MBI: volver a autenticar integraciones](/help/how-to/general/mbi-reauthenticating-integrations.md)
-   * [Ubicaciones de registro (directorios) para el plan Pro: integración, ensayo, producción](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
    * [Adobe Commerce en la nube: compruebe si es necesario convertir las instancias del host a SQL Server.](/help/how-to/general/magento-commerce-cloud-check-if-upsize-for-hosts-instances-is-needed.md)
    * [Bootstrap Adobe Commerce 2 en un script de zona protegida](/help/how-to/general/bootstrap-magento-2-in-a-sandbox-script.md)
-   * [Vídeo de formación de Adobe Commerce Intelligence: Conjuntos de filtros](/help/how-to/general/mbi-training-video-filter-sets.md)
    * [Bloquear el tráfico malintencionado para Adobe Commerce en el nivel Rápido](/help/how-to/general/block-malicious-traffic-for-magento-commerce-on-fastly-level.md)
    * [Cambiar la contraseña de administrador en Adobe Commerce en la infraestructura en la nube](/help/how-to/general/change-magento-admin-password-on-cloud.md)
    * [Vea el nivel de vCPU del entorno en su clúster en Adobe Commerce](/help/how-to/general/check-vcpu-using-observation-for-adobe-commerce.md)

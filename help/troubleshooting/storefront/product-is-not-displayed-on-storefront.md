@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para los casos en los que los
 exl-id: 454eca5b-4722-46e0-8e5d-3daf8e3e675a
 feature: Cache, Categories, Console, Products, Storefront
 role: Admin
-source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
+source-git-commit: ae2a4508daeaf2d29a5f615918fcc46626b2e196
 workflow-type: tm+mt
-source-wordcount: '338'
+source-wordcount: '325'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,5 @@ Cada uno de los siguientes puntos puede resolver el problema.
 * Realice el reindexado completo, ejecutando `bin/magento indexer:reindex` desde la consola, y vacíe toda la caché en el administrador, en **Sistema** > **Herramientas** > **Administración de caché**, o desde la consola ejecutando `bin/magento cache:clean`.
 * Si lo anterior no ayuda, puede iniciar una investigación adicional comprobando los registros en el directorio `var/log`.
 
-## Lectura relacionada en nuestra base de conocimiento de soporte
 
-[Ubicaciones de registro (directorios) para la arquitectura Pro](/help/how-to/general/log-locations-directories-for-pro-plan-integration-staging-production.md)
 
