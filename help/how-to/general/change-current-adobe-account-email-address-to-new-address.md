@@ -28,7 +28,7 @@ Si no tiene acceso a la dirección de correo electrónico actual, configure el r
 
 Siga estos pasos para cambiar la dirección de correo electrónico:
 
-1. Restablezca la contraseña utilizada con la dirección de correo electrónico anterior. Siga las instrucciones indicadas en [Restablecer contraseña olvidada](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) en la ayuda de Adobe.
+1. Restablezca la contraseña utilizada con la dirección de correo electrónico anterior. Siga las instrucciones indicadas en [Restablecer contraseña olvidada](https://helpx.adobe.com/es/manage-account/using/change-or-reset-password.html) en la ayuda de Adobe.
 1. El vínculo para restablecer la contraseña se envía al buzón del propietario actual con instrucciones.
 1. Vaya a la [página de cuenta de Adobe](https://account.adobe.com) para iniciar sesión con el nuevo correo electrónico y configurar la contraseña.
 
@@ -50,9 +50,9 @@ Después de cambiar la dirección de correo electrónico del ID de MAGE, tambié
 ### Verificar correo electrónico de Commerce Marketplace
 
 1. Inicie sesión en [https://commercemarketplace.com/customer/account](https://commercemarketplace.com/customer/account) y confirme que el correo electrónico de la cuenta se ha actualizado a la nueva dirección.
-1. Si el correo electrónico no se ha actualizado, envíe un [ticket de asistencia](https://experienceleague.adobe.com/en/support#home) solicitando que se corrija el correo electrónico de la cuenta de Commerce Marketplace.
+1. Si el correo electrónico no se ha actualizado, envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/support#home) solicitando que se corrija el correo electrónico de la cuenta de Commerce Marketplace.
 
 ### Pedir al soporte técnico que finalice las actualizaciones de la cuenta interna
 
-1. Envíe un [ticket de asistencia](https://experienceleague.adobe.com/en/support#home) en el que se nos pida que completemos las actualizaciones internas que se requieran (por ejemplo, la actualización del vínculo entre sus ID de Adobe antiguos y nuevos y su ID de MAGE).
+1. Envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/support#home) en el que se nos pida que completemos las actualizaciones internas que se requieran (por ejemplo, la actualización del vínculo entre sus ID de Adobe antiguos y nuevos y su ID de MAGE).
 1. Si ya ha abierto un ticket de asistencia porque el correo electrónico de Commerce Marketplace no se actualizó en la sección anterior, puede utilizar el mismo ticket para solicitar estas actualizaciones internas adicionales.
