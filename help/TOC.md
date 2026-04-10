@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 992746d72bd6251d3a830f8bb03d7ed11e848b9b
+source-git-commit: 8b9d7908c4c6b99424e40e24e4de08968b203d18
 workflow-type: tm+mt
-source-wordcount: '1837'
+source-wordcount: '1834'
 ht-degree: 1%
 
 ---
@@ -18,8 +18,7 @@ ht-degree: 1%
    * [Resumen de anuncios](/help/announcements/overview.md)
    * Anuncios de Adobe Commerce {#commerce-announcements}
       * [Solicitudes de capacidad de Holiday Surge para Adobe Commerce en nuestra infraestructura en la nube](/help/announcements/adobe-commerce-announcements/holiday-surge-capacity-requests-for-magento-commerce-cloud.md)
-      * [Adobe Commerce admite la migración del proceso de admisión a Experience League](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
-   * Centro de ayuda Noticias {#news}
+      * {hide-from-toc}[Adobe Commerce admite la migración del proceso de admisión a Experience League](/help/announcements/adobe-commerce-announcements/adobe-commerce-support-intake-process-migration.md)
 * Resolución de problemas {#troubleshooting}
    * [Resumen de resolución de problemas](/help/troubleshooting/overview.md)
    * Base de datos {#database}
