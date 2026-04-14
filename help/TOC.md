@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 8b9d7908c4c6b99424e40e24e4de08968b203d18
+source-git-commit: ef65f8cf94b86511661b9fe2605d14d3a3027e58
 workflow-type: tm+mt
-source-wordcount: '1834'
+source-wordcount: '1828'
 ht-degree: 1%
 
 ---
@@ -204,7 +204,6 @@ ht-degree: 1%
    * [Restablecer manualmente los trabajos cron de Adobe Commerce atascados en la infraestructura en la nube](/help/how-to/general/reset-stuck-magento-cron-jobs-manually-on-cloud.md)
    * [Probar rápidamente en producción si un sitio activo utiliza el mismo dominio](/help/how-to/general/test-fastly-on-production-if-a-live-site-uses-the-same-domain.md)
    * [Identificar y medir las interrupciones de Adobe Commerce en la infraestructura en la nube](/help/how-to/general/how-to-identify-outages.md)
-   * [Reorganizar ramas en la nube en Adobe Commerce](/help/how-to/general/rearrange-cloud-branches-adobe-commerce.md)
    * [Redirigir HTTP a HTTPS para todas las páginas en Adobe Commerce en la infraestructura en la nube (Forzar TLS)](/help/how-to/general/redirect-http-to-https-for-all-pages-on-cloud-force-tls.md)
    * [Asigna más espacio para MySQL en Adobe Commerce en la nube](/help/how-to/general/allocate-more-space-for-mysql-in-magento-commerce-cloud.md)
    * [Cambiar el ID de incremento de una entidad de la base de datos (pedido, factura, nota de abono, etc.) en un almacén concreto](/help/how-to/general/change-increment-id-for-a-db-entity-order-invoice-credit-memo-etc-on-particular-store.md)
