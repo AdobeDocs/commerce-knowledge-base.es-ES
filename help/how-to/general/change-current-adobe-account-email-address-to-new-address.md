@@ -3,9 +3,9 @@ title: Cambiar la dirección de correo electrónico de la cuenta actual de Adobe
 description: Aprenda a cambiar la dirección de correo electrónico actual registrada en la cuenta de Adobe a una nueva dirección actualmente no registrada en la cuenta de Adobe o en la cuenta de Magento.
 exl-id: ca549d38-0d62-4206-9727-0ed85b733dc3
 feature: Communications
-source-git-commit: 8d91d4c21dc981accf25537cdb61e1271e17b78c
+source-git-commit: 95d4507be9ac06a4cb3b1150000d7f9df30d35f8
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Después de cambiar la dirección de correo electrónico del ID de MAGE, tambié
 
 ### Verificar correo electrónico de Commerce Marketplace
 
-1. Inicie sesión en su cuenta de Commerce Marketplace y confirme que el correo electrónico de la cuenta se ha actualizado a la nueva dirección.
+1. Inicie sesión en [Commerce Marketplace account](https://commercemarketplace.adobe.com/) y confirme que el correo electrónico de la cuenta se ha actualizado a la nueva dirección.
 1. Si el correo electrónico no se ha actualizado, envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/support#home) solicitando que se corrija el correo electrónico de la cuenta de Commerce Marketplace.
 
 ### Pedir al soporte técnico que finalice las actualizaciones de la cuenta interna
