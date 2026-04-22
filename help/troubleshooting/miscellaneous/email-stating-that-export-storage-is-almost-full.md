@@ -79,4 +79,4 @@ Siga estos pasos para revisar, limpiar y validar el uso del almacenamiento de ex
 
 ## Lectura relacionada
 
-[Compruebe los clústeres dedicados](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) en nuestra base de conocimiento de soporte.
+[Compruebe los clústeres dedicados](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#check-dedicated-clusters) en nuestra base de conocimiento de soporte.
