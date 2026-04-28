@@ -25,7 +25,7 @@ Este artículo cubre la realización de copias de seguridad de sus entornos con 
 
 Si necesita realizar una copia de seguridad de la base de datos como preparación para una actualización, debe crear y validar su propia copia de seguridad antes de continuar. Las instantáneas de recuperación ante desastres se han diseñado únicamente para restaurar bases de datos si la actualización no se ha realizado correctamente, y no como sustituto de las copias de seguridad de preparación de la actualización.
 
-Si un error le impide crear su propia copia de seguridad, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/home?support-tab=home#support) e incluya los detalles del error de copia de seguridad en su ticket.
+Si un error le impide crear su propia copia de seguridad, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/home?lang=es&support-tab=home#support) e incluya los detalles del error de copia de seguridad en su ticket.
 
 Nota: una instantánea de recuperación ante desastres es un punto de recuperación del sistema previamente capturado, no una copia de seguridad creada manualmente para una actualización planificada, y no se puede generar bajo demanda. Si se solicita una instantánea, se proporciona el punto de recuperación disponible más reciente, por lo que los cambios realizados después de ese punto pueden no ser recuperables.
 
@@ -33,7 +33,7 @@ Nota: una instantánea de recuperación ante desastres es un punto de recuperaci
 
 * Las instantáneas manuales no están disponibles para los entornos de ensayo y producción en el plan Pro.
 * Las instantáneas automáticas se crean **independientemente del estado activo** del sitio (las instantáneas también se crean para sitios que aún no se han iniciado). Las copias de seguridad automáticas no son de acceso público porque se almacenan en un sistema independiente.
-Puedes [enviar un ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para solicitar una copia de seguridad especial o para restaurar desde una copia de seguridad específica, proporcionando la fecha, la hora y la zona horaria del ticket. Una vez que el equipo de infraestructura haya proporcionado la instantánea, para determinar la marca de tiempo cuando se tomó originalmente, ejecute el siguiente comando desde la ubicación donde se colocó la instantánea:
+Puedes [enviar un ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para solicitar una copia de seguridad especial o para restaurar desde una copia de seguridad específica, proporcionando la fecha, la hora y la zona horaria del ticket. Una vez que el equipo de infraestructura haya proporcionado la instantánea, para determinar la marca de tiempo cuando se tomó originalmente, ejecute el siguiente comando desde la ubicación donde se colocó la instantánea:
 
   `cat /mnt/recovery/vol-<volume_id>/snap.time`
 
@@ -44,11 +44,11 @@ Puedes [enviar un ticket de soporte de Adobe Commerce](https://experienceleague.
 * El importe estará disponible durante 7 días y el periodo de retención no se puede ampliar. Si necesita conservar una instantánea más allá de este tiempo, debe copiarla en una carpeta o servidor externo diferente dentro de ese periodo de tiempo
 * La compatibilidad no genera instantáneas manuales bajo demanda. Además, tenga en cuenta que la asistencia técnica no realiza la reversión ni la restauración de la base de datos por usted: recuperan la instantánea, pero debe restaurar la base de datos usted mismo.
 * Las instantáneas automáticas se crean **independientemente del estado activo** del sitio (las instantáneas también se crean para sitios que aún no se han iniciado). Las copias de seguridad automáticas se almacenan en un sistema independiente y el público no puede acceder a ellas.
-Puedes [enviar un ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para solicitar una copia de seguridad especial o para restaurar desde una copia de seguridad específica, proporcionando la fecha, la hora y la zona horaria del ticket. La compatibilidad no genera instantáneas manuales bajo demanda.
+Puedes [enviar un ticket de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para solicitar una copia de seguridad especial o para restaurar desde una copia de seguridad específica, proporcionando la fecha, la hora y la zona horaria del ticket. La compatibilidad no genera instantáneas manuales bajo demanda.
 Además, tenga en cuenta que la asistencia técnica no realiza la reversión ni la restauración de la base de datos por usted: recuperan la instantánea, pero debe restaurar la base de datos usted mismo.
 * Las copias de seguridad se crean con las **instantáneas cifradas del Almacén de bloques elásticos de Amazon Web Service (AWS EBS)**.
 * Las instantáneas de entorno incluyen el sistema completo (el sistema de archivos y la base de datos).
-* El tiempo de retención de instantáneas automáticas **es diferente** y sigue [la programación](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
+* El tiempo de retención de instantáneas automáticas **es diferente** y sigue [la programación](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery).
 
 >[!NOTE]
 >
@@ -58,25 +58,25 @@ Además, tenga en cuenta que la asistencia técnica no realiza la reversión ni 
 
 ### Entorno de integración (desarrollo)
 
-* [No se está haciendo una copia de seguridad de su entorno de integración](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) **de forma automática**, pero puede crear instantáneas **manualmente**.
+* [No se está haciendo una copia de seguridad de su entorno de integración](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27242) **de forma automática**, pero puede crear instantáneas **manualmente**.
 * Puede crear instantáneas manuales para entornos de integración en tiendas que no estén activas.
 * Es posible que tenga **varias instantáneas** que se hayan activado manualmente.
-* Las instantáneas activadas manualmente se almacenan durante siete días. Si necesita conservar una instantánea más allá del período de retención, cópiela en una carpeta diferente o en un servidor externo dentro de ese periodo de tiempo. Para restaurar la instantánea más adelante, siga el mismo proceso descrito en [Importar el volcado de la base de datos directamente desde el servidor](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+* Las instantáneas activadas manualmente se almacenan durante siete días. Si necesita conservar una instantánea más allá del período de retención, cópiela en una carpeta diferente o en un servidor externo dentro de ese periodo de tiempo. Para restaurar la instantánea más adelante, siga el mismo proceso descrito en [Importar el volcado de la base de datos directamente desde el servidor](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 **Artículos relacionados en nuestra documentación para desarrolladores:**
 
-* [Backup y recuperación ante desastres](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Crear una instantánea](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
+* [Backup y recuperación ante desastres](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Crear una instantánea](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
 
 ## Instantánea de entorno, plan de inicio
 
 * No se realiza automáticamente una copia de seguridad de todos los tipos de entornos (integración, ensayo, producción) **pero puede crear instantáneas manualmente.**
 * Puede crear instantáneas manuales **independientemente del estado activo** del sitio (instantáneas también creadas para sitios que aún no se han iniciado).
-* Se almacena una instantánea desencadenada manualmente durante **7 días**. Si necesita conservar una instantánea más allá del período de retención, cópiela en una carpeta diferente o en un servidor externo dentro de ese periodo de tiempo. Para restaurar la instantánea más adelante, siga el mismo proceso descrito en [Importar el volcado de la base de datos directamente desde el servidor](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
+* Se almacena una instantánea desencadenada manualmente durante **7 días**. Si necesita conservar una instantánea más allá del período de retención, cópiela en una carpeta diferente o en un servidor externo dentro de ese periodo de tiempo. Para restaurar la instantánea más adelante, siga el mismo proceso descrito en [Importar el volcado de la base de datos directamente desde el servidor](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/restore-a-db-snapshot-from-staging-or-production#meth3).
 
 ## Restaurar una instantánea de entorno
 
-Para restaurar una instantánea existente (en el entorno admitido: integración, ensayo, producción en el plan inicial o integración en el plan Pro), siga los pasos de [Administración de copias de seguridad: restaure una copia de seguridad manual](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) en nuestra Guía de infraestructura de Commerce en la nube.
+Para restaurar una instantánea existente (en el entorno admitido: integración, ensayo, producción en el plan inicial o integración en el plan Pro), siga los pasos de [Administración de copias de seguridad: restaure una copia de seguridad manual](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots#restore-a-manual-backup) en nuestra Guía de infraestructura de Commerce en la nube.
 
 ## Copia de seguridad de base de datos
 
@@ -86,8 +86,8 @@ Una instantánea es una copia de seguridad completa de un entorno que incluye to
 
 >[!NOTE]
 >
->Los volúmenes montados solo incluyen los [montajes grabables](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts), o hacen referencia a ellos, y no incluirán todo el directorio `/app`. En cuanto a los otros archivos, se crean o generan por [el proceso de compilación e implementación](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), y también tendrá que retirar los archivos restantes de su repositorio Git.
+>Los volúmenes montados solo incluyen los [montajes grabables](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/configure/app/properties/properties#mounts), o hacen referencia a ellos, y no incluirán todo el directorio `/app`. En cuanto a los otros archivos, se crean o generan por [el proceso de compilación e implementación](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-develop-deploy-workflow#deployment-workflow), y también tendrá que retirar los archivos restantes de su repositorio Git.
 
-[Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) en nuestra documentación para desarrolladores.
+[Administración de instantáneas y copias de seguridad](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/storage/snapshots) en nuestra documentación para desarrolladores.
 
-Envíe solamente una [solicitud de soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para una instantánea de base de datos de Pro Production y Staging si necesita la base de datos de un momento específico. Si solo necesita una copia de seguridad actual de su base de datos (en cualquier entorno), consulte el artículo de la base de conocimiento: [Generar volcados de base de datos en la nube](/help/how-to/general/create-database-dump-on-cloud.md).
+Envíe solamente una [solicitud de soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide) para una instantánea de base de datos de Pro Production y Staging si necesita la base de datos de un momento específico. Si solo necesita una copia de seguridad actual de su base de datos (en cualquier entorno), consulte el artículo de la base de conocimiento: [Generar volcados de base de datos en la nube](/help/how-to/general/create-database-dump-on-cloud.md).
