@@ -3,9 +3,9 @@ title: 'Copia de seguridad (instantánea) en la nube: preguntas frecuentes'
 description: Este artículo cubre los aspectos básicos del backup de sus entornos con instantáneas en Adobe Commerce en la infraestructura en la nube.
 exl-id: 0077db74-3e7e-4c98-b215-7f6c089f49e8
 feature: Cloud, Iaas
-source-git-commit: 79e7cd40665b1857a9c68916679f07b1c046028a
+source-git-commit: 878a49fd1bbfa98dd506f0e81008ebe3bf7ecaca
 workflow-type: tm+mt
-source-wordcount: '842'
+source-wordcount: '1169'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,14 @@ Este artículo cubre la realización de copias de seguridad de sus entornos con 
 * Planos de arquitectura: Starter, Pro Legacy, Pro
 
 ## Instantánea de entorno, plan Pro
+
+### Preparación para una actualización
+
+Si necesita realizar una copia de seguridad de la base de datos como preparación para una actualización, debe crear y validar su propia copia de seguridad antes de continuar. Las instantáneas de recuperación ante desastres se han diseñado únicamente para restaurar bases de datos si la actualización no se ha realizado correctamente, y no como sustituto de las copias de seguridad de preparación de la actualización.
+
+Si un error le impide crear su propia copia de seguridad, [póngase en contacto con el soporte técnico](https://experienceleague.adobe.com/home?lang=es&support-tab=home#support) e incluya los detalles del error de copia de seguridad en su ticket.
+
+Nota: una instantánea de recuperación ante desastres es un punto de recuperación del sistema previamente capturado, no una copia de seguridad creada manualmente para una actualización planificada, y no se puede generar bajo demanda. Si se solicita una instantánea, se proporciona el punto de recuperación disponible más reciente, por lo que los cambios realizados después de ese punto pueden no ser recuperables.
 
 ### Entornos de ensayo y producción
 
@@ -57,7 +65,7 @@ Además, tenga en cuenta que la asistencia técnica no realiza la reversión ni 
 
 **Artículos relacionados en nuestra documentación para desarrolladores:**
 
-* [Copia de seguridad y recuperación ante desastres](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Backup y recuperación ante desastres](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
 * [Crear una instantánea](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/storage/snapshots)
 
 ## Instantánea de entorno, plan de inicio
