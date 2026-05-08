@@ -3,9 +3,9 @@ title: Bloquear el tráfico malintencionado para Adobe Commerce en el nivel Ráp
 description: En este artículo se explican los pasos que puede seguir para bloquear el tráfico malintencionado cuando sospeche que el almacén de Adobe Commerce en la infraestructura de la nube está experimentando un ataque DDoS.
 exl-id: 1a834a0a-753b-432e-9c3b-ef8dd034d294
 feature: Cache, Marketing Tools
-source-git-commit: 2555fbdb8a7a53d41c746df6414a7b0bad2de5d9
+source-git-commit: 8bde15deccc24c548c20cf5955cbebc45ac1d9a1
 workflow-type: tm+mt
-source-wordcount: '775'
+source-wordcount: '884'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ En este artículo asumimos que ya tiene las IP maliciosas y/o sus agentes de pa�
 
 Si el sitio web está sobrecargado por DDoS, es posible que no pueda iniciar sesión en el administrador de Commerce (y realizar todos los pasos descritos más adelante en este artículo).
 
-Para obtener acceso al administrador, ponga su sitio web en modo de mantenimiento como se describe en [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) y coloque en la lista blanca su dirección IP. Desactive el modo de mantenimiento una vez finalizado este proceso.
+Para obtener acceso al administrador, ponga su sitio web en modo de mantenimiento como se describe en [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) y coloque en la lista blanca su dirección IP. Desactive el modo de mantenimiento una vez finalizado este proceso.
 
 ## Bloquear tráfico por dirección IP
 
@@ -49,14 +49,14 @@ Para establecer un bloqueo basado en el agente de usuario, debe agregar un fragm
 
 1. En el Administrador de Commerce, vaya a **Tiendas** > **Configuración** > **Avanzado** > **Sistema** > **Caché de página completa**.
 1. A Continuación, **Configuración Rápida** > **Fragmentos De VCL Personalizados**.
-1. Cree el nuevo fragmento personalizado como se describe en la guía [Fragmentos personalizados de VCL](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) para el módulo Fastly\_Cdn. Puede utilizar el siguiente ejemplo de código como ejemplo. Este ejemplo deshabilita el tráfico para los agentes de usuario `AhrefsBot` y `SemrushBot`.
+1. Cree el nuevo fragmento personalizado como se describe en la guía [Fragmentos personalizados de VCL](https://github.com/fastly/fastly-magento2/blob/master/Documentation/Guides/CUSTOM-VCL-SNIPPETS.md) para el módulo Fastly\_Cdn. Puede utilizar el siguiente ejemplo de código como ejemplo. Este ejemplo deshabilita el tráfico para el agente de usuario `AhrefsBot`.
 
 ```php
 name: block_bad_useragents
   type: recv
   priority: 5
   VCL:
-  if ( req.http.User-Agent ~ "(AhrefsBot|SemrushBot)" ) {
+  if ( req.http.User-Agent ~ "(AhrefsBot)" ) {
       error 405 "Not allowed";
   }
 ```
@@ -69,14 +69,14 @@ La funcionalidad debe probarse exhaustivamente en el ensayo antes de utilizarse 
 
 ## Recomendado: considere actualizar robots.txt
 
-La actualización del archivo de `robots.txt` podría ayudar a evitar que ciertos motores de búsqueda, rastreadores y robots rastreen determinadas páginas. Algunos ejemplos de páginas que no se deben rastrear son las páginas de resultados de búsqueda, cierre de compra, información del cliente, etc. Evitar que los robots rastreen estas páginas podría ayudar a disminuir el número de solicitudes generadas por esos robots.
+Actualizar el archivo de `robots.txt` podría ayudar a evitar que ciertos motores de búsqueda, rastreadores y robots rastreen determinadas páginas. Algunos ejemplos de páginas que no se deben rastrear son las páginas de resultados de búsqueda, el cierre de compra, la información del cliente, etc. Evitar que los robots rastreen estas páginas podría ayudar a reducir el número de solicitudes generadas por esos robots.
 
 Hay dos consideraciones importantes al usar `robots.txt`:
 
 * Los robots pueden ignorar su `robots.txt`. Especialmente los robots de malware, que analizan la web en busca de vulnerabilidades de seguridad, y los recolectores de direcciones de correo electrónico utilizados por los remitentes de spam no prestarán atención.
 * El archivo `robots.txt` es un archivo disponible públicamente. Cualquiera puede ver qué secciones de su servidor no quiere que utilicen los robots.
 
-La información básica y la configuración predeterminada de Adobe Commerce `robots.txt` se encuentran en el artículo [Robots de motores de búsqueda](https://experienceleague.adobe.com/es/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) de nuestra documentación para desarrolladores.
+La información básica y la configuración predeterminada de Adobe Commerce `robots.txt` se encuentran en el artículo [Robots de motores de búsqueda](https://experienceleague.adobe.com/en/docs/commerce-admin/marketing/seo/seo-overview#search-engine-robots) de nuestra documentación para desarrolladores.
 
 Para obtener información general y recomendaciones acerca de `robots.txt`, vea:
 
@@ -87,5 +87,5 @@ Póngase en contacto con su desarrollador o con su experto en SEO para determina
 
 ## Lectura relacionada
 
-* [Términos de licencia específicos del producto para Adobe Commerce en la nube](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
-* [VCL personalizado para bloquear solicitudes](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) en la Guía de Commerce en la nube
+* [Términos de licencia específicos de productos para Adobe Commerce en la nube](https://www.adobe.com/content/dam/cc/en/legal/terms/enterprise/pdfs/PSLT-AdobeCommerceCloud-WW-2023v1.pdf)
+* [VCL personalizado para bloquear solicitudes](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/cdn/custom-vcl-snippets/fastly-vcl-blocking) en la Guía de Commerce en la nube
