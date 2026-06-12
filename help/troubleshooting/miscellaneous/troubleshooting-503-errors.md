@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para la resolución de errore
 exl-id: 3f001cc9-b19a-4dee-bff0-fc8ba89e2646
 feature: Cache, Categories
 role: Admin
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '425'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Para resolver este problema, aumente el valor predeterminado del parámetro `htt
    * Ubuntu: `/etc/default/varnish`
 1. Busque el parámetro `http_resp_hdr_len`.
 1. Si el parámetro no existe, agréguelo después de `thread_pool_max`
-1. Establezca `http_resp_hdr_len` en un valor igual al recuento de productos de la categoría más grande multiplicado por 21. (Cada etiqueta de producto tiene una longitud de aproximadamente 21 caracteres).    Por ejemplo, configurar el valor en 65536 bytes debería funcionar si la categoría más grande tiene 3000 productos.    Por ejemplo:    ```conf    -p http_resp_hdr_len=65536 \    ```
+1. Establezca `http_resp_hdr_len` en un valor igual al recuento de productos de la categoría más grande multiplicado por 21. (Cada etiqueta de producto tiene una longitud de aproximadamente 21 caracteres). Por ejemplo, configurar el valor en 65536 bytes debería funcionar si la categoría más grande tiene 3000 productos. Por ejemplo: `-p http_resp_hdr_len=65536 \`
 1. Establezca `http_resp_size` en un valor que se ajuste a la longitud de encabezado de respuesta incrementada.    Por ejemplo, el uso de la suma de la longitud del encabezado aumentada y el tamaño de respuesta predeterminado es un buen punto de partida (por ejemplo, 65536 + 32768 = 98304): `-p http_resp_size=98304`. A continuación se muestra un fragmento:
 
    ```
@@ -63,4 +63,4 @@ Dado que se accede al administrador a través de Varnish, no puede iniciar sesi�
 $ bin/magento cache:enable
 ```
 
-Para obtener más información acerca del uso de la línea de comandos, vea [Introducción a la configuración de la línea de comandos](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/config-cli).
+Para obtener más información acerca del uso de la línea de comandos, vea [Introducción a la configuración de la línea de comandos](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/config-cli).
