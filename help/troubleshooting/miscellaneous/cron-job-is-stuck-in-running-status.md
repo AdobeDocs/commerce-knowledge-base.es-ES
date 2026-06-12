@@ -1,10 +1,10 @@
 ---
-title: "[!DNL Cron] trabajo está atascado en estado **en ejecución**"
+title: El trabajo [!DNL Cron] se ha quedado atascado en el estado **en ejecución**
 description: Este artículo proporciona soluciones para los casos en los que los trabajos de Adobe Commerce [!DNL cron] no terminan de ejecutarse y persisten en estado de "ejecución", lo que impide que se ejecuten otros  [!DNL cron] trabajos. Esto puede ocurrir por varios motivos, como problemas de red, bloqueos de aplicaciones o problemas de reimplementación.
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
-source-git-commit: 08a241131453725a86eda5f267a209e6705da2e3
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
 source-wordcount: '402'
 ht-degree: 0%
@@ -38,19 +38,19 @@ Los síntomas de [!DNL cron] trabajos que deben restablecerse incluyen:
 Para resolver este problema, debe restablecer los trabajos de [!DNL cron] mediante el comando `cron:unlock`. Este comando cambia el estado del trabajo [!DNL cron] en la base de datos y lo finaliza forzosamente para permitir que continúen otros trabajos programados.
 
 1. Abra un terminal y use sus [claves SSH](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/secure-connections) para conectarse al entorno afectado.
-1. Obtenga las credenciales de la base de datos MySQL:    ```shell    echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp    ```
-1. Conectar con la base de datos mediante `mysql` :    ```shell    mysql -hdatabase.internal -uuser -ppassword main    ```
-1. Seleccione la base de datos `main`:    ```shell    use main    ```
-1. Buscar todos los trabajos de [!DNL cron] en ejecución:    ```shell    SELECT * FROM cron_schedule WHERE status = 'running';    ```
+1. Obtener las credenciales de la base de datos MySQL: `echo $MAGENTO_CLOUD_RELATIONSHIPS | base64 -d | json_pp`
+1. Conectar con la base de datos mediante `mysql`: `mysql -hdatabase.internal -uuser -ppassword main`
+1. Seleccione la base de datos `main`: `use main`
+1. Buscar todos los trabajos de [!DNL cron] en ejecución: `SELECT * FROM cron_schedule WHERE status = 'running';`
 1. Copie el `job_code` de cualquier trabajo que se ejecute más de lo normal.
-1. Use los identificadores de programación del paso anterior para desbloquear [!DNL cron] trabajos específicos:    ```shell    ./vendor/bin/ece-tools cron:unlock --job-code=<job_code_1> [... --job-code=<job_code_x>]    ```
+1. Use los identificadores de programación del paso anterior para desbloquear [!DNL cron] trabajos específicos: `./vendor/bin/ece-tools cron:unlock --job-code=<job_code_1> [... --job-code=<job_code_x>]`
 
 ### Solución para detener un solo(a) [!DNL cron] {#solution-stop-a-single-cron}
 
 1. Abra un terminal y use sus [claves SSH](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/secure-connections) para conectarse al entorno afectado.
 1. Compruebe las tareas de larga ejecución mediante el siguiente comando:
 
-   ```date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'```
+   `date; ps aux | grep '[%]CPU\|cron\|magento\|queue' | grep -v 'grep\|cron -f'`
 
 1. En la salida, como en la salida de ejemplo a continuación, verá la fecha actual y la lista de procesos. La columna `START` muestra la fecha y la hora de inicio del proceso:
 
@@ -72,9 +72,9 @@ Para resolver este problema, debe restablecer los trabajos de [!DNL cron] median
    bxc2qly+ 25896 29.0  0.6 475320 109876 ?       R    20:51   0:00 /usr/bin/php7.1-zts /app/bxc2qlykqhbqe/bin/magento cron:run --group=ddg_automation --bootstrap=standaloneProcessStarted=1
    ```
 
-1. Si ve [!DNL cron] trabajos de larga duración que podrían bloquear el proceso de implementación, puede terminar el proceso con el comando `kill`. Puede identificar el **ID de proceso** (se encontró la columna `PID`) y, a continuación, colocar ese `PID` en el comando para matar el proceso.
-El comando **kill process** está:
+1. Si ve [!DNL cron] trabajos de larga duración que podrían bloquear el proceso de implementación, puede terminar el proceso con el comando `kill`. Puede identificar la **ID de proceso** (se encontró la columna `PID`) y, a continuación, colocar esa `PID` en el comando para matar el proceso.
+El comando **kill process** es:
 
-   ```kill -9 <PID>```
+   `kill -9 <PID>`
 
 1. A continuación, puede volver a implementar si estaba intentando volver a implementar.

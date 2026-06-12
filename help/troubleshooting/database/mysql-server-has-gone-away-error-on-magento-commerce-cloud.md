@@ -4,9 +4,9 @@ description: Este artículo habla sobre la solución del problema en el que reci
 exl-id: 14cb9a6d-6d25-4044-8f52-d65648c03431
 feature: Cloud, Paas, Services, Variables
 role: Developer
-source-git-commit: 5ca7a4400e62db2419b32a31a4f6cf04f5a82e35
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -41,11 +41,11 @@ El valor `default_socket_timeout` se ha establecido demasiado bajo. Esto se debe
 
 ## Solución
 
-1. Compruebe el tiempo de espera actual para `default_socket_timeout` ejecutando en la CLI:    ```    php -i |grep default_socket_timeout    ```
+1. Compruebe el tiempo de espera actual para `default_socket_timeout` ejecutando en la CLI: `php -i |grep default_socket_timeout`
 1. Dependiendo del aumento de tiempo de espera establecido, la variable `default_socket_timeout` pasa al tiempo de ejecución más largo esperado posible en el archivo `/etc/platform/<project_name>/php.ini`. Se recomienda configurar entre 10 y 15 minutos.
 1. Confírmelo a GIT y vuelva a implementarlo.
 
 ## Lectura relacionada
 
-* [Prácticas recomendadas de bases de datos para Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=es)
-* [Problemas más comunes de la base de datos en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=es)
+* [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud.html?lang=es)
+* [Problemas más comunes de las bases de datos en Adobe Commerce sobre la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/maintenance/resolve-database-performance-issues.html?lang=es)

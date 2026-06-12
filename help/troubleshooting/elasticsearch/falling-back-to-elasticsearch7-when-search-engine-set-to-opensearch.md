@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución al problema cuando *Se vue
 feature: Search
 role: Developer
 exl-id: 965d2929-5cf0-4e0a-9eed-6a656daaa120
-source-git-commit: d17af0f8f92726aa5a6914fc9e1ff13268256d04
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '237'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ Adobe Commerce en la infraestructura en la nube
 
 Ha establecido su **motor de búsqueda** en **[!DNL OpenSearch]**, pero observa este tipo de error en el archivo `var/log/support_report.log`:
 
-```[2024-04-04T00:27:41.212916+00:00] report.ERROR: opensearch search engine doesn't exist. Falling back to elasticsearch7 [] []```
+`[2024-04-04T00:27:41.212916+00:00] report.ERROR: opensearch search engine doesn't exist. Falling back to elasticsearch7 [] []`
 
 <u>Pasos a seguir</u>:
 
@@ -43,7 +43,7 @@ Si indica *1.2.4*, entonces [!DNL OpenSearch] ya está instalado.
 Aunque su versión sí admite [!DNL OpenSearch], la aplicación solo reconocerá o aceptará [!DNL Elasticsearch7] como motor de búsqueda.
 
 A partir de la versión 2.4.6 de Adobe Commerce, la aplicación se actualizó para permitir que [!DNL OpenSearch] se seleccionara como motor de búsqueda.
-Si va a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** en un entorno que no está en la nube, podrá cambiar esta opción como se muestra en la **solución** que aparece a continuación.
+Si va a **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > **[!UICONTROL Catalog]** > **[!UICONTROL Catalog Search]** en un entorno que no está en la nube, podrá cambiar esta opción como se muestra en la **solución** a continuación.
 (Nota: En un entorno de nube, este campo no se puede cambiar porque el motor de búsqueda está bloqueado en el archivo `app/etc/env.php`).
 
 ## Solución

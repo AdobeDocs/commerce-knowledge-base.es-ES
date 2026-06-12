@@ -4,9 +4,9 @@ description: Este artículo proporciona una solución para solucionar los proble
 feature: Data Import/Export, Saas, Logs
 role: Developer
 exl-id: 50f2223b-bfcf-4c3c-b0f1-dbcc4365edc2
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '319'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ En este caso, el error *la tabla no existe* se produce porque el nombre de la ta
 
 ## Solución
 
-En la extensión personalizada, edite el archivo de configuración [!DNL Mview] (```./etc/mview.xml```) para cambiar el nombre de tabla `catalog_data_exporter_products` a *`cde_products_feed`*.
+En la extensión personalizada, edite el archivo de configuración [!DNL Mview] (`./etc/mview.xml`) para cambiar el nombre de tabla `catalog_data_exporter_products` a *`cde_products_feed`*.
 
 En el ejemplo siguiente se muestra el código que especifica las tablas rastreadas por la suscripción [!DNL Mview]:
 

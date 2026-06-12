@@ -4,9 +4,9 @@ description: Este artículo proporciona soluciones para los errores que pueden p
 exl-id: 9beb31ae-ed3c-42e1-b0bf-33fb1c91e0ea
 feature: Data Import/Export
 role: Developer
-source-git-commit: 958067830d32b1f10ffa669307ec76d1e14b82a4
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '740'
+source-wordcount: '805'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Este artículo proporciona soluciones para los errores que pueden producirse al 
 
 ### Mensajes de error
 
-* ```bash    Source documents are not mapped: <EXTENSION_TABLE>    ```
-* ```bash    Source fields are not mapped. Document: <EXTENSION_TABLE>. Fields: <EXTENSION_FIELD>    ```
+* `Source documents are not mapped: <EXTENSION_TABLE>`
+* `Source fields are not mapped. Document: <EXTENSION_TABLE>. Fields: <EXTENSION_FIELD>`
 
 En casos excepcionales, el mensaje puede mencionar
 
@@ -44,7 +44,7 @@ Este mensaje aparece porque la herramienta de migración de datos ejecuta prueba
 
 ### Posibles soluciones
 
-* Instale las extensiones de Adobe Commerce 2 correspondientes desde [Commerce Marketplace](https://marketplace.magento.com/).     Si los datos en conflicto se originan en una extensión que agrega propios elementos de estructura de base de datos, la versión de Adobe Commerce 2 de la misma extensión puede agregar dichos elementos a la base de datos de destino (Adobe Commerce 2), lo que soluciona el problema.
+* Instale las extensiones correspondientes de Adobe Commerce 2 desde [Commerce Marketplace](https://marketplace.magento.com/).     Si los datos en conflicto se originan en una extensión que agrega propios elementos de estructura de base de datos, la versión de Adobe Commerce 2 de la misma extensión puede agregar dichos elementos a la base de datos de destino (Adobe Commerce 2), lo que soluciona el problema.
 * Utilice el argumento `-a` al ejecutar la herramienta para resolver automáticamente los errores y evitar que se detenga la migración.
 * Configure la herramienta para ignorar los datos problemáticos.
 
@@ -166,4 +166,3 @@ Se recomienda probar el proceso de migración desde una copia de la base de dato
 ## Lectura relacionada
 
 [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
-

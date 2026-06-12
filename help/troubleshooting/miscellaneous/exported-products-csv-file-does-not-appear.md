@@ -4,9 +4,9 @@ description: Este artículo proporciona una corrección del problema que se prod
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+source-git-commit: 40766238a7ea748bff86decf75cddec28fe63bb9
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -62,7 +62,7 @@ Consulte los detalles de ambas opciones en los párrafos siguientes.
 1. En el Administrador, vaya a **Tiendas** > **Configuración** > **Avanzado** > **Administrador** > **Seguridad**.
 1. Establezca la opción **Agregar clave secreta a las direcciones URL** en *No.*
 1. Haga clic en **Guardar configuración**.
-1. Limpie la caché en **Sistema** > **Herramientas** > **Administración de caché** o ejecutando    ```bash    bin/magento cache:clean``` o en el administrador.
+1. Limpie la caché en **Sistema** > **Herramientas** > **Administración de caché** o ejecutando `bin/magento cache:clean` o en el administrador.
 
 ### Ejecute el comando de exportación manualmente y, opcionalmente, agréguelo como trabajo cron
 
@@ -74,7 +74,7 @@ Para agregar el proceso como un trabajo cron de forma opcional, debe agregar la 
 #### Agregar proceso como trabajo cron (opcional)
 
 1. Asegúrese de que su cron esté configurado. Consulte [Configurar trabajos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=es) para obtener más información.
-1. Ejecute el siguiente comando para devolver una lista de consumidores de cola de mensajes:     `./bin/magento queue:consumers:list`
+1. Ejecute el siguiente comando para devolver una lista de consumidores de cola de mensajes: `./bin/magento queue:consumers:list`
 1. Agregue lo siguiente al archivo `.magento.env.yaml` en el directorio raíz de la aplicación e incluya a los consumidores que desee agregar. Por ejemplo, este es el consumidor necesario para el procesamiento de exportación:
 
    ```yaml

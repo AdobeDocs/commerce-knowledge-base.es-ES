@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 1f8558e14c82e9f5ca3c050b15394c1361bdd179
+source-git-commit: 5cb7550f95d48b89fc0d68c5e282bc3efe817f17
 workflow-type: tm+mt
-source-wordcount: '1796'
+source-wordcount: '1799'
 ht-degree: 1%
 
 ---
@@ -185,7 +185,7 @@ ht-degree: 1%
       * [Error durante la implementación al actualizar a la versión compatible con PHP 8.1](/help/troubleshooting/deployment/error-during-deployment-when-upgrading-to-version-supporting-php-8-1.md)
       * [Error de implementación: &quot;error 7 al descargar... puerto 443: Conexión rechazada&quot;](/help/troubleshooting/deployment/deployment-error-downloading-connection-refused-adobe-commerce.md)
       * [Errores de implementación al confirmar archivos incorrectos](/help/troubleshooting/deployment/deployment-error-when-committing-incorrect-files.md)
-      * [Errores de implementación en los que no se encontraron parches](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
+      * [El parche no encontró errores durante la implementación o la aplicación manual](/help/troubleshooting/deployment/deployment-errors-where-patches-not-found.md)
       * [Error de implementación al vaciar la caché: Error &quot;No hay comandos definidos en el área de nombres &quot;caché&quot;&quot;](/help/troubleshooting/deployment/deployment-failed-there-are-no-commands-defined-in-the-cache-namespace-error.md)
    * Problemas conocidos {#known-issues-patches-attached}
       * [Directrices para proteger el almacén y girar las claves de cifrado: [!DNL CVE-2024-34102]](/help/troubleshooting/known-issues-patches-attached/guidance-on-securing-your-store-and-rotating-encryptionkeys-cve-2024-34102.md)
