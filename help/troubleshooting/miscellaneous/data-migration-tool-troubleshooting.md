@@ -83,7 +83,7 @@ Class <extension/class_name> is not mapped in record <attribute_id=196>
 
 ### Causa
 
-No se pudo encontrar una clase del código base de Adobe Commerce 1 en el código base de Adobe Commerce 2 durante el [paso de migración EAV](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/basics/technical-specification) en nuestra documentación para desarrolladores. En la mayoría de los casos, la clase que falta pertenece a una [extensión](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/glossary#extension).
+No se pudo encontrar una clase del código base de Adobe Commerce 1 en el código base de Adobe Commerce 2 durante el [paso de migración EAV](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/data-migration/basics/technical-specification) en nuestra documentación para desarrolladores. En la mayoría de los casos, la clase que falta pertenece a una [extensión](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/glossary#extension).
 
 ### Posibles soluciones
 
@@ -155,7 +155,7 @@ Deltalog for <TABLE_NAME> is not installed
 
 ### Causa
 
-Este error se produce durante la [migración incremental](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/delta) (en nuestra documentación para desarrolladores) de cambios en los datos. Significa que no se encontraron tablas deltalog (con prefijo `m2_cl_*`) en la base de datos de Adobe Commerce 1. La herramienta instala estas tablas durante la [migración de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/data-migration/migrate-data/data) (en nuestra documentación para desarrolladores), así como los déclencheur de la base de datos que realizan un seguimiento de los cambios y rellenan las tablas de cuadros de diálogo.
+Este error se produce durante la [migración incremental](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/data-migration/migrate-data/delta) (en nuestra documentación para desarrolladores) de cambios en los datos. Significa que no se encontraron tablas deltalog (con prefijo `m2_cl_*`) en la base de datos de Adobe Commerce 1. La herramienta instala estas tablas durante la [migración de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/data-migration/migrate-data/data) (en nuestra documentación para desarrolladores), así como los déclencheur de la base de datos que realizan un seguimiento de los cambios y rellenan las tablas de cuadros de diálogo.
 
 Una de las razones del error podría ser que está intentando migrar desde una *copia* de su tienda Adobe Commerce 1 activa, no desde la propia tienda Live. Cuando se realiza una copia desde un almacén de Adobe Commerce 1 activo que nunca se ha migrado, la copia no contiene los déclencheur ni las tablas de deltalog adicionales necesarias para completar una migración de delta, por lo que la migración falla. La herramienta de migración de datos NO realiza comparaciones entre las bases de datos de AC1 y AC2 para migrar las diferencias. En su lugar, la herramienta utiliza los déclencheur y las tablas de deltalog instalados durante la primera migración para realizar migraciones delta posteriores. En tal caso, la copia de la base de datos de Adobe Commerce 1 activa no contendrá los déclencheur ni las tablas de cuadros de diálogo de deltalog que la herramienta de migración de datos utiliza para realizar una migración.
 
@@ -165,5 +165,5 @@ Se recomienda probar el proceso de migración desde una copia de la base de dato
 
 ## Lectura relacionada
 
-[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
 
