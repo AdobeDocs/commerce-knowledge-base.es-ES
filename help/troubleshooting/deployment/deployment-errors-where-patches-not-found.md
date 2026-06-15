@@ -2,7 +2,7 @@
 title: El parche no encontró errores durante la implementación o la aplicación manual
 description: 'Este artículo proporciona una solución al problema en el que ve un error. *No se encontraron los siguientes parches: MDVA-XXXXX, ACSD-XXXXX. Compruebe la disponibilidad de estos parches para la versión actual de Magento utilizando el comando "status"*.'
 exl-id: 5a2fd35a-892a-48af-a41f-f275297b3e2e
-source-git-commit: 180f0e00ec1a2c6c3bd2ebca4dafe387c7bb3852
+source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
 workflow-type: tm+mt
 source-wordcount: '462'
 ht-degree: 0%
@@ -72,10 +72,11 @@ En este caso, el parche no está disponible para la versión de Adobe Commerce i
     * ACSD-XXXXX
    ```
 
-1. Busque los identificadores de los parches en las [Notas de la versión de parches de calidad](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html?lang=es) para comprobar si se pueden aplicar a la nueva versión de Adobe Commerce a la que está actualizando.
+1. Busque los identificadores de los parches en las [Notas de la versión de parches de calidad](https://experienceleague.adobe.com/docs/commerce-operations/tools/quality-patches-tool/release-notes.html) para comprobar si se pueden aplicar a la nueva versión de Adobe Commerce a la que está actualizando.
 1. Si el parche no se aplica a la nueva versión de Adobe Commerce a la que desea actualizar, quite el identificador del parche del archivo `.magento.env.yaml`.
 1. Una vez que haya revisado todos los ID de parche indicados por el error, inserte los cambios y vuelva a implementar.
 
 ## Lectura relacionada
 
-* [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=es#apply-a-patch-in-a-local-environment) en la Guía de infraestructura de Commerce en la nube.
+* [Aplicar parches](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/upgrade/apply-patches.html?lang=en#apply-a-patch-in-a-local-environment) en la Guía de infraestructura de Commerce en la nube.
+
