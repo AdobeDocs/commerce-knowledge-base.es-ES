@@ -6,7 +6,7 @@ feature: Cache, Commerce Intelligence, Console
 role: Developer
 source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
-source-wordcount: '564'
+source-wordcount: '639'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Una vez que confirmes que la dirección de correo electrónico es correcta, inte
 
 ## Intente restablecer la contraseña
 
-Si ha comprobado que está utilizando el correo electrónico correcto, intente restablecer la contraseña. Puede usar el **¿Olvidó?** vínculo en la página de inicio de sesión de la sección anterior para almacenar en déclencheur un correo electrónico de restablecimiento de contraseña.
+Si ha comprobado que está utilizando el correo electrónico correcto, intente restablecer la contraseña. Puede usar **Olvidó?** en la página de inicio de sesión de la sección anterior para almacenar en déclencheur un correo electrónico de restablecimiento de contraseña.
 
 Si no ve el correo electrónico al principio, asegúrese de buscar en la carpeta de correo electrónico no deseado. A veces, incluso los correos electrónicos bien intencionados se pueden confundir con basura. **Tenga en cuenta que los vínculos de acceso temporal en estos mensajes de correo electrónico solo son válidos una vez.**
 
@@ -46,7 +46,7 @@ Si sigue sin poder acceder a su cuenta, le recomendamos que compruebe si hay err
 
 ![Abriendo herramientas para desarrolladores de Chrome.](assets/Opening_Chrome_dev_tools.gif)
 
-En el ejemplo anterior, usamos el método más común (**clic con el botón secundario** > **Inspect**) para abrir la consola. Si su navegador no tiene este método o necesita ayuda, utilice los siguientes enlaces de documentación para el navegador web que está utilizando:
+En el ejemplo anterior, usamos el método más común (**clic con el botón secundario** > **Inspeccionar**) para abrir la consola. Si su navegador no tiene este método o necesita ayuda, utilice los siguientes enlaces de documentación para el navegador web que está utilizando:
 
 <table>
 <tbody>
@@ -70,6 +70,6 @@ Envíe un ticket a nuestro equipo de soporte técnico con **capturas de pantalla
 
 ## Temas relacionados en nuestra base de conocimiento de soporte:
 
-* [Agregando un nuevo usuario y estableciendo permisos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=es)
-* [¿Cómo puedo actualizar mi dirección de correo electrónico o contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html?lang=es)
-* [¿Cómo restablezco mi contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html?lang=es)
+* [Adición de un nuevo usuario y configuración de permisos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html)
+* [¿Cómo actualizo mi dirección de correo electrónico o contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html)
+* [¿Cómo puedo restablecer mi contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html)

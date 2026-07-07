@@ -6,7 +6,7 @@ feature: Admin Workspace, Communications
 role: Developer
 source-git-commit: 9eaea028886e74fc06c9516801919cd7f650f98c
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,7 @@ Si no ha configurado correctamente el correo electrónico del remitente o si el 
    select * from core_config_data where path like '%trans_email%';
    ```
 
-   * Si no devuelve ningún resultado, significa que la dirección del remitente no se ha configurado.
-Dado que no tiene acceso al administrador, deberá insertar la configuración en la base de datos. Conecte la dirección de correo electrónico adecuada y ejecute la instrucción MySQL:
+   * Si no devuelve ningún resultado, significa que la dirección del remitente no se ha configurado.Dado que no tiene acceso al administrador, deberá insertar la configuración en la base de datos. Conecte la dirección de correo electrónico adecuada y ejecute la instrucción MySQL:
 
    ```
    insert into core_config_data (scope,scope_id,path,value) values ('default',0,'trans_email/ident_general/email', your-email@here.com)
@@ -60,8 +59,7 @@ Si el correo electrónico apareció en la carpeta de correo no deseado, es posib
 
 Si utiliza el servicio SendGrid administrado por Adobe:
 
-[Envíe un ticket de asistencia](https://experienceleague.adobe.com/home?lang=es&support-tab=home#support) solicitando que su dominio de envío se autentique (a veces denominado *etiquetado en blanco*) con SendGrid.
-Este proceso implica la adición de registros DNS (DKIM y SPF) para autorizar a SendGrid a enviar correos electrónicos en nombre de su dominio, lo que aumenta la probabilidad de que los correos electrónicos se envíen a la bandeja de entrada en lugar de a la carpeta de correo no deseado.
+[Envíe un ticket de asistencia](https://experienceleague.adobe.com/home?support-tab=home#support) solicitando que su dominio de envío se autentique (a veces denominado *etiquetado en blanco*) con SendGrid.Este proceso implica la adición de registros DNS (DKIM y SPF) para autorizar a SendGrid a enviar correos electrónicos en nombre de su dominio, lo que aumenta la probabilidad de que los correos electrónicos se envíen a la bandeja de entrada en lugar de a la carpeta de correo no deseado.
 
 Si utiliza su propia cuenta de SendGrid:
 
@@ -74,4 +72,4 @@ Usted es responsable de administrar la configuración de autenticación de domin
 
 ## Lectura relacionada
 
-* [SendGrid](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/project/sendgrid) en nuestra documentación para desarrolladores.
+* [SendGrid](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/sendgrid) en nuestra documentación para desarrolladores.

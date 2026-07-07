@@ -6,7 +6,7 @@ feature: Cloud, Observability, Paas
 role: Developer
 source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
-source-wordcount: '448'
+source-wordcount: '544'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Este artículo proporciona recursos para la resolución de problemas de New Reli
 <p>En estos casos, un usuario administrador debe agregarle al proyecto.</p>
 </td>
 <td>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html?lang=es">Acceder a los servicios de New Relic</a> en nuestra base de conocimiento de asistencia.</p>
+<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html">Acceder a los servicios de New Relic</a> en nuestra base de conocimiento de asistencia.</p>
 </td>
 </tr>
 <tr>
@@ -66,7 +66,7 @@ Este artículo proporciona recursos para la resolución de problemas de New Reli
 </tr>
 <tr>
 <td>
-<p><u>Discrepancia en la marca de tiempo de transacciones.</u>: es posible que tenga problemas para encontrar transacciones largas (más de 5 minutos) mediante la interfaz de usuario de New Relic. También puede encontrar transacciones mostradas fuera del lapso de tiempo esperado.</p>
+<p><u>Discrepancia en la marca de tiempo de las transacciones.</u> Es posible que tenga problemas para encontrar transacciones largas (más de 5 minutos) mediante la interfaz de usuario de New Relic. También puede encontrar transacciones mostradas fuera del lapso de tiempo esperado.</p>
 </td>
 <td>
 <p>La interfaz de usuario de New Relic muestra la hora de finalización de la transacción, no la hora en que comenzó.</p>

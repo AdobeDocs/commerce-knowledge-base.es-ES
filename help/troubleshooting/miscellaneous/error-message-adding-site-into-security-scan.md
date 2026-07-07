@@ -6,7 +6,7 @@ feature: Cache, Compliance, Console, Security
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '367'
 ht-degree: 0%
 
 ---
@@ -27,18 +27,18 @@ El usuario no puede agregar sitios al [Examen de seguridad de Commerce](https://
 ## Solución
 
 1. Asegúrese de que las siguientes direcciones IP no estén bloqueadas en los puertos 80 y 443:
-   * 52 87 98 44
-   * 34 196 167 176
+   * 52.87.98.44
+   * 34.196.167.176
    * 3.218.25.102
 
 1. El código de confirmación distingue entre tiempo y minúsculas. Si han pasado más de 30 minutos desde que se hizo clic en el vínculo **Agregar sitio**, es probable que el código haya caducado.
-1. No olvide limpiar la caché y asegurarse de que el código de validación aparece en el cuerpo de origen de la página principal. El código de confirmación debe insertarse según las especificaciones de marcado del HTML: el comentario del HTML se puede insertar en el cuerpo de la página (sugerimos colocarlo en la sección de pie de página); la etiqueta META debe estar solo en la sección del encabezado.
+1. No olvide limpiar la caché y asegurarse de que el código de validación aparece en el cuerpo de origen de la página principal. El código de confirmación debe insertarse según las especificaciones de marcado de HTML: El comentario de HTML se puede insertar en el cuerpo de la página (sugerimos colocarlo en la sección de pie de página); la etiqueta de META debe estar solo en la sección del encabezado.
 1. Antes de hacer clic en **Verificar código de confirmación**, abra la consola para desarrolladores del explorador, haga clic en la ficha **Red** y compruebe la respuesta en magento.com. Debe ser HTTP 200 (OK) y el cuerpo de la respuesta debe contener un objeto JSON.
 1. Si el código de respuesta es HTTP 200 y el cuerpo de respuesta es un objeto JSON y el valor de la propiedad `verified` es `false`, significa que el código no se encuentra en la página. El valor de la propiedad `details` debe contener la explicación. Por ejemplo, si el almacén utiliza un certificado SSL autofirmado, probablemente se producirá un error de conexión.
 
 Si sigue sin poder agregar sitios, complete los siguientes pasos:
 
-1. Coloque otro comentario del HTML en la página:
+1. Coloque otro comentario de HTML en la página:
 
    ```HTML
    <!-- MAGEID:Your magento.com ID, EMAIL:your email address -->
@@ -53,4 +53,4 @@ Si sigue sin poder agregar sitios, complete los siguientes pasos:
 
 ## Lectura relacionada
 
-* [Examen de seguridad](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-scan) en nuestra guía del usuario.
+* [Examen de seguridad](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) en nuestra guía del usuario.
