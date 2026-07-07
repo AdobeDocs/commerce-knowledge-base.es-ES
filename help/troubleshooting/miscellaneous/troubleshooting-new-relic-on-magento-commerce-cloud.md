@@ -34,7 +34,7 @@ Este artículo proporciona recursos para la resolución de problemas de New Reli
 <p>En estos casos, un usuario administrador debe agregarle al proyecto.</p>
 </td>
 <td>
-<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html">Acceder a los servicios de New Relic</a> en nuestra base de conocimiento de asistencia.</p>
+<p><a href="https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/faq/access-new-relic-services.html?lang=es">Acceder a los servicios de New Relic</a> en nuestra base de conocimiento de asistencia.</p>
 </td>
 </tr>
 <tr>

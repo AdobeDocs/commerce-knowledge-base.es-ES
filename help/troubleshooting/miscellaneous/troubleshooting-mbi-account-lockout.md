@@ -70,6 +70,6 @@ Envíe un ticket a nuestro equipo de soporte técnico con **capturas de pantalla
 
 ## Temas relacionados en nuestra base de conocimiento de soporte:
 
-* [Adición de un nuevo usuario y configuración de permisos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html)
-* [¿Cómo actualizo mi dirección de correo electrónico o contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html)
-* [¿Cómo puedo restablecer mi contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html)
+* [Adición de un nuevo usuario y configuración de permisos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=es)
+* [¿Cómo actualizo mi dirección de correo electrónico o contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html?lang=es)
+* [¿Cómo puedo restablecer mi contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html?lang=es)

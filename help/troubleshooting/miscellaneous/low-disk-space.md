@@ -21,7 +21,7 @@ Este artículo sugiere soluciones para la situación en la que se queda sin espa
 
 ## Problema
 
-Se está quedando sin espacio en disco en el disco con directorios grabables. Un síntoma puede ser [implementación atascada](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26878).
+Se está quedando sin espacio en disco en el disco con directorios grabables. Un síntoma puede ser [implementación atascada](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26878).
 
 Para comprobar el uso del disco, ejecute el siguiente comando:
 
@@ -45,7 +45,7 @@ Opciones de solución:
 * Limpie el directorio `var`.
 * Configure un trabajo cron para rastrear el tamaño del directorio `var` y limpiarlo.
 * Asigne más espacio en disco, si no lo ha utilizado. (Consulte la sección siguiente para obtener información sobre cómo comprobar cuál es su límite de espacio).
-   * Para el plan inicial, todos los entornos y los entornos de integración del plan Pro, puede asignar el espacio en disco si no lo utiliza, como se describe en [Administrar espacio en disco: Asignación de espacio en disco](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space).
+   * Para el plan inicial, todos los entornos y los entornos de integración del plan Pro, puede asignar el espacio en disco si no lo utiliza, como se describe en [Administrar espacio en disco: Asignación de espacio en disco](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/manage-disk-space#application-disk-space).
    * Para los entornos de ensayo y producción de planificación profesional, póngase en contacto con el servicio de asistencia para asignar más espacio en disco si tiene algún espacio sin utilizar.
 * Si ha alcanzado el límite de espacio y sigue experimentando problemas de poco espacio, considere la posibilidad de comprar más espacio en disco, póngase en contacto con el equipo de cuenta de Adobe para obtener más información.
 
