@@ -6,7 +6,7 @@ feature: Storage, Observability
 role: Developer
 source-git-commit: 842c329b5d8bacf72ac689412fde5a5d76d16e85
 workflow-type: tm+mt
-source-wordcount: '353'
+source-wordcount: '387'
 ht-degree: 0%
 
 ---

@@ -1,12 +1,12 @@
 ---
 title: Diagnóstico de discrepancias de ingresos de Google eCommerce
-description: '''Este artículo proporciona soluciones para discrepancias entre Google y Magento Business Intelligence (MBI). El seguimiento del comercio electrónico de Google potencia tanto su cuenta de Google Analytics como sus paneles de MBI, pero hace que muchos clientes nos pregunten: ¿Deberían ambas herramientas informar de la misma cantidad de **pedidos** e **ingresos"**?'
+description: 'Este artículo proporciona soluciones para las discrepancias entre Google y Magento Business Intelligence (MBI). El seguimiento del comercio electrónico de Google potencia tanto su cuenta de Google Analytics como sus paneles de MBI, pero hace que muchos clientes nos pregunten: ¿Deberían ambas herramientas informar de la misma cantidad de **pedidos** e **ingresos**?'
 exl-id: b2e43e70-d234-4338-ae81-fa401416be5a
 feature: Commerce Intelligence
 role: Developer
 source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
-source-wordcount: '617'
+source-wordcount: '619'
 ht-degree: 0%
 
 ---
@@ -21,24 +21,24 @@ Sabemos que una discrepancia entre Google y MBI puede causar incertidumbre para 
 
 ## ¿Por qué GA informa de **menos** ingresos que mi base de datos?
 
-Cuando los Google Analytics informan de forma insuficiente de los pedidos y los ingresos, esto indica que no está capturando todos los pedidos que se realizan en el sitio. Como sabe que los datos de la base de datos son el número definitivo, puede realizar algunos pasos para intentar determinar la causa raíz y posiblemente ayudar a Google a capturar más información.
+Cuando Google Analytics informa de manera insuficiente de los pedidos e ingresos, esto indica que no está capturando todos los pedidos que se realizan en el sitio. Como sabe que los datos de la base de datos son el número definitivo, puede realizar algunos pasos para intentar determinar la causa raíz y posiblemente ayudar a Google a capturar más información.
 
 * No siempre ha tenido habilitado el seguimiento del comercio electrónico de Google. Intente ver un período más reciente y más pequeño.
 * El seguimiento de comercio electrónico de Google no está configurado para capturar compras de ciertos navegadores, sistemas operativos o dispositivos.
 * El evento de clics asociado con el seguimiento de su Google eCommerce no realiza un seguimiento correcto de los impuestos, el envío u otros cargos por encima del total del pedido.
-* La marca de tiempo de la base de datos está en una zona horaria diferente a la de los Google Analytics.
+* La marca de tiempo de la base de datos está en una zona horaria diferente a la de Google Analytics.
 * Las personas pueden visitar el sitio a través de ventanas de incógnito o con las cookies desactivadas.
 
 ## ¿Por qué GA informa de **más** ingresos que mi base de datos?
 
-Hemos descubierto que es más común que los Google Analytics informen en exceso de pedidos e ingresos en comparación con una base de datos de comercio electrónico. Esto no siempre es algo malo. Su base de datos es el registro definitivo de transacciones realizadas en su sitio web y hay varias razones por las que Google podría estar informando alto incluso cuando lo ha configurado perfectamente:
+Hemos descubierto que es más común que Google Analytics informe en exceso de pedidos e ingresos en comparación con una base de datos de comercio electrónico. Esto no siempre es algo malo. Su base de datos es el registro definitivo de transacciones realizadas en su sitio web y hay varias razones por las que Google podría estar informando alto incluso cuando lo ha configurado perfectamente:
 
 * El seguimiento del comercio electrónico captura los clics en botones duplicados y solo se registra como un único pedido en la base de datos.
 * Tiene un número elevado de pedidos cancelados, reembolsados o fraudulentos, lo que es un cambio de estado que se produce después de que eCommerce rastree los datos.
 * Las métricas **Ingresos** y **Pedidos** excluyen deliberadamente pedidos internos o de prueba, que Google no puede diferenciar.
 * Los pedidos no se pueden realizar en la base de datos en determinadas circunstancias.
 * El seguimiento de comercio electrónico de Google no tiene en cuenta los cupones y descuentos del pedido.
-* La marca de tiempo de la base de datos está en una zona horaria diferente a la de los Google Analytics.
+* La marca de tiempo de la base de datos está en una zona horaria diferente a la de Google Analytics.
 
 Recuerde, aunque Google genere un número mayor que el de la base de datos, es probable que aún falten algunos pedidos por los motivos detallados en la sección anterior.
 
