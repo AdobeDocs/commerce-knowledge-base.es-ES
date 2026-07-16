@@ -1,7 +1,7 @@
 ---
 source-git-commit: c992521cae8c847adc0cc23d2323300e0ba69cdc
 workflow-type: tm+mt
-source-wordcount: '1023'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ Adobe Commerce versión 2.4.0
 
 </td>
 
-<td colspan="1">Adobe Commerce 2.4.0 (sin versión o versión)</td>
+<td colspan="1">Adobe Commerce 2.4.0 (no v. o versión)</td>
 
 <td colspan="1"></td>
 
@@ -276,4 +276,4 @@ En general, siga las recomendaciones del Manual de estilo de Chicago para la pun
 
 ## Marca
 
-* El Magento Commerce ahora es Adobe Commerce. Consulte la wiki [Cambiar la marca de los términos](https://github.com/magento/knowledge-base/wiki) para obtener más información sobre cómo usar un idioma de marca actualizado.
+* Magento Commerce ahora es Adobe Commerce. Consulte la wiki [Cambiar la marca de los términos](https://github.com/magento/knowledge-base/wiki) para obtener más información sobre cómo usar un idioma de marca actualizado.
