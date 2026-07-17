@@ -5,14 +5,14 @@ feature: GraphQL
 exl-id: 3a0f2c22-f976-4596-b6a9-4634be1ea4c3
 source-git-commit: 2bec86818336a9ef4d8316e257a0ca4256cdd93c
 workflow-type: tm+mt
-source-wordcount: '130'
+source-wordcount: '158'
 ht-degree: 0%
 
 ---
 
 # Cómo evitar WAF para solicitudes de GraphQL
 
-Este artículo explica cómo omitir WAF para solicitudes de GraphQL cuando el WAF [!DNL Fastly] está bloqueando sus solicitudes de GraphQL.
+En este artículo se explica cómo omitir WAF para las solicitudes de GraphQL cuando el WAF [!DNL Fastly] está bloqueando sus solicitudes de GraphQL.
 
 ## Productos y versiones afectados
 
@@ -20,15 +20,15 @@ Adobe Commerce en la infraestructura en la nube (todas las versiones)
 
 ## Causa
 
-Debido a la naturaleza inherente de las solicitudes de GraphQL, puede haber muchos caracteres repetidos que pueden almacenar en déclencheur el bloqueo de falsos positivos de las solicitudes por parte del WAF [!DNL Fastly].
+Debido a la naturaleza inherente de las solicitudes de GraphQL, puede haber muchos caracteres repetidos que pueden almacenar en déclencheur el bloqueo de falsos positivos de las solicitudes por parte de [!DNL Fastly] WAF.
 
 ## Solución
 
-1. Omitir el WAF para estas solicitudes agregando un fragmento personalizado a través del módulo de Magento [!DNL Fastly]:
+1. Omita el WAF para estas solicitudes agregando un fragmento personalizado a través del módulo de Magento [!DNL Fastly]:
 
    tipo: recv
-prioridad: 15
-contenido:
+   prioridad: 15
+   contenido:
 
    ```
    if( req.url.path ~ "^/graphql" ) {
