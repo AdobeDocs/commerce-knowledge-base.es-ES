@@ -6,14 +6,14 @@ role: Developer
 exl-id: fb92b75d-c88b-4810-a309-d6ab38485e86
 source-git-commit: 6d0c4ea9576440d66be3b8053a6e362b8ac0ebcb
 workflow-type: tm+mt
-source-wordcount: '843'
+source-wordcount: '804'
 ht-degree: 0%
 
 ---
 
 # Solucionar problemas de la página de cierre de tienda en modo restringido [!UICONTROL CSP]
 
-Este artículo proporciona explicaciones y correcciones para los problemas de Adobe Commerce 2.4.7 mientras ve la página de cierre de compra en **[!UICONTROL CSP restricted mode]**, con el mensaje de error &quot;*Se negó a ejecutar script en línea porque infringe la siguiente directiva de directiva de seguridad de contenido: &quot;script-src ...*&quot; en el registro de la consola del explorador.
+Este artículo proporciona explicaciones y correcciones para los problemas de Adobe Commerce 2.4.7 mientras se visualiza la página de cierre de compra en **[!UICONTROL CSP restricted mode]**, con el script en línea &quot;*Se rechazó ejecutar porque infringe la siguiente directiva de directiva de seguridad de contenido: &quot;script-src ...*&quot; mensaje de error en el registro de la consola del explorador.
 
 ## Productos y versiones afectados
 
@@ -21,12 +21,12 @@ Adobe Commerce en la infraestructura en la nube, Adobe Commerce local y Magento 
 
 * 2.4.7
 * 2.4.6-pX
-* 2,4,5-pX
+* 2.4.5-pX
 * 2.4.4-pX
 
 ## Problema: la página de cierre de compra de la tienda está dañada o no se puede cargar
 
-La página **storefront checkout** está dañada o no se puede cargar, con el script en línea &quot;*Rechazado porque viola la siguiente directiva de directiva de seguridad de contenido: &quot;script-src ...*&quot; mensaje de error en el registro de la consola del explorador.
+La página **storefront checkout** está dañada o no se puede cargar, con el script en línea &quot;*Rechazado porque infringe la siguiente directiva de directiva de seguridad de contenido: &quot;script-src ...*&quot; mensaje de error en el registro de la consola del explorador.
 
 <u>Pasos a seguir</u>:
 
@@ -43,7 +43,7 @@ La página de cierre de compra está en blanco o faltan componentes. El siguient
 
 ### Causa
 
-En la versión 2.4.7 y posteriores de Adobe Commerce y Magento Open Source, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
+En Adobe Commerce y Magento Open Source versión 2.4.7 y posterior, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
 El encabezado **[!UICONTROL CSP]** correspondiente no contiene la palabra clave `unsafe-inline` dentro de la directiva `script-src` para páginas de pago. Además, solo se permiten [!DNL whitelisted] scripts en línea.
 
 ### Solución
@@ -113,7 +113,7 @@ Falta la forma de pago o no funciona. El siguiente error [!DNL JS] se muestra en
 
 ### Causa
 
-En la versión 2.4.7 y posteriores de Adobe Commerce y Magento Open Source, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
+En Adobe Commerce y Magento Open Source versión 2.4.7 y posterior, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
 El encabezado **[!UICONTROL CSP]** correspondiente no contiene la palabra clave `unsafe-inline` dentro de la directiva `script-src` para páginas de pago. Además, solo se permiten [!DNL whitelisted] scripts en línea.
 
 ### Solución
@@ -184,7 +184,7 @@ No eres capaz de hacer un pedido. El siguiente error [!DNL JS] se muestra en el 
 
 ### Causa
 
-En la versión 2.4.7 y posteriores de Adobe Commerce y Magento Open Source, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
+En Adobe Commerce y Magento Open Source versión 2.4.7 y posterior, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
 El encabezado **[!UICONTROL CSP]** correspondiente no contiene la palabra clave `unsafe-inline` dentro de la directiva `script-src` para páginas de pago. Además, solo se permiten [!DNL whitelisted] scripts en línea.
 
 ### Solución

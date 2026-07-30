@@ -1,17 +1,17 @@
 ---
-title: 'Adobe Commerce 2.4.1: mensaje incorrecto en el cierre de compra de PayPal-Braintree'
+title: 'Adobe Commerce 2.4.1: mensaje incorrecto en el cierre de compra de PayPal-Braintree para invitados'
 description: Este artículo describe un problema conocido de Adobe Commerce 2.4.1 en el que, si el cierre de compra de un invitado está deshabilitado, un cliente invitado que intenta realizar un pedido con PayPal a través de Braintree recibe un mensaje de error no informativo.
 exl-id: 758f5c57-997e-4aca-b299-9934c94fa121
 feature: Checkout, Orders, Payments
 role: Developer
 source-git-commit: 77f41d6034f985794e5c5b89cc007a69858683b9
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
 
-# Adobe Commerce 2.4.1: mensaje incorrecto en el cierre de compra de PayPal-Braintree
+# Adobe Commerce 2.4.1: mensaje incorrecto en el cierre de compra de PayPal-Braintree para invitados
 
 Este artículo describe un problema conocido de Adobe Commerce 2.4.1 en el que, si el cierre de compra de un invitado está deshabilitado, un cliente invitado que intenta realizar un pedido con PayPal a través de Braintree recibe un mensaje de error no informativo.
 
@@ -22,12 +22,12 @@ Este artículo describe un problema conocido de Adobe Commerce 2.4.1 en el que, 
 
 ## Problema
 
-Se muestra un error inespecífico cuando el pago de los invitados está desactivado desde el backend y la opción de pago mediante Braintree de PayPal está seleccionada en el minicarrito o en el carro de compras.
+Se muestra un error inespecífico cuando el pago de los invitados está desactivado desde el backend y la opción de pago PayPal a través de Braintree está seleccionada en el minicarrito o el carro de compras.
 
 <u>Requisitos previos</u>:
 
 1. En el Administrador de Commerce, en **Tiendas** > **Configuración** > **Ventas** > **Cierre de compra**, establezca **Permitir cierre de compra de invitados** = *No*.
-1. Habilite PayPal a través del Braintree como se describe en [Braintree](https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/payments/braintree?) en nuestra guía de usuario.
+1. Habilite PayPal a través de Braintree como se describe en [Braintree] (¿https://experienceleague.adobe.com/es/docs/commerce-admin/stores-sales/payments/braintree?) en nuestra guía del usuario.
 
 <u>Pasos a seguir</u>:
 
@@ -55,7 +55,7 @@ Se redirige al cliente a la página Carro de compras y se muestra el siguiente m
 
 ## Solución
 
-La solución a este problema es que el cliente puede iniciar sesión en una tienda (los usuarios que iniciaron sesión no usan el cierre de compra de invitados) en la que el cierre de compra de invitados esté deshabilitado. Este problema se solucionó en la versión 2.4.2 de Adobe Commerce.
+La solución a este problema es que el cliente puede iniciar sesión en una tienda (los usuarios que iniciaron sesión no usan el pago de invitados). donde la comprobación de invitado está deshabilitada. Este problema se solucionó en la versión 2.4.2 de Adobe Commerce.
 
 ## Lectura relacionada
 

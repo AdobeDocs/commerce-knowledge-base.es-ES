@@ -1,12 +1,12 @@
 ---
-title: "Adobe Commerce 2.4.2 B2B: el descuento sigue siendo el cambio del método de pago"
+title: 'Adobe Commerce 2.4.2 B2B: el descuento sigue siendo el cambio del método de pago'
 description: En este artículo se describe una incidencia conocida de Adobe Commerce 2.4.2 B2B en la que persiste un descuento por métodos de pago después de un cambio de método de pago al cerrar la compra. No hay ninguna resolución disponible en este momento.
 exl-id: cd863852-403b-404f-8717-c78c238f5f33
 feature: B2B, Orders, Payments, Personalization
 role: Developer
 source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
 workflow-type: tm+mt
-source-wordcount: '215'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,9 @@ En este artículo se describe una incidencia conocida de Adobe Commerce 2.4.2 B2
 
 <u>Resultados reales</u> :
 
-El descuento por la forma de pago permanece aplicado al total del pedido.  No se muestra ningún mensaje de error. El propietario de la tienda podrá ver cómo se ha producido comprobando el historial de pedidos.
+El descuento por la forma de pago permanece aplicado al total del pedido.  No se muestra ningún mensaje de error.El propietario de la tienda podrá ver que esto ha sucedido comprobando el historial de pedidos.
 
-<u>Resultados esperados</u>: el descuento de método de pago se ha eliminado del total del pedido, tal como se esperaba.
+<u>Resultados esperados</u> El descuento de método de pago :The se ha eliminado del total del pedido, tal como se esperaba.
 
 ## Solución
 
