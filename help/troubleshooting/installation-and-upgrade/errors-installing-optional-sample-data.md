@@ -6,7 +6,7 @@ feature: Console, Install, Upgrade
 role: Developer
 source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
-source-wordcount: '363'
+source-wordcount: '417'
 ht-degree: 0%
 
 ---
@@ -34,11 +34,11 @@ Estas excepciones son el resultado de la configuración de permisos del sistema 
 
 ### Solución
 
-[Vuelva a establecer la propiedad y los permisos del sistema de archivos](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html?lang=es) como usuario con privilegios de `root`.
+[Vuelva a establecer la propiedad y los permisos del sistema de archivos](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/deployment/file-system-permissions.html) como usuario con privilegios de `root`.
 
 ## Síntoma (modo de producción)
 
-Si actualmente está configurado para [modo de producción](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=es), la instalación de datos de ejemplo falla si usa el comando [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html?lang=es):
+Si actualmente está configurado para [modo de producción](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html), la instalación de datos de ejemplo falla si usa el comando [magento sampledata:deploy](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/sample-data/composer-packages.html):
 
 ```php
 PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Console\Input\ArrayInput::__construct() must be of the type array, object given, called in /<path>/vendor/magento/framework/ObjectManager/Factory/AbstractFactory.php on line 97 and defined in /<path>/vendor/symfony/console/Symfony/Component/Console/Input/ArrayInput.php:37
@@ -48,7 +48,7 @@ PHP Fatal error: Uncaught TypeError: Argument 1 passed to Symfony\Component\Cons
 
 No instale datos de ejemplo en el modo de producción. Cambie al modo de desarrollador y borre algunos `var` directorios e inténtelo de nuevo.
 
-Escriba los siguientes comandos en el orden mostrado como [propietario del sistema de archivos de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html?lang=es):
+Escriba los siguientes comandos en el orden mostrado como [propietario del sistema de archivos de Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/file-system/overview.html):
 
 ```php
 cd <magento_root>
@@ -119,4 +119,4 @@ El valor de `Loaded Configuration File` es el `php.ini` que debe modificar.
 
 >[!NOTE]
 >
->Somos conscientes de que este artículo aún puede contener términos de software estándar en la industria que algunos pueden encontrar racistas, sexistas u opresivos y que pueden hacer que el lector se sienta herido, traumatizado o no deseado. El Adobe de está trabajando para eliminar estos términos de nuestro código, documentación y experiencias de usuario.
+>Somos conscientes de que este artículo aún puede contener términos de software estándar en la industria que algunos pueden encontrar racistas, sexistas u opresivos y que pueden hacer que el lector se sienta herido, traumatizado o no deseado. Adobe está trabajando para eliminar estos términos de nuestro código, documentación y experiencias de usuario.

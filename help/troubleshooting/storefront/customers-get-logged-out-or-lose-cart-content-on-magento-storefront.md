@@ -6,7 +6,7 @@ feature: Orders, Page Content, Shopping Cart, Storefront
 role: Admin
 source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
-source-wordcount: '259'
+source-wordcount: '285'
 ht-degree: 0%
 
 ---
@@ -46,4 +46,4 @@ Para resolver el problema, póngase en contacto con el proveedor de servicios de
 
 ## Lectura relacionada
 
-[Actualización de SameSite de Chrome](https://www.chromestatus.com/feature/5088147346030592)
+[Actualización de Chrome SameSite](https://www.chromestatus.com/feature/5088147346030592)
