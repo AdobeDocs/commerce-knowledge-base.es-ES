@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 804fdcd482abed2b61fb31e805ee9a24491ff58f
+source-git-commit: 4787dec7aefd10f0b8db97ee5e76b09abe78af6c
 workflow-type: tm+mt
-source-wordcount: '1757'
+source-wordcount: '1753'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,6 @@ ht-degree: 1%
     * [Error 60 de cURL: certificado SSL caducado](/help/troubleshooting/miscellaneous/curl-error-60-ssl-certificate-expired.md)
     * [Solucionar problemas del módulo Recomendaciones de productos en Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
     * [Módulo desconocido Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
-    * [Problemas de comprobación de preparación de Cron](/help/troubleshooting/miscellaneous/cron-readiness-check-issues.md)
     * [Consultas SQL: EXPLICAR errores de coste](/help/troubleshooting/miscellaneous/sql-queries-explain-cost-errors.md)
     * [Guía de solución de problemas de Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Problemas de comprobación de preparación de permisos de archivos](/help/troubleshooting/miscellaneous/file-permissions-readiness-check-issues.md)
