@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: a19c0de6f442d5dba44839be565b1e0d5629e753
+source-git-commit: 5bb5ce75f5bd20f21762c0c43ab0f54286baf076
 workflow-type: tm+mt
-source-wordcount: '1737'
+source-wordcount: '1734'
 ht-degree: 1%
 
 ---
@@ -82,7 +82,6 @@ ht-degree: 1%
     * [Almacenamiento de archivos bajo, cargas de página específicas lentas](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
     * [Rendimiento lento debido a la reindexación completa](/help/troubleshooting/miscellaneous/slow-performance-due-to-full-reindexing.md)
     * [Ayuda general sobre solución de problemas del módulo personalizado](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
-    * [Poco espacio en disco](/help/troubleshooting/miscellaneous/low-disk-space.md)
     * [Calentamiento de la caché y sitio no disponible en Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
     * [Solución de errores UTF-8 para cargas de archivos CSV](/help/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.md)
     * [Solución de problemas de rendimiento con New Relic en Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md)
