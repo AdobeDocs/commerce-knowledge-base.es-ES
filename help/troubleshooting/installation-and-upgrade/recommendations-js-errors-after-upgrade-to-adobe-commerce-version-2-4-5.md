@@ -6,7 +6,7 @@ role: Developer
 exl-id: 51d899eb-48f7-48c5-8bda-bd72a4d28945
 source-git-commit: a28257f55abf21cddec9b415e7e8858df33647be
 workflow-type: tm+mt
-source-wordcount: '200'
+source-wordcount: '196'
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ El problema se debe a que la página web de la tienda sigue haciendo referencia 
 
 1. Actualice a Adobe Commerce 2.4.5.
 1. Acceda a la página web de la tienda.
-1. Haga clic con el botón derecho del ratón y seleccione **Inspect** para abrir el inspector web en el explorador web.
+1. Haga clic con el botón derecho del ratón y seleccione **Inspeccionar** para abrir el inspector web en el explorador web.
 1. Haga clic en la ficha **[!UICONTROL Console]**.
 1. Revisar los errores de [!DNL JS].
 
