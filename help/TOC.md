@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: de7df03b7d60e417b0b419117dd1e658f02d1de5
+source-git-commit: fbc97f1f9a9df7771ea0473f50fe927923dff630
 workflow-type: tm+mt
-source-wordcount: '1716'
+source-wordcount: '1709'
 ht-degree: 1%
 
 ---
@@ -73,7 +73,6 @@ ht-degree: 1%
     * [Revisiones revisadas para la pérdida de acceso a Google Maps en todas las versiones de Adobe Commerce](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * Varios {#miscellaneous}
     * [Correo electrónico que indica que el almacenamiento de exportación está casi lleno](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
-    * [Solucionar problemas del módulo Recomendaciones de productos en Adobe Commerce](/help/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.md)
     * [Módulo desconocido Magento_BundleSampleData](/help/troubleshooting/miscellaneous/unknown-module-magento-bundlesampledata.md)
     * [Guía de solución de problemas de Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Diagnóstico de discrepancias de ingresos de Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
