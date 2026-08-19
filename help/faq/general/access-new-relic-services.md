@@ -1,10 +1,10 @@
 ---
 title: Acceso a servicios de New Relic
-description: "Este artículo explica cómo los clientes con una licencia o autorización de suscripción suficientes pueden acceder a determinados servicios de New Relic:"
+description: 'Este artículo explica cómo los clientes con una licencia o autorización de suscripción suficientes pueden acceder a determinados servicios de New Relic:'
 exl-id: c01af85e-0590-49e8-a1a0-b901f23c4431
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: 09777d70272bdb78a0bcf7566cc398a53c474f4c
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '408'
 ht-degree: 0%
 
 ---
@@ -32,4 +32,4 @@ Los clientes de la arquitectura inicial no reciben el servicio de infraestructur
 
 ## Lectura relacionada
 
-Para obtener más información sobre los servicios de New Relic, consulta [Investigar el rendimiento](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) en nuestra documentación para desarrolladores. También puede revisar [Solucionar problemas de rendimiento con New Relic en Adobe Commerce en la infraestructura en la nube](/help/troubleshooting/miscellaneous/troubleshoot-performance-using-new-relic-on-magento-commerce.md) en nuestra base de conocimiento de asistencia.
+Para obtener más información sobre los servicios de New Relic, consulta [Investigar el rendimiento](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/monitor/new-relic/new-relic-service) en nuestra documentación para desarrolladores. También puede revisar [Solucionar problemas de rendimiento con New Relic en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-40830) en nuestra base de conocimiento de asistencia.

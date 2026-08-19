@@ -1,7 +1,7 @@
 ---
 source-git-commit: 88a2b8fe11d718f33c26bbc6f407c55d9f1fd189
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '492'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Para cada artículo, agregue los siguientes tipos de etiquetas:
 * Etiqueta(s) para producto(s). (obligatorio)
 * Etiqueta(s) para las versiones afectadas. (obligatorio, excepto artículos relacionados con el soporte general)
 * Etiqueta para el tipo de contenido. (obligatorio)
-* Etiquetas para los principales componentes tecnológicos.(si procede)
+* Etiquetas para los principales componentes tecnológicos (si corresponde).
 * Etiquetas para el proceso/funcionalidad que se está solucionando/describiendo. (si procede)
 * Etiquetas del problema que se está solucionando/describiendo. (si procede)
 
@@ -52,7 +52,7 @@ Consulte las secciones siguientes para obtener recomendaciones detalladas sobre 
   <tr>
     <td>Magento Business Intelligence (MBI)</td>
     <td>
-        "Magento Business Intelligence, MBI"
+        "Magento Business Intelligence,MBI"
     </td>
   </tr>
    <tr>
@@ -123,9 +123,9 @@ NO &quot;2.3.0-2.3.5&quot;
 
 * Utilice mayúsculas según la denominación oficial del componente.
 * No utilice sinónimos, una etiqueta para un componente.
-* Es preferible utilizar una etiqueta de palabra, pero si el nombre del componente contiene varias palabras, utilice varias palabras. No agregue descripciones de problemas. Es decir, ponga &quot;Elasticsearch&quot; en lugar de &quot;problemas de Elasticsearch&quot;.
+* Es preferible utilizar una etiqueta de palabra, pero si el nombre del componente contiene varias palabras, utilice varias palabras. No agregue descripciones de problemas. Es decir, ponga &quot;Elasticsearch&quot; en lugar de &quot;Elasticsearch issues&quot;.
 * Si el contenido solo es relevante para una versión concreta del componente, añada una etiqueta que contenga nombre + versión.\
-  Ejemplo: &quot;Elasticsearch 5&quot;. Si es relevante para varias versiones en particular, añada varias etiquetas de este tipo. Ejemplo: &quot;Elasticsearch 5&quot;, &quot;Elasticsearch 6&quot;. Si es relevante, utilice &quot;x&quot; para varias versiones. Ejemplo: &quot;Elasticsearch 2.x&quot;
+  Ejemplo: Elasticsearch 5. Si es relevante para varias versiones en particular, añada varias etiquetas de este tipo. Ejemplo: &quot;Elasticsearch 5&quot;, &quot;Elasticsearch 6&quot;. Si es relevante, utilice &quot;x&quot; para varias versiones. Ejemplo: &quot;Elasticsearch 2.x&quot;
 
 Ejemplos:
 
