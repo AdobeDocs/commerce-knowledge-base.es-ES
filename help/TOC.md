@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 82e5a4168fb4e79577bbccb1b2384943bf045708
+source-git-commit: f0181656eb18a7d9e4b7a78639c9fadb130d74e6
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1673'
 ht-degree: 1%
 
 ---
@@ -80,7 +80,6 @@ ht-degree: 1%
     * [Ayuda general sobre solución de problemas del módulo personalizado](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Calentamiento de la caché y sitio no disponible en Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
     * [Solución de errores UTF-8 para cargas de archivos CSV](/help/troubleshooting/miscellaneous/resolving-utf-8-errors-for-csv-file-uploads.md)
-    * [Comprobación de ataques DDoS desde CLI](/help/troubleshooting/miscellaneous/checking-for-ddos-attack-from-cli.md)
     * [Redirección de inicio de sesión al intentar iniciar sesión en el administrador de Commerce](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
     * [Uso de las exportaciones de datos para detectar discrepancias](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
     * [Problemas de comprobación de disponibilidad de dependencias del componente](/help/troubleshooting/miscellaneous/component-dependency-readiness-check-issues.md)
