@@ -4,9 +4,9 @@ description: Este artículo ofrece las posibles soluciones para el problema de i
 exl-id: ff3114fd-8690-4983-8221-cf807f083b15
 feature: Admin Workspace, Cache
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: ec2111316458420c51a6b6f3b3881bd3f9d10c06
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -52,7 +52,7 @@ Intente utilizar un explorador diferente y aumente la duración de la sesión de
 Para aumentar la duración de la sesión de administración, siga estos pasos:
 
 1. Cree una copia de seguridad de base de datos.
-1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
+1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
 
    ```sql
    UPDATE core_config_data SET value = 7200 WHERE path = 'admin/security/session_lifetime';
@@ -69,7 +69,7 @@ Para aumentar la duración de la sesión de administración, siga estos pasos:
 Para comprobar los valores de configuración de las cookies y borrarlos, siga estos pasos:
 
 1. Cree una copia de seguridad de base de datos.
-1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
+1. Use una herramienta de base de datos como [phpMyAdmin](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/optional-software#phpmyadmin) o acceda a la base de datos manualmente desde la línea de comandos para ejecutar la siguiente consulta SQL:
 
    ```sql
    SELECT * FROM core_config_data WHERE (path = "web/cookie/cookie_domain" OR path = "web/cookie/cookie_path");
@@ -90,4 +90,4 @@ Para comprobar los valores de configuración de las cookies y borrarlos, siga es
 ## Artículos relacionados
 
 * [Vuelva al formulario de inicio de sesión de administrador con el error &quot;Su cuenta está temporalmente deshabilitada&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) en nuestra base de conocimiento de soporte.
-* [Vuelva al formulario de inicio de sesión de administrador con el error &quot;Su sesión actual ha caducado&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md) en nuestra base de conocimiento de soporte.
+* [Vuelva al formulario de inicio de sesión de administrador con el error &quot;Su sesión actual ha caducado&quot;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41686) en nuestra base de conocimiento de soporte.
