@@ -4,9 +4,9 @@ description: Este artículo ofrece las posibles soluciones para el problema de i
 exl-id: ff3114fd-8690-4983-8221-cf807f083b15
 feature: Admin Workspace, Cache
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+source-git-commit: ec2111316458420c51a6b6f3b3881bd3f9d10c06
 workflow-type: tm+mt
-source-wordcount: '403'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -90,4 +90,4 @@ Para comprobar los valores de configuración de las cookies y borrarlos, siga es
 ## Artículos relacionados
 
 * [Vuelva al formulario de inicio de sesión de administrador con el error &quot;Su cuenta está temporalmente deshabilitada&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) en nuestra base de conocimiento de soporte.
-* [Vuelva al formulario de inicio de sesión de administrador con el error &quot;Su sesión actual ha caducado&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-current-session-has-been-expired-error.md) en nuestra base de conocimiento de soporte.
+* [Vuelva al formulario de inicio de sesión de administrador con el error &quot;Su sesión actual ha caducado&quot;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41686) en nuestra base de conocimiento de soporte.
