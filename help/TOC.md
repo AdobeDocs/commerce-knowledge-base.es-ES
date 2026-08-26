@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: d88862877bdf410f27752386655038d8646f1b45
+source-git-commit: 7b0cda2bfa026f53901b28c376a343a33ddb15eb
 workflow-type: tm+mt
-source-wordcount: '1645'
+source-wordcount: '1637'
 ht-degree: 1%
 
 ---
@@ -76,7 +76,6 @@ ht-degree: 1%
     * [Guía de solución de problemas de Adobe Commerce Security Scan](/help/troubleshooting/miscellaneous/security-scan-tool-troubleshooting-guide.md)
     * [Diagnóstico de discrepancias de ingresos de Google eCommerce](/help/troubleshooting/miscellaneous/diagnosing-google-ecommerce-revenue-discrepancies.md)
     * [He configurado las claves API para Adobe AI, pero solo veo un espacio de datos SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
-    * [Almacenamiento de archivos bajo, cargas de página específicas lentas](/help/troubleshooting/miscellaneous/file-storage-low-specific-page-loads-are-slow.md)
     * [Ayuda general sobre solución de problemas del módulo personalizado](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Calentamiento de la caché y sitio no disponible en Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
     * [Redirección de inicio de sesión al intentar iniciar sesión en el administrador de Commerce](/help/troubleshooting/miscellaneous/login-redirect-when-trying-to-login-to-magento-admin.md)
