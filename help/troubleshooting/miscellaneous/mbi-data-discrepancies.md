@@ -15,7 +15,7 @@ ht-degree: 0%
 
 ¿Parecen inexactos los números de un determinado informe? ¿Ve valores NULL inesperados? Si ve algo que no le parece del todo correcto, le recomendamos que utilice estos recursos para ayudarle a solucionar los problemas:
 
-* [Lista de comprobación de diagnóstico de discrepancias de datos](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41479)
+* [Lista de comprobación de diagnóstico de discrepancias de datos](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-41479)
 * [Uso de exportaciones para detectar discrepancias en los datos](/help/troubleshooting/miscellaneous/using-data-exports-to-pinpoint-discrepancies.md)
 
 También le recomendamos que se asegure de que se han establecido los [métodos de replicación](https://experienceleague.adobe.com/es/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-replication-methods) y [reverificaciones](https://experienceleague.adobe.com/es/docs/commerce-business-intelligence/mbi/analyze/warehouse-manager/cfg-data-rechecks) correctos para las tablas y columnas involucradas en la discrepancia. Tenga en cuenta que necesita permisos de administrador para acceder al método de replicación y volver a comprobar la información.

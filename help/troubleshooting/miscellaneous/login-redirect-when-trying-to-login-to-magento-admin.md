@@ -90,4 +90,4 @@ Para comprobar los valores de configuración de las cookies y borrarlos, siga es
 ## Artículos relacionados
 
 * [Vuelva al formulario de inicio de sesión de administrador con el error &quot;Su cuenta está temporalmente deshabilitada&quot;](/help/troubleshooting/miscellaneous/redirect-back-to-the-admin-login-form-with-your-account-is-temporarily-disabled-error.md) en nuestra base de conocimiento de soporte.
-* [Vuelva al formulario de inicio de sesión de administrador con el error &quot;Su sesión actual ha caducado&quot;](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-41686) en nuestra base de conocimiento de soporte.
+* [Vuelva al formulario de inicio de sesión de administrador con el error &quot;Su sesión actual ha caducado&quot;](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-41686) en nuestra base de conocimiento de soporte.
