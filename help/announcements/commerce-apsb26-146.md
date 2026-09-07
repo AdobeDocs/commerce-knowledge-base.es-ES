@@ -101,7 +101,7 @@ Aplique la siguiente revisión a la versión del producto afectada:
 
 ### Cómo aplicar la revisión
 
-Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de asistencia para obtener instrucciones.
+Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de asistencia para obtener instrucciones.
 
 ### Confirme que se ha aplicado la revisión (solo comerciantes de Adobe Commerce en la nube)
 
@@ -109,7 +109,7 @@ Teniendo en cuenta que no es posible determinar fácilmente si el problema se ha
 
 Para ello, siga los siguientes pasos y use el archivo `VULN-39341_Hotfix_COMPOSER.patch` como ejemplo:
 
-1. [Instalar la herramienta Parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage).
+1. [Instalar la herramienta Parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/usage).
 1. Ejecute el comando:
 
 `vendor/bin/magento-patches -n status | grep "39341\|Status"`
@@ -133,7 +133,7 @@ Para rotar las credenciales, siga estos pasos:
 1. Aplique la revisión.
 1. Activar modo de mantenimiento.
 1. Deshabilite la ejecución de cron (comando de Commerce en la nube: `vendor/bin/ece-tools cron:disable`).
-1. [Rotar las claves de cifrado](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key?lang=en).
+1. [Rotar las claves de cifrado](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/encryption-key?lang=en).
 1. Rotar todas las contraseñas de usuario del Panel de administración.
 1. Desactive y vuelva a generar todos los tokens de integración de REST/SOAP/GraphQL (**[!UICONTROL System]** > **[!UICONTROL Extensions]** > **[!UICONTROL Integrations]**).
 1. Rotar los secretos del cliente de OAuth para cualquier aplicación de terceros conectada.
@@ -154,4 +154,4 @@ Actualizaciones de seguridad disponibles para Adobe Commerce:
 
 ### Lectura relacionada
 
-[Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) en la Guía de instalación de Adobe Commerce
+[Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) en la Guía de instalación de Adobe Commerce
