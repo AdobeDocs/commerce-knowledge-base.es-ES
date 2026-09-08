@@ -1,11 +1,11 @@
 ---
 title: Cambio de precio base que afecta al precio de catálogo compartido
-description: "Este artículo responde a la pregunta: si un producto de un catálogo compartido tiene un precio personalizado y el precio base del producto cambia (por ejemplo, después de una actualización programada), ¿qué precio se aplica en el catálogo compartido?"
+description: 'Este artículo responde a la pregunta: si un producto de un catálogo compartido tiene un precio personalizado y el precio base del producto cambia (por ejemplo, después de una actualización programada), ¿qué precio se aplica en el catálogo compartido?'
 exl-id: 916678c1-ada6-4f23-af16-b107cb83ff16
 feature: Catalog Management
 source-git-commit: ce81fc35cc5b7477fc5b3cd5f36a4ff65280e6a0
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -30,4 +30,4 @@ Si el precio base del producto cambia y se vuelve menor que el precio del catál
 
 ## Lectura relacionada
 
-[Establezca los precios y la estructura para un catálogo compartido](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html?lang=es) en nuestra guía del usuario.
+[Establezca los precios y la estructura para un catálogo compartido](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/define/catalog-shared-pricing-structure.html) en nuestra guía del usuario.
