@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: b4a9384a0d72eec790e08382dd2e45d53cbb9831
+source-git-commit: 829114a6626409412d62e829ba1209d3fbc55ae2
 workflow-type: tm+mt
-source-wordcount: '1611'
+source-wordcount: '1605'
 ht-degree: 1%
 
 ---
@@ -86,7 +86,6 @@ ht-degree: 1%
     * [Las imágenes en caché no se cargan después de la actualización de 2.2.X a 2.3.X](/help/troubleshooting/miscellaneous/cached-images-are-not-loaded-after-2-2-x-to-2-3-x-upgrade.md)
     * [Mensaje de error al añadir sitios al análisis de seguridad](/help/troubleshooting/miscellaneous/error-message-adding-site-into-security-scan.md)
     * [Solución de problemas de acceso compartido](/help/troubleshooting/miscellaneous/shared-access-troubleshooting.md)
-    * [Error al validar las credenciales de Fastly](/help/troubleshooting/miscellaneous/error-when-validating-fastly-credentials.md)
     * [El informe Herramienta de exploración de seguridad está en blanco](/help/troubleshooting/miscellaneous/the-security-scan-tool-report-is-blank.md)
     * [Adobe Commerce 2.4.2-p1: nota de factura con un valor incorrecto](/help/troubleshooting/miscellaneous/adobe-commerce-2-4-2-p1-invoice-note-with-incorrect-value.md)
     * [No se puede acceder a la última versión preliminar de Adobe Commerce](/help/troubleshooting/miscellaneous/cannot-access-the-latest-magento-commerce-pre-release.md)
