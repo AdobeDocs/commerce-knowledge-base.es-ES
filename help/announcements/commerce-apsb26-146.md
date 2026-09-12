@@ -11,9 +11,9 @@ feature_v2:
   - id: c32adafa-ed01-4b31-997e-2413013911b0
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 7526f999381e9f117ea2d52dc59330b0d34cba62
+source-git-commit: 8a165b274bf508d849c60fd6768569af1885fdb7
 workflow-type: tm+mt
-source-wordcount: 952
+source-wordcount: 957
 ht-degree: 0%
 
 ---
@@ -29,7 +29,7 @@ El 7 de septiembre, Adobe lanzó una actualización de seguridad crítica que af
 
 Adobe ha lanzado el boletín de seguridad APSB26-146, que aborda esta vulnerabilidad. El boletín está disponible aquí:
 
-[Actualización de seguridad disponible para Adobe Commerce | APSB26-146](https://helpx.adobe.com/security/products/magento/apsb26-146.html)
+[Actualización de seguridad disponible para Adobe Commerce | APSB26-146](https://helpx.adobe.com/es/security/products/magento/apsb26-146.html)
 
 En este artículo se explica cómo aplicar la revisión a las versiones actuales y anteriores de Adobe Commerce y Magento Open Source.
 
@@ -120,7 +120,7 @@ Para rotar las credenciales, siga estos pasos:
 1. Desactive y vuelva a generar todos los tokens de integración de REST/SOAP/GraphQL (**[!UICONTROL System]** > **[!UICONTROL Extensions]** > **[!UICONTROL Integrations]**).
 1. Rotar los secretos del cliente de OAuth para cualquier aplicación de terceros conectada.
 1. Rotar las credenciales de la API de la puerta de enlace de pago al nivel del proveedor (Stripe, Braintree, Adyen, PayPal, etc.).
-1. Rotar credenciales de base de datos.
+1. Rotar la base de datos y las credenciales de Fastly (mediante ticket de asistencia).
 1. Rotar las claves SSH/deploy y cualquier credencial de cuenta de servicio con privilegios del sistema o cron.
 1. Rotar las claves API para el envío, los impuestos y otras extensiones de terceros integradas.
 1. Vaciar la caché.
@@ -132,8 +132,8 @@ Para rotar las credenciales, siga estos pasos:
 
 Actualizaciones de seguridad disponibles para Adobe Commerce:
 
-* [Boletín de seguridad de Adobe (APSB26-146)](https://helpx.adobe.com/security/products/magento/apsb26-146.html)
-* [Las últimas actualizaciones de seguridad disponibles para Adobe Commerce](https://helpx.adobe.com/security/products/magento.html)
+* [Boletín de seguridad de Adobe (APSB26-146)](https://helpx.adobe.com/es/security/products/magento/apsb26-146.html)
+* [Las últimas actualizaciones de seguridad disponibles para Adobe Commerce](https://helpx.adobe.com/es/security/products/magento.html)
 
 ### Lectura relacionada
 
