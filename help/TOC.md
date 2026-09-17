@@ -2,13 +2,11 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: f88551f595f1907957301f2ebdf9c0c9dc685939
+source-git-commit: 75d326acaa5926506fe3078da18abbbcdf2f3df4
 workflow-type: tm+mt
-source-wordcount: '1597'
+source-wordcount: '1589'
 ht-degree: 1%
-
 ---
-
 # Base de conocimiento de Adobe Commerce {#kb}
 
 * [Base de conocimiento de asistencia de Adobe Commerce](/help/overview.md)
@@ -73,7 +71,6 @@ ht-degree: 1%
     * [La aplicación de un parche desactiva el sitio](/help/troubleshooting/site-down-or-unresponsive/applying-a-patch-takes-your-site-down.md)
     * [Revisiones revisadas para la pérdida de acceso a Google Maps en todas las versiones de Adobe Commerce](/help/troubleshooting/installation-and-upgrade/revised-patches-for-google-maps-access-loss-on-all-adobe-commerce-versions.md)
   * Varios {#miscellaneous}
-    * [Correo electrónico que indica que el almacenamiento de exportación está casi lleno](/help/troubleshooting/miscellaneous/email-stating-that-export-storage-is-almost-full.md)
     * [He configurado las claves API para Adobe AI, pero solo veo un espacio de datos SaaS](/help/troubleshooting/miscellaneous/i-have-configured-api-keys-for-sensei-but-only-seeing-1-saas-data-space.md)
     * [Ayuda general sobre solución de problemas del módulo personalizado](/help/troubleshooting/miscellaneous/general-custom-module-troubleshooting-help.md)
     * [Calentamiento de la caché y sitio no disponible en Adobe Commerce](/help/troubleshooting/miscellaneous/cache-warming-up-and-site-unavailable-on-magento.md)
