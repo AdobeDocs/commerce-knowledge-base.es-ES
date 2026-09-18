@@ -3,13 +3,12 @@ title: Problema de rendimiento en la actualización del módulo Magento_Company 
 description: Este artículo proporciona una revisión para el problema de rendimiento en la actualización del módulo Magento_Company después de la actualización B2B 1.5.2, que aborda el tiempo de procesamiento excesivamente largo para grandes conjuntos de datos en la tabla company_structure.
 feature: B2B, Upgrade
 role: Admin, Developer
-source-git-commit: d06f0045b4c4c1615bd3abec963eb17fdee93860
+exl-id: b091d761-2e8a-4535-b461-ee9a46b5c2bc
+source-git-commit: e0524b54ee0adae1caa809212e98dda3a33c1954
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '439'
 ht-degree: 0%
-
 ---
-
 # Problema de rendimiento en la actualización del módulo Magento_Company después de la actualización B2B 1.5.2
 
 Este artículo proporciona una revisión para el problema de rendimiento en la actualización del módulo `Magento_Company` después de la actualización B2B 1.5.2, que aborda el tiempo de procesamiento excesivamente largo para conjuntos de datos grandes (más de 100 000 registros) en la tabla `company_structure`.
@@ -32,7 +31,7 @@ Actualizar el módulo `Magento_Company` después de actualizar a B2B 1.5.2 lleva
 
 <u>Pasos a seguir</u>:
 
-1. Asigne una compañía a una compañía matriz para establecer la jerarquía de la compañía. Consulte [Administrar la jerarquía de la compañía](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) en la guía Adobe Commerce B2B para obtener más información.
+1. Asigne una compañía a una compañía matriz para establecer la jerarquía de la compañía. Consulte [Administrar la jerarquía de la compañía](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) en la guía Adobe Commerce B2B para obtener más información.
 1. Actualice B2B a la versión 1.5.2.
 
 <u>Resultados esperados</u>:
@@ -61,7 +60,7 @@ Para resolver el problema, siga estos pasos:
 
 ### Cómo aplicar el parche
 
-Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de asistencia para obtener instrucciones.
+Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de asistencia para obtener instrucciones.
 
 ### Aplicación de un parche mediante parches en la nube
 
@@ -80,8 +79,8 @@ Para comerciantes de Adobe Commerce en la nube, siga los pasos a continuación:
    ```
 
 1. Agregue el parche ACSD-65540_B2B_1.5.2_DEPENDENT_ACSD-65684_B2B_1.5.2.patch al directorio `m2-hotfixes`.
-1. Confirme e inserte los cambios para iniciar la reimplementación y `bin/magento setup:upgrade`. Consulte [Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra guía de Adobe Commerce en la nube para obtener instrucciones.
+1. Confirme e inserte los cambios para iniciar la reimplementación y `bin/magento setup:upgrade`. Consulte [Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra guía de Adobe Commerce en la nube para obtener instrucciones.
 
 ## Lectura relacionada
 
-* [La actualización a B2B 1.5.2 falla con un error de sintaxis SQL debido a que falta la función REGEXP_LIKE](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)
+* [La actualización a B2B 1.5.2 falla con un error de sintaxis SQL debido a la falta de la función REGEXP_LIKE](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)
