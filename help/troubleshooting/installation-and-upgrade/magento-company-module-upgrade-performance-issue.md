@@ -3,13 +3,12 @@ title: Problema de rendimiento en la actualización del módulo Magento_Company 
 description: Este artículo proporciona una revisión para el problema de rendimiento en la actualización del módulo Magento_Company después de la actualización B2B 1.5.2, que aborda el tiempo de procesamiento excesivamente largo para grandes conjuntos de datos en la tabla company_structure.
 feature: B2B, Upgrade
 role: Admin, Developer
-source-git-commit: d06f0045b4c4c1615bd3abec963eb17fdee93860
+exl-id: b091d761-2e8a-4535-b461-ee9a46b5c2bc
+source-git-commit: e0524b54ee0adae1caa809212e98dda3a33c1954
 workflow-type: tm+mt
-source-wordcount: '388'
+source-wordcount: '439'
 ht-degree: 0%
-
 ---
-
 # Problema de rendimiento en la actualización del módulo Magento_Company después de la actualización B2B 1.5.2
 
 Este artículo proporciona una revisión para el problema de rendimiento en la actualización del módulo `Magento_Company` después de la actualización B2B 1.5.2, que aborda el tiempo de procesamiento excesivamente largo para conjuntos de datos grandes (más de 100 000 registros) en la tabla `company_structure`.
@@ -84,4 +83,4 @@ Para comerciantes de Adobe Commerce en la nube, siga los pasos a continuación:
 
 ## Lectura relacionada
 
-* [La actualización a B2B 1.5.2 falla con un error de sintaxis SQL debido a que falta la función REGEXP_LIKE](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)
+* [La actualización a B2B 1.5.2 falla con un error de sintaxis SQL debido a la falta de la función REGEXP_LIKE](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/installation-and-upgrade/sql-syntax-error-due-to-missing-regexp-like-function)
