@@ -5,19 +5,22 @@ autotag-review: '2026-09-07T17:27:44.037Z'
 TQID: 'https://experienceleague.adobe.com/ADVRRn85--ZgWtPdi4qA49fsDPVW976N4MYWp26taho'
 product_v2:
   - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
 feature_v2:
   - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
   - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
   - id: c32adafa-ed01-4b31-997e-2413013911b0
+    internal-label: Integrations
 topic_v2:
   - id: d095671a-1355-40aa-8b5f-06c33c68080b
-source-git-commit: 8a165b274bf508d849c60fd6768569af1885fdb7
+    internal-label: Security
+source-git-commit: d80b5265f4babf0a7ea85034c9ccc8ae19636a48
 workflow-type: tm+mt
-source-wordcount: 957
+source-wordcount: '957'
 ht-degree: 0%
-
 ---
-
 
 # Acción urgente necesaria: actualización de seguridad crítica disponible para Adobe Commerce (APSB26-146)
 
@@ -29,7 +32,7 @@ El 7 de septiembre, Adobe lanzó una actualización de seguridad crítica que af
 
 Adobe ha lanzado el boletín de seguridad APSB26-146, que aborda esta vulnerabilidad. El boletín está disponible aquí:
 
-[Actualización de seguridad disponible para Adobe Commerce | APSB26-146](https://helpx.adobe.com/es/security/products/magento/apsb26-146.html)
+[Actualización de seguridad disponible para Adobe Commerce | APSB26-146](https://helpx.adobe.com/security/products/magento/apsb26-146.html)
 
 En este artículo se explica cómo aplicar la revisión a las versiones actuales y anteriores de Adobe Commerce y Magento Open Source.
 
@@ -81,12 +84,11 @@ Para ayudar a resolver la vulnerabilidad de los productos y las versiones afecta
 | 2.4.6-p13, 2.4.6-p12, 2.4.5-p15, 2.4.5-p14, 2.4.4-p16, 2.4.4-p15 | [VULN-39341_246-p13.patch.zip](https://repo.magento.com/patch/VULN-39341-246-p13-patch.zip) |
 | 2.4.6 - 2.4.6-p11, 2.4.5 - 2.4.5-p13, 2.4.4 - 2.4.4-p14 | [VULN-39341_246-p11.patch.zip](https://repo.magento.com/patch/VULN-39341-246-p11-patch.zip) |
 
-
 {style="table-layout:auto"}
 
 ### Cómo aplicar la revisión
 
-Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de asistencia para obtener instrucciones.
+Descomprima el archivo y vea [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/how-to/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de asistencia para obtener instrucciones.
 
 ### Confirme que se ha aplicado la revisión (solo comerciantes de Adobe Commerce en la nube)
 
@@ -94,7 +96,7 @@ Teniendo en cuenta que no es posible determinar fácilmente si el problema se ha
 
 Para ello, siga los siguientes pasos y use el archivo `VULN-39341_Hotfix_COMPOSER.patch` como ejemplo:
 
-1. [Instalar la herramienta Parches de calidad](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/quality-patches-tool/usage#install).
+1. [Instalar la herramienta Parches de calidad](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/quality-patches-tool/usage#install).
 1. Ejecute el comando: `vendor/bin/magento-patches -n status | grep "39341\|Status"`.
 1. Debería ver una salida similar a esta, donde este ejemplo VULN-39341 devuelve el estado Aplicado:
 
@@ -115,7 +117,7 @@ Para rotar las credenciales, siga estos pasos:
 1. Aplique la revisión.
 1. Activar modo de mantenimiento.
 1. Deshabilite la ejecución de cron (comando de Commerce en la nube: `vendor/bin/ece-tools cron:disable`).
-1. [Rotar las claves de cifrado](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/encryption-key?lang=en).
+1. [Rotar las claves de cifrado](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/encryption-key?lang=en).
 1. Rotar todas las contraseñas de usuario del Panel de administración.
 1. Desactive y vuelva a generar todos los tokens de integración de REST/SOAP/GraphQL (**[!UICONTROL System]** > **[!UICONTROL Extensions]** > **[!UICONTROL Integrations]**).
 1. Rotar los secretos del cliente de OAuth para cualquier aplicación de terceros conectada.
@@ -132,9 +134,9 @@ Para rotar las credenciales, siga estos pasos:
 
 Actualizaciones de seguridad disponibles para Adobe Commerce:
 
-* [Boletín de seguridad de Adobe (APSB26-146)](https://helpx.adobe.com/es/security/products/magento/apsb26-146.html)
-* [Las últimas actualizaciones de seguridad disponibles para Adobe Commerce](https://helpx.adobe.com/es/security/products/magento.html)
+* [Boletín de seguridad de Adobe (APSB26-146)](https://helpx.adobe.com/security/products/magento/apsb26-146.html)
+* [Las últimas actualizaciones de seguridad disponibles para Adobe Commerce](https://helpx.adobe.com/security/products/magento.html)
 
 ### Lectura relacionada
 
-[Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) en la Guía de instalación de Adobe Commerce
+[Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode?lang=en) en la Guía de instalación de Adobe Commerce
