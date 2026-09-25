@@ -5,11 +5,9 @@ exl-id: d7e07160-6a61-4c03-8f8c-4f879d86ea44
 feature: Cache, GraphQL, Compliance
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '362'
 ht-degree: 0%
-
 ---
-
 # ¿Necesito Fastly para un sitio de Adobe Commerce sin encabezado?
 
 >[!NOTE]
@@ -25,7 +23,7 @@ Estoy desarrollando una implementación sin encabezado de Adobe Commerce. ¿Toda
 No, tú no. En esta situación, puede omitir el uso de Fastly - al menos, en el comienzo del desarrollo.
 
 La única situación que es posible que no desee habilitar es para una implementación sin encabezado.
-Consulte [Nube para Adobe Commerce > Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/fastly) en nuestra documentación para desarrolladores.
+Consulte [Nube para Adobe Commerce > Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) en nuestra documentación para desarrolladores.
 
 Aún así, lo más probable es que necesite Fastly para utilizar su certificado SSL.
 
@@ -34,4 +32,4 @@ Todos los clientes de Adobe Commerce en la infraestructura en la nube obtienen u
 ## Más información
 
 * [Sitios web sin encabezado: ¿Cuál es el problema con la arquitectura disociada?](https://pantheon.io/blog/headless-websites-whats-big-deal-decoupled-architecture) por [Josh Koenig](https://pantheon.io/team/josh-koenig).
-* [Fastly](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/fastly) en nuestra documentación para desarrolladores.
+* [Fastly](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/fastly) en nuestra documentación para desarrolladores.
