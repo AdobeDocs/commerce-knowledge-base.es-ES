@@ -1,17 +1,15 @@
 ---
-title: Error de procesamiento del Sistema Magento Order Management (OMS) para Adobe Commerce
-description: Este artículo proporciona una solución para el problema que se produce cuando se produce un error "getMode()" en la CLI que ejecuta "bin/magento oms:messages:process" en el sistema Magento Order Management (OMS) para Adobe Commerce.
+title: Error de procesamiento de Magento Order Management System (OMS) para Adobe Commerce
+description: Este artículo proporciona una solución para el problema que se produce cuando se produce un error "getMode()" en la CLI que ejecuta "bin/magento oms:messages:process" en el sistema de gestión de pedidos de Magento (OMS) para Adobe Commerce.
 exl-id: 83089465-f810-4a3b-bdb6-4720b44f0b49
 feature: System
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '217'
+source-wordcount: '242'
 ht-degree: 0%
-
 ---
-
-# Error de procesamiento del Sistema Magento Order Management (OMS) para Adobe Commerce
+# Error de procesamiento de Magento Order Management System (OMS) para Adobe Commerce
 
 Este artículo proporciona una solución para el problema que se produce cuando se produce un error de `getMode()` en la CLI que ejecuta `bin/magento oms:messages:process` en el sistema Magento Order Management (OMS) para Adobe Commerce.
 

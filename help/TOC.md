@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 75d326acaa5926506fe3078da18abbbcdf2f3df4
+source-git-commit: 50b733947e4c62b9a318df1f86a51c456f9f15d1
 workflow-type: tm+mt
-source-wordcount: '1589'
+source-wordcount: '1583'
 ht-degree: 1%
 ---
 # Base de conocimiento de Adobe Commerce {#kb}
@@ -196,7 +196,6 @@ ht-degree: 1%
   * [Se ha omitido la implementación posterior a Adobe Commerce porque la implementación ha dado error.md](/help/how-to/general/adobe-commerce-post-deploy-is-skipped-because-deploy-was-failed-error.md)
   * [Cómo cambiar la dirección de correo electrónico en la cuenta de magento.com cuando el campo está atenuado](/help/how-to/general/change-email-address-on-magento-account.md)
   * [Cómo eliminar Magento Order Management](/help/how-to/general/how-to-remove-mom.md)
-  * [Sugerencias técnicas para la preparación para las fiestas de Commerce](/help/how-to/general/tech-tips-for-commerce-holiday-readiness.md)
   * [Cómo evitar WAF para solicitudes de GraphQL](/help/how-to/general/how-to-bypass-waf-for-graphql-requests.md)
   * [Actualice MariaDB 10.4 a 10.5 para Adobe Commerce en la nube](/help/how-to/general/upgrade-mariadb-10-4-to-10-5-for-magento-commerce-cloud.md)
 * FAQ {#faq}
