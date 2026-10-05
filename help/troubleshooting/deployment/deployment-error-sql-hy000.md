@@ -1,16 +1,14 @@
 ---
-title: "Error de implementación: SQLSTATE[HY000]"
+title: 'Error de implementación: SQLSTATE[HY000]'
 description: Este artículo proporciona una solución para el problema en el que la implementación falla debido al error SQLSTATE[HY000].
 exl-id: c6da6275-9327-4a5c-99ed-93a53952ba42
 feature: Deploy
 role: Developer
 source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
 workflow-type: tm+mt
-source-wordcount: '83'
-ht-degree: 0%
-
+source-wordcount: '94'
+ht-degree: 5%
 ---
-
 # Error de implementación: SQLSTATE[HY000]
 
 Este artículo proporciona una solución para el problema en el que la implementación falla debido al error SQLSTATE[HY000].

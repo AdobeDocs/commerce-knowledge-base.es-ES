@@ -1,19 +1,17 @@
 ---
 title: Las actualizaciones programadas de ensayo de contenido no se muestran con la caché de Fastly obsoleta
-description: Este artículo proporciona una corrección para los casos en los que las tiendas Adobe Commerce no muestran actualizaciones programadas al utilizar Ensayo de contenido y Rápido. El problema se debe a que la opción de depuración rápida y suave está habilitada de forma predeterminada. Esta función reduce la carga de recursos de la aplicación y solo regenera una nueva caché en una segunda solicitud. Para resolverlo, puede habilitar Purgar página de CMS mediante el administrador de Commerce para regenerar y ofrecer siempre contenido nuevo.
+description: Este artículo proporciona una corrección para los casos en los que las tiendas Adobe Commerce no muestran actualizaciones programadas al utilizar Ensayo de contenido y Rápido. El problema se debe a que la opción de depuración rápida y suave está habilitada de forma predeterminada. Esta función reduce la carga de recursos de la aplicación y solo regenera una nueva caché en una segunda solicitud. Para resolverlo, puede habilitar la página Purgar CMS mediante el administrador de Commerce para que siempre vuelva a generar y ofrezca contenido nuevo.
 exl-id: becbffaa-b6dd-4e9b-894e-17901c40223a
 feature: CMS, Cache, Page Content, Staging
 role: Developer
 source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '491'
 ht-degree: 0%
-
 ---
-
 # Las actualizaciones programadas de ensayo de contenido no se muestran con la caché de Fastly obsoleta
 
-Este artículo proporciona una corrección para los casos en los que las tiendas Adobe Commerce no muestran actualizaciones programadas al utilizar Ensayo de contenido y Rápido. El problema se debe a que la opción de depuración rápida y suave está habilitada de forma predeterminada. Esta función reduce la carga de recursos de la aplicación y solo regenera una nueva caché en una segunda solicitud. Para resolverlo, puede habilitar Purgar página de CMS mediante el administrador de Commerce para regenerar y ofrecer siempre contenido nuevo.
+Este artículo proporciona una corrección para los casos en los que las tiendas Adobe Commerce no muestran actualizaciones programadas al utilizar Ensayo de contenido y Rápido. El problema se debe a que la opción de depuración rápida y suave está habilitada de forma predeterminada. Esta función reduce la carga de recursos de la aplicación y solo regenera una nueva caché en una segunda solicitud. Para resolverlo, puede habilitar la página Purgar CMS mediante el administrador de Commerce para que siempre vuelva a generar y ofrezca contenido nuevo.
 
 ## Problema
 
@@ -31,13 +29,13 @@ Como resultado, Fastly puede proporcionar contenido obsoleto hasta la segunda so
 
 ## Solución
 
-Si la entrega de contenido obsoleto incluso para la primera solicitud es inaceptable, puede desactivar Purga suave y activar la página Purgar CMS:
+Si la entrega de contenido obsoleto incluso para la primera solicitud es inaceptable, puede desactivar la depuración suave y activar la página Purgar CMS:
 
 1. Inicie sesión en el administrador local de Commerce como administrador.
 1. Vaya a **Tiendas** > **Configuración** > **Avanzadas** > **Sistema** > **Caché de página completa**.
 1. Expanda **Configuración rápida** y, a continuación, expanda **Avanzada**.
 1. Establezca **Usar purga suave** en *No*.
-1. Definir **Purgar página CMS** en *Sí*.
+1. Definir **Purgar página de CMS** en *Sí*.
 1. Haga clic en **Guardar configuración** en la parte superior de la página.
 
 
