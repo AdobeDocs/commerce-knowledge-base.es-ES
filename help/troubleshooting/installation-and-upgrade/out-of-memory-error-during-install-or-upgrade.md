@@ -1,19 +1,17 @@
 ---
 title: Error de falta de memoria durante la instalación o actualización
-description: Este artículo habla sobre las soluciones para el error de falta de memoria durante la instalación/actualización de productos locales y locales de Magento Open Source de Adobe Commerce.
+description: Este artículo habla sobre las soluciones para el error de falta de memoria durante la instalación/actualización de los productos locales de Adobe Commerce y locales de Magento Open Source.
 exl-id: c0ed8228-9357-4a3b-a102-1119386ea52a
 feature: Install, Upgrade
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '285'
+source-wordcount: '359'
 ht-degree: 0%
-
 ---
-
 # Error de falta de memoria durante la instalación o actualización
 
-Este artículo habla sobre las soluciones para el error de falta de memoria durante la instalación/actualización de productos locales y locales de Magento Open Source de Adobe Commerce.
+Este artículo habla sobre las soluciones para el error de falta de memoria durante la instalación/actualización de los productos locales de Adobe Commerce y locales de Magento Open Source.
 
 ## Productos y versiones afectados
 
@@ -40,7 +38,7 @@ también puede mostrarse en la línea de comandos.
 
 ## Solución {#solution}
 
-Le recomendamos que [asigne 2 GB de memoria a PHP](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/php-settings) en nuestra documentación para desarrolladores para garantizar que la instalación o actualización se realice correctamente.
+Le recomendamos que [asigne 2 GB de memoria a PHP](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings) en nuestra documentación para desarrolladores para garantizar que la instalación o actualización se realice correctamente.
 
 Si ya lo ha hecho, cree un archivo de intercambio en su equipo. Un equipo Linux usa *espacio de intercambio* si necesita más recursos de memoria y la RAM está llena. El espacio de intercambio se utiliza para páginas inactivas en la memoria.
 
@@ -50,9 +48,9 @@ Las siguientes son solo sugerencias; otras opciones podrían estar disponibles. 
 
 Utilice el comando `fallocate` como se describe en estas referencias:
 
-* [Cómo agregar un intercambio en Ubuntu 14.04 (Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
-* [Cómo agregar espacio de intercambio en Ubuntu 16.04 (Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
-* [Preguntas frecuentes sobre SwapFaq (help.ubuntu.com)](https://help.ubuntu.com/community/SwapFaq)
+* [Cómo agregar Intercambiar en Ubuntu 14.04 (Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-ubuntu-14-04)
+* [Cómo añadir un espacio de intercambio en Ubuntu 16.04 (Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-space-on-ubuntu-16-04)
+* [Preguntas frecuentes sobre Swap (help.ubuntu.com)](https://help.ubuntu.com/community/SwapFaq)
 
 ### Intercambiar archivo en CentOS {#swap-file-on-centos}
 
@@ -60,4 +58,4 @@ Utilice el comando `mkswap` como se describe en estas referencias:
 
 * [Cómo agregar un intercambio en CentOS 6 (Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-6)
 * [Cómo agregar un intercambio en CentOS 7 (Digitalocean)](https://www.digitalocean.com/community/tutorials/how-to-add-swap-on-centos-7)
-* [Espacio de intercambio (portal para clientes de RedHat)](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)
+* [Intercambiar espacio (portal para clientes de RedHat)](https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/6/html/Storage_Administration_Guide/ch-swapspace.html)

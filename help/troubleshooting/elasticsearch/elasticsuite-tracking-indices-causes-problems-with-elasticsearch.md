@@ -1,21 +1,19 @@
 ---
 title: Los índices de seguimiento de ElasticSuite causan problemas con Elasticsearch
-description: Este artículo habla sobre el problema de los problemas de memoria Elasticsearch causados por los índices de seguimiento producidos por el complemento ElasticSuite.
+description: Este artículo habla sobre el problema de los problemas de memoria de Elasticsearch causados por los índices de seguimiento producidos por el complemento ElasticSuite.
 exl-id: 67bfd06a-c801-4306-8510-a84a6fe5351a
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '482'
 ht-degree: 0%
-
 ---
-
 # Los índices de seguimiento de ElasticSuite causan problemas con Elasticsearch
 
 >[!NOTE]
 >
->ElasticSuite y sus aplicaciones afiliadas son herramientas de terceros que actualmente no son compatibles con Adobe. Este contenido se presenta solo como información y no como indicación de lo que está habilitado para la cobertura de soporte.
+>ElasticSuite y sus aplicaciones afiliadas son herramientas de terceros que Adobe no admite actualmente. Este contenido se presenta solo como información y no como indicación de lo que está habilitado para la cobertura de soporte.
 
-Este artículo habla sobre el problema de los problemas de memoria Elasticsearch causados por los índices de seguimiento producidos por el complemento ElasticSuite.
+Este artículo habla sobre el problema de los problemas de memoria de Elasticsearch causados por los índices de seguimiento producidos por el complemento ElasticSuite.
 
 ## Productos y versiones afectados
 
@@ -25,13 +23,13 @@ Las versiones de ElasticSuite anteriores a 2.9.8 / 2.10.7 almacenan índices de 
 
 ## Problema
 
-Si se instala el complemento de terceros ElasticSuite, es posible que experimente problemas de memoria del Elasticsearch y que el servicio del Elasticsearch se bloquee debido a los índices de seguimiento de ElasticSuite. Los síntomas incluyen:
+Si está instalado el complemento de terceros ElasticSuite, es posible que experimente problemas de memoria de Elasticsearch y que el servicio de Elasticsearch se bloquee debido a los índices de seguimiento de ElasticSuite. Los síntomas incluyen:
 
-* El Elasticsearch se bloquea sin errores de memoria.
+* Elasticsearch se bloquea sin errores de memoria.
 * Al ejecutar un comando de mantenimiento `curl -m1 localhost:9200/_cluster/health?pretty` o `curl -m1 elasticsearch.internal:9200/_cluster/health?pretty` (para cuentas de inicio) hay cientos o miles de `unassigned_shards`
 * El rendimiento del Elasticsearch o del sitio está gravemente degradado.
-* *&quot;No se encontraron nodos activos en su clúster&quot;* en la implementación del Elasticsearch o en los errores de registro.
-* *&quot;Rechazando actualización de asignación a [&lt;\*>_ tracking_log_event _&lt;\*>]&quot;* en errores de implementación o registro.
+* *&quot;No se encontraron nodos activos en su clúster&quot;* en la implementación de Elasticsearch o en el registro de errores.
+* *&quot;Rechazando actualización de asignación a [&lt;\*>_tracking_ log_event_&lt;\*>]&quot;* en errores de implementación o registro.
 
 ## Causa
 
@@ -68,5 +66,5 @@ Cree un trabajo cron para eliminar los índices de seguimiento. Este comando eli
 
 Si desea eliminar índices en una frecuencia de tiempo establecida, cree un trabajo cron consultando los siguientes artículos en nuestra documentación para desarrolladores:
 
-* [Configurar un trabajo cron personalizado y un grupo cron (tutorial)](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
-* [Configurar trabajos cron](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
+* [Configuración de un trabajo cron personalizado y un grupo cron (tutorial)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [Configuración de trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
