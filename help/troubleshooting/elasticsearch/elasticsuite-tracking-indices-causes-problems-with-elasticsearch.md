@@ -66,5 +66,5 @@ Cree un trabajo cron para eliminar los índices de seguimiento. Este comando eli
 
 Si desea eliminar índices en una frecuencia de tiempo establecida, cree un trabajo cron consultando los siguientes artículos en nuestra documentación para desarrolladores:
 
-* [Configuración de un trabajo cron personalizado y un grupo cron (tutorial)](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
-* [Configuración de trabajos cron](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
+* [Configuración de un trabajo cron personalizado y un grupo cron (tutorial)](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/crons/custom-cron-tutorial)
+* [Configuración de trabajos cron](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property)
