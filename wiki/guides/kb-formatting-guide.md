@@ -1,15 +1,14 @@
 ---
 source-git-commit: c587986edc925c49bf95ab935888b59f265371af
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '611'
 ht-degree: 0%
-
 ---
 # Guía de formato KB
 
 ## Autor en Markdown
 
-Por lo general, utilizamos la [Guía de estilo de sintaxis de Adobe Experience League Markdown](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=es), pero existen algunas diferencias y excepciones. Además, en determinados casos se requieren determinadas etiquetas de HTML.
+Por lo general, utilizamos la [Guía de estilo de sintaxis de Adobe Experience League Markdown](https://experienceleague.adobe.com/docs/authoring-guide-exl/using/markdown/syntax-style-guide.html?lang=en), pero existen algunas diferencias y excepciones. Además, en algunos casos se requieren ciertas etiquetas de HTML.
 
 Los siguientes son ejemplos del formato Markdown que se utiliza más comúnmente en nuestro repositorio.
 
@@ -27,7 +26,7 @@ Para aplicar formato subrayado al texto, use la etiqueta `<ins>`:
 
 `<ins>This text will be underlined</ins>`
 
-Para agregar un salto de línea, use la etiqueta de HTML `<br>`.
+Para agregar un salto de línea, use la etiqueta HTML `<br>`.
 
 
 ## Encabezados
@@ -55,7 +54,7 @@ Para insertar un bloque de código, encierre el bloque de código entre comillas
 \`\`\` sql
 
 SELECCIONAR TABLE_NAME COMO `Table`,
-ROUND((DATA_LENGTH + INDEX_LENGTH) / 1024 / 1024) AS `Size (MB)`
+REDONDEAR(LONGITUD_DATOS + LONGITUD_ÍNDICE) / 1024 / 1024) COMO `Size (MB)`
 FROM: information_schema.TABLES
 WHERE TABLE_SCHEMA = &quot;%project_id%&quot;
 ORDENAR POR (DATA_LENGTH + INDEX_LENGTH) DESC;
@@ -165,7 +164,7 @@ Este es un vínculo a este encabezado:
 [this is link to the anchor in the same article](#this-is-header)
 ```
 
-Si necesita hacer referencia a un elemento que no sea un encabezado, use el HTML para definir el elemento que desea agregar y use [id atributo](https://www.w3schools.com/html/html_id.asp). A continuación, puede utilizar Markdown o HTML para hacer referencia a este ID.
+Si necesita hacer referencia a un elemento que no sea un encabezado, use HTML para definir el elemento que desea agregar y use [id attribute](https://www.w3schools.com/html/html_id.asp). A continuación, puede utilizar Markdown o HTML para hacer referencia a este ID.
 
 ### Vínculos relativos y vínculos a otros artículos
 
@@ -175,7 +174,7 @@ Use hipervínculos completos del [Centro de ayuda de Adobe Commerce](https://sup
 
 ## Tablas
 
-Usar formato de HTML [para tablas](https://www.w3schools.com/html/html_tables.asp).
+Usar formato de [HTML para tablas](https://www.w3schools.com/html/html_tables.asp).
 
 
 ## Advertencias y bloques de información
