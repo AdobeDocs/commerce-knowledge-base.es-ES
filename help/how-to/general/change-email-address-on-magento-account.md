@@ -32,7 +32,7 @@ Cambiando la dirección de correo electrónico de un usuario que tiene su propia
 
 <u>Solución</u>
 
-1. [Envíe una solicitud de asistencia](https://experienceleague.adobe.com/home#support) a https://experienceleague.adobe.com/home#support indicando lo siguiente:
+1. [Envíe una solicitud de asistencia](https://experienceleague.adobe.com/home?lang=es#support) a https://experienceleague.adobe.com/home?lang=es#support indicando lo siguiente:
 
    * Dirección de correo electrónico existente que actualizar
    * Nueva dirección de correo electrónico
@@ -46,7 +46,7 @@ Cambiando la dirección de correo electrónico de un usuario que actualmente no 
 
 <u>Solución</u>
 
-Si tienes acceso al buzón del [correo electrónico del propietario actual], restablece la contraseña del correo electrónico del propietario actual siguiendo la guía de [Restablecer o cambiar la contraseña de Adobe](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) en la Guía del usuario de Creative Cloud.
+Si tienes acceso al buzón del [correo electrónico del propietario actual], restablece la contraseña del correo electrónico del propietario actual siguiendo la guía de [Restablecer o cambiar la contraseña de Adobe](https://helpx.adobe.com/es/manage-account/using/change-or-reset-password.html) en la Guía del usuario de Creative Cloud.
 
 1. Localice el vínculo para restablecer la contraseña enviado al buzón del propietario actual con instrucciones.
 1. Establece una nueva contraseña y cambia el correo electrónico a [nuevo correo electrónico del propietario].
@@ -60,5 +60,5 @@ Sin embargo, si no tienes acceso a los correos electrónicos enviados a [correo 
 
 ## Lectura relacionada
 
-[Restablecer contraseña olvidada](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) en la Guía del usuario de Creative Cloud.
-[Actualice el perfil de su cuenta](https://helpx.adobe.com/manage-account/using/edit-adobe-account-personal-profile.html) en la Guía del usuario de Creative Cloud.
+[Restablecer contraseña olvidada](https://helpx.adobe.com/es/manage-account/using/change-or-reset-password.html) en la Guía del usuario de Creative Cloud.
+[Actualice el perfil de su cuenta](https://helpx.adobe.com/es/manage-account/using/edit-adobe-account-personal-profile.html) en la Guía del usuario de Creative Cloud.
