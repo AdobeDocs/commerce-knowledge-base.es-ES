@@ -6,14 +6,12 @@ role: Developer
 exl-id: c1a0886a-df1f-418a-9e4d-562b28a0d8b3
 source-git-commit: 6d0c4ea9576440d66be3b8053a6e362b8ac0ebcb
 workflow-type: tm+mt
-source-wordcount: '863'
+source-wordcount: '1085'
 ht-degree: 0%
-
 ---
-
 # Solucionar problemas de la página Crear pedido en modo restringido [!UICONTROL CSP]
 
-Este artículo proporciona explicaciones y correcciones para los problemas de Adobe Commerce 2.4.7 mientras se crea un pedido en el lado del administrador con **[!UICONTROL CSP restricted mode]** está *Habilitado*, con el &quot;*Se rechazó ejecutar script en línea porque infringe la siguiente directiva de directiva de seguridad de contenido: &quot;script-src ...*&quot; mensaje de error en el registro de la consola del explorador.
+Este artículo proporciona explicaciones y correcciones para los problemas de Adobe Commerce 2.4.7 mientras se crea un pedido del lado del administrador con **[!UICONTROL CSP restricted mode]** que está *Habilitado*, con el script en línea &quot;*Rechazado porque viola la siguiente directiva de directiva de seguridad de contenido: &quot;script-src ...*&quot; mensaje de error en el registro de la consola del explorador.
 
 ## Productos y versiones afectados
 
@@ -21,12 +19,12 @@ Adobe Commerce en la infraestructura en la nube, Adobe Commerce local y Magento 
 
 * 2.4.7
 * 2.4.6-pX
-* 2,4,5-pX
+* 2.4.5-pX
 * 2.4.4-pX
 
 ## Problema - La página del administrador **crear pedido** está dañada o no se puede cargar
 
-La página de administración **create order** está dañada o no se puede cargar, con el script en línea &quot;*No se pudo ejecutar porque infringe la siguiente directiva de directiva de seguridad de contenido: &quot;script-src ...*&quot; mensaje de error en el registro de la consola del explorador.
+La página del administrador **crear pedido** está dañada o no se puede cargar. &quot;*Se rechazó ejecutar el script en línea porque infringe la siguiente directiva de directiva de seguridad de contenido: &quot;script-src ...*&quot; mensaje de error en el registro de la consola del explorador.
 
 <u>Pasos a seguir</u>:
 
@@ -43,7 +41,7 @@ La página Administrador **crear pedido** está en blanco o faltan componentes. 
 
 ### Causa
 
-En la versión 2.4.7 y posteriores de Adobe Commerce y Magento Open Source, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
+En Adobe Commerce y Magento Open Source versión 2.4.7 y posterior, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
 El encabezado **[!UICONTROL CSP]** correspondiente no contiene la palabra clave `unsafe-inline` dentro de la directiva `script-src` para páginas de pago. Además, solo se permiten [!DNL whitelisted] scripts en línea.
 
 ### Solución
@@ -116,7 +114,7 @@ El método de pago falta o no funciona. El siguiente error [!DNL JS] se muestra 
 
 ### Causa
 
-En la versión 2.4.7 y posteriores de Adobe Commerce y Magento Open Source, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
+En Adobe Commerce y Magento Open Source versión 2.4.7 y posterior, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
 El encabezado **[!UICONTROL CSP]** correspondiente no contiene la palabra clave `unsafe-inline` dentro de la directiva `script-src` para páginas de pago. Además, solo se permiten [!DNL whitelisted] scripts en línea.
 
 ### Solución
@@ -168,7 +166,7 @@ Adobe Commerce y Magento Open Source 2.4.7 y versiones posteriores incluyen un p
 
 ## Problema: el administrador no puede realizar un pedido
 
-Un administrador no puede enviar una solicitud en la página de administración **crear pedido**, con el script en línea &quot;*Se rechazó ejecutar porque infringe la siguiente directiva de directiva de seguridad de contenido: &quot;script-src ...*&quot; mensaje de error en el registro de la consola del explorador.
+Un administrador no puede enviar una solicitud en la página de administración **crear pedido**, con el script en línea &quot;*No se pudo ejecutar porque infringe la siguiente directiva de directiva de seguridad de contenido: &quot;script-src ...*&quot; mensaje de error en el registro de la consola del explorador.
 
 <u>Pasos a seguir</u>:
 
@@ -190,7 +188,7 @@ No es posible enviar una solicitud. El siguiente error [!DNL JS] se muestra en e
 
 ### Causa
 
-En la versión 2.4.7 y posteriores de Adobe Commerce y Magento Open Source, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
+En Adobe Commerce y Magento Open Source versión 2.4.7 y posterior, **[!UICONTROL CSP]** está configurado en `restrict-mode`, de forma predeterminada, para las páginas de pago en las áreas de tienda y administración, y en el modo `report-only` para todas las demás páginas.
 El encabezado **[!UICONTROL CSP]** correspondiente no contiene la palabra clave `unsafe-inline` dentro de la directiva `script-src` para páginas de pago. Además, solo se permiten [!DNL whitelisted] scripts en línea.
 
 ### Solución
