@@ -1,18 +1,16 @@
 ---
-title: "Adobe Commerce en la nube: cambiar las claves de autenticación y volver a implementar"
-description: Este artículo proporciona instrucciones sobre cómo volver a implementar Adobe Commerce en la infraestructura en la nube con claves de autenticación diferentes. Por ejemplo, es posible que haya utilizado las claves de otra cuenta o que haya utilizado claves de Magento Open Source en lugar de claves de Adobe Commerce.
+title: 'Adobe Commerce en la nube: cambiar las claves de autenticación y volver a implementar'
+description: Este artículo proporciona instrucciones sobre cómo volver a implementar Adobe Commerce en la infraestructura en la nube con claves de autenticación diferentes. Por ejemplo, es posible que haya utilizado las claves de otra cuenta o que haya utilizado claves Magento Open Source en lugar de claves Adobe Commerce.
 exl-id: 47407c81-5c52-406f-812f-6c6b3ca5cafa
 feature: Cloud, Deploy
 source-git-commit: f11c8944b83e294b61d9547aefc9203af344041d
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce en la nube: cambiar las claves de autenticación y volver a implementar
 
-Este artículo proporciona instrucciones sobre cómo volver a implementar Adobe Commerce en la infraestructura en la nube con claves de autenticación diferentes. Por ejemplo, es posible que haya utilizado las claves de otra cuenta o que haya utilizado claves de Magento Open Source en lugar de claves de Adobe Commerce.
+Este artículo proporciona instrucciones sobre cómo volver a implementar Adobe Commerce en la infraestructura en la nube con claves de autenticación diferentes. Por ejemplo, es posible que haya utilizado las claves de otra cuenta o que haya utilizado claves Magento Open Source en lugar de claves Adobe Commerce.
 
 Si utilizó las claves incorrectas, la implementación falla. Para recuperarse, debe clonar el proyecto, agregar las claves correctas a `auth.json` e insertar el cambio en la rama maestra.
 
