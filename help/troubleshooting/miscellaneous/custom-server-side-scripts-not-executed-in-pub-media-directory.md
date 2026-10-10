@@ -1,16 +1,23 @@
 ---
 title: Los scripts personalizados del lado del servidor no se ejecutan en el directorio de medios pub
-description: Este artículo proporciona una corrección para los casos en los que los scripts personalizados del lado del servidor no se ejecutan si se colocan en la etiqueta &grave;.directorio /pub/media/&grave; de la aplicación de Adobe Commerce en la infraestructura de la nube. Se trata de una limitación de seguridad esperada, ya que el &grave;.El directorio /pub/media/&grave; puede escribirse. Para que los scripts sean ejecutables, colóquelos en directorios no grabables, como &grave;./app/code/&grave; o &grave;./pub/&grave;.
+description: Este artículo proporciona una corrección para los casos en los que los scripts personalizados del lado del servidor no se ejecutan si se colocan en el directorio `./pub/media/` de la aplicación de Adobe Commerce en la infraestructura en la nube. Se trata de una limitación de seguridad esperada, ya que el directorio `./pub/media/` puede escribirse. Para hacer que los scripts sean ejecutables, colóquelos en directorios no escribibles, como "./app/code/" o "./pub/".
 exl-id: fcad8a5d-47d6-4729-93a4-2410d7710d69
 feature: Media
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '269'
+source-wordcount: '284'
 ht-degree: 0%
-
 ---
-
 # Los scripts personalizados del lado del servidor no se ejecutan en el directorio de medios pub
 
 Este artículo proporciona una corrección para los casos en los que los scripts personalizados del lado del servidor no se ejecutan si se colocan en el directorio `./pub/media/` de la aplicación de Adobe Commerce en la infraestructura en la nube. Se trata de una limitación de seguridad esperada, ya que el directorio `./pub/media/` se puede escribir. Para que los scripts sean ejecutables, colóquelos en directorios que no se puedan escribir, como `./app/code/` o `./pub/`.
@@ -35,4 +42,4 @@ Almacene los scripts del lado del servidor en directorios no grabables, como `./
 
 ## Documentación relacionada
 
-* [Cloud for Adobe Commerce > Estructura del proyecto > Directorios editables](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) en nuestra documentación para desarrolladores.
+* [Cloud for Adobe Commerce > Estructura del proyecto > Directorios editables](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/file-structure#writable-directories) en nuestra documentación para desarrolladores.
