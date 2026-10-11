@@ -4,13 +4,23 @@ description: Este artículo proporciona una solución al problema cuando los mó
 exl-id: c0335b66-803b-44d7-b966-7d60a5f21d8d
 feature: Extensions
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f08fa0de-a550-4acd-b570-f81cf1d03aaf
+    internal-label: Commerce ecosystem
+subfeature_v2:
+  - id: dad884f1-e840-49a1-970e-2f965bdbc410
+    internal-label: Extensions
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '251'
+source-wordcount: '276'
 ht-degree: 0%
-
 ---
-
 # Módulos que faltan en Adobe Commerce 2.4.4
 
 Este artículo proporciona una solución para los casos en los que los módulos incluidos en versiones anteriores de Adobe Commerce no están presentes en 2.4.4.
@@ -31,8 +41,8 @@ Este es el comportamiento esperado, ya que las extensiones agrupadas por proveed
 
 ## Solución
 
-Instale/compre las extensiones oficiales por separado. Están disponibles en el [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
+Instale/compre las extensiones oficiales por separado. Están disponibles en [Commerce Marketplace](https://marketplace.magento.com/extensions.html).
 
 ## Lectura relacionada
 
-[Extensiones agrupadas por proveedor](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?lang=es&#vendor-bundled-extensions) en Documentación de Adobe Commerce > Información de la versión > Notas de la versión de Adobe Commerce 2.4.4.
+[Extensiones agrupadas por proveedor](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/adobe-commerce/2-4-4.html?#vendor-bundled-extensions) en Documentación de Adobe Commerce > Información de la versión > Notas de la versión de Adobe Commerce 2.4.4.
