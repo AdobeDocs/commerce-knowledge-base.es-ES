@@ -4,13 +4,23 @@ description: Este artículo proporciona una corrección para los casos en los qu
 exl-id: 61b81fbd-a382-44b5-94e9-5b6d72f11349
 feature: Cache
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '149'
+source-wordcount: '159'
 ht-degree: 0%
-
 ---
-
 # Sitio en modo de mantenimiento, pero disponible para los clientes
 
 Este artículo proporciona una corrección para los casos en los que el modo de mantenimiento está habilitado (un problema de Adobe Commerce en la infraestructura de la nube), pero la tienda sigue estando disponible para los clientes.

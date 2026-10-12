@@ -4,13 +4,22 @@ description: Este artículo explica cómo solucionar problemas de Leer réplicas
 feature: Configuration
 role: Developer,Admin
 exl-id: b7af1cc3-93ff-40c5-8959-076cedddb56d
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '251'
 ht-degree: 0%
-
 ---
-
 # Leer los problemas de Réplicas en Adobe Commerce Cloud 2.4.6 con MariaDB 10.6
 
 Este artículo proporciona soluciones para comportamientos inesperados al utilizar Leer réplicas en Adobe Commerce Cloud 2.4.6 con MariaDB 10.6+.
@@ -30,7 +39,7 @@ La configuración `slave_parallel_mode` de la base de datos se cambió de forma 
 
 ## Solución
 
-1. Compruebe que el parámetro `slave_parallel_mode` esté establecido en *conservative* (si el valor no se muestra como [conservative](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket), necesitará *elevar un ticket de soporte*). Para comprobarlo, ejecute el siguiente comando:
+1. Compruebe que el parámetro `slave_parallel_mode` esté establecido en *conservative* (si el valor no se muestra como *conservative*, necesitará [elevar un ticket de soporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=es#submit-ticket)). Para comprobarlo, ejecute el siguiente comando:
 
    ```
     MariaDB [main]> show variables like 'slave_parallel_mode';

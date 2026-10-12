@@ -4,13 +4,20 @@ description: Este artículo proporciona una solución para el problema que se pr
 feature: Deploy
 role: Developer
 exl-id: c795f9d5-7171-4846-b99f-c018f1d2bf12
-source-git-commit: 7718a835e343ae7da9ff79f690503b4ee1d140fc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '159'
+source-wordcount: '181'
 ht-degree: 0%
-
 ---
-
 # Errores de implementación al confirmar archivos incorrectos
 
 Este artículo proporciona una corrección del problema cuando se obtienen errores de implementación causados por confirmaciones incorrectas en el repositorio de archivos/carpetas que no deberían haberse agregado.

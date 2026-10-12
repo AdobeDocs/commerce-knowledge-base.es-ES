@@ -4,13 +4,22 @@ description: Este artículo proporciona una corrección de los errores recibidos
 exl-id: 9f5ec100-49b0-4ac5-8951-32b5c4fe6bed
 feature: Orders, Payments
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 4820f335-ec9f-5611-8fe3-f5b7e3e56967
+    internal-label: Orders
+  - id: 3dcbfa9e-51f8-569c-a0e4-7f59098f730f
+    internal-label: Payments
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '442'
 ht-degree: 0%
-
 ---
-
 # 2.3.4 Revisión de problemas de PayPal
 
 Este artículo proporciona una corrección de los errores recibidos durante la realización del pedido al seleccionar una región en Pago y envío con PayPal Express. El problema se debe a los cambios realizados en la versión 2.3.4 de Adobe Commerce y está relacionado con el modo en que se analizan los campos de dirección de Pago y envío de PayPal Express.

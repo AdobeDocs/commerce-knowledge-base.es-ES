@@ -1,16 +1,34 @@
 ---
 title: El panel [!DNL Live Search] y la clasificación de resultados de búsqueda son incorrectos
-description: Este artículo proporciona información de solución de problemas si los datos del  [!DNL Live Search] panel son incorrectos o si la clasificación de los resultados de búsqueda no es la esperada.
+description: Este artículo proporciona información de solución de problemas si los datos del panel [!DNL Live Search] son incorrectos o si la clasificación de los resultados de búsqueda no es la esperada.
 feature: Admin Workspace, Categories, Search
 role: Developer
 exl-id: d4aea1f1-c2c4-45e5-87c8-73069f7c9ffd
-source-git-commit: 9bb839292a120a3dab5151d493f915619dbf5c06
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: bb2df8be-afdd-4818-b6b5-95ca1dd3bc3a
+    internal-label: Admin workspace
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '173'
 ht-degree: 0%
-
 ---
-
 # El panel [!DNL Live Search] y la clasificación de resultados de búsqueda son incorrectos
 
 Si nota que los datos mostrados en el panel [!DNL Live Search] son incorrectos, o si la [clasificación de los resultados de búsqueda](https://experienceleague.adobe.com/es/docs/commerce-merchant-services/live-search/live-search-admin/category-merch#ranking-strategies) no es la esperada, vea lo siguiente por posibles motivos:

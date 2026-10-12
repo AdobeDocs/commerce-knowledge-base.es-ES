@@ -1,16 +1,23 @@
 ---
 title: 'PWA Studio: el explorador no puede resolver el sitio .local.pwadev'
-description: Este artículo proporciona una solución para los casos en los que otro programa o proceso ha editado su [archivo host] (https://en.wikipedia.org/wiki/Hosts_(file) y ha eliminado la entrada del dominio del proyecto.
+description: Este artículo proporciona una solución para los casos en los que otro programa o proceso ha editado su [archivo host] (https://en.wikipedia.org/wiki/Hosts_(file\) y ha eliminado la entrada del dominio del proyecto.
 exl-id: a1606016-906a-433f-9e40-9faa5f9bd790
 feature: Configuration
 role: Developer
-source-git-commit: 1d0d51209bdc02360c6f8527701cdf0da811659d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '255'
 ht-degree: 0%
-
 ---
-
 # PWA Studio: el explorador no puede resolver el sitio .local.pwadev
 
 Este artículo proporciona una solución para los casos en los que otro programa o proceso haya editado su [archivo host]&#x200B;(https://en.wikipedia.org/wiki/Hosts_(file\) y quitado la entrada del dominio del proyecto.

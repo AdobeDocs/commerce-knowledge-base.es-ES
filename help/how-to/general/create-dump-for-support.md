@@ -2,13 +2,14 @@
 title: Cómo crear un volcado "borrado" cuando lo solicita el agente de soporte
 description: Este artículo proporciona información sobre cómo crear un volcado "depurado" (copia de seguridad) de la base de datos y código del administrador de Adobe Commerce cuando un agente de soporte de Adobe Commerce lo solicita para proporcionar uno. Este volcado excluye los archivos multimedia para acelerar el proceso y generar un archivo mucho más pequeño. Todos los datos confidenciales se colocan en un hash al realizar la copia de seguridad de la base de datos.
 exl-id: ad088bd2-3f92-416e-89f0-d037d53cd6a9
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '214'
+source-wordcount: '226'
 ht-degree: 0%
-
 ---
-
 # Cómo crear un volcado &quot;borrado&quot; cuando lo solicita el agente de soporte
 
 

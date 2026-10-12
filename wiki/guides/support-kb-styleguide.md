@@ -1,10 +1,13 @@
 ---
-source-git-commit: c992521cae8c847adc0cc23d2323300e0ba69cdc
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '1039'
 ht-degree: 0%
-
 ---
+
 # Guía de estilo KB de soporte
 
 Siga estas recomendaciones de estilo y formato al contribuir al Centro de ayuda de Adobe Commerce.
@@ -30,12 +33,12 @@ Siga estas recomendaciones de estilo y formato al contribuir al Centro de ayuda 
 
 * Las listas con viñetas facilitan el análisis.
 
-   * Utilice listas con viñetas para métodos, enfoques, opciones y pasos de tareas no consecutivos.
-   * Utilice viñetas cortas para escribir texto, preferiblemente no más de dos frases.
-   * Reduzca al máximo el número de viñetas; lo ideal es disponer de siete o menos.
-   * Evite colocar una sugerencia o nota entre elementos con viñetas.
-   * Utilice una estructura gramatical paralela en las listas, pero rompa esta regla si resulta en un exceso de lenguaje verbal o sobre pilotes.
-   * Ponga en mayúscula la primera palabra de cada elemento en una lista con viñetas, incluso si es un fragmento.
+  * Utilice listas con viñetas para métodos, enfoques, opciones y pasos de tareas no consecutivos.
+  * Utilice viñetas cortas para escribir texto, preferiblemente no más de dos frases.
+  * Reduzca al máximo el número de viñetas; lo ideal es disponer de siete o menos.
+  * Evite colocar una sugerencia o nota entre elementos con viñetas.
+  * Utilice una estructura gramatical paralela en las listas, pero rompa esta regla si resulta en un exceso de lenguaje verbal o sobre pilotes.
+  * Ponga en mayúscula la primera palabra de cada elemento en una lista con viñetas, incluso si es un fragmento.
 
 * Haga que las listas sean paralelas. Por ejemplo, cada elemento debe ser un sustantivo o una frase que comience con un verbo.
 
@@ -71,10 +74,10 @@ Escriba un número como un número, como &quot;42&quot; u &quot;11&quot;, cuando
 
 * El número es mayor que 9 (números diez y superiores).
 * Está especificando el número:
-   * Dentro de una línea de código o fragmento de código.
-   * Dentro de una ruta de archivo o nombre de directorio.
-   * Al comunicar un intervalo, como &quot;entre 5 y 25&quot; o &quot;revise los números del 8 al 21&quot;.
-   * Los números han sido medidos o calculados como &quot;62 picas&quot; o &quot;830 MHz&quot;.
+  * Dentro de una línea de código o fragmento de código.
+  * Dentro de una ruta de archivo o nombre de directorio.
+  * Al comunicar un intervalo, como &quot;entre 5 y 25&quot; o &quot;revise los números del 8 al 21&quot;.
+  * Los números han sido medidos o calculados como &quot;62 picas&quot; o &quot;830 MHz&quot;.
 
 Utilice una mezcla de números y números al anotar una cantidad de cosas numeradas, como &quot;una colección de quince ejecuciones de 1000 ensayos&quot;.
 

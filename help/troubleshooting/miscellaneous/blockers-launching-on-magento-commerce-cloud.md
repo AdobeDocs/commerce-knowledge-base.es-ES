@@ -4,13 +4,31 @@ description: Este artículo proporciona una corrección para los bloqueadores qu
 exl-id: 3b2c331f-5d90-4051-ada1-4934538fce79
 feature: Cache, Cloud, Marketing Tools, Observability, Paas
 role: Developer
-source-git-commit: d653957b94127e8b1d37a66c069a618f34ac5af9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+  - id: 4239b8a6-e74f-567d-a7a5-b98b9ead0ea4
+    internal-label: Observability
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '618'
+source-wordcount: '800'
 ht-degree: 0%
-
 ---
-
 # Bloqueadores que se inician en Adobe Commerce en la infraestructura en la nube
 
 Este artículo proporciona una corrección para los bloqueadores que se inician en Adobe Commerce en la infraestructura en la nube, incluidos los problemas relacionados con la configuración de Fastly, los certificados SSL, las redirecciones 301 y el rendimiento de recursos estáticos.
@@ -67,7 +85,7 @@ http://www.mywebsite.com/old-category-page.html **>** http://www.mywebsite.com/n
 * [Redirecciones a través de Cloud Console](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/project/overview.html?lang=es) en nuestra guía del usuario.
 * [Reescrituras de URL](https://experienceleague.adobe.com/docs/commerce-admin/marketing/seo/url-rewrites/url-rewrite.html?lang=es) en nuestra guía del usuario.
 
-## &#x200B;4. Rendimiento de los activos
+## &#x200B;4. Rendimiento de recursos
 
 Problema: Los recursos estáticos se proporcionan lentamente, por lo que el sitio tiene un rendimiento deficiente (tiempo de carga prolongado, contenido multimedia no mostrado, etc.). Los recursos estáticos del sitio web son recursos CSS, imágenes, vídeos, documentos adjuntos y mucho más. La forma en que se organizan y atienden es un factor clave en el rendimiento del sitio.
 

@@ -4,20 +4,29 @@ description: Este artículo proporciona una solución para el problema en el que
 exl-id: e5f7f8c6-2dd3-44e3-8d19-f1f38d06dd6c
 feature: Compliance, Security
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+  - id: ba9e5be9-7de1-4f71-a5d2-baead0e425ee
+    internal-label: Security
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '306'
 ht-degree: 0%
-
 ---
-
 # El informe Herramienta de exploración de seguridad está en blanco
 
 Este artículo proporciona una solución para el problema en el que la Herramienta de exploración de seguridad muestra una página en blanco en lugar del informe real. Para resolverlo, es posible que tenga que añadir las direcciones IP utilizadas por la herramienta a la Lista de permitidos del cortafuegos.
 
 ## Productos y versiones afectados:
 
-* Adobe Commerce (todos los métodos de implementación) y Magento Open Source, Todas las versiones
+* Adobe Commerce (todos los métodos de implementación) y Magento Open Source, todas las versiones
 
 ## Problema
 

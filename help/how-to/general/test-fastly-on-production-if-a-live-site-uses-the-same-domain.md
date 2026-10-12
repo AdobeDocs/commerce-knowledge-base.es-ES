@@ -1,15 +1,22 @@
 ---
 title: Probar rápidamente en producción si un sitio activo utiliza el mismo dominio
-description: Si tiene un sitio activo en funcionamiento en su dominio de producción (&grave;example.com&grave;) y necesita probar su nueva tienda en Adobe Commerce en el entorno de producción de la infraestructura de nube con Fastly CDN habilitado, recomendamos utilizar el subdominio (como &grave;prod.example.com&grave;), después de agregarlo anteriormente a Fastly, para cualquier actividad de prueba previa al lanzamiento. Este artículo analiza los detalles y proporciona vínculos útiles a los recursos de documentación de Adobe Commerce relacionados.
+description: Si tiene un sitio activo en funcionamiento en su dominio de producción (`example.com`) y necesita probar su nueva tienda en Adobe Commerce en el entorno de producción de la infraestructura de nube con Fastly CDN habilitado, recomendamos utilizar el subdominio (como `prod.example.com`), después de agregarlo anteriormente a Fastly, para cualquier actividad de prueba previa al lanzamiento. Este artículo analiza los detalles y proporciona vínculos útiles a los recursos de documentación de Adobe Commerce relacionados.
 exl-id: bc9d11c8-ce47-461d-b5b8-c03494bc4ceb
 feature: Cache
-source-git-commit: 6651963ea5843283dee40a8ce58280baac79053a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '640'
 ht-degree: 0%
-
 ---
-
 # Probar rápidamente en producción si un sitio activo utiliza el mismo dominio
 
 Si tiene un sitio activo en ejecución en su dominio de producción (`example.com`) y necesita probar su nueva tienda en Adobe Commerce en el entorno de producción de la infraestructura de nube con Fastly CDN habilitado, recomendamos utilizar el subdominio (como `prod.example.com`), después de agregarlo anteriormente a Fastly, para cualquier actividad de prueba previa al lanzamiento. Este artículo analiza los detalles y proporciona vínculos útiles a los recursos de documentación de Adobe Commerce relacionados.
@@ -48,10 +55,10 @@ El uso del subdominio le permite realizar un &quot;inicio suave&quot; de su tien
 
 En nuestra base de conocimiento de soporte:
 
-* [Configurar rápidamente la configuración de DNS en los entornos de ensayo y producción](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=es)
-* [Bloqueadores potenciales para iniciarse en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=es)
+* [Configuración de DNS de Fastly en entornos de ensayo y producción](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/how-to/configure-fastly-dns-settings-on-staging-and-production-environments.html?lang=es)
+* [Posibles bloqueadores para iniciar en Adobe Commerce en la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/blockers-launching-on-magento-commerce-cloud.html?lang=es)
 
 En nuestra documentación para desarrolladores:
 
 * [Información general rápida](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/fastly.html?lang=es)
-* [Activar lista de comprobación: configuraciones de DNS para Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=es)
+* [Lista de comprobación de Go live: Configuraciones de DNS para Fastly](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/launch/checklist.html?lang=es)

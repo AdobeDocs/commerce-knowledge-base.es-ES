@@ -1,15 +1,24 @@
 ---
 title: Mostrar el número de informe de errores de Adobe Commerce en lugar del error Fastly 503
-description: '"De forma predeterminada, Fastly oculta todos los errores de Adobe Commerce detrás del error Servicio no disponible **503**. Para mostrar el número del informe de registro de errores de Adobe Commerce (para poder encontrarlo en los registros y ver los detalles del error), abra el sitio web omitiendo Fastly siguiendo estos pasos:'''
+description: 'De forma predeterminada, oculta rápidamente todos los errores de Adobe Commerce detrás del error **503 Servicio no disponible**. Para mostrar el número del informe de registro de errores de Adobe Commerce (para poder encontrarlo en los registros y ver los detalles del error), abra el sitio web omitiendo Fastly siguiendo estos pasos:'
 exl-id: c0a4a9f8-a674-4cef-8088-e844594e6076
 feature: Cache, Cloud
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '260'
+source-wordcount: '271'
 ht-degree: 0%
-
 ---
-
 # Mostrar el número de informe de errores de Adobe Commerce en lugar del error Fastly 503
 
 De manera predeterminada, oculta rápidamente todos los errores de Adobe Commerce detrás del error **503 Servicio no disponible**. Para mostrar el número del informe de registro de errores de Adobe Commerce (para poder encontrarlo en los registros y ver los detalles del error), abra el sitio web omitiendo Fastly siguiendo estos pasos:

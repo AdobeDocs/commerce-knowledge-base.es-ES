@@ -1,18 +1,22 @@
 ---
 title: Adobe Commerce * la implementación posterior se ha omitido porque la implementación ha fallado * error
-description: "Este artículo explica cómo investigar un error de implementación: *Post-deploy se omite porque la implementación falló*"
+description: 'Este artículo explica cómo investigar un error de implementación: *La implementación posterior a la implementación se omite porque la implementación falló*'
 exl-id: cd0a3015-b7b9-442e-8ac1-89447ef12cd7
 feature: Deploy
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '137'
+source-wordcount: '155'
 ht-degree: 0%
-
 ---
-
 # Se ha omitido la implementación posterior de Adobe Commerce *porque se produjo un error en la implementación*
 
-Este artículo explica cómo investigar un error de implementación: *Post-deploy se omite porque la implementación falló*, lo que ocurre durante la implementación en diferentes entornos, por ejemplo, al actualizar.
+Este artículo explica cómo investigar un error de implementación: *La implementación posterior se omite porque la implementación falló*, lo que ocurre durante la implementación en diferentes entornos, por ejemplo, al actualizar.
 
 ## Productos y versiones afectados
 

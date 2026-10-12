@@ -1,18 +1,22 @@
 ---
-title: Cambiar el ID de incremento de una entidad de la base de datos (pedido, factura, nota de abono, etc.) en un almacén concreto
-description: En este artículo se explica cómo cambiar el ID de incremento de una entidad de la base de datos de Adobe Commerce (base de datos) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce concreto mediante la instrucción SQL ALTER TABLE.
+title: Cambiar el ID de incremento de una entidad de BD (pedido, factura, nota de abono, etc.) en una tienda particular
+description: Este artículo explica cómo cambiar el ID de incremento de una entidad de la base de datos de Adobe Commerce (BD) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce particular utilizando la instrucción SQL ALTER TABLE.
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: e33d0bf6c857d0d54ec1373db79910d78296b054
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 591c578b-908e-5b79-a9d3-931dfe60c24c
+    internal-label: Invoices
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '617'
 ht-degree: 0%
-
 ---
+# Cambiar el ID de incremento de una entidad de BD (pedido, factura, nota de abono, etc.) en una tienda particular
 
-# Cambiar el ID de incremento de una entidad de la base de datos (pedido, factura, nota de abono, etc.) en un almacén concreto
-
-Este artículo explica cómo cambiar el id. de incremento de una entidad de la base de datos de Adobe Commerce (BD) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce concreto mediante la instrucción SQL `ALTER TABLE`.
+Este artículo explica cómo cambiar el ID de incremento de una entidad de la base de datos de Adobe Commerce (BD) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce determinado mediante la instrucción SQL `ALTER TABLE`.
 
 >[!NOTE]
 >

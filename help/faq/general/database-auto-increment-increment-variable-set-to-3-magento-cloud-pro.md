@@ -3,13 +3,17 @@ title: La variable de incremento auto_increment de la base de datos está config
 description: Este es el comportamiento esperado para las soluciones de arquitectura de planificación de Adobe Commerce en la infraestructura en la nube Pro debido a la arquitectura de 3 nodos y no se puede modificar.
 exl-id: ea478cbc-2dc2-41c9-8ea7-7e2f308e5948
 feature: Cloud
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '281'
+source-wordcount: '309'
 ht-degree: 0%
-
 ---
-
 # La variable de incremento auto_increment de la base de datos está configurada en &quot;3&quot; Adobe Commerce en nuestra arquitectura Cloud Pro
 
 Este es el comportamiento esperado para las soluciones de arquitectura de planificación de Adobe Commerce en la infraestructura en la nube Pro debido a la arquitectura de 3 nodos y no se puede modificar.
@@ -31,5 +35,5 @@ Por ejemplo, si el nodo principal seleccionado es el nodo 1 donde `auto_incremen
 
 Consulte en nuestra documentación para desarrolladores:
 
-* [Nube para Adobe Commerce > Arquitectura Pro > Copia de seguridad y recuperación ante desastres](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Nube para Adobe Commerce > Instalar requisitos previos: base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/overview)
+* [Cloud para Adobe Commerce > Arquitectura Pro > Backup y recuperación ante desastres](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Cloud for Adobe Commerce > Instalar requisitos previos: base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/overview)

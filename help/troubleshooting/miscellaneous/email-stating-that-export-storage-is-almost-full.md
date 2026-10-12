@@ -4,13 +4,24 @@ description: Este artículo proporciona una solución para el problema en el que
 feature: Cloud, Storage, Media
 role: Developer
 exl-id: 7dae295c-919c-46c5-bf63-7d3467c2e07f
-source-git-commit: 11cf981c7ebe813219a0cd311632eafce086bbf6
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: aa037b12-c774-5642-a947-459024feb1a2
+    internal-label: Storage
+  - id: 4ca54350-01cb-5b22-8966-5f2873dc6d90
+    internal-label: Media
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '451'
 ht-degree: 0%
-
 ---
-
 # Correo electrónico que indica que el almacenamiento de exportaciones está casi lleno
 
 Este artículo proporciona una solución para el problema en el que recibe un correo electrónico que indica que el almacenamiento de exportaciones está casi lleno.
@@ -25,7 +36,7 @@ Recibió un correo electrónico con el siguiente contenido, pero no pudo encontr
 
 *Nuestra supervisión ha detectado que el almacenamiento de &#39;exportaciones&#39; en su clúster XXX está lleno en torno al &#39;85%&#39;.*
 *Si es necesario, revise el uso, realice una limpieza o solicite una ampliación.*
-*Tenga en cuenta también que intentaremos aumentar el tamaño automáticamente cuando el almacenamiento alcance el nivel de umbral crítico.*
+*Además, tenga en cuenta que intentaremos realizar un aumento de tamaño automáticamente cuando el almacenamiento alcance el nivel de umbral crítico.*
 
 ## Causa
 
@@ -42,9 +53,9 @@ Para confirmar a qué se refiere la alerta, compruebe el uso de almacenamiento d
 
 * En este ejemplo, `/data/exports` es el sistema de archivos de exportaciones principal:
 
-   * 50 GB en total
-   * 38 GB utilizados
-   * 12 GB disponibles (77 % de utilización)
+  * 50 GB en total
+  * 38 GB utilizados
+  * 12 GB disponibles (77 % de utilización)
 
 * `/data/exports/shared` es un montaje `tmpfs` (en memoria) usado para datos compartidos y no contribuye de manera significativa a la presión del disco.
 

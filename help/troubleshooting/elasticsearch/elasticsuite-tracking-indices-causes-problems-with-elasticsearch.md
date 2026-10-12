@@ -2,7 +2,10 @@
 title: Los índices de seguimiento de ElasticSuite causan problemas con Elasticsearch
 description: Este artículo habla sobre el problema de los problemas de memoria de Elasticsearch causados por los índices de seguimiento producidos por el complemento ElasticSuite.
 exl-id: 67bfd06a-c801-4306-8510-a84a6fe5351a
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '482'
 ht-degree: 0%

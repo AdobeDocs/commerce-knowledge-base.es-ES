@@ -1,19 +1,32 @@
 ---
-title: Los perfiles de cliente no aparecen en el Experience Platform
-description: Este artículo proporciona pasos para la solución de problemas si los datos de perfil del cliente no aparecen en el Experience Platform al usar la extensión  [!DNL Data Connection] .
+title: Los perfiles de cliente no aparecen en Experience Platform
+description: Este artículo proporciona pasos para solucionar problemas si los datos de perfil del cliente no aparecen en Experience Platform al usar la extensión [!DNL Data Connection].
 feature: Personalization, Integration, Configuration
 role: Admin, Developer
 exl-id: 4f12b032-0bee-47da-927a-8d4c2d8b8276
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: f37757d8-3174-5335-b977-1161792f965d
+    internal-label: Personalization
+  - id: cc04bd17-78d5-5120-8c3d-1b8a57e49280
+    internal-label: Integration
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '556'
 ht-degree: 0%
-
 ---
+# Los perfiles de cliente no aparecen en Experience Platform
 
-# Los perfiles de cliente no aparecen en el Experience Platform
-
-Este artículo proporciona pasos de solución de problemas si los datos de perfil del cliente no aparecen en el Experience Platform al utilizar la extensión de conexión de datos.
+Este artículo proporciona pasos para la resolución de problemas si los datos de perfil del cliente no aparecen en Experience Platform al utilizar la extensión de conexión de datos.
 
 ## Productos y versiones afectados
 
@@ -21,11 +34,11 @@ Este artículo proporciona pasos de solución de problemas si los datos de perfi
 
 ## Problema
 
-Ha instalado y configurado la extensión [[!DNL Data Connection]](https://experienceleague.adobe.com/es/docs/commerce-merchant-services/data-connection/overview) y ha habilitado el envío de datos de perfil de cliente al Experience Platform, pero esos datos de perfil no aparecen en el Experience Platform.
+Ha instalado y configurado la extensión [[!DNL Data Connection]](https://experienceleague.adobe.com/es/docs/commerce-merchant-services/data-connection/overview) y ha habilitado el envío de datos de perfil de cliente a Experience Platform, pero esos datos de perfil no aparecen en Experience Platform.
 
 ## Solución
 
-Si la información del perfil del cliente no aparece en el Experience Platform, compruebe lo siguiente:
+Si la información de perfil del cliente no aparece en Experience Platform, compruebe lo siguiente:
 
 ### Confirme que está instalada la última versión de [!DNL Data Connection]
 
@@ -35,7 +48,7 @@ Consulte las [[!DNL Data Connection] notas de la versión de la extensión](http
 
 >[!NOTE]
 >
->La última versión de la extensión [!DNL Data Connection] incluye el módulo `customers-connector`, que es responsable de enviar datos de perfil al Experience Platform. El módulo `customers-connector` debe ser de la versión `1.2.0` o superior.
+>La última versión de la extensión [!DNL Data Connection] incluye el módulo `customers-connector`, que es responsable de enviar datos de perfil a Experience Platform. El módulo `customers-connector` debe ser de la versión `1.2.0` o superior.
 
 ### Confirme que el módulo customer-connector está configurado.
 
@@ -69,7 +82,7 @@ Ejecute los siguientes comandos para habilitar la generación de código y los e
    bin/magento config:set adobe_io_events/eventing/enabled 1
 ```
 
-### Confirme que ha habilitado la captura y el envío de datos de perfil al Experience Platform.
+### Confirme que ha habilitado la captura y el envío de datos de perfil a Experience Platform.
 
 En el Administrador de Commerce, asegúrese de que están configurados los siguientes campos:
 
@@ -97,7 +110,7 @@ En el Administrador de Commerce, asegúrese de que están configurados los sigui
 ### Tabla SaaS de datos de evento de consulta
 
 Conecte y ejecute la siguiente consulta [!DNL SQL] para comprobar que los registros de perfil del cliente aparecen en la
-`event_data_saas` y que no hay errores:
+`event_data_saas` tabla y que no hay errores:
 
 ```sql
 Copy code

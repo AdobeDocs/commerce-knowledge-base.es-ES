@@ -1,16 +1,23 @@
 ---
 title: El trabajo [!DNL Cron] se ha quedado atascado en el estado **en ejecución**
-description: Este artículo proporciona soluciones para los casos en los que los trabajos de Adobe Commerce [!DNL cron] no terminan de ejecutarse y persisten en estado de "ejecución", lo que impide que se ejecuten otros  [!DNL cron] trabajos. Esto puede ocurrir por varios motivos, como problemas de red, bloqueos de aplicaciones o problemas de reimplementación.
+description: Este artículo proporciona soluciones cuando los trabajos de Adobe Commerce [!DNL cron] no terminan de ejecutarse y persisten en estado de "ejecución", lo que impide que se ejecuten otros trabajos de [!DNL cron]. Esto puede ocurrir por varios motivos, como problemas de red, bloqueos de aplicaciones o problemas de reimplementación.
 exl-id: 11e01a2b-2fcf-48c2-871c-08f29cd76250
 feature: Configuration
 role: Developer
-source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '429'
 ht-degree: 0%
-
 ---
-
 # El trabajo [!DNL Cron] se ha quedado atascado en el estado &quot;en ejecución&quot;
 
 Este artículo proporciona soluciones cuando los trabajos de Adobe Commerce [!DNL cron] no terminan de ejecutarse y persisten en estado de &quot;ejecución&quot;, lo que impide que se ejecuten otros trabajos de [!DNL cron]. Esto puede ocurrir por varios motivos, como problemas de red, bloqueos de aplicaciones o problemas de reimplementación.
@@ -72,8 +79,8 @@ Para resolver este problema, debe restablecer los trabajos de [!DNL cron] median
    bxc2qly+ 25896 29.0  0.6 475320 109876 ?       R    20:51   0:00 /usr/bin/php7.1-zts /app/bxc2qlykqhbqe/bin/magento cron:run --group=ddg_automation --bootstrap=standaloneProcessStarted=1
    ```
 
-1. Si ve [!DNL cron] trabajos de larga duración que podrían bloquear el proceso de implementación, puede terminar el proceso con el comando `kill`. Puede identificar la **ID de proceso** (se encontró la columna `PID`) y, a continuación, colocar esa `PID` en el comando para matar el proceso.
-El comando **kill process** es:
+1. Si ve [!DNL cron] trabajos de larga duración que podrían bloquear el proceso de implementación, puede terminar el proceso con el comando `kill`. Puede identificar el **ID de proceso** (se encontró la columna `PID`) y, a continuación, colocar ese `PID` en el comando para matar el proceso.
+El comando **kill process** está:
 
    `kill -9 <PID>`
 

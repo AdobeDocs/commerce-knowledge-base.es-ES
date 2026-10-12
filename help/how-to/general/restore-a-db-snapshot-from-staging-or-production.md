@@ -2,13 +2,14 @@
 title: Restaurar una instantánea de base de datos desde Ensayo o Producción
 description: Este artículo muestra cómo restaurar una instantánea de la base de datos desde Ensayo o Producción en Adobe Commerce en la infraestructura en la nube.
 exl-id: 1026a1c9-0ca0-4823-8c07-ec4ff532606a
-source-git-commit: 62815213ce54f72d27812b9c2d7b3997f2e88897
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '548'
 ht-degree: 0%
-
 ---
-
 # Restaurar una instantánea de base de datos desde [!DNL Staging] o [!DNL Production]
 
 Este artículo muestra cómo restaurar una base de datos [!DNL snapshot] desde [!DNL Staging] o [!DNL Production] en la infraestructura de Adobe Commerce en Cloud Pro.
@@ -17,7 +18,7 @@ Este artículo muestra cómo restaurar una base de datos [!DNL snapshot] desde [
 >[!NOTE]
 >
 >Estos métodos restaurarán la **instantánea completa**.
->&#x200B;>Si necesita restaurar la instantánea **parcialmente** (por ejemplo, restaurando únicamente las tablas de catálogo y dejando las tablas de pedidos intactas), debe consultar con su desarrollador o DBA.
+>Si necesita restaurar la instantánea **parcialmente** (por ejemplo, restaurando únicamente las tablas de catálogo y dejando las tablas de pedidos intactas), debe consultar con su desarrollador o DBA.
 
 
 ## Productos y versiones afectados
@@ -45,7 +46,7 @@ Estos son los pasos:
 
 1. Usando [!DNL SFTP], vaya a la ubicación donde se ha colocado la base de datos [!DNL snapshot], normalmente en el primer servidor/nodo de su [!DNL cluster] (por ejemplo: `/mnt/recovery-<recovery_id>`).
    > **Proyectos basados en Azure:**\
-   > Si el proyecto está basado en Azure (es decir, la dirección URL del proyecto es `https://us-a1.magento.cloud/projects/<cluster_id>`), la instantánea se colocará en:
+   > Si el proyecto se basa en Azure (es decir, la dirección URL del proyecto es `https://us-a1.magento.cloud/projects/<cluster_id>`), la instantánea se colocará en:
    > * `/mnt/shared/<cluster ID>/all-databases.sql.gz`
    > * `/mnt/shared/<cluster ID_stg>/all-databases.sql.gz`
 
@@ -180,5 +181,5 @@ Estos son los pasos:
 En nuestra documentación para desarrolladores:
 
 * [Importar código: importe la base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/deploy/staging-production)
-* [[!DNL Snapshots] y [!DNL backup] administración: [!DNL Dump] su base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
-* [Copia de seguridad (instantánea) en la nube: FAQ](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)
+* [[!DNL Snapshots] y  [!DNL backup] administración: [!DNL Dump] su base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots)
+* [Copia de seguridad (instantánea) en la nube: preguntas frecuentes](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/faq/backup-snapshot-on-cloud-faq)

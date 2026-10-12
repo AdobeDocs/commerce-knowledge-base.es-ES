@@ -4,13 +4,22 @@ description: Este artículo proporciona una solución para cuando tenga problema
 exl-id: 676b32d2-8197-4c60-a1b1-3c51b01dd3a3
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 0ad52eceb776b71604c4f467a70c13191bb9a1eb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '276'
 ht-degree: 0%
-
 ---
-
 # No se puede iniciar sesión en la asistencia de Adobe Commerce o en la cuenta de la nube
 
 Este artículo proporciona una solución para cuando tenga problemas para iniciar sesión en la asistencia de Adobe Commerce o en su proyecto de nube.
@@ -35,7 +44,7 @@ Inicio de sesión correcto.
 
 <u>Resultado real</u>:
 
-Se le redirige a una página para iniciar sesión con una cuenta Adobe y las credenciales no funcionan.
+Se le redirige a una página para iniciar sesión con una cuenta de Adobe y las credenciales no funcionan.
 
 ![adobe-login-two](assets/adobe-login-two.png)
 
@@ -48,8 +57,8 @@ Como parte de nuestro proceso de integración de Adobe Commerce con otras soluci
 
 Puede iniciar sesión en la cuenta con:
 
-- Cuenta personal/corporativa de Adobe existente.
-- Si no tiene una cuenta Adobe, cree una con la misma dirección de correo electrónico.
+- Una cuenta corporativa/personal de Adobe existente.
+- Si no tiene una cuenta de Adobe, cree una con la misma dirección de correo electrónico.
 
 Para ver los pasos, consulte [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html?lang=es) en Adobe Experience League.
 

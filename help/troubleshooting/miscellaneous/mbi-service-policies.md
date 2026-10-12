@@ -4,13 +4,22 @@ description: En Commerce Intelligence, nuestro objetivo es proporcionar un servi
 exl-id: 2e1ef4b3-a77c-4281-8337-fb90574a44f7
 feature: Commerce Intelligence, User Account
 role: Developer
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3cd14413-6539-5c64-b063-fdcabf03abff
+    internal-label: Commerce Intelligence
+  - id: 4560f5f5-d00c-5b5d-b61b-369d85ef7a26
+    internal-label: User Account
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '424'
+source-wordcount: '539'
 ht-degree: 0%
-
 ---
-
 # Políticas de servicio de Adobe Commerce Intelligence
 
 En Commerce Intelligence, nuestro objetivo es proporcionar un servicio al cliente excelente, proteger sus datos y darle el conocimiento que necesita para tomar decisiones basadas en datos.
@@ -34,9 +43,9 @@ Debido a que queremos garantizar que solo las personas autorizadas por usted pue
 
 Aunque no podemos realizar estas acciones en su nombre, estamos más que dispuestos a guiarle a través de ellas:
 
-* [Creando y modificando información de cuenta de usuario](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=es)
+* [Crear y modificar información de cuenta de usuario](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=es)
 * Introducción o modificación de información de facturación
-* [Compartir tableros con otros usuarios](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/dashboards/share-dashboard-with-users.html?lang=es)
+* [Uso compartido de paneles con otros usuarios](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/dashboards/share-dashboard-with-users.html?lang=es)
 * Discutir, crear o modificar conexiones de datos y detalles del servidor
 * Realización de funciones de nivel de administrador para usuarios estándar o de solo lectura (p. ej. [agregar/editar métricas](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/build/reports/ess-manage-data-metrics.html?lang=es))
 * Revelar detalles de la cuenta (por ejemplo, informes o información de facturación) en llamadas telefónicas entrantes. Vamos a seguir con una dirección de correo electrónico registrada.
