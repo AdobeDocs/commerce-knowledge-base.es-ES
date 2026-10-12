@@ -35,7 +35,7 @@ Este artículo proporciona un parche para el problema conocido de Adobe Commerce
 
 <u>Pasos a seguir:</u>
 
-En Commerce Admin, vaya a **Ventas** > **Terminal virtual de Braintree** . ** **
+En Commerce Admin, vaya a **Ventas** > **Terminal virtual de Braintree** . **&#x200B; **
 
 <u>Resultado esperado:</u>
 
@@ -49,7 +49,7 @@ La interfaz de usuario de la página **Terminal virtual de Braintree** está da�
 
 <u>Pasos a seguir:</u>
 
-En Commerce Admin, vaya a **Ventas** > **Terminal virtual de Braintree** . ** **
+En Commerce Admin, vaya a **Ventas** > **Terminal virtual de Braintree** . **&#x200B; **
 
 <u>Resultado esperado:</u>
 
