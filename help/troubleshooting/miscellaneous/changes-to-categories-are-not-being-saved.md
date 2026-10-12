@@ -4,13 +4,23 @@ description: Este artículo proporciona una corrección para cuando se actualiza
 exl-id: d951205c-add9-478c-9c7d-2ba975d53b14
 feature: Categories
 role: Developer
-source-git-commit: 1fa5ba91a788351c7a7ce8bc0e826f05c5d98de5
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: c18ed297-2187-4aec-affb-9d9654eca6fc
+    internal-label: Catalog management
+subfeature_v2:
+  - id: e91a50b1-0b31-436e-9033-00e4776e94cb
+    internal-label: Categories
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '735'
+source-wordcount: '760'
 ht-degree: 0%
-
 ---
-
 # Los cambios en las categorías no se guardan
 
 Este artículo proporciona una corrección para cuando se actualizan categorías de productos a través del administrador de Commerce, los cambios no se muestran en el administrador y la tienda. El problema se debe a los datos dañados de la tabla `catalog_category_entity`. Para resolver el problema, corrija o elimine los registros de actualización de categoría problemáticos de la tabla. Después, debe poder actualizar las categorías de productos mediante el administrador.
@@ -40,7 +50,7 @@ Detalles:
 
 ### ¿Cómo aparece la segunda entrada de la base de datos (y todas las siguientes) en la base de datos para una misma categoría?
 
-El segundo registro de la base de datos (y, posiblemente, los siguientes) para la categoría afectada significa que ha habido actualizaciones de categoría programadas mediante el módulo Magento\_Ensayo. El módulo crea un registro adicional para una categoría en `catalog_category_entity` y ese es el comportamiento esperado de la aplicación; el problema es que los registros tienen los mismos valores para la columna `created_in`.
+El segundo registro de la base de datos (y, posiblemente, los siguientes) para la categoría afectada significa que ha habido actualizaciones de categoría programadas mediante el módulo Magento\_Staging. El módulo crea un registro adicional para una categoría en `catalog_category_entity` y ese es el comportamiento esperado de la aplicación; el problema es que los registros tienen los mismos valores para la columna `created_in`.
 
 ### ¿Cómo aparecen los mismos valores?
 
@@ -92,4 +102,4 @@ Siga estos pasos:
 
 ## Lectura relacionada
 
-[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+[Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

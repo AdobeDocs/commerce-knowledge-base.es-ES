@@ -4,13 +4,29 @@ description: Este artículo proporciona soluciones para el bloqueo de cuentas de
 exl-id: 85968257-ba4b-4cfb-a4fa-497b4c5b5aea
 feature: Cache, Commerce Intelligence, Console
 role: Developer
-source-git-commit: 1d2e0c1b4a8e3d79a362500ee3ec7bde84a6ce0d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 3cd14413-6539-5c64-b063-fdcabf03abff
+    internal-label: Commerce Intelligence
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '639'
 ht-degree: 0%
-
 ---
-
 # Solución de problemas de bloqueo de cuenta Adobe Commerce Intelligence
 
 <!--
@@ -70,6 +86,6 @@ Envíe un ticket a nuestro equipo de soporte técnico con **capturas de pantalla
 
 ## Temas relacionados en nuestra base de conocimiento de soporte:
 
-* [Adición de un nuevo usuario y configuración de permisos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html?lang=es)
-* [¿Cómo actualizo mi dirección de correo electrónico o contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html?lang=es)
-* [¿Cómo puedo restablecer mi contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html?lang=es)
+* [Adición de un nuevo usuario y configuración de permisos](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/user-management.html)
+* [¿Cómo actualizo mi dirección de correo electrónico o contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/create-user.html)
+* [¿Cómo puedo restablecer mi contraseña?](https://experienceleague.adobe.com/docs/commerce-business-intelligence/mbi/administrator/user-mgmt/reset-password.html)

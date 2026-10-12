@@ -4,13 +4,20 @@ description: Este artículo proporciona soluciones para los casos en los que no 
 exl-id: e2a00371-9032-4e81-b60e-5456ba35be94
 feature: Services
 role: Developer
-source-git-commit: 2fa4ab1fcba962033a6dd6a448a6cec49b5e8bf2
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '577'
+source-wordcount: '658'
 ht-degree: 0%
-
 ---
-
 # Valor numérico de la base de datos Adobe Commerce fuera del intervalo, `INT` a `BIGINT`
 
 >[!WARNING]
@@ -57,7 +64,7 @@ Si `max(value_id)` es menor que `max int(11) [ 4294967296 ]` y `[ AUTO_INCREMENT
 
 >[!WARNING]
 >
->Realice una copia de seguridad de la base de datos antes de modificar las tablas. Además, ponga el sitio en [modo de mantenimiento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html?lang=es#maintenance-mode). Además, también se recomienda ejecutar el comando optimizado [!DNL MySQL] en las tablas de base de datos (solo en las tablas en las que se han realizado cambios) después de realizar los cambios.
+>Realice una copia de seguridad de la base de datos antes de modificar las tablas. Además, ponga el sitio en [modo de mantenimiento](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/setup/application-modes.html#maintenance-mode). Además, también se recomienda ejecutar el comando optimizado [!DNL MySQL] en las tablas de base de datos (solo en las tablas en las que se han realizado cambios) después de realizar los cambios.
 
 >[!NOTE]
 >
@@ -112,7 +119,7 @@ Para ello:
 
 ## Lectura relacionada
 
-* [Directrices generales [!DNL MySQL] 2&rbrace; en la Guía de instalación de Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html?lang=es)
-* [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html?lang=es) en nuestra base de conocimiento de soporte
-* [Problemas más comunes de las bases de datos en Adobe Commerce sobre la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html?lang=es) en nuestra base de conocimiento de asistencia
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [Directrices generales [!DNL MySQL] 2} en la Guía de instalación de Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql.html)
+* [Prácticas recomendadas de bases de datos para Adobe Commerce en infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/database-best-practices-for-magento-commerce-cloud.html) en nuestra base de conocimiento de soporte
+* [Problemas más comunes de las bases de datos en Adobe Commerce sobre la infraestructura en la nube](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/best-practices/database/most-common-database-issues-in-magento-commerce-cloud.html) en nuestra base de conocimiento de asistencia
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

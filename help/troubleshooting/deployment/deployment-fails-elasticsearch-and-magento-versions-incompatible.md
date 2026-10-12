@@ -1,16 +1,30 @@
 ---
-title: "La implementación falla: Versiones del Elasticsearch y de Adobe Commerce incompatibles"
-description: Consulte [Configuración del servicio de Elasticsearch &gt; compatibilidad con software de Elasticsearch](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) en nuestra documentación para desarrolladores.
+title: 'Error de implementación: versiones de Elasticsearch y Adobe Commerce incompatibles'
+description: Consulte [Configuración de la compatibilidad del software de Elasticsearch Service > Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) en nuestra documentación para desarrolladores.
 exl-id: 7021df62-627c-45cf-a2f2-07c1a29ba1b2
 feature: Deploy, Search, Services
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+  - id: dac87252-6066-4d6e-a9d2-f6d84c323de7
+    internal-label: Configuration
+subfeature_v2:
+  - id: a1d22079-48b9-5e69-9ee6-eb236068ef34
+    internal-label: Search
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '50'
+source-wordcount: '71'
 ht-degree: 0%
-
 ---
+# Error de implementación: versiones de Elasticsearch y Adobe Commerce incompatibles
 
-# Error de implementación: versiones incompatibles de Elasticsearch y Adobe Commerce
-
-Consulte [Configurar el servicio de Elasticsearch > Compatibilidad con software de Elasticsearch](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) en nuestra documentación para desarrolladores.
+Consulte [Configurar el servicio de Elasticsearch > Compatibilidad con software de Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) en nuestra documentación para desarrolladores.

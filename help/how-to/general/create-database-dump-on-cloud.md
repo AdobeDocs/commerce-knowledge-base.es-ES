@@ -3,13 +3,17 @@ title: Crear volcado de base de datos en Adobe Commerce en la infraestructura en
 description: Este artículo analiza las posibles (y recomendadas) formas de crear un volcado de la base de datos (DB) en Adobe Commerce en la infraestructura en la nube.
 exl-id: 4a2e54ac-8d65-4e51-8337-08f9748dc6c0
 feature: Cloud
-source-git-commit: 96b145a1f76c296907da96fd97c7a8f7778463f8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '453'
 ht-degree: 0%
-
 ---
-
 # Crear volcado de base de datos en Adobe Commerce en la infraestructura en la nube
 
 Este artículo analiza las posibles (y recomendadas) formas de crear un volcado de la base de datos (DB) en Adobe Commerce en la infraestructura en la nube.
@@ -18,7 +22,7 @@ Solo necesita utilizar una variante (opción) para volcar la base de datos. Esta
 
 ## Requisito previo: SSH para su entorno
 
-Para volcar la base de datos en Adobe Commerce en la infraestructura en la nube con cualquier variante de la que se habla en este artículo, primero debe [SSH en su entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=es).
+Para volcar la base de datos en Adobe Commerce en la infraestructura en la nube con cualquier variante de la que se habla en este artículo, primero debe [SSH en su entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 
 >[!WARNING]
 >
@@ -26,7 +30,7 @@ Para volcar la base de datos en Adobe Commerce en la infraestructura en la nube 
 
 ## Opción 1: db-dump (**ece-tools; recomendado**)
 
-Puede volcar la base de datos con el comando [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html?lang=es):
+Puede volcar la base de datos con el comando [ECE-Tools](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/ece-tools/update-package.html):
 
 ```php
 vendor/bin/ece-tools db-dump
@@ -34,7 +38,7 @@ vendor/bin/ece-tools db-dump
 
 Esta es la opción recomendada y más segura.
 
-Consulte [Volcar la base de datos (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html?lang=es) en nuestra Guía de infraestructura de Commerce en la nube.
+Consulte [Volcar la base de datos (ECE-Tools)](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/storage/database-dump.html) en nuestra Guía de infraestructura de Commerce en la nube.
 
 ## Opción 2: mariadb-dump (o mysqldump para versiones anteriores)
 
@@ -73,4 +77,4 @@ echo $MAGENTO_CLOUD_RELATIONSHIPS |base64 --d |json_pp
 **Documentación relacionada:**
 
 * [mysqldump: un programa de copia de seguridad de la base de datos](https://dev.mysql.com/doc/refman/8.0/en/mysqldump.html) en la documentación oficial de MySQL.
-* [Variables específicas de la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html?lang=es) (consulte `MAGENTO_CLOUD_RELATIONSHIPS`) en nuestra Guía de infraestructura de Commerce en la nube.
+* [Variables específicas de la nube](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-cloud.html) (consulte `MAGENTO_CLOUD_RELATIONSHIPS`) en nuestra Guía de infraestructura de Commerce en la nube.

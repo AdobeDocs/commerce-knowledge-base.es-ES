@@ -4,13 +4,31 @@ description: Este artículo proporciona una corrección del problema que se prod
 exl-id: 8e3bb65c-ea75-4af4-ad4b-4d94ab219bbb
 feature: Cache, Data Import/Export, Products, Variables
 role: Developer
-source-git-commit: be0c72a1759ba172666c7c9409c65a1a388e3f11
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 601e4abe-d9bf-58de-a779-32ed6794dcbe
+    internal-label: Data Import/Export
+  - id: 4067ab89-2e97-5de1-8d98-de8318461a8d
+    internal-label: Products
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+  - id: 8d0b446f-5b16-5a10-b272-01143504a11c
+    internal-label: System
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+  - id: 2191e157-828a-5358-ad69-ebcaa8402915
+    internal-label: Variables
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '709'
 ht-degree: 0%
-
 ---
-
 # El archivo .csv de productos exportados no aparece
 
 Este artículo proporciona una solución al problema de que la exportación del tipo de entidad deseado a un archivo .csv en el administrador de Commerce hace que el archivo no aparezca.
@@ -73,7 +91,7 @@ Para agregar el proceso como un trabajo cron de forma opcional, debe agregar la 
 
 #### Agregar proceso como trabajo cron (opcional)
 
-1. Asegúrese de que su cron esté configurado. Consulte [Configurar trabajos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=es) para obtener más información.
+1. Asegúrese de que su cron esté configurado. Consulte [Configurar trabajos cron](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html) para obtener más información.
 1. Ejecute el siguiente comando para devolver una lista de consumidores de cola de mensajes: `./bin/magento queue:consumers:list`
 1. Agregue lo siguiente al archivo `.magento.env.yaml` en el directorio raíz de la aplicación e incluya a los consumidores que desee agregar. Por ejemplo, este es el consumidor necesario para el procesamiento de exportación:
 
@@ -87,17 +105,17 @@ Para agregar el proceso como un trabajo cron de forma opcional, debe agregar la 
                    - exportProcessor
    ```
 
-   A continuación, inserte este archivo actualizado y vuelva a implementar su entorno. También haga referencia a [Agregar trabajos cron personalizados a su proyecto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=es#add-custom-cron-jobs-to-your-project) en nuestra documentación para desarrolladores.
+   A continuación, inserte este archivo actualizado y vuelva a implementar su entorno. También haga referencia a [Agregar trabajos cron personalizados a su proyecto](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html#add-custom-cron-jobs-to-your-project) en nuestra documentación para desarrolladores.
 
 >[!NOTE]
 >
->Si no encuentra el archivo `.magento.env.yaml` para su entorno y cree que se eliminó, debe crear un nuevo `.magento.env.yaml`. Podría estar vacío inicialmente, puede agregar información allí según sea necesario. Consulte los siguientes artículos: [Configurar variables de entorno para la implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=es) y [Variables de entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html?lang=es) en nuestra documentación para desarrolladores.
+>Si no encuentra el archivo `.magento.env.yaml` para su entorno y cree que se eliminó, debe crear un nuevo `.magento.env.yaml`. Podría estar vacío inicialmente, puede agregar información allí según sea necesario. Consulte los siguientes artículos: [Configurar variables de entorno para la implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) y [Variables de entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/stage/variables-intro.html) en nuestra documentación para desarrolladores.
 
 >[!TIP]
 >
->[Los archivos YAML](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=es) distinguen entre mayúsculas y minúsculas y no permiten tabulaciones. Tenga cuidado de utilizar una sangría uniforme en todo el archivo .magento.env.yaml o es posible que la configuración no funcione según lo esperado. Los ejemplos de la documentación y del archivo de muestra utilizan sangría de dos espacios. Utilice el comando validate de ece-tools para comprobar la configuración.
+>[Los archivos YAML](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html) distinguen entre mayúsculas y minúsculas y no permiten tabulaciones. Tenga cuidado de utilizar una sangría uniforme en todo el archivo .magento.env.yaml o es posible que la configuración no funcione según lo esperado. Los ejemplos de la documentación y del archivo de muestra utilizan sangría de dos espacios. Utilice el comando validate de ece-tools para comprobar la configuración.
 
 >[!NOTE]
 >
->En proyectos Pro de Adobe Commerce en la infraestructura en la nube, la función [auto-crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=es#crontab) debe estar habilitada en tu Adobe Commerce en la infraestructura en la nube para que puedas agregar trabajos cron personalizados a entornos de Ensayo y Producción usando `.magento.app.yaml`. Si esta característica no está habilitada, [cree un vale de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para que se agregue el trabajo por usted.
+>En proyectos Pro de Adobe Commerce en la infraestructura en la nube, la función [auto-crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=en#crontab) debe estar habilitada en tu Adobe Commerce en la infraestructura en la nube para que puedas agregar trabajos cron personalizados a entornos de Ensayo y Producción usando `.magento.app.yaml`. Si esta característica no está habilitada, [cree un vale de soporte técnico](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para que se agregue el trabajo por usted.
 

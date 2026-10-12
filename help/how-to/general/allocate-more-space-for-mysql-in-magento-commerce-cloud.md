@@ -3,19 +3,23 @@ title: Asigna más espacio para MySQL en Adobe Commerce en la nube
 description: Este artículo contiene instrucciones sobre cómo asignar más espacio para MySQL en Adobe Commerce en la infraestructura en la nube.
 exl-id: 98501aa0-5ec7-4ea1-8856-13d171ad0be9
 feature: Cloud
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '284'
+source-wordcount: '322'
 ht-degree: 0%
-
 ---
-
 # Asigna más espacio para MySQL en Adobe Commerce en la nube
 
 
 ## Asignación de espacio en el plan inicial y la integración del plan profesional
 
-Para todos los entornos de plan inicial y el plan Pro [entorno de integración](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27242), puede asignar más espacio para MySQL en el archivo `.magento/services.yaml`, aumentando el parámetro `mysql: disk:`. Por ejemplo:
+Para todos los entornos de plan inicial y el plan Pro [entorno de integración](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242), puede asignar más espacio para MySQL en el archivo `.magento/services.yaml`, aumentando el parámetro `mysql: disk:`. Por ejemplo:
 
 ```yaml
 mysql:
@@ -23,7 +27,7 @@ mysql:
     disk: 2048
 ```
 
-Consulte el artículo [Configurar el servicio MySQL](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/mysql) como referencia.
+Consulte el artículo [Configurar el servicio MySQL](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/mysql) como referencia.
 
 Una vez que cambie el archivo `.magento/services.yaml`, debe confirmar e insertar los cambios para que se apliquen. La notificación push almacenará en déclencheur el proceso de implementación.
 
@@ -33,7 +37,7 @@ Una vez que cambie el archivo `.magento/services.yaml`, debe confirmar e inserta
 
 ## Asignar espacio en Ensayo o Producción de plan profesional
 
-Para realizar estos cambios en el entorno de ensayo o producción del plan Pro, debe crear un [vale de soporte](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Al enviar un vale de soporte técnico para aumentar el almacenamiento, el servicio de soporte técnico necesitará saber a qué partición y en qué cantidad se debe aplicar el almacenamiento (`/mysql` o `/exports`). Una solicitud de aumento de almacenamiento requiere la aprobación de su equipo de cuenta de Adobe, que revisará la cantidad de almacenamiento autorizada (según el formulario de pedido) antes de aprobarla.
+Para realizar estos cambios en el entorno de ensayo o producción del plan Pro, debe crear un [vale de soporte](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide). Al enviar un vale de soporte técnico para aumentar el almacenamiento, el servicio de soporte técnico necesitará saber a qué partición y en qué cantidad se debe aplicar el almacenamiento (`/mysql` o `/exports`). Una solicitud de aumento de almacenamiento requiere la aprobación de su equipo de cuenta de Adobe, que revisará la cantidad de almacenamiento autorizada (según el formulario de pedido) antes de aprobarla.
 
 ## Reducir el espacio asignado no disponible (plan Pro y Starter)
 

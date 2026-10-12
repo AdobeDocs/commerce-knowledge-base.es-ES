@@ -4,13 +4,20 @@ description: Este artículo habla sobre un par de problemas comunes de MySQL (co
 exl-id: cae02e4f-d8cb-4074-abac-24ead22bdc07
 feature: Services
 role: Developer
-source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: da76473c-f99b-5ad0-9b14-896aed473f8a
+    internal-label: Services
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '547'
 ht-degree: 0%
-
 ---
-
 # Comprobación de consultas y procesos lentos en MySQL
 
 Este artículo habla sobre un par de problemas comunes de MySQL (consultas lentas, procesos que tardan demasiado) que pueden afectar negativamente al sitio de un comerciante y las soluciones que indican.
@@ -44,7 +51,7 @@ Si ha sufrido una interrupción que podría deberse a una base de datos sobrecar
 Si el proyecto de Adobe Commerce está implementado en una arquitectura Pro, puede usar [!DNL Percona Toolkit] para analizar consultas.
 
 1. Ejecute el comando `pt-query-digest --type=slowlog` con los registros de consulta lentos de MySQL.
-   * Para encontrar la ubicación de los registros de consultas lentas, consulte **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=es)** en nuestra documentación para desarrolladores.
+   * Para encontrar la ubicación de los registros de consultas lentas, consulte **[[!UICONTROL Log locations > Service Logs]](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)** en nuestra documentación para desarrolladores.
    * Consulte la documentación de [[!DNL Percona Toolkit] > pt-query-digest](https://www.percona.com/doc/percona-toolkit/LATEST/pt-query-digest.html#pt-query-digest).
 1. En función de los problemas encontrados, realice pasos para corregir la consulta, de modo que se ejecute más rápidamente.
 
@@ -81,4 +88,4 @@ Esto ayudará a identificar si el servidor MySQL está activo y si no hay consul
 * [Sintaxis de MySQL Show Processlist](https://dev.mysql.com/doc/refman/8.0/en/show-processlist.html) en dev.mysql.com.
 * [Sintaxis de MySQL Kill](https://dev.mysql.com/doc/refman/8.0/en/kill.html) en dev.mysql.com.
 * [Seguridad, rendimiento y administración de datos](https://developer.adobe.com/commerce/php/best-practices/extensions/security/) en nuestra documentación para desarrolladores.
-* [Ayuda de MySQL](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) en nuestra documentación para desarrolladores.
+* [Ayuda de MySQL](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql) en nuestra documentación para desarrolladores.

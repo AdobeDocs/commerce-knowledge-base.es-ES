@@ -1,14 +1,15 @@
 ---
-title: Adobe Commerce [!DNL crons] deshabilitado sin intervención
-description: Utilice este artículo para solucionar el problema en el cual  [!DNL crons] se deshabilitan sin intervención.
+title: Adobe Commerce [!DNL crons] se deshabilitó sin intervención
+description: Utilice este artículo para solucionar el problema en el cual [!DNL crons] se encuentran deshabilitadas sin intervención.
 exl-id: 5172d2ae-53ad-4db6-ae00-7b27c96911e9
-source-git-commit: 6bff1d7a0578ceb8ea17dff347b1bcd4f0068e7a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '190'
+source-wordcount: '192'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce crons desactivado sin intervención
 
 Este artículo proporciona una solución para los casos en los que [!DNL crons] está deshabilitado sin intervención.
@@ -39,10 +40,10 @@ Problema con la configuración de [!DNL OPcache].
 
 ## Solución
 
-Actualice [!DNL ECE Tools] a la última versión [2002.1.13](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113).
+Actualice [!DNL ECE Tools] a la última versión [2002.1.13](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package#v2002113).
 
 ## Lectura relacionada
 
-* [Rendimiento lento, lento y de larga duración [!DNL crons]](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-42802) en nuestra base de conocimiento de soporte.
-* [[!DNL Cron] las tareas bloquean tareas de otros grupos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=es) en nuestra base de conocimiento de soporte.
-* [[!DNL Cron] el trabajo está atascado en estado de &quot;ejecución&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=es) en nuestra base de conocimiento de soporte.
+* [Rendimiento lento, lento y de larga duración [!DNL crons]](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-42802) en nuestra base de conocimiento de soporte.
+* [[!DNL Cron] las tareas bloquean tareas de otros grupos](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-tasks-lock-tasks-from-other-groups.html?lang=en) en nuestra base de conocimiento de soporte.
+* [[!DNL Cron] el trabajo está atascado en estado de &quot;ejecución&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=en) en nuestra base de conocimiento de soporte.

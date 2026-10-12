@@ -3,7 +3,10 @@ title: Vea el nivel de vCPU del entorno en su clúster en Adobe Commerce
 promoted: true
 description: En este artículo se explica cómo comprobar la asignación del nivel de vCPU mediante la pestaña Información de New Relic en Observación para Adobe Commerce. Observación para Adobe Commerce es un nerdlet de New Relic que muestra el estado del sitio de Adobe Commerce, las vistas de tiempo actual y anterior.
 exl-id: a0332e7e-d38d-47d3-b3da-293902f45edc
-source-git-commit: ffb7b597d38eaed4b66e23ea533c275746e7181a
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '367'
 ht-degree: 0%

@@ -4,13 +4,23 @@ description: Este artículo enumera algunos ejemplos rápidos comunes de errores
 exl-id: 3e42d38f-97bc-4d38-8e36-23b1453f81d9
 feature: Support
 role: Developer
-source-git-commit: 8be0c125bb0417e34e016656337506da88796630
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '291'
+source-wordcount: '381'
 ht-degree: 0%
-
 ---
-
 # Errores y soluciones mortales comunes de PHP
 
 Este artículo enumera algunos ejemplos rápidos comunes de errores graves de PHP que puede encontrar al buscar en los registros de Adobe Commerce y las soluciones para los problemas que indican.
@@ -27,7 +37,7 @@ Por ejemplo:
 
 `max_execution_time = 120`
 
-Consulte el artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
+Consulte el artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Ejemplo
 
@@ -35,7 +45,7 @@ Consulte el artículo [Personalizar la configuración de php.ini](https://experi
 
 ## Solución
 
-Personalizar la configuración de `php.ini`. Consulte este artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
+Personalizar la configuración de `php.ini`. Consulte este artículo [Personalizar la configuración de php.ini](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/app/php-settings).
 
 ## Ejemplo
 
@@ -65,9 +75,9 @@ Compruebe el directorio `<root>/tmp` porque probablemente esté lleno. Si está 
 
 En nuestra documentación para desarrolladores:
 
-* [Errores de configuración de PHP](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [Configuración de PHP requerida](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/php-settings)
-* [Verificación de Redis](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
-* [Configurar Redis](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
-* [Error de límite de memoria PHP](https://experienceleague.adobe.com/es/docs/commerce-knowledge-base/kb/troubleshooting/overview)
-* [Soluciones a problemas comunes - Límite de memoria](https://developer.adobe.com/commerce/testing/guide/unit/command-line#solutions-to-common-problems)
+* [Errores de configuración de PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Configuración de PHP requerida](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/php-settings)
+* [Verificación de Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/redis-session#verify-redis-connection)
+* [Configurar Redis](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cache/redis/config-redis)
+* [Error de límite de memoria PHP](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/overview)
+* [Soluciones a problemas comunes: límite de memoria](https://developer.adobe.com/commerce/testing/guide/unit/command-line#solutions-to-common-problems)

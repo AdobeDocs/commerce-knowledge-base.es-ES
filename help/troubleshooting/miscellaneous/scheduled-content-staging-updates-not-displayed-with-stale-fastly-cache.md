@@ -4,7 +4,25 @@ description: Este artículo proporciona una corrección para los casos en los qu
 exl-id: becbffaa-b6dd-4e9b-894e-17901c40223a
 feature: CMS, Cache, Page Content, Staging
 role: Developer
-source-git-commit: 958179e0f3efe08e65ea8b0c4c4e1015e3c5bb76
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: ddbd0f6e-b569-5a04-8a70-55058777c373
+    internal-label: CMS
+  - id: 17d326fa-534a-55a5-b46f-8ae1de1e2f75
+    internal-label: Page Content
+  - id: 0054e3a7-7067-583b-bfd2-ab39dada9ab5
+    internal-label: Staging
+  - id: e7dae43f-215c-4cdf-90d3-c5a461a6e669
+    internal-label: Admin tools and workspace
+subfeature_v2:
+  - id: b673188e-f9fa-492a-b470-c8f949bf7827
+    internal-label: Cache
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '491'
 ht-degree: 0%
@@ -15,7 +33,7 @@ Este artículo proporciona una corrección para los casos en los que las tiendas
 
 ## Problema
 
-Actualizaciones programadas para un recurso de contenido de tienda (página, producto, bloque, etc.) no se muestran en la tienda inmediatamente después de la hora de inicio de la actualización. Esto sucede cuando se han programado actualizaciones utilizando la funcionalidad [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=es).
+Actualizaciones programadas para un recurso de contenido de tienda (página, producto, bloque, etc.) no se muestran en la tienda inmediatamente después de la hora de inicio de la actualización. Esto sucede cuando se han programado actualizaciones utilizando la funcionalidad [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html).
 
 ## Causa
 
@@ -43,6 +61,6 @@ Si la entrega de contenido obsoleto incluso para la primera solicitud es inacept
 
 ## Documentación relacionada
 
-* [Configure las opciones de depuración](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html?lang=es) en la Guía de infraestructura de Commerce en la nube.
-* [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html?lang=es) en la documentación de contenido y diseño.
+* [Configure las opciones de depuración](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration.html) en la Guía de infraestructura de Commerce en la nube.
+* [Ensayo de contenido](https://experienceleague.adobe.com/docs/commerce-admin/content-design/staging/content-staging.html) en la documentación de contenido y diseño.
 * [Proporcionar contenido obsoleto](https://docs.fastly.com/guides/performance-tuning/serving-stale-content) en la documentación de Fastly.

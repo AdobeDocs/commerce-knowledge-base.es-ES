@@ -4,13 +4,22 @@ description: Este artículo proporciona un parche para el problema conocido de A
 exl-id: ace92331-6022-49fa-a776-d06d841b3b32
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '273'
 ht-degree: 0%
-
 ---
-
 # Error &quot;El código de área no está establecido&quot; al ejecutar `setup:upgrade`
 
 Este artículo proporciona un parche para el problema conocido de Adobe Commerce en la infraestructura en la nube 2.2.3 relacionado con la obtención del error *&quot;El código de área no está establecido&quot;* al ejecutar el siguiente comando:
@@ -31,7 +40,7 @@ Al ejecutar el
 bin/magento setup:upgrade
 ```
 
-recibe el siguiente mensaje de error: *&quot;Module &#39;Magento\_AdvancedSalesRule&#39;: Instalando datos...Código de área no establecido: El código de área debe establecerse antes de iniciar una sesión&quot;* y se interrumpe la ejecución del comando. El problema aparece porque se solicita la configuración de área antes de que se establezca. El parche permite detectar el error y no interrumpir el proceso de actualización.
+del comando, recibe el siguiente mensaje de error: *&quot;Module &#39;Magento\_AdvancedSalesRule&#39;: Installing data...Area code not set: El código de área debe establecerse antes de iniciar una sesión&quot;* y se interrumpe la ejecución del comando. El problema aparece porque se solicita la configuración de área antes de que se establezca. El parche permite detectar el error y no interrumpir el proceso de actualización.
 
 ## Parche
 
@@ -51,6 +60,6 @@ El parche también es compatible (pero es posible que no resuelva el problema) c
 
 ## Cómo aplicar el parche
 
-Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de soporte.
+Para obtener instrucciones, consulte [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de soporte.
 
 ## Archivos adjuntos

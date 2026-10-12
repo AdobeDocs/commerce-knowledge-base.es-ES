@@ -3,13 +3,19 @@ title: Actualice MariaDB 10.4 a 10.5 para Adobe Commerce en la nube
 description: MariaDB 10.4 llega al final del soporte el 18 de junio de 2024. Este artículo explica cómo actualizar MariaDB de 10.4 a 10.5 para seguir utilizando Adobe Commerce en la infraestructura en la nube.
 feature: Best Practices, Cloud
 exl-id: 065840b8-28c1-4686-95fc-df3e73152845
-source-git-commit: 70c2421cb28b45f82ab7c0568c6a45b9572897df
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: cdfd3bc1-dc23-5cf0-b965-d3c0c55cde67
+    internal-label: Best Practices
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '534'
+source-wordcount: '696'
 ht-degree: 0%
-
 ---
-
 # Actualice MariaDB 10.4 a 10.5 para Adobe Commerce en la nube
 
 MariaDB es una base de datos de código abierto empresarial que se utiliza con Adobe Commerce.
@@ -30,16 +36,16 @@ Adopte los nuevos parches solo de seguridad (2.4.4-p9 o 2.4.5-p8) que se lanzar�
 
 ### Pasos de actualización para implementaciones en la nube
 
-1. Crear una copia de seguridad de [DB mediante los comandos de copia de seguridad ECE-Tools DB](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots). Esta copia de seguridad debe realizarse antes de los pasos 2 y 3 en caso de que algo salga mal al actualizar tablas/filas.
-1. [Comprobar y convertir todas las tablas compactas en tablas dinámicas](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade). Este paso es necesario para evitar una posible pérdida de datos durante la actualización de la base de datos.
-1. Compruebe si hay tablas MYISAM. Debe [convertir todas las tablas MyISAM a InnoD](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud).
-1. Después de preparar las tablas y filas de la base de datos (los dos pasos anteriores), cree una copia de seguridad de [DB con los comandos ECE-Tools DB backup](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
-1. [Abra un ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para programar la actualización de MariaDB 10.4 a 10.5. En el ticket, indique la fecha y la hora en que desea actualizar la base de datos. El equipo de asistencia necesita un aviso de 48 horas, y el equipo de desarrollo del comerciante debe estar disponible. Una vez que se acuerden la hora y la fecha de la actualización, haga lo siguiente:
+1. Crear una copia de seguridad de [DB mediante los comandos de copia de seguridad ECE-Tools DB](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots). Esta copia de seguridad debe realizarse antes de los pasos 2 y 3 en caso de que algo salga mal al actualizar tablas/filas.
+1. [Comprobar y convertir todas las tablas compactas en tablas dinámicas](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade). Este paso es necesario para evitar una posible pérdida de datos durante la actualización de la base de datos.
+1. Compruebe si hay tablas MYISAM. Debe [convertir todas las tablas MyISAM a InnoD](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/planning/database-on-cloud).
+1. Después de preparar las tablas y filas de la base de datos (los dos pasos anteriores), cree una copia de seguridad de [DB con los comandos ECE-Tools DB backup](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
+1. [Abra un ticket de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para programar la actualización de MariaDB 10.4 a 10.5. En el ticket, indique la fecha y la hora en que desea actualizar la base de datos. El equipo de asistencia necesita un aviso de 48 horas, y el equipo de desarrollo del comerciante debe estar disponible. Una vez que se acuerden la hora y la fecha de la actualización, haga lo siguiente:
    1. Ponga su sitio en modo de mantenimiento y detenga cualquier actividad de base de datos, por ejemplo, crons.
-   1. Crear una copia de seguridad de [DB mediante los comandos de copia de seguridad ECE-Tools DB](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
-   1. Informe al servicio de asistencia de que ha completado la copia de seguridad mediante su vale de soporte. Para obtener los pasos para ver y rastrear tus tickets, consulta la [Guía del usuario del Centro de ayuda de Adobe Commerce: Rastrea tus tickets](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-tickets) en nuestra base de conocimiento de asistencia.
+   1. Crear una copia de seguridad de [DB mediante los comandos de copia de seguridad ECE-Tools DB](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/storage/snapshots).
+   1. Informe al servicio de asistencia de que ha completado la copia de seguridad mediante su vale de soporte. Para obtener los pasos para ver y rastrear tus tickets, consulta la [Guía del usuario del Centro de ayuda de Adobe Commerce: Rastrea tus tickets](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#track-tickets) en nuestra base de conocimiento de asistencia.
    1. El equipo de asistencia de Adobe Commerce comienza el proceso de actualización de MariaDB. Si se han realizado todos los pasos anteriores y la base de datos tiene un tamaño promedio, el proceso tarda aproximadamente una hora. Los BD más grandes tardan más. Una vez completada la actualización, se le informará a través de su ticket.
-1. Desactive el modo de mantenimiento. Consulte [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) en nuestra documentación para desarrolladores.
+1. Desactive el modo de mantenimiento. Consulte [Habilitar o deshabilitar el modo de mantenimiento](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/maintenance-mode) en nuestra documentación para desarrolladores.
 
 >[!NOTE]
 >
@@ -47,6 +53,6 @@ Adopte los nuevos parches solo de seguridad (2.4.4-p9 o 2.4.5-p8) que se lanzar�
 
 ## Lectura relacionada
 
-* [Guía de prácticas recomendadas de actualización de la base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/upgrade-guide/prepare/prerequisites) para implementaciones locales.
-* [Requisitos previos de actualización para MariaDB: prepare su base de datos para la actualización](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade#prepare-your-database-for-the-upgrade) en el libro de estrategias de implementación.
-* [Política del ciclo vital de Adobe Commerce](https://experienceleague.adobe.com/es/docs/commerce-operations/release/planning/lifecycle-policy) en nuestra documentación para desarrolladores.
+* [Guía de prácticas recomendadas de actualización de la base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/prerequisites) para implementaciones locales.
+* [Requisitos previos de actualización para MariaDB: prepare su base de datos para la actualización](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/maintenance/mariadb-upgrade#prepare-your-database-for-the-upgrade) en el libro de estrategias de implementación.
+* [Política del ciclo vital de Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/lifecycle-policy) en nuestra documentación para desarrolladores.

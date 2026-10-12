@@ -1,16 +1,27 @@
 ---
-title: ejecutar problema "setup:static-content:deploy&grave; deployed_version.txt
-description: Este artículo proporciona una corrección para el error "deployed_version.txt" no se puede escribir al ejecutar el comando "setup:static-content:deploy" manualmente.
+title: ejecutar problema de `setup:static-content:deploy` deployed_version.txt
+description: Este artículo proporciona una corrección para el error "deployed_version.txt" no se puede escribir cuando se ejecuta el comando "setup:static-content:deploy" manualmente.
 exl-id: 88d8c126-349f-49cd-8f02-2a32e4994521
 feature: Deploy, Page Content, SCD
 role: Developer
-source-git-commit: d7c714cf5b2f9db139440d814af26c12001bb4d9
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bcd8874c-7b93-5596-bdaa-22660e84df14
+    internal-label: Deploy
+  - id: 17d326fa-534a-55a5-b46f-8ae1de1e2f75
+    internal-label: Page Content
+  - id: d05f97c9-0a96-5792-92cf-f66ce7326e3a
+    internal-label: SCD
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '193'
+source-wordcount: '195'
 ht-degree: 0%
-
 ---
-
 # ejecutar `setup:static-content:deploy` problema deployed_version.txt
 
 Este artículo proporciona una corrección para el error no se puede escribir en `deployed_version.txt` al ejecutar el comando `setup:static-content:deploy` manualmente.

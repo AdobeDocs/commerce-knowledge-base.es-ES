@@ -4,13 +4,22 @@ description: '* Adobe Commerce en la infraestructura en la nube (todas las versi
 exl-id: 36ed9c9f-8280-41db-9df3-fe842dade4b1
 feature: Cloud, Paas
 role: Developer
-source-git-commit: 139c2836ba36686357c7a5458a36550c7b1273c1
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 00451af3-7b97-5414-9992-3a6c269e413f
+    internal-label: Paas
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '235'
 ht-degree: 0%
-
 ---
-
 # nube de Adobe Commerce: el reíndice ha finalizado con el mensaje `Killed`
 
 ## Productos y versiones afectados
@@ -31,11 +40,11 @@ El motivo más común es un gran número de productos, tiendas o grupos de clien
 1. Reduzca el número de productos (así como los grupos de clientes y las tiendas, si corresponde).
 1. Limite el uso a uno o dos usuarios simultáneos.
 1. Deshabilite los trabajos cron y ejecute manualmente según sea necesario.
-1. Si no se ha hecho anteriormente, solicite una actualización a los entornos de integración mejorada . Tome nota de la restricción en el número de entornos a los que estaría limitado una vez que se haya realizado la actualización. Consulte el artículo [Solicitud de mejora del entorno de integración - Pro y Starter](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-27242) en nuestra base de conocimiento de asistencia para obtener más información.
+1. Si no se ha hecho anteriormente, solicite una actualización a los entornos de integración mejorada . Tome nota de la restricción en el número de entornos a los que estaría limitado una vez que se haya realizado la actualización. Consulte el artículo [Solicitud de mejora del entorno de integración - Pro y Starter](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-27242) en nuestra base de conocimiento de asistencia para obtener más información.
 
 ## Lectura relacionada:
 
 En nuestra documentación para desarrolladores:
 
-* [Arquitectura profesional > Entorno de integración](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
-* [Arquitectura inicial > Entorno de ensayo](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)
+* [Arquitectura profesional > Entorno de integración](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#integration-environment)
+* [Arquitectura de inicio > Entorno de ensayo](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/starter-architecture#cloud-arch-stage)

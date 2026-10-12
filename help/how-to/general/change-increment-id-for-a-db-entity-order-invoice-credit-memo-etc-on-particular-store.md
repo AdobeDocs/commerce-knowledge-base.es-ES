@@ -1,18 +1,22 @@
 ---
-title: Cambiar el ID de incremento de una entidad de la base de datos (pedido, factura, nota de abono, etc.) en un almacén concreto
-description: En este artículo se explica cómo cambiar el ID de incremento de una entidad de la base de datos de Adobe Commerce (base de datos) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce concreto mediante la instrucción SQL ALTER TABLE.
+title: Cambiar el ID de incremento de una entidad de BD (pedido, factura, nota de abono, etc.) en una tienda particular
+description: Este artículo explica cómo cambiar el ID de incremento de una entidad de la base de datos de Adobe Commerce (BD) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce particular utilizando la instrucción SQL ALTER TABLE.
 exl-id: 3704dd97-3639-44dc-9b8b-cf09f0c04e6c
 feature: Invoices
-source-git-commit: e33d0bf6c857d0d54ec1373db79910d78296b054
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 591c578b-908e-5b79-a9d3-931dfe60c24c
+    internal-label: Invoices
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '617'
 ht-degree: 0%
-
 ---
+# Cambiar el ID de incremento de una entidad de BD (pedido, factura, nota de abono, etc.) en una tienda particular
 
-# Cambiar el ID de incremento de una entidad de la base de datos (pedido, factura, nota de abono, etc.) en un almacén concreto
-
-Este artículo explica cómo cambiar el id. de incremento de una entidad de la base de datos de Adobe Commerce (BD) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce concreto mediante la instrucción SQL `ALTER TABLE`.
+Este artículo explica cómo cambiar el ID de incremento de una entidad de la base de datos de Adobe Commerce (BD) (pedido, factura, nota de abono, etc.) en un almacén de Adobe Commerce determinado mediante la instrucción SQL `ALTER TABLE`.
 
 >[!NOTE]
 >
@@ -26,7 +30,7 @@ Este artículo explica cómo cambiar el id. de incremento de una entidad de la b
 
 * Adobe Commerce local: 2.x.x
 * Adobe Commerce en infraestructura en la nube: 2.x.x
-* MySQL: cualquier [versión compatible](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/system-requirements)
+* MySQL: cualquier [versión compatible](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/system-requirements)
 
 ## ¿Cuándo tendría que cambiar el ID de incremento (casos)?
 
@@ -37,12 +41,12 @@ Es posible que tenga que cambiar el ID de incremento de las nuevas entidades de 
 
 >[!NOTE]
 >
->También puedes solucionar el problema de la pasarela de pago de PayPal permitiendo varios pagos por ID de factura en las Preferencias de recepción de pagos de PayPal. Ver [Solicitud rechazada de puerta de enlace de PayPal - problema de factura duplicada](https://experienceleague.adobe.com/es/docs/experience-cloud-kcs/kbarticles/ka-26838) en nuestra base de conocimiento de soporte técnico.
+>También puedes solucionar el problema de la pasarela de pago de PayPal permitiendo varios pagos por ID de factura en las Preferencias de recepción de pagos de PayPal. Ver [Solicitud rechazada de puerta de enlace de PayPal - problema de factura duplicada](https://experienceleague.adobe.com/en/docs/experience-cloud-kcs/kbarticles/ka-26838) en nuestra base de conocimiento de soporte técnico.
 
 ## Pasos previos necesarios
 
 1. Busque tiendas y entidades para las que se debe cambiar el nuevo ID de incremento.
-1. [Conéctate](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) a tu base de datos MySQL. Para Adobe Commerce en infraestructura en la nube, al principio, debes [SSH a tu entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=es).
+1. [Conéctate](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) a tu base de datos MySQL. Para Adobe Commerce en infraestructura en la nube, al principio, debes [SSH a tu entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html).
 1. Compruebe el valor actual auto\_increment para la tabla de secuencia de entidades mediante la siguiente consulta:
 
 ```sql
@@ -61,7 +65,7 @@ Si el valor de la columna `auto_increment` es *1234*, el siguiente pedido realiz
 
 ### Documentación relacionada
 
-* [Configure una conexión a base de datos MySQL remota](https://experienceleague.adobe.com/es/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) en nuestra documentación para desarrolladores.
+* [Configure una conexión a base de datos MySQL remota](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/prerequisites/database-server/mysql-remote) en nuestra documentación para desarrolladores.
 
 ## Actualizar entidad para cambiar el ID de incremento
 
@@ -95,5 +99,5 @@ Antes de ejecutar la consulta `ALTER TABLE` en el entorno de producción de Adob
 ## Documentación relacionada
 
 * [Crear volcado de base de datos en la nube](/help/how-to/general/create-database-dump-on-cloud.md) en nuestra base de conocimiento de soporte
-* [SSH para su entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html?lang=es) en nuestra documentación para desarrolladores
-* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/es/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce
+* [SSH para su entorno](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/secure-connections.html) en nuestra documentación para desarrolladores
+* [Prácticas recomendadas para modificar tablas de base de datos](https://experienceleague.adobe.com/en/docs/commerce-operations/implementation-playbook/best-practices/development/modifying-core-and-third-party-tables#why-adobe-recommends-avoiding-modifications) en el libro de estrategias de implementación de Commerce

@@ -4,13 +4,23 @@ description: Este artículo proporciona una solución para los casos en los que 
 exl-id: cc968bae-f742-449b-b291-bc121ec45935
 feature: Support
 role: Developer
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: a59f76dc-e003-5617-951e-dffa5bd3de81
+    internal-label: Support
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '349'
+source-wordcount: '424'
 ht-degree: 0%
-
 ---
-
 # Información de caducidad del certificado SSL personalizado
 
 Este artículo proporciona una solución para los casos en los que se actualizó un certificado SSL personalizado con un certificado SSL proporcionado por Adobe.
@@ -41,11 +51,11 @@ Adobe Commerce actualiza cualquier certificado cuando quedan 30 días desde la c
 
 Cuando un comerciante decide utilizar su propio certificado SSL personalizado, debe actualizarse más de 30 días antes de la caducidad del certificado para garantizar que no se sustituya por un certificado SSL interno de Adobe Commerce.
 
-Si se encuentra en una situación en la que su SSL personalizado fue reemplazado por nuestro SSL interno y desea reemplazarlo con su certificado SSL personalizado actualizado, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) con la ubicación en la que subió sus nuevos archivos de certificado. Incluya la fecha de inicio del nuevo SSL. Una vez que tengamos esta información, podemos avanzar con la instalación del nuevo certificado SSL.
+Si se encuentra en una situación en la que su SSL personalizado fue reemplazado por nuestro SSL interno y desea reemplazarlo con su certificado SSL personalizado actualizado, [envíe una solicitud de soporte técnico](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) con la ubicación en la que subió sus nuevos archivos de certificado. Incluya la fecha de inicio del nuevo SSL. Una vez que tengamos esta información, podemos avanzar con la instalación del nuevo certificado SSL.
 
 ## Lectura relacionada
 
 * [Certificados SSL (TLS) para Magento Commerce Cloud: preguntas frecuentes](/help/how-to/general/ssl-tls-certificates-for-magento-commerce-cloud-faq.md) en nuestra base de conocimiento de asistencia.
-* [Referencia de herramientas de línea de comandos: certificado de Magento en la nube:add](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) en nuestra documentación para desarrolladores.
-* [Iniciar lista de comprobación](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/launch/checklist)en nuestra documentación para desarrolladores.
-* [Acceda a la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/es/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) en nuestra guía del usuario.
+* [Referencia de herramientas de línea de comandos: certificado de Magento en la nube:add](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli/cloud-cli-reference#certificateadd) en nuestra documentación para desarrolladores.
+* [Iniciar lista de comprobación](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/launch/checklist)en nuestra documentación para desarrolladores.
+* [Acceda a la herramienta de análisis de todo el sitio](https://experienceleague.adobe.com/en/docs/commerce-operations/tools/site-wide-analysis-tool/access#step-2-access-site-wide-analysis-tool) en nuestra guía del usuario.

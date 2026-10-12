@@ -3,13 +3,22 @@ title: Certificados SSL (TLS) para Adobe Commerce en infraestructura en la nube
 description: Este artículo proporciona respuestas rápidas a preguntas sobre cómo obtener certificados SSL (TLS) para su sitio de Adobe Commerce en nuestra infraestructura de nube.
 exl-id: 5a682d07-e4d7-4e81-a2ad-3232f2d8d9c1
 feature: Cloud, Console
-source-git-commit: da2df5fc4ab6cc10d86af806045ee884b01f291d
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+  - id: 125c1f49-aefd-5f34-a252-288937f95f6b
+    internal-label: Marketing Tools
+subfeature_v2:
+  - id: c4af0798-d497-5e6b-8380-19812c26d00a
+    internal-label: Console
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1211'
 ht-degree: 0%
-
 ---
-
 # Certificados SSL (TLS) para Adobe Commerce en infraestructura en la nube
 
 Este artículo proporciona respuestas rápidas a preguntas sobre cómo obtener certificados SSL (TLS) para su sitio de Adobe Commerce en nuestra infraestructura de nube.
@@ -29,7 +38,7 @@ Para la arquitectura del plan de inicio y los entornos de integración de PaaS, 
 Para agregar el dominio al servicio en [!DNL Fastly]:
 
 1. Dirija su dominio en DNS a prod.magentocloud.map.fastly.net y espere hasta 6 horas.
-1. [Envíe un ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando agregar este dominio en la configuración de Nginx (si no lo ha hecho antes).
+1. [Envíe un ticket de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) solicitando agregar este dominio en la configuración de Nginx (si no lo ha hecho antes).
 
 ## ¿Cómo se solicita un certificado?
 
@@ -47,15 +56,15 @@ Puede proporcionar su propio certificado SSL/TLS en lugar de usar el [certificad
 
 Sin embargo, este proceso requiere un trabajo adicional de configuración y mantenimiento. En primer lugar, deberá generar una Solicitud de firma de certificado (CSR) para el nombre de dominio del sitio web (o nombre común) y proporcionárselo a su proveedor SSL para proporcionar un certificado SSL.
 
-Una vez que tenga el certificado SSL, envíe un [vale de soporte de Adobe Commerce](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) o trabaje con su CTA para agregar certificados alojados personalizados a sus entornos de nube.
+Una vez que tenga el certificado SSL, envíe un [vale de soporte de Adobe Commerce](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) o trabaje con su CTA para agregar certificados alojados personalizados a sus entornos de nube.
 
 * Si los dominios ya no están en uso, se eliminarán automáticamente de nuestro sistema y no se requiere ninguna acción adicional.
-* Si ya posee un certificado, cárguelo a través de un cliente SFTP (SSH File Transfer Protocol) en una ubicación de archivo no accesible en la web de su servidor y [envíe un ticket de asistencia](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para que sepan la ruta del archivo.
+* Si ya posee un certificado, cárguelo a través de un cliente SFTP (SSH File Transfer Protocol) en una ubicación de archivo no accesible en la web de su servidor y [envíe un ticket de asistencia](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/adobe-commerce-help-center-user-guide#submit-ticket) para que sepan la ruta del archivo.
 
 >[!WARNING]
 >
 >Es importante que no cargue los archivos de certificado directamente en el ticket. De lo contrario, los certificados se considerarán comprometidos y Adobe deberá solicitar un nuevo certificado.
->Los archivos deben cargarse mediante SFTP al servidor en una carpeta de su elección, por ejemplo: `var/ssl`, `/tmp/ssl`, etc. : no utilice ningún otro método como confirmar los archivos en el repositorio (lo que solo debe hacerse para archivos inmutables que no contengan datos confidenciales).
+>Los archivos deben cargarse a través de SFTP al servidor en una carpeta de su elección, por ejemplo, `var/ssl`, `/tmp/ssl`, etc. - no utilice ningún otro método como enviar los archivos al repositorio (lo que solo debe hacerse para archivos inmutables que no contengan datos confidenciales).
 
 ## El nombre del certificado
 
@@ -67,7 +76,7 @@ El dominio mostrado en el certificado es solo el primer dominio agregado al cert
 
 ## ¿Puedo utilizar certificados TLS comodín?
 
-Los certificados TLS comodín solo se pueden usar con el certificado personalizado y no con los certificados de Adobe Commerce Let&#39;s Encrypt. Como parte de la optimización de TLS, Adobe va a dejar de ofrecer soporte para los certificados TLS comodín. Estamos identificando y poniéndonos en contacto con comerciantes que utilizan un certificado comodín con los certificados Let&#39;s Encrypt de Adobe y que están configurados en la consola [!DNL Fastly] para Adobe Commerce. Pedimos que estos certificados comodín se sustituyan por dominios exactos para garantizar la cobertura TLS. Para reemplazar un certificado TLS comodín, visite la [sección de dominio](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) del complemento [!DNL Fastly]. Desde aquí, se pueden añadir los dominios exactos y se puede eliminar el comodín. Tenga en cuenta que DNS tendrá que señalar a [!DNL Fastly] para que estos nuevos dominios se enruten a través de la CDN. Una vez que se agreguen los dominios y se actualice el DNS, se proporcionará un certificado [Let&#39;s Encrypt](https://letsencrypt.org/) coincidente. Si no quita un dominio que señala a [!DNL Fastly] mediante un comodín, Adobe eliminará el certificado compartido. Esto puede provocar una interrupción del sitio si no tiene configurado el FQDN de la dirección URL y el mismo FQDN de la dirección URL configurado en el DNS. Por lo tanto, debe confirmar que las direcciones URL configuradas también tienen una coincidencia uno a uno en su DNS que señala a [!DNL Fastly].
+Los certificados TLS comodín solo se pueden usar con el certificado personalizado y no con los certificados de Adobe Commerce Let&#39;s Encrypt. Como parte de la optimización de TLS, Adobe va a dejar de ofrecer soporte para los certificados TLS comodín. Estamos identificando y poniéndonos en contacto con comerciantes que utilizan un certificado comodín con los certificados Let&#39;s Encrypt de Adobe y que están configurados en la consola [!DNL Fastly] para Adobe Commerce. Pedimos que estos certificados comodín se sustituyan por dominios exactos para garantizar la cobertura TLS. Para reemplazar un certificado TLS comodín, visite la [sección de dominio](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-custom-cache-configuration#manage-domains) del complemento [!DNL Fastly]. Desde aquí, se pueden añadir los dominios exactos y se puede eliminar el comodín. Tenga en cuenta que DNS tendrá que señalar a [!DNL Fastly] para que estos nuevos dominios se enruten a través de la CDN. Una vez que se agreguen los dominios y se actualice el DNS, se proporcionará un certificado [Let&#39;s Encrypt](https://letsencrypt.org/) coincidente. Si no quita un dominio que señala a [!DNL Fastly] mediante un comodín, Adobe eliminará el certificado compartido. Esto puede provocar una interrupción del sitio si no tiene configurado el FQDN de la dirección URL y el mismo FQDN de la dirección URL configurado en el DNS. Por lo tanto, debe confirmar que las direcciones URL configuradas también tienen una coincidencia uno a uno en su DNS que señala a [!DNL Fastly].
 
 ## ¿Qué debo hacer si mi dominio ya no apunta a Adobe Commerce?
 
@@ -75,4 +84,4 @@ Si su dominio ya no apunta a Adobe Commerce, elimínelo del sistema [!DNL Fastly
 
 ## Lectura relacionada
 
-[Proporcionar certificados SSL/TLS](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates) en nuestra documentación para desarrolladores
+[Proporcionar certificados SSL/TLS](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/cdn/setup-fastly/fastly-configuration#provision-ssltls-certificates) en nuestra documentación para desarrolladores

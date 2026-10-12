@@ -3,30 +3,34 @@ title: Recursos de RGPD de Adobe Commerce
 description: Este artículo enumera los recursos de documentación oficial que analizan cómo Adobe Commerce cumple con el RGPD (Reglamento General de Protección de Datos de la Unión Europea).
 exl-id: d578ff9b-e39c-4c5b-8aaf-f41cab5c1fbb
 feature: Compliance
-source-git-commit: 724a30310c3841f8280628436925f9a3e5933b14
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: b5f00040-57a0-4a6d-a39e-383b1936c2c9
+    internal-label: Compliance
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '208'
 ht-degree: 0%
-
 ---
-
 # Recursos de RGPD de Adobe Commerce
 
 Este artículo enumera los recursos de documentación oficial que analizan cómo Adobe Commerce cumple con el RGPD (Reglamento General de Protección de Datos de la Unión Europea).
 
 ## Adobe Commerce está listo para el RGPD
 
-La [página principal oficial](https://business.adobe.com/es/privacy/general-data-protection-regulation.html) para todos los recursos de RGPD de Adobe Commerce.
+La [página principal oficial](https://business.adobe.com/privacy/general-data-protection-regulation.html) para todos los recursos de RGPD de Adobe Commerce.
 
 ## Declaraciones oficiales de Adobe Commerce
 
-* [Reglamento General de Protección de Datos RGPD](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/privacy/gdpr.html?lang=es)
-* [Cumplimiento del RGPD](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html?lang=es)
+* [Reglamento General de Protección de Datos RGPD](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/privacy/gdpr.html)
+* [Cumplimiento del RGPD](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-gdpr.html)
 
 ## Cumplimiento del RGPD en nuestra documentación para desarrolladores: Adobe Commerce 2.X y 1.X
 
-* [Referencia de información personal del cliente (versión 2.x)](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m2.html?lang=es)
-* [Referencia de información personal del cliente (versión 1.x)](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m1.html?lang=es)
+* [Referencia de información personal del cliente (versión 2.x)](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m2.html)
+* [Referencia de información personal del cliente (versión 1.x)](https://experienceleague.adobe.com/docs/commerce-operations/security-and-compliance/reference/data-m1.html)
 
 En estos temas de documentación para desarrolladores de Adobe Commerce se proporcionan diagramas de flujo de datos e información de bases de datos que ayudan a los comerciantes y a los integradores de sistemas a resolver casos de uso similares a los siguientes:
 

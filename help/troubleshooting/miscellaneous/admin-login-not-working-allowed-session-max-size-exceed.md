@@ -2,13 +2,14 @@
 title: El inicio de sesión de [!UICONTROL Admin] no funciona - se excedió el tamaño máximo permitido de sesión
 description: Solucione el problema cuando intente iniciar sesión en el panel [!UICONTROL Admin], el formulario se actualizará y no podrá hacerlo.
 exl-id: 12789df0-6130-4e60-a92a-68ed329bd7fd
-source-git-commit: fe4a48581bdfe24da5082b69fb26a8032bd77334
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '347'
+source-wordcount: '413'
 ht-degree: 0%
-
 ---
-
 # El inicio de sesión de [!UICONTROL Admin] no funciona - se excedió el tamaño máximo permitido de sesión
 
 Este artículo proporciona una corrección para los casos en los que intenta iniciar sesión en el panel [!UICONTROL Admin], pero el formulario se actualiza y no puede iniciar sesión, o bien está realizando algunas acciones en el panel [!UICONTROL Admin] y cerró la sesión automáticamente.
@@ -57,6 +58,6 @@ Puede establecer un valor superior a *500000* según el tamaño máximo existent
 
 ## Lectura relacionada
 
-* [Tamaño de sesión](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-session-management#admin-sessions) en la Guía de sistemas de administración
-* [Modo de operación](https://experienceleague.adobe.com/es/docs/commerce-operations/configuration-guide/cli/set-mode) en la Guía de configuración
-* [Conexiones seguras](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/secure-connections) en la Guía de infraestructura de Commerce en la nube
+* [Tamaño de sesión](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-session-management#admin-sessions) en la Guía de sistemas de administración
+* [Modo de operación](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/set-mode) en la Guía de configuración
+* [Conexiones seguras](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections) en la Guía de infraestructura de Commerce en la nube

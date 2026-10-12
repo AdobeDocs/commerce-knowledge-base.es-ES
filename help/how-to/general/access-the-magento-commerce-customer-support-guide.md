@@ -1,15 +1,18 @@
 ---
 title: Acceso a la Guía de asistencia al cliente de Adobe Commerce
-description: 'La Guía de asistencia al cliente de Adobe Commerce explica las ofertas de asistencia al cliente y cómo utilizarlas. Esto incluye prácticas recomendadas para la relación de asistencia, la recopilación de información necesaria para el diagnóstico, la prioridad de asistencia al cliente, el envío de una solicitud de asistencia y los vínculos a recursos. Se puede acceder a esta guía desde la sección de descargas de la página de la cuenta de Magento. Para acceder a:'
+description: 'La Guía de asistencia al cliente de Adobe Commerce explica las ofertas de asistencia al cliente y cómo utilizarlas. Esto incluye prácticas recomendadas para la relación de asistencia, la recopilación de información necesaria para el diagnóstico, la prioridad de asistencia al cliente, el envío de una solicitud de asistencia y los vínculos a recursos. Se puede acceder a esta guía desde la sección descargas de la página de la cuenta de Magento. Para acceder a:'
 exl-id: 4acd471d-7d94-49a6-ac2d-80661d77a569
-source-git-commit: c1c2bd29e14f4cbfffb235801e95ec7cbb7c7a55
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
 source-wordcount: '160'
 ht-degree: 0%
 ---
 # Acceso a la Guía de asistencia al cliente de Adobe Commerce
 
-La Guía de asistencia al cliente de Adobe Commerce explica las ofertas de asistencia al cliente y cómo utilizarlas. Esto incluye prácticas recomendadas para la relación de asistencia, la recopilación de información necesaria para el diagnóstico, la prioridad de asistencia al cliente, el envío de una solicitud de asistencia y los vínculos a recursos. Se puede acceder a esta guía desde la sección de descargas de la página de la cuenta de Magento. Para acceder a:
+La Guía de asistencia al cliente de Adobe Commerce explica las ofertas de asistencia al cliente y cómo utilizarlas. Esto incluye prácticas recomendadas para la relación de asistencia, la recopilación de información necesaria para el diagnóstico, la prioridad de asistencia al cliente, el envío de una solicitud de asistencia y los vínculos a recursos. Se puede acceder a esta guía desde la sección descargas de la página de la cuenta de Magento. Para acceder a:
 
 1. Vaya a la página de inicio de sesión de la cuenta de Magento [.](https://account.magento.com/customer/account/login)
 1. Inicie sesión con su nombre de usuario y contraseña de Magento.

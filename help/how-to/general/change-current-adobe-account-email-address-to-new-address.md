@@ -1,15 +1,19 @@
 ---
 title: Cambiar la dirección de correo electrónico de la cuenta actual de Adobe
-description: Aprenda a cambiar la dirección de correo electrónico actual registrada en la cuenta de Adobe a una nueva dirección actualmente no registrada en la cuenta de Adobe o en la cuenta de Magento.
+description: Aprenda a cambiar la dirección de correo electrónico actual registrada en la cuenta de Adobe a una nueva dirección que actualmente no está registrada en la cuenta de Adobe o en la cuenta de Magento.
 exl-id: ca549d38-0d62-4206-9727-0ed85b733dc3
 feature: Communications
-source-git-commit: 95d4507be9ac06a4cb3b1150000d7f9df30d35f8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: bb03f6c4-cab9-560e-9d02-5816e1808d17
+    internal-label: Communications
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '463'
+source-wordcount: '487'
 ht-degree: 0%
-
 ---
-
 # Cambiar la dirección de correo electrónico de la cuenta actual de Adobe
 
 Este artículo explica cómo cambiar la dirección de correo electrónico actual registrada en la [cuenta de Adobe](https://account.adobe.com/) por una nueva dirección que no esté registrada actualmente en la [cuenta de Adobe](https://account.adobe.com/) o en la [cuenta de Magento](https://account.magento.com/).
@@ -28,7 +32,7 @@ Si no tiene acceso a la dirección de correo electrónico actual, configure el r
 
 Siga estos pasos para cambiar la dirección de correo electrónico:
 
-1. Restablezca la contraseña utilizada con la dirección de correo electrónico anterior. Siga las instrucciones indicadas en [Restablecer contraseña olvidada](https://helpx.adobe.com/es/manage-account/using/change-or-reset-password.html) en la ayuda de Adobe.
+1. Restablezca la contraseña utilizada con la dirección de correo electrónico anterior. Siga las instrucciones indicadas en [Restablecer contraseña olvidada](https://helpx.adobe.com/manage-account/using/change-or-reset-password.html) en la ayuda de Adobe.
 1. El vínculo para restablecer la contraseña se envía al buzón del propietario actual con instrucciones.
 1. Vaya a la [página de cuenta de Adobe](https://account.adobe.com) para iniciar sesión con el nuevo correo electrónico y configurar la contraseña.
 
@@ -50,9 +54,9 @@ Después de cambiar la dirección de correo electrónico del ID de MAGE, tambié
 ### Verificar correo electrónico de Commerce Marketplace
 
 1. Inicie sesión en [Commerce Marketplace account](https://commercemarketplace.adobe.com/) y confirme que el correo electrónico de la cuenta se ha actualizado a la nueva dirección.
-1. Si el correo electrónico no se ha actualizado, envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/support#home) solicitando que se corrija el correo electrónico de la cuenta de Commerce Marketplace.
+1. Si el correo electrónico no se ha actualizado, envíe un [ticket de asistencia](https://experienceleague.adobe.com/en/support#home) solicitando que se corrija el correo electrónico de la cuenta de Commerce Marketplace.
 
 ### Pedir al soporte técnico que finalice las actualizaciones de la cuenta interna
 
-1. Envíe un [ticket de asistencia](https://experienceleague.adobe.com/es/support#home) en el que se nos pida que completemos las actualizaciones internas que se requieran (por ejemplo, la actualización del vínculo entre sus ID de Adobe antiguos y nuevos y su ID de MAGE).
+1. Envíe un [ticket de asistencia](https://experienceleague.adobe.com/en/support#home) en el que se nos pida que completemos las actualizaciones internas que se requieran (por ejemplo, la actualización del vínculo entre sus ID de Adobe antiguos y nuevos y su ID de MAGE).
 1. Si ya ha abierto un ticket de asistencia porque el correo electrónico de Commerce Marketplace no se actualizó en la sección anterior, puede utilizar el mismo ticket para solicitar estas actualizaciones internas adicionales.

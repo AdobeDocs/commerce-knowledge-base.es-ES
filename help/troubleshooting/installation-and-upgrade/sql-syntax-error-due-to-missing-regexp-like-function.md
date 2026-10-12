@@ -4,13 +4,27 @@ description: Este artículo proporciona una revisión para el problema en el que
 feature: B2B, Upgrade
 role: Admin, Developer
 exl-id: c5fe316c-99e3-482e-80b5-25aaae371230
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+  - id: bd989d82-1e15-4534-88db-f1f51dd77ffa
+    internal-label: Accounts
+subfeature_v2:
+  - id: f56d26ed-050b-4fb7-b29b-8e6e994e80a2
+    internal-label: B2B
+role_v2:
+  - id: c66ffd68-0f65-42bb-aa23-b4020f12e0bd
+    internal-label: Admin
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '329'
+source-wordcount: '366'
 ht-degree: 0%
-
 ---
-
 # La actualización a B2B 1.5.2 falla con un error de sintaxis SQL debido a la falta de la función REGEXP_LIKE
 
 >[!INFO]
@@ -38,7 +52,7 @@ La actualización a la versión 1.5.2 de B2B produce un error de sintaxis SQL de
 
 <u>Pasos a seguir</u>:
 
-1. Asigne una compañía a una compañía matriz para establecer la jerarquía de la compañía. Consulte [Administrar la jerarquía de la compañía](https://experienceleague.adobe.com/es/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) en la guía Adobe Commerce B2B para obtener más información.
+1. Asigne una compañía a una compañía matriz para establecer la jerarquía de la compañía. Consulte [Administrar la jerarquía de la compañía](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/company-management/manage-company-hierarchy) en la guía Adobe Commerce B2B para obtener más información.
 1. Actualice B2B a la versión 1.5.2.
 
 <u>Resultados esperados</u>:
@@ -64,7 +78,7 @@ Para resolver el problema, siga estos pasos:
    composer update magento/module-b2b
    ```
 
-1. Aplicar el parche [ACSD-65540_B2B_1.5.2.zip](assets/ACSD-65540_B2B_1.5.2.zip) adjunto. Consulte [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de asistencia para obtener instrucciones.
+1. Aplicar el parche [ACSD-65540_B2B_1.5.2.zip](assets/ACSD-65540_B2B_1.5.2.zip) adjunto. Consulte [Cómo aplicar un parche del compositor proporcionado por Adobe](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) en nuestra base de conocimiento de asistencia para obtener instrucciones.
 1. Ejecutar `bin/magento setup:upgrade`.
 
 ### Aplicación de un parche mediante parches en la nube
@@ -78,4 +92,4 @@ Para Adobe Commerce en la infraestructura en la nube, siga los pasos a continuac
    composer update magento/magento-cloud-patches
    ```
 
-1. Confirme e inserte los cambios para iniciar la reimplementación. Consulte [Aplicar parches](https://experienceleague.adobe.com/es/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra guía de Adobe Commerce en la nube para obtener instrucciones.
+1. Confirme e inserte los cambios para iniciar la reimplementación. Consulte [Aplicar parches](https://experienceleague.adobe.com/en/docs/commerce-on-cloud/user-guide/develop/upgrade/apply-patches) en nuestra guía de Adobe Commerce en la nube para obtener instrucciones.

@@ -1,19 +1,23 @@
 ---
-title: "Adobe Commerce en la infraestructura en la nube: cálculo de asignación de CPU"
+title: 'Adobe Commerce en la infraestructura en la nube: cálculo de asignación de CPU'
 promoted: true
-description: El artículo adjunto proporciona directrices detalladas sobre qué métricas deben utilizarse al tomar decisiones sobre la asignación de la CPU y cómo calcularlas.
+description: El artículo adjunto proporciona directrices detalladas sobre qué métricas deben utilizarse al tomar decisiones sobre la asignación de CPU y cómo calcularlas.
 exl-id: 2fe93b96-f975-4ac6-81d2-e24002ce69db
 feature: Cloud
-source-git-commit: 83b21845cd306336e1cb193a9541478c8a38eea8
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 5a951749-fac9-5bc7-9a98-ebe4ff066437
+    internal-label: Cloud
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '85'
+source-wordcount: '87'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce en la infraestructura en la nube: cálculo de asignación de CPU
 
-El artículo adjunto proporciona directrices detalladas sobre qué métricas deben utilizarse al tomar decisiones sobre la asignación de la CPU y cómo calcularlas.
+El artículo adjunto proporciona directrices detalladas sobre qué métricas deben utilizarse al tomar decisiones sobre la asignación de CPU y cómo calcularlas.
 
 ## Productos y versiones afectados
 

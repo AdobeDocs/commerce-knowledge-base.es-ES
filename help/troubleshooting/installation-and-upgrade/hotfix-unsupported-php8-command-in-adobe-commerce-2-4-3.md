@@ -4,13 +4,22 @@ description: 'Este artículo proporciona una corrección para los casos en los q
 exl-id: 1c472214-8387-403e-b2d2-d3f3c9e1da6a
 feature: Install, Upgrade
 role: Developer
-source-git-commit: 1dcd003bd9b08741c0fba464f5520797cfaeccbb
+product_v2:
+  - id: eadea719-cf89-469b-a6fd-a236a7138047
+    internal-label: Commerce
+feature_v2:
+  - id: 6388cf7b-8a81-5248-a1e4-7bb57bbe250f
+    internal-label: Install
+  - id: a8ae7a5a-6cdc-5922-bd0d-6feb44b04984
+    internal-label: Upgrade
+role_v2:
+  - id: ff6a42d2-313e-452e-93a6-792e4fad9ff8
+    internal-label: Developer
+source-git-commit: 6c96745ec333f45361f77f8116cd9a5684da0aa0
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '333'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce actualización 2.4.3, 2.3.7-p1 PHP Error fatal revisión
 
 Este artículo proporciona una corrección para los casos en los que los comerciantes intentan actualizar a Adobe Commerce (todos los métodos de implementación) o Magento Open Source 2.4.3 o 2.3.7-p1 y ven el siguiente error:
@@ -54,8 +63,8 @@ Para solucionar el problema con 2.3.7-p1, Adobe Commerce (todos los métodos de 
 
 ## Cómo aplicar el parche
 
-Consulte [Cómo aplicar un parche del compositor proporcionado por Magento](https://experienceleague.adobe.com/es/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) para obtener instrucciones.
+Consulte [Cómo aplicar un parche del compositor proporcionado por Magento](https://experienceleague.adobe.com/en/docs/support-resources/adobe-support-tools-guide/adobe-commerce-support/how-to-apply-a-composer-patch-provided-by-magento) para obtener instrucciones.
 
 ## Lectura relacionada
 
-[Comando PHP 8 no compatible en Magento 2.4.3 EE #33680](https://github.com/magento/magento2/issues/33680)
+GitHub [Comando PHP 8 no compatible en Magento 2.4.3 EE #33680](https://github.com/magento/magento2/issues/33680)
