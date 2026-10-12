@@ -60,7 +60,7 @@ Puede iniciar sesión en la cuenta con:
 - Una cuenta corporativa/personal de Adobe existente.
 - Si no tiene una cuenta de Adobe, cree una con la misma dirección de correo electrónico.
 
-Para ver los pasos, consulte [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html) en Adobe Experience League.
+Para ver los pasos, consulte [Commerce Identity Manager](https://experienceleague.adobe.com/docs/commerce-admin/start/commerce-account/commerce-identity-manager.html?lang=es) en Adobe Experience League.
 
 ## Lectura relacionada
 

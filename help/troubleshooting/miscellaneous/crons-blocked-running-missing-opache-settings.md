@@ -35,7 +35,7 @@ El cron dejó de funcionar.
 
 ## Causa
 
-El módulo [!DNL OpCache] se actualizó a una versión más reciente que introdujo un complemento [!DNL GraphQL] que reescribe `env.php` en tiempo de ejecución y podría anular la configuración de cron, lo que puede haber causado el problema. La configuración de [!DNL OpCache] debe actualizarse para evitar problemas con `env.php file`, y eso se resolvió en la [versión 2002.1.13](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=en#v2002.1.13) del paquete [!DNL ECE Tools].
+El módulo [!DNL OpCache] se actualizó a una versión más reciente que introdujo un complemento [!DNL GraphQL] que reescribe `env.php` en tiempo de ejecución y podría anular la configuración de cron, lo que puede haber causado el problema. La configuración de [!DNL OpCache] debe actualizarse para evitar problemas con `env.php file`, y eso se resolvió en la [versión 2002.1.13](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/release-notes/ece-tools-package.html?lang=es#v2002.1.13) del paquete [!DNL ECE Tools].
 
 ## Solución
 
@@ -66,6 +66,6 @@ Opción 2: abrir el archivo `app/etc/env.php`: si ve lo siguiente, la cron se de
 
 ## Lectura relacionada
 
-* [Problemas de comprobación de preparación de Cron](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html)
-* [Propiedad Crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html)
-* [El trabajo de cron está atascado en el estado &quot;en ejecución&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html)
+* [Problemas de comprobación de preparación de Cron](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues.html?lang=es)
+* [Propiedad Crons](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/app/properties/crons-property.html?lang=es)
+* [El trabajo de cron está atascado en el estado &quot;en ejecución&quot;](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-job-is-stuck-in-running-status.html?lang=es)

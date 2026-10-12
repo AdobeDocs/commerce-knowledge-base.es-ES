@@ -1,6 +1,6 @@
 ---
 title: 'Error de implementación: versiones de Elasticsearch y Adobe Commerce incompatibles'
-description: Consulte [Configuración de la compatibilidad del software de Elasticsearch Service > Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) en nuestra documentación para desarrolladores.
+description: Consulte [Configuración de la compatibilidad del software de Elasticsearch Service > Elasticsearch](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) en nuestra documentación para desarrolladores.
 exl-id: 7021df62-627c-45cf-a2f2-07c1a29ba1b2
 feature: Deploy, Search, Services
 role: Developer
@@ -27,4 +27,4 @@ ht-degree: 0%
 ---
 # Error de implementación: versiones de Elasticsearch y Adobe Commerce incompatibles
 
-Consulte [Configurar el servicio de Elasticsearch > Compatibilidad con software de Elasticsearch](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) en nuestra documentación para desarrolladores.
+Consulte [Configurar el servicio de Elasticsearch > Compatibilidad con software de Elasticsearch](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/configure/service/elasticsearch) en nuestra documentación para desarrolladores.

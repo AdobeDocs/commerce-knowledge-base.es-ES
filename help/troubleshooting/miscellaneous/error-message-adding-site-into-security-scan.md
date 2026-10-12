@@ -71,4 +71,4 @@ Si sigue sin poder agregar sitios, complete los siguientes pasos:
 
 ## Lectura relacionada
 
-* [Examen de seguridad](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/security/security-scan) en nuestra guía del usuario.
+* [Examen de seguridad](https://experienceleague.adobe.com/es/docs/commerce-admin/systems/security/security-scan) en nuestra guía del usuario.

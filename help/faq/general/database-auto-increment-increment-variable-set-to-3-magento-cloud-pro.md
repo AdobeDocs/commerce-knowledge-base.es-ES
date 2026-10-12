@@ -35,5 +35,5 @@ Por ejemplo, si el nodo principal seleccionado es el nodo 1 donde `auto_incremen
 
 Consulte en nuestra documentación para desarrolladores:
 
-* [Cloud para Adobe Commerce > Arquitectura Pro > Backup y recuperación ante desastres](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
-* [Cloud for Adobe Commerce > Instalar requisitos previos: base de datos](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/overview)
+* [Cloud para Adobe Commerce > Arquitectura Pro > Backup y recuperación ante desastres](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/architecture/pro-architecture#backup-and-disaster-recovery)
+* [Cloud for Adobe Commerce > Instalar requisitos previos: base de datos](https://experienceleague.adobe.com/es/docs/commerce-cloud-service/user-guide/develop/overview)

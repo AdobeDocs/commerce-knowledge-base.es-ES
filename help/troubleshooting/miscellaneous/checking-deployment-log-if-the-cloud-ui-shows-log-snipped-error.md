@@ -46,11 +46,11 @@ Al intentar ver el registro de implementación en la interfaz de usuario del pro
 
 ## Causa
 
-Tenga en cuenta que el registro que se muestra en la interfaz de usuario no debe tratarse como la fuente fiable, especialmente si descubre que el sitio no responde o no funciona correctamente después de que la implementación se haya enumerado con un estado de éxito. También debe comprobarlo con los registros del servidor. Consulte [Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html) en nuestra documentación para desarrolladores.
+Tenga en cuenta que el registro que se muestra en la interfaz de usuario no debe tratarse como la fuente fiable, especialmente si descubre que el sitio no responde o no funciona correctamente después de que la implementación se haya enumerado con un estado de éxito. También debe comprobarlo con los registros del servidor. Consulte [Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=es) en nuestra documentación para desarrolladores.
 
 ## Solución
 
-1. Asegúrese de que tiene [Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html) instalado en su entorno local.
+1. Asegúrese de que tiene [Magento Cloud CLI](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/dev-tools/cloud-cli.html?lang=es) instalado en su entorno local.
 1. Puede ejecutar cualquiera de los siguientes comandos:
 
    ```bash
@@ -86,5 +86,5 @@ Tenga en cuenta que el registro que se muestra en la interfaz de usuario no debe
 
 ## Lecturas relacionadas en nuestra documentación para desarrolladores:
 
-* [Adobe Commerce en la infraestructura en la nube > Creación e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html)
-* [Adobe Commerce en la infraestructura de la nube > Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html)
+* [Adobe Commerce en la infraestructura en la nube > Creación e implementación](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure/env/configure-env-yaml.html?lang=es)
+* [Adobe Commerce en la infraestructura de la nube > Ver y administrar registros](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html?lang=es)
