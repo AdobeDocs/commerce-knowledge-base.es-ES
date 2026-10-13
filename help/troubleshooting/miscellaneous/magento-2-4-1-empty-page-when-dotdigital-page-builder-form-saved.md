@@ -1,16 +1,14 @@
 ---
-title: "Adobe Commerce 2.4.1: página vacía cuando se guardó el formulario dotdigital Page Builder"
+title: 'Adobe Commerce 2.4.1: página vacía al guardar el formulario dotdigital de Page Builder'
 description: Este artículo proporciona una solución para un problema conocido de Adobe Commerce 2.4.1 que se producía al mostrar una página web vacía después de guardar un formulario de Page Builder digital de puntos en el Panel de administración al utilizar el explorador Safari.
 exl-id: 682eac73-1ad2-4093-acfb-6a8da4c05cf5
 feature: Page Builder
 role: Developer
 source-git-commit: 2aeb2355b74d1cdfc62b5e7c5aa04fcd0a654733
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '273'
 ht-degree: 0%
-
 ---
-
 # Adobe Commerce 2.4.1: página vacía al guardar el formulario dotdigital de Page Builder
 
 Este artículo proporciona una solución para un problema conocido de Adobe Commerce 2.4.1 que se producía al mostrar una página web vacía después de guardar un formulario de Page Builder digital de puntos en el Panel de administración al utilizar el explorador Safari.
