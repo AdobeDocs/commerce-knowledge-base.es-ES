@@ -2,9 +2,9 @@
 user-guide-title: Base de conocimiento de Adobe Commerce
 user-guide-description: Todo lo que necesita para solucionar los problemas de su tienda de Commerce y mantenerla.
 breadcrumb-title: KB de Commerce
-source-git-commit: 50b733947e4c62b9a318df1f86a51c456f9f15d1
+source-git-commit: 152df0a44bb16aae19cd84c6d79b891da7365565
 workflow-type: tm+mt
-source-wordcount: '1583'
+source-wordcount: '1573'
 ht-degree: 1%
 ---
 # Base de conocimiento de Adobe Commerce {#kb}
@@ -139,7 +139,6 @@ ht-degree: 1%
     * [Cron se detiene debido a que falta  [!DNL OpCache settings] o está mal configurado](/help/troubleshooting/miscellaneous/crons-blocked-running-missing-opache-settings.md)
     * [El inicio de sesión de [!DNL Admin] no funciona - se excedió el tamaño máximo permitido de sesión](/help/troubleshooting/miscellaneous/admin-login-not-working-allowed-session-max-size-exceed.md)
     * [[!DNL Google Tag Manager] se ha roto mediante el widget de Live Search](/help/troubleshooting/miscellaneous/google-tag-manager-broken-by-live-search-widget.md)
-    * [Las vulnerabilidades encontradas por los análisis de seguridad de terceros deben ir a  [!DNL HackerOne]](/help/troubleshooting/miscellaneous/third-party-test-reports-are-handled-by-hackerone.md)
     * [Obtención de miles de resultados de búsqueda después de actualizar de la versión 2.4.2 a la versión 2.4.5-p3](/help/troubleshooting/miscellaneous/getting-thousands-of-search-results-after-upgrading-to-2-4-5-p3.md)
     * [No se puede cambiar el motor de búsqueda en app/etc/env.php](/help/troubleshooting/miscellaneous/cannot-change-search-engine-in-admin-fields-locked.md)
     * [La CLI de la nube de Magento no muestra un entorno activo](/help/troubleshooting/miscellaneous/the-magento-cloud-cli-doesnt-show-an-active-environment.md)
