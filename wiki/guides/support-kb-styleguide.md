@@ -256,7 +256,7 @@ Al final de un artículo aparece únicamente una lista de vínculos especializad
 
 ### Vínculos a sitios web externos
 
-Use direcciones URL normales en lugar de goURL para vincular páginas fuera de [Adobe.com](http://Adobe.com).
+Use direcciones URL normales en lugar de goURL para vincular páginas fuera de [Adobe.com](http://Adobe.com/es).
 
 
 ## Comas
